@@ -32,7 +32,7 @@ export default function AdSense({
   }, []);
 
   return (
-    <div className="adsense-container my-8">
+    <div className="adsense-container">
       <ins
         className="adsbygoogle"
         style={style}
