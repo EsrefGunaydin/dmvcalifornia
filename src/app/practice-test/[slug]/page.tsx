@@ -104,7 +104,7 @@ export default function QuizPage({ params }: { params: { slug: string } }) {
 
           {/* Centered Layout with Space for Ads */}
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-6">
               {/* Quiz Engine */}
               <div>
                 <QuizEngine quiz={quiz} />
