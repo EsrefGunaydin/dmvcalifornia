@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import blogPostsData from '@/data/blog-posts.json';
+import blogPostsData from '@/data/blog_posts.json';
 import quizzesData from '@/data/quizzes.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
