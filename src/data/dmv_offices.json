@@ -1,0 +1,2307 @@
+{
+  "generated_at": "2025-01-01T00:00:00Z",
+  "total_offices": 177,
+  "offices": [
+    {
+      "id": 1,
+      "name": "Alturas",
+      "slug": "california-dmv-alturas-office",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Arleta",
+      "slug": "arleta",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Arvin",
+      "slug": "arvin-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Auburn",
+      "slug": "auburn-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Bakersfield",
+      "slug": "dmv-bakersfield",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Bakersfield Southwest",
+      "slug": "dmv-bakersfield-southwest",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Banning",
+      "slug": "banning-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Barstow",
+      "slug": "barstow-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Bell Gardens",
+      "slug": "dmv-bell-gardens",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Bellflower",
+      "slug": "bellflower-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Bishop",
+      "slug": "bishop-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Blythe",
+      "slug": "blythe-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Brawley",
+      "slug": "dmv-brawley",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Capitola",
+      "slug": "dmv-capitola",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Carmichael",
+      "slug": "carmichael-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Chico",
+      "slug": "dmv-chico",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Chula Vista",
+      "slug": "dmv-chula-vista",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Clovis",
+      "slug": "dmv-clovis",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Coalinga",
+      "slug": "coalinga-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Colusa",
+      "slug": "colusa-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Compton",
+      "slug": "compton-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Concord",
+      "slug": "dmv-concord",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Corte Madera",
+      "slug": "dmv-corte-madera",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Costa Mesa",
+      "slug": "costa-mesa-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Crescent City",
+      "slug": "dmv-crescent-city-ca",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Culver City",
+      "slug": "culver-city-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Daly City",
+      "slug": "dmv-daly-city",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Davis",
+      "slug": "davis-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Delano",
+      "slug": "delano-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "El Cajon",
+      "slug": "dmv-el-cajon",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "El Centro",
+      "slug": "dmv-el-centro",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "El Cerrito",
+      "slug": "el-cerrito-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "El Monte",
+      "slug": "el-monte-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Eureka",
+      "slug": "dmv-euraka",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Fairfield",
+      "slug": "fairfield-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Fall River Mills",
+      "slug": "dmv-fall-river-mills-ca",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Folsom",
+      "slug": "folsom-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Fontana",
+      "slug": "fontana-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Fontana Commercial Drive Test Center",
+      "slug": "fontana-commercial-drive-test-center",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Fort Bragg",
+      "slug": "fort-bragg-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Fremont",
+      "slug": "fremont-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Fresno",
+      "slug": "dmv-fresno",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Fresno Commercial Drive Test Center",
+      "slug": "fresno-commercial-drive-test-center",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Fresno North",
+      "slug": "fresno-north-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Fullerton",
+      "slug": "fullerton-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Garberville",
+      "slug": "garberville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Gardena Commercial Drive Test Center",
+      "slug": "gardena-commercial-drive-test-center",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Gilroy",
+      "slug": "gilroy-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Glendale",
+      "slug": "glendale-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Goleta",
+      "slug": "dmv-goleta",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Granada Hills Driver License Processing Center",
+      "slug": "granada-hills-driver-license-processing-center",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Grass Valley",
+      "slug": "dmv-grass-valley",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Hanford",
+      "slug": "hanford-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "Hawthorne",
+      "slug": "hawthorne-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Hayward",
+      "slug": "hayward-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Hemet",
+      "slug": "hemet-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "Hollister",
+      "slug": "hollister-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Hollywood",
+      "slug": "hollywood-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 59,
+      "name": "Indio",
+      "slug": "dmv-indio",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 60,
+      "name": "Inglewood",
+      "slug": "inglewood-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "Jackson",
+      "slug": "dmv-jackson-ca",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Laguna Hills",
+      "slug": "laguna-hills-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 63,
+      "name": "Lake Isabella",
+      "slug": "lake-isabella-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "Lakeport",
+      "slug": "lakeport-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 65,
+      "name": "Lancaster",
+      "slug": "lancaster-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 66,
+      "name": "Lincoln Park",
+      "slug": "lincoln-park-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 67,
+      "name": "Lodi",
+      "slug": "lodi-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 68,
+      "name": "Lompoc",
+      "slug": "lompoc-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 69,
+      "name": "Long Beach",
+      "slug": "long-beach-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 70,
+      "name": "Los Angeles",
+      "slug": "dmv-los-angeles",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Los Banos",
+      "slug": "dmv-los-banos",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Los Gatos",
+      "slug": "los-gatos-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Madera",
+      "slug": "madera-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 74,
+      "name": "Manteca",
+      "slug": "manteca-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 75,
+      "name": "Mariposa",
+      "slug": "mariposa-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 76,
+      "name": "Mendota",
+      "slug": "mendota-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 77,
+      "name": "Merced",
+      "slug": "merced-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Modesto",
+      "slug": "dmv-modesto",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Montebello",
+      "slug": "montebello-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 80,
+      "name": "Mt Shasta",
+      "slug": "mt-shasta-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Napa",
+      "slug": "napa-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Needles",
+      "slug": "needles-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 83,
+      "name": "Newhall",
+      "slug": "newhall-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Norco",
+      "slug": "norco-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 85,
+      "name": "Novato",
+      "slug": "novato-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 86,
+      "name": "Oakland",
+      "slug": "oakland-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 87,
+      "name": "Oakland Coliseum",
+      "slug": "oakland-coliseum-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 88,
+      "name": "Oceanside",
+      "slug": "dmv-oceanside",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 89,
+      "name": "Oroville",
+      "slug": "oroville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "Oxnard",
+      "slug": "oxnard-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Palm Desert",
+      "slug": "dmv-palm-desert",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Palm Springs",
+      "slug": "dmv-palm-springs",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Paradise",
+      "slug": "dmv-paradise-ca",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 94,
+      "name": "Pasadena",
+      "slug": "pasadena-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 95,
+      "name": "Paso Robles",
+      "slug": "dmv-paso-robles",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 96,
+      "name": "Petaluma",
+      "slug": "petaluma-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 97,
+      "name": "Pittsburg",
+      "slug": "pittsburg-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Placerville",
+      "slug": "placerville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 99,
+      "name": "Pleasanton",
+      "slug": "dmv-pleasanton",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Pomona",
+      "slug": "pomona-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 101,
+      "name": "Porterville",
+      "slug": "porterville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Poway",
+      "slug": "poway-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Quincy",
+      "slug": "quincy-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 104,
+      "name": "Rancho Cucamonga",
+      "slug": "rancho-cucamonga-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 105,
+      "name": "Rancho San Diego Industry Business Center",
+      "slug": "rancho-san-diego-industry-business-center",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 106,
+      "name": "Red Bluff",
+      "slug": "red-bluff-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 107,
+      "name": "Redding",
+      "slug": "dmv-redding-ca",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Redlands",
+      "slug": "redlands-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 109,
+      "name": "Redwood City",
+      "slug": "redwood-city-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 110,
+      "name": "Reedley",
+      "slug": "reedley-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 111,
+      "name": "Ridgecrest",
+      "slug": "ridgecrest-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 112,
+      "name": "Riverside",
+      "slug": "riverside-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 113,
+      "name": "Riverside East",
+      "slug": "riverside-east-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 114,
+      "name": "Rocklin",
+      "slug": "rocklin-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 115,
+      "name": "Roseville",
+      "slug": "roseville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 116,
+      "name": "Sacramento",
+      "slug": "dmv-sacramento",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 117,
+      "name": "Sacramento South",
+      "slug": "dmv-south-sacramento",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 118,
+      "name": "Salinas",
+      "slug": "dmv-salinas",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 119,
+      "name": "San Andreas",
+      "slug": "san-andreas-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 120,
+      "name": "San Bernardino",
+      "slug": "dmv-san-bernardino",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 121,
+      "name": "San Clemente",
+      "slug": "san-clemente-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 122,
+      "name": "San Diego",
+      "slug": "dmv-san-diego",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 123,
+      "name": "San Diego Clairemont",
+      "slug": "san-diego-clairemont-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 124,
+      "name": "San Francisco",
+      "slug": "dmv-san-francisco",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 125,
+      "name": "San Jose",
+      "slug": "dmv-san-jose",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 126,
+      "name": "San Jose Driver License Processing Center",
+      "slug": "san-jose-driver-license-processing-center-dl",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 127,
+      "name": "San Luis Obispo",
+      "slug": "dmv-san-luis-obispo",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 128,
+      "name": "San Marcos Rancheros",
+      "slug": "san-marcos-rancheros-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 129,
+      "name": "San Mateo",
+      "slug": "san-mateo-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 130,
+      "name": "San Pedro",
+      "slug": "san-pedro-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 131,
+      "name": "San Ysidro",
+      "slug": "san-ysidro-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 132,
+      "name": "Santa Ana",
+      "slug": "santa-ana-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 133,
+      "name": "Santa Barbara",
+      "slug": "dmv-santa-barbara",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 134,
+      "name": "Santa Clara",
+      "slug": "santa-clara-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 135,
+      "name": "Santa Maria",
+      "slug": "dmv-santa-maria",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 136,
+      "name": "Santa Monica",
+      "slug": "santa-monica-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 137,
+      "name": "Santa Paula",
+      "slug": "santa-paula-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 138,
+      "name": "Santa Rosa",
+      "slug": "santa-rosa-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 139,
+      "name": "Santa Teresa",
+      "slug": "santa-teresa-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 140,
+      "name": "Seaside",
+      "slug": "dmv-seaside",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 141,
+      "name": "Shafter",
+      "slug": "shafter-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 142,
+      "name": "Simi Valley",
+      "slug": "simi-valley-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 143,
+      "name": "Sonora",
+      "slug": "dmv-sonora-ca",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 144,
+      "name": "South Lake Tahoe",
+      "slug": "dmv-south-lake-tahoe",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 145,
+      "name": "Stanton Driver License Processing Center",
+      "slug": "stanton-driver-license-processing-center-dl",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 146,
+      "name": "Stockton",
+      "slug": "stockton-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 147,
+      "name": "Susanville",
+      "slug": "dmv-susanville-ca",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 148,
+      "name": "Taft",
+      "slug": "taft-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 149,
+      "name": "Temecula",
+      "slug": "dmv-temecula",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 150,
+      "name": "Thousand Oaks",
+      "slug": "thousand-oaks-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 151,
+      "name": "Torrance",
+      "slug": "torrance-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 152,
+      "name": "Tracy",
+      "slug": "tracy-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 153,
+      "name": "Truckee",
+      "slug": "truckee-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 154,
+      "name": "Tulare",
+      "slug": "tulare-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 155,
+      "name": "Tulelake",
+      "slug": "tulelake-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 156,
+      "name": "Turlock",
+      "slug": "turlock-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 157,
+      "name": "Twentynine Palms",
+      "slug": "twentynine-palms-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 158,
+      "name": "Ukiah",
+      "slug": "ukiah-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 159,
+      "name": "Vacaville",
+      "slug": "vacaville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 160,
+      "name": "Vallejo",
+      "slug": "vallejo-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 161,
+      "name": "Van Nuys",
+      "slug": "dmv-van-nuys",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 162,
+      "name": "Ventura",
+      "slug": "dmv-ventura",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 163,
+      "name": "Victorville",
+      "slug": "victorville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 164,
+      "name": "Visalia",
+      "slug": "dmv-visalia",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 165,
+      "name": "Walnut Creek",
+      "slug": "dmv-walnut-creek",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 166,
+      "name": "Watsonville",
+      "slug": "dmv-watsonville",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 167,
+      "name": "Weaverville",
+      "slug": "weaverville-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 168,
+      "name": "West Covina",
+      "slug": "west-covina-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 169,
+      "name": "West Hollywood",
+      "slug": "west-hollywood-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 170,
+      "name": "West Sacramento Commercial Drive Test Center",
+      "slug": "west-sacramento-commercial-drive-test-center",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 171,
+      "name": "Westminister",
+      "slug": "westminister-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 172,
+      "name": "Whittier",
+      "slug": "whittier-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 173,
+      "name": "Willows",
+      "slug": "willows-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 174,
+      "name": "Winnetka",
+      "slug": "winnetka-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 175,
+      "name": "Woodland",
+      "slug": "woodland-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 176,
+      "name": "Yreka",
+      "slug": "yreka-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    },
+    {
+      "id": 177,
+      "name": "Yuba City",
+      "slug": "yuba-city-dmv",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ]
+    }
+  ]
+}

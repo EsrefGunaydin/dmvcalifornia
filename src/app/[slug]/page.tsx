@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import blogPostsData from '../../data/blog_posts.json';
+import officesData from '../../data/dmv_offices.json';
+import OfficePage from './OfficePage';
 
 // Type for blog post
 type BlogPost = {
@@ -11,6 +13,18 @@ type BlogPost = {
   excerpt: string;
   publishedAt: string;
   author: string;
+  tags?: string[];
+};
+
+// Type for DMV office
+type Office = {
+  id: number;
+  name: string;
+  slug: string;
+  phone: string;
+  hours: string;
+  address: string;
+  services: string[];
 };
 
 // Extract YouTube video ID from various URL formats
@@ -227,38 +241,69 @@ function processContentImages(htmlContent: string, postTitle: string): string {
   return processedHtml;
 }
 
-// Generate static params for all blog posts (for static generation)
+// Generate static params for all blog posts and office pages (for static generation)
 export async function generateStaticParams() {
-  return blogPostsData.posts.map((post: BlogPost) => ({
+  const blogSlugs = blogPostsData.posts.map((post: BlogPost) => ({
     slug: post.slug,
   }));
+
+  const officeSlugs = officesData.offices.map((office: Office) => ({
+    slug: office.slug,
+  }));
+
+  return [...blogSlugs, ...officeSlugs];
 }
 
 // Generate metadata for SEO
 export async function generateMetadata({ params }: { params: { slug: string } }) {
+  // Check if it's a blog post
   const post = blogPostsData.posts.find((p: BlogPost) => p.slug === params.slug);
 
-  if (!post) {
+  if (post) {
     return {
-      title: 'Post Not Found - DMV California',
+      title: `${post.title} - DMV California`,
+      description: post.excerpt,
+    };
+  }
+
+  // Check if it's an office page
+  const office = officesData.offices.find((o: Office) => o.slug === params.slug);
+
+  if (office) {
+    return {
+      title: `${office.name} DMV Office - Hours, Location & Phone | DMV California`,
+      description: `Find ${office.name} DMV office hours, location, phone number, and services. Call ${office.phone} or visit for driver license, vehicle registration, and REAL ID services.`,
     };
   }
 
   return {
-    title: `${post.title} - DMV California`,
-    description: post.excerpt,
+    title: 'Page Not Found - DMV California',
   };
 }
 
-// Blog post page component
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-  // Find the post by slug
+// Page component that handles both blog posts and office pages
+export default function SlugPage({ params }: { params: { slug: string } }) {
+  // Check if it's a blog post first
   const post = blogPostsData.posts.find((p: BlogPost) => p.slug === params.slug);
 
-  // If post not found, show 404
-  if (!post) {
-    notFound();
+  if (post) {
+    // Render blog post page (rest of the existing code)
+    return renderBlogPost(post);
   }
+
+  // Check if it's an office page
+  const office = officesData.offices.find((o: Office) => o.slug === params.slug);
+
+  if (office) {
+    return <OfficePage office={office} />;
+  }
+
+  // If neither found, show 404
+  notFound();
+}
+
+// Render blog post (extracted to keep code organized)
+function renderBlogPost(post: BlogPost) {
 
   // Format date
   const formattedDate = new Date(post.publishedAt).toLocaleDateString('en-US', {
