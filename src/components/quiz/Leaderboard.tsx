@@ -67,9 +67,9 @@ export default function Leaderboard({ entries, quizTitle, limit = 10 }: Leaderbo
       {/* Leaderboard Table */}
       <div className="space-y-2">
         {/* Header */}
-        <div className="grid grid-cols-12 gap-2 px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b">
-          <div className="col-span-1">Rank</div>
-          <div className="col-span-5">Name</div>
+        <div className="grid grid-cols-12 gap-3 px-3 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider border-b">
+          <div className="col-span-2">Rank</div>
+          <div className="col-span-4">Name</div>
           <div className="col-span-3 text-center">Score</div>
           <div className="col-span-3 text-right">Date</div>
         </div>
@@ -82,14 +82,14 @@ export default function Leaderboard({ entries, quizTitle, limit = 10 }: Leaderbo
           return (
             <div
               key={entry.id}
-              className={`grid grid-cols-12 gap-2 px-4 py-3 rounded-lg transition-colors ${
+              className={`grid grid-cols-12 gap-3 px-3 py-3 rounded-lg transition-colors ${
                 isTopThree
                   ? 'bg-gradient-to-r from-yellow-50 to-orange-50 border border-yellow-200'
                   : 'hover:bg-gray-50'
               }`}
             >
               {/* Rank */}
-              <div className="col-span-1 flex items-center">
+              <div className="col-span-2 flex items-center">
                 <span className={`text-sm font-bold ${
                   isTopThree ? 'text-orange-600' : 'text-gray-600'
                 }`}>
@@ -98,7 +98,7 @@ export default function Leaderboard({ entries, quizTitle, limit = 10 }: Leaderbo
               </div>
 
               {/* Name */}
-              <div className="col-span-5 flex items-center">
+              <div className="col-span-4 flex items-center">
                 <span className={`text-sm font-medium truncate ${
                   isTopThree ? 'text-gray-900' : 'text-gray-700'
                 }`}>
