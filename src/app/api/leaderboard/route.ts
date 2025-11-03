@@ -4,6 +4,11 @@ import clientPromise from '@/lib/mongodb';
 export async function POST(request: NextRequest) {
   try {
     // Check if MongoDB URI is configured
+    console.log('Environment check:', {
+      hasMongoUri: !!process.env.MONGODB_URI,
+      nodeEnv: process.env.NODE_ENV
+    });
+
     if (!process.env.MONGODB_URI) {
       console.error('MONGODB_URI environment variable is not set');
       return NextResponse.json(
