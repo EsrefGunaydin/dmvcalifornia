@@ -3,6 +3,15 @@ import clientPromise from '@/lib/mongodb';
 
 export async function POST(request: NextRequest) {
   try {
+    // Check if MongoDB URI is configured
+    if (!process.env.MONGODB_URI) {
+      console.error('MONGODB_URI environment variable is not set');
+      return NextResponse.json(
+        { error: 'Database configuration error. Please contact support.' },
+        { status: 500 }
+      );
+    }
+
     const body = await request.json();
     const { quizId, name, email, percentage, points, completedAt } = body;
 
@@ -70,6 +79,15 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
+    // Check if MongoDB URI is configured
+    if (!process.env.MONGODB_URI) {
+      console.error('MONGODB_URI environment variable is not set');
+      return NextResponse.json(
+        { error: 'Database configuration error' },
+        { status: 500 }
+      );
+    }
+
     // Get quizId from query params if provided
     const { searchParams } = new URL(request.url);
     const quizId = searchParams.get('quizId');
