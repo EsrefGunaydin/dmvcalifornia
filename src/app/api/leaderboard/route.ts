@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import clientPromise from '@/lib/mongodb';
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,28 +14,30 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Read current leaderboard
-    const leaderboardPath = path.join(process.cwd(), 'src/data/leaderboard.json');
-    const leaderboardContent = fs.readFileSync(leaderboardPath, 'utf-8');
-    const leaderboardData = JSON.parse(leaderboardContent);
+    // Connect to MongoDB
+    const client = await clientPromise;
+    const db = client.db('dmvcalifornia');
+    const collection = db.collection('leaderboard');
 
-    // Find quiz ID by slug
-    const quizzesPath = path.join(process.cwd(), 'src/data/quizzes.json');
-    const quizzesContent = fs.readFileSync(quizzesPath, 'utf-8');
-    const quizzesData = JSON.parse(quizzesContent);
+    // Find quiz index to get numeric quiz ID
+    const quizzesCollection = db.collection('quizzes');
+    let numericQuizId = quizId;
 
-    const quizIndex = quizzesData.quizzes.findIndex((q: any) => q.id === quizId);
-    const numericQuizId = quizIndex + 1; // Convert to 1-based index
-
-    // Generate new ID (max existing ID + 1)
-    const maxId = leaderboardData.leaderboard.reduce(
-      (max: number, entry: any) => Math.max(max, entry.id),
-      0
-    );
+    // If quizzes collection doesn't exist yet, use the quizId as is
+    try {
+      const quizCount = await quizzesCollection.countDocuments();
+      if (quizCount > 0) {
+        const quizzes = await quizzesCollection.find({}).toArray();
+        const quizIndex = quizzes.findIndex((q: any) => q.id === quizId);
+        numericQuizId = quizIndex !== -1 ? quizIndex + 1 : quizId;
+      }
+    } catch (err) {
+      // If collection doesn't exist, just use quizId
+      console.log('Quizzes collection not found, using quizId directly');
+    }
 
     // Create new leaderboard entry
     const newEntry = {
-      id: maxId + 1,
       quizId: numericQuizId,
       date: new Date().toISOString().split('T')[0], // YYYY-MM-DD format
       name: name.trim().substring(0, 50), // Limit name length
@@ -44,30 +45,16 @@ export async function POST(request: NextRequest) {
       points: Math.round(points),
       percentage: Math.round(percentage * 10) / 10, // Round to 1 decimal
       completedAt: completedAt || new Date().toISOString(),
+      createdAt: new Date(),
     };
 
-    // Add to leaderboard
-    leaderboardData.leaderboard.push(newEntry);
-
-    // Sort leaderboard by percentage (desc), then by date (asc)
-    leaderboardData.leaderboard.sort((a: any, b: any) => {
-      if (b.percentage !== a.percentage) {
-        return b.percentage - a.percentage;
-      }
-      return new Date(a.completedAt).getTime() - new Date(b.completedAt).getTime();
-    });
-
-    // Write back to file
-    fs.writeFileSync(
-      leaderboardPath,
-      JSON.stringify(leaderboardData, null, 2),
-      'utf-8'
-    );
+    // Insert into MongoDB
+    const result = await collection.insertOne(newEntry);
 
     return NextResponse.json(
       {
         success: true,
-        entry: newEntry,
+        entry: { ...newEntry, _id: result.insertedId },
         message: 'Score added to leaderboard successfully!',
       },
       { status: 201 }
@@ -81,13 +68,42 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
-    const leaderboardPath = path.join(process.cwd(), 'src/data/leaderboard.json');
-    const leaderboardContent = fs.readFileSync(leaderboardPath, 'utf-8');
-    const leaderboardData = JSON.parse(leaderboardContent);
+    // Get quizId from query params if provided
+    const { searchParams } = new URL(request.url);
+    const quizId = searchParams.get('quizId');
 
-    return NextResponse.json(leaderboardData, { status: 200 });
+    // Connect to MongoDB
+    const client = await clientPromise;
+    const db = client.db('dmvcalifornia');
+    const collection = db.collection('leaderboard');
+
+    // Build query
+    const query = quizId ? { quizId: parseInt(quizId) } : {};
+
+    // Fetch leaderboard entries, sorted by percentage (desc) then by date (asc)
+    const entries = await collection
+      .find(query)
+      .sort({ percentage: -1, completedAt: 1 })
+      .toArray();
+
+    // Convert MongoDB documents to plain objects
+    const leaderboard = entries.map((entry: any) => ({
+      id: entry._id.toString(),
+      quizId: entry.quizId,
+      date: entry.date,
+      name: entry.name,
+      email: entry.email || '',
+      points: entry.points,
+      percentage: entry.percentage,
+      completedAt: entry.completedAt,
+    }));
+
+    return NextResponse.json(
+      { leaderboard },
+      { status: 200 }
+    );
   } catch (error) {
     console.error('Leaderboard API error:', error);
     return NextResponse.json(
