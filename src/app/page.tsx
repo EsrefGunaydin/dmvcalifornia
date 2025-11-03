@@ -19,55 +19,56 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Header />
 
-      <div className="container mx-auto px-4 py-16">
-        {/* Hero Section */}
-        <div
-          className="text-center mb-16 relative rounded-2xl overflow-hidden"
-          style={{
-            backgroundImage: 'url(/images/hero-image.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-          }}
-        >
-          {/* Overlay for better text readability */}
-          <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+      {/* Hero Section - Full Width */}
+      <div
+        className="text-center relative w-full"
+        style={{
+          backgroundImage: 'url(/images/hero-image.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 bg-white/70"></div>
 
-          {/* Content */}
-          <div className="relative z-10 py-16 px-4">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Pass Your California DMV Test
-              <span className="block text-primary mt-2">First Try</span>
-            </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-              Master your California driving knowledge with interactive quizzes, practice tests, and comprehensive study guides.
-            </p>
-            <Link
-              href="/practice-test"
-              className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
-            >
-              Start Practice Test
-            </Link>
-          </div>
+        {/* Content */}
+        <div className="relative z-10 container mx-auto px-4 py-20">
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+            Pass Your California DMV Test
+            <span className="block text-primary mt-2">First Try</span>
+          </h1>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Master your California driving knowledge with interactive quizzes, practice tests, and comprehensive study guides.
+          </p>
+          <Link
+            href="/practice-test"
+            className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
+          >
+            Start Practice Test
+          </Link>
         </div>
+      </div>
+
+      <div className="container mx-auto px-4 py-8">
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-4xl font-bold text-primary mb-2">{totalQuestions}</div>
-            <div className="text-gray-600">Practice Questions</div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+            <div className="text-5xl font-bold text-primary mb-3">500+</div>
+            <div className="text-gray-700 font-semibold text-lg">Practice Questions</div>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-4xl font-bold text-primary mb-2">{blogPostsData.posts.length}</div>
-            <div className="text-gray-600">
+          <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+            <div className="text-5xl font-bold text-primary mb-3">50+</div>
+            <div className="text-gray-700 font-semibold text-lg">
               <Link href="/blog" className="hover:text-primary">
                 Blog Articles
               </Link>
             </div>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md text-center">
-            <div className="text-4xl font-bold text-primary mb-2">{quizzesData.quizzes.length}</div>
-            <div className="text-gray-600">
+          <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+            <div className="text-5xl font-bold text-primary mb-3">20+</div>
+            <div className="text-gray-700 font-semibold text-lg">
               <Link href="/practice-test" className="hover:text-primary">
                 Practice Tests
               </Link>
@@ -75,11 +76,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Ad - Homepage Top */}
-        <AdSense adSlot={ADSENSE_CONFIG.adSlots.homepageTop} />
-
         {/* All Practice Tests */}
-        <div className="mb-16">
+        <div className="mb-12">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               California DMV Practice Tests
