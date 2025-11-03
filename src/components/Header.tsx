@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-gradient-to-r from-white to-orange-500 shadow-sm border-b-4 border-primary sticky top-0 z-40">
+    <header className="bg-gradient-to-r from-white via-white via-70% to-orange-100 shadow-sm border-b-4 border-primary sticky top-0 z-40">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo and Tagline */}
