@@ -472,26 +472,10 @@ function renderBlogPost(post: BlogPost) {
           </div>
         </header>
 
-        {/* 3-Column Layout: Left Ad | Content | Right Ad */}
-        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr_300px] gap-8 mb-8">
-          {/* Left Sidebar Ad - Desktop Only */}
-          <aside className="hidden lg:block sticky top-4 self-start">
-            <AdSense
-              adSlot={ADSENSE_CONFIG.adSlots.blogSidebar}
-              adFormat="vertical"
-              style={{ display: 'block', minHeight: '600px' }}
-            />
-          </aside>
-
-          {/* Main Content */}
-          <div className="lg:col-start-2">
-            {/* Ad - Top of Post (Mobile/Tablet) */}
-            <div className="lg:hidden mb-8">
-              <AdSense adSlot={ADSENSE_CONFIG.adSlots.blogPostTop} />
-            </div>
-
-            {/* Post Content */}
-            <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
+        {/* Post Content - Centered */}
+        <div className="mb-8">
+          {/* Post Content */}
+          <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
           <div
             className="prose prose-lg max-w-none
               prose-headings:text-gray-900 prose-headings:font-bold prose-headings:mb-4 prose-headings:mt-8
@@ -515,19 +499,7 @@ function renderBlogPost(post: BlogPost) {
             </div>
           )}
             </div>
-
-            {/* Ad - Bottom of Post */}
-            <AdSense adSlot={ADSENSE_CONFIG.adSlots.blogPostBottom} />
           </div>
-
-          {/* Right Sidebar Ad - Desktop Only */}
-          <aside className="hidden lg:block sticky top-4 self-start">
-            <AdSense
-              adSlot={ADSENSE_CONFIG.adSlots.blogSidebar}
-              adFormat="vertical"
-              style={{ display: 'block', minHeight: '600px' }}
-            />
-          </aside>
         </div>
 
         {/* Related Stories */}
