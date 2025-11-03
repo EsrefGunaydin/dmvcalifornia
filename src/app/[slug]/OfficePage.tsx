@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import CookieBanner from '../../components/CookieBanner';
 
 type Office = {
   id: number;
@@ -17,25 +20,7 @@ export default function OfficePage({ office }: { office: Office }) {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-primary hover:text-primary-600">
-            DMV California
-          </Link>
-          <div className="flex gap-6">
-            <Link href="/" className="text-gray-700 hover:text-primary font-medium">
-              Home
-            </Link>
-            <Link href="/dmv-offices" className="text-gray-700 hover:text-primary font-medium">
-              All Offices
-            </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-primary font-medium">
-              Blog
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Office Content */}
       <article className="container mx-auto px-4 py-12 max-w-5xl">
@@ -187,17 +172,8 @@ export default function OfficePage({ office }: { office: Office }) {
         </div>
       </article>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8 mt-12">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} DMV California. All rights reserved.
-          </p>
-          <p className="text-sm text-gray-500 mt-2">
-            Not affiliated with the California Department of Motor Vehicles
-          </p>
-        </div>
-      </footer>
+      <Footer />
+      <CookieBanner />
     </div>
   );
 }

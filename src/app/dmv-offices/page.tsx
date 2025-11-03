@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import CookieBanner from '../../components/CookieBanner';
 import officesData from '../../data/dmv_offices.json';
 
 export const metadata = {
@@ -23,14 +26,7 @@ export default function DMVOfficesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4">
-          <Link href="/" className="text-2xl font-bold text-primary hover:text-primary-600">
-            DMV California
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-primary to-primary-600 text-white py-12">
@@ -108,17 +104,8 @@ export default function DMVOfficesPage() {
         ))}
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8 mt-12">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} DMV California. All rights reserved.
-          </p>
-          <p className="text-sm text-gray-500 mt-2">
-            Not affiliated with the California Department of Motor Vehicles
-          </p>
-        </div>
-      </footer>
+      <Footer />
+      <CookieBanner />
     </div>
   );
 }

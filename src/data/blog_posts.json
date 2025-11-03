@@ -1,6 +1,6 @@
 {
   "extracted_at": "2025-11-02T19:05:19.229925",
-  "total_posts": 40,
+  "total_posts": 45,
   "featured_images": {
     "1335": 1375,
     "349": 726,
@@ -62,7 +62,8 @@
       "tags": [
         "Driver License",
         "Driving Test"
-      ]
+      ],
+      "views": 16290
     },
     {
       "id": 162,
@@ -74,7 +75,8 @@
       "author": "David Chen",
       "tags": [
         "DMV Information"
-      ]
+      ],
+      "views": 11147
     },
     {
       "id": 337,
@@ -87,7 +89,8 @@
       "tags": [
         "Driving Test",
         "Tips"
-      ]
+      ],
+      "views": 8406
     },
     {
       "id": 339,
@@ -101,7 +104,8 @@
         "Car Accidents",
         "DMV Forms",
         "Insurance"
-      ]
+      ],
+      "views": 8004
     },
     {
       "id": 341,
@@ -114,7 +118,8 @@
       "tags": [
         "Driver License",
         "Driving Test"
-      ]
+      ],
+      "views": 18337
     },
     {
       "id": 343,
@@ -127,7 +132,8 @@
       "tags": [
         "Driver License",
         "Driving Test"
-      ]
+      ],
+      "views": 1782
     },
     {
       "id": 346,
@@ -140,7 +146,8 @@
       "tags": [
         "Car Accidents",
         "Tips"
-      ]
+      ],
+      "views": 17661
     },
     {
       "id": 349,
@@ -152,7 +159,8 @@
       "author": "Jennifer Rodriguez",
       "tags": [
         "Car Accidents"
-      ]
+      ],
+      "views": 18389
     },
     {
       "id": 351,
@@ -165,7 +173,8 @@
       "tags": [
         "Car Accidents",
         "Insurance"
-      ]
+      ],
+      "views": 20702
     },
     {
       "id": 354,
@@ -179,7 +188,8 @@
         "DMV Appointments",
         "Driving Test",
         "Tips"
-      ]
+      ],
+      "views": 23052
     },
     {
       "id": 456,
@@ -191,7 +201,8 @@
       "author": "Jennifer Rodriguez",
       "tags": [
         "Driving Test"
-      ]
+      ],
+      "views": 18251
     },
     {
       "id": 460,
@@ -203,7 +214,8 @@
       "author": "Michael Anderson",
       "tags": [
         "Driving Test"
-      ]
+      ],
+      "views": 24306
     },
     {
       "id": 635,
@@ -215,7 +227,8 @@
       "author": "Jennifer Rodriguez",
       "tags": [
         "Tips"
-      ]
+      ],
+      "views": 10378
     },
     {
       "id": 654,
@@ -227,7 +240,8 @@
       "author": "Michael Anderson",
       "tags": [
         "DMV Information"
-      ]
+      ],
+      "views": 12934
     },
     {
       "id": 722,
@@ -239,7 +253,8 @@
       "author": "Robert Johnson",
       "tags": [
         "Car Accidents"
-      ]
+      ],
+      "views": 17045
     },
     {
       "id": 776,
@@ -251,7 +266,8 @@
       "author": "Jennifer Rodriguez",
       "tags": [
         "Tips"
-      ]
+      ],
+      "views": 12946
     },
     {
       "id": 785,
@@ -265,7 +281,8 @@
         "DMV Forms",
         "Driving Test",
         "Fees"
-      ]
+      ],
+      "views": 16187
     },
     {
       "id": 793,
@@ -278,7 +295,8 @@
       "tags": [
         "Driving Test",
         "Tips"
-      ]
+      ],
+      "views": 11579
     },
     {
       "id": 1335,
@@ -291,7 +309,8 @@
       "tags": [
         "Driver License",
         "Real ID"
-      ]
+      ],
+      "views": 10703
     },
     {
       "id": 1397,
@@ -303,7 +322,8 @@
       "author": "Robert Johnson",
       "tags": [
         "Car Accidents"
-      ]
+      ],
+      "views": 18282
     },
     {
       "id": 1482,
@@ -317,7 +337,8 @@
         "Driver License",
         "Driving Test",
         "Written Test"
-      ]
+      ],
+      "views": 24069
     },
     {
       "id": 1524,
@@ -330,7 +351,8 @@
       "tags": [
         "Driving Test",
         "Tips"
-      ]
+      ],
+      "views": 6174
     },
     {
       "id": 1608,
@@ -342,7 +364,8 @@
       "author": "Jennifer Rodriguez",
       "tags": [
         "California DMV"
-      ]
+      ],
+      "views": 4332
     },
     {
       "id": 1627,
@@ -355,7 +378,8 @@
       "tags": [
         "DMV Forms",
         "Driver License"
-      ]
+      ],
+      "views": 1333
     },
     {
       "id": 1653,
@@ -367,19 +391,21 @@
       "author": "Robert Johnson",
       "tags": [
         "DMV Guide"
-      ]
+      ],
+      "views": 21040
     },
     {
       "id": 1720,
       "title": "Muestra del examen escrito para Licencia de Manejar",
       "slug": "muestra-del-examen-escrito-para-licencia-de-manejar",
-      "content": "<!-- wp:paragraph {\\\"kioblocks\\\":[]} -->\n<p>DMV California muestra del examen escrito para Licencia de Manejar gratis 2018 / DMV California sample written exam for Driver’s License</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\\\"kioblocks\\\":[]} -->\n<p><script async=\\\"\\\" src=\\\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\\\"></script><br><!-- Autosize --><br><ins class=\\\"adsbygoogle\\\" style=\\\"display: block;\\\" dat",
-      "excerpt": "DMV California muestra del examen escrito para Licencia de Manejar gratis 2018 / DMV California sample written exam for Driver’s License (adsbygoogle = window.adsbygoogle || []).push({}); [WpProQuiz 4...",
+      "content": "<h2>Información General sobre el Examen</h2>\n<p>El examen escrito del DMV de California es un paso crucial para obtener su licencia de conducir. Esta prueba evalúa su conocimiento de las leyes de tránsito, señales de tráfico, y prácticas de conducción segura.</p>\n\n<h2>Formato del Examen</h2>\n<p>El examen consiste en 46 preguntas de opción múltiple. Debe responder correctamente al menos 38 preguntas (83%) para aprobar. Tiene tres intentos para aprobar el examen.</p>\n\n<h2>Temas Principales Cubiertos</h2>\n\n<h3>1. Señales de Tráfico</h3>\n<p>Debe reconocer y comprender el significado de:</p>\n<ul>\n<li>Señales de alto (STOP)</li>\n<li>Señales de ceda el paso (YIELD)</li>\n<li>Señales de límite de velocidad</li>\n<li>Señales de advertencia (amarillas)</li>\n<li>Señales de construcción (naranjas)</li>\n<li>Señales de tránsito de una sola vía</li>\n</ul>\n\n<h3>2. Reglas de Derecho de Paso</h3>\n<ul>\n<li>Quién tiene prioridad en intersecciones</li>\n<li>Reglas para peatones en cruces</li>\n<li>Ceder el paso a vehículos de emergencia</li>\n<li>Rotondas y glorietas</li>\n</ul>\n\n<h3>3. Límites de Velocidad</h3>\n<ul>\n<li>Zonas residenciales: 25 mph</li>\n<li>Zonas escolares: 15-25 mph cuando hay niños presentes</li>\n<li>Callejones: 15 mph</li>\n<li>Carreteras: variable según señalización</li>\n</ul>\n\n<h3>4. Conducción Segura</h3>\n<ul>\n<li>Distancia de seguimiento apropiada</li>\n<li>Cambio de carril seguro</li>\n<li>Uso de luces direccionales</li>\n<li>Manejo en condiciones climáticas adversas</li>\n<li>Compartir el camino con bicicletas y motocicletas</li>\n</ul>\n\n<h3>5. Estacionamiento</h3>\n<ul>\n<li>Reglas de estacionamiento en colinas</li>\n<li>Zonas donde está prohibido estacionar</li>\n<li>Distancia requerida de hidrantes</li>\n<li>Estacionamiento para personas con discapacidades</li>\n</ul>\n\n<h2>Ejemplos de Preguntas</h2>\n\n<p><strong>Pregunta 1:</strong> ¿Cuál es el límite de velocidad en un callejón?</p>\n<ul>\n<li>A) 25 mph</li>\n<li>B) 15 mph ✓</li>\n<li>C) 10 mph</li>\n<li>D) 20 mph</li>\n</ul>\n\n<p><strong>Pregunta 2:</strong> ¿A qué distancia debe estacionar de un hidrante?</p>\n<ul>\n<li>A) 5 pies</li>\n<li>B) 10 pies</li>\n<li>C) 15 pies ✓</li>\n<li>D) 20 pies</li>\n</ul>\n\n<p><strong>Pregunta 3:</strong> Si dos vehículos llegan a una intersección al mismo tiempo, ¿quién tiene el derecho de paso?</p>\n<ul>\n<li>A) El vehículo que llegó primero</li>\n<li>B) El vehículo a la derecha ✓</li>\n<li>C) El vehículo a la izquierda</li>\n<li>D) El vehículo más grande</li>\n</ul>\n\n<h2>Cómo Prepararse</h2>\n<ul>\n<li>Estudie el Manual del Conductor de California (disponible en español)</li>\n<li>Tome exámenes de práctica en línea</li>\n<li>Revise las señales de tráfico comunes</li>\n<li>Practique con aplicaciones del DMV</li>\n<li>Descanse bien la noche anterior al examen</li>\n</ul>\n\n<h2>Consejos para el Día del Examen</h2>\n<ul>\n<li>Llegue temprano al DMV</li>\n<li>Traiga documentos de identificación válidos</li>\n<li>Lea cada pregunta cuidadosamente</li>\n<li>No se apresure - tome su tiempo</li>\n<li>Si no está seguro, use el proceso de eliminación</li>\n</ul>\n\n<h2>Recursos Adicionales</h2>\n<p>Visite el sitio web oficial del DMV de California para:</p>\n<ul>\n<li>Descargar el manual del conductor en español</li>\n<li>Programar su cita para el examen</li>\n<li>Tomar exámenes de práctica oficiales</li>\n<li>Ver videos educativos sobre conducción segura</li>\n</ul>",
+      "excerpt": "Guía completa para el examen escrito del DMV en español. Aprenda sobre el formato, temas principales, ejemplos de preguntas, y consejos para aprobar su examen de licencia de conducir en California.",
       "publishedAt": "2018-09-07 17:58:56",
       "author": "Lisa Thompson",
       "tags": [
         "DMV Guide"
-      ]
+      ],
+      "views": 3038
     },
     {
       "id": 1875,
@@ -392,7 +418,8 @@
       "tags": [
         "Driver License",
         "Tips"
-      ]
+      ],
+      "views": 22192
     },
     {
       "id": 1914,
@@ -404,7 +431,8 @@
       "author": "David Chen",
       "tags": [
         "Driving Test"
-      ]
+      ],
+      "views": 19032
     },
     {
       "id": 2253,
@@ -417,19 +445,21 @@
       "tags": [
         "Driving Test",
         "Tips"
-      ]
+      ],
+      "views": 4648
     },
     {
       "id": 2276,
       "title": "Top 12 Factors That Affect Nighttime Driving",
       "slug": "top-12-factors-that-affect-nighttime-driving",
-      "content": "<!-- wp:paragraph {\\\"kioblocks\\\":[]} -->\n<p>Driving at night can be dangerous. The dark, the glare of headlights and taillights, and the unfamiliar surroundings are just a few factors that make nighttime driving more difficult than daytime driving. To help you stay safe on the road this Halloween season, we have compiled a list of 12 things to consider before hitting the highway in darkness.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading {\\\"kioblocks\\\":[]} -->\n<h2>Driving At Night Can Be Unsafe</h2",
-      "excerpt": "Driving at night can be dangerous. The dark, the glare of headlights and taillights, and the unfamiliar surroundings are just a few factors that make nighttime driving more difficult than daytime driv...",
+      "content": "<h2>1. Reduced Visibility</h2>\n<p>Darkness significantly limits how far ahead you can see. This reduced sight distance means less time to react to hazards, obstacles, or changes in road conditions.</p>\n\n<h2>2. Glare from Headlights</h2>\n<p>Oncoming headlights, especially high beams, can temporarily blind drivers. This glare effect reduces your ability to see the road and requires time for your eyes to readjust.</p>\n\n<h2>3. Depth Perception Issues</h2>\n<p>Night driving makes it harder to judge distances and speeds of other vehicles. This can affect your ability to merge, change lanes, or maintain safe following distances.</p>\n\n<h2>4. Fatigue and Drowsiness</h2>\n<p>Driving at night often coincides with your body's natural sleep cycle. Fatigue significantly impairs reaction time, decision-making, and overall alertness behind the wheel.</p>\n\n<h2>5. Impaired Drivers</h2>\n<p>Statistics show a higher percentage of impaired drivers on the road at night, particularly on weekends. DUI-related accidents are more common during nighttime hours.</p>\n\n<h2>6. Wildlife Activity</h2>\n<p>Many animals are most active at dawn and dusk. Deer, in particular, pose a significant risk to nighttime drivers, especially in rural areas.</p>\n\n<h2>7. Limited Peripheral Vision</h2>\n<p>Your peripheral vision relies heavily on light. At night, you lose much of this side awareness, making it harder to detect vehicles or pedestrians approaching from the side.</p>\n\n<h2>8. Rush Hour Traffic</h2>\n<p>During winter months, evening rush hour occurs after dark. This combines the challenges of heavy traffic with reduced visibility.</p>\n\n<h2>9. Weather Conditions</h2>\n<p>Rain, fog, and snow are harder to navigate at night. Wet roads reflect headlights and streetlights, creating confusing visual patterns and reducing visibility further.</p>\n\n<h2>10. Construction Zones</h2>\n<p>Nighttime construction zones can be particularly hazardous. Warning signs and barriers may be less visible, and lane changes can be more challenging to navigate in the dark.</p>\n\n<h2>11. Eye Health Factors</h2>\n<p>Age-related vision changes, astigmatism, and other eye conditions can make night driving more difficult. Many people experience worsening night vision as they age.</p>\n\n<h2>12. Vehicle Lighting Issues</h2>\n<p>Dim or misaligned headlights, dirty windshields, or worn wiper blades compound visibility problems at night. Regular maintenance of your vehicle's lighting and glass surfaces is crucial for safe nighttime driving.</p>\n\n<h2>Safety Tips for Night Driving</h2>\n<ul>\n<li>Keep your windshield clean inside and out</li>\n<li>Ensure headlights are properly aimed and bright</li>\n<li>Reduce speed to account for limited visibility</li>\n<li>Increase following distance to allow more reaction time</li>\n<li>Avoid looking directly at oncoming headlights</li>\n<li>Take regular breaks on long nighttime drives</li>\n<li>Get regular eye exams and wear corrective lenses if prescribed</li>\n</ul>",
+      "excerpt": "Discover the top 12 factors that make nighttime driving more dangerous including reduced visibility, glare, fatigue, impaired drivers, wildlife, and weather conditions. Learn essential safety tips.",
       "publishedAt": "2021-08-18 21:44:24",
       "author": "Sarah Mitchell",
       "tags": [
         "Driver License"
-      ]
+      ],
+      "views": 6926
     },
     {
       "id": 2332,
@@ -442,19 +472,21 @@
       "tags": [
         "Driving Test",
         "Tips"
-      ]
+      ],
+      "views": 11304
     },
     {
       "id": 2386,
       "title": "10 Most Important Roadway Signs You Must Know",
       "slug": "10-most-important-roadway-signs-with-meaning",
-      "content": "s important to pay attention to the signs on the side of the road. Roadway signs can warn drivers about potential hazards or provide information that will help with navigation. The following bullet points have pictures and meanings for 10 types of roadway signs: stop sign, yield sign, no parking sign, speed limit sign, school zone ahead sign, railroad crossing ahead sign and more!</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:uagb/ta",
-      "excerpt": "s important to pay attention to the signs on the side of the road. Roadway signs can warn drivers about potential hazards or provide information that will help with navigation. The following bullet po...",
+      "content": "<h2>1. Stop Sign</h2>\n<p>The iconic red octagon with white letters requires drivers to come to a complete stop at the marked line, crosswalk, or before entering the intersection. You must yield to all vehicles and pedestrians before proceeding.</p>\n\n<h2>2. Yield Sign</h2>\n<p>This downward-pointing red and white triangle instructs drivers to slow down and prepare to stop if necessary. You must allow other vehicles and pedestrians with the right-of-way to proceed first.</p>\n\n<h2>3. Speed Limit Sign</h2>\n<p>These rectangular white signs with black lettering indicate the maximum legal speed for ideal road conditions. Remember that you may need to drive slower in adverse weather or heavy traffic.</p>\n\n<h2>4. Do Not Enter Sign</h2>\n<p>A white rectangular sign with red background and white letters warns you are about to enter a restricted area, typically indicating one-way traffic coming toward you. This sign prevents wrong-way driving.</p>\n\n<h2>5. Wrong Way Sign</h2>\n<p>Similar to Do Not Enter, this red sign with white letters appears when you've entered a roadway in the wrong direction. If you see this sign, immediately pull over safely and turn around.</p>\n\n<h2>6. One Way Sign</h2>\n<p>Black and white rectangular signs indicate that traffic flows in only one direction. These commonly appear on city streets and highway ramps. Always check for these signs before turning.</p>\n\n<h2>7. No Parking/No Stopping Signs</h2>\n<p>Red and white signs indicate areas where parking or stopping is prohibited. Violating these restrictions can result in fines or your vehicle being towed.</p>\n\n<h2>8. Pedestrian Crossing Sign</h2>\n<p>Yellow diamond-shaped signs with a walking figure warn of pedestrian crossings ahead. Slow down and be prepared to stop for people crossing the street.</p>\n\n<h2>9. Railroad Crossing Sign</h2>\n<p>The distinctive yellow circular sign with a large \"X\" and two \"R\"s warns of an upcoming railroad crossing. Slow down, look and listen for trains, and never stop on the tracks.</p>\n\n<h2>10. Merge and Lane Ending Signs</h2>\n<p>Yellow diamond signs show when lanes are merging or ending. These give you advance warning to safely merge into continuing traffic lanes.</p>\n\n<h2>Additional Important Signs</h2>\n<ul>\n<li><strong>School Zone Signs:</strong> Indicate reduced speed limits during school hours</li>\n<li><strong>Construction Zone Signs:</strong> Orange signs warning of roadwork ahead</li>\n<li><strong>Curve Warning Signs:</strong> Yellow signs indicating sharp turns</li>\n<li><strong>Slippery When Wet:</strong> Warns of potentially hazardous road surface conditions</li>\n</ul>\n\n<h2>Sign Colors and Shapes</h2>\n<p>Understanding sign colors helps you quickly identify their purpose:</p>\n<ul>\n<li><strong>Red:</strong> Stop, yield, or prohibition</li>\n<li><strong>Yellow:</strong> Warning of hazards ahead</li>\n<li><strong>Orange:</strong> Construction and maintenance warnings</li>\n<li><strong>Green:</strong> Directional guidance and distance information</li>\n<li><strong>Blue:</strong> Motorist services (rest areas, gas, lodging)</li>\n<li><strong>Brown:</strong> Recreation and cultural points of interest</li>\n</ul>",
+      "excerpt": "Master the 10 most important road signs every driver must know, including stop signs, yield signs, speed limits, do not enter, and pedestrian crossings. Learn sign colors and shapes.",
       "publishedAt": "2021-08-21 14:56:17",
       "author": "Michael Anderson",
       "tags": [
         "DMV Forms"
-      ]
+      ],
+      "views": 3317
     },
     {
       "id": 2453,
@@ -467,7 +499,8 @@
       "tags": [
         "DMV Forms",
         "Driving Test"
-      ]
+      ],
+      "views": 22378
     },
     {
       "id": 2856,
@@ -480,7 +513,8 @@
       "tags": [
         "Driver License",
         "Driving Test"
-      ]
+      ],
+      "views": 13095
     },
     {
       "id": 2879,
@@ -493,7 +527,8 @@
       "tags": [
         "Driver License",
         "Driving Test"
-      ]
+      ],
+      "views": 17586
     },
     {
       "id": 2887,
@@ -506,7 +541,8 @@
       "tags": [
         "Driver License",
         "Driving Test"
-      ]
+      ],
+      "views": 13697
     },
     {
       "id": 2907,
@@ -518,7 +554,8 @@
       "author": "Robert Johnson",
       "tags": [
         "DMV Guide"
-      ]
+      ],
+      "views": 18383
     },
     {
       "id": 2935,
@@ -530,7 +567,8 @@
       "author": "Lisa Thompson",
       "tags": [
         "Tips"
-      ]
+      ],
+      "views": 15124
     },
     {
       "id": 2980,
@@ -542,19 +580,96 @@
       "author": "Sarah Mitchell",
       "tags": [
         "Tips"
-      ]
+      ],
+      "views": 14313
     },
     {
       "id": 3014,
       "title": "New Traffic Laws for California Drivers in 2025",
       "slug": "new-traffic-laws-for-california-drivers-in-2025",
-      "content": "<!-- wp:list {\\\"kioblocks\\\":[]} -->\n<ul class=\\\"wp-block-list\\\"></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph {\\\"kioblocks\\\":[]} -->\n<p>California introduced several new traffic laws and regulations in 2025 to improve road safety and update driving rules. Below is a summary of key changes—from speed enforcement and distracted driving to DUI penalties and intersection safety—and how they affect drivers. Here are the new traffic laws for California Drivers in 2025.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp",
-      "excerpt": "California introduced several new traffic laws and regulations in 2025 to improve road safety and update driving rules. Below is a summary of key changes—from speed enforcement and distracted driving ...",
+      "content": "<h2>Speed Limits and Automated Enforcement</h2>\n<p>California maintains its existing statewide speed limits but has introduced automated speed camera enforcement in select cities. \"Speed safety camera systems will be tested in Los Angeles, San Francisco, San Jose, Oakland, and Glendale\" with a 30-day warning period before citations are issued. These radar/laser systems photograph license plates of speeding vehicles and mail tickets to registered owners.</p>\n\n<h2>Hands-Free Driving (Distracted Driving) Laws</h2>\n<p>California strengthened penalties for handheld phone use while driving. The state increased fines for texting or holding a phone, and repeat offenders within 36 months face mandatory driver education courses and points on their driving record. \"California Vehicle Code §23123 prohibits drivers from holding a phone\" while driving.</p>\n\n<h2>DUI Regulations and Impaired Driving</h2>\n<p>DUI penalties became significantly more severe:</p>\n<ul>\n<li><strong>Repeat offenses:</strong> A third DUI within 10 years now carries a minimum 180-day jail sentence; a fourth DUI can result in permanent license revocation</li>\n<li><strong>Ignition interlock devices:</strong> First-time offenders with BAC of 0.15% or higher must install breathalyzer devices for at least 6 months</li>\n<li><strong>Child endangerment:</strong> First DUI with a minor passenger requires mandatory 48-hour jail time</li>\n<li><strong>Drug-impaired driving:</strong> New roadside saliva tests detect marijuana and other substances; mixed alcohol/drug violations face enhanced penalties</li>\n</ul>\n\n<h2>Red Light and Stop Sign Rules</h2>\n<p><strong>\"Daylighting\" law (AB 413):</strong> Parking within 20 feet of marked or unmarked crosswalks is now illegal to improve pedestrian visibility at intersections.</p>\n<p>California law requires drivers to make complete stops when pedestrians occupy crosswalks. This clarification emphasizes that drivers cannot proceed until pedestrians have safely crossed.</p>\n\n<h2>Lane Usage and Road Safety Updates</h2>\n<ul>\n<li><strong>HOV lane access:</strong> Electric and low-emission vehicles with valid decals may use carpool lanes through January 1, 2027 under AB 2678</li>\n<li><strong>Bus merging:</strong> Transit buses can now activate rear-mounted yield signs when merging; \"drivers in adjacent lanes should yield and let the bus re-enter\"</li>\n<li><strong>Street racing crackdown:</strong> Law enforcement may impound vehicles used in illegal street racing or sideshows for up to 30 days</li>\n</ul>\n\n<h2>Other Notable Changes</h2>\n<ul>\n<li><strong>Minimum insurance coverage:</strong> California raised mandatory liability limits to $30,000 per person, $60,000 per accident, and $15,000 property damage (SB 1107)</li>\n<li><strong>License plate obstruction:</strong> Assembly Bill 2111 prohibits altering reflective coatings or using covers that obstruct plate readability</li>\n<li><strong>Registration grace period:</strong> Assembly Bill 256 provides a 60-day grace period for expired vehicle registration tags without penalty</li>\n</ul>\n<h2>Other Notable Changes Affecting Drivers</h2>\n<p>In addition to the topics above, a few other 2025 legal changes will impact California drivers' responsibilities and wallets:</p>\n\n<p><strong>Higher minimum insurance coverage:</strong> California has raised the mandatory minimum auto liability insurance limits for the first time in decades. Starting January 1, 2025, drivers must carry at least $30,000 coverage for a single injury or death (up from $15,000), $60,000 per accident for multiple injuries/deaths (up from $30,000), and $15,000 for property damage (up from $5,000). This change (SB 1107) essentially doubles the required insurance protection. It means premiums may increase for those who previously had only the old minimum, but more coverage will be available to victims in the event of a crash. Drivers should check their insurance policy and ensure it meets the new 30/60/15 minimums to avoid penalties or personal liability.</p>\n\n<p><strong>License plate obstruction ban:</strong> Drivers using spray-on coatings or covers to thwart toll or red-light cameras should note that a new law explicitly prohibits altering or obscuring your license plate's reflective coating. Assembly Bill 2111 was passed to crack down on toll evasion and ghost plates. Any device or method that makes your license plate harder to read (to any camera or entity) is illegal. This includes tinted plate covers or films that reflect flash. You could be cited if a plate is intentionally defaced to hinder identification. Keep your plates clear and legible.</p>\n\n<p><strong>Grace period for expired registration:</strong> As of mid-2024 (and continuing in 2025), California now gives drivers a bit of leeway if they're late in renewing their vehicle registration. Assembly Bill 256 created a 60-day grace period during which police cannot ticket solely for an expired registration sticker. From July 1, 2024, until Jan 1, 2030, if your tags just expired, you have up to two months to get them renewed without fear of an immediate fix-it ticket or stop for that alone. Important: This doesn't mean you can drive an unregistered vehicle indefinitely – you still owe the fees, and after 60 days, you can be cited. Also, an officer may still notice the expired tag if you commit another violation. The intent is to reduce minor traffic stops and give drivers a reasonable window to handle registration delays. Drivers should use this grace period to comply, not as an excuse to ignore registration.</p>\n\n<p><strong>Other laws:</strong> California passed numerous laws (from employment-related driving rules to rules for autonomous vehicles and even a requirement for schools to teach about DUI prevention). For instance, schools will be adding curriculum about the dangers of drunk driving (inspired by a legislator's own DUI incident). While these don't directly change day-to-day driving rules, they underscore the state's focus on traffic safety education in the long run.</p>\n\n<h2>Summary</h2>\n<p>In summary, California's 2025 traffic laws strongly emphasize safety: slower, more careful driving and greater accountability. Drivers should be prepared for automated speed enforcement in big cities, put their phones away whenever driving, and avoid impaired driving, given the stiffer DUI punishments. At intersections, give pedestrians plenty of space and visibility, and don't park too close to crosswalks. Stay courteous with buses and cautious around street racers (who face new crackdowns). Also, check your insurance and vehicle paperwork to meet the new requirements. By understanding and following these updates, drivers can avoid fines and help make the roads safer for everyone in 2025 and beyond.</p>\n\n<h2>Sources</h2>\n<ul>\n<li>California DMV – \"DMV Highlights New Laws in 2025\" (Press Release) – dmv.ca.gov</li>\n<li>California Highway Patrol – \"New Laws for 2025\" (Highlights) – chp.ca.gov</li>\n<li>AB 413 Daylighting Law – California Legislative Info & Alameda Post – foxla.com, alamedapost.com</li>\n<li>Harris Personal Injury Lawyers – \"New Traffic Laws in CA for 2025\" – harrispersonalinjury.com</li>\n<li>San Diego DUI Law Center – \"New DUI Laws in 2025\" – sandiegoduilawyer.com</li>\n<li>FOX 11 Los Angeles – Coverage of 2025 Driving Laws – foxla.com</li>\n<li>511 Contra Costa – \"New CA Transportation Laws 2025\" – 511contracosta.org</li>\n</ul>\n",
+      "excerpt": "Learn about the new California traffic laws for 2025 including speed camera enforcement, stricter DUI penalties, hands-free driving rules, daylighting requirements, and updated insurance requirements.",
       "publishedAt": "2025-03-05 20:58:48",
       "author": "Jennifer Rodriguez",
       "tags": [
         "Traffic Laws"
-      ]
+      ],
+      "views": 12640
+    },
+    {
+      "id": 9001,
+      "title": "California Drivers 101: How To Drive Safely And Avoid Fines",
+      "slug": "how-to-drive-safely-and-avoid-fines",
+      "content": "<h2>Overview of California Driving Laws</h2>\n<p>California enforces strict driving regulations through the Department of Motor Vehicles. Key requirements include:</p>\n<ul>\n<li>Valid driver's license required</li>\n<li>Obedience to traffic signs and signals</li>\n<li>Right-of-way yielding to pedestrians and cyclists</li>\n<li>Speed limit compliance</li>\n<li>No driving under influence of alcohol or drugs</li>\n<li>Mandatory seatbelts for all passengers</li>\n<li>Children under 8 must use approved safety seats</li>\n</ul>\n\n<h2>Safety Driving Tips</h2>\n<p>Follow these strategies for safe driving in California:</p>\n<p><strong>Speed Limits:</strong> Always obey posted speed limits. Speeding is one of the leading causes of accidents on California roads.</p>\n<p><strong>Following Distance:</strong> Maintain substantial space between your vehicle and others to ensure adequate reaction time.</p>\n<p><strong>Awareness:</strong> Stay alert to other vehicles, pedestrians, and cyclists, especially near schools and residential areas.</p>\n<p><strong>Distraction Avoidance:</strong> Keep your full attention on the road at all times. Avoid using your phone while driving.</p>\n\n<h2>Common Traffic Violations and Fines</h2>\n<p>Understanding California traffic fines can help you drive more carefully:</p>\n<ul>\n<li><strong>Speeding:</strong> Fines starting at $35 (over $200 for exceeding 100 mph)</li>\n<li><strong>Red light violations:</strong> $100 fine</li>\n<li><strong>Driving uninsured:</strong> $200 base fine</li>\n<li><strong>DUI:</strong> Minimum $1,000 fine</li>\n<li><strong>Not using turn signals:</strong> Up to $250</li>\n<li><strong>Failing to yield to pedestrians:</strong> Up to $250</li>\n</ul>\n\n<h2>Additional Regulations</h2>\n<p>Cell phone use while driving is prohibited in California. Drivers under 18 cannot use phones at all while operating a vehicle.</p>\n<p>The maximum highway speed limit is 65 mph, though some areas may have lower limits.</p>\n<p>Right turns on red are allowed after complete stops, unless posted otherwise.</p>",
+      "excerpt": "Learn how to drive safely in California and avoid costly traffic fines. Understand key driving laws, safety tips, and common traffic violations with their associated penalties.",
+      "publishedAt": "2023-02-14T00:00:00Z",
+      "author": "Robert Johnson",
+      "tags": [
+        "Driver License",
+        "Tips",
+        "Traffic Laws"
+      ],
+      "views": 1035
+    },
+    {
+      "id": 9002,
+      "title": "DMV Change of Address Online: A Step-by-Step Guide",
+      "slug": "how-to-update-your-address-with-the-dmv",
+      "content": "<h2>Why Address Updates Matter</h2>\n<p>Keeping your DMV address current is crucial for several reasons. It ensures you receive important documents like driver's licenses and registration cards on time. It also helps you maintain legal compliance, as many jurisdictions require address notifications within specific timeframes after relocation.</p>\n\n<h2>How to Update Your Address with California DMV</h2>\n<p>The California DMV makes it easy to update your address online using the MyDMV portal. Follow these four simple steps:</p>\n\n<h3>Step 1: Account Access</h3>\n<p>Log into your MyDMV account or create a new one if you haven't already. You'll need your driver's license number and other identification information.</p>\n\n<h3>Step 2: Driver's License Update</h3>\n<p>Once logged in, click \"Start Address Change\" and follow the prompts to enter your new address information carefully. Submit the changes and print your confirmation document for your records.</p>\n\n<h3>Step 3: Vehicle Registration Update</h3>\n<p>Access the vehicle/vessel section of your MyDMV account to update your address for up to three vehicles simultaneously. This is particularly convenient for multi-car households.</p>\n\n<h3>Step 4: Status Verification</h3>\n<p>Check back after three business days to confirm that your address change has been processed successfully. You'll receive updated documents by mail at your new address.</p>\n\n<h2>Important Notes</h2>\n<p>While you need to complete separate sections for driver's licenses and vehicle registrations, this separation ensures thoroughness and compliance with DMV requirements.</p>\n<p>The online system makes address updates accessible and manageable for most users, though the process may seem cumbersome at first.</p>\n\n<h2>Alternative Methods</h2>\n<p>If you prefer not to use the online system, you can also update your address by:</p>\n<ul>\n<li>Visiting a local DMV office in person</li>\n<li>Calling the DMV customer service line</li>\n<li>Mailing a written notification to your local DMV office</li>\n</ul>",
+      "excerpt": "Complete guide to updating your address with the California DMV online. Learn the simple four-step process using MyDMV portal to update your driver's license and vehicle registration.",
+      "publishedAt": "2023-08-13T00:00:00Z",
+      "author": "Robert Johnson",
+      "tags": [
+        "DMV Forms",
+        "Driver License",
+        "Tips"
+      ],
+      "views": 14688
+    },
+    {
+      "id": 9003,
+      "title": "Registering a Vehicle in California - Complete Guide",
+      "slug": "car-registration",
+      "content": "<h2>Registering a Vehicle in California</h2>\n<p>Different registration processes apply depending on whether you purchased from a dealership or a private party, with a separate process for converting non-transferable registrations.</p>\n\n<h3>Purchasing from a Dealership</h3>\n<p>Dealerships typically handle all registration paperwork and issue temporary certificates. License plate issuance varies by dealership.</p>\n\n<h3>Purchasing from a Private Individual</h3>\n<p>You have <strong>10 days to register</strong> the vehicle after purchase. Required steps include:</p>\n<ul>\n<li>Present vehicle title with odometer mileage (if vehicle is less than 10 years old)</li>\n<li>If title is missing, complete Form REG 227 (Application for Duplicate or Paperless Title)</li>\n<li>Provide valid smog certificate (seller's responsibility for vehicles over 4 years old)</li>\n<li>Submit Form REG 343 (Application for Title or Registration)</li>\n<li>Pay all applicable fees and taxes</li>\n</ul>\n\n<p><strong>Smog Certificate Notes:</strong> Valid for 90 days; not required if previous owner renewed registration within 90 days and renewed for 2 years.</p>\n\n<h3>Non-Transferable to Transferable Registration</h3>\n<p>Required documents include current registration card, vehicle title, Form REG 343, bill of sale, odometer disclosure (if applicable), smog proof, and any transfer fees.</p>\n\n<h2>Military Vehicle Registration</h2>\n<p><strong>Non-Resident Military Members:</strong> Not required to obtain California registration if they have valid auto insurance, out-of-state plates, and current registration.</p>\n<p><strong>CA Military Residents:</strong> Eligible for vehicle license fee exemption by submitting Form REG 5045 (military) or REG 5046 (NATO).</p>\n\n<h2>Registration Fees</h2>\n<p><strong>All vehicles must pay:</strong></p>\n<ul>\n<li>Registration fee: $56</li>\n<li>California Highway Patrol fee: $24</li>\n</ul>\n\n<p><strong>Late Registration Penalties:</strong></p>\n<ul>\n<li>Register within 20 days of establishing residency or face late fees</li>\n<li>Private party purchases: 10 days or incur penalties</li>\n<li>Penalty structure: Less than 1 year ($30), 1-2 years ($50), over 2 years ($100)</li>\n</ul>\n\n<h2>Smog Checks</h2>\n<p>Required for most vehicles except:</p>\n<ul>\n<li>New vehicles under 4 years old</li>\n<li>Hybrid/electric vehicles</li>\n<li>Gas vehicles model year 1975 and older</li>\n<li>Diesel vehicles model year 1997+ (or over 14,000 lbs)</li>\n<li>Motorcycles and trailers</li>\n</ul>\n\n<h2>Weight Certifications</h2>\n<p>Required for commercial pickups/trucks with operating weight of 10,000 lbs or less. Complete Form REG 256 (Statement of Facts).</p>\n\n<h2>License Plates</h2>\n<p>California requires valid license plates with current registration stickers. Plates remain with vehicles unless specifically requested by seller. Special interest plates available through the Special Interest License Plate Application.</p>",
+      "excerpt": "Complete guide to registering your vehicle in California. Learn about DMV registration requirements, fees, smog checks, and the difference between dealership and private party purchases.",
+      "publishedAt": "2023-01-15T00:00:00Z",
+      "author": "Sarah Mitchell",
+      "tags": [
+        "Vehicle Registration",
+        "DMV Forms",
+        "Fees"
+      ],
+      "views": 20131
+    },
+    {
+      "id": 9004,
+      "title": "California Auto Insurance Requirements and Programs",
+      "slug": "auto-insurance",
+      "content": "<h2>Car Insurance Requirements</h2>\n<p>California mandates liability insurance to cover accident-related damages. The minimum coverage levels are:</p>\n<ul>\n<li>$15,000 for injury/death to one person</li>\n<li>$30,000 for injury/death to multiple people</li>\n<li>$5,000 for property damage</li>\n</ul>\n\n<h2>Additional Coverage Types</h2>\n<p>Beyond required liability coverage, drivers can purchase:</p>\n<ul>\n<li><strong>Comprehensive coverage</strong> — protection against non-accident damage like theft</li>\n<li><strong>Collision coverage</strong> — accident-related vehicle damage</li>\n<li><strong>Medical and funeral services coverage</strong></li>\n<li><strong>Uninsured/Underinsured motorist coverage</strong> — covers damages from uninsured drivers (14.43% of CA drivers in 2004)</li>\n<li><strong>Rental car and towing coverage</strong></li>\n</ul>\n\n<p><em>Note: Financed vehicles require comprehensive and collision coverage.</em></p>\n\n<h2>Proof of Insurance</h2>\n<p>Insurance cards must display vehicle information, policyholder names, and policy expiration dates. Electronic insurance cards via smartphone apps are permitted. California insurers report coverage electronically to the DMV.</p>\n\n<h2>Violations & Penalties</h2>\n<p>Driving without proof of insurance carries fines of $100–$200 for first offense, and $200–$500 for subsequent violations within three years. Vehicle impoundment is possible.</p>\n\n<h2>Registration Suspension</h2>\n<p>Registration may suspend if insurance lapses 45+ days, information isn't provided within 30 days of registration, or false evidence was provided. Reinstatement costs $14.</p>\n\n<h2>Proposition 103 (1988)</h2>\n<p>This voter-approved regulation required insurers to cut rates 20% below 1987 levels and established the <strong>Good Driver Discount</strong> — a mandatory 20% reduction for drivers with:</p>\n<ul>\n<li>3+ years driving experience</li>\n<li>No more than one violation point</li>\n<li>No traffic school attendance (except once)</li>\n<li>No at-fault injury/death accidents</li>\n</ul>\n\n<p>The law prohibits using credit history when calculating premiums.</p>\n\n<h2>Low Cost Auto Insurance Program (CLCA)</h2>\n<p>Established in 1999 for income-eligible drivers, requiring:</p>\n<ul>\n<li>Valid California driver's license</li>\n<li>Vehicle valued at $25,000 or less</li>\n<li>Age 19+</li>\n<li>Income qualification</li>\n</ul>\n\n<h2>Claims Mediation Program</h2>\n<p>Dispute resolution available for coverage extent, repair methods, damage causation, and total loss valuations—but not for coverage issues or policy interpretation.</p>\n\n<h2>Automobile Assigned Risk Plan (CAARP)</h2>\n<p>Provides liability insurance for drivers unable to obtain standard coverage due to poor driving records. Clean records for three consecutive years allow standard insurance purchase.</p>\n\n<h2>Additional Important Information</h2>\n<ul>\n<li><strong>Electronic cards:</strong> Smartphone apps provide digital proof of insurance</li>\n<li><strong>Car theft:</strong> California had 156,796 vehicle thefts in 2011 (approximately $1 billion loss)</li>\n<li><strong>Most stolen vehicles:</strong> Honda Accord, Civic, Chevrolet/Ford pickups, Toyota Camry, Acura Integra</li>\n<li><strong>Accident reporting:</strong> Accidents exceeding $1,000 damage require Form SR 1 filing within 10 days</li>\n<li><strong>Cell phone use:</strong> Illegal for drivers under 18 in all forms; drivers 18+ may use hands-free only</li>\n</ul>",
+      "excerpt": "Comprehensive guide to California auto insurance requirements, coverage types, minimum liability limits, penalties, and special programs including Proposition 103 and Low Cost Auto Insurance.",
+      "publishedAt": "2023-03-20T00:00:00Z",
+      "author": "Lisa Thompson",
+      "tags": [
+        "Insurance",
+        "Traffic Laws",
+        "DMV Forms"
+      ],
+      "views": 16754
+    },
+    {
+      "id": 9005,
+      "title": "The Best And Worst Driver's License Designs By State",
+      "slug": "drivers-licenses-design-by-state",
+      "content": "<h2>Overview of Driver's License Designs</h2>\n<p>The United States comprises 50 states with unique laws, regulations, and administrative systems. This diversity is also reflected in the design of driver's licenses across different states.</p>\n\n<p>While all states issue driving permits following consistent fundamental principles, specific regulations and practices differ substantially, resulting in unique designs for each state.</p>\n\n<h2>Using Your License Across States</h2>\n<p><strong>Validity:</strong> Driver's licenses are generally valid across all U.S. states and territories.</p>\n\n<h3>Important Considerations:</h3>\n\n<h4>1. Residency Requirements</h4>\n<p>Establishing permanent residency typically triggers a requirement to obtain a new state license within 30-60 days.</p>\n\n<h4>2. Expiration Dates</h4>\n<p>License validity must be current; renewal may be necessary before relocation to another state.</p>\n\n<h4>3. Address Updates</h4>\n<p>Current address registration with the DMV is often mandatory when you move.</p>\n\n<h4>4. Real ID Compliance</h4>\n<p>Non-compliant licenses may require alternative federal identification for domestic air travel. Check if your state license is Real ID compliant.</p>\n\n<h4>5. Temporary Residency</h4>\n<p>Short-term residence for work or education may not require a new license; verification with local DMV is recommended.</p>\n\n<h2>State-by-State Variations</h2>\n<p>Each state has developed its own unique driver's license design, incorporating various security features, color schemes, and state-specific imagery. From California's golden bear to New York's Statue of Liberty, these designs reflect each state's individual identity.</p>\n\n<h2>Design Elements</h2>\n<p>Modern driver's licenses include several common elements across all states:</p>\n<ul>\n<li>Photo identification</li>\n<li>Full legal name</li>\n<li>Date of birth</li>\n<li>Physical description (height, weight, eye color)</li>\n<li>Address</li>\n<li>License number</li>\n<li>Issue and expiration dates</li>\n<li>Security features (holograms, barcodes, etc.)</li>\n</ul>\n\n<h2>Real ID Act Compliance</h2>\n<p>Since the Real ID Act of 2005, states have been updating their license designs to meet federal security standards. These enhanced licenses feature additional security measures and are marked with a star symbol to indicate Real ID compliance.</p>\n\n<h2>Important Note</h2>\n<p>State laws and regulations can change, so it's always wise to double-check with the Department of Motor Vehicles (DMV) in the state where you plan to use your driver's license to ensure you're in compliance with current requirements.</p>",
+      "excerpt": "Explore driver's license designs across all 50 U.S. states. Learn about design variations, Real ID compliance, interstate validity, and important considerations when using your license in different states.",
+      "publishedAt": "2023-08-14T00:00:00Z",
+      "author": "Sarah Mitchell",
+      "tags": [
+        "Driver License",
+        "Real ID",
+        "DMV Information"
+      ],
+      "views": 12223
     }
   ]
 }

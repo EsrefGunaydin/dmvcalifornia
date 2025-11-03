@@ -1,23 +1,13 @@
 import Link from 'next/link';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import CookieBanner from '../components/CookieBanner';
 import blogPostsData from '../data/blog_posts.json';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-white to-gray-50">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-primary">DMV California</h1>
-          <div className="flex gap-6">
-            <Link href="/" className="text-gray-700 hover:text-primary font-medium">
-              Home
-            </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-primary font-medium">
-              Blog
-            </Link>
-          </div>
-        </div>
-      </nav>
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <Header />
 
       <div className="container mx-auto px-4 py-16">
         {/* Hero Section */}
@@ -59,6 +49,9 @@ export default function Home() {
           <p className="text-lg">🚧 Under Construction - New Quiz Platform Coming Soon! 🚧</p>
         </div>
       </div>
-    </main>
+
+      <Footer />
+      <CookieBanner />
+    </div>
   );
 }

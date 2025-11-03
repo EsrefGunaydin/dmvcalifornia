@@ -2,7 +2,11 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import blogPostsData from '../../data/blog_posts.json';
 import officesData from '../../data/dmv_offices.json';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import CookieBanner from '../../components/CookieBanner';
 import OfficePage from './OfficePage';
+import ShareButtons from './ShareButtons';
 
 // Type for blog post
 type BlogPost = {
@@ -14,6 +18,7 @@ type BlogPost = {
   publishedAt: string;
   author: string;
   tags?: string[];
+  views?: number;
 };
 
 // Type for DMV office
@@ -47,6 +52,60 @@ function extractYouTubeId(url: string): string | null {
 function extractFirstImageFromHtml(htmlContent: string): string | null {
   const imgMatch = htmlContent.match(/<img[^>]+src="([^">]+)"/);
   return imgMatch ? imgMatch[1] : null;
+}
+
+// Generate Table of Contents from H2 headings
+function generateTableOfContents(htmlContent: string): { toc: string; processedHtml: string } {
+  const h2Regex = /<h2[^>]*>(.*?)<\/h2>/gi;
+  const headings: { text: string; id: string }[] = [];
+  let match;
+
+  // Extract all H2 headings
+  while ((match = h2Regex.exec(htmlContent)) !== null) {
+    const text = match[1].replace(/<[^>]+>/g, ''); // Remove any HTML tags from heading text
+    const id = text
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .trim();
+    headings.push({ text, id });
+  }
+
+  // Add IDs to H2 headings in the content
+  let processedHtml = htmlContent;
+  headings.forEach(({ text, id }) => {
+    const h2Pattern = new RegExp(`<h2([^>]*)>${text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}</h2>`, 'i');
+    processedHtml = processedHtml.replace(h2Pattern, `<h2$1 id="${id}">${text}</h2>`);
+  });
+
+  // Generate TOC HTML
+  if (headings.length === 0) {
+    return { toc: '', processedHtml };
+  }
+
+  const tocHtml = `
+<div class="table-of-contents bg-white border-2 border-gray-200 rounded-lg p-6 mb-8 not-prose">
+  <h2 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+    <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+    Table Of Contents
+  </h2>
+  <ol class="space-y-2">
+    ${headings.map((heading, index) => `
+    <li class="text-gray-700">
+      <a href="#${heading.id}" class="hover:text-primary transition-colors flex items-start gap-2 group">
+        <span class="text-gray-400 font-medium min-w-[1.5rem]">${index + 1}.</span>
+        <span class="group-hover:underline">${heading.text}</span>
+      </a>
+    </li>
+    `).join('')}
+  </ol>
+</div>
+  `;
+
+  return { toc: tocHtml, processedHtml };
 }
 
 // Process HTML content to improve image attributes and embed YouTube videos
@@ -313,26 +372,65 @@ function renderBlogPost(post: BlogPost) {
   });
 
   // Process content for better image SEO
-  const processedContent = processContentImages(post.content, post.title);
+  let processedContent = processContentImages(post.content, post.title);
+
+  // Generate Table of Contents for long articles (>1000 words)
+  const wordCount = post.content.replace(/<[^>]*>/g, '').split(/\s+/).length;
+  let tocHtml = '';
+
+  if (wordCount > 1000) {
+    const { toc, processedHtml } = generateTableOfContents(processedContent);
+    tocHtml = toc;
+    processedContent = processedHtml;
+
+    // Insert TOC after first paragraph
+    const firstParagraphMatch = processedContent.match(/<p[^>]*>.*?<\/p>/i);
+    if (firstParagraphMatch && tocHtml) {
+      const insertPosition = firstParagraphMatch.index! + firstParagraphMatch[0].length;
+      processedContent =
+        processedContent.slice(0, insertPosition) +
+        '\n' + tocHtml + '\n' +
+        processedContent.slice(insertPosition);
+    }
+  }
+
+  // Get all posts sorted by date for prev/next navigation
+  const sortedPosts = [...blogPostsData.posts].sort((a, b) =>
+    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+
+  const currentIndex = sortedPosts.findIndex(p => p.id === post.id);
+  const prevPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
+  const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
+
+  // Get related posts (by matching tags, or random if no tags)
+  const getRelatedPosts = () => {
+    let related: BlogPost[] = [];
+
+    // First, try to find posts with matching tags
+    if (post.tags && post.tags.length > 0) {
+      related = blogPostsData.posts.filter(p =>
+        p.id !== post.id &&
+        p.tags?.some(tag => post.tags?.includes(tag))
+      );
+    }
+
+    // If not enough related posts, add random posts
+    if (related.length < 3) {
+      const remaining = blogPostsData.posts
+        .filter(p => p.id !== post.id && !related.includes(p))
+        .sort(() => Math.random() - 0.5);
+      related = [...related, ...remaining];
+    }
+
+    return related.slice(0, 3);
+  };
+
+  const relatedPosts = getRelatedPosts();
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-primary hover:text-primary-600">
-            DMV California
-          </Link>
-          <div className="flex gap-6">
-            <Link href="/" className="text-gray-700 hover:text-primary font-medium">
-              Home
-            </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-primary font-medium">
-              Blog
-            </Link>
-          </div>
-        </div>
-      </header>
+      <Header />
 
       {/* Article */}
       <article className="container mx-auto px-4 py-12 max-w-4xl">
@@ -360,10 +458,15 @@ function renderBlogPost(post: BlogPost) {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             {post.title}
           </h1>
-          <div className="flex items-center gap-4 text-gray-600">
-            <time dateTime={post.publishedAt}>{formattedDate}</time>
-            <span>•</span>
-            <span>By {post.author}</span>
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div className="flex items-center gap-4 text-gray-600">
+              <time dateTime={post.publishedAt}>{formattedDate}</time>
+              <span>•</span>
+              <span>By {post.author}</span>
+            </div>
+
+            {/* Share Buttons */}
+            <ShareButtons postSlug={post.slug} postTitle={post.title} />
           </div>
         </header>
 
@@ -380,43 +483,160 @@ function renderBlogPost(post: BlogPost) {
               prose-strong:text-gray-900 prose-strong:font-semibold"
             dangerouslySetInnerHTML={{ __html: processedContent }}
           />
+
+          {/* Post Views Counter */}
+          {post.views && (
+            <div className="mt-8 pt-6 border-t border-gray-200 flex items-center gap-2 text-sm text-gray-500">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
+              <span>Post Views: {post.views.toLocaleString()}</span>
+            </div>
+          )}
         </div>
 
-        {/* Navigation */}
-        <div className="flex justify-between items-center border-t border-gray-200 pt-8">
-          <Link
-            href="/blog"
-            className="inline-flex items-center text-primary hover:text-primary-600 font-semibold"
-          >
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        {/* Related Stories */}
+        {relatedPosts.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-400 uppercase tracking-wider mb-6">
+              Related Stories
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {relatedPosts.map(relatedPost => {
+                const postImage = extractFirstImageFromHtml(relatedPost.content);
+                return (
+                  <Link
+                    key={relatedPost.id}
+                    href={`/${relatedPost.slug}`}
+                    className="group block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all"
+                  >
+                    {postImage ? (
+                      <div className="aspect-[16/10] overflow-hidden bg-gray-100">
+                        <img
+                          src={postImage}
+                          alt={relatedPost.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          loading="lazy"
+                        />
+                      </div>
+                    ) : (
+                      <div className="aspect-[16/10] bg-gradient-to-br from-primary-100 to-primary-50 flex items-center justify-center">
+                        <svg className="w-16 h-16 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                      </div>
+                    )}
+                    <div className="p-4">
+                      <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors line-clamp-2">
+                        {relatedPost.title}
+                      </h3>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Prev/Next Navigation */}
+        <div className="border-t border-gray-200 pt-8 mb-8">
+          <div className="flex justify-between items-center mb-6">
+            <Link
+              href="/blog"
+              className="inline-flex items-center text-primary hover:text-primary-600 font-semibold"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            Back to Blog
-          </Link>
+              <svg
+                className="w-5 h-5 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+              Back to Blog
+            </Link>
+          </div>
+
+          {(prevPost || nextPost) && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Previous Article */}
+              {prevPost ? (
+                <Link
+                  href={`/${prevPost.slug}`}
+                  className="group block bg-white rounded-lg shadow-sm hover:shadow-md transition-all border border-gray-200 overflow-hidden"
+                >
+                  <div className="flex h-full">
+                    {extractFirstImageFromHtml(prevPost.content) && (
+                      <div className="w-24 h-24 flex-shrink-0 overflow-hidden bg-gray-100">
+                        <img
+                          src={extractFirstImageFromHtml(prevPost.content) || ''}
+                          alt={prevPost.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
+                    <div className="flex-1 p-4 flex flex-col justify-center">
+                      <div className="text-xs text-gray-500 mb-1 flex items-center">
+                        <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        </svg>
+                        Previous Article
+                      </div>
+                      <h3 className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors line-clamp-2">
+                        {prevPost.title}
+                      </h3>
+                    </div>
+                  </div>
+                </Link>
+              ) : (
+                <div></div>
+              )}
+
+              {/* Next Article */}
+              {nextPost && (
+                <Link
+                  href={`/${nextPost.slug}`}
+                  className="group block bg-white rounded-lg shadow-sm hover:shadow-md transition-all border border-gray-200 overflow-hidden"
+                >
+                  <div className="flex h-full">
+                    <div className="flex-1 p-4 flex flex-col justify-center text-right">
+                      <div className="text-xs text-gray-500 mb-1 flex items-center justify-end">
+                        Next Article
+                        <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                      <h3 className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors line-clamp-2">
+                        {nextPost.title}
+                      </h3>
+                    </div>
+                    {extractFirstImageFromHtml(nextPost.content) && (
+                      <div className="w-24 h-24 flex-shrink-0 overflow-hidden bg-gray-100">
+                        <img
+                          src={extractFirstImageFromHtml(nextPost.content) || ''}
+                          alt={nextPost.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
+                  </div>
+                </Link>
+              )}
+            </div>
+          )}
         </div>
       </article>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-8 mt-12">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-400">
-            © {new Date().getFullYear()} DMV California. All rights reserved.
-          </p>
-          <p className="text-sm text-gray-500 mt-2">
-            Not affiliated with the California Department of Motor Vehicles
-          </p>
-        </div>
-      </footer>
+      <Footer />
+      <CookieBanner />
     </div>
   );
 }

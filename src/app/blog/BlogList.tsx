@@ -26,6 +26,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
   const [selectedTag, setSelectedTag] = useState<string>('all');
   const [sortBy, setSortBy] = useState<'newest' | 'oldest'>('newest');
   const [expandedSection, setExpandedSection] = useState<FilterSection>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
 
   // Get all unique tags
   const allTags = useMemo(() => {
@@ -40,6 +41,15 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
   const filteredPosts = useMemo(() => {
     let filtered = posts;
 
+    // Filter by search query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      filtered = filtered.filter(post => {
+        const searchableText = `${post.title} ${post.excerpt} ${post.content}`.toLowerCase();
+        return searchableText.includes(query);
+      });
+    }
+
     // Filter by tag
     if (selectedTag !== 'all') {
       filtered = filtered.filter(post => post.tags?.includes(selectedTag));
@@ -53,20 +63,21 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
     });
 
     return filtered;
-  }, [posts, selectedTag, sortBy]);
+  }, [posts, selectedTag, sortBy, searchQuery]);
 
   return (
     <>
       {/* Compact Filters */}
       <section className="bg-white border-b shadow-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-3">
-          <div className="flex flex-wrap items-center gap-3">
-            {/* Results count */}
-            <div className="text-sm font-medium text-gray-900">
-              {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'}
-            </div>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center gap-3">
+              {/* Results count */}
+              <div className="text-sm font-medium text-gray-900">
+                {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'}
+              </div>
 
-            <div className="h-4 w-px bg-gray-300"></div>
+              <div className="h-4 w-px bg-gray-300"></div>
 
             {/* Sort Toggle */}
             <button
@@ -101,14 +112,52 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
             </button>
 
             {/* Clear filters if any active */}
-            {selectedTag !== 'all' && (
+            {(selectedTag !== 'all' || searchQuery) && (
               <button
-                onClick={() => setSelectedTag('all')}
+                onClick={() => {
+                  setSelectedTag('all');
+                  setSearchQuery('');
+                }}
                 className="text-sm text-gray-500 hover:text-gray-700 underline"
               >
-                Clear
+                Clear All
               </button>
             )}
+            </div>
+
+            {/* Search Input */}
+            <div className="relative">
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search articles..."
+                className="pl-10 pr-4 py-2 rounded-full border border-gray-300 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary-100 text-sm w-64"
+              />
+              <svg
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              {searchQuery && (
+                <button
+                  onClick={() => setSearchQuery('')}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
+                >
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Expandable Sort Options */}

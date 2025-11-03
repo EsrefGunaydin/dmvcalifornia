@@ -7,7 +7,16 @@
   --background-rgb: 255, 255, 255;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+}
+
+/* Offset anchor links for fixed headers */
+h2[id] {
+  scroll-margin-top: 100px;
 }

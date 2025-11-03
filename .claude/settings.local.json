@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(lsof:*)",
-      "Bash(xargs kill:*)"
+      "Bash(xargs kill:*)",
+      "Bash(if [ -f scripts/blog_posts_full.json ])",
+      "Bash(then)",
+      "Bash(else)",
+      "Bash(fi)"
     ],
     "deny": [],
     "ask": []
