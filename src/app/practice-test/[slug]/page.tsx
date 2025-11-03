@@ -151,6 +151,7 @@ export default function QuizPage({ params }: { params: { slug: string } }) {
                     </li>
                   </ul>
                 </div>
+                </div>
               </div>
             </div>
           </div>
