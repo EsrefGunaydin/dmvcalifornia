@@ -81,6 +81,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/dmv-turkish-test/dmv-california-turkce-trafik-isareti-testi`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
   ];
 
   return [...staticPages, ...blogPages, ...quizPages, ...turkishPages];

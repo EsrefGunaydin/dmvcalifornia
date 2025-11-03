@@ -1,0 +1,126 @@
+{
+  "quiz": {
+    "id": "turkish-sign-test",
+    "title": "DMV Türkçe Trafik İşareti Testi / DMV Turkish Traffic Sign Test",
+    "description": "DMV California Türkçe Trafik İşareti Testi - 8 soruluk trafik işaretleri testi. California DMV Turkish Traffic Sign Test with 8 sign identification questions.",
+    "category": "Turkish Tests / Türkçe Testler",
+    "slug": "dmv-california-turkce-trafik-isareti-testi",
+    "passingScore": 75,
+    "timeLimit": 10,
+    "language": "tr",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/divided-highway.png",
+        "options": [
+          "İleride şeritler birleşiyor",
+          "İleride yol çift yönlü bölünmüş otoyol oluyor",
+          "İleride yol tıkalı"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret yolun ileride çift yönlü bölünmüş otoyola dönüştüğünü gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 2,
+        "question": "Bu işaret kimin park edebileceğini göstermektedir?",
+        "image": "/images/traffic-signs/handicap-parking.png",
+        "options": [
+          "Yalnız tekerlekli sandalye kullanan kişilerin",
+          "Özel levhası ya da plakası olmayan engellilerin",
+          "Yalnız özel levhası ya da plakası olan engellilerin"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Engelli park yerleri sadece özel levhası veya plakası olan kişiler içindir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 3,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/one-way-right.png",
+        "options": [
+          "Tek yönlü sokak – trafik sağa doğru gider",
+          "Tek şeritli yol",
+          "İleride tüm trafik sağa dönmelidir"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Bu işaret tek yönlü sokağı ve trafik yönünü gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 4,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/left-turn-u-turn.png",
+        "options": [
+          "Yeşil ok ışığında sola dönüş veya U dönüşüne izin verilir",
+          "Herhangi bir yeşil ışıkta sola dönüş veya U dönüşüne izin verilir",
+          "Sola dönmeli ya da bir U dönüşü yapmalısınız"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Bu işaret yeşil ok ışığında sola dönüş veya U dönüşü yapabileceğinizi gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 5,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/stop-sign.webp",
+        "options": [
+          "Yavaşla ve devam et",
+          "Her seferinde tam dur",
+          "Yol ver"
+        ],
+        "correctAnswer": 1,
+        "explanation": "STOP işareti her durumda tam durmanız gerektiği anlamına gelir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 6,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/yield-sign.webp",
+        "options": [
+          "Tam dur",
+          "Diğer araçlara yol ver",
+          "Hızlan"
+        ],
+        "correctAnswer": 1,
+        "explanation": "YIELD (yol ver) işareti diğer araçlara ve yayalara öncelik vermeniz gerektiği anlamına gelir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 7,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/no-u-turn-sign.webp",
+        "options": [
+          "U dönüşü bölgesi",
+          "U dönüşü yasak",
+          "Geçiş yasak"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret U dönüşü yapmanın yasak olduğunu gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 8,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/wrong-way-sign.webp",
+        "options": [
+          "Ters yönde gidiyorsunuz",
+          "Yol kapalı",
+          "Tek yönlü sokak"
+        ],
+        "correctAnswer": 0,
+        "explanation": "WRONG WAY işareti ters yönde gittiğinizi ve derhal dönmeniz gerektiğini gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      }
+    ]
+  }
+}
