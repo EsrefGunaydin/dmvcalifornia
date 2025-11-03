@@ -15,6 +15,9 @@ export default function Header() {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-6">
+            <Link href="/practice-test" className="text-gray-700 hover:text-primary font-medium transition-colors">
+              Practice Tests
+            </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Blog
             </Link>
