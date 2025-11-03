@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import QuizEngine from '@/components/quiz/QuizEngine';
-import Leaderboard from '@/components/Leaderboard';
+import Leaderboard from '@/components/quiz/Leaderboard';
 import turkishSignTestData from '@/data/turkish-sign-test.json';
 import leaderboardData from '@/data/leaderboard.json';
 
