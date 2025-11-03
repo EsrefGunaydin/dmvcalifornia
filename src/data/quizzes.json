@@ -167,19 +167,6 @@
         },
         {
           "id": 13,
-          "question": "You sold your vehicle. Notify ___ within 5 days.",
-          "options": [
-            "Your automobile club",
-            "Your insurance company",
-            "DMV"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Notify DMV within 5 days of sale.",
-          "category": "Vehicle Registration",
-          "difficulty": "easy"
-        },
-        {
-          "id": 14,
           "question": "A person can ride in the back of a pick up truck when the:",
           "options": [
             "Sides of the pickup bed are at least 24 inches high",
@@ -192,7 +179,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 15,
+          "id": 14,
           "question": "The 'implied consent law' means you have given consent:",
           "options": [
             "To vehicle inspection for alcohol",
@@ -205,7 +192,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 16,
+          "id": 15,
           "question": "After passing another car, it is safe to return to the driving lane when:",
           "options": [
             "The driver you just passed signals you to return to the lane",
@@ -218,7 +205,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 17,
+          "id": 16,
           "question": "What is a safety zone?",
           "options": [
             "An empty lane next to the freeway dividers",
@@ -231,7 +218,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 18,
+          "id": 17,
           "question": "You are on the freeway and traffic is merging into your lane. You should:",
           "options": [
             "Make room for the merging traffic, if possible",
@@ -241,19 +228,6 @@
           "correctAnswer": 0,
           "explanation": "Be courteous and make room for merging traffic when safe. Change lanes or adjust speed if possible to allow smooth merging.",
           "category": "Freeway Driving",
-          "difficulty": "easy"
-        },
-        {
-          "id": 19,
-          "question": "When can you cross a solid double yellow line to pass another vehicle?",
-          "options": [
-            "When you know there are no cars coming towards you",
-            "When a slow moving vehicle refuses to use a turn-out lane",
-            "Under no circumstances"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Never cross double solid yellow lines - passing is prohibited.",
-          "category": "Lane Markings",
           "difficulty": "easy"
         },
         {
@@ -267,10 +241,10 @@
           "explanation": "Flashing yellow means proceed with caution.",
           "category": "Traffic Signals",
           "difficulty": "easy",
-          "id": 20
+          "id": 18
         },
         {
-          "id": 21,
+          "id": 19,
           "question": "You are driving up a corner with a flashing yellow signal light. What should you do?",
           "options": [
             "Wait for the green light before entering",
@@ -282,7 +256,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 22,
+          "id": 20,
           "question": "A curb painted red means:",
           "options": [
             "Parking is for emergency vehicles only",
@@ -295,7 +269,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 23,
+          "id": 21,
           "question": "There is a railroad crossing ahead and you can't see if any trains are coming until you're just about to enter the intersection. The speed limit is:",
           "options": [
             "10 m.p.h.",
@@ -308,7 +282,7 @@
           "difficulty": "hard"
         },
         {
-          "id": 24,
+          "id": 22,
           "question": "You are driving on a highway. Your tire suddenly goes flat and you need to pull over and get help. Where should you pull over?",
           "options": [
             "In the right-hand lane",
@@ -321,7 +295,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 25,
+          "id": 23,
           "question": "To see vehicles in your blind spots, you should check:",
           "options": [
             "The inside rearview mirror",
@@ -334,7 +308,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 26,
+          "id": 24,
           "question": "You are involved in an accident and there is more than $500 in damages. You must:",
           "options": [
             "Show evidence that you have insurance only to a peace officer",
@@ -347,7 +321,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 27,
+          "id": 25,
           "question": "To turn left from a one-way street with multiple lanes onto a two-way street, start the turn in:",
           "options": [
             "The far left lane",
@@ -360,7 +334,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 28,
+          "id": 26,
           "question": "You should avoid driving through deep puddles or flowing water. If you must drive through water, the California Driver Handbook recommends you try them by:",
           "options": [
             "Driving at an increased accelerator at the same time",
@@ -373,20 +347,7 @@
           "difficulty": "hard"
         },
         {
-          "id": 29,
-          "question": "A curb painted blue means:",
-          "options": [
-            "Loading or unloading passengers only",
-            "Parking for a limited time",
-            "Parking for disabled person with placard"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Blue curbs are for disabled parking only.",
-          "category": "Parking",
-          "difficulty": "easy"
-        },
-        {
-          "id": 30,
+          "id": 27,
           "question": "A triangular orange sign on the back of a slow-moving vehicle indicates that the vehicle is traveling at:",
           "options": [
             "Less than 25 mph",
@@ -409,7 +370,7 @@
           "explanation": "Motorcycles are smaller and harder to see in traffic.",
           "category": "Sharing the Road",
           "difficulty": "easy",
-          "id": 31
+          "id": 28
         },
         {
           "question": "You want to make a right turn at an upcoming intersection. You should slow down and:",
@@ -422,7 +383,7 @@
           "explanation": "Signal at least 100 feet before turning.",
           "category": "Turning",
           "difficulty": "easy",
-          "id": 32
+          "id": 29
         },
         {
           "question": "When you reach a corner without a traffic light or sign at the same time as vehicles on the cross street, you must yield the right-of-way to",
@@ -435,10 +396,10 @@
           "explanation": "At unmarked intersections, yield to traffic on your right.",
           "category": "Right-of-Way",
           "difficulty": "easy",
-          "id": 33
+          "id": 30
         },
         {
-          "id": 34,
+          "id": 31,
           "question": "Checking traffic behind you:",
           "options": [
             "Will help you know if you are being followed by a tailgater",
@@ -461,10 +422,10 @@
           "explanation": "Drivers must give cyclists safe passing space.",
           "category": "Sharing the Road",
           "difficulty": "easy",
-          "id": 35
+          "id": 32
         },
         {
-          "id": 36,
+          "id": 33,
           "question": "Where to stop with no limit line?",
           "options": [
             "Far enough to see cross traffic",
@@ -477,7 +438,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 37,
+          "id": 34,
           "question": "Signal for a turn during the last ___ feet before the turn.",
           "options": [
             "50",
@@ -490,7 +451,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 38,
+          "id": 35,
           "question": "You reach an intersection at the same time as the driver on your left. Who goes first?",
           "options": [
             "The driver on your left goes first",
@@ -503,33 +464,7 @@
           "difficulty": "medium"
         },
         {
-          "question": "If you sell your vehicle, you must notify ______ within five days.",
-          "options": [
-            "Your automobile club",
-            "The DMV",
-            "Your insurance company"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Notify DMV within 5 days of selling your vehicle.",
-          "category": "Vehicle Registration",
-          "difficulty": "easy",
-          "id": 39
-        },
-        {
-          "id": 40,
-          "question": "What is a safety zone?",
-          "options": [
-            "An empty lane next to the freeway dividers",
-            "The median strip on a divided highway",
-            "A space set aside for pedestrians"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Safety zones are marked areas for pedestrians at transit stops.",
-          "category": "Pedestrians",
-          "difficulty": "medium"
-        },
-        {
-          "id": 41,
+          "id": 36,
           "question": "This sign means:",
           "options": [
             "Drive to the right",
@@ -539,7 +474,9 @@
           "correctAnswer": 0,
           "explanation": "This sign indicates you must keep to the right of a divider or obstruction ahead.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-1.webp",
+          "hasImage": true
         },
         {
           "question": "A large truck is ahead of you and is turning right onto a street with two lanes in each direction. The truck:",
@@ -552,7 +489,7 @@
           "explanation": "Large trucks need to swing wide to complete right turns safely.",
           "category": "Sharing the Road",
           "difficulty": "easy",
-          "id": 42
+          "id": 37
         },
         {
           "question": "Which one of the following is NOT a safe driving habit?",
@@ -565,10 +502,10 @@
           "explanation": "Fixing your eyes on one vehicle reduces awareness of surroundings.",
           "category": "Safe Driving",
           "difficulty": "medium",
-          "id": 43
+          "id": 38
         },
         {
-          "id": 44,
+          "id": 39,
           "question": "What is the benefit of a space cushion around your vehicle?",
           "options": [
             "Other drivers crowd in front of you, improving traffic flow",
@@ -591,10 +528,10 @@
           "explanation": "Orange signs warn of construction zones with workers and equipment.",
           "category": "Construction Zones",
           "difficulty": "easy",
-          "id": 45
+          "id": 40
         },
         {
-          "question": "[IMAGE: LEFT TURN YIELD ON GREEN sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "You may turn right when the light is green",
             "You may turn left on a green light when it is safe",
@@ -605,7 +542,72 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
+          "image": "/images/traffic-signs/left-turn-yield-on-green-sign.webp",
+          "id": 41
+        },
+        {
+          "id": 42,
+          "question": "Who has the right-of-way at an intersection where there are no crosswalks?",
+          "options": [
+            "The vehicle, but it should slow down",
+            "The pedestrian, always",
+            "The pedestrian, but only when a crosswalk is marked"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Pedestrians always have right-of-way, even without marked crosswalks.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 43,
+          "question": "Should you always drive slower than other traffic?",
+          "options": [
+            "No, you can block traffic when you drive too slowly",
+            "Yes, it is a good defensive driving technique",
+            "Yes, it is always safer than driving faster"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Driving significantly slower than traffic flow can be dangerous and cause congestion. Drive at a safe speed that matches traffic conditions.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 44,
+          "question": "Why should your passengers wear a seat belt?",
+          "options": [
+            "It's the law",
+            "It helps prevent accidents",
+            "Passengers are not required to wear seat belts"
+          ],
+          "correctAnswer": 0,
+          "explanation": "California law requires all vehicle occupants to wear seat belts.",
+          "category": "Safety Equipment",
+          "difficulty": "easy"
+        },
+        {
+          "id": 45,
+          "question": "You want to park downhill and there is no curb. Which way do you turn your front wheels?",
+          "options": [
+            "Parallel to the road",
+            "Away from the side of the road",
+            "Towards the side of the road"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Turn wheels toward the side when parking downhill without a curb.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "question": "Driving so slowly as to interfere with normal or reasonable flow of traffic, except when necessary for safety, is",
+          "options": [
+            "A violation of the law",
+            "The right of any driver",
+            "Legal, but not advisable"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Impeding traffic flow is a violation unless necessary for safety.",
+          "category": "Traffic Laws",
+          "difficulty": "easy",
           "id": 46
         }
       ]
@@ -621,14 +623,14 @@
       "questions": [
         {
           "id": 1,
-          "question": "You sold your vehicle. You must notify ___ within 5 days.",
+          "question": "If you sell your vehicle, you must notify ___ within 5 days.",
           "options": [
             "Your insurance company",
-            "DMV",
-            "Your automobile club"
+            "Your bank or credit union",
+            "The DMV"
           ],
-          "correctAnswer": 1,
-          "explanation": "Notify DMV within 5 days of selling your vehicle.",
+          "correctAnswer": 2,
+          "explanation": "You must notify the DMV within 5 days of selling your vehicle to avoid liability for future tickets or accidents.",
           "category": "Vehicle Registration",
           "difficulty": "easy"
         },
@@ -673,19 +675,6 @@
         },
         {
           "id": 5,
-          "question": "You are driving on a highway. Your tire suddenly goes flat and you need to pull over and get help. Where should you pull over?",
-          "options": [
-            "In the right-hand lane",
-            "Wherever your car will be visible for 200 feet from the front",
-            "Off the pavement"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Pull completely off the pavement onto the shoulder for safety.",
-          "category": "Emergencies",
-          "difficulty": "easy"
-        },
-        {
-          "id": 6,
           "question": "When driving on a multilane street with two-way traffic:",
           "options": [
             "Drive alongside the other vehicles so the drivers can see you",
@@ -698,7 +687,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 7,
+          "id": 6,
           "question": "This sign means:",
           "options": [
             "The road curves to the left",
@@ -708,10 +697,12 @@
           "correctAnswer": 1,
           "explanation": "This sign prohibits left turns. You must go straight or turn right.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-3.webp",
+          "hasImage": true
         },
         {
-          "id": 8,
+          "id": 7,
           "question": "When can you drive in a bike lane?",
           "options": [
             "During rush hour traffic if there are no bicyclists in the bike lane",
@@ -724,7 +715,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 9,
+          "id": 8,
           "question": "A solid yellow line next to a broken yellow line means that vehicles:",
           "options": [
             "In both directions may pass",
@@ -737,7 +728,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 10,
+          "id": 9,
           "question": "Following distance should increase when you:",
           "options": [
             "Follow a small passenger car",
@@ -750,7 +741,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 11,
+          "id": 10,
           "question": "It is against the law to enter an intersection when:",
           "options": [
             "The light is yellow",
@@ -763,7 +754,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 12,
+          "id": 11,
           "question": "You are driving on a two-way street and you want to turn left at the corner. Give the right-of-way to:",
           "options": [
             "Pedestrians on the sidewalk waiting for a 'WALK' signal",
@@ -776,7 +767,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 13,
+          "id": 12,
           "question": "What is the benefit of a space cushion around your vehicle?",
           "options": [
             "Other drivers can \"cut\" in front of you, improving traffic flow",
@@ -786,19 +777,6 @@
           "correctAnswer": 1,
           "explanation": "A space cushion gives you time and space to react to unexpected situations, reducing your risk of a collision.",
           "category": "Safe Driving",
-          "difficulty": "easy"
-        },
-        {
-          "id": 14,
-          "question": "This sign means:",
-          "options": [
-            "The road ahead is closed to traffic in all directions",
-            "You cannot enter the road from your direction",
-            "Do not enter unless it is safe"
-          ],
-          "correctAnswer": 1,
-          "explanation": "This 'Do Not Enter' sign means you cannot enter from your direction - it's a one-way street or wrong way.",
-          "category": "Traffic Signs",
           "difficulty": "easy"
         },
         {
@@ -812,10 +790,10 @@
           "explanation": "The legal BAC limit for drivers 21 and over is 0.08%.",
           "category": "DUI Laws",
           "difficulty": "easy",
-          "id": 15
+          "id": 13
         },
         {
-          "id": 16,
+          "id": 14,
           "question": "Two sets of solid double yellow lines two feet or more apart:",
           "options": [
             "May only be crossed to enter a private driveway",
@@ -828,7 +806,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 17,
+          "id": 15,
           "question": "You should scan 10 to 15 seconds ahead of you:",
           "options": [
             "To avoid using your side mirrors",
@@ -841,7 +819,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 18,
+          "id": 16,
           "question": "A flashing red traffic light at an intersection means:",
           "options": [
             "Slow down before entering",
@@ -854,7 +832,7 @@
           "difficulty": "easy"
         },
         {
-          "question": "[IMAGE: WRONG WAY sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Do not enter the road ahead unless it is safe",
             "The road ahead is closed to all traffic",
@@ -865,10 +843,11 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 19
+          "id": 17,
+          "image": "/images/traffic-signs/wrong-way-sign.webp"
         },
         {
-          "id": 20,
+          "id": 18,
           "question": "It is illegal to block an intersection:",
           "options": [
             "Under any circumstances",
@@ -881,7 +860,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 21,
+          "id": 19,
           "question": "Which of these statements is true about driving and taking drugs?",
           "options": [
             "Most drugs taken for headaches or colds can make a person drowsy",
@@ -894,7 +873,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 22,
+          "id": 20,
           "question": "You are approaching a green traffic light, but traffic is blocking the intersection. What is the best thing to do?",
           "options": [
             "Partially enter the intersection to establish your right-of-way",
@@ -907,7 +886,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 23,
+          "id": 21,
           "question": "You can avoid skidding on a slippery surface by:",
           "options": [
             "Shifting to a lower gear after you start down a steep hill",
@@ -920,7 +899,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 24,
+          "id": 22,
           "question": "Which of these statements is true about blind spots?",
           "options": [
             "You only need to turn and look over your right shoulder for lane changes to the right or left",
@@ -933,7 +912,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 25,
+          "id": 23,
           "question": "Backing your vehicle is:",
           "options": [
             "Always dangerous to do",
@@ -946,7 +925,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 26,
+          "id": 24,
           "question": "You can drive off the road to pass another vehicle:",
           "options": [
             "If the vehicle ahead is turning left",
@@ -959,7 +938,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 27,
+          "id": 25,
           "question": "A person can ride in the back of a pick up truck when the:",
           "options": [
             "Pickup bed has a seat bolted to the frame",
@@ -972,7 +951,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 28,
+          "id": 26,
           "question": "Which of these is true about signal persons at road construction sites?",
           "options": [
             "You must follow their instructions or you may see orange cones",
@@ -985,7 +964,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 29,
+          "id": 27,
           "question": "You want to park uphill on a two-way road and there is no curb. Which way do you turn your front wheels?",
           "options": [
             "So they face straight ahead",
@@ -998,7 +977,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 30,
+          "id": 28,
           "question": "You must stop at the intersection ahead. Just before the intersection, you have to cross railroad tracks. You should stop before you cross the railroad tracks when:",
           "options": [
             "You don't have room to completely cross the tracks",
@@ -1011,7 +990,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 31,
+          "id": 29,
           "question": "You can make a right turn at a red light, after checking for pedestrians and other traffic:",
           "options": [
             "Only if there is a sign that says it is OK",
@@ -1024,7 +1003,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 32,
+          "id": 30,
           "question": "Illegal BAC for 21+ drivers is ___ or more.",
           "options": [
             "0.05%",
@@ -1037,20 +1016,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 33,
-          "question": "This sign means:",
-          "options": [
-            "Drive in the right lane at all times",
-            "Stay in the right lane if you are driving slower than other traffic",
-            "Slower traffic has the right-of-way"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Slower traffic should use the right lane to allow faster traffic to pass.",
-          "category": "Traffic Signs",
-          "difficulty": "medium"
-        },
-        {
-          "id": 34,
+          "id": 31,
           "question": "If drivers want to see cars in their blind spots, they should check:",
           "options": [
             "The inside rearview mirror",
@@ -1063,46 +1029,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 35,
-          "question": "If you sell your vehicle, you must notify ___ within 5 days.",
-          "options": [
-            "Your insurance company",
-            "Your bank or credit union",
-            "The DMV"
-          ],
-          "correctAnswer": 2,
-          "explanation": "You must notify the DMV within 5 days of selling your vehicle to avoid liability for future tickets or accidents.",
-          "category": "Vehicle Registration",
-          "difficulty": "easy"
-        },
-        {
-          "id": 36,
-          "question": "This sign means:",
-          "options": [
-            "The road ahead has many curves",
-            "There is a sharp curve in the road ahead",
-            "The road ahead may be slippery"
-          ],
-          "correctAnswer": 2,
-          "explanation": "This warning sign indicates slippery conditions ahead. Drivers should reduce speed and use caution.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 37,
-          "question": "If you sell your vehicle, you must notify ___ within 5 days.",
-          "options": [
-            "Your insurance company",
-            "Your bank or credit union",
-            "The DMV"
-          ],
-          "correctAnswer": 2,
-          "explanation": "You must notify the DMV within 5 days of selling your vehicle.",
-          "category": "Vehicle Registration",
-          "difficulty": "easy"
-        },
-        {
-          "id": 38,
+          "id": 32,
           "question": "Where should you stop when there is no limit line?",
           "options": [
             "Out far enough to see cross traffic",
@@ -1125,10 +1052,10 @@
           "explanation": "Never block an intersection under any circumstances.",
           "category": "Intersections",
           "difficulty": "easy",
-          "id": 39
+          "id": 33
         },
         {
-          "id": 40,
+          "id": 34,
           "question": "When can you merge into a bike lane for a right turn?",
           "options": [
             "Under no circumstances",
@@ -1141,7 +1068,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 41,
+          "id": 35,
           "question": "When is it legal to drive faster than the posted speed limit?",
           "options": [
             "Never",
@@ -1154,7 +1081,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 42,
+          "id": 36,
           "question": "Seat belts are not effective:",
           "options": [
             "When going over 40 m.p.h.",
@@ -1167,7 +1094,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 43,
+          "id": 37,
           "question": "A car is coming towards you in a residential area. Both of you will pass a parked car at the same time. You should steer:",
           "options": [
             "Closer to the oncoming car than the parked car",
@@ -1180,7 +1107,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 44,
+          "id": 38,
           "question": "You are approaching a railroad crossing. The lights are flashing red. You must:",
           "options": [
             "Slow down before crossing",
@@ -1193,7 +1120,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 45,
+          "id": 39,
           "question": "When five or more vehicles are following you on a narrow two lane road, you should:",
           "options": [
             "Continue driving and ignore them",
@@ -1206,7 +1133,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 46,
+          "id": 40,
           "question": "Driving under the influence of any medication which impairs your driving is permitted:",
           "options": [
             "Under no circumstances",
@@ -1217,6 +1144,84 @@
           "explanation": "It is illegal to drive under the influence of any substance that impairs your ability to drive safely, including prescription and over-the-counter medications.",
           "category": "DUI Laws",
           "difficulty": "easy"
+        },
+        {
+          "question": "When a school bus with flashing red lights has stopped on the road ahead of you, you must",
+          "options": [
+            "Slow to 10 m.p.h.",
+            "Stop until the lights stop flashing",
+            "Change lanes and pass cautiously"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always stop when a school bus has flashing red lights.",
+          "category": "School Zones",
+          "difficulty": "easy",
+          "id": 41
+        },
+        {
+          "id": 42,
+          "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ___ or more.",
+          "options": [
+            "Five hundredths (0.05) of one percent",
+            "One tenth (0.10) of one percent",
+            "Eight hundredths (0.08) of one percent"
+          ],
+          "correctAnswer": 2,
+          "explanation": "The legal BAC limit for drivers 21 and over is 0.08%.",
+          "category": "DUI Laws",
+          "difficulty": "easy"
+        },
+        {
+          "question": "When you hear the siren or see the red emergency light of a closely approaching ambulance, police vehicle, or fire truck, you must",
+          "options": [
+            "Drive to the right edge of the road and stop",
+            "Move in to the right lane and drive slowly until has passed",
+            "Speed up to clear traffic"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Pull to the right edge and stop for emergency vehicles.",
+          "category": "Emergency Vehicles",
+          "difficulty": "easy",
+          "id": 43
+        },
+        {
+          "id": 44,
+          "question": "You just sold your vehicle. You must notify the DMV within ___ days.",
+          "options": [
+            "5",
+            "10",
+            "15"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle.",
+          "category": "Vehicle Registration",
+          "difficulty": "medium"
+        },
+        {
+          "question": "Carpool lanes are marked with a diamond symbol. To use these lanes during the special hours shown on the signs you must",
+          "options": [
+            "Be driving a van or bus",
+            "Drive at the speed limit or have your lights on",
+            "Have the minimum number of passengers shown on the signs"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Must have minimum number of passengers indicated on carpool signs.",
+          "category": "Lane Usage",
+          "difficulty": "easy",
+          "id": 45
+        },
+        {
+          "question": "You are driving a slow moving vehicle on a winding two-lane highway. You must pull over when it is safe and let other drivers pass when you are followed by",
+          "options": [
+            "3 vehicles",
+            "4 vehicles",
+            "5 or more vehicles"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Pull over to let traffic pass if 5 or more vehicles are following you.",
+          "category": "Traffic Laws",
+          "difficulty": "medium",
+          "id": 46
         }
       ]
     },
@@ -1448,7 +1453,9 @@
           "correctAnswer": 1,
           "explanation": "'Do Not Enter' means you cannot enter from your direction.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-5.webp",
+          "hasImage": true
         },
         {
           "id": 18,
@@ -1540,7 +1547,7 @@
           "difficulty": "medium"
         },
         {
-          "question": "[IMAGE: STOP sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Stop",
             "Stop only if other vehicles are present",
@@ -1551,7 +1558,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 4
+          "id": 4,
+          "image": "/images/traffic-signs/stop-sign.webp"
         },
         {
           "id": 5,
@@ -1841,19 +1849,6 @@
           "id": 6,
           "question": "This sign means:",
           "options": [
-            "You cannot turn left",
-            "You cannot make a U-turn",
-            "You cannot enter the side road"
-          ],
-          "correctAnswer": 1,
-          "explanation": "This sign prohibits U-turns at this location.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 7,
-          "question": "This sign means:",
-          "options": [
             "Right lane ends ahead",
             "No right turn",
             "Side road on the right"
@@ -1861,7 +1856,9 @@
           "correctAnswer": 0,
           "explanation": "This warning sign indicates that the right lane ends ahead and traffic must merge left.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-7.webp",
+          "hasImage": true
         },
         {
           "question": "If a police officer asks you to take an alcohol test, you may choose:",
@@ -1874,15 +1871,15 @@
           "explanation": "You can choose blood, breath, or urine test for BAC testing.",
           "category": "DUI Laws",
           "difficulty": "medium",
-          "id": 8
+          "id": 7
         },
         {
-          "id": 9,
+          "id": 8,
           "question": "Which way do you turn your front wheels to park uphill next to a curb?",
           "options": [
             "Parallel to the curb",
-            "To the left\u2014away from the curb",
-            "To the right\u2014into the curb"
+            "To the left—away from the curb",
+            "To the right—into the curb"
           ],
           "correctAnswer": 1,
           "explanation": "When parking uphill next to a curb, turn your wheels away from the curb (to the left). If the car rolls, it will roll into the curb and stop.",
@@ -1900,10 +1897,10 @@
           "explanation": "Never park next to a red curb - it's a no-stopping zone.",
           "category": "Parking",
           "difficulty": "easy",
-          "id": 10
+          "id": 9
         },
         {
-          "id": 11,
+          "id": 10,
           "question": "You sold your vehicle. You must notify _____ within 5 days.",
           "options": [
             "Your insurance company",
@@ -1916,7 +1913,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 12,
+          "id": 11,
           "question": "You want to park downhill and there is no curb. Which way do you turn your front wheels?",
           "options": [
             "Towards the center of the road",
@@ -1929,7 +1926,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 13,
+          "id": 12,
           "question": "Why should your passengers wear a seat belt?",
           "options": [
             "It's the law",
@@ -1939,19 +1936,6 @@
           "correctAnswer": 0,
           "explanation": "California law requires all vehicle occupants to wear seat belts.",
           "category": "Safety Equipment",
-          "difficulty": "easy"
-        },
-        {
-          "id": 14,
-          "question": "This sign means:",
-          "options": [
-            "Road closed to all traffic",
-            "You cannot enter from your direction",
-            "Do not enter unless safe"
-          ],
-          "correctAnswer": 1,
-          "explanation": "'Do Not Enter' prohibits entry from your direction.",
-          "category": "Traffic Signs",
           "difficulty": "easy"
         },
         {
@@ -1965,7 +1949,7 @@
           "explanation": "Maximum 25 mph in school zones when children are present.",
           "category": "School Zones",
           "difficulty": "easy",
-          "id": 15
+          "id": 13
         },
         {
           "question": "When you approach a 'blind' intersection (you can't see 100 feet down the cross street) and there is no STOP or YIELD sign placed at the corner, the speed limit is",
@@ -1978,10 +1962,10 @@
           "explanation": "Speed limit at blind intersections is 15 mph.",
           "category": "Speed Limits",
           "difficulty": "medium",
-          "id": 16
+          "id": 14
         },
         {
-          "id": 17,
+          "id": 15,
           "question": "You are driving at night and using high beams. Dim your lights when you get closer than _____ feet from the car ahead.",
           "options": [
             "300",
@@ -2004,7 +1988,7 @@
           "explanation": "Cool off before driving to avoid emotional driving.",
           "category": "Safe Driving",
           "difficulty": "easy",
-          "id": 18
+          "id": 16
         },
         {
           "question": "California's 'Basic Speed Law' says:",
@@ -2017,10 +2001,10 @@
           "explanation": "Basic Speed Law requires driving at safe speed for conditions.",
           "category": "Speed Laws",
           "difficulty": "easy",
-          "id": 19
+          "id": 17
         },
         {
-          "id": 20,
+          "id": 18,
           "question": "To turn left from a one-way street into a one-way street, use:",
           "options": [
             "The lane closest to the left curb",
@@ -2057,7 +2041,7 @@
           "difficulty": "easy"
         },
         {
-          "question": "[IMAGE: NO U-TURN sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Left lane ends",
             "No U-turn",
@@ -2068,7 +2052,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 2
+          "id": 2,
+          "image": "/images/traffic-signs/no-u-turn-sign.webp"
         },
         {
           "id": 3,
@@ -2171,7 +2156,9 @@
           "correctAnswer": 0,
           "explanation": "Carpool lanes (HOV lanes) can only be used if you have the minimum number of occupants shown on the posted signs. Pets do not count as passengers.",
           "category": "Lane Usage",
-          "difficulty": "medium"
+          "difficulty": "medium",
+          "image": "/images/traffic-signs/sign-9.webp",
+          "hasImage": true
         },
         {
           "id": 11,
@@ -2315,7 +2302,7 @@
           "id": 5
         },
         {
-          "question": "[IMAGE: Cross road sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Another lane is merging with yours",
             "Another road crosses yours",
@@ -2326,7 +2313,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 6
+          "id": 6,
+          "image": "/images/traffic-signs/cross-road-sign.webp"
         },
         {
           "question": "If you are involved in an accident",
@@ -2420,7 +2408,7 @@
           "id": 13
         },
         {
-          "question": "[IMAGE: YIELD sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Vehicles on the right have the right-of-way",
             "You have the right-of-way",
@@ -2431,7 +2419,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 14
+          "id": 14,
+          "image": "/images/traffic-signs/yield-sign.webp"
         },
         {
           "id": 15,
@@ -2473,18 +2462,19 @@
           "difficulty": "medium"
         },
         {
-          "question": "[IMAGE: KEEP RIGHT sign] This sign means:",
+          "question": "This sign means:",
           "options": [
-            "Change lanes to the right",
-            "Drive to the right",
-            "Slower traffic should move to the right"
+            "Right curve ahead",
+            "No right turn allowed",
+            "Right turn allowed on green arrow"
           ],
-          "correctAnswer": 1,
-          "explanation": "This sign directs you to keep to the right side.",
+          "correctAnswer": 0,
+          "explanation": "This sign warns of a curve to the right ahead.",
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 18
+          "id": 18,
+          "image": "/images/traffic-signs/right-curve-sign.webp"
         },
         {
           "id": 19,
@@ -2498,20 +2488,6 @@
           "explanation": "Never stop on railroad tracks. Only cross if you have enough space to completely clear the tracks on the other side.",
           "category": "Railroad Crossings",
           "difficulty": "medium"
-        },
-        {
-          "question": "[IMAGE: Right curve sign] This sign means:",
-          "options": [
-            "Right curve ahead",
-            "No right turn allowed",
-            "Right turn allowed on green arrow"
-          ],
-          "correctAnswer": 0,
-          "explanation": "This sign warns of a curve to the right ahead.",
-          "category": "Traffic Signs",
-          "difficulty": "easy",
-          "hasImage": true,
-          "id": 20
         }
       ]
     },
@@ -2535,10 +2511,12 @@
           "correctAnswer": 2,
           "explanation": "This yellow warning sign indicates a pedestrian crosswalk ahead. Drivers should be prepared to slow down or stop for pedestrians.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-13.webp",
+          "hasImage": true
         },
         {
-          "question": "[IMAGE: SLOWER TRAFFIC KEEP RIGHT sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Always drive in the right lane",
             "Slower traffic has the right-of-way",
@@ -2549,7 +2527,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 2
+          "id": 2,
+          "image": "/images/traffic-signs/slower-traffic-keep-right-sign.webp"
         },
         {
           "question": "Unless otherwise posted the speed limit in a residential area is ____.",
@@ -2592,19 +2571,6 @@
         },
         {
           "id": 6,
-          "question": "This sign means:",
-          "options": [
-            "The road ahead is closed to traffic in all directions",
-            "You cannot enter the road from your direction",
-            "Do not enter unless it is safe"
-          ],
-          "correctAnswer": 1,
-          "explanation": "'Do Not Enter' sign means you cannot enter from your direction.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 7,
           "question": "When you are merging onto the freeway, you should be driving:",
           "options": [
             "At or near the same speed as the traffic on the freeway",
@@ -2617,19 +2583,6 @@
           "difficulty": "medium"
         },
         {
-          "id": 8,
-          "question": "Which of these statements is true about large trucks?",
-          "options": [
-            "They take longer to come to a complete stop",
-            "They all have air brakes which allow them to stop quickly",
-            "They are more maneuverable than passenger vehicles"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Large trucks require much more distance to stop than passenger vehicles due to their size and weight.",
-          "category": "Sharing the Road",
-          "difficulty": "easy"
-        },
-        {
           "question": "A passenger vehicle may NOT tow",
           "options": [
             "One trailer",
@@ -2640,10 +2593,10 @@
           "explanation": "Passenger vehicles cannot tow two trailers at once.",
           "category": "Vehicle Equipment",
           "difficulty": "medium",
-          "id": 9
+          "id": 7
         },
         {
-          "id": 10,
+          "id": 8,
           "question": "You are on a two-way street with two lanes in each direction. To turn left, start the turn in:",
           "options": [
             "Any lane open to you for traffic in your direction",
@@ -2656,7 +2609,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 11,
+          "id": 9,
           "question": "Blocking an intersection during 'rush hour' traffic is not permitted:",
           "options": [
             "Unless you entered the intersection on a green light",
@@ -2669,7 +2622,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 12,
+          "id": 10,
           "question": "You are approaching a railroad crossing. The lights are flashing red. You must:",
           "options": [
             "Slow down before crossing",
@@ -2682,7 +2635,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 13,
+          "id": 11,
           "question": "It is against the law to enter an intersection when:",
           "options": [
             "The light is yellow",
@@ -2695,7 +2648,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 14,
+          "id": 12,
           "question": "You just rear-ended the car in front of you. You were probably:",
           "options": [
             "Weaving in and out of traffic",
@@ -2708,11 +2661,11 @@
           "difficulty": "easy"
         },
         {
-          "id": 15,
+          "id": 13,
           "question": "When parking on a hill on a two-way street with no curb, you should:",
           "options": [
             "Turn your front wheels to the left, away from the side of the road",
-            "Park at a slight angle\u2014rear wheels closer to the road's edge",
+            "Park at a slight angle—rear wheels closer to the road's edge",
             "Turn your front wheels to the right, toward the side of the road"
           ],
           "correctAnswer": 2,
@@ -2768,7 +2721,9 @@
           "correctAnswer": 1,
           "explanation": "This sign warns that another lane is merging with your lane.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-15.webp",
+          "hasImage": true
         },
         {
           "id": 4,
@@ -2948,7 +2903,9 @@
           "correctAnswer": 1,
           "explanation": "The YIELD sign means you must slow down and give the right-of-way to other vehicles and pedestrians. You must be prepared to stop if necessary.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/yield-sign.webp",
+          "hasImage": true
         },
         {
           "id": 2,
@@ -2991,32 +2948,6 @@
         },
         {
           "id": 5,
-          "question": "This sign means:",
-          "options": [
-            "Vehicle has the right-of-way",
-            "Slow moving vehicle",
-            "Yield to the vehicle"
-          ],
-          "correctAnswer": 1,
-          "explanation": "This triangle indicates a slow-moving vehicle (under 25 mph).",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 6,
-          "question": "This sign means:",
-          "options": [
-            "The traffic signal ahead is not working",
-            "Be prepared to stop if the light is flashing",
-            "There is a traffic signal ahead"
-          ],
-          "correctAnswer": 2,
-          "explanation": "This warning sign indicates a traffic signal is ahead. Be prepared to stop if the light is red.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 7,
           "question": "You are driving on a two-way street and you want to turn left at the corner. Give the right-of-way to:",
           "options": [
             "Pedestrians on the sidewalk waiting for a 'WALK' signal",
@@ -3039,10 +2970,10 @@
           "explanation": "Double yellow lines 2+ feet apart are a barrier - do not cross.",
           "category": "Lane Markings",
           "difficulty": "medium",
-          "id": 8
+          "id": 6
         },
         {
-          "id": 9,
+          "id": 7,
           "question": "It is illegal for a person 21 years of age or older to drive with a BAC that is ___ or more.",
           "options": [
             "0.05%",
@@ -3055,7 +2986,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 10,
+          "id": 8,
           "question": "When driving in fog, you should use your:",
           "options": [
             "Fog lights only",
@@ -3068,7 +2999,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 11,
+          "id": 9,
           "question": "The driver ahead of you stops at a crosswalk. What should you do?",
           "options": [
             "Drive to the right edge of the road and stop",
@@ -3081,7 +3012,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 12,
+          "id": 10,
           "question": "When can you drive using only your parking lights?",
           "options": [
             "30 minutes after sunset or before sunrise",
@@ -3091,19 +3022,6 @@
           "correctAnswer": 1,
           "explanation": "Parking lights are never sufficient for driving.",
           "category": "Night Driving",
-          "difficulty": "easy"
-        },
-        {
-          "id": 13,
-          "question": "This sign means:",
-          "options": [
-            "Vehicle has the right-of-way",
-            "Slow moving vehicle",
-            "Yield to the vehicle"
-          ],
-          "correctAnswer": 1,
-          "explanation": "This triangle sign indicates a slow-moving vehicle (traveling under 25 mph).",
-          "category": "Traffic Signs",
           "difficulty": "easy"
         },
         {
@@ -3117,10 +3035,10 @@
           "explanation": "Double parking is never allowed.",
           "category": "Parking",
           "difficulty": "easy",
-          "id": 14
+          "id": 11
         },
         {
-          "id": 15,
+          "id": 12,
           "question": "You are driving on a freeway posted for 65 MPH. The traffic is traveling at 70 MPH. You may legally drive:",
           "options": [
             "70 mph or faster to keep up with the speed of traffic",
@@ -3154,7 +3072,9 @@
           "correctAnswer": 1,
           "explanation": "This regulatory sign with a U-turn symbol and a red circle with a line through it means U-turns are prohibited in this area.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-18.webp",
+          "hasImage": true
         },
         {
           "id": 2,
@@ -3248,19 +3168,6 @@
           "difficulty": "hard"
         },
         {
-          "id": 9,
-          "question": "This sign means:",
-          "options": [
-            "You cannot turn left",
-            "You cannot make a U-turn",
-            "You cannot enter the side road"
-          ],
-          "correctAnswer": 1,
-          "explanation": "This sign prohibits U-turns.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
           "question": "What is a safety zone?",
           "options": [
             "An empty space next to the freeway dividers",
@@ -3271,10 +3178,10 @@
           "explanation": "Safety zones are marked areas for pedestrians, typically at transit stops.",
           "category": "Pedestrians",
           "difficulty": "medium",
-          "id": 10
+          "id": 9
         },
         {
-          "id": 11,
+          "id": 10,
           "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is _____ or more.",
           "options": [
             "One tenth (0.10) of one percent",
@@ -3287,7 +3194,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 12,
+          "id": 11,
           "question": "Signal for a turn during the last ___ feet before the turn.",
           "options": [
             "50",
@@ -3300,7 +3207,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 13,
+          "id": 12,
           "question": "You are driving 55 mph in the far left (fast) lane of a freeway posted for 65 mph. You could be cited for driving too slowly:",
           "options": [
             "If the road or weather conditions warrant driving this slowly",
@@ -3313,7 +3220,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 14,
+          "id": 13,
           "question": "You sold your vehicle. You must notify ___ within 5 days.",
           "options": [
             "Your insurance company",
@@ -3336,7 +3243,7 @@
           "explanation": "Three-second rule applies to following distance ahead of vehicle.",
           "category": "Safe Driving",
           "difficulty": "easy",
-          "id": 15
+          "id": 14
         }
       ]
     },
@@ -3520,19 +3427,6 @@
         },
         {
           "id": 14,
-          "question": "Which of these statements is true about large trucks?",
-          "options": [
-            "Trucks are not as maneuverable as passenger vehicles",
-            "They do not need more space to stop and start",
-            "They do not need more space for turns"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Large trucks need more space and are less maneuverable than cars.",
-          "category": "Sharing the Road",
-          "difficulty": "easy"
-        },
-        {
-          "id": 15,
           "question": "You want to turn left from a driveway. The road you want to turn onto has a lane marked as shown in the picture. You:",
           "options": [
             "May turn into this lane before merging into regular traffic",
@@ -3566,7 +3460,9 @@
           "correctAnswer": 1,
           "explanation": "'Do Not Enter' means you cannot enter from your direction.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-20.webp",
+          "hasImage": true
         },
         {
           "question": "California's 'basic speed law' says, in addition to obeying the maximum speed limit, drivers must keep in mind",
@@ -3609,19 +3505,6 @@
         },
         {
           "id": 5,
-          "question": "This sign means:",
-          "options": [
-            "Stop every time",
-            "Stop two feet before the limit line",
-            "Stop only if other vehicles are present"
-          ],
-          "correctAnswer": 0,
-          "explanation": "STOP signs require a complete stop every time, regardless of traffic.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 6,
           "question": "When five or more vehicles are following you on a narrow two lane road, you should:",
           "options": [
             "Continue driving and ignore them",
@@ -3634,7 +3517,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 7,
+          "id": 6,
           "question": "Checking traffic behind you:",
           "options": [
             "Will help you know if you are being followed by a tailgater",
@@ -3647,20 +3530,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 8,
-          "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ___ or more.",
-          "options": [
-            "Five hundredths (0.05) of one percent",
-            "Eight hundredths (0.08) of one percent",
-            "One tenth (0.10) of one percent"
-          ],
-          "correctAnswer": 1,
-          "explanation": "The legal BAC limit for drivers 21 and over is 0.08%.",
-          "category": "DUI Laws",
-          "difficulty": "easy"
-        },
-        {
-          "id": 9,
+          "id": 7,
           "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is _____ or higher.",
           "options": [
             "0.08% - Eight hundredths of one percent",
@@ -3683,7 +3553,7 @@
           "explanation": "Alcohol first impairs judgment before physical abilities.",
           "category": "DUI Laws",
           "difficulty": "easy",
-          "id": 10
+          "id": 8
         },
         {
           "question": "You are driving on a freeway posted for 65 mph. The traffic is traveling at 70 mph. You may legally drive:",
@@ -3696,10 +3566,10 @@
           "explanation": "Never exceed posted speed limit, even if traffic is going faster.",
           "category": "Speed Limits",
           "difficulty": "easy",
-          "id": 11
+          "id": 9
         },
         {
-          "id": 12,
+          "id": 10,
           "question": "Signal for a turn during the last _____ feet before the turn.",
           "options": [
             "100",
@@ -3712,7 +3582,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 13,
+          "id": 11,
           "question": "You exit a freeway and see that the off ramp curves down hill. You should:",
           "options": [
             "Slow to a safe speed before the curve",
@@ -3723,32 +3593,6 @@
           "explanation": "Slow down before entering a curve, especially on a downhill off-ramp. Braking in a curve can cause loss of control.",
           "category": "Freeway Driving",
           "difficulty": "medium"
-        },
-        {
-          "id": 14,
-          "question": "This sign means:",
-          "options": [
-            "You cannot turn left",
-            "You cannot make a U-turn",
-            "You cannot enter the side road"
-          ],
-          "correctAnswer": 1,
-          "explanation": "This regulatory sign prohibits U-turns. You must go straight or turn right at this intersection.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 15,
-          "question": "Checking traffic behind you:",
-          "options": [
-            "Will help you know if you are being followed by a tailgater",
-            "Is not a good idea. You should pay attention to traffic in front",
-            "Only when you are slowing down"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Regularly check mirrors to be aware of traffic and tailgaters behind you.",
-          "category": "Safe Driving",
-          "difficulty": "easy"
         }
       ]
     },
@@ -3906,19 +3750,6 @@
         },
         {
           "id": 12,
-          "question": "If you have a conditional driver license, there is (are):",
-          "options": [
-            "A special time limit to renew your license",
-            "Special restrictions you must follow when driving",
-            "Age limits imposed on your driver license"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Conditional licenses have specific driving restrictions you must follow.",
-          "category": "License Requirements",
-          "difficulty": "medium"
-        },
-        {
-          "id": 13,
           "question": "A school bus ahead of you in your lane is stopped with red lights flashing. You should:",
           "options": [
             "Stop, then proceed when you think all of the children have exited the bus",
@@ -3931,7 +3762,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 14,
+          "id": 13,
           "question": "Which of these is true about cold weather and driving conditions?",
           "options": [
             "When the temperature drops, bridges freeze before open roads",
@@ -3944,7 +3775,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 15,
+          "id": 14,
           "question": "You can make a right turn at a red light, after checking for pedestrians and other traffic:",
           "options": [
             "Only if there is a sign that says it is OK",
@@ -4043,7 +3874,9 @@
           "correctAnswer": 0,
           "explanation": "A STOP sign requires a complete stop every time, regardless of other traffic.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-21.webp",
+          "hasImage": true
         },
         {
           "id": 7,
@@ -4236,7 +4069,9 @@
           "correctAnswer": 1,
           "explanation": "'Do Not Enter' means you cannot enter from your direction.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-22.webp",
+          "hasImage": true
         },
         {
           "question": "You just sold your vehicle. You must notify the DMV within ___ days.",
@@ -4318,19 +4153,6 @@
         },
         {
           "id": 12,
-          "question": "This sign means:",
-          "options": [
-            "Side road ahead",
-            "Another lane merging with your lane",
-            "You have the right-of-way"
-          ],
-          "correctAnswer": 0,
-          "explanation": "This sign indicates a side road ahead on the right.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
-        },
-        {
-          "id": 13,
           "question": "You must notify law enforcement and make a written report of a traffic accident when:",
           "options": [
             "Your vehicle fails the smog test",
@@ -4343,7 +4165,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 14,
+          "id": 13,
           "question": "Which of the following is true about roadways on bridges and overpasses in cold, wet weather?",
           "options": [
             "They tend to freeze before the rest of the road does",
@@ -4356,7 +4178,7 @@
           "difficulty": "medium"
         },
         {
-          "question": "[IMAGE: No right turn sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Right lane ends here",
             "Side road to the right",
@@ -4367,7 +4189,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 15
+          "id": 14,
+          "image": "/images/traffic-signs/no-right-turn-sign.webp"
         }
       ]
     },
@@ -4381,7 +4204,7 @@
       "timeLimit": 22.5,
       "questions": [
         {
-          "question": "[IMAGE: REST AREA 1 MILE sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "The right lane is ending",
             "A rest area is ahead",
@@ -4392,7 +4215,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 1
+          "id": 1,
+          "image": "/images/traffic-signs/rest-area-1-mile-sign.webp"
         },
         {
           "id": 2,
@@ -4405,7 +4229,9 @@
           "correctAnswer": 1,
           "explanation": "This sign warns that you are approaching a divided highway. The road ahead is split by a median or divider.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-25.webp",
+          "hasImage": true
         },
         {
           "question": "When you hear the siren or see the red emergency light of a closely approaching ambulance, police vehicle, or fire truck, you must",
@@ -4457,7 +4283,9 @@
           "correctAnswer": 2,
           "explanation": "This warning sign indicates a traffic signal is ahead. Be prepared to stop if the light is red.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-26.webp",
+          "hasImage": true
         },
         {
           "id": 7,
@@ -4908,7 +4736,9 @@
           "correctAnswer": 0,
           "explanation": "A yellow diamond with an X and two R's warns of a railroad crossing ahead.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-27.webp",
+          "hasImage": true
         },
         {
           "id": 5,
@@ -5041,19 +4871,6 @@
           "id": 14
         },
         {
-          "id": 15,
-          "question": "What is the Basic Speed Law?",
-          "options": [
-            "Keeping up with traffic flow",
-            "Never drive faster than is safe for current conditions",
-            "Never drive faster than posted limits"
-          ],
-          "correctAnswer": 1,
-          "explanation": "The Basic Speed Law requires driving at a safe speed for conditions.",
-          "category": "Speed Laws",
-          "difficulty": "easy"
-        },
-        {
           "question": "If you become sleepy while driving, it is best to",
           "options": [
             "Increase your speed to get away from other vehicles",
@@ -5064,10 +4881,10 @@
           "explanation": "Pull over and rest if you feel sleepy while driving.",
           "category": "Safe Driving",
           "difficulty": "easy",
-          "id": 16
+          "id": 15
         },
         {
-          "id": 17,
+          "id": 16,
           "question": "You reach an intersection with stop signs on all four corners at the same time as the driver on your left. Who has the right-of-way?",
           "options": [
             "The driver on your left has the right-of-way",
@@ -5090,7 +4907,7 @@
           "explanation": "Officers directing traffic override traffic signals.",
           "category": "Traffic Signals",
           "difficulty": "easy",
-          "id": 18
+          "id": 17
         },
         {
           "question": "Driving so slowly as to interfere with normal or reasonable flow of traffic, except when necessary for safety, is",
@@ -5103,10 +4920,10 @@
           "explanation": "Impeding traffic flow is a violation unless necessary for safety.",
           "category": "Traffic Laws",
           "difficulty": "easy",
-          "id": 19
+          "id": 18
         },
         {
-          "id": 20,
+          "id": 19,
           "question": "You can make a right turn at a red light, after checking for pedestrians and other traffic:",
           "options": [
             "Only if there is a sign that says it is OK",
@@ -5119,20 +4936,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 21,
-          "question": "What is Basic Speed Law?",
-          "options": [
-            "Keep up with traffic",
-            "Never faster than safe for conditions",
-            "Never exceed posted limits"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Drive at safe speed for conditions.",
-          "category": "Speed Laws",
-          "difficulty": "easy"
-        },
-        {
-          "id": 22,
+          "id": 20,
           "question": "Backing your vehicle is:",
           "options": [
             "Always dangerous to do",
@@ -5155,10 +4959,10 @@
           "explanation": "Can cross if the line on YOUR side is broken.",
           "category": "Lane Markings",
           "difficulty": "medium",
-          "id": 23
+          "id": 21
         },
         {
-          "id": 24,
+          "id": 22,
           "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ___ or higher.",
           "options": [
             "0.08% - Eight hundredths of one percent",
@@ -5171,7 +4975,7 @@
           "difficulty": "easy"
         },
         {
-          "question": "[IMAGE: Merge arrow sign] This sign means:",
+          "question": "This sign means:",
           "options": [
             "Another lane is merging with your lane",
             "You have the right-of-way",
@@ -5182,10 +4986,11 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 25
+          "id": 23,
+          "image": "/images/traffic-signs/merge-arrow-sign.webp"
         },
         {
-          "id": 26,
+          "id": 24,
           "question": "What is a safety zone?",
           "options": [
             "An empty lane next to the freeway dividers",
@@ -5208,10 +5013,10 @@
           "explanation": "Refusing BAC test results in automatic license suspension.",
           "category": "DUI Laws",
           "difficulty": "easy",
-          "id": 27
+          "id": 25
         },
         {
-          "id": 28,
+          "id": 26,
           "question": "You just sold your vehicle. You must notify the DMV within ___ days.",
           "options": [
             "5",
@@ -5224,7 +5029,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 29,
+          "id": 27,
           "question": "You reach the intersection at the same time as the driver on your left. Who goes first?",
           "options": [
             "The driver on your left goes first",
@@ -5247,7 +5052,7 @@
           "explanation": "Repeated violations can lead to license suspension.",
           "category": "Traffic Laws",
           "difficulty": "easy",
-          "id": 30
+          "id": 28
         },
         {
           "question": "If you are the first person to stop to give assistance at a collision scene, you should drive to the side of the road:",
@@ -5260,10 +5065,10 @@
           "explanation": "Pull over after passing accident scene to avoid causing another accident.",
           "category": "Accidents",
           "difficulty": "medium",
-          "id": 31
+          "id": 29
         },
         {
-          "id": 32,
+          "id": 30,
           "question": "There is a railroad crossing ahead and you see flashing red lights. You must:",
           "options": [
             "Stop only if you see a train",
@@ -5276,7 +5081,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 33,
+          "id": 31,
           "question": "Which of the following is true about double parking?",
           "options": [
             "It is allowed if you are making a delivery",
@@ -5289,7 +5094,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 34,
+          "id": 32,
           "question": "It is illegal to park your vehicle:",
           "options": [
             "In an unmarked crosswalk",
@@ -5302,7 +5107,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 35,
+          "id": 33,
           "question": "Which statement is true about motorcyclists and motorists?",
           "options": [
             "Motorcyclists are not allowed to drive faster than other traffic during congested road conditions",
@@ -5315,7 +5120,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 36,
+          "id": 34,
           "question": "If you get sleepy while driving, you should:",
           "options": [
             "Drive to a safe place, stop, and rest",
@@ -5328,7 +5133,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 37,
+          "id": 35,
           "question": "You are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks in one direction. The speed limit is:",
           "options": [
             "15 mph",
@@ -5341,7 +5146,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 38,
+          "id": 36,
           "question": "Which of these statements is true about safety zones?",
           "options": [
             "The road is probably being repaired by slow moving vehicles",
@@ -5364,10 +5169,10 @@
           "explanation": "Continually passing increases accident risk significantly.",
           "category": "Safe Driving",
           "difficulty": "easy",
-          "id": 39
+          "id": 37
         },
         {
-          "id": 40,
+          "id": 38,
           "question": "Implied consent law means:",
           "options": [
             "Vehicle inspection consent",
@@ -5380,7 +5185,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 41,
+          "id": 39,
           "question": "A red arrow pointing to the right on a traffic light means you may:",
           "options": [
             "Turn in that direction after slowing and checking traffic",
@@ -5403,10 +5208,10 @@
           "explanation": "Yield to the driver on your right at 4-way stops.",
           "category": "Right-of-Way",
           "difficulty": "easy",
-          "id": 42
+          "id": 40
         },
         {
-          "id": 43,
+          "id": 41,
           "question": "When parking your vehicle parallel to a curb on a level street:",
           "options": [
             "Your front wheels must be turned toward the street",
@@ -5429,10 +5234,10 @@
           "explanation": "Stop behind the crosswalk or limit line at stop signs.",
           "category": "Traffic Signs",
           "difficulty": "easy",
-          "id": 44
+          "id": 42
         },
         {
-          "id": 45,
+          "id": 43,
           "question": "You sold your vehicle. You must notify ___ within 5 days.",
           "options": [
             "Your automobile club",
@@ -5445,7 +5250,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 46,
+          "id": 44,
           "question": "Large trucks often travel with a lot of space in front of their vehicle. This extra space is required for:",
           "options": [
             "Other drivers to use when merging onto an offramp",
@@ -5458,7 +5263,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 47,
+          "id": 45,
           "question": "You are driving on a two-way street and you want to turn left at the corner. Give the right-of-way to:",
           "options": [
             "Pedestrians on the sidewalk waiting for a 'WALK' signal",
@@ -5481,49 +5286,22 @@
           "explanation": "Merge into bike lane before turning right (no more than 200 feet).",
           "category": "Bike Lanes",
           "difficulty": "medium",
-          "id": 48
+          "id": 46
         },
         {
-          "id": 49,
-          "question": "Railroad crossing lights are flashing. You must:",
+          "id": 47,
+          "question": "A person may legally ride in the back of a pickup truck when the:",
           "options": [
-            "Stop only if you see a train",
-            "Slow down",
-            "Stop, then proceed when safe"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Stop when signals flash, proceed when safe.",
-          "category": "Railroad Crossings",
-          "difficulty": "easy"
-        },
-        {
-          "id": 50,
-          "question": "A person can ride in the back of a pick up truck when the:",
-          "options": [
-            "Sides of the pickup bed are at least 24 inches high",
             "Pickup bed has a seat bolted to the frame",
             "Back of the pickup is equipped with a restraint (seat belt) system"
           ],
-          "correctAnswer": 2,
-          "explanation": "Passengers in pickup beds must use a properly installed restraint system.",
+          "correctAnswer": 1,
+          "explanation": "California law requires anyone riding in the back of a pickup to use a properly installed restraint system.",
           "category": "Passenger Safety",
           "difficulty": "medium"
         },
         {
-          "id": 51,
-          "question": "You reach the intersection at the same time as the driver on your left. Who goes first?",
-          "options": [
-            "The driver on your left goes first",
-            "You go first",
-            "Whoever is signaling to make a turn"
-          ],
-          "correctAnswer": 1,
-          "explanation": "The vehicle on the right has right-of-way when arriving simultaneously.",
-          "category": "Right-of-Way",
-          "difficulty": "medium"
-        },
-        {
-          "id": 52,
+          "id": 48,
           "question": "You are driving on the freeway behind a large truck. You should:",
           "options": [
             "Follow closely in bad weather so the driver can see farther ahead",
@@ -5536,19 +5314,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 53,
-          "question": "A person may legally ride in the back of a pickup truck when the:",
-          "options": [
-            "Pickup bed has a seat bolted to the frame",
-            "Back of the pickup is equipped with a restraint (seat belt) system"
-          ],
-          "correctAnswer": 1,
-          "explanation": "California law requires anyone riding in the back of a pickup to use a properly installed restraint system.",
-          "category": "Passenger Safety",
-          "difficulty": "medium"
-        },
-        {
-          "id": 54,
+          "id": 49,
           "question": "California's \"Basic Speed Law\" says you must:",
           "options": [
             "Keep your speed close to that of other traffic",
@@ -5561,7 +5327,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 55,
+          "id": 50,
           "question": "If you have an accident and there is an injury, death, or more than $500 in damages, you must notify law enforcement and make a written report (SR 1) to:",
           "options": [
             "Your insurance company",
@@ -5584,10 +5350,10 @@
           "explanation": "By driving in California, you consent to BAC testing.",
           "category": "DUI Laws",
           "difficulty": "easy",
-          "id": 56
+          "id": 51
         },
         {
-          "id": 57,
+          "id": 52,
           "question": "A curb painted red means:",
           "options": [
             "Parking is for emergency vehicles only",
@@ -5600,7 +5366,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 58,
+          "id": 53,
           "question": "You are on the freeway and traffic is merging into your lane. You should:",
           "options": [
             "Make room for the merging traffic, if possible",
@@ -5613,7 +5379,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 59,
+          "id": 54,
           "question": "When a school bus with its red lights flashing is stopped ahead on your side of the road, you must:",
           "options": [
             "Stop until you think all children are unloaded",
@@ -5626,7 +5392,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 60,
+          "id": 55,
           "question": "When parking next to a curb, you should use your signals:",
           "options": [
             "Only when pulling away from the curb",
@@ -5649,7 +5415,7 @@
           "explanation": "Use low beams in fog - high beams reflect back and reduce visibility.",
           "category": "Weather Conditions",
           "difficulty": "easy",
-          "id": 61
+          "id": 56
         },
         {
           "question": "Carpool lanes are marked with a diamond symbol. To use these lanes during the special hours shown on the signs you must",
@@ -5662,7 +5428,7 @@
           "explanation": "Must have minimum number of passengers indicated on carpool signs.",
           "category": "Lane Usage",
           "difficulty": "easy",
-          "id": 62
+          "id": 57
         },
         {
           "question": "When planning to pass other vehicles, you should:",
@@ -5675,10 +5441,10 @@
           "explanation": "Never assume other drivers will make space when passing.",
           "category": "Passing",
           "difficulty": "medium",
-          "id": 63
+          "id": 58
         },
         {
-          "id": 64,
+          "id": 59,
           "question": "You may legally block an intersection:",
           "options": [
             "Under no circumstances",
@@ -5691,7 +5457,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 65,
+          "id": 60,
           "question": "This sign means:",
           "options": [
             "Do NOT pass unless you do not see oncoming vehicles",
@@ -5701,10 +5467,12 @@
           "correctAnswer": 1,
           "explanation": "A 'Do Not Pass' sign indicates it's unsafe to pass in that area. Only pass when it's clearly safe and legal.",
           "category": "Traffic Signs",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-29.webp",
+          "hasImage": true
         },
         {
-          "id": 66,
+          "id": 61,
           "question": "You should signal continuously while turning because it:",
           "options": [
             "Is illegal to turn off your signal before completing a turn",
@@ -5727,7 +5495,7 @@
           "explanation": "File SR-1 report regardless of fault if damage exceeds threshold.",
           "category": "Accidents",
           "difficulty": "medium",
-          "id": 67
+          "id": 62
         },
         {
           "question": "When a school bus with flashing red lights has stopped on the road ahead of you, you must",
@@ -5740,7 +5508,7 @@
           "explanation": "Always stop when a school bus has flashing red lights.",
           "category": "School Zones",
           "difficulty": "easy",
-          "id": 68
+          "id": 63
         }
       ]
     }
