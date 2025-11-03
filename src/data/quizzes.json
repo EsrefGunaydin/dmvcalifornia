@@ -542,7 +542,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "image": "/images/traffic-signs/left-turn-yield-on-green-sign.webp",
+          "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
           "id": 41
         },
         {
@@ -3875,7 +3875,7 @@
           "explanation": "A STOP sign requires a complete stop every time, regardless of other traffic.",
           "category": "Traffic Signs",
           "difficulty": "easy",
-          "image": "/images/traffic-signs/sign-21.webp",
+          "image": "/images/traffic-signs/stop-sign.webp",
           "hasImage": true
         },
         {
