@@ -15,16 +15,16 @@ export default function Header() {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/practice-test" className="text-white font-bold hover:text-primary transition-colors drop-shadow-md">
+            <Link href="/practice-test" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Practice Tests
             </Link>
-            <Link href="/blog" className="text-white font-bold hover:text-primary transition-colors drop-shadow-md">
+            <Link href="/blog" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Blog
             </Link>
-            <Link href="/dmv-offices" className="text-white font-bold hover:text-primary transition-colors drop-shadow-md">
+            <Link href="/dmv-offices" className="text-gray-700 hover:text-primary font-medium transition-colors">
               DMV Offices
             </Link>
-            <Link href="/privacy-policy" className="text-white font-bold hover:text-primary transition-colors drop-shadow-md">
+            <Link href="/privacy-policy" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Privacy
             </Link>
           </nav>
