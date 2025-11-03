@@ -108,24 +108,22 @@ export default function Leaderboard({ entries, quizTitle, limit = 10 }: Leaderbo
 
               {/* Score */}
               <div className="col-span-3 flex items-center justify-center">
-                <div className="flex items-center gap-2">
-                  <span className={`text-sm font-bold ${
+                <span
+                  className={`text-sm font-bold cursor-help ${
                     entry.percentage >= 90 ? 'text-green-600' :
                     entry.percentage >= 80 ? 'text-blue-600' :
                     entry.percentage >= 70 ? 'text-yellow-600' :
                     'text-gray-600'
-                  }`}>
-                    {entry.percentage.toFixed(1)}%
-                  </span>
-                  <span className="text-xs text-gray-500">
-                    ({entry.points} pts)
-                  </span>
-                </div>
+                  }`}
+                  title={`${entry.points} pts`}
+                >
+                  {entry.percentage.toFixed(1)}%
+                </span>
               </div>
 
               {/* Date */}
               <div className="col-span-3 flex items-center justify-end">
-                <span className="text-xs text-gray-500">
+                <span className="text-xs text-gray-500" title={formatDate(entry.completedAt)}>
                   {formatDate(entry.completedAt)}
                 </span>
               </div>
@@ -147,24 +145,24 @@ export default function Leaderboard({ entries, quizTitle, limit = 10 }: Leaderbo
       )}
 
       {/* Stats Summary */}
-      <div className="mt-6 pt-6 border-t grid grid-cols-3 gap-4">
+      <div className="mt-6 pt-6 border-t grid grid-cols-3 gap-2">
         <div className="text-center">
-          <div className="text-2xl font-bold text-gray-900">
+          <div className="text-xl font-bold text-gray-900 whitespace-nowrap">
             {sortedEntries[0]?.percentage.toFixed(1)}%
           </div>
-          <div className="text-xs text-gray-500 mt-1">Highest Score</div>
+          <div className="text-xs text-gray-500 mt-1 leading-tight">Highest<br/>Score</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold text-gray-900">
+          <div className="text-xl font-bold text-gray-900 whitespace-nowrap">
             {(entries.reduce((sum, e) => sum + e.percentage, 0) / entries.length).toFixed(1)}%
           </div>
-          <div className="text-xs text-gray-500 mt-1">Average Score</div>
+          <div className="text-xs text-gray-500 mt-1 leading-tight">Average<br/>Score</div>
         </div>
         <div className="text-center">
-          <div className="text-2xl font-bold text-gray-900">
+          <div className="text-xl font-bold text-gray-900">
             {entries.length}
           </div>
-          <div className="text-xs text-gray-500 mt-1">Total Attempts</div>
+          <div className="text-xs text-gray-500 mt-1 leading-tight">Total<br/>Attempts</div>
         </div>
       </div>
     </div>
