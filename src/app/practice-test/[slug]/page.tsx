@@ -4,7 +4,6 @@ import CookieBanner from '@/components/CookieBanner';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import quizzesData from '@/data/quizzes.json';
-import leaderboardData from '@/data/leaderboard.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
@@ -29,7 +28,27 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function QuizPage({ params }: { params: { slug: string } }) {
+async function fetchLeaderboard(quizId: number) {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+    const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
+      cache: 'no-store', // Always fetch fresh data
+    });
+
+    if (!response.ok) {
+      console.error('Failed to fetch leaderboard:', response.status);
+      return [];
+    }
+
+    const data = await response.json();
+    return data.leaderboard || [];
+  } catch (error) {
+    console.error('Error fetching leaderboard:', error);
+    return [];
+  }
+}
+
+export default async function QuizPage({ params }: { params: { slug: string } }) {
   const quiz = quizzesData.quizzes.find((q) => q.slug === params.slug);
 
   if (!quiz) {
@@ -40,9 +59,8 @@ export default function QuizPage({ params }: { params: { slug: string } }) {
   const quizIndex = quizzesData.quizzes.findIndex((q) => q.slug === params.slug);
   const quizId = quizIndex + 1; // WordPress quiz IDs start from 1
 
-  const quizLeaderboard = leaderboardData.leaderboard.filter(
-    (entry) => entry.quizId === quizId
-  );
+  // Fetch leaderboard from MongoDB API
+  const quizLeaderboard = await fetchLeaderboard(quizId);
 
   return (
     <>
