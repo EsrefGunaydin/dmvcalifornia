@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="bg-gradient-to-r from-white via-orange-100 via-50% to-white shadow-sm border-b-4 border-primary sticky top-0 z-40">
       <div className="container mx-auto px-4 py-4">
@@ -13,7 +18,7 @@ export default function Header() {
             <p className="text-sm text-gray-600 mt-1">Your DMV Success Partner</p>
           </Link>
 
-          {/* Navigation Links */}
+          {/* Navigation Links - Desktop */}
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/practice-test" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Practice Tests
@@ -30,12 +35,58 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2 text-gray-700 hover:text-primary">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-gray-700 hover:text-primary"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
+            <div className="flex flex-col gap-4">
+              <Link
+                href="/practice-test"
+                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Practice Tests
+              </Link>
+              <Link
+                href="/blog"
+                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </Link>
+              <Link
+                href="/dmv-offices"
+                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                DMV Offices
+              </Link>
+              <Link
+                href="/privacy-policy"
+                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Privacy
+              </Link>
+            </div>
+          </nav>
+        )}
       </div>
     </header>
   );
