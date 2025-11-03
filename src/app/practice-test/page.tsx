@@ -29,13 +29,11 @@ export default function PracticeTestsPage() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">{quizzes.length}</div>
+                  <div className="text-3xl font-bold">20+</div>
                   <div className="text-sm text-white/90">Practice Tests</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">
-                    {quizzes.reduce((sum, q) => sum + q.questions.length, 0)}
-                  </div>
+                  <div className="text-3xl font-bold">500+</div>
                   <div className="text-sm text-white/90">Total Questions</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
