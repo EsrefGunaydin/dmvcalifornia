@@ -10,7 +10,7 @@ export default function Header() {
             <h1 className="text-2xl font-bold text-primary hover:text-primary-600">
               DMV California
             </h1>
-            <p className="text-sm text-gray-600 mt-1">Simplified DMV California Guide</p>
+            <p className="text-sm text-gray-600 mt-1">Your DMV Success Partner</p>
           </Link>
 
           {/* Navigation Links */}

@@ -11,7 +11,7 @@ export default function Footer() {
               <h2 className="text-2xl font-bold text-white hover:text-gray-300 transition-colors">
                 DMV California
               </h2>
-              <p className="text-sm text-gray-400 mt-1">Simplified DMV California Guide</p>
+              <p className="text-sm text-gray-400 mt-1">Your DMV Success Partner</p>
             </Link>
             <p className="text-gray-300 leading-relaxed mt-4 max-w-2xl">
               Our mission is to help California drivers navigate DMV procedures confidently.
