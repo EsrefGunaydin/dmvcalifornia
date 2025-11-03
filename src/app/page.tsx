@@ -180,7 +180,7 @@ export default function Home() {
                   Kaliforniya trafik işaretleri testi - Türkçe. California traffic signs test in Turkish language.
                 </p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>11 Questions</span>
+                  <span>24 Questions</span>
                   <span className="text-yellow-600 font-medium group-hover:underline">
                     Teste Başla →
                   </span>
