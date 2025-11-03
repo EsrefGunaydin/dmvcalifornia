@@ -605,7 +605,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "image": "/images/traffic-signs/left-turn-yield-on-green.png",
+          "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
           "id": 46
         }
       ]

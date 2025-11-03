@@ -7,7 +7,7 @@ This folder contains traffic sign images used in both English and Turkish DMV te
 ### English Quiz - DMV Simulation Test #1
 
 #### Question 46 - Left Turn Yield on Green
-- **Filename**: `left-turn-yield-on-green.png`
+- **Filename**: `left-turn-yield-on-green.webp`
 - **Description**: Sign showing "LEFT TURN YIELD ON GREEN" instruction
 - **Used in**: DMV Simulation Test #1, Question 46
 
