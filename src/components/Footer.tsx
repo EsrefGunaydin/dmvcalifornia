@@ -5,14 +5,15 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white py-12 mt-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* About Section */}
+          {/* Logo and Mission Section */}
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">About DMVCalifornia.us</h3>
-            <p className="text-gray-300 leading-relaxed">
-              <strong className="text-white">"DMVCalifornia.us"</strong> is a privately-owned blog and is{' '}
-              <strong className="text-white">NOT affiliated with government agencies or DMV</strong>.
-            </p>
-            <p className="text-gray-300 leading-relaxed mt-3">
+            <Link href="/" className="inline-block mb-4">
+              <h2 className="text-2xl font-bold text-white hover:text-gray-300 transition-colors">
+                DMV California
+              </h2>
+              <p className="text-sm text-gray-400 mt-1">Simplified DMV California Guide</p>
+            </Link>
+            <p className="text-gray-300 leading-relaxed mt-4 max-w-2xl">
               Our mission is to help California drivers navigate DMV procedures confidently.
               We provide clear, simplified guides and resources to make your DMV experience as smooth as possible.
             </p>
