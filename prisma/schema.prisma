@@ -1,0 +1,332 @@
+// This is your Prisma schema file
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql" // Can switch to "mysql" if needed
+  url      = env("DATABASE_URL")
+}
+
+// ============================================
+// BLOG CONTENT MODELS (from WordPress)
+// ============================================
+
+model Post {
+  id          String   @id @default(cuid())
+  wpId        Int?     @unique // Original WordPress post ID
+  slug        String   @unique
+  title       String
+  content     String   @db.Text
+  excerpt     String?  @db.Text
+  featuredImg String?
+  author      String?
+
+  publishedAt DateTime
+  updatedAt   DateTime @updatedAt
+  createdAt   DateTime @default(now())
+
+  // SEO fields (from RankMath)
+  seoTitle    String?
+  seoDesc     String?  @db.Text
+
+  // Relationships
+  categories  CategoryOnPost[]
+  tags        TagOnPost[]
+
+  // Language support
+  language    Language @default(ENGLISH)
+
+  @@index([slug])
+  @@index([publishedAt])
+  @@index([language])
+}
+
+model Category {
+  id    String @id @default(cuid())
+  wpId  Int?   @unique
+  name  String
+  slug  String @unique
+  description String? @db.Text
+
+  posts CategoryOnPost[]
+
+  @@index([slug])
+}
+
+model Tag {
+  id   String @id @default(cuid())
+  wpId Int?   @unique
+  name String
+  slug String @unique
+
+  posts TagOnPost[]
+
+  @@index([slug])
+}
+
+// Many-to-many relationships
+model CategoryOnPost {
+  post       Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId     String
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  categoryId String
+
+  @@id([postId, categoryId])
+}
+
+model TagOnPost {
+  post   Post   @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId String
+  tag    Tag    @relation(fields: [tagId], references: [id], onDelete: Cascade)
+  tagId  String
+
+  @@id([postId, tagId])
+}
+
+// ============================================
+// QUIZ SYSTEM MODELS (from WP Pro Quiz)
+// ============================================
+
+model Quiz {
+  id          String   @id @default(cuid())
+  wpQuizId    Int?     @unique // Original WP Pro Quiz ID
+
+  // Basic info
+  title       String
+  slug        String   @unique
+  description String?  @db.Text
+
+  // Quiz settings
+  language        Language     @default(ENGLISH)
+  difficulty      Difficulty   @default(BEGINNER)
+  category        QuizCategory @default(GENERAL)
+
+  // Quiz behavior
+  timeLimit       Int?         // seconds (null = no limit)
+  passingScore    Int          @default(85) // percentage
+  questionCount   Int          @default(0)  // total questions
+
+  // Features
+  randomizeQuestions Boolean   @default(true)
+  randomizeAnswers   Boolean   @default(true)
+  showPoints         Boolean   @default(true)
+  showReview         Boolean   @default(true)
+  allowRetake        Boolean   @default(true)
+
+  // Timestamps
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  // Relationships
+  questions   Question[]
+  attempts    QuizAttempt[]
+
+  @@index([slug])
+  @@index([language])
+  @@index([category])
+}
+
+model Question {
+  id       String @id @default(cuid())
+  wpQId    Int?   // Original WP Pro Quiz question ID
+
+  // Question content
+  question String @db.Text
+  explanation String? @db.Text // Shown after answer
+  imageUrl String? // Optional question image
+
+  // Question metadata
+  points      Int      @default(1)
+  order       Int      // Sort order in quiz
+  answerType  AnswerType @default(SINGLE_CHOICE)
+
+  // Tip/hint
+  tipEnabled  Boolean @default(false)
+  tipText     String? @db.Text
+
+  // Timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relationships
+  quiz        Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  quizId      String
+  answers     Answer[]
+
+  // Quiz attempt tracking
+  questionAttempts QuestionAttempt[]
+
+  @@index([quizId, order])
+}
+
+model Answer {
+  id         String  @id @default(cuid())
+
+  text       String  @db.Text
+  isCorrect  Boolean @default(false)
+  order      Int     // Display order
+  imageUrl   String? // Optional answer image (for sign tests)
+
+  // Relationships
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  questionId String
+
+  @@index([questionId])
+}
+
+// ============================================
+// USER PROGRESS & STATS MODELS
+// ============================================
+
+model User {
+  id        String   @id @default(cuid())
+
+  // Optional user info (for registered users)
+  email     String?  @unique
+  name      String?
+
+  // Anonymous user tracking
+  sessionId String?  @unique // For anonymous users
+
+  // Timestamps
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relationships
+  attempts  QuizAttempt[]
+
+  @@index([email])
+  @@index([sessionId])
+}
+
+model QuizAttempt {
+  id        String   @id @default(cuid())
+
+  // User info (optional - can be anonymous)
+  user      User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  userId    String?
+
+  // Session tracking for anonymous users
+  sessionId String?  // Browser session ID
+  ipAddress String?  // For rate limiting
+
+  // Quiz info
+  quiz      Quiz     @relation(fields: [quizId], references: [id], onDelete: Cascade)
+  quizId    String
+
+  // Results
+  score          Int      // Percentage score
+  pointsEarned   Int      // Total points earned
+  pointsPossible Int      // Total points possible
+  correctCount   Int      // Number of correct answers
+  totalQuestions Int      // Total questions in attempt
+
+  // Timing
+  timeSpent      Int?     // seconds
+  startedAt      DateTime
+  completedAt    DateTime @default(now())
+
+  // Detailed answers
+  questionAttempts QuestionAttempt[]
+
+  @@index([userId])
+  @@index([quizId])
+  @@index([completedAt])
+  @@index([sessionId])
+}
+
+model QuestionAttempt {
+  id         String  @id @default(cuid())
+
+  // Relationships
+  attempt    QuizAttempt @relation(fields: [attemptId], references: [id], onDelete: Cascade)
+  attemptId  String
+
+  question   Question @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  questionId String
+
+  // Answer data
+  selectedAnswer String?  // Answer ID or text
+  isCorrect      Boolean
+  pointsEarned   Int      @default(0)
+  timeSpent      Int?     // seconds spent on this question
+
+  // Tip usage
+  usedTip        Boolean  @default(false)
+
+  createdAt      DateTime @default(now())
+
+  @@index([attemptId])
+  @@index([questionId])
+}
+
+// ============================================
+// ENUMS
+// ============================================
+
+enum Language {
+  ENGLISH
+  SPANISH
+  TURKISH
+  FRENCH
+  CHINESE
+  VIETNAMESE
+  KOREAN
+  // Add more as needed
+}
+
+enum Difficulty {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+  EXPERT
+}
+
+enum QuizCategory {
+  GENERAL           // General DMV knowledge
+  TRAFFIC_LAWS      // Traffic rules and regulations
+  ROAD_SIGNS        // Road sign recognition
+  PARKING           // Parking rules
+  SAFETY            // Safety regulations
+  RIGHT_OF_WAY      // Right of way rules
+  PENALTIES         // Fines and penalties
+  MOTORCYCLE        // Motorcycle specific
+  COMMERCIAL        // Commercial vehicle
+  DEFENSIVE_DRIVING // Defensive driving techniques
+  NIGHT_DRIVING     // Night driving
+  EMERGENCY         // Emergency situations
+}
+
+enum AnswerType {
+  SINGLE_CHOICE    // One correct answer
+  MULTIPLE_CHOICE  // Multiple correct answers
+  TRUE_FALSE       // True/false question
+  // Future: FREE_TEXT, ORDERING, MATCHING
+}
+
+// ============================================
+// MEDIA & ASSETS
+// ============================================
+
+model Media {
+  id        String   @id @default(cuid())
+  wpId      Int?     @unique
+
+  url       String
+  fileName  String
+  mimeType  String
+  size      Int      // bytes
+  alt       String?
+  caption   String?
+
+  // Dimensions (for images)
+  width     Int?
+  height    Int?
+
+  createdAt DateTime @default(now())
+
+  @@index([fileName])
+}

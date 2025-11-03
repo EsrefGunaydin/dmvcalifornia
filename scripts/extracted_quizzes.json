@@ -1,0 +1,360 @@
+{
+  "extracted_at": "2025-11-02T18:38:16.611828",
+  "source": "WordPress WP Pro Quiz Plugin",
+  "quizzes": [
+    {
+      "wpQuizId": 1,
+      "title": "DMV Driving Test",
+      "slug": "dmv-driving-test",
+      "description": "According to California law, if you are under 18 years old, you will get a test of 46 questions. To pass the test, you must at least answer 38 of the questions correctly. This means, your passing score must be 85%. If you are over 18, you will get 36 questions. To pass the test, you have to answer 31 questions correctly. If you fail you can take it again, in 15 mins later. Good Luck!",
+      "language": "ENGLISH",
+      "difficulty": "BEGINNER",
+      "category": "GENERAL",
+      "passingScore": 85,
+      "randomizeQuestions": true,
+      "randomizeAnswers": true,
+      "timeLimit": null,
+      "questionCount": 46,
+      "questions_sample": [
+        {
+          "wpQId": 1,
+          "order": 1,
+          "question": "[Question 1 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 2,
+          "order": 2,
+          "question": "[Question 2 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 3,
+          "order": 3,
+          "question": "[Question 3 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wpQuizId": 2,
+      "title": "DMV Driving Test in Turkish / DMV Türkçe Test",
+      "slug": "dmv-turkce-test",
+      "description": "California DMV Written Driving Test in Turkish, Kaliforniya Sürücü Sınavı. Talimatlar: Sınavı almadan önce Kaliforniya Sürücü Kitapçığını çalışınız. Her soru için arasından seçeceğiniz üç yanıt vardır.",
+      "language": "TURKISH",
+      "difficulty": "BEGINNER",
+      "category": "GENERAL",
+      "passingScore": 85,
+      "randomizeQuestions": true,
+      "randomizeAnswers": true,
+      "timeLimit": null,
+      "questionCount": 36,
+      "questions_sample": [
+        {
+          "wpQId": 45,
+          "order": 1,
+          "question": "[Question 45 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 46,
+          "order": 2,
+          "question": "[Question 46 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 47,
+          "order": 3,
+          "question": "[Question 47 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wpQuizId": 3,
+      "title": "DMV Turkish Sign Test",
+      "slug": "dmv-turkish-sign-test",
+      "description": "DMV Turkish Sign Test. Bu, sizin yol işaretleri sınavınızdır. Bu sınavda on iki soru vardır.",
+      "language": "TURKISH",
+      "difficulty": "BEGINNER",
+      "category": "ROAD_SIGNS",
+      "passingScore": 75,
+      "randomizeQuestions": false,
+      "randomizeAnswers": false,
+      "timeLimit": null,
+      "questionCount": 12,
+      "questions_sample": [
+        {
+          "wpQId": 81,
+          "order": 1,
+          "question": "[Question 81 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 82,
+          "order": 2,
+          "question": "[Question 82 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 83,
+          "order": 3,
+          "question": "[Question 83 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "wpQuizId": 4,
+      "title": "DMV Quiz Español -1",
+      "slug": "dmv-quiz-espanol",
+      "description": "DMV California muestra del examen escrito para Licencia de Manejar gratis 2018 / DMV California sample written exam for Driver License",
+      "language": "SPANISH",
+      "difficulty": "BEGINNER",
+      "category": "GENERAL",
+      "passingScore": 85,
+      "randomizeQuestions": true,
+      "randomizeAnswers": true,
+      "timeLimit": null,
+      "questionCount": 36,
+      "questions_sample": [
+        {
+          "wpQId": 89,
+          "order": 1,
+          "question": "[Question 89 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 90,
+          "order": 2,
+          "question": "[Question 90 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        },
+        {
+          "wpQId": 91,
+          "order": 3,
+          "question": "[Question 91 - extract full text separately]",
+          "answerType": "SINGLE_CHOICE",
+          "points": 1,
+          "answers": [
+            {
+              "text": "[Answer 1]",
+              "isCorrect": false,
+              "order": 0
+            },
+            {
+              "text": "[Answer 2]",
+              "isCorrect": false,
+              "order": 1
+            },
+            {
+              "text": "[Answer 3]",
+              "isCorrect": true,
+              "order": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "total_quizzes": 4,
+  "note": "Full question extraction requires separate detailed parsing"
+}
