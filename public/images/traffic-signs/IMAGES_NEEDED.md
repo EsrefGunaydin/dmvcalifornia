@@ -1,6 +1,6 @@
 # Traffic Sign Images Needed
 
-Total unique traffic sign images needed: **26**
+Total unique traffic sign images needed: **25**
 
 ---
 
@@ -334,29 +334,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 16. sign-18.webp
-
-**Quiz:** Freeway Driving & Merging Practice Test
-
-**Question ID:** 1
-
-**Question Text:**
-> This sign means:
-
-**Answer Options:**
-- U-turn area ahead
-- No U-turn
-- No passing
-
-**Correct Answer:** No U-turn
-
-**Sign Description:** Traffic sign (description needed)
-
-**File Path:** `/public/images/traffic-signs/sign-18.webp`
-
----
-
-## 17. sign-20.webp
+## 16. sign-20.webp
 
 **Quiz:** Emergency Procedures & Accidents Practice Test
 
@@ -378,7 +356,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 18. sign-21.webp
+## 17. sign-21.webp
 
 **Quiz:** Railroad Crossings & School Zones Practice Test
 
@@ -400,7 +378,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 19. sign-22.webp
+## 18. sign-22.webp
 
 **Quiz:** Pedestrians & Bicycles Practice Test
 
@@ -422,7 +400,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 20. no-right-turn-sign.webp
+## 19. no-right-turn-sign.webp
 
 **Quiz:** Pedestrians & Bicycles Practice Test
 
@@ -444,7 +422,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 21. rest-area-1-mile-sign.webp
+## 20. rest-area-1-mile-sign.webp
 
 **Quiz:** Special Driving Situations Practice Test
 
@@ -466,7 +444,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 22. sign-25.webp
+## 21. sign-25.webp
 
 **Quiz:** Special Driving Situations Practice Test
 
@@ -488,7 +466,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 23. sign-26.webp
+## 22. sign-26.webp
 
 **Quiz:** Special Driving Situations Practice Test
 
@@ -510,7 +488,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 24. sign-27.webp
+## 23. sign-27.webp
 
 **Quiz:** Mixed Review Practice Test
 
@@ -532,7 +510,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 25. merge-arrow-sign.webp
+## 24. merge-arrow-sign.webp
 
 **Quiz:** Mixed Review Practice Test
 
@@ -554,7 +532,7 @@ Total unique traffic sign images needed: **26**
 
 ---
 
-## 26. sign-29.webp
+## 25. sign-29.webp
 
 **Quiz:** Mixed Review Practice Test
 
