@@ -1,0 +1,86 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-1",
+    "title": "DMV California Practice Flashcards - Set 1",
+    "description": "15 essential DMV questions and answers for California driving test preparation",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answer": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "You must notify DMV within 5 days if you:",
+        "answer": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "You are getting ready to make a right turn. You should:",
+        "answer": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "For which of the following traffic lights must you always stop your vehicle?",
+        "answer": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answer": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "When a traffic signal light isn't working at an intersection, you should:",
+        "answer": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "You should adjust your rear view and side view mirrors:",
+        "answer": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answer": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answer": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answer": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "When sharing the road with a light rail vehicle:",
+        "answer": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answer": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "Allow extra space in front of your vehicle when following a:",
+        "answer": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answer": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answer": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

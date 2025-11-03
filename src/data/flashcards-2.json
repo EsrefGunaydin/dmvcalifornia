@@ -1,0 +1,86 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-2",
+    "title": "DMV California Practice Flashcards - Set 2",
+    "description": "15 essential DMV questions covering right-of-way, safety, and road rules for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answer": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answer": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "Whose responsibility is it to know how your medications affect your driving?",
+        "answer": "yours"
+      },
+      {
+        "id": 19,
+        "question": "Which of the following is true about safety belts and collisions?",
+        "answer": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answer": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "This red and white sign means:",
+        "answer": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "You are required to wear your safety belt in a moving vehicle:",
+        "answer": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answer": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answer": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "If you have a green light, but traffic is blocking the intersection:",
+        "answer": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "This white sign means:",
+        "answer": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "Which statement is true about motorcyclists and motorists?",
+        "answer": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "When you change or merge with another lane, you:",
+        "answer": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "Your wheels should be pointed straight ahead, unless you are:",
+        "answer": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answer": "an exit lane"
+      }
+    ]
+  }
+}

@@ -6,11 +6,11 @@ import leaderboardData from '@/data/leaderboard.json';
 
 export const metadata: Metadata = {
   title: 'DMV Türkçe Trafik İşareti Testi | DMV California',
-  description: 'California DMV Türkçe trafik işareti testi - 8 soruluk görsel işaret tanıma testi. California DMV Turkish traffic sign identification test with 8 image-based questions.',
+  description: 'California DMV Türkçe trafik işareti testi - 24 soruluk görsel işaret tanıma testi. California DMV Turkish traffic sign identification test with 24 image-based questions.',
   keywords: ['DMV türkçe test', 'türkçe trafik işareti', 'California DMV Turkish test', 'traffic signs Turkish', 'DMV işaret testi'],
   openGraph: {
     title: 'DMV Türkçe Trafik İşareti Testi | DMV California',
-    description: 'California DMV Türkçe trafik işareti testi - 8 soruluk görsel işaret tanıma testi',
+    description: 'California DMV Türkçe trafik işareti testi - 24 soruluk görsel işaret tanıma testi',
     type: 'website',
   }
 };
@@ -37,7 +37,7 @@ export default function TurkishSignTestPage() {
               California DMV Turkish Traffic Sign Test
             </p>
             <p className="text-lg opacity-90">
-              11 soruluk görsel trafik işareti tanıma testi • 11 image-based traffic sign questions
+              24 soruluk görsel trafik işareti tanıma testi • 24 image-based traffic sign questions
             </p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function TurkishSignTestPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">•</span>
-                      <span>Geçmek için %75 (9/11) gerekli / Need 75% (9/11) to pass</span>
+                      <span>Geçmek için %75 (18/24) gerekli / Need 75% (18/24) to pass</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">•</span>
@@ -95,15 +95,15 @@ export default function TurkishSignTestPage() {
                   <div className="space-y-2 text-sm text-gray-700">
                     <div className="flex justify-between">
                       <span className="font-medium">Sorular / Questions:</span>
-                      <span>11</span>
+                      <span>24</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium">Süre / Time:</span>
-                      <span>15 dakika / minutes</span>
+                      <span>30 dakika / minutes</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium">Geçme Notu / Passing:</span>
-                      <span>75% (9/11)</span>
+                      <span>75% (18/24)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium">Dil / Language:</span>

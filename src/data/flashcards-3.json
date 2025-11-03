@@ -1,0 +1,86 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-3",
+    "title": "DMV California Practice Flashcards - Set 3",
+    "description": "15 essential DMV questions covering lane changes, U-turns, cargo rules, and school zones for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-3",
+    "cards": [
+      {
+        "id": 46,
+        "question": "If five or more vehicles are following you on a narrow two-lane road:",
+        "answer": "drive into the turnout areas or lanes to let them pass"
+      },
+      {
+        "id": 47,
+        "question": "Which of these is a legal U-turn?",
+        "answer": "on a divided highway where there is a paved opening for a turn"
+      },
+      {
+        "id": 48,
+        "question": "You see a car approaching from the rear. When you check your mirror again to change lanes, you no longer see the car:",
+        "answer": "look over your shoulder to be sure the car isn't in your blind spot"
+      },
+      {
+        "id": 49,
+        "question": "If you are towing another vehicle or trailer on a freeway with four lanes in your direction, you may travel in:",
+        "answer": "either of the two right lanes"
+      },
+      {
+        "id": 50,
+        "question": "This red and white sign means you should:",
+        "answer": "give the right-of-way to traffic on the road you wish to enter or cross"
+      },
+      {
+        "id": 51,
+        "question": "To be sure a lane is clear before you change lanes, you should:",
+        "answer": "glance over your shoulder into the lane you want to enter"
+      },
+      {
+        "id": 52,
+        "question": "When driving in fog, snow, or rain you should use your:",
+        "answer": "low beam headlights"
+      },
+      {
+        "id": 53,
+        "question": "Which of these statements is true about child passengers?",
+        "answer": "children under the age one should not ride in the front seat in airbag-equipped vehicles"
+      },
+      {
+        "id": 54,
+        "question": "All of the following are dangerous while driving. Which is also illegal?",
+        "answer": "wearing a headset that covers both ears"
+      },
+      {
+        "id": 55,
+        "question": "You should stop before crossing railroad tracks:",
+        "answer": "any time a train may be approaching, whether or not you can see it"
+      },
+      {
+        "id": 56,
+        "question": "To turn left from a one-way street, start from:",
+        "answer": "the lane closest to the left curb"
+      },
+      {
+        "id": 57,
+        "question": "Cargo extending more than four feet from your rear bumper:",
+        "answer": "must be marked with a red flag or lights"
+      },
+      {
+        "id": 58,
+        "question": "A pedestrian who is blind or is visually impaired uses traffic sounds before deciding to cross the street. If you see a pedestrian with a guide dog or white cane waiting to cross at a corner, you should:",
+        "answer": "pull up to the crosswalk so the person can hear your engine"
+      },
+      {
+        "id": 59,
+        "question": "Two vehicles are approaching an uncontrolled \"T\" intersection. One vehicle is on the through road and the other is on the road that ends. Who has the right-of-way at the intersection?",
+        "answer": "the vehicle on the through road"
+      },
+      {
+        "id": 60,
+        "question": "The speed limit for a school zone where children are present is ____.",
+        "answer": "25 mph"
+      }
+    ]
+  }
+}

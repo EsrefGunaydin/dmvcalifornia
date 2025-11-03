@@ -1,0 +1,370 @@
+{
+  "quizzes": [
+    {
+      "id": "california-permit-test-1",
+      "title": "California Permit Practice Test #1",
+      "description": "Test your knowledge with 46 questions from the California DMV written test. You need 38 correct answers to pass (83%).",
+      "category": "Permit Test",
+      "slug": "california-permit-test-1",
+      "passingScore": 83,
+      "timeLimit": 60,
+      "questions": [
+        {
+          "id": 1,
+          "question": "You may drive off of the paved roadway to pass another vehicle:",
+          "options": [
+            "If the shoulder is wide enough to accommodate your vehicle",
+            "If the vehicle ahead of you is turning left",
+            "Under no circumstances"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You should never drive off the paved roadway to pass another vehicle. It's illegal and dangerous.",
+          "category": "Road Rules",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "You are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks in one direction. The speed limit is:",
+          "options": [
+            "15 mph",
+            "20 mph",
+            "25 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "When you cannot see 400 feet down the railroad tracks in both directions, you must slow to 15 mph and be prepared to stop.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "When parking your vehicle parallel to a curb on a level street:",
+          "options": [
+            "Your front wheels must be turned toward the street",
+            "Your wheels must be within 18 inches of the curb",
+            "One of your rear wheels must touch the curb"
+          ],
+          "correctAnswer": 1,
+          "explanation": "When parallel parking, your wheels must be within 18 inches of the curb.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "When you are merging onto the freeway, you should be driving:",
+          "options": [
+            "At or near the same speed as the traffic on the freeway",
+            "5 to 10 MPH slower than the traffic on the freeway",
+            "The posted speed limit for freeway traffic"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You should match the speed of freeway traffic when merging to blend in smoothly and safely.",
+          "category": "Freeway Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "When driving in fog, you should use your:",
+          "options": [
+            "Fog lights only",
+            "High beams",
+            "Low beams"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Use low beams in fog. High beams will reflect off the fog and make it harder to see.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "A school bus ahead of you in your lane is stopped with red lights flashing. You should:",
+          "options": [
+            "Stop, then proceed when you think all of the children have exited the bus",
+            "Slow to 25 MPH and pass cautiously",
+            "Stop as long as the red lights are flashing"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must stop and remain stopped as long as the red lights on the school bus are flashing.",
+          "category": "School Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "California's Basic Speed Law says:",
+          "options": [
+            "You should never drive faster than posted speed limits",
+            "You should never drive faster than is safe for current conditions",
+            "The maximum speed limit in California is 70 mph on certain freeways"
+          ],
+          "correctAnswer": 1,
+          "explanation": "California's Basic Speed Law means you must never drive faster than is safe for current conditions, regardless of the posted speed limit.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "You just sold your vehicle. You must notify the DMV within ___ days.",
+          "options": [
+            "5",
+            "10",
+            "15"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle.",
+          "category": "Vehicle Registration",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "Two sets of solid, double, yellow lines that are two or more feet apart:",
+          "options": [
+            "May be crossed to enter or exit a private driveway",
+            "May not be crossed for any reason",
+            "Should be treated as a separate traffic lane"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Two sets of solid double yellow lines spaced 2 feet or more apart are considered a barrier. You may not cross them for any reason.",
+          "category": "Lane Markings",
+          "difficulty": "hard"
+        },
+        {
+          "id": 10,
+          "question": "You want to make a right turn at an upcoming intersection. You should slow down and:",
+          "options": [
+            "Move toward the left side of your lane",
+            "Avoid driving in the bicycle lane",
+            "Signal for 100 feet before turning"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must signal for at least 100 feet before turning.",
+          "category": "Turning",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "traffic-signs-quiz",
+      "title": "California Traffic Signs Quiz",
+      "description": "Master California traffic signs with this 20-question practice test. Learn to recognize and understand regulatory, warning, and guide signs.",
+      "category": "Traffic Signs",
+      "slug": "traffic-signs-quiz",
+      "passingScore": 80,
+      "questions": [
+        {
+          "id": 1,
+          "question": "An octagonal (8-sided) red sign always means:",
+          "options": [
+            "Yield",
+            "Stop",
+            "Do not enter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "An octagonal red sign is always a STOP sign.",
+          "category": "Traffic Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "A triangular orange sign on the back of a slow-moving vehicle indicates that the vehicle is traveling at:",
+          "options": [
+            "Less than 25 mph",
+            "Less than 35 mph",
+            "Less than 45 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The orange triangle indicates a slow-moving vehicle traveling at less than 25 mph.",
+          "category": "Traffic Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "A yellow diamond-shaped sign with a black 'X' and two R's indicates:",
+          "options": [
+            "Railroad crossing ahead",
+            "Rest area ahead",
+            "Road closed"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A yellow diamond with an X and two R's warns of a railroad crossing ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "What does a flashing yellow traffic light mean?",
+          "options": [
+            "Stop if it is safe to do so",
+            "Slow down and proceed with caution",
+            "Stop, then proceed when safe"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means slow down and proceed with caution.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "A white painted curb means:",
+          "options": [
+            "Loading zone for freight or passengers",
+            "Loading zone for passengers or mail only",
+            "No stopping or parking"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A white curb is for loading passengers or mail only.",
+          "category": "Parking",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "road-rules-basics",
+      "title": "California Road Rules Basics",
+      "description": "Essential California driving laws and rules of the road. Perfect for permit test preparation.",
+      "category": "Road Rules",
+      "slug": "road-rules-basics",
+      "passingScore": 80,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Unless otherwise posted, the speed limit in a residential district is:",
+          "options": [
+            "20 mph",
+            "25 mph",
+            "30 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The speed limit in residential districts is 25 mph unless otherwise posted.",
+          "category": "Speed Limits",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "You must notify law enforcement and make a written report of a traffic accident when:",
+          "options": [
+            "Your vehicle fails the smog test",
+            "You change your insurance company",
+            "Someone is injured or killed"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must report accidents involving injury, death, or property damage over $1,000.",
+          "category": "Accidents",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "If you plan to pass another vehicle, you should:",
+          "options": [
+            "Not assume the other driver will make space for you to return to your lane",
+            "Assume the other driver will let you pass if you use your turn signal",
+            "Assume the other driver will maintain a constant speed"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Never assume other drivers will cooperate. Always check that you have enough space to pass safely.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "You are driving on a freeway posted for 65 MPH. The traffic is traveling at 70 MPH. You may legally drive:",
+          "options": [
+            "70 mph or faster to keep up with the speed of traffic",
+            "Between 65 mph and 70 mph",
+            "No faster than 65 mph"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Even if traffic is moving faster, you should not exceed the posted speed limit.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "It is illegal to park your vehicle:",
+          "options": [
+            "In an unmarked crosswalk",
+            "Within three feet of a private driveway",
+            "In a bicycle lane"
+          ],
+          "correctAnswer": 0,
+          "explanation": "It is illegal to park in a crosswalk, whether marked or unmarked.",
+          "category": "Parking",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "safe-driving-practices",
+      "title": "Safe Driving Practices",
+      "description": "Learn defensive driving techniques and safe driving habits to protect yourself and others on California roads.",
+      "category": "Safe Driving",
+      "slug": "safe-driving-practices",
+      "passingScore": 80,
+      "questions": [
+        {
+          "id": 1,
+          "question": "You are about to make a left turn. You must signal continuously during the last ____ feet before the turn.",
+          "options": [
+            "50",
+            "75",
+            "100"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must signal for at least the last 100 feet before making a turn.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "When can you drive in a bike lane?",
+          "options": [
+            "During rush hour traffic if there are no bicyclists in the bike lane",
+            "When you are within 200 feet of a cross street where you plan to turn right",
+            "When you want to pass a driver ahead of you who is turning right"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You may enter a bike lane no more than 200 feet before making a right turn.",
+          "category": "Bike Lanes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "You are driving on a one-way street. You may turn left onto another one-way street only if:",
+          "options": [
+            "A sign permits the turn",
+            "Traffic on the street moves to the right",
+            "Traffic on the street moves to the left"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You may turn left onto a one-way street only if traffic on that street moves to the left.",
+          "category": "Turning",
+          "difficulty": "hard"
+        },
+        {
+          "id": 4,
+          "question": "You should use your horn when:",
+          "options": [
+            "Another driver makes a mistake",
+            "You may be in danger",
+            "Another vehicle is in your way"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use your horn only when necessary to avoid a collision or warn others of danger.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "When is it legal to drive faster than the posted speed limit?",
+          "options": [
+            "Never",
+            "When passing another vehicle",
+            "When everyone else is driving faster than the speed limit"
+          ],
+          "correctAnswer": 0,
+          "explanation": "It is never legal to drive faster than the posted speed limit.",
+          "category": "Speed Limits",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}

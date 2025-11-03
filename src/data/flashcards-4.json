@@ -1,0 +1,71 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-4",
+    "title": "DMV California Practice Flashcards - Set 4",
+    "description": "12 essential DMV questions covering peace officers, medications, crossing guards, and parking rules for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-4",
+    "cards": [
+      {
+        "id": 61,
+        "question": "A peace officer is signaling you to drive to the edge of the roadway. You decide to ignore the officer's warning and flee the scene. You are guilty of a misdemeanor and can be punished by being:",
+        "answer": "jailed in the county jail for not more than one year"
+      },
+      {
+        "id": 62,
+        "question": "Which of these statements is true about driving and taking medications?",
+        "answer": "most cold medications can make a person drowsy"
+      },
+      {
+        "id": 63,
+        "question": "Instructions from school crossing guard must be obeyed:",
+        "answer": "at all times"
+      },
+      {
+        "id": 64,
+        "question": "Which of the following is true about large trucks?",
+        "answer": "trucks often appear to travel slower because of their large size"
+      },
+      {
+        "id": 65,
+        "question": "If there is a deep puddle in the road ahead, you should:",
+        "answer": "avoid the puddle, if possible"
+      },
+      {
+        "id": 66,
+        "question": "The speed limit in any alley is:",
+        "answer": "15 mph"
+      },
+      {
+        "id": 67,
+        "question": "This yellow sign means:",
+        "answer": "vehicles on this road travel in two directions"
+      },
+      {
+        "id": 68,
+        "question": "You are approaching a sharp curve in the road. You should:",
+        "answer": "start braking before you enter the curve"
+      },
+      {
+        "id": 69,
+        "question": "When parking on any hill, always set your parking brake and:",
+        "answer": "leave your vehicle in gear or the \"park\" position"
+      },
+      {
+        "id": 70,
+        "question": "All children under age six riding in your vehicle must use a child passenger restraint system unless:",
+        "answer": "they weigh 60 pounds or more and wear a safety belt"
+      },
+      {
+        "id": 71,
+        "question": "This yellow sign means:",
+        "answer": "there is a pedestrian crossing ahead"
+      },
+      {
+        "id": 72,
+        "question": "This lane in the middle of a two-way street is used to:",
+        "answer": "begin or end left turns, or start a permitted U-turn"
+      }
+    ]
+  }
+}

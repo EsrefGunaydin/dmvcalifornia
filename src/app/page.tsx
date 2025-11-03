@@ -8,9 +8,9 @@ import quizzesData from '../data/quizzes.json';
 export default function Home() {
   const totalQuestions = quizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
 
-  // Select 6 featured tests (2 simulation + 4 practice)
+  // Select 6 featured items (2 simulation + 2 practice + flashcards + sign quiz)
   const simulationTests = quizzesData.quizzes.filter(q => q.category === 'Full Simulation Tests').slice(0, 2);
-  const practiceTests = quizzesData.quizzes.filter(q => q.category === 'Practice Tests').slice(0, 4);
+  const practiceTests = quizzesData.quizzes.filter(q => q.category === 'Practice Tests').slice(0, 2);
   const featuredTests = [...simulationTests, ...practiceTests];
 
   return (
@@ -98,6 +98,60 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+
+            {/* Flashcards Card */}
+            <Link
+              href="/practice-test/flashcards"
+              className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+            >
+              <div className="p-6">
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">
+                    Study Tool
+                  </span>
+                  <span className="text-2xl">🎴</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
+                  Interactive Flashcards
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  Master 72 essential DMV questions with interactive flashcards. Study at your own pace across 5 comprehensive sets.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>72 Cards • 5 Sets</span>
+                  <span className="text-purple-600 font-medium group-hover:underline">
+                    Start Studying →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Traffic Sign Test Card */}
+            <Link
+              href="/dmv-turkish-test/dmv-california-turkce-trafik-isareti-testi"
+              className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+            >
+              <div className="p-6">
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-medium">
+                    Turkish / Türkçe
+                  </span>
+                  <span className="text-2xl">🚦</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
+                  Traffic Sign Test (Turkish)
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  Kaliforniya trafik işaretleri testi - Türkçe. California traffic signs test in Turkish language.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>11 Questions</span>
+                  <span className="text-yellow-600 font-medium group-hover:underline">
+                    Teste Başla →
+                  </span>
+                </div>
+              </div>
+            </Link>
           </div>
 
           <div className="text-center mt-8">

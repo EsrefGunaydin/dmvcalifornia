@@ -1,0 +1,380 @@
+{
+  "total_quizzes": 19,
+  "duplicates_removed": {
+    "dmv-simulation-test-1": {
+      "title": "California DMV Simulation Test #1",
+      "count": 5,
+      "removed_questions": [
+        "You sold your vehicle. Notify ___ within 5 days.",
+        "When can you cross a solid double yellow line to pass another vehicle?",
+        "A curb painted blue means:",
+        "If you sell your vehicle, you must notify ______ within five days.",
+        "What is a safety zone?"
+      ]
+    },
+    "dmv-simulation-test-2": {
+      "title": "California DMV Simulation Test #2",
+      "count": 6,
+      "removed_questions": [
+        "You are driving on a highway. Your tire suddenly goes flat and you need to pull ...",
+        "This sign means:",
+        "This sign means:",
+        "You sold your vehicle. You must notify ___ within 5 days.",
+        "This sign means:",
+        "If you sell your vehicle, you must notify ___ within 5 days."
+      ]
+    },
+    "practice-test-1": {
+      "title": "Traffic Signs & Signals Practice Test",
+      "count": 0,
+      "removed_questions": []
+    },
+    "practice-test-2": {
+      "title": "Right-of-Way & Intersections Practice Test",
+      "count": 0,
+      "removed_questions": []
+    },
+    "practice-test-3": {
+      "title": "Parking & Vehicle Control Practice Test",
+      "count": 2,
+      "removed_questions": [
+        "This sign means:",
+        "This sign means:"
+      ]
+    },
+    "practice-test-4": {
+      "title": "Speed Limits & Traffic Laws Practice Test",
+      "count": 0,
+      "removed_questions": []
+    },
+    "practice-test-5": {
+      "title": "Safe Driving & Defensive Techniques Practice Test",
+      "count": 1,
+      "removed_questions": [
+        "[IMAGE: KEEP RIGHT sign] This sign means:"
+      ]
+    },
+    "practice-test-6": {
+      "title": "DUI Laws & Safety Requirements Practice Test",
+      "count": 2,
+      "removed_questions": [
+        "This sign means:",
+        "Which of these statements is true about large trucks?"
+      ]
+    },
+    "practice-test-7": {
+      "title": "Sharing the Road Practice Test",
+      "count": 0,
+      "removed_questions": []
+    },
+    "practice-test-8": {
+      "title": "Turning & Lane Changes Practice Test",
+      "count": 3,
+      "removed_questions": [
+        "This sign means:",
+        "This sign means:",
+        "This sign means:"
+      ]
+    },
+    "practice-test-9": {
+      "title": "Freeway Driving & Merging Practice Test",
+      "count": 1,
+      "removed_questions": [
+        "This sign means:"
+      ]
+    },
+    "practice-test-10": {
+      "title": "Weather & Night Driving Practice Test",
+      "count": 1,
+      "removed_questions": [
+        "Which of these statements is true about large trucks?"
+      ]
+    },
+    "practice-test-11": {
+      "title": "Emergency Procedures & Accidents Practice Test",
+      "count": 4,
+      "removed_questions": [
+        "This sign means:",
+        "It is illegal for a person 21 years of age or older to drive with a blood alcoho...",
+        "This sign means:",
+        "Checking traffic behind you:"
+      ]
+    },
+    "practice-test-12": {
+      "title": "Vehicle Equipment & Registration Practice Test",
+      "count": 1,
+      "removed_questions": [
+        "If you have a conditional driver license, there is (are):"
+      ]
+    },
+    "practice-test-13": {
+      "title": "Railroad Crossings & School Zones Practice Test",
+      "count": 0,
+      "removed_questions": []
+    },
+    "practice-test-14": {
+      "title": "Pedestrians & Bicycles Practice Test",
+      "count": 1,
+      "removed_questions": [
+        "This sign means:"
+      ]
+    },
+    "practice-test-15": {
+      "title": "Special Driving Situations Practice Test",
+      "count": 0,
+      "removed_questions": []
+    },
+    "practice-test-16": {
+      "title": "Road Signs & Markings Practice Test",
+      "count": 0,
+      "removed_questions": []
+    },
+    "practice-test-mixed-review": {
+      "title": "Mixed Review Practice Test",
+      "count": 5,
+      "removed_questions": [
+        "What is the Basic Speed Law?",
+        "What is Basic Speed Law?",
+        "Railroad crossing lights are flashing. You must:",
+        "You reach the intersection at the same time as the driver on your left. Who goes...",
+        "A person can ride in the back of a pick up truck when the:"
+      ]
+    }
+  },
+  "images_added": 18,
+  "image_placeholders_removed": 11,
+  "sign_images_needed": [
+    {
+      "quiz": "California DMV Simulation Test #1",
+      "quiz_id": "dmv-simulation-test-1",
+      "question_id": 36,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-1.webp"
+    },
+    {
+      "quiz": "California DMV Simulation Test #1",
+      "quiz_id": "dmv-simulation-test-1",
+      "question_id": 41,
+      "question": "[IMAGE: LEFT TURN YIELD ON GREEN sign] This sign means:",
+      "description": "LEFT TURN YIELD ON GREEN sign",
+      "filename": "left-turn-yield-on-green-sign.webp"
+    },
+    {
+      "quiz": "California DMV Simulation Test #2",
+      "quiz_id": "dmv-simulation-test-2",
+      "question_id": 6,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-3.webp"
+    },
+    {
+      "quiz": "California DMV Simulation Test #2",
+      "quiz_id": "dmv-simulation-test-2",
+      "question_id": 17,
+      "question": "[IMAGE: WRONG WAY sign] This sign means:",
+      "description": "WRONG WAY sign",
+      "filename": "wrong-way-sign.webp"
+    },
+    {
+      "quiz": "Traffic Signs & Signals Practice Test",
+      "quiz_id": "practice-test-1",
+      "question_id": 17,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-5.webp"
+    },
+    {
+      "quiz": "Right-of-Way & Intersections Practice Test",
+      "quiz_id": "practice-test-2",
+      "question_id": 4,
+      "question": "[IMAGE: STOP sign] This sign means:",
+      "description": "STOP sign",
+      "filename": "stop-sign.webp"
+    },
+    {
+      "quiz": "Parking & Vehicle Control Practice Test",
+      "quiz_id": "practice-test-3",
+      "question_id": 6,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-7.webp"
+    },
+    {
+      "quiz": "Speed Limits & Traffic Laws Practice Test",
+      "quiz_id": "practice-test-4",
+      "question_id": 2,
+      "question": "[IMAGE: NO U-TURN sign] This sign means:",
+      "description": "NO U-TURN sign",
+      "filename": "no-u-turn-sign.webp"
+    },
+    {
+      "quiz": "Speed Limits & Traffic Laws Practice Test",
+      "quiz_id": "practice-test-4",
+      "question_id": 10,
+      "question": "A freeway on ramp is marked with this sign. Which of the following vehicles may use this lane?",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-9.webp"
+    },
+    {
+      "quiz": "Safe Driving & Defensive Techniques Practice Test",
+      "quiz_id": "practice-test-5",
+      "question_id": 6,
+      "question": "[IMAGE: Cross road sign] This sign means:",
+      "description": "Cross road sign",
+      "filename": "cross-road-sign.webp"
+    },
+    {
+      "quiz": "Safe Driving & Defensive Techniques Practice Test",
+      "quiz_id": "practice-test-5",
+      "question_id": 14,
+      "question": "[IMAGE: YIELD sign] This sign means:",
+      "description": "YIELD sign",
+      "filename": "yield-sign.webp"
+    },
+    {
+      "quiz": "Safe Driving & Defensive Techniques Practice Test",
+      "quiz_id": "practice-test-5",
+      "question_id": 18,
+      "question": "[IMAGE: Right curve sign] This sign means:",
+      "description": "Right curve sign",
+      "filename": "right-curve-sign.webp"
+    },
+    {
+      "quiz": "DUI Laws & Safety Requirements Practice Test",
+      "quiz_id": "practice-test-6",
+      "question_id": 1,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-13.webp"
+    },
+    {
+      "quiz": "DUI Laws & Safety Requirements Practice Test",
+      "quiz_id": "practice-test-6",
+      "question_id": 2,
+      "question": "[IMAGE: SLOWER TRAFFIC KEEP RIGHT sign] This sign means:",
+      "description": "SLOWER TRAFFIC KEEP RIGHT sign",
+      "filename": "slower-traffic-keep-right-sign.webp"
+    },
+    {
+      "quiz": "Sharing the Road Practice Test",
+      "quiz_id": "practice-test-7",
+      "question_id": 3,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-15.webp"
+    },
+    {
+      "quiz": "Sharing the Road Practice Test",
+      "quiz_id": "practice-test-7",
+      "question_id": 9,
+      "question": "A flashing yellow traffic signal at an intersection means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-16.webp"
+    },
+    {
+      "quiz": "Turning & Lane Changes Practice Test",
+      "quiz_id": "practice-test-8",
+      "question_id": 1,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-17.webp"
+    },
+    {
+      "quiz": "Freeway Driving & Merging Practice Test",
+      "quiz_id": "practice-test-9",
+      "question_id": 1,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-18.webp"
+    },
+    {
+      "quiz": "Weather & Night Driving Practice Test",
+      "quiz_id": "practice-test-10",
+      "question_id": 13,
+      "question": "A flashing yellow traffic signal at an intersection means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-19.webp"
+    },
+    {
+      "quiz": "Emergency Procedures & Accidents Practice Test",
+      "quiz_id": "practice-test-11",
+      "question_id": 1,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-20.webp"
+    },
+    {
+      "quiz": "Railroad Crossings & School Zones Practice Test",
+      "quiz_id": "practice-test-13",
+      "question_id": 6,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-21.webp"
+    },
+    {
+      "quiz": "Pedestrians & Bicycles Practice Test",
+      "quiz_id": "practice-test-14",
+      "question_id": 5,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-22.webp"
+    },
+    {
+      "quiz": "Pedestrians & Bicycles Practice Test",
+      "quiz_id": "practice-test-14",
+      "question_id": 14,
+      "question": "[IMAGE: No right turn sign] This sign means:",
+      "description": "No right turn sign",
+      "filename": "no-right-turn-sign.webp"
+    },
+    {
+      "quiz": "Special Driving Situations Practice Test",
+      "quiz_id": "practice-test-15",
+      "question_id": 1,
+      "question": "[IMAGE: REST AREA 1 MILE sign] This sign means:",
+      "description": "REST AREA 1 MILE sign",
+      "filename": "rest-area-1-mile-sign.webp"
+    },
+    {
+      "quiz": "Special Driving Situations Practice Test",
+      "quiz_id": "practice-test-15",
+      "question_id": 2,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-25.webp"
+    },
+    {
+      "quiz": "Special Driving Situations Practice Test",
+      "quiz_id": "practice-test-15",
+      "question_id": 6,
+      "question": "A yellow sign with a traffic signal symbol means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-26.webp"
+    },
+    {
+      "quiz": "Mixed Review Practice Test",
+      "quiz_id": "practice-test-mixed-review",
+      "question_id": 4,
+      "question": "A yellow diamond-shaped sign with a black 'X' and two R's indicates:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-27.webp"
+    },
+    {
+      "quiz": "Mixed Review Practice Test",
+      "quiz_id": "practice-test-mixed-review",
+      "question_id": 23,
+      "question": "[IMAGE: Merge arrow sign] This sign means:",
+      "description": "Merge arrow sign",
+      "filename": "merge-arrow-sign.webp"
+    },
+    {
+      "quiz": "Mixed Review Practice Test",
+      "quiz_id": "practice-test-mixed-review",
+      "question_id": 60,
+      "question": "This sign means:",
+      "description": "Traffic sign (description needed)",
+      "filename": "sign-29.webp"
+    }
+  ]
+}

@@ -1,0 +1,1230 @@
+{
+  "quizzes_to_add": [
+    {
+      "id": "dmv-simulation-test-3",
+      "title": "California DMV Simulation Test #3",
+      "description": "Full-length California DMV practice test 2025 with 46 questions. This simulation mimics the real DMV written test online California format. Pass with 83% (38/46 correct) to prepare for your official DMV Class C practice test.",
+      "category": "Full Simulation Tests",
+      "slug": "dmv-simulation-test-3",
+      "passingScore": 83,
+      "timeLimit": 60,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the legal BAC limit for drivers under 21 in California?",
+          "options": [
+            "0.08%",
+            "0.05%",
+            "0.01%",
+            "0.00%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "California has a zero-tolerance policy for drivers under 21. The legal BAC limit is 0.01%.",
+          "category": "BAC/DUI Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "When can you drive in a bike lane?",
+          "options": [
+            "When you need to make a turn",
+            "During rush hour",
+            "Whenever there are no bicycles",
+            "Never"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You may drive in a bike lane when making a turn within 200 feet of the intersection.",
+          "category": "Lane Usage",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "What should you do if you see a pedestrian with a white cane?",
+          "options": [
+            "Honk your horn",
+            "Stop and give them the right of way",
+            "Drive around them",
+            "Flash your lights"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A white cane indicates a blind or visually impaired pedestrian. Always stop and yield the right of way.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "You are approaching a school and see children near the street, you should:",
+          "options": [
+            "Speed up to clear the area quickly",
+            "Stop, then proceed",
+            "Slow down and proceed with caution",
+            "Continue driving at the posted speed limit"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Always slow down and be extra cautious around schools when children are present.",
+          "category": "School Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "What should you do if you are being tailgated?",
+          "options": [
+            "Brake suddenly",
+            "Speed up",
+            "Change lanes if possible",
+            "Ignore them"
+          ],
+          "correctAnswer": 2,
+          "explanation": "If being tailgated, the safest action is to change lanes when possible to let the vehicle pass.",
+          "category": "Defensive Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "When parallel parking, you should park within how many inches of the curb?",
+          "options": [
+            "6 inches",
+            "12 inches",
+            "18 inches",
+            "24 inches"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When parallel parking, your vehicle must be within 18 inches of the curb.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "You must notify the DMV within how many days if you sell your vehicle?",
+          "options": [
+            "5 days",
+            "10 days",
+            "15 days",
+            "20 days"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle to avoid liability.",
+          "category": "Vehicle Registration",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "What does a solid yellow line next to a broken yellow line mean?",
+          "options": [
+            "Passing is allowed in both directions",
+            "Passing is allowed only on the side with the broken line",
+            "No passing allowed in either direction",
+            "Passing is allowed only during daylight hours"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You may pass only when the broken yellow line is on your side of the road.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "When must you yield to a pedestrian in a crosswalk?",
+          "options": [
+            "Only when the pedestrian is on your side of the road",
+            "Always, whether or not the crosswalk is marked",
+            "Only during daylight hours",
+            "Never"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You must always yield to pedestrians in crosswalks, whether marked or unmarked.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 10,
+          "question": "What should you do if you approach a traffic signal with a flashing yellow light?",
+          "options": [
+            "Stop before proceeding",
+            "Slow down and proceed with caution",
+            "Speed up to clear the intersection quickly",
+            "Stop and wait for the light to change"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means slow down and proceed with caution.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "When can you legally use a cell phone without a hands-free device while driving?",
+          "options": [
+            "Never",
+            "When making an emergency call",
+            "When driving in a school zone",
+            "When stopped at a red light"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You may only use a cell phone without hands-free when making an emergency call to law enforcement or emergency services.",
+          "category": "Distracted Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "What should you do if you are involved in a minor collision with a parked car and cannot find the owner?",
+          "options": [
+            "Leave a note with your contact information",
+            "Drive away",
+            "Call the police",
+            "Wait by the car until the owner returns"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You must leave a note with your name, address, and contact information securely attached to the vehicle.",
+          "category": "Accidents",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "You must turn on your headlights:",
+          "options": [
+            "One hour after sunset",
+            "One hour before sunset",
+            "30 minutes after sunset",
+            "30 minutes before sunset"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Headlights must be turned on 30 minutes after sunset until 30 minutes before sunrise.",
+          "category": "Vehicle Equipment",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "What should you do if your car starts to skid on a wet road?",
+          "options": [
+            "Brake immediately",
+            "Take your foot off the accelerator",
+            "Steer in the opposite direction of the skid",
+            "Turn off the ignition"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Take your foot off the accelerator and steer in the direction you want to go.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "When driving in fog, you should use your:",
+          "options": [
+            "High-beam headlights",
+            "Low-beam headlights",
+            "Parking lights",
+            "Hazard lights"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use low-beam headlights in fog. High beams reflect off fog and reduce visibility.",
+          "category": "Adverse Conditions",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "You should use your horn:",
+          "options": [
+            "To alert other drivers of your presence",
+            "Only in emergency situations",
+            "When passing another vehicle",
+            "To greet other drivers"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Your horn should only be used when necessary to avoid a collision or alert others of danger.",
+          "category": "Vehicle Equipment",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "If you are approaching a school bus with its red lights flashing and stop arm extended, you must:",
+          "options": [
+            "Slow down and proceed with caution",
+            "Stop and wait until the lights stop flashing and the stop arm is withdrawn",
+            "Pass the bus quickly",
+            "Honk to alert the bus driver"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You must stop when a school bus has its red lights flashing and stop arm extended, and remain stopped until they are withdrawn.",
+          "category": "School Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "When parking uphill on a two-way street with no curb, your front wheels should be:",
+          "options": [
+            "Turned to the left (toward the street)",
+            "Turned to the right (away from the street)",
+            "Parallel with the pavement",
+            "Facing straight ahead"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Turn wheels to the right so if the vehicle rolls, it will go off the road rather than into traffic.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "You may not park your vehicle:",
+          "options": [
+            "On the side of a freeway in an emergency",
+            "Next to a red-painted curb",
+            "Within 100 feet of a school",
+            "Within 500 feet of a fire station"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Red curbs indicate no parking, stopping, or standing at any time.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "If you are involved in a traffic collision, you are required to complete and submit a written report (SR1) to the DMV:",
+          "options": [
+            "Only if you or the other driver is injured",
+            "If there is property damage in excess of $1,000 or if there are any injuries",
+            "Only if you are at fault",
+            "If the collision results in a traffic ticket"
+          ],
+          "correctAnswer": 1,
+          "explanation": "An SR1 report must be filed if there is property damage over $1,000 or any injury or death.",
+          "category": "Accidents",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "If you experience a tire blowout, you should:",
+          "options": [
+            "Brake hard immediately",
+            "Hold the steering wheel tightly and keep the vehicle straight",
+            "Quickly turn the steering wheel to the side of the road",
+            "Speed up to regain control"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Grip the steering wheel firmly, keep the vehicle straight, and gradually slow down.",
+          "category": "Emergency Situations",
+          "difficulty": "medium"
+        },
+        {
+          "id": 22,
+          "question": "A flashing red traffic light means:",
+          "options": [
+            "Stop before entering",
+            "Proceed with caution",
+            "Stop and wait for a green light",
+            "Slow down"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A flashing red light is the same as a stop sign - stop, then proceed when safe.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 23,
+          "question": "At a four-way stop, if two vehicles arrive at the same time, who has the right of way?",
+          "options": [
+            "The vehicle on the left",
+            "The vehicle on the right",
+            "The vehicle that is bigger",
+            "The vehicle that flashes its lights first"
+          ],
+          "correctAnswer": 1,
+          "explanation": "When two vehicles arrive simultaneously at a four-way stop, the vehicle on the right has the right of way.",
+          "category": "Right of Way",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "When driving in the far right lane of a freeway, you:",
+          "options": [
+            "Should expect merging vehicles at on-ramps",
+            "Must give the right-of-way to merging traffic",
+            "Must drive faster than other traffic",
+            "Should use your hazard lights"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Be prepared for merging traffic when driving in the right lane near on-ramps.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "Which of the following increases your chances of having a collision?",
+          "options": [
+            "Continuously changing lanes to pass other vehicles",
+            "Driving at a constant speed",
+            "Adjusting your rearview mirror before you start driving",
+            "Scanning the road ahead"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Frequent lane changes increase collision risk. Maintain a steady lane position when possible.",
+          "category": "Defensive Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "Which of the following is true about large trucks?",
+          "options": [
+            "They have smaller blind spots than most passenger vehicles",
+            "They take longer to stop than a car traveling at the same speed",
+            "They have shorter stopping distances than most passenger vehicles",
+            "They require less turning space"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Large trucks require much longer stopping distances due to their weight.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "To turn left from a multilane one-way street onto a one-way street, you should start your turn from:",
+          "options": [
+            "The lane closest to the left curb",
+            "Any lane as long as it is safe",
+            "The lane in the center of the road",
+            "The lane closest to the right curb"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Start left turns from the far left lane on a one-way street.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "When driving on a multilane street with two-way traffic:",
+          "options": [
+            "You should drive ahead of or behind the other vehicles",
+            "It is safest to drive in the lane next to the center line",
+            "You should drive in the lane with the least traffic",
+            "It is safest to drive in the right lane"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The right lane is generally the safest on multilane streets with two-way traffic.",
+          "category": "Lane Usage",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "You may cross double yellow lines to pass another vehicle if the:",
+          "options": [
+            "Yellow line next to your side of the road is broken",
+            "Yellow line next to the other side of the road is broken",
+            "The lines are solid and there is no oncoming traffic",
+            "There is no sign prohibiting passing"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You may pass when the broken yellow line is on your side of the road.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "You are driving on a one-way street. You may turn left onto another one-way street only if:",
+          "options": [
+            "A sign permits the turn",
+            "Traffic on the street moves to the right",
+            "Traffic on the street moves to the left",
+            "There is a green arrow"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You may turn left from a one-way street onto another one-way street where traffic moves left.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 31,
+          "question": "You must notify law enforcement and file a Report of Traffic Accident Occurring in California (SR1) with DMV if:",
+          "options": [
+            "You are involved in a collision and there is an injury",
+            "You are involved in a collision and there is property damage",
+            "Your vehicle breaks down on the side of the road",
+            "You change your insurance company"
+          ],
+          "correctAnswer": 0,
+          "explanation": "File an SR1 if there is any injury, death, or property damage over $1,000.",
+          "category": "Accidents",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "When planning to pass another vehicle, you should:",
+          "options": [
+            "Not assume they will make space for you to return to your lane",
+            "Assume they will let you pass if you use your turn signal",
+            "Assume they will maintain a constant speed",
+            "Assume they will slow down for you"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Never assume other drivers will cooperate. Always ensure you have space to complete the pass safely.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 33,
+          "question": "You should use your turn signals:",
+          "options": [
+            "When changing lanes",
+            "When turning into your own driveway",
+            "When parking at the curb",
+            "All of the above"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Always use turn signals for any turning or lane change maneuver to alert other drivers.",
+          "category": "Vehicle Equipment",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "What is the purpose of a diamond-shaped traffic sign?",
+          "options": [
+            "To provide directional guidance",
+            "To indicate a school zone",
+            "To warn of potential hazards",
+            "To provide information about speed limits"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Diamond-shaped signs are warning signs that alert you to potential hazards ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 35,
+          "question": "When driving in fog, you should use your:",
+          "options": [
+            "High-beam headlights",
+            "Low-beam headlights",
+            "Parking lights",
+            "Hazard lights"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use low-beam headlights in fog. High beams reflect off fog and reduce visibility.",
+          "category": "Adverse Conditions",
+          "difficulty": "easy"
+        },
+        {
+          "id": 36,
+          "question": "When can you drive in a center left turn lane?",
+          "options": [
+            "To pass other vehicles",
+            "For making left turns",
+            "As a regular driving lane",
+            "Only during rush hour"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Center left turn lanes are only for making left turns, not for passing or regular driving.",
+          "category": "Lane Usage",
+          "difficulty": "easy"
+        },
+        {
+          "id": 37,
+          "question": "What should you do if you approach a traffic signal with a flashing yellow light?",
+          "options": [
+            "Stop before proceeding",
+            "Slow down and proceed with caution",
+            "Speed up to clear the intersection quickly",
+            "Stop and wait for the light to change"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means slow down and proceed with caution.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 38,
+          "question": "You must notify the DMV within how many days if you sell your vehicle?",
+          "options": [
+            "5 days",
+            "10 days",
+            "15 days",
+            "20 days"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle.",
+          "category": "Vehicle Registration",
+          "difficulty": "easy"
+        },
+        {
+          "id": 39,
+          "question": "When parking uphill on a two-way street with no curb, your front wheels should be:",
+          "options": [
+            "Turned to the left (toward the street)",
+            "Turned to the right (away from the street)",
+            "Parallel with the pavement",
+            "Facing straight ahead"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Turn wheels to the right so if the vehicle rolls, it will go off the road.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 40,
+          "question": "When parallel parking, you should park within how many inches of the curb?",
+          "options": [
+            "6 inches",
+            "12 inches",
+            "18 inches",
+            "24 inches"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When parallel parking, your vehicle must be within 18 inches of the curb.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 41,
+          "question": "When driving in the far right lane of a freeway, you:",
+          "options": [
+            "Should expect merging vehicles at on-ramps",
+            "Must give the right-of-way to merging traffic",
+            "Must drive faster than other traffic",
+            "Should use your hazard lights"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Be prepared for merging traffic when driving in the right lane near on-ramps.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 42,
+          "question": "Which of the following increases your chances of having a collision?",
+          "options": [
+            "Continuously changing lanes to pass other vehicles",
+            "Driving at a constant speed",
+            "Adjusting your rearview mirror before you start driving",
+            "Scanning the road ahead"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Frequent lane changes increase collision risk.",
+          "category": "Defensive Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 43,
+          "question": "Which of the following is true about large trucks?",
+          "options": [
+            "They have smaller blind spots than most passenger vehicles",
+            "They take longer to stop than a car traveling at the same speed",
+            "They have shorter stopping distances than most passenger vehicles",
+            "They require less turning space"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Large trucks require much longer stopping distances due to their weight.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 44,
+          "question": "To turn left from a multilane one-way street onto a one-way street, you should start your turn from:",
+          "options": [
+            "The lane closest to the left curb",
+            "Any lane as long as it is safe",
+            "The lane in the center of the road",
+            "The lane closest to the right curb"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Start left turns from the far left lane on a one-way street.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 45,
+          "question": "When driving on a multilane street with two-way traffic:",
+          "options": [
+            "You should drive ahead of or behind the other vehicles",
+            "It is safest to drive in the lane next to the center line",
+            "You should drive in the lane with the least traffic",
+            "It is safest to drive in the right lane"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The right lane is generally the safest on multilane streets with two-way traffic.",
+          "category": "Lane Usage",
+          "difficulty": "medium"
+        },
+        {
+          "id": 46,
+          "question": "You may cross double yellow lines to pass another vehicle if the:",
+          "options": [
+            "Yellow line next to your side of the road is broken",
+            "Yellow line next to the other side of the road is broken",
+            "The lines are solid and there is no oncoming traffic",
+            "There is no sign prohibiting passing"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You may pass when the broken yellow line is on your side of the road.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "sample-questions-test",
+      "title": "California DMV Test Sample Questions and Answers",
+      "description": "Practice test with 40 California DMV sample questions and answers covering key topics. Test your knowledge with these DMV practice questions before taking the real California driver license test.",
+      "category": "General Practice Tests",
+      "slug": "california-dmv-sample-questions",
+      "passingScore": 83,
+      "timeLimit": 50,
+      "questions": [
+        {
+          "id": 1,
+          "question": "What should you do if you are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks?",
+          "options": [
+            "Drive faster to cross the tracks quickly",
+            "Stop before crossing and proceed when safe",
+            "Proceed without stopping if you don't see a train",
+            "Honk to alert any nearby trains"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If you cannot see 400 feet down the tracks in both directions, you must stop and proceed only when it is safe.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "You may not park within how many feet of a fire hydrant?",
+          "options": [
+            "5 feet",
+            "10 feet",
+            "15 feet",
+            "20 feet"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must not park within 15 feet of a fire hydrant to allow access for emergency vehicles.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "When you see a \"Roadwork Ahead\" sign you should:",
+          "options": [
+            "Speed up to avoid traffic",
+            "Slow down and be prepared to stop",
+            "Maintain your speed",
+            "Merge into another lane"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always slow down and be prepared to stop when you see roadwork ahead signs.",
+          "category": "Work Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "What is the first thing you should do if your car starts to skid?",
+          "options": [
+            "Brake hard",
+            "Take your foot off the accelerator",
+            "Steer in the opposite direction of the skid",
+            "Turn off the ignition"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Take your foot off the accelerator and steer in the direction you want to go.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "When driving in fog, you should use your:",
+          "options": [
+            "High-beam headlights",
+            "Low-beam headlights",
+            "Parking lights",
+            "Hazard lights"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use low-beam headlights in fog. High beams reflect off fog and reduce visibility.",
+          "category": "Adverse Conditions",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "What is the purpose of a diamond-shaped traffic sign?",
+          "options": [
+            "To provide directional guidance",
+            "To indicate a school zone",
+            "To warn of potential hazards",
+            "To provide information about speed limits"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Diamond-shaped signs are warning signs that alert you to potential hazards ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "When can you drive in a center left turn lane?",
+          "options": [
+            "To pass other vehicles",
+            "For making left turns",
+            "As a regular driving lane",
+            "Only during rush hour"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Center left turn lanes are only for making left turns, not for passing or regular driving.",
+          "category": "Lane Usage",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "What should you do if you approach a traffic signal with a flashing yellow light?",
+          "options": [
+            "Stop before proceeding",
+            "Slow down and proceed with caution",
+            "Speed up to clear the intersection quickly",
+            "Stop and wait for the light to change"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means slow down and proceed with caution.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "You must notify the DMV within how many days if you sell your vehicle?",
+          "options": [
+            "5 days",
+            "10 days",
+            "15 days",
+            "20 days"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle.",
+          "category": "Vehicle Registration",
+          "difficulty": "easy"
+        },
+        {
+          "id": 10,
+          "question": "When parking uphill on a two-way street with no curb, your front wheels should be:",
+          "options": [
+            "Turned to the left (toward the street)",
+            "Turned to the right (away from the street)",
+            "Parallel with the pavement",
+            "Facing straight ahead"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Turn wheels to the right so if the vehicle rolls, it will go off the road.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11,
+          "question": "When parallel parking, you should park within how many inches of the curb?",
+          "options": [
+            "6 inches",
+            "12 inches",
+            "18 inches",
+            "24 inches"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When parallel parking, your vehicle must be within 18 inches of the curb.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "When driving in the far right lane of a freeway, you:",
+          "options": [
+            "Should expect merging vehicles at on-ramps",
+            "Must give the right-of-way to merging traffic",
+            "Must drive faster than other traffic",
+            "Should use your hazard lights"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Be prepared for merging traffic when driving in the right lane near on-ramps.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "Which of the following increases your chances of having a collision?",
+          "options": [
+            "Continuously changing lanes to pass other vehicles",
+            "Driving at a constant speed",
+            "Adjusting your rearview mirror before you start driving",
+            "Scanning the road ahead"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Frequent lane changes increase collision risk.",
+          "category": "Defensive Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "Which of the following is true about large trucks?",
+          "options": [
+            "They have smaller blind spots than most passenger vehicles",
+            "They take longer to stop than a car traveling at the same speed",
+            "They have shorter stopping distances than most passenger vehicles",
+            "They require less turning space"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Large trucks require much longer stopping distances due to their weight.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 15,
+          "question": "To turn left from a multilane one-way street onto a one-way street, you should start your turn from:",
+          "options": [
+            "The lane closest to the left curb",
+            "Any lane as long as it is safe",
+            "The lane in the center of the road",
+            "The lane closest to the right curb"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Start left turns from the far left lane on a one-way street.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "When driving on a multilane street with two-way traffic:",
+          "options": [
+            "You should drive ahead of or behind the other vehicles",
+            "It is safest to drive in the lane next to the center line",
+            "You should drive in the lane with the least traffic",
+            "It is safest to drive in the right lane"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The right lane is generally the safest on multilane streets with two-way traffic.",
+          "category": "Lane Usage",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "You may cross double yellow lines to pass another vehicle if the:",
+          "options": [
+            "Yellow line next to your side of the road is broken",
+            "Yellow line next to the other side of the road is broken",
+            "The lines are solid and there is no oncoming traffic",
+            "There is no sign prohibiting passing"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You may pass when the broken yellow line is on your side of the road.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "What should you do if you are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks?",
+          "options": [
+            "Drive faster to cross the tracks quickly",
+            "Stop before crossing and proceed when safe",
+            "Proceed without stopping if you don't see a train",
+            "Honk to alert any nearby trains"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If you cannot see 400 feet down the tracks, you must stop and proceed only when safe.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "You may not park within how many feet of a fire hydrant?",
+          "options": [
+            "5 feet",
+            "10 feet",
+            "15 feet",
+            "20 feet"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must not park within 15 feet of a fire hydrant.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "When you see a \"Roadwork Ahead\" sign you should:",
+          "options": [
+            "Speed up to avoid traffic",
+            "Slow down and be prepared to stop",
+            "Maintain your speed",
+            "Merge into another lane"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always slow down and be prepared to stop when you see roadwork ahead signs.",
+          "category": "Work Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 21,
+          "question": "What is the first thing you should do if your car starts to skid?",
+          "options": [
+            "Brake hard",
+            "Take your foot off the accelerator",
+            "Steer in the opposite direction of the skid",
+            "Turn off the ignition"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Take your foot off the accelerator and steer in the direction you want to go.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 22,
+          "question": "When driving in fog, you should use your:",
+          "options": [
+            "High-beam headlights",
+            "Low-beam headlights",
+            "Parking lights",
+            "Hazard lights"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use low-beam headlights in fog.",
+          "category": "Adverse Conditions",
+          "difficulty": "easy"
+        },
+        {
+          "id": 23,
+          "question": "What is the purpose of a diamond-shaped traffic sign?",
+          "options": [
+            "To provide directional guidance",
+            "To indicate a school zone",
+            "To warn of potential hazards",
+            "To provide information about speed limits"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Diamond-shaped signs are warning signs that alert you to potential hazards ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 24,
+          "question": "When can you drive in a center left turn lane?",
+          "options": [
+            "To pass other vehicles",
+            "For making left turns",
+            "As a regular driving lane",
+            "Only during rush hour"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Center left turn lanes are only for making left turns.",
+          "category": "Lane Usage",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "What should you do if you approach a traffic signal with a flashing yellow light?",
+          "options": [
+            "Stop before proceeding",
+            "Slow down and proceed with caution",
+            "Speed up to clear the intersection quickly",
+            "Stop and wait for the light to change"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means slow down and proceed with caution.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 26,
+          "question": "You must notify the DMV within how many days if you sell your vehicle?",
+          "options": [
+            "5 days",
+            "10 days",
+            "15 days",
+            "20 days"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You must notify the DMV within 5 days of selling your vehicle.",
+          "category": "Vehicle Registration",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "When parking uphill on a two-way street with no curb, your front wheels should be:",
+          "options": [
+            "Turned to the left (toward the street)",
+            "Turned to the right (away from the street)",
+            "Parallel with the pavement",
+            "Facing straight ahead"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Turn wheels to the right so if the vehicle rolls, it will go off the road.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "When parallel parking, you should park within how many inches of the curb?",
+          "options": [
+            "6 inches",
+            "12 inches",
+            "18 inches",
+            "24 inches"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When parallel parking, your vehicle must be within 18 inches of the curb.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 29,
+          "question": "When driving in the far right lane of a freeway, you:",
+          "options": [
+            "Should expect merging vehicles at on-ramps",
+            "Must give the right-of-way to merging traffic",
+            "Must drive faster than other traffic",
+            "Should use your hazard lights"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Be prepared for merging traffic when driving in the right lane near on-ramps.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 30,
+          "question": "Which of the following increases your chances of having a collision?",
+          "options": [
+            "Continuously changing lanes to pass other vehicles",
+            "Driving at a constant speed",
+            "Adjusting your rearview mirror before you start driving",
+            "Scanning the road ahead"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Frequent lane changes increase collision risk.",
+          "category": "Defensive Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 31,
+          "question": "Which of the following is true about large trucks?",
+          "options": [
+            "They have smaller blind spots than most passenger vehicles",
+            "They take longer to stop than a car traveling at the same speed",
+            "They have shorter stopping distances than most passenger vehicles",
+            "They require less turning space"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Large trucks require much longer stopping distances due to their weight.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 32,
+          "question": "To turn left from a multilane one-way street onto a one-way street, you should start your turn from:",
+          "options": [
+            "The lane closest to the left curb",
+            "Any lane as long as it is safe",
+            "The lane in the center of the road",
+            "The lane closest to the right curb"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Start left turns from the far left lane on a one-way street.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 33,
+          "question": "When driving on a multilane street with two-way traffic:",
+          "options": [
+            "You should drive ahead of or behind the other vehicles",
+            "It is safest to drive in the lane next to the center line",
+            "You should drive in the lane with the least traffic",
+            "It is safest to drive in the right lane"
+          ],
+          "correctAnswer": 3,
+          "explanation": "The right lane is generally the safest on multilane streets with two-way traffic.",
+          "category": "Lane Usage",
+          "difficulty": "medium"
+        },
+        {
+          "id": 34,
+          "question": "You may cross double yellow lines to pass another vehicle if the:",
+          "options": [
+            "Yellow line next to your side of the road is broken",
+            "Yellow line next to the other side of the road is broken",
+            "The lines are solid and there is no oncoming traffic",
+            "There is no sign prohibiting passing"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You may pass when the broken yellow line is on your side of the road.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "What should you do if you are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks?",
+          "options": [
+            "Drive faster to cross the tracks quickly",
+            "Stop before crossing and proceed when safe",
+            "Proceed without stopping if you don't see a train",
+            "Honk to alert any nearby trains"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If you cannot see 400 feet down the tracks, you must stop and proceed only when safe.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 36,
+          "question": "You may not park within how many feet of a fire hydrant?",
+          "options": [
+            "5 feet",
+            "10 feet",
+            "15 feet",
+            "20 feet"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must not park within 15 feet of a fire hydrant.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 37,
+          "question": "When you see a \"Roadwork Ahead\" sign you should:",
+          "options": [
+            "Speed up to avoid traffic",
+            "Slow down and be prepared to stop",
+            "Maintain your speed",
+            "Merge into another lane"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always slow down and be prepared to stop when you see roadwork ahead signs.",
+          "category": "Work Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 38,
+          "question": "What is the first thing you should do if your car starts to skid?",
+          "options": [
+            "Brake hard",
+            "Take your foot off the accelerator",
+            "Steer in the opposite direction of the skid",
+            "Turn off the ignition"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Take your foot off the accelerator and steer in the direction you want to go.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 39,
+          "question": "When driving in fog, you should use your:",
+          "options": [
+            "High-beam headlights",
+            "Low-beam headlights",
+            "Parking lights",
+            "Hazard lights"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use low-beam headlights in fog.",
+          "category": "Adverse Conditions",
+          "difficulty": "easy"
+        },
+        {
+          "id": 40,
+          "question": "What is the purpose of a diamond-shaped traffic sign?",
+          "options": [
+            "To provide directional guidance",
+            "To indicate a school zone",
+            "To warn of potential hazards",
+            "To provide information about speed limits"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Diamond-shaped signs are warning signs that alert you to potential hazards ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}

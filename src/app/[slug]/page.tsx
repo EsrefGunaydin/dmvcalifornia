@@ -478,7 +478,7 @@ function renderBlogPost(post: BlogPost) {
               prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
               prose-a:text-primary hover:prose-a:text-primary-600 prose-a:underline
               prose-ul:my-6 prose-ol:my-6 prose-li:mb-2
-              prose-img:rounded-lg prose-img:shadow-md prose-img:my-8 prose-img:mx-auto prose-img:w-full prose-img:max-w-3xl
+              prose-img:rounded-lg prose-img:shadow-md prose-img:my-8 prose-img:mx-auto prose-img:max-w-2xl prose-img:max-h-[600px] prose-img:object-contain
               prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:my-6
               prose-strong:text-gray-900 prose-strong:font-semibold"
             dangerouslySetInnerHTML={{ __html: processedContent }}

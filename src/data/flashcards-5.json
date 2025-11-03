@@ -1,0 +1,86 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-5",
+    "title": "DMV California Practice Flashcards - Set 5",
+    "description": "15 essential DMV questions covering intersections, pedestrians, emergency situations, and safe driving practices for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-5",
+    "cards": [
+      {
+        "id": 31,
+        "question": "When you see this yellow sign, you should:",
+        "answer": "be prepared to stop if children are in the crosswalk"
+      },
+      {
+        "id": 32,
+        "question": "You must notify DMV within 5 days if you:",
+        "answer": "sell or transfer your vehicle"
+      },
+      {
+        "id": 33,
+        "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol consumption (BAC) that is ___ or higher.",
+        "answer": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 34,
+        "question": "You are driving 55 mph on a two-lane highway, one lane in each direction, and want to pass the car ahead of you. To pass safely, you need to:",
+        "answer": "have a large enough gap in the oncoming traffic"
+      },
+      {
+        "id": 35,
+        "question": "If you approach an intersection without a stop sign or signals, you:",
+        "answer": "slow down and be ready to stop if necessary"
+      },
+      {
+        "id": 36,
+        "question": "If a driver looks like he or she is going to pull out in front of you, the safest thing to do is:",
+        "answer": "slow or stop your car and use your horn"
+      },
+      {
+        "id": 37,
+        "question": "When approaching a crosswalk where a blind pedestrian is waiting to cross, you must stop:",
+        "answer": "at the crosswalk and wait for the pedestrian to cross the street"
+      },
+      {
+        "id": 38,
+        "question": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answer": "continue through the intersection, pull to the right, and stop"
+      },
+      {
+        "id": 39,
+        "question": "You must notify law enforcement and make a written report of traffic accident occurring in California (SR 1) to DMV if:",
+        "answer": "you are involved in a collision and there is a death"
+      },
+      {
+        "id": 40,
+        "question": "To see vehicles in your blind spots, you must look:",
+        "answer": "over your shoulders"
+      },
+      {
+        "id": 41,
+        "question": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answer": "illegal at all times"
+      },
+      {
+        "id": 42,
+        "question": "You are stopped at an intersection. The traffic light just turned green. Should you go immediately?",
+        "answer": "yes, but yield to any vehicle or person still in the intersection"
+      },
+      {
+        "id": 43,
+        "question": "If your cell phone rings while you are driving and you do not have a hands-free device, you should:",
+        "answer": "let the call go to voicemail"
+      },
+      {
+        "id": 44,
+        "question": "When driving near road work zones, you should:",
+        "answer": "pass the work zone carefully and avoid \"rubbernecking\""
+      },
+      {
+        "id": 45,
+        "question": "It is very foggy. You should slow down, turn on your windshield wipers, and your:",
+        "answer": "low beam lights"
+      }
+    ]
+  }
+}

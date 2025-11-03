@@ -112,7 +112,7 @@ export default function TurkishTestPage() {
                     Trafik İşareti Testi
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    11 soruluk görsel trafik işareti tanıma testi. Tüm sorular resimli!
+                    24 soruluk görsel trafik işareti tanıma testi. Tüm sorular resimli!
                   </p>
                   <div className="flex items-center justify-between pt-4 border-t">
                     <span className="text-red-600 font-semibold group-hover:underline">
