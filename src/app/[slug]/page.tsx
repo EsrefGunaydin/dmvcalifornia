@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
 import OfficePage from './OfficePage';
 import ShareButtons from './ShareButtons';
+import AdSense from '@/components/AdSense';
+import ADSENSE_CONFIG from '@/config/adsense';
 
 // Type for blog post
 type BlogPost = {
@@ -470,6 +472,9 @@ function renderBlogPost(post: BlogPost) {
           </div>
         </header>
 
+        {/* Ad - Top of Post */}
+        <AdSense adSlot={ADSENSE_CONFIG.adSlots.blogPostTop} />
+
         {/* Post Content */}
         <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
           <div
@@ -495,6 +500,9 @@ function renderBlogPost(post: BlogPost) {
             </div>
           )}
         </div>
+
+        {/* Ad - Bottom of Post */}
+        <AdSense adSlot={ADSENSE_CONFIG.adSlots.blogPostBottom} />
 
         {/* Related Stories */}
         {relatedPosts.length > 0 && (

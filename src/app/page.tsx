@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
 import blogPostsData from '../data/blog_posts.json';
 import quizzesData from '../data/quizzes.json';
+import AdSense from '@/components/AdSense';
+import ADSENSE_CONFIG from '@/config/adsense';
 
 export default function Home() {
   const totalQuestions = quizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
@@ -58,6 +60,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Ad - Homepage Top */}
+        <AdSense adSlot={ADSENSE_CONFIG.adSlots.homepageTop} />
 
         {/* All Practice Tests */}
         <div className="mb-16">

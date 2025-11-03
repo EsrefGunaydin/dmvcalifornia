@@ -36,7 +36,7 @@ export default function AdSense({
       <ins
         className="adsbygoogle"
         style={style}
-        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+        data-ad-client="ca-pub-7030490358552434"
         data-ad-slot={adSlot}
         data-ad-format={adFormat}
         data-full-width-responsive={fullWidthResponsive.toString()}

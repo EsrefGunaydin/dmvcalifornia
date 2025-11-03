@@ -2,8 +2,8 @@
 // Replace these with your actual AdSense IDs
 
 export const ADSENSE_CONFIG = {
-  // Your AdSense Publisher ID (ca-pub-XXXXXXXXXXXXXXXX)
-  publisherId: process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-XXXXXXXXXXXXXXXX',
+  // Your AdSense Publisher ID
+  publisherId: process.env.NEXT_PUBLIC_ADSENSE_ID || 'ca-pub-7030490358552434',
 
   // Ad Slots - Create these in your AdSense account
   adSlots: {
