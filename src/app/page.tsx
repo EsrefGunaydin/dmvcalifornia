@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
@@ -34,19 +35,36 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-20">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Pass Your California DMV Test
-            <span className="block text-primary mt-2">First Try</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Master your California driving knowledge with interactive quizzes, practice tests, and comprehensive study guides.
-          </p>
-          <Link
-            href="/practice-test"
-            className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
-          >
-            Start Practice Test
-          </Link>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-12 max-w-5xl mx-auto">
+            {/* Seal of Success - Left side on desktop */}
+            <div className="flex-shrink-0 hidden md:block">
+              <Image
+                src="/images/seal-of-success.png"
+                alt="Seal of Success"
+                width={240}
+                height={240}
+                className="drop-shadow-2xl"
+                priority
+              />
+            </div>
+
+            {/* Main Content */}
+            <div className="flex-1">
+              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                Pass Your California DMV Test
+                <span className="block text-primary mt-2">First Try</span>
+              </h1>
+              <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Master your California driving knowledge with interactive quizzes, practice tests, and comprehensive study guides.
+              </p>
+              <Link
+                href="/practice-test"
+                className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
+              >
+                Start Practice Test
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
