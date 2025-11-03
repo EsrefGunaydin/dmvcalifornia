@@ -1,8 +1,17 @@
-# Traffic Signs for Turkish Tests
+# Traffic Signs
 
-This folder contains traffic sign images used in the Turkish DMV tests.
+This folder contains traffic sign images used in both English and Turkish DMV tests.
 
 ## Required Images:
+
+### English Quiz - DMV Simulation Test #1
+
+#### Question 46 - Left Turn Yield on Green
+- **Filename**: `left-turn-yield-on-green.png`
+- **Description**: Sign showing "LEFT TURN YIELD ON GREEN" instruction
+- **Used in**: DMV Simulation Test #1, Question 46
+
+### Turkish Tests
 
 ### Question 4 - Divided Highway Sign
 - **Filename**: `divided-highway.png`
