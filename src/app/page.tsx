@@ -21,20 +21,34 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-16">
         {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Pass Your California DMV Test
-            <span className="block text-primary mt-2">First Try</span>
-          </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Master your California driving knowledge with interactive quizzes, practice tests, and comprehensive study guides.
-          </p>
-          <Link
-            href="/practice-test"
-            className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
-          >
-            Start Practice Test
-          </Link>
+        <div
+          className="text-center mb-16 relative rounded-2xl overflow-hidden"
+          style={{
+            backgroundImage: 'url(/images/hero-image.png)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-white/80 backdrop-blur-sm"></div>
+
+          {/* Content */}
+          <div className="relative z-10 py-16 px-4">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+              Pass Your California DMV Test
+              <span className="block text-primary mt-2">First Try</span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Master your California driving knowledge with interactive quizzes, practice tests, and comprehensive study guides.
+            </p>
+            <Link
+              href="/practice-test"
+              className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
+            >
+              Start Practice Test
+            </Link>
+          </div>
         </div>
 
         {/* Stats */}
