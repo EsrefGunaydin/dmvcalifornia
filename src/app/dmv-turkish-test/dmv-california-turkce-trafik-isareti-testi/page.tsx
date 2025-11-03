@@ -37,7 +37,7 @@ export default function TurkishSignTestPage() {
               California DMV Turkish Traffic Sign Test
             </p>
             <p className="text-lg opacity-90">
-              8 soruluk görsel trafik işareti tanıma testi • 8 image-based traffic sign questions
+              11 soruluk görsel trafik işareti tanıma testi • 11 image-based traffic sign questions
             </p>
           </div>
         </div>
@@ -78,7 +78,7 @@ export default function TurkishSignTestPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">•</span>
-                      <span>Geçmek için %75 (6/8) gerekli / Need 75% (6/8) to pass</span>
+                      <span>Geçmek için %75 (9/11) gerekli / Need 75% (9/11) to pass</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-red-600 mt-1">•</span>
@@ -95,15 +95,15 @@ export default function TurkishSignTestPage() {
                   <div className="space-y-2 text-sm text-gray-700">
                     <div className="flex justify-between">
                       <span className="font-medium">Sorular / Questions:</span>
-                      <span>8</span>
+                      <span>11</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium">Süre / Time:</span>
-                      <span>10 dakika / minutes</span>
+                      <span>15 dakika / minutes</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium">Geçme Notu / Passing:</span>
-                      <span>75% (6/8)</span>
+                      <span>75% (9/11)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-medium">Dil / Language:</span>

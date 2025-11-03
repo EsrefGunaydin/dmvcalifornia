@@ -2,11 +2,11 @@
   "quiz": {
     "id": "turkish-sign-test",
     "title": "DMV Türkçe Trafik İşareti Testi / DMV Turkish Traffic Sign Test",
-    "description": "DMV California Türkçe Trafik İşareti Testi - 8 soruluk trafik işaretleri testi. California DMV Turkish Traffic Sign Test with 8 sign identification questions.",
+    "description": "DMV California Türkçe Trafik İşareti Testi - 11 soruluk trafik işaretleri testi. California DMV Turkish Traffic Sign Test with 11 sign identification questions.",
     "category": "Turkish Tests / Türkçe Testler",
     "slug": "dmv-california-turkce-trafik-isareti-testi",
     "passingScore": 75,
-    "timeLimit": 10,
+    "timeLimit": 15,
     "language": "tr",
     "questions": [
       {
@@ -120,6 +120,51 @@
         "explanation": "WRONG WAY işareti ters yönde gittiğinizi ve derhal dönmeniz gerektiğini gösterir.",
         "category": "Trafik İşaretleri",
         "difficulty": "easy"
+      },
+      {
+        "id": 9,
+        "question": "Bu tabelanın şekli şunu gösteriyor:",
+        "image": "/images/traffic-signs/diamond-warning-shape.webp",
+        "options": [
+          "Geçiş hakkını hemen ver",
+          "Uyarı",
+          "Bilgi",
+          "Dur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Elmas (baklava) şekli uyarı işaretlerini gösterir. Bu şekildeki tabelalar sürücüleri ilerideki potansiyel tehlikeler konusunda uyarır.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 10,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/school-crossing.webp",
+        "options": [
+          "Yaya geçidi",
+          "Okul geçidi",
+          "Okul bölgesi",
+          "Yolda çocuklar"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret okul geçidini gösterir. Okul çocuklarının yolu geçtiği bir bölgeye yaklaştığınızı belirtir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 11,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/merge-right.webp",
+        "options": [
+          "Tek yönlü trafik",
+          "Otoyol ileride virajlı",
+          "İleride kavşak",
+          "Sağdan katılan trafik"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Bu işaret sağdan birleşen trafiği gösterir. Sağdan gelen araçların ana yola katılacağını belirtir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
       }
     ]
   }
