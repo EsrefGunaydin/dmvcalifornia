@@ -5,7 +5,7 @@ export type Question = {
   correctAnswer: number; // index of correct option (0-3)
   explanation?: string;
   category: string;
-  difficulty?: 'easy' | 'medium' | 'hard';
+  difficulty?: string;
   image?: string; // optional image path for the question
 };
 
