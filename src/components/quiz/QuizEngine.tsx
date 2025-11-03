@@ -26,15 +26,28 @@ function shuffleQuiz(questions: Question[]): ShuffledQuestion[] {
 
   // Then shuffle the options for each question
   return shuffledQuestions.map((question, index) => {
-    // Create array of option indices [0, 1, 2, ...]
-    const optionIndices = question.options.map((_, i) => i);
-    const shuffledIndices = shuffleArray(optionIndices);
+    // Check if the last option is "Both/All of the above" - if so, don't shuffle
+    const lastOption = question.options[question.options.length - 1];
+    const hasCombinedOption = /^(both|all) of the above$/i.test(lastOption.trim());
 
-    // Map options to new positions
-    const shuffledOptions = shuffledIndices.map(i => question.options[i]);
+    let shuffledOptions: string[];
+    let shuffledCorrectAnswer: number;
 
-    // Find where the correct answer moved to
-    const shuffledCorrectAnswer = shuffledIndices.indexOf(question.correctAnswer);
+    if (hasCombinedOption) {
+      // Don't shuffle if last option is "Both/All of the above"
+      shuffledOptions = [...question.options];
+      shuffledCorrectAnswer = question.correctAnswer;
+    } else {
+      // Create array of option indices [0, 1, 2, ...]
+      const optionIndices = question.options.map((_, i) => i);
+      const shuffledIndices = shuffleArray(optionIndices);
+
+      // Map options to new positions
+      shuffledOptions = shuffledIndices.map(i => question.options[i]);
+
+      // Find where the correct answer moved to
+      shuffledCorrectAnswer = shuffledIndices.indexOf(question.correctAnswer);
+    }
 
     return {
       ...question,
