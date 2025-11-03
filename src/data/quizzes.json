@@ -347,7 +347,7 @@
           "difficulty": "hard"
         },
         {
-          "id": 27,
+          "id": 20,
           "question": "A triangular orange sign on the back of a slow-moving vehicle indicates that the vehicle is traveling at:",
           "options": [
             "Less than 25 mph",
@@ -464,7 +464,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 36,
+          "id": 11,
           "question": "This sign means:",
           "options": [
             "Drive to the right",
@@ -543,7 +543,7 @@
           "difficulty": "easy",
           "hasImage": true,
           "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
-          "id": 41
+          "id": 12
         },
         {
           "id": 42,
@@ -687,7 +687,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 6,
+          "id": 13,
           "question": "This sign means:",
           "options": [
             "The road curves to the left",
@@ -843,7 +843,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 17,
+          "id": 14,
           "image": "/images/traffic-signs/wrong-way-sign.webp"
         },
         {
@@ -1235,72 +1235,7 @@
       "timeLimit": 30.0,
       "questions": [
         {
-          "question": "You should not drive",
-          "options": [
-            "After you have taken any drink, drug, or medication which changes how you think, or act, or causes you to be less careful",
-            "If you are not alert",
-            "Both of the above"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Never drive impaired or when not alert.",
-          "category": "Safe Driving",
-          "difficulty": "easy",
-          "id": 1
-        },
-        {
-          "id": 2,
-          "question": "To help avoid skidding on slippery surfaces you should:",
-          "options": [
-            "Shift to a lower gear after starting down a steep hill",
-            "Drive on leaves or gravel in the road, if possible",
-            "Slow down for curves and intersections"
-          ],
-          "correctAnswer": 2,
-          "explanation": "To avoid skidding, slow down before curves and intersections. Sudden braking or acceleration on slippery surfaces causes skids.",
-          "category": "Weather Conditions",
-          "difficulty": "easy"
-        },
-        {
-          "question": "You may cross over a double line on the road to pass another vehicle if the line on your side of the road is",
-          "options": [
-            "Broken",
-            "Solid white",
-            "Solid yellow"
-          ],
-          "correctAnswer": 0,
-          "explanation": "You can cross if the line on your side is broken.",
-          "category": "Lane Markings",
-          "difficulty": "medium",
-          "id": 3
-        },
-        {
-          "question": "You are driving on a freeway posted for 65 mph. The traffic is traveling at 70 mph. You may legally drive:",
-          "options": [
-            "70 mph or faster to keep up with the speed of traffic",
-            "Between 65 mph and 70 mph",
-            "No faster than 65 mph"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Never exceed posted speed limit regardless of traffic flow.",
-          "category": "Speed Limits",
-          "difficulty": "easy",
-          "id": 4
-        },
-        {
-          "id": 5,
-          "question": "You are involved in a minor collision at an intersection. There are no injuries and very little vehicle damage. You should:",
-          "options": [
-            "Leave your vehicle in the traffic lane until law enforcement arrives",
-            "Move your vehicle out of the traffic lane, if possible",
-            "Not move your vehicle for any reason"
-          ],
-          "correctAnswer": 1,
-          "explanation": "California law requires you to move your vehicle out of traffic if there are no injuries and the vehicle is drivable. This helps prevent secondary collisions.",
-          "category": "Accidents",
-          "difficulty": "easy"
-        },
-        {
-          "id": 6,
+          "id": 1,
           "question": "A curb painted blue means:",
           "options": [
             "Temporary parking is allowed if you wait in the car",
@@ -1313,98 +1248,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 7,
-          "question": "You are driving on a city street and see an emergency vehicle with flashing lights behind you. What should you do?",
-          "options": [
-            "Drive to the right edge of the road and slow down",
-            "Drive to the right edge of the road and stop",
-            "Stay in your lane, slow down, and let it pass"
-          ],
-          "correctAnswer": 1,
-          "explanation": "When an emergency vehicle approaches with lights and/or sirens, pull to the right edge of the road and stop until it passes.",
-          "category": "Emergency Vehicles",
-          "difficulty": "easy"
-        },
-        {
-          "question": "It is against the law to enter an intersection or crosswalk when",
-          "options": [
-            "The light is yellow",
-            "The light is flashing red",
-            "You cannot cross without obstructing traffic from either side"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Never block an intersection even if you have a green light.",
-          "category": "Intersections",
-          "difficulty": "easy",
-          "id": 8
-        },
-        {
-          "question": "If you are involved in a traffic collision, you are required to complete and submit a written report (SR1) to the DMV:",
-          "options": [
-            "Only if you or the other driver is injured",
-            "If there is property damage in excess of $750 or if there are any injuries",
-            "Only if you are at fault"
-          ],
-          "correctAnswer": 1,
-          "explanation": "File SR-1 if damage exceeds $750 or anyone is injured.",
-          "category": "Accidents",
-          "difficulty": "medium",
-          "id": 9
-        },
-        {
-          "id": 10,
-          "question": "You want to park downhill and there is no curb. Which way do you turn your front wheels?",
-          "options": [
-            "Parallel to the road",
-            "Away from the side of the road",
-            "Towards the side of the road"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Turn wheels toward the side when parking downhill without a curb.",
-          "category": "Parking",
-          "difficulty": "medium"
-        },
-        {
-          "id": 11,
-          "question": "A pedestrian starts to cross the street after the 'Don't Walk' signal starts to flash. The person is in the middle of the street when your signal light changes to green. You should:",
-          "options": [
-            "Proceed, but carefully drive around the person",
-            "Proceed if the person is not in your lane",
-            "Wait until the person crosses the street"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Always yield to pedestrians in the intersection, even if your light turns green. Wait until they have safely crossed.",
-          "category": "Pedestrians",
-          "difficulty": "easy"
-        },
-        {
-          "question": "It has been proven that safety belts:",
-          "options": [
-            "Sometimes cause drivers to be trapped in their cars",
-            "Can make it harder to steer during an emergency",
-            "Can reduce injury and death"
-          ],
-          "correctAnswer": 2,
-          "explanation": "Seat belts significantly reduce injury and death in accidents.",
-          "category": "Safety Equipment",
-          "difficulty": "easy",
-          "id": 12
-        },
-        {
-          "id": 13,
-          "question": "Which of the following will help you avoid being hit from behind?",
-          "options": [
-            "Signaling at least 100 feet before turning",
-            "Keeping your parking lights on at all times",
-            "Using your emergency flashers at least 200 feet before turning"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Signal at least 100 feet before turning to warn traffic behind you.",
-          "category": "Safe Driving",
-          "difficulty": "easy"
-        },
-        {
-          "id": 14,
+          "id": 2,
           "question": "Which of these statements is not true about road workers?",
           "options": [
             "Fines are doubled for some violations committed in construction zones",
@@ -1417,33 +1261,7 @@
           "difficulty": "medium"
         },
         {
-          "question": "Roadways are the most slippery:",
-          "options": [
-            "During a heavy downpour",
-            "After it has been raining for awhile",
-            "The first rain after a dry spell"
-          ],
-          "correctAnswer": 2,
-          "explanation": "First rain after dry spell makes roads most slippery due to oil buildup.",
-          "category": "Weather Conditions",
-          "difficulty": "medium",
-          "id": 15
-        },
-        {
-          "question": "Driving under the influence of any drug which makes you drive unsafely is",
-          "options": [
-            "Permitted if it is prescribed by a doctor",
-            "Against the law",
-            "Permitted if it is a diet pill or cold medicine"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Driving impaired by any drug is illegal, even prescription drugs.",
-          "category": "DUI Laws",
-          "difficulty": "easy",
-          "id": 16
-        },
-        {
-          "id": 17,
+          "id": 3,
           "question": "This sign means:",
           "options": [
             "The road ahead is closed to traffic",
@@ -1458,33 +1276,7 @@
           "hasImage": true
         },
         {
-          "id": 18,
-          "question": "You sold your vehicle. You must notify ___ within 5 days.",
-          "options": [
-            "Your insurance company",
-            "DMV",
-            "Your automobile club"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Notify the DMV within 5 days of selling your vehicle to avoid liability.",
-          "category": "Vehicle Registration",
-          "difficulty": "easy"
-        },
-        {
-          "id": 19,
-          "question": "Why should your passengers wear a seat belt?",
-          "options": [
-            "It's the law",
-            "It helps prevent accidents",
-            "Passengers are not required to wear seat belts"
-          ],
-          "correctAnswer": 0,
-          "explanation": "California law requires all vehicle occupants to wear seat belts.",
-          "category": "Safety Equipment",
-          "difficulty": "easy"
-        },
-        {
-          "id": 20,
+          "id": 4,
           "question": "There is a railroad crossing ahead. You see a mechanical signal warning you of an approaching train. You must:",
           "options": [
             "Stop, then proceed when safe",
@@ -1495,6 +1287,239 @@
           "explanation": "When railroad crossing signals are flashing, you must stop at least 15 feet from the tracks. Proceed only when signals stop and it's safe.",
           "category": "Railroad Crossings",
           "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "A freeway on ramp is marked with this sign. Which of the following vehicles may use this lane?",
+          "options": [
+            "A convertible with an adult and two children",
+            "A carpool van containing only the driver",
+            "A sport utility vehicle containing an adult, child, and family pet"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Carpool lanes (HOV lanes) can only be used if you have the minimum number of occupants shown on the posted signs. Pets do not count as passengers.",
+          "category": "Lane Usage",
+          "difficulty": "medium",
+          "image": "/images/traffic-signs/sign-9.webp",
+          "hasImage": true
+        },
+        {
+          "id": 6,
+          "question": "This sign means:",
+          "options": [
+            "Drive to the right",
+            "Change lanes to the right",
+            "Stay in the right lane"
+          ],
+          "correctAnswer": 0,
+          "explanation": "This sign indicates you must keep to the right of a divider or obstruction ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-1.webp",
+          "hasImage": true
+        },
+        {
+          "question": "This sign means:",
+          "options": [
+            "You may turn right when the light is green",
+            "You may turn left on a green light when it is safe",
+            "You may turn left when the light is green"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You can turn left on green, but must yield to oncoming traffic.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "hasImage": true,
+          "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
+          "id": 7
+        },
+        {
+          "id": 8,
+          "question": "This sign means:",
+          "options": [
+            "The road curves to the left",
+            "You cannot make a left turn",
+            "Left turn permitted on green arrow only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "This sign prohibits left turns. You must go straight or turn right.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-3.webp",
+          "hasImage": true
+        },
+        {
+          "question": "This sign means:",
+          "options": [
+            "Do not enter the road ahead unless it is safe",
+            "The road ahead is closed to all traffic",
+            "The road ahead is closed to traffic in your direction"
+          ],
+          "correctAnswer": 2,
+          "explanation": "WRONG WAY sign means you're going the wrong direction.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "hasImage": true,
+          "id": 9,
+          "image": "/images/traffic-signs/wrong-way-sign.webp"
+        },
+        {
+          "question": "This sign means:",
+          "options": [
+            "Stop",
+            "Stop only if other vehicles are present",
+            "Stop 10 feet behind the stop line"
+          ],
+          "correctAnswer": 0,
+          "explanation": "STOP sign requires complete stop every time.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "hasImage": true,
+          "id": 10,
+          "image": "/images/traffic-signs/stop-sign.webp"
+        },
+        {
+          "id": 11,
+          "question": "This sign means:",
+          "options": [
+            "Right lane ends ahead",
+            "No right turn",
+            "Side road on the right"
+          ],
+          "correctAnswer": 0,
+          "explanation": "This warning sign indicates that the right lane ends ahead and traffic must merge left.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-7.webp",
+          "hasImage": true
+        },
+        {
+          "question": "This sign means:",
+          "options": [
+            "Left lane ends",
+            "No U-turn",
+            "You must turn left"
+          ],
+          "correctAnswer": 1,
+          "explanation": "This sign prohibits U-turns at this location.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "hasImage": true,
+          "id": 12,
+          "image": "/images/traffic-signs/no-u-turn-sign.webp"
+        },
+        {
+          "question": "This sign means:",
+          "options": [
+            "Another lane is merging with yours",
+            "Another road crosses yours",
+            "Side road ahead on the right"
+          ],
+          "correctAnswer": 1,
+          "explanation": "This sign warns of a cross road or intersection ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "hasImage": true,
+          "id": 13,
+          "image": "/images/traffic-signs/cross-road-sign.webp"
+        },
+        {
+          "question": "This sign means:",
+          "options": [
+            "Vehicles on the right have the right-of-way",
+            "You have the right-of-way",
+            "Give the right-of-way to cross traffic"
+          ],
+          "correctAnswer": 2,
+          "explanation": "YIELD sign means give right-of-way to cross traffic.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "hasImage": true,
+          "id": 14,
+          "image": "/images/traffic-signs/yield-sign.webp"
+        },
+        {
+          "question": "This sign means:",
+          "options": [
+            "Right curve ahead",
+            "No right turn allowed",
+            "Right turn allowed on green arrow"
+          ],
+          "correctAnswer": 0,
+          "explanation": "This sign warns of a curve to the right ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "hasImage": true,
+          "id": 15,
+          "image": "/images/traffic-signs/right-curve-sign.webp"
+        },
+        {
+          "id": 16,
+          "question": "A yellow sign with a traffic signal symbol means:",
+          "options": [
+            "Controlled railroad crossing ahead",
+            "Be prepared to stop if the light is flashing",
+            "There is a traffic signal ahead"
+          ],
+          "correctAnswer": 2,
+          "explanation": "This warning sign indicates a traffic signal is ahead. Be prepared to stop if the light is red.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-26.webp",
+          "hasImage": true
+        },
+        {
+          "id": 17,
+          "question": "A yellow diamond-shaped sign with a black 'X' and two R's indicates:",
+          "options": [
+            "Railroad crossing ahead",
+            "Rest area ahead",
+            "Road closed"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A yellow diamond with an X and two R's warns of a railroad crossing ahead.",
+          "category": "Traffic Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/sign-27.webp",
+          "hasImage": true
+        },
+        {
+          "question": "When you come to a corner where there is a flashing yellow light you must",
+          "options": [
+            "Stop before crossing",
+            "Wait for the green light",
+            "Slow down and cross carefully"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Flashing yellow means proceed with caution.",
+          "category": "Traffic Signals",
+          "difficulty": "easy",
+          "id": 18
+        },
+        {
+          "id": 19,
+          "question": "You are driving up a corner with a flashing yellow signal light. What should you do?",
+          "options": [
+            "Wait for the green light before entering",
+            "Slow down and cross carefully"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means slow down and proceed with caution.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "A triangular orange sign on the back of a slow-moving vehicle indicates that the vehicle is traveling at:",
+          "options": [
+            "Less than 25 mph",
+            "Less than 35 mph",
+            "Less than 45 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "The orange triangle indicates a slow-moving vehicle traveling at less than 25 mph.",
+          "category": "Traffic Signs",
+          "difficulty": "medium"
         }
       ]
     },
@@ -1558,7 +1583,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 4,
+          "id": 15,
           "image": "/images/traffic-signs/stop-sign.webp"
         },
         {
@@ -1846,7 +1871,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 6,
+          "id": 16,
           "question": "This sign means:",
           "options": [
             "Right lane ends ahead",
@@ -2052,7 +2077,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 2,
+          "id": 17,
           "image": "/images/traffic-signs/no-u-turn-sign.webp"
         },
         {
@@ -2313,7 +2338,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 6,
+          "id": 18,
           "image": "/images/traffic-signs/cross-road-sign.webp"
         },
         {
@@ -2419,7 +2444,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 14,
+          "id": 19,
           "image": "/images/traffic-signs/yield-sign.webp"
         },
         {
@@ -2473,7 +2498,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 18,
+          "id": 20,
           "image": "/images/traffic-signs/right-curve-sign.webp"
         },
         {
@@ -4273,7 +4298,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 6,
+          "id": 19,
           "question": "A yellow sign with a traffic signal symbol means:",
           "options": [
             "Controlled railroad crossing ahead",
@@ -4726,7 +4751,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 4,
+          "id": 20,
           "question": "A yellow diamond-shaped sign with a black 'X' and two R's indicates:",
           "options": [
             "Railroad crossing ahead",
