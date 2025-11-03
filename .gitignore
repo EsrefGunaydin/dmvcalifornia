@@ -37,3 +37,7 @@ next-env.d.ts
 /data/wordpress/*.sql
 /data/wordpress/*.sql.gz
 /data/wordpress/wp-content/
+
+# Python scripts
+*.py
+scripts/*.py

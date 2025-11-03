@@ -1,0 +1,12 @@
+# robots.txt for dmvcalifornia.us
+
+User-agent: *
+Allow: /
+
+# Disallow admin areas
+Disallow: /api/
+
+# Sitemaps
+Sitemap: https://www.dmvcalifornia.us/sitemap.xml
+Sitemap: https://www.dmvcalifornia.us/blog-sitemap.xml
+Sitemap: https://www.dmvcalifornia.us/quiz-sitemap.xml
