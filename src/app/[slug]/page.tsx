@@ -473,9 +473,7 @@ function renderBlogPost(post: BlogPost) {
         </header>
 
         {/* Post Content - Centered */}
-        <div className="mb-8">
-          {/* Post Content */}
-          <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
+        <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
           <div
             className="prose prose-lg max-w-none
               prose-headings:text-gray-900 prose-headings:font-bold prose-headings:mb-4 prose-headings:mt-8
@@ -498,8 +496,6 @@ function renderBlogPost(post: BlogPost) {
               <span>Post Views: {post.views.toLocaleString()}</span>
             </div>
           )}
-            </div>
-          </div>
         </div>
 
         {/* Related Stories */}
