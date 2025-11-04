@@ -9,6 +9,7 @@ import OfficePage from './OfficePage';
 import ShareButtons from './ShareButtons';
 import AdSense from '@/components/AdSense';
 import ADSENSE_CONFIG from '@/config/adsense';
+import QuizPromotionPopup from '@/components/QuizPromotionPopup';
 
 // Type for blog post
 type BlogPost = {
@@ -639,6 +640,7 @@ function renderBlogPost(post: BlogPost) {
 
       <Footer />
       <CookieBanner />
+      <QuizPromotionPopup />
     </div>
   );
 }

@@ -23,7 +23,8 @@
       "WebFetch(domain:www.dmvcalifornia.us)",
       "Bash(git add:*)",
       "Bash(git push:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
