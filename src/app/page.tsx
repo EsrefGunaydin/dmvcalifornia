@@ -36,18 +36,6 @@ export default function Home() {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-20">
           <div className="flex flex-col md:flex-row items-center justify-center gap-12 max-w-5xl mx-auto">
-            {/* Seal of Success - Left side on desktop */}
-            <div className="flex-shrink-0 hidden md:block">
-              <Image
-                src="/images/seal-of-success.png"
-                alt="Seal of Success"
-                width={240}
-                height={240}
-                className="drop-shadow-2xl"
-                priority
-              />
-            </div>
-
             {/* Main Content */}
             <div className="flex-1">
               <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
@@ -63,6 +51,18 @@ export default function Home() {
               >
                 Start Practice Test
               </Link>
+            </div>
+
+            {/* Seal of Success - Right side on desktop */}
+            <div className="flex-shrink-0 hidden md:block">
+              <Image
+                src="/images/success-green.png"
+                alt="Seal of Success"
+                width={240}
+                height={240}
+                className="drop-shadow-2xl"
+                priority
+              />
             </div>
           </div>
         </div>
