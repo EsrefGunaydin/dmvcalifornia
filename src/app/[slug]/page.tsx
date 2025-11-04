@@ -436,7 +436,7 @@ function renderBlogPost(post: BlogPost) {
       <Header />
 
       {/* Article */}
-      <article className="container mx-auto px-4 py-12 max-w-4xl">
+      <article className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-4xl">
         {/* Breadcrumb */}
         <nav className="mb-8">
           <ol className="flex items-center space-x-2 text-sm text-gray-600">
@@ -474,16 +474,17 @@ function renderBlogPost(post: BlogPost) {
         </header>
 
         {/* Post Content - Centered */}
-        <div className="bg-white rounded-lg shadow-sm p-8 mb-8">
+        <div className="bg-white rounded-lg shadow-sm p-4 md:p-8 mb-8">
           <div
             className="prose prose-lg max-w-none
               prose-headings:text-gray-900 prose-headings:font-bold prose-headings:mb-4 prose-headings:mt-8
               prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
               prose-a:text-primary hover:prose-a:text-primary-600 prose-a:underline
               prose-ul:my-6 prose-ol:my-6 prose-li:mb-2
-              prose-img:rounded-lg prose-img:shadow-md prose-img:my-8 prose-img:mx-auto prose-img:max-w-2xl prose-img:max-h-[600px] prose-img:object-contain
+              prose-img:rounded-lg prose-img:shadow-md prose-img:my-8 prose-img:mx-auto prose-img:w-full prose-img:h-auto prose-img:max-w-full
               prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:my-6
-              prose-strong:text-gray-900 prose-strong:font-semibold"
+              prose-strong:text-gray-900 prose-strong:font-semibold
+              [&_img]:!max-w-full [&_img]:!w-full [&_img]:!h-auto [&_img]:object-contain"
             dangerouslySetInnerHTML={{ __html: processedContent }}
           />
 
