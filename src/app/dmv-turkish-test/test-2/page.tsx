@@ -4,7 +4,6 @@ import CookieBanner from '@/components/CookieBanner';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import turkishQuizzesData from '@/data/turkish-quizzes.json';
-import leaderboardData from '@/data/leaderboard.json';
 import Link from 'next/link';
 
 export const metadata = {
@@ -12,14 +11,32 @@ export const metadata = {
   description: 'California DMV Türkçe Test #2. İleri seviye trafik kuralları ve güvenli sürüş için 36 soru.',
 };
 
-export default function TurkishTest2Page() {
-  const quiz = turkishQuizzesData.quizzes[1]; // Second Turkish quiz
+async function fetchLeaderboard(quizId: number) {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+    const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
+      cache: 'no-store',
+    });
 
-  // Get leaderboard entries for this quiz
+    if (!response.ok) {
+      console.error('Failed to fetch leaderboard:', response.status);
+      return [];
+    }
+
+    const data = await response.json();
+    return data.leaderboard || [];
+  } catch (error) {
+    console.error('Error fetching leaderboard:', error);
+    return [];
+  }
+}
+
+export default async function TurkishTest2Page() {
+  const quiz = turkishQuizzesData.quizzes[1]; // Second Turkish quiz
   const quizId = 101; // Using 101 for Turkish Test #2
-  const quizLeaderboard = leaderboardData.leaderboard.filter(
-    (entry) => entry.quizId === quizId
-  );
+
+  // Fetch leaderboard from MongoDB API
+  const quizLeaderboard = await fetchLeaderboard(quizId);
 
   return (
     <>
@@ -83,7 +100,7 @@ export default function TurkishTest2Page() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Quiz Engine */}
             <div className="lg:col-span-2">
-              <QuizEngine quiz={quiz} />
+              <QuizEngine quiz={quiz} quizId={quizId} />
             </div>
 
             {/* Leaderboard Sidebar */}

@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import turkishSignTestData from '@/data/turkish-sign-test.json';
-import leaderboardData from '@/data/leaderboard.json';
 
 export const metadata: Metadata = {
   title: 'DMV Türkçe Trafik İşareti Testi | DMV California',
@@ -15,14 +14,32 @@ export const metadata: Metadata = {
   }
 };
 
-export default function TurkishSignTestPage() {
-  const quiz = turkishSignTestData.quiz;
+async function fetchLeaderboard(quizId: number) {
+  try {
+    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+    const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
+      cache: 'no-store', // Always fetch fresh data
+    });
 
-  // Filter leaderboard for Turkish sign test (quiz ID 103)
-  const quizLeaderboard = leaderboardData.leaderboard
-    .filter(entry => entry.quizId === 103)
-    .sort((a, b) => b.points - a.points)
-    .slice(0, 10);
+    if (!response.ok) {
+      console.error('Failed to fetch leaderboard:', response.status);
+      return [];
+    }
+
+    const data = await response.json();
+    return data.leaderboard || [];
+  } catch (error) {
+    console.error('Error fetching leaderboard:', error);
+    return [];
+  }
+}
+
+export default async function TurkishSignTestPage() {
+  const quiz = turkishSignTestData.quiz;
+  const quizId = 103; // Turkish sign test quiz ID
+
+  // Fetch leaderboard from MongoDB API
+  const quizLeaderboard = await fetchLeaderboard(quizId);
 
   return (
     <main className="min-h-screen bg-gray-50">
@@ -49,7 +66,7 @@ export default function TurkishSignTestPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Quiz Engine - 2 columns */}
             <div className="lg:col-span-2">
-              <QuizEngine quiz={quiz} />
+              <QuizEngine quiz={quiz} quizId={quizId} />
             </div>
 
             {/* Sidebar - 1 column, sticky */}
