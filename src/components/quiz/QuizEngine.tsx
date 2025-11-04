@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import { Quiz, Question, QuizResult, ShuffledQuestion } from '@/types/quiz';
 import Results from './Results';
+import AdRefreshManager from '@/components/ads/AdRefreshManager';
 
 interface QuizEngineProps {
   quiz: Quiz;
@@ -212,6 +213,15 @@ export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
 
   return (
     <div className="max-w-3xl mx-auto">
+      {/* Ad Refresh Manager - handles smart ad refreshes */}
+      <AdRefreshManager
+        currentQuestionIndex={currentQuestionIndex}
+        quizCompleted={quizCompleted}
+        totalQuestions={shuffledQuestions.length}
+        refreshInterval={5}
+        minTimeBetweenRefresh={30}
+      />
+
       {/* Progress Bar */}
       <div className="mb-6">
         <div className="flex justify-between text-sm text-gray-600 mb-2">
