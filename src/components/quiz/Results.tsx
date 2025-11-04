@@ -3,15 +3,18 @@
 import { Quiz, QuizResult } from '@/types/quiz';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface ResultsProps {
   result: QuizResult;
   quiz: Quiz;
+  quizId: number;
   onRestart: () => void;
 }
 
-export default function Results({ result, quiz, onRestart }: ResultsProps) {
+export default function Results({ result, quiz, quizId, onRestart }: ResultsProps) {
   const { passed, percentage, correctAnswers, totalQuestions } = result;
+  const router = useRouter();
   const [showLeaderboardModal, setShowLeaderboardModal] = useState(true);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -37,7 +40,7 @@ export default function Results({ result, quiz, onRestart }: ResultsProps) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          quizId: quiz.id,
+          quizId: quizId,
           name: name.trim(),
           email: email.trim() || '',
           percentage: percentage,
@@ -51,6 +54,10 @@ export default function Results({ result, quiz, onRestart }: ResultsProps) {
       }
 
       setSubmitted(true);
+
+      // Refresh server component data to update leaderboard
+      router.refresh();
+
       setTimeout(() => {
         setShowLeaderboardModal(false);
       }, 2000);

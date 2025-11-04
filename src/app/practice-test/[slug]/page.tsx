@@ -125,7 +125,7 @@ export default async function QuizPage({ params }: { params: { slug: string } })
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6">
               {/* Quiz Engine */}
               <div>
-                <QuizEngine quiz={quiz} />
+                <QuizEngine quiz={quiz} quizId={quizId} />
               </div>
 
               {/* Compact Sidebar */}

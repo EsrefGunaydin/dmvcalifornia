@@ -7,6 +7,7 @@ import Results from './Results';
 
 interface QuizEngineProps {
   quiz: Quiz;
+  quizId: number;
 }
 
 // Shuffle array using Fisher-Yates algorithm
@@ -58,7 +59,7 @@ function shuffleQuiz(questions: Question[]): ShuffledQuestion[] {
   });
 }
 
-export default function QuizEngine({ quiz }: QuizEngineProps) {
+export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
   // Shuffle questions on component mount or restart
   const [shuffledQuestions, setShuffledQuestions] = useState<ShuffledQuestion[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -188,7 +189,7 @@ export default function QuizEngine({ quiz }: QuizEngineProps) {
   };
 
   if (quizCompleted && quizResult) {
-    return <Results result={quizResult} quiz={quiz} onRestart={handleRestart} />;
+    return <Results result={quizResult} quiz={quiz} quizId={quizId} onRestart={handleRestart} />;
   }
 
   // Show loading state while shuffling
