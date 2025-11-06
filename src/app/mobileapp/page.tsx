@@ -50,7 +50,7 @@ export default function MobileAppPage() {
 
               {/* App Store Badge */}
               <a
-                href="https://apps.apple.com/app/id123456789"
+                href="https://apps.apple.com/app/dmv-practice-exams/id6754900213"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block hover:opacity-80 transition-opacity"
@@ -274,7 +274,7 @@ export default function MobileAppPage() {
           </p>
 
           <a
-            href="https://apps.apple.com/app/id123456789"
+            href="https://apps.apple.com/app/dmv-practice-exams/id6754900213"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block hover:opacity-80 transition-opacity"
