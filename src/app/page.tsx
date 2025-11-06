@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
+import AppPromotion from '../components/AppPromotion';
 import blogPostsData from '../data/blog_posts.json';
 import quizzesData from '../data/quizzes.json';
 import AdSense from '@/components/AdSense';
@@ -105,6 +106,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* App Promotion Banner */}
+        <AppPromotion variant="banner" className="mb-12" />
 
         {/* All Practice Tests */}
         <div className="mb-12">

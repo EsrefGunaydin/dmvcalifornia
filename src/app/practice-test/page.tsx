@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import AppPromotionIOS from '@/components/AppPromotionIOS';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata = {
@@ -44,6 +45,11 @@ export default function PracticeTestsPage() {
             </div>
           </div>
         </section>
+
+        {/* App Promotion Banner - iOS Only */}
+        <div className="container mx-auto px-4 pt-6">
+          <AppPromotionIOS variant="banner" />
+        </div>
 
         {/* Quiz Cards */}
         <section className="container mx-auto px-4 py-12">
