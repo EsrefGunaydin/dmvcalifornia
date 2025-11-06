@@ -177,28 +177,28 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Traffic Sign Test Card */}
+            {/* Spanish Practice Test Card */}
             <Link
-              href="/dmv-turkish-test/dmv-california-turkce-trafik-isareti-testi"
-              className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+              href="/practice-test/dmv-spanish-practice-test-1"
+              className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
             >
               <div className="p-6">
                 <div className="mb-3 flex items-center gap-2">
-                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-medium">
-                    Turkish / Türkçe
+                  <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-medium">
+                    Spanish / Español
                   </span>
-                  <span className="text-2xl">🚦</span>
+                  <span className="text-2xl">🇪🇸</span>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
-                  Traffic Sign Test (Turkish)
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
+                  DMV Practice Test (Spanish)
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                  Kaliforniya trafik işaretleri testi - Türkçe. California traffic signs test in Turkish language.
+                  Examen de práctica del DMV en español. California DMV practice test in Spanish 2025 with complete answers.
                 </p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>24 Questions</span>
-                  <span className="text-yellow-600 font-medium group-hover:underline">
-                    Teste Başla →
+                  <span>40 Questions</span>
+                  <span className="text-orange-600 font-medium group-hover:underline">
+                    Comenzar →
                   </span>
                 </div>
               </div>
