@@ -43,11 +43,6 @@ export default function Footer() {
                   DMV Offices
                 </Link>
               </li>
-              <li>
-                <Link href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
