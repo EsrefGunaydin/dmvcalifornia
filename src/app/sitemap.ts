@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import blogPostsData from '@/data/blog_posts.json';
 import quizzesData from '@/data/quizzes.json';
+import chineseQuizzesData from '@/data/chinese-quizzes.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.dmvcalifornia.us';
@@ -33,6 +34,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/dmv-turkish-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-chinese-test`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -89,5 +96,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...staticPages, ...blogPages, ...quizPages, ...turkishPages];
+  // Chinese quiz pages (dynamically generated from data)
+  const chinesePages: MetadataRoute.Sitemap = chineseQuizzesData.quizzes.map((quiz) => ({
+    url: `${baseUrl}/practice-test/${quiz.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...blogPages, ...quizPages, ...turkishPages, ...chinesePages];
 }
