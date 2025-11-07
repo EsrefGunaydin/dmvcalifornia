@@ -6,16 +6,26 @@ import CookieBanner from '../components/CookieBanner';
 import AppPromotion from '../components/AppPromotion';
 import blogPostsData from '../data/blog_posts.json';
 import quizzesData from '../data/quizzes.json';
+import turkishQuizzesData from '../data/turkish-quizzes.json';
+import chineseQuizzesData from '../data/chinese-quizzes.json';
+import spanishSignTestData from '../data/spanish-sign-test.json';
 import AdSense from '@/components/AdSense';
 import ADSENSE_CONFIG from '@/config/adsense';
 
 export default function Home() {
-  const totalQuestions = quizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
+  // Calculate total questions across all languages
+  const englishQuestions = quizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
+  const turkishQuestions = turkishQuizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
+  const chineseQuestions = chineseQuizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
+  const spanishQuestions = spanishSignTestData.quiz ? spanishSignTestData.quiz.questions.length : 0;
+  const totalQuestions = englishQuestions + turkishQuestions + chineseQuestions + spanishQuestions;
 
-  // Select 6 featured items (2 simulation + 2 practice + flashcards + sign quiz)
+  // Calculate total tests
+  const totalTests = quizzesData.quizzes.length + turkishQuizzesData.quizzes.length + chineseQuizzesData.quizzes.length + 1; // +1 for Spanish
+
+  // Select 6 featured items (2 simulation tests + interactive flashcards + Spanish + Turkish + Chinese)
   const simulationTests = quizzesData.quizzes.filter(q => q.category === 'Full Simulation Tests').slice(0, 2);
-  const practiceTests = quizzesData.quizzes.filter(q => q.category === 'Practice Tests').slice(0, 2);
-  const featuredTests = [...simulationTests, ...practiceTests];
+  const featuredTests = [...simulationTests];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
@@ -86,11 +96,11 @@ export default function Home() {
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">700+</div>
+            <div className="text-5xl font-bold text-primary mb-3">{totalQuestions}+</div>
             <div className="text-gray-700 font-semibold text-lg">Practice Questions</div>
           </div>
           <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">28+</div>
+            <div className="text-5xl font-bold text-primary mb-3">{totalTests}+</div>
             <div className="text-gray-700 font-semibold text-lg">
               <Link href="/practice-test" className="hover:text-primary">
                 Practice Tests
@@ -98,9 +108,9 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">3</div>
+            <div className="text-5xl font-bold text-primary mb-3">4</div>
             <div className="text-gray-700 font-semibold text-lg">Languages</div>
-            <div className="text-sm text-gray-500 mt-1">🇺🇸 🇪🇸 🇹🇷</div>
+            <div className="text-sm text-gray-500 mt-1">🇺🇸 🇪🇸 🇹🇷 🇨🇳</div>
           </div>
           <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
             <div className="text-5xl font-bold text-primary mb-3">50+</div>
@@ -184,7 +194,7 @@ export default function Home() {
 
             {/* Spanish Practice Test Card */}
             <Link
-              href="/practice-test/dmv-spanish-practice-test-1"
+              href="/muestra-del-examen-escrito-para-licencia-de-manejar"
               className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
             >
               <div className="p-6">
@@ -195,15 +205,69 @@ export default function Home() {
                   <span className="text-2xl">🇪🇸</span>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
-                  DMV Practice Test (Spanish)
+                  Examen de Práctica (Español)
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 line-clamp-2">
                   Examen de práctica del DMV en español. California DMV practice test in Spanish 2025 with complete answers.
                 </p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>40 Questions</span>
+                  <span>{spanishQuestions} Questions</span>
                   <span className="text-orange-600 font-medium group-hover:underline">
                     Comenzar →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Turkish Practice Test Card */}
+            <Link
+              href="/dmv-turkish-test"
+              className="bg-gradient-to-br from-red-50 to-white border-2 border-red-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+            >
+              <div className="p-6">
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-medium">
+                    Turkish / Türkçe
+                  </span>
+                  <span className="text-2xl">🇹🇷</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
+                  DMV Türkçe Testler
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  California DMV Türkçe sürücü testleri. Turkish driving knowledge tests with complete explanations.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>{turkishQuestions} Questions • {turkishQuizzesData.quizzes.length} Tests</span>
+                  <span className="text-red-600 font-medium group-hover:underline">
+                    Başla →
+                  </span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Chinese Practice Test Card */}
+            <Link
+              href="/dmv-chinese-test"
+              className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+            >
+              <div className="p-6">
+                <div className="mb-3 flex items-center gap-2">
+                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-medium">
+                    Chinese / 中文
+                  </span>
+                  <span className="text-2xl">🇨🇳</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
+                  DMV 中文考試
+                </h3>
+                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                  加州 DMV 中文駕駛考試。California DMV Chinese driving knowledge tests with complete answers.
+                </p>
+                <div className="flex items-center justify-between text-sm text-gray-500">
+                  <span>{chineseQuestions} Questions • {chineseQuizzesData.quizzes.length} Tests</span>
+                  <span className="text-yellow-600 font-medium group-hover:underline">
+                    開始 →
                   </span>
                 </div>
               </div>
