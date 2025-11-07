@@ -30,12 +30,16 @@ export default function PracticeTestsPage() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">20+</div>
+                  <div className="text-3xl font-bold">28+</div>
                   <div className="text-sm text-white/90">Practice Tests</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">500+</div>
+                  <div className="text-3xl font-bold">700+</div>
                   <div className="text-sm text-white/90">Total Questions</div>
+                </div>
+                <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
+                  <div className="text-3xl font-bold">3</div>
+                  <div className="text-sm text-white/90">Languages 🇺🇸 🇪🇸 🇹🇷</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
                   <div className="text-3xl font-bold">100%</div>
@@ -161,6 +165,58 @@ export default function PracticeTestsPage() {
                     Start Studying
                   </span>
                   <svg className="w-5 h-5 text-purple-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Spanish Test Card */}
+            <Link
+              href="/muestra-del-examen-escrito-para-licencia-de-manejar"
+              className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+            >
+              <div className="p-6">
+                {/* Category Badge */}
+                <div className="mb-4 flex items-center gap-2">
+                  <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
+                    Spanish / Español
+                  </span>
+                  <span className="text-2xl">🇪🇸</span>
+                </div>
+
+                {/* Title */}
+                <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
+                  Examen del DMV en Español
+                </h2>
+
+                {/* Description */}
+                <p className="text-gray-600 mb-4 line-clamp-2">
+                  Exámenes de práctica del DMV de California en español. 4 exámenes completos con 112 preguntas en total.
+                </p>
+
+                {/* Stats */}
+                <div className="flex flex-wrap gap-4 mb-4">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>4 Exámenes Completos</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                    </svg>
+                    <span>En Español</span>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <div className="flex items-center justify-between pt-4 border-t border-blue-200">
+                  <span className="text-blue-600 font-semibold group-hover:underline">
+                    Comenzar Exámenes
+                  </span>
+                  <svg className="w-5 h-5 text-blue-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>

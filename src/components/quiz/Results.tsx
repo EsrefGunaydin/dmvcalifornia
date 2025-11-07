@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 interface ResultsProps {
   result: QuizResult;
   quiz: Quiz;
-  quizId: number;
+  quizId: string | number;
   onRestart: () => void;
 }
 

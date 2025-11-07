@@ -105,10 +105,10 @@ export default function MobileAppPage() {
                 <span className="text-3xl">📝</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
-                20+ Practice Tests
+                28+ Practice Tests
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Access comprehensive practice tests with over 500 questions from the official California DMV handbook. Available in English and Turkish.
+                Access comprehensive practice tests with over 700 questions from the official California DMV handbook. Available in 3 languages: English, Spanish, and Turkish.
               </p>
             </div>
 
@@ -181,14 +181,18 @@ export default function MobileAppPage() {
 
         {/* Stats Section */}
         <div className="bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl shadow-2xl p-12 mb-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-white">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
             <div>
-              <div className="text-5xl font-bold mb-2">500+</div>
+              <div className="text-5xl font-bold mb-2">700+</div>
               <div className="text-xl opacity-90">Practice Questions</div>
             </div>
             <div>
-              <div className="text-5xl font-bold mb-2">20+</div>
+              <div className="text-5xl font-bold mb-2">28+</div>
               <div className="text-xl opacity-90">Full Practice Tests</div>
+            </div>
+            <div>
+              <div className="text-5xl font-bold mb-2">3</div>
+              <div className="text-xl opacity-90">Languages 🇺🇸 🇪🇸 🇹🇷</div>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">72</div>

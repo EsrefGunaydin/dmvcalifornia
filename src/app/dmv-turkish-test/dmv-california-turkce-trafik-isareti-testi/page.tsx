@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   }
 };
 
-async function fetchLeaderboard(quizId: number) {
+async function fetchLeaderboard(quizId: string | number) {
   try {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
     const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
@@ -36,7 +36,7 @@ async function fetchLeaderboard(quizId: number) {
 
 export default async function TurkishSignTestPage() {
   const quiz = turkishSignTestData.quiz;
-  const quizId = 103; // Turkish sign test quiz ID
+  const quizId = quiz.id; // Use the quiz's id field
 
   // Fetch leaderboard from MongoDB API
   const quizLeaderboard = await fetchLeaderboard(quizId);

@@ -51,7 +51,7 @@ export type QuizProgress = {
 
 export type LeaderboardEntry = {
   id: number;
-  quizId: number;
+  quizId: string | number;
   date: string;
   name: string;
   email: string;

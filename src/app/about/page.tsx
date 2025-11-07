@@ -52,7 +52,7 @@ export default function AboutPage() {
                 </p>
 
                 <p className="text-gray-700 mb-4">
-                  Our platform offers over 500 practice questions, 20+ comprehensive practice tests, and 50+ detailed blog articles covering everything from road signs to driving laws. Whether you're a first-time driver, renewing your license, or need to refresh your knowledge, we're here to help you succeed.
+                  Our platform offers over 700 practice questions across 28+ comprehensive practice tests in 3 languages (English, Spanish, and Turkish), plus 50+ detailed blog articles covering everything from road signs to driving laws. Whether you're a first-time driver, renewing your license, or need to refresh your knowledge, we're here to help you succeed.
                 </p>
 
                 <div className="bg-blue-50 border-l-4 border-primary p-6 my-8">

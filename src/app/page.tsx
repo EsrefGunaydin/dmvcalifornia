@@ -84,24 +84,29 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8">
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">500+</div>
+            <div className="text-5xl font-bold text-primary mb-3">700+</div>
             <div className="text-gray-700 font-semibold text-lg">Practice Questions</div>
           </div>
+          <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+            <div className="text-5xl font-bold text-primary mb-3">28+</div>
+            <div className="text-gray-700 font-semibold text-lg">
+              <Link href="/practice-test" className="hover:text-primary">
+                Practice Tests
+              </Link>
+            </div>
+          </div>
           <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
+            <div className="text-5xl font-bold text-primary mb-3">3</div>
+            <div className="text-gray-700 font-semibold text-lg">Languages</div>
+            <div className="text-sm text-gray-500 mt-1">🇺🇸 🇪🇸 🇹🇷</div>
+          </div>
+          <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
             <div className="text-5xl font-bold text-primary mb-3">50+</div>
             <div className="text-gray-700 font-semibold text-lg">
               <Link href="/blog" className="hover:text-primary">
                 Blog Articles
-              </Link>
-            </div>
-          </div>
-          <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">20+</div>
-            <div className="text-gray-700 font-semibold text-lg">
-              <Link href="/practice-test" className="hover:text-primary">
-                Practice Tests
               </Link>
             </div>
           </div>

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-async function fetchLeaderboard(quizId: number) {
+async function fetchLeaderboard(quizId: string | number) {
   try {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
     const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
@@ -56,9 +56,8 @@ export default async function QuizPage({ params }: { params: { slug: string } })
     notFound();
   }
 
-  // Get leaderboard entries for this quiz (matching by quiz position in array + 1)
-  const quizIndex = quizzesData.quizzes.findIndex((q) => q.slug === params.slug);
-  const quizId = quizIndex + 1; // WordPress quiz IDs start from 1
+  // Use the quiz's id field for leaderboard tracking
+  const quizId = quiz.id;
 
   // Fetch leaderboard from MongoDB API
   const quizLeaderboard = await fetchLeaderboard(quizId);

@@ -1,0 +1,461 @@
+{
+  "quiz": {
+    "id": "spanish-sign-test",
+    "title": "Examen de Señales de Tráfico en Español / Spanish Traffic Signs Test",
+    "description": "Prueba de reconocimiento de señales de tráfico en español. 32 preguntas con imágenes de señales reales de tráfico de California.",
+    "category": "Spanish Tests / Pruebas en Español",
+    "slug": "examen-senales-trafico-espanol",
+    "passingScore": 80,
+    "timeLimit": 40,
+    "questions": [
+      {
+        "id": 1,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/stop.jpeg",
+        "options": [
+          "Pare completamente",
+          "Disminuya la velocidad",
+          "Ceda el paso"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Una señal de STOP (Alto) octagonal roja significa que debe detenerse completamente antes de la línea de alto, cruce de peatones o intersección.",
+        "category": "Regulatory Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 2,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/yield.jpeg",
+        "options": [
+          "Alto obligatorio",
+          "Ceda el paso al tráfico que se aproxima",
+          "Prohibido el paso"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una señal de YIELD (Ceda el Paso) triangular roja significa que debe reducir la velocidad y ceder el paso al tráfico que tiene el derecho de paso.",
+        "category": "Regulatory Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 3,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/do-not-enter.jpeg",
+        "options": [
+          "No entre - tráfico en dirección contraria",
+          "No estacione aquí",
+          "Alto - intersección adelante"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Una señal circular roja de DO NOT ENTER (No Entre) significa que no debe entrar en esa carretera o rampa. Generalmente indica tráfico en sentido contrario.",
+        "category": "Regulatory Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 4,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/wrong-way.jpeg",
+        "options": [
+          "Carretera cerrada adelante",
+          "Va en dirección equivocada",
+          "No dar vuelta en U"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Una señal rectangular roja de WRONG WAY (Dirección Equivocada) indica que está conduciendo en dirección contraria al tráfico. Debe girar y salir inmediatamente.",
+        "category": "Regulatory Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 5,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/no-left-turn.jpeg",
+        "options": [
+          "No gire a la izquierda",
+          "No gire a la derecha",
+          "No dé vuelta en U"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal prohíbe girar a la izquierda en esa intersección. Debe continuar recto o girar a la derecha.",
+        "category": "Regulatory Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 6,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/no-right-turn.jpeg",
+        "options": [
+          "No gire a la izquierda",
+          "No gire a la derecha",
+          "Giro obligatorio a la derecha"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal prohíbe girar a la derecha en esa intersección. Debe continuar recto o girar a la izquierda si está permitido.",
+        "category": "Regulatory Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 7,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/no-uturn.jpeg",
+        "options": [
+          "No gire a la izquierda",
+          "No dé vuelta en U",
+          "Camino cerrado"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal prohíbe dar vuelta en U en ese lugar. No puede girar su vehículo para ir en dirección opuesta.",
+        "category": "Regulatory Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 8,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/no-parking.jpeg",
+        "options": [
+          "Zona de estacionamiento",
+          "No estacione en ningún momento",
+          "Estacionamiento de 15 minutos"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal prohíbe estacionar en cualquier momento en esa área. Su vehículo puede ser remolcado si lo estaciona allí.",
+        "category": "Regulatory Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 9,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/donot-pass.jpeg",
+        "options": [
+          "Prohibido adelantar",
+          "Adelantar con precaución",
+          "Carril de adelantamiento"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal indica que no está permitido adelantar a otros vehículos en esta zona. Debe permanecer en su carril.",
+        "category": "Regulatory Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 10,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/keep-to-the-right.jpeg",
+        "options": [
+          "Gire a la derecha",
+          "Manténgase a la derecha del divisor",
+          "Carril derecho cerrado"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal indica que debe mantenerse al lado derecho de un divisor, isla de tráfico u obstrucción en el camino.",
+        "category": "Regulatory Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 11,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/maximum-speed-limit.jpeg",
+        "options": [
+          "Velocidad mínima 55 mph",
+          "Velocidad máxima 55 mph",
+          "Velocidad recomendada 55 mph"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal blanca rectangular indica el límite máximo de velocidad legal en esa carretera. No debe exceder 55 mph.",
+        "category": "Regulatory Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 12,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/pedestrian-crossing.jpeg",
+        "options": [
+          "Zona escolar adelante",
+          "Cruce de peatones - esté alerta",
+          "Parque público cercano"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal amarilla de advertencia indica un cruce peatonal adelante. Debe estar preparado para detenerse y ceder el paso a los peatones.",
+        "category": "Warning Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 13,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/school-zone.jpeg",
+        "options": [
+          "Zona escolar - reduzca velocidad cuando los niños estén presentes",
+          "Parque infantil adelante",
+          "Guardería cercana"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal indica una zona escolar. Debe reducir la velocidad y estar especialmente alerta cuando los niños estén presentes o durante las horas escolares.",
+        "category": "Warning Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 14,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/railroad-crossing.jpeg",
+        "options": [
+          "Intersección adelante",
+          "Cruce de ferrocarril adelante",
+          "Puente levadizo"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal circular amarilla con una X y RR indica un cruce de ferrocarril adelante. Debe estar preparado para detenerse si se acerca un tren.",
+        "category": "Warning Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 15,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/slippery-when-wet.jpeg",
+        "options": [
+          "Camino sinuoso adelante",
+          "Carretera resbaladiza cuando está mojada",
+          "Zona de inundaciones"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal advierte que la carretera puede volverse resbaladiza cuando está mojada. Debe reducir la velocidad en condiciones húmedas.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 16,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/two-way-traffic-ahead.jpeg",
+        "options": [
+          "Carretera dividida adelante",
+          "Tráfico en ambos sentidos adelante",
+          "Intersección de cuatro vías"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal indica que se acerca una sección donde el tráfico fluye en ambas direcciones. Debe mantenerse en el lado derecho de la carretera.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 17,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/merging-traffic-right.jpeg",
+        "options": [
+          "Gire a la derecha adelante",
+          "Tráfico incorporándose desde la derecha",
+          "Carril derecho termina"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal indica que el tráfico se incorporará desde la derecha adelante. Debe estar preparado para ajustar su velocidad o posición.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 18,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/lane-ends.jpeg",
+        "options": [
+          "El carril derecho termina - incorpórese a la izquierda",
+          "Carretera estrecha adelante",
+          "Construcción adelante"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal indica que el carril derecho terminará adelante. Los vehículos en ese carril deben incorporarse de manera segura al carril izquierdo.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 19,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/divided-highway-begins.jpeg",
+        "options": [
+          "Carretera dividida comienza",
+          "Carretera dividida termina",
+          "Dos carriles adelante"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal indica que una carretera dividida (con separador central) comienza adelante. El tráfico irá en direcciones opuestas separadas por una mediana.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 20,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/divided-highway-ends.jpeg",
+        "options": [
+          "Carretera dividida comienza",
+          "Carretera dividida termina - tráfico en ambos sentidos adelante",
+          "Puente adelante"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal indica que la carretera dividida termina adelante. Pronto habrá tráfico en ambas direcciones en el mismo camino.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 21,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/winding-road-ahead.jpeg",
+        "options": [
+          "Curva cerrada a la derecha",
+          "Camino sinuoso con varias curvas adelante",
+          "Curva en S"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal advierte sobre un camino sinuoso con una serie de curvas adelante. Debe reducir la velocidad y estar preparado para múltiples giros.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 22,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/steep-hill-ahead.jpeg",
+        "options": [
+          "Subida pronunciada adelante",
+          "Bajada pronunciada - use freno de motor",
+          "Camino montañoso"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal indica una pendiente pronunciada hacia abajo adelante. Debe reducir la velocidad y usar marchas bajas o freno de motor en vehículos grandes.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 23,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/narrow-bridge.jpeg",
+        "options": [
+          "Puente levadizo adelante",
+          "Puente angosto o camino estrecho adelante",
+          "Puente bajo adelante"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal advierte sobre un puente angosto o sección estrecha del camino adelante. Debe reducir la velocidad y estar preparado para encontrar el ancho reducido.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 24,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/low-clearance.jpeg",
+        "options": [
+          "Túnel bajo adelante - verifique altura del vehículo",
+          "Puente angosto",
+          "Zona de inundaciones"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal indica altura limitada adelante (12 pies 6 pulgadas). Los vehículos altos deben encontrar una ruta alternativa o verificar que puedan pasar de manera segura.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 25,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/stop-sign-ahead.jpeg",
+        "options": [
+          "Señal de alto adelante - prepárese para detenerse",
+          "Intersección adelante",
+          "Semáforo adelante"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal amarilla advierte que hay una señal de ALTO adelante. Debe reducir la velocidad y estar preparado para detenerse completamente.",
+        "category": "Warning Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 26,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/traffic-signal-ahead.jpeg",
+        "options": [
+          "Señal de alto adelante",
+          "Semáforo adelante - prepárese para detenerse",
+          "Zona de construcción"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal advierte que hay un semáforo adelante. Debe estar preparado para detenerse si la luz está en rojo o amarillo.",
+        "category": "Warning Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 27,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/flagger-ahead.jpeg",
+        "options": [
+          "Trabajadores en la carretera",
+          "Persona señalizando el tráfico adelante - siga sus instrucciones",
+          "Zona escolar"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta señal indica que hay una persona señalizando el tráfico adelante, generalmente en zonas de construcción. Debe seguir sus señales manuales.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 28,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/hospital-ahead.jpeg",
+        "options": [
+          "Hospital adelante - mantenga el ruido al mínimo",
+          "Zona de primeros auxilios",
+          "Clínica médica"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal indica que hay un hospital adelante. Debe reducir el ruido (no tocar bocina innecesariamente) y conducir con cuidado especial.",
+        "category": "Guide Signs",
+        "difficulty": "medium"
+      },
+      {
+        "id": 29,
+        "question": "¿Qué indica esta señal de cruce de ferrocarril?",
+        "image": "/images/traffic-signs-2/railroad-crossing-cross.jpeg",
+        "options": [
+          "Intersección adelante",
+          "Cruce de ferrocarril - detenga si se acerca un tren",
+          "Camino cerrado"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Esta es la señal estándar de cruce de ferrocarril (cruzada). Debe detenerse cuando las luces parpadeen o la barrera baje, y esperar hasta que sea seguro cruzar.",
+        "category": "Warning Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 30,
+        "question": "¿Qué significa esta señal?",
+        "image": "/images/traffic-signs-2/school-crossing.png",
+        "options": [
+          "Cruce escolar - ceda el paso a los niños",
+          "Zona de juegos",
+          "Parque público"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Esta señal indica un cruce escolar donde los niños cruzan la calle regularmente. Debe estar muy alerta y preparado para detenerse.",
+        "category": "Warning Signs",
+        "difficulty": "easy"
+      },
+      {
+        "id": 31,
+        "question": "Esta señal de advertencia amarilla en blanco se usa para:",
+        "image": "/images/traffic-signs-2/warning-yellow-blank.png",
+        "options": [
+          "Señales de advertencia de construcción temporal",
+          "Señales de límite de velocidad",
+          "Señales direccionales"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Las señales amarillas en forma de diamante se usan para advertencias. Este formato en blanco se puede usar para advertencias temporales o de construcción con texto añadido.",
+        "category": "Warning Signs",
+        "difficulty": "hard"
+      },
+      {
+        "id": 32,
+        "question": "Esta señal de cruce de ferrocarril circular amarilla indica:",
+        "image": "/images/traffic-signs-2/railroad-crossing-blank-yellow.png",
+        "options": [
+          "Cruce de ferrocarril adelante - reduzca velocidad y esté alerta",
+          "Área de construcción",
+          "Camino cerrado"
+        ],
+        "correctAnswer": 0,
+        "explanation": "La señal circular amarilla indica que se acerca un cruce de ferrocarril. Debe reducir la velocidad y estar preparado para detenerse si es necesario.",
+        "category": "Warning Signs",
+        "difficulty": "medium"
+      }
+    ]
+  }
+}

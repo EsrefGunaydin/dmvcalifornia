@@ -33,26 +33,9 @@ export async function POST(request: NextRequest) {
     const db = client.db('dmvcalifornia');
     const collection = db.collection('leaderboard');
 
-    // Find quiz index to get numeric quiz ID
-    const quizzesCollection = db.collection('quizzes');
-    let numericQuizId = quizId;
-
-    // If quizzes collection doesn't exist yet, use the quizId as is
-    try {
-      const quizCount = await quizzesCollection.countDocuments();
-      if (quizCount > 0) {
-        const quizzes = await quizzesCollection.find({}).toArray();
-        const quizIndex = quizzes.findIndex((q: any) => q.id === quizId);
-        numericQuizId = quizIndex !== -1 ? quizIndex + 1 : quizId;
-      }
-    } catch (err) {
-      // If collection doesn't exist, just use quizId
-      console.log('Quizzes collection not found, using quizId directly');
-    }
-
     // Create new leaderboard entry
     const newEntry = {
-      quizId: numericQuizId,
+      quizId: quizId, // Store the quizId as-is (can be string or number)
       date: new Date().toISOString().split('T')[0], // YYYY-MM-DD format
       name: name.trim().substring(0, 50), // Limit name length
       email: email ? email.trim().substring(0, 100) : '',
@@ -102,8 +85,19 @@ export async function GET(request: NextRequest) {
     const db = client.db('dmvcalifornia');
     const collection = db.collection('leaderboard');
 
-    // Build query
-    const query = quizId ? { quizId: parseInt(quizId) } : {};
+    // Build query - try to match quizId as either string or number
+    let query = {};
+    if (quizId) {
+      // Try to parse as number, but also support string IDs
+      const numericQuizId = parseInt(quizId);
+      if (!isNaN(numericQuizId)) {
+        // If it's a valid number, match either number or string form
+        query = { $or: [{ quizId: numericQuizId }, { quizId: quizId }] };
+      } else {
+        // If it's a string ID, just match the string
+        query = { quizId: quizId };
+      }
+    }
 
     // Fetch leaderboard entries, sorted by percentage (desc) then by date (asc)
     const entries = await collection

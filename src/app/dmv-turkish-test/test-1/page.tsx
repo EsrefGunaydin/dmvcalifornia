@@ -11,7 +11,7 @@ export const metadata = {
   description: 'California DMV Türkçe Test #1. Temel trafik kuralları ve işaretler için 36 soru.',
 };
 
-async function fetchLeaderboard(quizId: number) {
+async function fetchLeaderboard(quizId: string | number) {
   try {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
     const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
@@ -33,7 +33,7 @@ async function fetchLeaderboard(quizId: number) {
 
 export default async function TurkishTest1Page() {
   const quiz = turkishQuizzesData.quizzes[0]; // First Turkish quiz
-  const quizId = 100; // Using 100+ for Turkish tests to avoid conflicts
+  const quizId = quiz.id; // Use the quiz's id field
 
   // Fetch leaderboard from MongoDB API
   const quizLeaderboard = await fetchLeaderboard(quizId);

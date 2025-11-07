@@ -1903,8 +1903,8 @@
           "question": "Which way do you turn your front wheels to park uphill next to a curb?",
           "options": [
             "Parallel to the curb",
-            "To the left\u2014away from the curb",
-            "To the right\u2014into the curb"
+            "To the left—away from the curb",
+            "To the right—into the curb"
           ],
           "correctAnswer": 1,
           "explanation": "When parking uphill next to a curb, turn your wheels away from the curb (to the left). If the car rolls, it will roll into the curb and stop.",
@@ -2690,7 +2690,7 @@
           "question": "When parking on a hill on a two-way street with no curb, you should:",
           "options": [
             "Turn your front wheels to the left, away from the side of the road",
-            "Park at a slight angle\u2014rear wheels closer to the road's edge",
+            "Park at a slight angle—rear wheels closer to the road's edge",
             "Turn your front wheels to the right, toward the side of the road"
           ],
           "correctAnswer": 2,
@@ -6764,9 +6764,551 @@
       ]
     },
     {
+      "id": "dmv-spanish-practice-test-1",
+      "title": "Examen de Práctica del DMV #1 en Español",
+      "description": "Primer examen de práctica del DMV de California en español. 20 preguntas sobre reglas básicas de tráfico y señales.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "examen-dmv-espanol-1",
+      "passingScore": 83,
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "¿De qué color es el borde de acera que no permite que vehículos se paren o estacionen?",
+          "options": [
+            "Amarillo",
+            "Rojo",
+            "Blanco"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde de acera rojo indica que no se permite estacionar o parar vehículos.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "Debe notificarle al DMV por medio de un formulario \"Reporte de accidente de tráfico ocurrido en California (SR-1)\" si:",
+          "options": [
+            "Su vehículo no pasa la prueba de emisiones contaminantes",
+            "Se ve involucrado en un choque y hay heridos",
+            "Cambia de compañía de seguro"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe reportar al DMV cualquier accidente con heridos o daños mayores a $1,000.",
+          "category": "Accidents",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "¿Qué se indica mediante dos juegos de líneas amarillas dobles separadas por una distancia de 2 pies o más?",
+          "options": [
+            "Un carril de transporte colectivo/carril para vehículos con un mínimo de 2 o más pasajeros (HOV)",
+            "Barrera",
+            "Carriles de tráfico que van en el mismo sentido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dos juegos de líneas amarillas dobles separadas por 2 pies o más indican una barrera que no debe cruzar.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "¿Qué debe hacer para dar vuelta a la derecha en una intersección que se aproxima?",
+          "options": [
+            "Incorporarse a la ciclovía antes de dar vuelta",
+            "Esperar hasta que termine la ciclovía y luego dar vuelta",
+            "Dar vuelta desde el carril en que se encuentra y no entrar a la ciclovía"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe incorporarse a la ciclovía (cuando esté permitido) antes de girar a la derecha para evitar conflictos con ciclistas.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "El límite de velocidad indicado en una carretera es de 65 millas por hora. ¿Qué significa eso?",
+          "options": [
+            "Siempre debe manejar a 65 millas por hora en esa carretera",
+            "Puede manejar más rápido solamente si no hay otros vehículos",
+            "Debe manejar a 65 millas por hora solamente si las condiciones del camino son ideales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los límites de velocidad son para condiciones ideales. Debe reducir la velocidad cuando las condiciones lo requieran.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "¿Cuándo se permite estacionarse en un espacio pintado con líneas diagonales?",
+          "options": [
+            "Nunca se permite estacionarse en un área con rayas diagonales",
+            "Si el área está alejada de las vías del tren por lo menos 20 pies",
+            "Si el área está demarcada como ciclovía, a menos que se indique lo contrario"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las áreas con líneas diagonales están prohibidas para estacionarse en cualquier circunstancia.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "¿Qué debe hacer si suena su teléfono y no tiene un dispositivo de manos libres?",
+          "options": [
+            "Contestar la llamada y colgar pronto",
+            "No contestar el teléfono y dejar que se vaya al buzón",
+            "Contestar la llamada si está parado ante un semáforo en rojo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Es ilegal usar un teléfono celular mientras maneja sin un dispositivo de manos libres. Deje que vaya al buzón de voz.",
+          "category": "Distracted Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "Si un semáforo está en verde, pero el tráfico está bloqueando la intersección ¿qué debe hacer?",
+          "options": [
+            "Entrar a la intersección parcialmente, como lo permita el tráfico",
+            "Esperar y no entrar en la intersección hasta que su vehículo pueda cruzar por completo",
+            "Manejar al rededor del tráfico por el acotamiento para ayudar a reducir el congestionamiento de tráfico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No entre a una intersección a menos que haya espacio para cruzar completamente, incluso si la luz está en verde.",
+          "category": "Intersections",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "¿En qué carril debe terminar la vuelta al dar vuelta a la derecha?",
+          "options": [
+            "Cualquier carril que esté libre de tráfico",
+            "El carril más cercano a la orilla izquierda del camino",
+            "El carril más cercano a la orilla derecha del camino"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Al dar vuelta a la derecha, debe terminar en el carril más cercano al lado derecho del camino.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 10,
+          "question": "¿Cuándo se requiere que obedezca las instrucciones que le dé un guardia de seguridad vial?",
+          "options": [
+            "En todo momento",
+            "Solo cuando hay niños presentes en frente de la escuela",
+            "Solo durante el horario de escuela"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe obedecer las instrucciones de los guardias de seguridad vial en todo momento.",
+          "category": "Traffic Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "¿Cuándo es legal salirse del camino para rebasar a otro vehículo?",
+          "options": [
+            "Si el vehículo que va adelante va a dar vuelta a la izquierda",
+            "No es legal bajo ninguna circunstancia",
+            "Si hay dos o más carriles de un solo sentido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No es legal salirse del camino pavimentado para rebasar a otro vehículo bajo ninguna circunstancia.",
+          "category": "Passing",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "Cuando un cruce de tren no está controlado, ¿cuál es el límite de velocidad si se encuentra a 100 pies y no puede ver 400 pies en ambas direcciones?",
+          "options": [
+            "15 millas por hora",
+            "25 millas por hora",
+            "10 millas por hora"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El límite de velocidad es 15 mph cuando se aproxima a un cruce de tren no controlado con visibilidad limitada.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "¿Cuál de los siguientes es un ejemplo de cómo estacionarse correctamente en paralelo en una calle?",
+          "options": [
+            "El vehículo está por lo menos a dos pies de otros vehículos",
+            "Las ruedas delanteras y traseras están tocando el borde de acera adyacente",
+            "Las ruedas delanteras y traseras están a menos de 18 pulgadas del borde de acera"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Al estacionarse en paralelo, las ruedas deben estar a menos de 18 pulgadas del borde de acera.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "¿A qué velocidad debe manejar al incorporarse a la carretera?",
+          "options": [
+            "A la velocidad o casi a la misma velocidad del tráfico",
+            "Más lento que la velocidad del tráfico",
+            "Más rápido que la velocidad del tráfico"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe acelerar para igualar la velocidad del tráfico al incorporarse a una carretera.",
+          "category": "Merging",
+          "difficulty": "easy"
+        },
+        {
+          "id": 15,
+          "question": "¿A cuántos pies de distancia de otro vehículo que se aproxima a usted en sentido contrario debe cambiar de luces altas a luces bajas?",
+          "options": [
+            "900 pies",
+            "700 pies",
+            "500 pies"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe cambiar a luces bajas cuando esté a 500 pies de un vehículo que se aproxima.",
+          "category": "Night Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "¿Quién se puede estacionar legalmente junto a un borde de acera azul?",
+          "options": [
+            "Alguien que va a recoger o dejar pasajeros en ese lugar",
+            "Una persona que está discapacitada y tiene un cartel especial o placa vehicular para personas discapacitadas",
+            "Una persona que se va a estacionar junto al borde de acera por menos de 15 minutos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los espacios con borde de acera azul están reservados exclusivamente para personas con placas o carteles de discapacidad.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "¿Qué debe hacer cuando haya un autobús escolar adelante que empieza a activar las luces amarillas intermitentes de advertencia?",
+          "options": [
+            "Reducir la velocidad y prepararse a parar",
+            "Rebasar al autobús escolar con cuidado por la izquierda",
+            "Parar inmediatamente y permanecer detenido"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las luces amarillas intermitentes indican que el autobús se está preparando para parar. Reduzca la velocidad y prepárese para detenerse.",
+          "category": "School Buses",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "¿Cuál de los siguientes es un requisito de la ley de velocidad básica de California?",
+          "options": [
+            "Siempre manejar al límite de velocidad, sin importar las condiciones",
+            "Ir a la misma velocidad que el tráfico que lo rodea",
+            "Nunca debe manejar más rápido de lo que sea seguro para las condiciones de tráfico existentes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La ley de velocidad básica requiere que conduzca a una velocidad segura para las condiciones actuales.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "Debe notificar al DMV en un plazo de 5 días, si:",
+          "options": [
+            "Recibe una multa de tránsito",
+            "Vende o traspasa la propiedad de su vehículo",
+            "Pinta su vehículo de un color diferente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe notificar al DMV dentro de 5 días si vende o transfiere su vehículo.",
+          "category": "Vehicle Registration",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "¿Cuál de los siguientes es un ejemplo de un hábito de manejo seguro?",
+          "options": [
+            "Usar las luces altas cuando haya niebla",
+            "Siempre mantener su vista en movimiento para monitorear su entorno",
+            "Ver fijamente solo el medio del camino"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mantener la vista en movimiento le ayuda a monitorear todo el entorno y anticipar peligros.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "dmv-spanish-practice-test-2",
+      "title": "Examen de Práctica del DMV #2 en Español",
+      "description": "Segundo examen de práctica del DMV de California en español. 20 preguntas sobre conducción segura y reglas avanzadas.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "examen-dmv-espanol-2",
+      "passingScore": 83,
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": 21,
+          "question": "¿Cuál de los siguientes es cierto sobre los camiones grandes?",
+          "options": [
+            "Tienen frenos de emergencia grandes y potentes, lo que les da la capacidad de parar rápidamente",
+            "Tienen puntos ciegos grandes, lo que le dificulta al camionero poder ver a otros vehículos",
+            "Están compuestos por varios remolques, lo que los hace más fácil de manejar que los vehículos de pasajeros"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los camiones grandes tienen puntos ciegos extensos donde no pueden ver otros vehículos.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 22,
+          "question": "¿Cuál de los siguientes es contra la ley hacer mientras maneja?",
+          "options": [
+            "Usar audífonos o tapones que cubran ambos oídos",
+            "Usar el piloto automático en calles residenciales",
+            "Usar audífonos o tapones que cubran un oído"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Es ilegal usar audífonos o tapones que cubran ambos oídos mientras conduce.",
+          "category": "Traffic Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 23,
+          "question": "¿Qué debe hacer cuando hay congestionamiento de tráfico y va lento y necesita cruzar las vías del tren antes de llegar a la intersección que se aproxima?",
+          "options": [
+            "Empezar a cruzar cuando el vehículo en frente de usted está cruzando las vías",
+            "Esperar en las vías hasta que la luz de alto en la intersección cambie a verde",
+            "Esperar hasta que pueda cruzar las vías del tren antes de proseguir"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Nunca entre a un cruce de tren a menos que esté seguro de que puede cruzar completamente sin detenerse.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "¿Cuál de los siguientes debe hacer si alguien lo sigue demasiado cerca?",
+          "options": [
+            "Cambiar de carril y dejar que el que lo siga demasiado cerca lo rebase",
+            "Pisar el freno para señalizar que va a ir a una velocidad más baja",
+            "Aumentar la velocidad para igualar la velocidad del vehículo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Si alguien lo sigue muy cerca, lo mejor es cambiar de carril y permitir que pase.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "Cuando maneja al límite de velocidad, pueden darle una multa:",
+          "options": [
+            "Si las condiciones del camino o del tiempo requieren que vaya a una velocidad más baja",
+            "Solamente si se aproxima a una curva cerrada en un camino",
+            "Bajo ninguna circunstancia porque siempre es legal"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Puede recibir una multa incluso manejando al límite de velocidad si las condiciones requieren velocidad reducida.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "¿Qué luces se deben usar si el conductor tiene problemas para ver otros vehículos debido a la presencia de polvo o humo en la carretera?",
+          "options": [
+            "Luces de estacionamiento",
+            "Luces de emergencia",
+            "Luces delanteras"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Use las luces delanteras cuando haya polvo, humo o condiciones de baja visibilidad.",
+          "category": "Adverse Conditions",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "¿Qué debe hacer para dar vuelta a la derecha en una intersección que se aproxima?",
+          "options": [
+            "Dar vuelta desde el carril en que se encuentra y no entrar a la ciclovía",
+            "Esperar hasta que termine la ciclovía y luego dar vuelta",
+            "Incorporarse a la ciclovía antes de dar vuelta"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe incorporarse a la ciclovía (cuando sea legal) antes de girar a la derecha para evitar conflictos con ciclistas.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "¿Qué debe hacer un conductor cuando el semáforo está en amarillo intermitente?",
+          "options": [
+            "Deténgase y prosiga cuando el tráfico le permita proseguir con cuidado",
+            "Reduzca la velocidad y prosiga con cuidado",
+            "Deténgase y espere a que el semáforo cambie a verde intermitente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una luz amarilla intermitente significa reducir la velocidad y proceder con precaución.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 29,
+          "question": "¿Qué debe hacer si un peatón aún está en el cruce peatonal después que el semáforo cambia a 'DON'T WALK' (no caminar) y el semáforo cambia a verde a su favor?",
+          "options": [
+            "Esperar hasta que el peatón se quite de su camino antes de proseguir",
+            "Esperar hasta que el peatón le señalice que usted puede proseguir",
+            "Esperar hasta que el peatón cruce la calle por completo antes de proseguir"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe esperar hasta que el peatón cruce completamente la calle, incluso si la luz cambia a verde.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 30,
+          "question": "¿Cuándo es legal que una persona maneje con un contenedor abierto de bebida alcohólica?",
+          "options": [
+            "Si el contenedor está en la guantera",
+            "Si el contenedor está en la cajuela",
+            "Si el contenedor está debajo del asiento delantero"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un contenedor abierto de alcohol solo es legal si está en la cajuela, fuera del alcance del conductor.",
+          "category": "DUI Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 31,
+          "question": "¿Qué debe hacer al acercarse a una intersección donde una persona que opera una silla de ruedas motorizada ha entrado al cruce peatonal?",
+          "options": [
+            "Permanecer detrás de la línea del cruce peatonal hasta que la silla de ruedas motorizada haya cruzado de forma segura",
+            "Asumir el derecho de paso si la silla de ruedas motorizada se detiene en el cruce",
+            "Permanecer inmóvil detrás de la línea de cruce peatonal más cercana hasta que la silla de ruedas motorizada esté fuera del alcance de su vehículo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe permanecer detrás de la línea del cruce peatonal hasta que la silla de ruedas complete el cruce de forma segura.",
+          "category": "Pedestrians",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "¿Cuál de las siguientes es verdad sobre los camiones grandes?",
+          "options": [
+            "Están compuestos por varios remolques, lo que los hace más fáciles de maniobrar que los vehículos de pasajeros",
+            "Tienen puntos ciegos grandes, lo que dificulta que el conductor del camión vea otros vehículos",
+            "Tienen frenos de emergencia grandes y potentes, lo que les da la capacidad de parar rápidamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los camiones grandes tienen puntos ciegos extensos donde otros vehículos pueden ser invisibles para el conductor.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 33,
+          "question": "¿Cuál es una de las causas más comunes de accidentes de tráfico?",
+          "options": [
+            "Mejor flujo de tráfico",
+            "Prestar atención a su entorno",
+            "Distracciones del conductor"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las distracciones del conductor son una de las causas más comunes de accidentes.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "Cualquier conductor que intencionalmente huya o intente evadir a las autoridades, durante lo cual una persona resulta gravemente herida, está sujeto a:",
+          "options": [
+            "Prisión en una cárcel estatal por hasta siete años",
+            "Asistir a una clase de manejo de la ira",
+            "Una multa de menos de $1,000"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Huir de la policía con lesiones graves puede resultar en hasta 7 años de prisión.",
+          "category": "Traffic Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "¿Qué debe hacer un conductor que está detenido en una intersección y quiere girar a la izquierda?",
+          "options": [
+            "Tomar su turno en el derecho de paso antes que el tráfico que viene en sentido contrario",
+            "Girar inmediatamente si no hay peatones",
+            "Ceder el derecho de paso a cualquier vehículo que esté lo suficientemente cerca como para representar un peligro"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe ceder el paso a los vehículos que se aproximan antes de girar a la izquierda.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 36,
+          "question": "Además de poner el freno de estacionamiento, ¿qué más debe hacer al estacionarse en una colina?",
+          "options": [
+            "Asegurarse de que las ruedas delanteras estén paralelas al camino",
+            "Asegurarse de dejar el vehículo en neutral",
+            "Asegurarse de que su vehículo esté en park o en cambio"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Además del freno de estacionamiento, debe dejar el vehículo en park (automático) o en cambio (manual).",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 37,
+          "question": "Usted tiene menos de 18 años y ha tenido su licencia durante 8 meses. Puede conducir:",
+          "options": [
+            "Entre las 7 a.m. y las 8 p.m.",
+            "Entre las 5 a.m. y las 11 p.m.",
+            "En cualquier momento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los conductores menores de 18 años con licencia provisional pueden conducir entre las 5 a.m. y las 11 p.m.",
+          "category": "Teen Drivers",
+          "difficulty": "medium"
+        },
+        {
+          "id": 38,
+          "question": "¿Desde dónde debe comenzar a girar a la izquierda desde una calle de un solo sentido hacia otra calle de un solo sentido?",
+          "options": [
+            "El carril más cercano al centro de la calle",
+            "El carril del extremo izquierdo",
+            "Puede girar desde cualquier carril"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Al girar a la izquierda desde una calle de un solo sentido a otra, comience desde el carril del extremo izquierdo.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 39,
+          "question": "Debe notificar al DMV usando un formulario de Informe de Accidente de Tráfico de California (SR-1) si:",
+          "options": [
+            "No pagó sus tarifas de registro",
+            "Estuvo involucrado en un accidente y hubo más de $1,000 en daños",
+            "Permitió que una persona de otro estado condujera su vehículo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe reportar al DMV con un formulario SR-1 si hay más de $1,000 en daños o lesiones.",
+          "category": "Accidents",
+          "difficulty": "medium"
+        },
+        {
+          "id": 40,
+          "question": "¿Cuándo son las carreteras resbaladizas en un día caluroso durante una tormenta?",
+          "options": [
+            "Cuando ha estado lloviendo durante algunas horas",
+            "Durante los primeros minutos",
+            "Inmediatamente después de que haya dejado de llover"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las carreteras son más resbaladizas durante los primeros minutos de lluvia cuando el aceite y la suciedad suben a la superficie.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
       "id": "dmv-spanish-simulation-test-1",
       "title": "California DMV Practice Test in Spanish / Examen de Práctica del DMV en Español",
-      "description": "Examen de práctica DMV en español California 2025. DMV practice test in Spanish California with 40 questions. Complete DMV Spanish written test with answers. Pass your DMV Class C practice test Spanish. Printable DMV practice test Spanish with answers for California learners permit.",
+      "description": "Examen de práctica DMV en español California 2025. DMV practice test in Spanish California with 40 questions. Complete DMV Spanish written test with answers.",
       "category": "Spanish Tests / Pruebas en Español",
       "slug": "dmv-spanish-practice-test-1",
       "passingScore": 83,

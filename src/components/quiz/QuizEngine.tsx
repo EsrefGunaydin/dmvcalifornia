@@ -8,7 +8,7 @@ import AdRefreshManager from '@/components/ads/AdRefreshManager';
 
 interface QuizEngineProps {
   quiz: Quiz;
-  quizId: number;
+  quizId: string | number;
 }
 
 // Shuffle array using Fisher-Yates algorithm
