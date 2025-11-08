@@ -40,7 +40,7 @@ export default function ChineseTestPage() {
               Chinese DMV Tests / 中文 DMV 考試
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {quizzes.map((quiz, index) => {
                 const isSimulator = quiz.id === 'chinese-simulator-test';
 
@@ -66,7 +66,7 @@ export default function ChineseTestPage() {
                       </h3>
                       <p className="text-gray-600 mb-4 text-sm">
                         {isSimulator
-                          ? '完整的模擬考試，包含10道真實 DMV 考題。'
+                          ? '完整的模擬考試，包含40道真實 DMV 考題。'
                           : `${quiz.questions.length} 道練習題，涵蓋基本交通規則和標誌。`}
                       </p>
                       <div className="flex items-center justify-between pt-4 border-t">

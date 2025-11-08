@@ -3,9 +3,541 @@
     {
       "id": "chinese-simulator-test",
       "title": "DMV Chinese Simulator Test / DMV 中文模擬考試",
-      "description": "California DMV 中文模擬考試 - 基本交通規則和標誌。California DMV Chinese driving simulator test with 10 real questions.",
+      "description": "California DMV 中文模擬考試 - 完整的40題測試。California DMV Chinese driving simulator test with 40 real questions.",
       "category": "Chinese Tests / 中文考試",
       "slug": "chinese-simulator-test",
+      "passingScore": 85,
+      "timeLimit": 60,
+      "language": "zh",
+      "questions": [
+        {
+          "id": 1,
+          "question": "關於大型商用載貨車，以下哪一項為正確？",
+          "options": [
+            "這列車由許多拖車製成，使其與載客用車相較更容易操作。",
+            "他們有大盲點，這使得運貨卡車駕駛員難以看到其他車輛。",
+            "他們有大而強的緊急煞車，這使他們能夠快速停車。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "大型商用載貨車有大盲點，這使得運貨卡車駕駛員難以看到其他車輛。",
+          "category": "安全",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "駕駛時，以下哪一項屬於違法？",
+          "options": [
+            "戴上可覆蓋雙耳的耳機或耳塞。",
+            "戴上可覆蓋單耳的耳機或耳塞。",
+            "在住宅區街道上使用巡航控制。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "駕駛時戴上可覆蓋雙耳的耳機或耳塞是違法的。",
+          "category": "法規",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "在交通繁忙之時，您須越過鐵路路軌方可到達下一個交叉路口，應如何處理？",
+          "options": [
+            "當您前方的車輛穿過軌道時開始過馬路。",
+            "在軌道上等待，直到交叉路口的停車燈號變為綠色。",
+            "等待完全穿過軌道，然後繼續前行。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "必須等待完全穿過軌道，然後繼續前行，切勿在軌道上停留。",
+          "category": "鐵路",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "倘若您被其他車輛尾隨，應採取以下哪一項措施？",
+          "options": [
+            "改變行車線，讓後方尾隨的車輛通過。",
+            "輕觸煞車以發出您正在以較慢速度行駛的訊號。",
+            "加快您的速度，以協調車輛速度。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "改變行車線，讓後方尾隨的車輛通過是最安全的做法。",
+          "category": "安全",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "當您以限制車速行駛時，您或會被發出超速吿票：",
+          "options": [
+            "倘若道路狀況或天氣條件需要減慢速度。",
+            "這在任何情況下始終屬於合法。",
+            "只有當您正在接近道路上彎曲位時。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "即使以限速行駛，倘若道路狀況或天氣條件需要減慢速度，您仍可能被開罰單。",
+          "category": "速度",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "駕駛員因塵土或煙霧吹過道路而無法看見其他車輛，應使用哪些燈光？",
+          "options": [
+            "緊急閃光燈。",
+            "泊車訊號燈。",
+            "車頭燈。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "在能見度低的情況下，應使用車頭燈以提高可見性。",
+          "category": "照明",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "要在下一個交叉路口右轉，應如何處理？",
+          "options": [
+            "到達腳踏車行車線終點，然後轉彎。",
+            "從目前的行車線轉彎，切勿進入腳踏車行車線。",
+            "轉彎前，請先併入腳踏車行車線。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "右轉前應先併入腳踏車行車線，以確保安全。",
+          "category": "轉彎",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "閃爍的黃色交通信號燈指示司機採取什麼措施？",
+          "options": [
+            "當交通狀況可讓您安全前進時，停車並繼續下一步。",
+            "減慢速度，並小心前進。",
+            "停下來並等待綠色信號燈亮起。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "閃爍的黃色信號燈表示應減速並小心前進。",
+          "category": "交通信號",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "當「禁止行走 (DON'T WALK)」標誌開始閃爍後，行人穿越道上仍有行人，應如何處理？",
+          "options": [
+            "等待行人訊號，確認情況良好然後繼續。",
+            "等待行人離開您所在的路徑，然後繼續。",
+            "等待行人全部過馬路，然後繼續。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "必須等待所有行人完全過馬路後才能繼續行駛。",
+          "category": "行人",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "在開車時，什麼時候打開酒精飲品容器屬於合法？",
+          "options": [
+            "倘若容器放置於前排座位下方。",
+            "倘若容器放置於車後面車箱內。",
+            "倘若容器放置於手飾箱內。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "打開的酒精飲品容器只能放置於車後面車箱內。",
+          "category": "法規",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "什麼顏色的道路邊緣不允許車輛停車或泊車？",
+          "options": [
+            "黃色。",
+            "紅色。",
+            "白色。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "紅色路邊表示不允許停車或泊車。",
+          "category": "停車",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "在下列情況，您須提交在加州 (SR-1) 交通意外報告，以通知 DMV：",
+          "options": [
+            "您的車輛未通過廢氣測試。",
+            "您涉及一項出現人員受傷的撞車事故。",
+            "您更換保險公司。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "涉及人員受傷的撞車事故必須向 DMV 提交 SR-1 報告。",
+          "category": "法規",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "兩組相隔 2 呎或以上的雙黃線表示什麼？",
+          "options": [
+            "合用車專用道/高載客量車輛(HOV)專用道。",
+            "路障。",
+            "在同一方向移動的車流的行車線。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "兩組相隔 2 呎或以上的雙黃線表示路障。",
+          "category": "道路標線",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "要在下一個交叉路口右轉，應如何處理？",
+          "options": [
+            "轉彎前，請先併入腳踏車行車線。",
+            "到達腳踏車行車線終點，然後轉彎。",
+            "從目前的行車線轉彎，切勿進入腳踏車行車線。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "右轉前應先併入腳踏車行車線，以確保安全。",
+          "category": "轉彎",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "高速公路已列明車速限制為時速 65英哩。這個是什麼意思？",
+          "options": [
+            "您可在沒有其他車輛的情況下加快速度行駛。",
+            "您須在該高速公路上以時速 65 英哩的車速行駛。",
+            "您須在駕駛條件理想的情況下以 時速65 英哩的車速行駛。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "速度限制是指在理想駕駛條件下的最高速度。",
+          "category": "速度",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "什麼時候允許在交叉線（對角線）區域泊車？",
+          "options": [
+            "不許在交叉線（對角線）區域內泊車。",
+            "該區域被標為腳踏車行車線（另有標示者除外）。",
+            "倘若該區域距離鐵路軌道至少二十呎。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "任何時候都不允許在交叉線（對角線）區域泊車。",
+          "category": "停車",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "倘若您的手機有來電，而沒有免提裝置，應如何處理？",
+          "options": [
+            "接聽電話，讓通話盡可能簡短。",
+            "切勿接聽電話，讓其轉至留言信箱。",
+            "在紅燈停車時，請接聽電話。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "沒有免提裝置時，不應接聽電話，應讓其轉至留言信箱。",
+          "category": "法規",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "倘若交通訊號為綠色，但交叉路口出現交通阻塞，應如何處理？",
+          "options": [
+            "倘若交通狀況許可，請部分進入交叉路口。",
+            "等候，切勿進入交叉路口，直至您的車輛完全通過。",
+            "跟隨路肩的車流行駛，以協助緩解擁擠。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "即使綠燈，如果交叉路口阻塞，也不應進入，直到確保能完全通過。",
+          "category": "交叉路口",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "右轉時，您應該在哪條行車線結束轉彎？",
+          "options": [
+            "最接近道路左側路肩的行車線。",
+            "任何沒有車流的行車線。",
+            "最接近道路右側路肩的行車線。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "右轉應該在最接近道路右側路肩的行車線結束。",
+          "category": "轉彎",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "什麼時候需聽從交通協管員的指示？",
+          "options": [
+            "始終。",
+            "僅限上課時間。",
+            "僅限孩子在學校門口時。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "始終需要聽從交通協管員的指示。",
+          "category": "法規",
+          "difficulty": "easy"
+        },
+        {
+          "id": 21,
+          "question": "在有乘坐電動輪椅的人進入人行道的十字路口時，該怎麼辦？",
+          "options": [
+            "在行人穿越道線一直停留，直至使用電動輪椅人士安全通過馬路。",
+            "如使用電動輪椅人士在行人穿越道線附停留，請行使您的先行權。",
+            "在行人穿越道線附近一直停留，直至使用電動輪椅人士遠離您的行車範圍。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "在行人穿越道線一直停留，直至使用電動輪椅人士安全通過馬路。",
+          "category": "行人",
+          "difficulty": "easy"
+        },
+        {
+          "id": 22,
+          "question": "關於大型商用載貨車，以下哪一項為正確？",
+          "options": [
+            "這列車由許多拖車製成，使其與載客用車相較更容易操作。",
+            "他們有大盲點，這使得運貨卡車駕駛員難以看到其他車輛。",
+            "他們有大而強的緊急煞車，這使他們能夠快速停車。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "大型商用載貨車有大盲點，這使得運貨卡車駕駛員難以看到其他車輛。",
+          "category": "安全",
+          "difficulty": "medium"
+        },
+        {
+          "id": 23,
+          "question": "以下哪一項是撞車事故的最常見原因之一？",
+          "options": [
+            "更好的車流流量。",
+            "注意您的周圍環境。",
+            "駕駛者分心。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "駕駛者分心是撞車事故的最常見原因之一。",
+          "category": "安全",
+          "difficulty": "easy"
+        },
+        {
+          "id": 24,
+          "question": "故意逃逸或試圖逃避執法，並在逃逸過程中引致他人嚴重受傷，將受以下處罰：",
+          "options": [
+            "將腳從油門踏板/加速器移開。",
+            "將您的車輛轉換為空檔。",
+            "踩下緊急煞車。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "這種情況下應將腳從油門踏板/加速器移開。",
+          "category": "法規",
+          "difficulty": "medium"
+        },
+        {
+          "id": 25,
+          "question": "在交叉路口停下並想要左轉的駕駛員，應採取什麼行動？",
+          "options": [
+            "倘若沒有行人，請立即轉彎。",
+            "在迎面而來的車流前讓行轉彎。",
+            "向距離過近而有危險的正在接近的車輛予以讓行。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "左轉時應向距離過近而有危險的正在接近的車輛予以讓行。",
+          "category": "轉彎",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "除了設定泊車制動外，在山坡上泊車時應如何處理？",
+          "options": [
+            "確認您的車輛處於「空檔」位置。",
+            "確認車輛前輪與路面平行。",
+            "確認您的車輛位於「泊車」位置或檔位。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "在山坡上泊車時，應確認車輛位於「泊車」位置或檔位。",
+          "category": "停車",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "您未滿 18 歲，並已持有自己的執照八個月。您可以駕駛：",
+          "options": [
+            "任何時間。",
+            "清晨 5 時正至夜晚 11 時正之間。",
+            "早晨 7 時正至夜晚 8 時正之間。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "未滿 18 歲持照 8 個月後，可以在清晨 5 時正至夜晚 11 時正之間駕駛。",
+          "category": "法規",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "從一條單程街道左轉轉入另一條單程街道，應該從哪裏開始？",
+          "options": [
+            "最靠近街道中心的行車線。",
+            "最左側的行車線。",
+            "您可從任何行車線轉彎。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "從一條單程街道左轉到另一條單程街道，應從最左側的行車線開始。",
+          "category": "轉彎",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "在下列情況，您須提交在加州 (SR-1) 交通意外報告，以通知 DMV：",
+          "options": [
+            "您未能支付登記費用。",
+            "您涉及一項損失超過 $1,000 的撞車事故。",
+            "您允許來自其他州持牌的駕駛員駕駛您的車輛。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "涉及損失超過 $1,000 的撞車事故必須向 DMV 提交 SR-1 報告。",
+          "category": "法規",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "在天氣酷熱的日子下雨時，道路什麼時候會比較濕滑？",
+          "options": [
+            "已下雨數小時之時。",
+            "對於開頭幾分鐘。",
+            "下雨停止後立即執行。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "天氣酷熱時下雨，道路在開頭幾分鐘會比較濕滑。",
+          "category": "天氣",
+          "difficulty": "medium"
+        },
+        {
+          "id": 31,
+          "question": "什麼時候超越另一輛車屬於合法？",
+          "options": [
+            "倘若有兩條或以上單向行車線。",
+            "任何條件下均屬非法。",
+            "倘若前方車輛正在左轉。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "倘若有兩條或以上單向行車線時，超越另一輛車是合法的。",
+          "category": "超車",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "當鐵路平交道不受控制，而您在 100 呎範圍內，兩個方向的能見度不到 400 呎時，車速限制是多少？",
+          "options": [
+            "時速15英哩。",
+            "時速10英哩。",
+            "時速25英哩。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "在這種情況下，車速限制是時速15英哩。",
+          "category": "速度",
+          "difficulty": "hard"
+        },
+        {
+          "id": 33,
+          "question": "以下哪一項是正確在街道上平行泊車的例子？",
+          "options": [
+            "前輪轉向街道。",
+            "前輪和後輪接觸相鄰的道路邊緣。",
+            "前輪和後輪位於道路邊緣 18 吋範圍內。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "正確的平行泊車是前輪和後輪位於道路邊緣 18 吋範圍內。",
+          "category": "停車",
+          "difficulty": "medium"
+        },
+        {
+          "id": 34,
+          "question": "進入高速公路時，應以什麼速度行駛？",
+          "options": [
+            "達至或接近車流速度。",
+            "較車流速度更快。",
+            "較車流速度慢。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "進入高速公路時應達至或接近車流速度。",
+          "category": "高速公路",
+          "difficulty": "easy"
+        },
+        {
+          "id": 35,
+          "question": "當接近向您駛來的車輛時，應在多少呎距離以外將車頭燈由遠光燈轉為近光燈？",
+          "options": [
+            "900 呎。",
+            "700 呎。",
+            "500 呎。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "接近向您駛來的車輛時，應在 500 呎距離以外將車頭燈由遠光燈轉為近光燈。",
+          "category": "照明",
+          "difficulty": "medium"
+        },
+        {
+          "id": 36,
+          "question": "誰人可在道路邊緣旁邊塗有藍色的區域合法泊車？",
+          "options": [
+            "在該地點安排上落客之人士。",
+            "持有殘障人士特殊標語或車牌的人士。",
+            "僅在道路邊緣泊車不超過 15 分鐘之人士。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "只有持有殘障人士特殊標語或車牌的人士可在藍色區域泊車。",
+          "category": "停車",
+          "difficulty": "easy"
+        },
+        {
+          "id": 37,
+          "question": "前方有校巴開始閃動黃色警告訊號燈時，應如何處理？",
+          "options": [
+            "減慢速度並準備停車。",
+            "立即停車並保持停車狀態。",
+            "小心超越左方的校車。"
+          ],
+          "correctAnswer": 0,
+          "explanation": "校巴閃動黃色警告訊號燈時，應減慢速度並準備停車。",
+          "category": "校車",
+          "difficulty": "easy"
+        },
+        {
+          "id": 38,
+          "question": "以下哪一項是《加州基本行車速度法》的要求？",
+          "options": [
+            "無論條件如何，務必依照速度限制行駛。",
+            "讓您的速度與周圍車流速度相符。",
+            "切勿以超出現有安全狀況的車速行駛。"
+          ],
+          "correctAnswer": 2,
+          "explanation": "《加州基本行車速度法》要求切勿以超出現有安全狀況的車速行駛。",
+          "category": "速度",
+          "difficulty": "medium"
+        },
+        {
+          "id": 39,
+          "question": "倘若有以下情況，您須在 5 日內通知 DMV：",
+          "options": [
+            "收到交通違章通知。",
+            "出售或轉讓您車輛的所有權。",
+            "為您的車輛塗上不同顏色。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "出售或轉讓車輛所有權後，須在 5 日內通知 DMV。",
+          "category": "法規",
+          "difficulty": "medium"
+        },
+        {
+          "id": 40,
+          "question": "以下哪一項為安全駕駛慣例的事例？",
+          "options": [
+            "僅注意觀看道路中央。",
+            "雙眼始終細看周圍環境。",
+            "在大霧中使用遠光車頭燈。"
+          ],
+          "correctAnswer": 1,
+          "explanation": "安全駕駛慣例是雙眼始終細看周圍環境。",
+          "category": "安全",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "chinese-practice-test-1",
+      "title": "DMV Chinese Practice Test #1 / DMV 中文練習考試 #1",
+      "description": "California DMV 中文練習考試 - 前20題練習。California DMV Chinese driving practice test with 20 questions.",
+      "category": "Chinese Tests / 中文考試",
+      "slug": "chinese-practice-test-1",
       "passingScore": 85,
       "timeLimit": 30,
       "language": "zh",
@@ -139,21 +671,9 @@
           "explanation": "打開的酒精飲品容器只能放置於車後面車箱內。",
           "category": "法規",
           "difficulty": "easy"
-        }
-      ]
-    },
-    {
-      "id": "chinese-practice-test-1",
-      "title": "DMV Chinese Practice Test #1 / DMV 中文練習考試 #1",
-      "description": "California DMV 中文練習考試 - 基本交通規則和標誌。California DMV Chinese driving practice test with 10 real questions.",
-      "category": "Chinese Tests / 中文考試",
-      "slug": "chinese-practice-test-1",
-      "passingScore": 85,
-      "timeLimit": 30,
-      "language": "zh",
-      "questions": [
+        },
         {
-          "id": 1,
+          "id": 11,
           "question": "什麼顏色的道路邊緣不允許車輛停車或泊車？",
           "options": [
             "黃色。",
@@ -166,7 +686,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 2,
+          "id": 12,
           "question": "在下列情況，您須提交在加州 (SR-1) 交通意外報告，以通知 DMV：",
           "options": [
             "您的車輛未通過廢氣測試。",
@@ -179,7 +699,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 3,
+          "id": 13,
           "question": "兩組相隔 2 呎或以上的雙黃線表示什麼？",
           "options": [
             "合用車專用道/高載客量車輛(HOV)專用道。",
@@ -192,7 +712,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 4,
+          "id": 14,
           "question": "要在下一個交叉路口右轉，應如何處理？",
           "options": [
             "轉彎前，請先併入腳踏車行車線。",
@@ -205,7 +725,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 5,
+          "id": 15,
           "question": "高速公路已列明車速限制為時速 65英哩。這個是什麼意思？",
           "options": [
             "您可在沒有其他車輛的情況下加快速度行駛。",
@@ -218,7 +738,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 6,
+          "id": 16,
           "question": "什麼時候允許在交叉線（對角線）區域泊車？",
           "options": [
             "不許在交叉線（對角線）區域內泊車。",
@@ -231,7 +751,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 7,
+          "id": 17,
           "question": "倘若您的手機有來電，而沒有免提裝置，應如何處理？",
           "options": [
             "接聽電話，讓通話盡可能簡短。",
@@ -244,7 +764,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 8,
+          "id": 18,
           "question": "倘若交通訊號為綠色，但交叉路口出現交通阻塞，應如何處理？",
           "options": [
             "倘若交通狀況許可，請部分進入交叉路口。",
@@ -257,7 +777,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 9,
+          "id": 19,
           "question": "右轉時，您應該在哪條行車線結束轉彎？",
           "options": [
             "最接近道路左側路肩的行車線。",
@@ -270,7 +790,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 10,
+          "id": 20,
           "question": "什麼時候需聽從交通協管員的指示？",
           "options": [
             "始終。",
@@ -287,7 +807,7 @@
     {
       "id": "chinese-practice-test-2",
       "title": "DMV Chinese Practice Test #2 / DMV 中文練習考試 #2",
-      "description": "California DMV 中文練習考試 - 基本交通規則和標誌。California DMV Chinese driving practice test with 10 real questions.",
+      "description": "California DMV 中文練習考試 - 後20題練習。California DMV Chinese driving practice test with 20 questions.",
       "category": "Chinese Tests / 中文考試",
       "slug": "chinese-practice-test-2",
       "passingScore": 85,
@@ -295,7 +815,7 @@
       "language": "zh",
       "questions": [
         {
-          "id": 1,
+          "id": 21,
           "question": "在有乘坐電動輪椅的人進入人行道的十字路口時，該怎麼辦？",
           "options": [
             "在行人穿越道線一直停留，直至使用電動輪椅人士安全通過馬路。",
@@ -308,7 +828,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 2,
+          "id": 22,
           "question": "關於大型商用載貨車，以下哪一項為正確？",
           "options": [
             "這列車由許多拖車製成，使其與載客用車相較更容易操作。",
@@ -321,7 +841,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 3,
+          "id": 23,
           "question": "以下哪一項是撞車事故的最常見原因之一？",
           "options": [
             "更好的車流流量。",
@@ -334,7 +854,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 4,
+          "id": 24,
           "question": "故意逃逸或試圖逃避執法，並在逃逸過程中引致他人嚴重受傷，將受以下處罰：",
           "options": [
             "將腳從油門踏板/加速器移開。",
@@ -347,7 +867,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 5,
+          "id": 25,
           "question": "在交叉路口停下並想要左轉的駕駛員，應採取什麼行動？",
           "options": [
             "倘若沒有行人，請立即轉彎。",
@@ -360,7 +880,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 6,
+          "id": 26,
           "question": "除了設定泊車制動外，在山坡上泊車時應如何處理？",
           "options": [
             "確認您的車輛處於「空檔」位置。",
@@ -373,7 +893,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 7,
+          "id": 27,
           "question": "您未滿 18 歲，並已持有自己的執照八個月。您可以駕駛：",
           "options": [
             "任何時間。",
@@ -386,7 +906,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 8,
+          "id": 28,
           "question": "從一條單程街道左轉轉入另一條單程街道，應該從哪裏開始？",
           "options": [
             "最靠近街道中心的行車線。",
@@ -399,7 +919,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 9,
+          "id": 29,
           "question": "在下列情況，您須提交在加州 (SR-1) 交通意外報告，以通知 DMV：",
           "options": [
             "您未能支付登記費用。",
@@ -412,7 +932,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 10,
+          "id": 30,
           "question": "在天氣酷熱的日子下雨時，道路什麼時候會比較濕滑？",
           "options": [
             "已下雨數小時之時。",
@@ -423,21 +943,9 @@
           "explanation": "天氣酷熱時下雨，道路在開頭幾分鐘會比較濕滑。",
           "category": "天氣",
           "difficulty": "medium"
-        }
-      ]
-    },
-    {
-      "id": "chinese-practice-test-3",
-      "title": "DMV Chinese Practice Test #3 / DMV 中文練習考試 #3",
-      "description": "California DMV 中文練習考試 - 基本交通規則和標誌。California DMV Chinese driving practice test with 10 real questions.",
-      "category": "Chinese Tests / 中文考試",
-      "slug": "chinese-practice-test-3",
-      "passingScore": 85,
-      "timeLimit": 30,
-      "language": "zh",
-      "questions": [
+        },
         {
-          "id": 1,
+          "id": 31,
           "question": "什麼時候超越另一輛車屬於合法？",
           "options": [
             "倘若有兩條或以上單向行車線。",
@@ -450,7 +958,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 2,
+          "id": 32,
           "question": "當鐵路平交道不受控制，而您在 100 呎範圍內，兩個方向的能見度不到 400 呎時，車速限制是多少？",
           "options": [
             "時速15英哩。",
@@ -463,7 +971,7 @@
           "difficulty": "hard"
         },
         {
-          "id": 3,
+          "id": 33,
           "question": "以下哪一項是正確在街道上平行泊車的例子？",
           "options": [
             "前輪轉向街道。",
@@ -476,7 +984,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 4,
+          "id": 34,
           "question": "進入高速公路時，應以什麼速度行駛？",
           "options": [
             "達至或接近車流速度。",
@@ -489,7 +997,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 5,
+          "id": 35,
           "question": "當接近向您駛來的車輛時，應在多少呎距離以外將車頭燈由遠光燈轉為近光燈？",
           "options": [
             "900 呎。",
@@ -502,7 +1010,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 6,
+          "id": 36,
           "question": "誰人可在道路邊緣旁邊塗有藍色的區域合法泊車？",
           "options": [
             "在該地點安排上落客之人士。",
@@ -515,7 +1023,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 7,
+          "id": 37,
           "question": "前方有校巴開始閃動黃色警告訊號燈時，應如何處理？",
           "options": [
             "減慢速度並準備停車。",
@@ -528,7 +1036,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 8,
+          "id": 38,
           "question": "以下哪一項是《加州基本行車速度法》的要求？",
           "options": [
             "無論條件如何，務必依照速度限制行駛。",
@@ -541,7 +1049,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 9,
+          "id": 39,
           "question": "倘若有以下情況，您須在 5 日內通知 DMV：",
           "options": [
             "收到交通違章通知。",
@@ -554,7 +1062,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 10,
+          "id": 40,
           "question": "以下哪一項為安全駕駛慣例的事例？",
           "options": [
             "僅注意觀看道路中央。",
