@@ -5,17 +5,21 @@ import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import AppPromotionIOS from '@/components/AppPromotionIOS';
 import quizzesData from '@/data/quizzes.json';
+import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
+// Combine all quizzes
+const allQuizzes = [...quizzesData.quizzes, ...chineseQuizzesData.quizzes];
+
 export async function generateStaticParams() {
-  return quizzesData.quizzes.map((quiz) => ({
+  return allQuizzes.map((quiz) => ({
     slug: quiz.slug,
   }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const quiz = quizzesData.quizzes.find((q) => q.slug === params.slug);
+  const quiz = allQuizzes.find((q) => q.slug === params.slug);
 
   if (!quiz) {
     return {
@@ -50,7 +54,7 @@ async function fetchLeaderboard(quizId: string | number) {
 }
 
 export default async function QuizPage({ params }: { params: { slug: string } }) {
-  const quiz = quizzesData.quizzes.find((q) => q.slug === params.slug);
+  const quiz = allQuizzes.find((q) => q.slug === params.slug);
 
   if (!quiz) {
     notFound();
