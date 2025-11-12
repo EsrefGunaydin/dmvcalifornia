@@ -30,16 +30,16 @@ export default function PracticeTestsPage() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">28+</div>
+                  <div className="text-3xl font-bold">33+</div>
                   <div className="text-sm text-white/90">Practice Tests</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">700+</div>
+                  <div className="text-3xl font-bold">800+</div>
                   <div className="text-sm text-white/90">Total Questions</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">3</div>
-                  <div className="text-sm text-white/90">Languages 🇺🇸 🇪🇸 🇹🇷</div>
+                  <div className="text-3xl font-bold">4</div>
+                  <div className="text-sm text-white/90">Languages 🇺🇸 🇪🇸 🇹🇷 🇨🇳</div>
                 </div>
                 <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
                   <div className="text-3xl font-bold">100%</div>
@@ -269,6 +269,58 @@ export default function PracticeTestsPage() {
                     Teste Başla
                   </span>
                   <svg className="w-5 h-5 text-red-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </Link>
+
+            {/* Chinese Test Card */}
+            <Link
+              href="/dmv-chinese-test"
+              className="bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+            >
+              <div className="p-6">
+                {/* Category Badge */}
+                <div className="mb-4 flex items-center gap-2">
+                  <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium">
+                    Chinese / 中文
+                  </span>
+                  <span className="text-2xl">🇨🇳</span>
+                </div>
+
+                {/* Title */}
+                <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-yellow-600 transition-colors">
+                  DMV 中文考試
+                </h2>
+
+                {/* Description */}
+                <p className="text-gray-600 mb-4 line-clamp-2">
+                  加州 DMV 中文駕駛考試。California DMV Chinese driving knowledge tests with complete answers.
+                </p>
+
+                {/* Stats */}
+                <div className="flex flex-wrap gap-4 mb-4">
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>3 Complete Tests</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                    </svg>
+                    <span>中文</span>
+                  </div>
+                </div>
+
+                {/* CTA Button */}
+                <div className="flex items-center justify-between pt-4 border-t border-yellow-200">
+                  <span className="text-yellow-600 font-semibold group-hover:underline">
+                    開始 →
+                  </span>
+                  <svg className="w-5 h-5 text-yellow-600 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
