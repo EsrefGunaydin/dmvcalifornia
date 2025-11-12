@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import AppPromotionIOS from '@/components/AppPromotionIOS';
+import PracticeTestsContent from '@/components/PracticeTestsContent';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata = {
@@ -57,68 +58,20 @@ export default function PracticeTestsPage() {
 
         {/* Quiz Cards */}
         <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {quizzes.map((quiz) => (
-              <Link
-                key={quiz.id}
-                href={`/practice-test/${quiz.slug}`}
-                className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
-              >
-                <div className="p-6">
-                  {/* Category Badge */}
-                  <div className="mb-4">
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
-                      {quiz.category}
-                    </span>
-                  </div>
+          <div className="max-w-6xl mx-auto">
+            <PracticeTestsContent quizzes={quizzes} />
 
-                  {/* Title */}
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors">
-                    {quiz.title}
-                  </h2>
+            {/* Special Features & Other Languages */}
+            <div className="mt-16 mb-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2 text-center">
+                Special Features & Other Languages
+              </h2>
+              <p className="text-gray-600 text-center mb-8">
+                Additional study tools and tests in other languages
+              </p>
+            </div>
 
-                  {/* Description */}
-                  <p className="text-gray-600 mb-4 line-clamp-2">
-                    {quiz.description}
-                  </p>
-
-                  {/* Stats */}
-                  <div className="flex flex-wrap gap-4 mb-4">
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      <span>{quiz.questions.length} Questions</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <span>{quiz.passingScore}% to Pass</span>
-                    </div>
-                    {quiz.timeLimit && (
-                      <div className="flex items-center gap-2 text-sm text-gray-600">
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <span>{quiz.timeLimit} Minutes</span>
-                      </div>
-                    )}
-                  </div>
-
-                  {/* CTA Button */}
-                  <div className="flex items-center justify-between pt-4 border-t">
-                    <span className="text-primary font-semibold group-hover:underline">
-                      Start Practice Test
-                    </span>
-                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                </div>
-              </Link>
-            ))}
-
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {/* Flashcards Card */}
             <Link
               href="/practice-test/flashcards"
@@ -326,6 +279,7 @@ export default function PracticeTestsPage() {
                 </div>
               </div>
             </Link>
+            </div>
           </div>
         </section>
 
