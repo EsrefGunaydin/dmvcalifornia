@@ -8,12 +8,27 @@
       "slug": "california-dmv-alturas-office",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "903 W C St, Alturas, CA 96101",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 2,
@@ -21,12 +36,27 @@
       "slug": "arleta",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "14400 Van Nuys Blvd, Arleta, CA 91331",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 3,
@@ -34,12 +64,27 @@
       "slug": "arvin-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "317 Campus Dr, Arvin, CA 93203",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 4,
@@ -47,12 +92,27 @@
       "slug": "auburn-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "11722 Enterprise Dr, Auburn, CA 95603",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 5,
@@ -60,12 +120,27 @@
       "slug": "dmv-bakersfield",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3120 F Street, Bakersfield, CA 93301",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 6,
@@ -73,12 +148,27 @@
       "slug": "dmv-bakersfield-southwest",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "7000 Schirra Ct, Bakersfield, CA 93313",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 7,
@@ -86,11 +176,19 @@
       "slug": "banning-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1034 W. Ramsey St, Banning, CA 92220 (CLOSED)",
       "services": [
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
+      ],
+      "status": "CLOSED",
+      "closed_date": "2023-02-17",
+      "closure_reason": "Permanently closed due to structural damage to foundation",
+      "nearby_offices": [
+        "Hemet",
+        "Redlands",
+        "Palm Springs"
       ]
     },
     {
@@ -99,12 +197,28 @@
       "slug": "barstow-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "528 E Virginia Way, Barstow, CA 92311",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 9,
@@ -112,12 +226,28 @@
       "slug": "dmv-bell-gardens",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6801 South Garfield, Bell Gardens, CA 90201",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 10,
@@ -125,12 +255,28 @@
       "slug": "bellflower-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "9520 Artesia Blvd, Bellflower, CA 90706",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 11,
@@ -138,12 +284,27 @@
       "slug": "bishop-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1115 West Line Street, Bishop, CA 93514",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 12,
@@ -151,12 +312,27 @@
       "slug": "blythe-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "430 S Broadway, Blythe, CA 92225",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 13,
@@ -164,12 +340,27 @@
       "slug": "dmv-brawley",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "173 W Main St., Brawley, CA 92227",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 14,
@@ -177,12 +368,27 @@
       "slug": "dmv-capitola",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4200 Capitola Road, Capitola, CA 95010",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 15,
@@ -190,12 +396,28 @@
       "slug": "carmichael-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "5209 North Ave, Carmichael, CA 95608",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 16,
@@ -203,12 +425,27 @@
       "slug": "dmv-chico",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "107 Parmac Rd #1, Chico, CA 95926",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 17,
@@ -216,12 +453,27 @@
       "slug": "dmv-chula-vista",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "30 N Glover Avenue, Chula Vista, CA 91910",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 18,
@@ -229,12 +481,28 @@
       "slug": "dmv-clovis",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2103 Shaw Avenue, Clovis, CA 93611",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 19,
@@ -242,12 +510,28 @@
       "slug": "coalinga-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "406 East Elm Avenue, Coalinga, CA 93210",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 20,
@@ -255,12 +539,27 @@
       "slug": "colusa-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1025 Bridge St STE B, Colusa, CA 95932",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 21,
@@ -268,12 +567,28 @@
       "slug": "compton-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2111 South Santa Fe Avenue, Compton, CA 90221",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 22,
@@ -281,12 +596,27 @@
       "slug": "dmv-concord",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2070 Diamond Boulevard, Concord, CA 94520",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 23,
@@ -294,12 +624,27 @@
       "slug": "dmv-corte-madera",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "75 Tamal Vista Boulevard, Corte Madera, CA 94925",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 24,
@@ -307,12 +652,27 @@
       "slug": "costa-mesa-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "650 W 19th Street, Costa Mesa, CA 92627",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 25,
@@ -320,12 +680,27 @@
       "slug": "dmv-crescent-city-ca",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1475 Parkway Drive, Crescent City, CA 95531",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 26,
@@ -333,12 +708,27 @@
       "slug": "culver-city-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "11400 W Washington Blvd, Culver City, CA 90066",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 27,
@@ -346,12 +736,27 @@
       "slug": "dmv-daly-city",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1500 Sullivan Avenue, Daly City, CA 94015",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 28,
@@ -359,12 +764,28 @@
       "slug": "davis-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "505 Pole Line Road, Davis, CA 95616",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 29,
@@ -372,12 +793,27 @@
       "slug": "delano-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "631 Jefferson Street, Delano, CA 93215",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 30,
@@ -385,12 +821,27 @@
       "slug": "dmv-el-cajon",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1450 Graves Avenue, El Cajon, CA 92021",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 31,
@@ -398,12 +849,27 @@
       "slug": "dmv-el-centro",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "233 N Imperial Avenue, El Centro, CA 92243",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 32,
@@ -411,12 +877,27 @@
       "slug": "el-cerrito-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6400 Manila Avenue, El Cerrito, CA 94530",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 33,
@@ -424,12 +905,27 @@
       "slug": "el-monte-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4000 Arden Drive, El Monte, CA 91731",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 34,
@@ -437,12 +933,27 @@
       "slug": "dmv-euraka",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2500 6th&nbsp;St, Eureka, CA 95501",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 35,
@@ -450,12 +961,27 @@
       "slug": "fairfield-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "160 Serrano Drive, Fairfield, CA 94533",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 36,
@@ -463,12 +989,27 @@
       "slug": "dmv-fall-river-mills-ca",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "43467 Hwy 299E, Fall River Mills, CA 96028",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 37,
@@ -476,12 +1017,27 @@
       "slug": "folsom-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "323 E Bidwell A, Folsom, CA 95630",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 38,
@@ -489,12 +1045,28 @@
       "slug": "fontana-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "8026 Hemlock Ave, Fontana, CA 92336",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 39,
@@ -502,12 +1074,26 @@
       "slug": "fontana-commercial-drive-test-center",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "10207 Poplar Ave, Fontana, CA 92335",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "7am-4pm",
+        "Tuesday": "7am-4pm",
+        "Wednesday": "8am-4pm",
+        "Thursday": "7am-4pm",
+        "Friday": "7am-4pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 40,
@@ -515,12 +1101,27 @@
       "slug": "fort-bragg-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "410 S Franklin Street, Fort Bragg, CA 95437",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 41,
@@ -528,12 +1129,27 @@
       "slug": "fremont-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4287 Central Avenue, Fremont, CA 94536",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 42,
@@ -541,12 +1157,28 @@
       "slug": "dmv-fresno",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "655 W Olive Avenue, Fresno, CA 93728",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 43,
@@ -554,12 +1186,26 @@
       "slug": "fresno-commercial-drive-test-center",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "735 E North Ave, Fresno, CA 93725",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "7am-4pm",
+        "Tuesday": "7am-4pm",
+        "Wednesday": "8am-4pm",
+        "Thursday": "7am-4pm",
+        "Friday": "7am-4pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 44,
@@ -567,12 +1213,28 @@
       "slug": "fresno-north-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6420 N Blackstone Avenue, Fresno, CA 93710",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 45,
@@ -588,6 +1250,7 @@
         "Placards",
         "REAL ID",
         "Records Requests",
+        "Replacement Documents",
         "Title Transfers",
         "Vehicle Registration"
       ],
@@ -607,12 +1270,27 @@
       "slug": "garberville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1180 Evergreen Rd, Redway, CA 95560",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 47,
@@ -620,12 +1298,26 @@
       "slug": "gardena-commercial-drive-test-center",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "14825 S Avalon Blvd, Gardena, CA 90248",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "7am-4pm",
+        "Tuesday": "7am-4pm",
+        "Wednesday": "8am-4pm",
+        "Thursday": "7am-4pm",
+        "Friday": "7am-4pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 48,
@@ -633,12 +1325,27 @@
       "slug": "gilroy-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6984 Automall Parkway Suite A, Gilroy, CA 95020",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 49,
@@ -646,12 +1353,27 @@
       "slug": "glendale-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1335 W Glenoaks Boulevard, Glendale, CA 91201",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 50,
@@ -659,12 +1381,27 @@
       "slug": "dmv-goleta",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "7127 Hollister Avenue Suite 24/26, Goleta, CA 93117",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 51,
@@ -677,7 +1414,10 @@
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
-      ]
+      ],
+      "status": "CLOSED",
+      "closed_date": "2023-09-01",
+      "closure_reason": "Driver License Processing Center closed"
     },
     {
       "id": 52,
@@ -685,12 +1425,27 @@
       "slug": "dmv-grass-valley",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "890 Sutton Way, Grass Valley, CA 95945",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "Closed",
+        "Wednesday": "9am-5pm",
+        "Thursday": "Closed",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 53,
@@ -698,12 +1453,27 @@
       "slug": "hanford-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "701 W Hanford Armona Road (corner of W Armona), Hanford, CA 93230",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 54,
@@ -711,12 +1481,28 @@
       "slug": "hawthorne-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3700 W El Segundo Boulevard, Hawthorne, CA 90250",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 55,
@@ -724,12 +1510,27 @@
       "slug": "hayward-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "150 Jackson Street, Hayward, CA 94544",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 56,
@@ -737,12 +1538,27 @@
       "slug": "hemet-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1200 S State St, Hemet, CA 92543",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 57,
@@ -750,12 +1566,27 @@
       "slug": "hollister-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "80 N Sally Street, Hollister, CA 95023",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 58,
@@ -763,12 +1594,25 @@
       "slug": "hollywood-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "803 Cole Avenue, Hollywood, CA 90038",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 59,
@@ -776,12 +1620,27 @@
       "slug": "dmv-indio",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "44480 Jackson St, Indio, CA 92201",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 60,
@@ -789,12 +1648,28 @@
       "slug": "inglewood-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "621 N La Brea Ave, Inglewood, CA 90302",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "Closed",
+        "Wednesday": "Closed",
+        "Thursday": "Closed",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 61,
@@ -802,12 +1677,27 @@
       "slug": "dmv-jackson-ca",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "201 Clinton Road, Jackson, CA 95642",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 62,
@@ -828,12 +1718,27 @@
       "slug": "lake-isabella-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "5520 Lake Isabella Road G-1, Lake Isabella, CA 93240",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 64,
@@ -841,12 +1746,27 @@
       "slug": "lakeport-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "965 Parallel Drive, Lakeport, CA 95453",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 65,
@@ -854,12 +1774,27 @@
       "slug": "lancaster-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "721 W Ave L6, Lancaster, CA 93535",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 66,
@@ -867,12 +1802,27 @@
       "slug": "lincoln-park-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3529 N Mission Road, Los Angeles, CA 90031",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 67,
@@ -880,12 +1830,27 @@
       "slug": "lodi-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1222 Pixley Parkway, Lodi, CA 95240",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 68,
@@ -893,12 +1858,27 @@
       "slug": "lompoc-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1601 N H St, Lompoc, CA 93436",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 69,
@@ -906,12 +1886,28 @@
       "slug": "long-beach-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3700 East Willow Street, Long Beach, CA 90815",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 70,
@@ -919,12 +1915,28 @@
       "slug": "dmv-los-angeles",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3615 S Hope Street, Los Angeles, CA 90007",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 71,
@@ -932,12 +1944,27 @@
       "slug": "dmv-los-banos",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "814 West L Street, Los Banos, CA 93635",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 72,
@@ -945,12 +1972,27 @@
       "slug": "los-gatos-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "600 N Santa Cruz Avenue, Los Gatos, CA 95030",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 73,
@@ -958,12 +2000,27 @@
       "slug": "madera-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1206 Maple Street, Madera, CA 93637",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 74,
@@ -971,12 +2028,27 @@
       "slug": "manteca-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "955 Davis Street, Manteca, CA 95336",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 75,
@@ -984,12 +2056,27 @@
       "slug": "mariposa-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "5264 Highway 49-North, Mariposa, CA 95338",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 76,
@@ -997,12 +2084,25 @@
       "slug": "mendota-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "655 Quince Street, Mendota, CA 93640",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "Closed",
+        "Wednesday": "Closed",
+        "Thursday": "Closed",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 77,
@@ -1010,12 +2110,27 @@
       "slug": "merced-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1313 W 12th Street, Merced, CA 95340",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 78,
@@ -1023,12 +2138,27 @@
       "slug": "dmv-modesto",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "124 Burney Street, Modesto, CA 95354",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 79,
@@ -1036,12 +2166,27 @@
       "slug": "montebello-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "424 N Wilcox Avenue, Montebello, CA 90640",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 80,
@@ -1049,12 +2194,27 @@
       "slug": "mt-shasta-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "154 Morgan Way, Mt Shasta, CA 96067",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 81,
@@ -1062,12 +2222,27 @@
       "slug": "napa-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2550 Napa Valley Corporate Drive, Napa, CA 94558",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 82,
@@ -1075,12 +2250,27 @@
       "slug": "needles-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1040 E Broadway St, Needles, CA 92363",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "Closed",
+        "Wednesday": "9am-5pm",
+        "Thursday": "Closed",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 83,
@@ -1088,12 +2278,27 @@
       "slug": "newhall-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "24427 Newhall Avenue, Newhall, CA 91321",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 84,
@@ -1101,12 +2306,27 @@
       "slug": "norco-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3201 Horseless Carriage Drive, Norco, CA 92860",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 85,
@@ -1114,12 +2334,27 @@
       "slug": "novato-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "936 7th Street A, Novato, CA 94947",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 86,
@@ -1127,12 +2362,27 @@
       "slug": "oakland-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "5300 Claremont Avenue, Oakland, CA 94618",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 87,
@@ -1140,12 +2390,27 @@
       "slug": "oakland-coliseum-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "501 85th Ave, Oakland, CA 94621",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 88,
@@ -1153,12 +2418,27 @@
       "slug": "dmv-oceanside",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4005 Plaza Drive, Oceanside, CA 92056",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 89,
@@ -1166,12 +2446,27 @@
       "slug": "oroville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "775 Mitchell Avenue, Oroville, CA 95965",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 90,
@@ -1179,12 +2474,27 @@
       "slug": "oxnard-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4050 Saviers Road, Oxnard, CA 93033",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 91,
@@ -1192,12 +2502,27 @@
       "slug": "dmv-palm-desert",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "74-740 Technology Drive, Palm Desert, CA 92211",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 92,
@@ -1205,12 +2530,27 @@
       "slug": "dmv-palm-springs",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "950 N Farrell Drive, Palm Springs, CA 92262",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 93,
@@ -1231,12 +2571,27 @@
       "slug": "pasadena-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "49 S Rosemead Boulevard, Pasadena, CA 91107",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 95,
@@ -1244,12 +2599,27 @@
       "slug": "dmv-paso-robles",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "841 Park Street, Paso Robles, CA 93446",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 96,
@@ -1257,12 +2627,27 @@
       "slug": "petaluma-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "715 - J Southpoint Boulevard, Petaluma, CA 94954",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 97,
@@ -1270,12 +2655,27 @@
       "slug": "pittsburg-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1399 Buchanan Road, Pittsburg, CA 94565",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 98,
@@ -1283,12 +2683,27 @@
       "slug": "placerville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2919 Cold Springs Road, Placerville, CA 95667",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 99,
@@ -1296,12 +2711,27 @@
       "slug": "dmv-pleasanton",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6300 W Las Positas Blvd, Pleasanton, CA 94588",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 100,
@@ -1309,12 +2739,27 @@
       "slug": "pomona-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1600 S Garey Avenue, Pomona, CA 91766",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 101,
@@ -1322,12 +2767,27 @@
       "slug": "porterville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "329 E Olive Avenue, Porterville, CA 93257",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 102,
@@ -1335,12 +2795,27 @@
       "slug": "poway-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "13461 Community Road, Poway, CA 92064",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 103,
@@ -1348,12 +2823,27 @@
       "slug": "quincy-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1953 E Main Street Suite 3, Quincy, CA 95971",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 104,
@@ -1361,12 +2851,28 @@
       "slug": "rancho-cucamonga-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "8629 Hellman Avenue, Rancho Cucamonga, CA 91730",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 105,
@@ -1374,12 +2880,25 @@
       "slug": "rancho-san-diego-industry-business-center",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1530 Hilton Head Rd., El Cajon, CA 92019",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "7am-4pm",
+        "Tuesday": "7am-4pm",
+        "Wednesday": "8am-4pm",
+        "Thursday": "7am-4pm",
+        "Friday": "7am-4pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 106,
@@ -1387,12 +2906,27 @@
       "slug": "red-bluff-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "675 Monroe Street, Red Bluff, CA 96080",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "Closed",
+        "Wednesday": "9am-5pm",
+        "Thursday": "Closed",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 107,
@@ -1400,12 +2934,27 @@
       "slug": "dmv-redding-ca",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2135 Civic Center Drive, Redding, CA 96001",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 108,
@@ -1413,12 +2962,27 @@
       "slug": "redlands-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1659 W Lugonia Avenue, Redlands, CA 92374",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 109,
@@ -1426,12 +2990,27 @@
       "slug": "redwood-city-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "300 Brewster Avenue, Redwood City, CA 94063",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 110,
@@ -1439,12 +3018,27 @@
       "slug": "reedley-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1890 E Dinuba Avenue, Reedley, CA 93654",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 111,
@@ -1452,12 +3046,27 @@
       "slug": "ridgecrest-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "540A Perdew Avenue, Ridgecrest, CA 93555",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "Closed",
+        "Wednesday": "9am-5pm",
+        "Thursday": "Closed",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 112,
@@ -1465,12 +3074,28 @@
       "slug": "riverside-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6280 Brockton Avenue, Riverside, CA 92506",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 113,
@@ -1478,12 +3103,28 @@
       "slug": "riverside-east-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6425 Sycamore Canyon Blvd, Riverside, CA 92507",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 114,
@@ -1491,12 +3132,27 @@
       "slug": "rocklin-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "5245 South Grove, Rocklin, CA 95677",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 115,
@@ -1504,12 +3160,27 @@
       "slug": "roseville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "7200 Galilee Road, Roseville, CA 95678",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 116,
@@ -1517,12 +3188,28 @@
       "slug": "dmv-sacramento",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4700 Broadway, Sacramento, CA 95820",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 117,
@@ -1530,12 +3217,28 @@
       "slug": "dmv-south-sacramento",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "7775 La Mancha Way, Sacramento, CA 95823",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 118,
@@ -1543,12 +3246,28 @@
       "slug": "dmv-salinas",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "260 E Laurel Drive, Salinas, CA 93906",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 119,
@@ -1556,12 +3275,27 @@
       "slug": "san-andreas-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "745 Mountain Ranch Rd, San Andreas, CA 95249",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 120,
@@ -1569,12 +3303,27 @@
       "slug": "dmv-san-bernardino",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1310 N Waterman Avenue, San Bernardino, CA 92404",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 121,
@@ -1582,12 +3331,27 @@
       "slug": "san-clemente-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2727 Via Cascadita, San Clemente, CA 92672",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 122,
@@ -1595,12 +3359,27 @@
       "slug": "dmv-san-diego",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3960 Normal Street, San Diego, CA 92103",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 123,
@@ -1608,12 +3387,27 @@
       "slug": "san-diego-clairemont-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4375 Derrick Drive, San Diego, CA 92117",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 124,
@@ -1621,12 +3415,27 @@
       "slug": "dmv-san-francisco",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1377 Fell Street, San Francisco, CA 94117",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 125,
@@ -1634,12 +3443,27 @@
       "slug": "dmv-san-jose",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "111 W Alma Avenue, San Jose, CA 95110",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 126,
@@ -1660,12 +3484,28 @@
       "slug": "dmv-san-luis-obispo",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3190 S Higuera Street, San Luis Obispo, CA 93401",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 128,
@@ -1686,12 +3526,27 @@
       "slug": "san-mateo-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "425 N Amphlett Boulevard, San Mateo, CA 94401",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 130,
@@ -1699,12 +3554,28 @@
       "slug": "san-pedro-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1511 N Gaffey Street, San Pedro, CA 90731",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 131,
@@ -1712,12 +3583,27 @@
       "slug": "san-ysidro-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "6111 Business Center Court, San Diego, CA 92154",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 132,
@@ -1725,12 +3611,27 @@
       "slug": "santa-ana-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1330 E First Street, Santa Ana, CA 92701",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 133,
@@ -1738,12 +3639,27 @@
       "slug": "dmv-santa-barbara",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "535 Castillo Street, Santa Barbara, CA 93101",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 134,
@@ -1751,12 +3667,27 @@
       "slug": "santa-clara-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3665 Flora Vista Ave, Santa Clara, CA 95051",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 135,
@@ -1764,12 +3695,27 @@
       "slug": "dmv-santa-maria",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2850 Santa Maria Way, Santa Maria, CA 93455",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 136,
@@ -1777,12 +3723,27 @@
       "slug": "santa-monica-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2235 Colorado Avenue, Santa Monica, CA 90404",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 137,
@@ -1790,12 +3751,27 @@
       "slug": "santa-paula-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "250 W Harvard Boulevard A, Santa Paula, CA 93060",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 138,
@@ -1803,12 +3779,27 @@
       "slug": "santa-rosa-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2570 Corby Ave, Santa Rosa, CA 95407",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 139,
@@ -1816,12 +3807,27 @@
       "slug": "santa-teresa-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "180 Martinvale Lane, San Jose, CA 95119",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 140,
@@ -1829,12 +3835,28 @@
       "slug": "dmv-seaside",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1180 Canyon Del Rey Blvd, Seaside, CA 93955",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 141,
@@ -1842,12 +3864,27 @@
       "slug": "shafter-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "548 Walker Street, Shafter, CA 93263",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 142,
@@ -1855,12 +3892,27 @@
       "slug": "simi-valley-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3855 D - Alamo Street, Simi Valley, CA 93063",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 143,
@@ -1868,12 +3920,27 @@
       "slug": "dmv-sonora-ca",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "885 Morning Star Drive, Sonora, CA 95370",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 144,
@@ -1881,12 +3948,27 @@
       "slug": "dmv-south-lake-tahoe",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3344 B Lake Tahoe Boulevard, South Lake Tahoe, CA 96150",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 145,
@@ -1899,7 +3981,10 @@
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
-      ]
+      ],
+      "status": "CLOSED",
+      "closed_date": "2023-03-01",
+      "closure_reason": "Driver License Processing Center permanently closed"
     },
     {
       "id": 146,
@@ -1907,12 +3992,27 @@
       "slug": "stockton-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "55 South Lincoln Street, Stockton, CA 95203",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 147,
@@ -1920,12 +4020,27 @@
       "slug": "dmv-susanville-ca",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2615 Main Street, Susanville, CA 96130",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "Closed",
+        "Wednesday": "9am-5pm",
+        "Thursday": "Closed",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 148,
@@ -1933,12 +4048,27 @@
       "slug": "taft-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "165 Center Street, Taft, CA 93268",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 149,
@@ -1946,12 +4076,27 @@
       "slug": "dmv-temecula",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "27851 Diaz Road, Temecula, CA 92590",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 150,
@@ -1959,12 +4104,27 @@
       "slug": "thousand-oaks-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1810 E Avenida De Los Arboles, Thousand Oaks, CA 91362",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 151,
@@ -1972,12 +4132,28 @@
       "slug": "torrance-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1785 W 220th Street, Torrance, CA 90501",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 152,
@@ -1985,12 +4161,27 @@
       "slug": "tracy-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2785 Auto Plaza Drive, Tracy, CA 95304",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 153,
@@ -1998,12 +4189,27 @@
       "slug": "truckee-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "11357 Donner Pass Road Suite I, Truckee, CA 96162",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 154,
@@ -2011,12 +4217,27 @@
       "slug": "tulare-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "274 E Cross Avenue, Tulare, CA 93274",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 155,
@@ -2037,12 +4258,27 @@
       "slug": "turlock-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "825 E Monte Vista Avenue, Turlock, CA 95382",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 157,
@@ -2050,12 +4286,27 @@
       "slug": "twentynine-palms-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "3668 Adobe Road G-J, Twentynine Palms, CA 92277",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 158,
@@ -2063,12 +4314,27 @@
       "slug": "ukiah-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "542 S Orchard Avenue, Ukiah, CA 95482",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 159,
@@ -2076,12 +4342,27 @@
       "slug": "vacaville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "621 Orange Drive, Vacaville, CA 95687",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 160,
@@ -2089,12 +4370,27 @@
       "slug": "vallejo-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "200 Couch Street, Vallejo, CA 94590",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 161,
@@ -2102,12 +4398,27 @@
       "slug": "dmv-van-nuys",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "14920 Vanowen Street, Van Nuys, CA 91405",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 162,
@@ -2115,12 +4426,27 @@
       "slug": "dmv-ventura",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "4260 Market Street, Ventura, CA 93003",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 163,
@@ -2128,12 +4454,27 @@
       "slug": "victorville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "14855 Corta Drive, Victorville, CA 92395",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 164,
@@ -2141,12 +4482,27 @@
       "slug": "dmv-visalia",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1711 East Main Street, Visalia, CA 93292",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 165,
@@ -2167,12 +4523,27 @@
       "slug": "dmv-watsonville",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "90 Alta Vista Avenue, Watsonville, CA 95076",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 167,
@@ -2180,12 +4551,27 @@
       "slug": "weaverville-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1511 Main Street, Weaverville, CA 96093",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 168,
@@ -2193,12 +4579,27 @@
       "slug": "west-covina-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "800 So Glendora Avenue, West Covina, CA 91790",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 169,
@@ -2206,12 +4607,27 @@
       "slug": "west-hollywood-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "936 N Formosa Ave, West Hollywood, CA 90046",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 170,
@@ -2219,17 +4635,31 @@
       "slug": "west-sacramento-commercial-drive-test-center",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "2528 Evergreen Avenue, West Sacramento, CA 95691",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "7am-4pm",
+        "Tuesday": "7am-4pm",
+        "Wednesday": "8am-4pm",
+        "Thursday": "7am-4pm",
+        "Friday": "7am-4pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 171,
-      "name": "Westminister",
-      "slug": "westminister-dmv",
+      "name": "Westminster",
+      "slug": "westminster-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
       "address": "",
@@ -2245,12 +4675,27 @@
       "slug": "whittier-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "9338 S Painter Avenue, Whittier, CA 90605",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 173,
@@ -2258,12 +4703,27 @@
       "slug": "willows-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "815 N Humboldt Avenue, Willows, CA 95988",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "Closed",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "Closed",
+        "Thursday": "8am-5pm",
+        "Friday": "Closed",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 174,
@@ -2271,12 +4731,27 @@
       "slug": "winnetka-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "20725 Sherman Way, Winnetka, CA 91306",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 175,
@@ -2284,12 +4759,28 @@
       "slug": "woodland-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1224 E. Gibson Road, Woodland, CA 95776",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 176,
@@ -2297,12 +4788,27 @@
       "slug": "yreka-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1848 Fort Jones Rd, Yreka, CA 96097",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "Closed",
+        "Wednesday": "9am-5pm",
+        "Thursday": "Closed",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 177,
@@ -2310,12 +4816,28 @@
       "slug": "yuba-city-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "1570 Poole Boulevard, Yuba City, CA 95993",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Commercial Driver License",
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Replacement Documents",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     }
   ]
 }

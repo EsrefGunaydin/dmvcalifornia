@@ -14,6 +14,10 @@ type Office = {
   };
   address: string;
   services: string[];
+  status?: string;
+  closed_date?: string;
+  closure_reason?: string;
+  nearby_offices?: string[];
 };
 
 export default function OfficePage({ office }: { office: Office }) {
@@ -46,13 +50,46 @@ export default function OfficePage({ office }: { office: Office }) {
           </ol>
         </nav>
 
+        {/* Closure Alert (if applicable) */}
+        {office.status === 'CLOSED' && (
+          <div className="mb-8 bg-red-50 border-l-4 border-red-500 p-6 rounded-lg">
+            <div className="flex items-start">
+              <svg className="w-6 h-6 text-red-500 mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+              <div>
+                <h2 className="text-xl font-bold text-red-900 mb-2">This Office is Permanently Closed</h2>
+                {office.closure_reason && (
+                  <p className="text-red-800 mb-3">{office.closure_reason}</p>
+                )}
+                {office.closed_date && (
+                  <p className="text-red-700 text-sm mb-3">Closed: {new Date(office.closed_date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                )}
+                {office.nearby_offices && office.nearby_offices.length > 0 && (
+                  <div className="mt-4">
+                    <p className="font-semibold text-red-900 mb-2">Nearby Alternative Offices:</p>
+                    <ul className="list-disc list-inside text-red-800">
+                      {office.nearby_offices.map((nearbyOffice, index) => (
+                        <li key={index}>{nearbyOffice}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* Office Header */}
         <header className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {office.name} DMV Office
+            {office.name} DMV Office {office.status === 'CLOSED' && <span className="text-red-600">(CLOSED)</span>}
           </h1>
           <p className="text-xl text-gray-600">
-            Find hours, location, phone number, and services for the {office.name} DMV office.
+            {office.status === 'CLOSED'
+              ? 'This office is permanently closed. Please visit a nearby DMV office.'
+              : `Find hours, location, phone number, and services for the ${office.name} DMV office.`
+            }
           </p>
         </header>
 
