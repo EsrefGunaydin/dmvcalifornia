@@ -18,6 +18,12 @@ type Office = {
   closed_date?: string;
   closure_reason?: string;
   nearby_offices?: string[];
+  has_kiosk?: boolean;
+  nearby_dmv_offices?: {
+    name: string;
+    distance: string;
+    slug: string;
+  }[];
 };
 
 export default function OfficePage({ office }: { office: Office }) {
@@ -175,11 +181,19 @@ export default function OfficePage({ office }: { office: Office }) {
 
           {/* Services */}
           <div className="bg-white rounded-lg shadow-sm p-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-              <svg className="w-6 h-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-              </svg>
-              Available Services
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center justify-between">
+              <div className="flex items-center">
+                <svg className="w-6 h-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                Available Services
+              </div>
+              {office.has_kiosk && (
+                <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-base font-medium flex items-center gap-2">
+                  <img src="/images/kiosk-nature.svg" alt="Kiosk" className="w-6 h-6" />
+                  Self-Service Kiosk Available
+                </span>
+              )}
             </h2>
 
             <ul className="space-y-3">
@@ -235,6 +249,39 @@ export default function OfficePage({ office }: { office: Office }) {
             </a>
           </div>
         </div>
+
+        {/* Nearby DMV Offices */}
+        {office.nearby_dmv_offices && office.nearby_dmv_offices.length > 0 && (
+          <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+              <svg className="w-6 h-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              Nearby DMV Offices
+            </h2>
+            <p className="text-gray-600 mb-4">
+              Looking for alternative locations? Here are other DMV offices near {office.name}:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {office.nearby_dmv_offices.map((nearbyOffice, index) => (
+                <Link
+                  key={index}
+                  href={`/${nearbyOffice.slug}`}
+                  className="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-primary/5 hover:border-primary transition-all border border-gray-200"
+                >
+                  <svg className="w-5 h-5 text-primary mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold text-gray-900">{nearbyOffice.name}</p>
+                    <p className="text-sm text-gray-600">{nearbyOffice.distance}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Back Link */}
         <div className="flex justify-between items-center border-t border-gray-200 pt-8">

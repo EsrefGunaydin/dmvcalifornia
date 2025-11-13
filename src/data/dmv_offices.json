@@ -28,7 +28,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": false
     },
     {
       "id": 2,
@@ -56,7 +57,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 3,
@@ -84,7 +86,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 4,
@@ -112,7 +115,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 5,
@@ -140,7 +144,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Delano",
+          "distance": "35 miles",
+          "slug": "delano-dmv"
+        },
+        {
+          "name": "Tehachapi",
+          "distance": "40 miles",
+          "slug": "tehachapi-dmv"
+        },
+        {
+          "name": "Porterville",
+          "distance": "60 miles",
+          "slug": "porterville-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 6,
@@ -168,7 +190,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 7,
@@ -218,7 +241,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 9,
@@ -247,7 +271,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 10,
@@ -276,7 +301,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 11,
@@ -304,7 +330,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 12,
@@ -332,7 +359,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 13,
@@ -360,7 +388,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 14,
@@ -388,7 +417,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 15,
@@ -417,7 +447,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Sacramento",
+          "distance": "10 miles",
+          "slug": "dmv-sacramento"
+        },
+        {
+          "name": "Roseville",
+          "distance": "18 miles",
+          "slug": "roseville-dmv"
+        },
+        {
+          "name": "Rancho Cordova",
+          "distance": "8 miles",
+          "slug": "rancho-cordova-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 16,
@@ -445,7 +493,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 17,
@@ -473,7 +522,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "San Diego",
+          "distance": "10 miles",
+          "slug": "dmv-san-diego"
+        },
+        {
+          "name": "Clairemont",
+          "distance": "15 miles",
+          "slug": "clairemont-dmv"
+        },
+        {
+          "name": "El Cajon",
+          "distance": "20 miles",
+          "slug": "el-cajon-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 18,
@@ -502,7 +569,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 19,
@@ -531,7 +599,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 20,
@@ -559,7 +628,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 21,
@@ -588,7 +658,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 22,
@@ -616,7 +687,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 23,
@@ -644,7 +716,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 24,
@@ -672,7 +745,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Santa Ana",
+          "distance": "10 miles",
+          "slug": "dmv-santa-ana"
+        },
+        {
+          "name": "Westminster",
+          "distance": "8 miles",
+          "slug": "westminster-dmv"
+        },
+        {
+          "name": "San Clemente",
+          "distance": "25 miles",
+          "slug": "san-clemente-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 25,
@@ -700,7 +791,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 26,
@@ -728,7 +820,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 27,
@@ -756,7 +849,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "San Francisco",
+          "distance": "5 miles",
+          "slug": "dmv-san-francisco"
+        },
+        {
+          "name": "San Mateo",
+          "distance": "10 miles",
+          "slug": "dmv-san-mateo"
+        },
+        {
+          "name": "South San Francisco",
+          "distance": "3 miles",
+          "slug": "south-san-francisco-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 28,
@@ -785,7 +896,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 29,
@@ -813,7 +925,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 30,
@@ -841,7 +954,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": false
     },
     {
       "id": 31,
@@ -869,7 +983,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 32,
@@ -897,7 +1012,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 33,
@@ -925,7 +1041,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 34,
@@ -953,7 +1070,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": false
     },
     {
       "id": 35,
@@ -981,7 +1099,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 36,
@@ -1009,7 +1128,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 37,
@@ -1037,7 +1157,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 38,
@@ -1066,7 +1187,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 39,
@@ -1093,7 +1215,8 @@
         "Thursday": "7am-4pm",
         "Friday": "7am-4pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 40,
@@ -1121,7 +1244,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 41,
@@ -1149,7 +1273,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 42,
@@ -1178,7 +1303,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Clovis",
+          "distance": "8 miles",
+          "slug": "clovis-dmv"
+        },
+        {
+          "name": "Visalia",
+          "distance": "45 miles",
+          "slug": "dmv-visalia"
+        },
+        {
+          "name": "Hanford",
+          "distance": "35 miles",
+          "slug": "hanford-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 43,
@@ -1205,7 +1348,8 @@
         "Thursday": "7am-4pm",
         "Friday": "7am-4pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 44,
@@ -1234,7 +1378,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 45,
@@ -1262,7 +1407,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Santa Ana",
+          "distance": "12 miles",
+          "slug": "dmv-santa-ana"
+        },
+        {
+          "name": "Westminster",
+          "distance": "10 miles",
+          "slug": "westminster-dmv"
+        },
+        {
+          "name": "Anaheim",
+          "distance": "8 miles",
+          "slug": "dmv-anaheim"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 46,
@@ -1290,7 +1453,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 47,
@@ -1317,7 +1481,8 @@
         "Thursday": "7am-4pm",
         "Friday": "7am-4pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 48,
@@ -1345,7 +1510,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 49,
@@ -1373,7 +1539,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 50,
@@ -1401,7 +1568,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 51,
@@ -1445,7 +1613,8 @@
         "Thursday": "Closed",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 53,
@@ -1473,7 +1642,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 54,
@@ -1502,7 +1672,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 55,
@@ -1530,7 +1701,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 56,
@@ -1558,7 +1730,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 57,
@@ -1586,7 +1759,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 58,
@@ -1612,7 +1786,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 59,
@@ -1640,7 +1815,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 60,
@@ -1669,7 +1845,8 @@
         "Thursday": "Closed",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 61,
@@ -1697,7 +1874,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 62,
@@ -1746,7 +1924,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 64,
@@ -1774,7 +1953,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 65,
@@ -1802,7 +1982,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 66,
@@ -1830,7 +2011,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 67,
@@ -1858,7 +2040,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 68,
@@ -1886,7 +2069,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 69,
@@ -1915,7 +2099,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 70,
@@ -1944,7 +2129,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Culver City",
+          "distance": "6 miles",
+          "slug": "dmv-culver-city"
+        },
+        {
+          "name": "Hollywood",
+          "distance": "8 miles",
+          "slug": "dmv-hollywood"
+        },
+        {
+          "name": "Glendale",
+          "distance": "9 miles",
+          "slug": "dmv-glendale"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 71,
@@ -1972,7 +2175,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 72,
@@ -2000,7 +2204,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 73,
@@ -2028,7 +2233,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 74,
@@ -2056,7 +2262,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 75,
@@ -2084,7 +2291,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 76,
@@ -2110,7 +2318,8 @@
         "Thursday": "Closed",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 77,
@@ -2138,7 +2347,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 78,
@@ -2166,7 +2376,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Turlock",
+          "distance": "15 miles",
+          "slug": "turlock-dmv"
+        },
+        {
+          "name": "Stockton",
+          "distance": "35 miles",
+          "slug": "dmv-stockton"
+        },
+        {
+          "name": "Tracy",
+          "distance": "30 miles",
+          "slug": "tracy-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 79,
@@ -2194,7 +2422,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 80,
@@ -2222,7 +2451,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 81,
@@ -2250,7 +2480,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 82,
@@ -2278,7 +2509,8 @@
         "Thursday": "Closed",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 83,
@@ -2306,7 +2538,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 84,
@@ -2334,7 +2567,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 85,
@@ -2362,7 +2596,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 86,
@@ -2390,7 +2625,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 87,
@@ -2418,7 +2654,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 88,
@@ -2446,7 +2683,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 89,
@@ -2474,7 +2712,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 90,
@@ -2502,7 +2741,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 91,
@@ -2530,7 +2770,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 92,
@@ -2558,7 +2799,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 93,
@@ -2571,7 +2813,8 @@
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
-      ]
+      ],
+      "has_kiosk": false
     },
     {
       "id": 94,
@@ -2599,7 +2842,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 95,
@@ -2627,7 +2871,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 96,
@@ -2655,7 +2900,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 97,
@@ -2683,7 +2929,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 98,
@@ -2711,7 +2958,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 99,
@@ -2739,7 +2987,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 100,
@@ -2767,7 +3016,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 101,
@@ -2795,7 +3045,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 102,
@@ -2823,7 +3074,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 103,
@@ -2851,7 +3103,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 104,
@@ -2880,7 +3133,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 105,
@@ -2906,7 +3160,8 @@
         "Thursday": "7am-4pm",
         "Friday": "7am-4pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 106,
@@ -2934,7 +3189,8 @@
         "Thursday": "Closed",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 107,
@@ -2962,7 +3218,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 108,
@@ -2990,7 +3247,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 109,
@@ -3018,7 +3276,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 110,
@@ -3046,7 +3305,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 111,
@@ -3074,7 +3334,8 @@
         "Thursday": "Closed",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 112,
@@ -3103,7 +3364,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 113,
@@ -3132,7 +3394,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 114,
@@ -3160,7 +3423,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 115,
@@ -3188,7 +3452,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Sacramento",
+          "distance": "20 miles",
+          "slug": "dmv-sacramento"
+        },
+        {
+          "name": "Carmichael",
+          "distance": "18 miles",
+          "slug": "carmichael-dmv"
+        },
+        {
+          "name": "Auburn",
+          "distance": "25 miles",
+          "slug": "auburn-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 116,
@@ -3217,7 +3499,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Carmichael",
+          "distance": "10 miles",
+          "slug": "carmichael-dmv"
+        },
+        {
+          "name": "Roseville",
+          "distance": "20 miles",
+          "slug": "roseville-dmv"
+        },
+        {
+          "name": "Folsom",
+          "distance": "25 miles",
+          "slug": "folsom-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 117,
@@ -3246,7 +3546,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": false
     },
     {
       "id": 118,
@@ -3275,7 +3576,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 119,
@@ -3303,7 +3605,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 120,
@@ -3331,7 +3634,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Redlands",
+          "distance": "10 miles",
+          "slug": "redlands-dmv"
+        },
+        {
+          "name": "Fontana",
+          "distance": "15 miles",
+          "slug": "fontana-dmv"
+        },
+        {
+          "name": "Riverside",
+          "distance": "25 miles",
+          "slug": "dmv-riverside"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 121,
@@ -3359,7 +3680,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 122,
@@ -3387,7 +3709,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Chula Vista",
+          "distance": "10 miles",
+          "slug": "dmv-chula-vista"
+        },
+        {
+          "name": "El Cajon",
+          "distance": "15 miles",
+          "slug": "el-cajon-dmv"
+        },
+        {
+          "name": "Clairemont",
+          "distance": "8 miles",
+          "slug": "clairemont-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 123,
@@ -3415,7 +3755,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 124,
@@ -3443,7 +3784,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Daly City",
+          "distance": "5 miles",
+          "slug": "dmv-daly-city"
+        },
+        {
+          "name": "San Mateo",
+          "distance": "15 miles",
+          "slug": "dmv-san-mateo"
+        },
+        {
+          "name": "Oakland Claremont",
+          "distance": "12 miles",
+          "slug": "oakland-claremont-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 125,
@@ -3471,7 +3830,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Santa Clara",
+          "distance": "8 miles",
+          "slug": "santa-clara-dmv"
+        },
+        {
+          "name": "Sunnyvale",
+          "distance": "12 miles",
+          "slug": "sunnyvale-dmv"
+        },
+        {
+          "name": "Morgan Hill",
+          "distance": "18 miles",
+          "slug": "morgan-hill-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 126,
@@ -3484,7 +3861,8 @@
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
-      ]
+      ],
+      "has_kiosk": false
     },
     {
       "id": 127,
@@ -3513,7 +3891,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Paso Robles",
+          "distance": "30 miles",
+          "slug": "paso-robles-dmv"
+        },
+        {
+          "name": "Santa Maria",
+          "distance": "35 miles",
+          "slug": "dmv-santa-maria"
+        },
+        {
+          "name": "Atascadero",
+          "distance": "15 miles",
+          "slug": "atascadero-dmv"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 128,
@@ -3526,7 +3922,8 @@
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
-      ]
+      ],
+      "has_kiosk": false
     },
     {
       "id": 129,
@@ -3554,7 +3951,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 130,
@@ -3583,7 +3981,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 131,
@@ -3611,7 +4010,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 132,
@@ -3639,7 +4039,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 133,
@@ -3667,7 +4068,25 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "nearby_dmv_offices": [
+        {
+          "name": "Santa Maria",
+          "distance": "30 miles",
+          "slug": "dmv-santa-maria"
+        },
+        {
+          "name": "Lompoc",
+          "distance": "40 miles",
+          "slug": "lompoc-dmv"
+        },
+        {
+          "name": "Ventura",
+          "distance": "35 miles",
+          "slug": "dmv-ventura"
+        }
+      ],
+      "has_kiosk": true
     },
     {
       "id": 134,
@@ -3695,7 +4114,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 135,
@@ -3723,7 +4143,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 136,
@@ -3751,7 +4172,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 137,
@@ -3779,7 +4201,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 138,
@@ -3807,7 +4230,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 139,
@@ -3835,7 +4259,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 140,
@@ -3864,7 +4289,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 141,
@@ -3892,7 +4318,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 142,
@@ -3920,7 +4347,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 143,
@@ -3948,7 +4376,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 144,
@@ -3976,7 +4405,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 145,
@@ -4020,7 +4450,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 147,
@@ -4048,7 +4479,8 @@
         "Thursday": "Closed",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 148,
@@ -4076,7 +4508,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 149,
@@ -4104,7 +4537,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 150,
@@ -4132,7 +4566,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 151,
@@ -4161,7 +4596,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 152,
@@ -4189,7 +4625,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 153,
@@ -4217,7 +4654,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 154,
@@ -4245,7 +4683,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 155,
@@ -4258,7 +4697,8 @@
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
-      ]
+      ],
+      "has_kiosk": false
     },
     {
       "id": 156,
@@ -4286,7 +4726,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 157,
@@ -4314,7 +4755,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 158,
@@ -4342,7 +4784,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 159,
@@ -4370,7 +4813,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 160,
@@ -4398,7 +4842,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 161,
@@ -4426,7 +4871,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 162,
@@ -4454,7 +4900,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 163,
@@ -4482,7 +4929,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 164,
@@ -4510,7 +4958,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 165,
@@ -4523,7 +4972,8 @@
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
-      ]
+      ],
+      "has_kiosk": false
     },
     {
       "id": 166,
@@ -4551,7 +5001,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 167,
@@ -4579,7 +5030,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 168,
@@ -4607,7 +5059,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 169,
@@ -4635,7 +5088,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 170,
@@ -4662,7 +5116,8 @@
         "Thursday": "7am-4pm",
         "Friday": "7am-4pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 171,
@@ -4689,7 +5144,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 172,
@@ -4717,7 +5173,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 173,
@@ -4745,7 +5202,8 @@
         "Thursday": "8am-5pm",
         "Friday": "Closed",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 174,
@@ -4773,7 +5231,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 175,
@@ -4802,7 +5261,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 176,
@@ -4830,7 +5290,8 @@
         "Thursday": "Closed",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     },
     {
       "id": 177,
@@ -4859,7 +5320,8 @@
         "Thursday": "8am-5pm",
         "Friday": "8am-5pm",
         "Saturday": "Closed"
-      }
+      },
+      "has_kiosk": true
     }
   ]
 }
