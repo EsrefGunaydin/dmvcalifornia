@@ -579,13 +579,27 @@
       "name": "Fullerton",
       "slug": "fullerton-dmv",
       "phone": "(800) 777-0133",
-      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "hours": "See hours below",
+      "address": "909 W Valencia Drive, Fullerton, CA 92832",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 46,

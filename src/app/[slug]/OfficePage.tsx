@@ -9,6 +9,9 @@ type Office = {
   slug: string;
   phone: string;
   hours: string;
+  hours_detailed?: {
+    [key: string]: string;
+  };
   address: string;
   services: string[];
 };
@@ -81,9 +84,27 @@ export default function OfficePage({ office }: { office: Office }) {
                 <svg className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <div>
-                  <p className="font-semibold text-gray-900">Hours</p>
-                  <p className="text-gray-600">{office.hours}</p>
+                <div className="w-full">
+                  <p className="font-semibold text-gray-900 mb-2">Hours</p>
+                  {office.hours_detailed ? (
+                    <div className="space-y-1">
+                      {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => {
+                        const time = office.hours_detailed?.[day];
+                        if (!time) return null;
+                        const isClosed = time.toLowerCase() === 'closed';
+                        return (
+                          <div key={day} className="flex justify-between text-sm">
+                            <span className="text-gray-700">{day}:</span>
+                            <span className={isClosed ? 'text-gray-400' : 'text-gray-900 font-medium'}>
+                              {time}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <p className="text-gray-600">{office.hours}</p>
+                  )}
                 </div>
               </div>
 
