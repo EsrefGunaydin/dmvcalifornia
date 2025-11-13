@@ -14,9 +14,9 @@ type Office = {
 };
 
 export default function OfficePage({ office }: { office: Office }) {
-  // Generate Google Maps embed URL
-  const mapQuery = encodeURIComponent(`${office.name} DMV California`);
-  const mapEmbedUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=${mapQuery}`;
+  // Generate Google Maps embed URL using the free iframe method
+  const mapQuery = encodeURIComponent(`${office.name} DMV California ${office.address || ''}`);
+  const mapEmbedUrl = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -144,17 +144,30 @@ export default function OfficePage({ office }: { office: Office }) {
             </svg>
             Location Map
           </h2>
-          <div className="aspect-video w-full bg-gray-100 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">
-              <a
-                href={`https://www.google.com/maps/search/${encodeURIComponent(office.name + ' DMV California')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:text-primary-600 font-semibold"
-              >
-                View on Google Maps →
-              </a>
-            </p>
+          <div className="aspect-video w-full bg-gray-100 rounded-lg overflow-hidden">
+            <iframe
+              src={mapEmbedUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`Map of ${office.name} DMV Office`}
+            />
+          </div>
+          <div className="mt-4 text-center">
+            <a
+              href={`https://www.google.com/maps/search/${encodeURIComponent(office.name + ' DMV California')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary-600 font-semibold inline-flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              Open in Google Maps
+            </a>
           </div>
         </div>
 
