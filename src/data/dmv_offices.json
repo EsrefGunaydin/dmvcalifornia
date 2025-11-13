@@ -1705,11 +1705,19 @@
       "slug": "laguna-hills-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "23535 Moulton Parkway, Laguna Hills, CA (CLOSED)",
       "services": [
         "Driver License",
         "Vehicle Registration",
         "REAL ID"
+      ],
+      "status": "CLOSED",
+      "closed_date": "2024-10-11",
+      "closure_reason": "Office opened in 1987 does not meet current DMV needs. New Mission Viejo location was denied by city.",
+      "nearby_offices": [
+        "Santa Ana (13 miles)",
+        "Costa Mesa (15 miles)",
+        "San Clemente (18 miles)"
       ]
     },
     {
@@ -4662,12 +4670,26 @@
       "slug": "westminster-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "13700 Hoover Street, Westminster, CA 92683",
       "services": [
-        "Driver License",
-        "Vehicle Registration",
-        "REAL ID"
-      ]
+        "Driving Tests",
+        "License Plates",
+        "Permits",
+        "Placards",
+        "REAL ID",
+        "Records Requests",
+        "Title Transfers",
+        "Vehicle Registration"
+      ],
+      "hours_detailed": {
+        "Sunday": "Closed",
+        "Monday": "8am-5pm",
+        "Tuesday": "8am-5pm",
+        "Wednesday": "9am-5pm",
+        "Thursday": "8am-5pm",
+        "Friday": "8am-5pm",
+        "Saturday": "Closed"
+      }
     },
     {
       "id": 172,
