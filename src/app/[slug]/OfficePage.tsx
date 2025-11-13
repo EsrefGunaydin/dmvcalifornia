@@ -93,8 +93,15 @@ export default function OfficePage({ office }: { office: Office }) {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <div>
-                  <p className="font-semibold text-gray-900">Address</p>
-                  <p className="text-gray-600">{office.address || 'Address information coming soon'}</p>
+                  <p className="font-semibold text-gray-900">Location</p>
+                  {office.address && office.address.trim() ? (
+                    <p className="text-gray-600">{office.address}</p>
+                  ) : (
+                    <p className="text-gray-600">
+                      {office.name}, California
+                      <span className="block text-sm text-gray-500 mt-1">See map below for exact location</span>
+                    </p>
+                  )}
                   <a
                     href={`https://www.google.com/maps/search/${encodeURIComponent(office.name + ' DMV California')}`}
                     target="_blank"
