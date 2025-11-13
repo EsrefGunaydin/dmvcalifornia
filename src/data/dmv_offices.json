@@ -152,11 +152,6 @@
           "slug": "delano-dmv"
         },
         {
-          "name": "Tehachapi",
-          "distance": "40 miles",
-          "slug": "tehachapi-dmv"
-        },
-        {
           "name": "Porterville",
           "distance": "60 miles",
           "slug": "porterville-dmv"
@@ -458,11 +453,6 @@
           "name": "Roseville",
           "distance": "18 miles",
           "slug": "roseville-dmv"
-        },
-        {
-          "name": "Rancho Cordova",
-          "distance": "8 miles",
-          "slug": "rancho-cordova-dmv"
         }
       ],
       "has_kiosk": true
@@ -530,14 +520,14 @@
           "slug": "dmv-san-diego"
         },
         {
-          "name": "Clairemont",
+          "name": "San Diego Clairemont",
           "distance": "15 miles",
-          "slug": "clairemont-dmv"
+          "slug": "san-diego-clairemont-dmv"
         },
         {
           "name": "El Cajon",
           "distance": "20 miles",
-          "slug": "el-cajon-dmv"
+          "slug": "dmv-el-cajon"
         }
       ],
       "has_kiosk": true
@@ -750,7 +740,7 @@
         {
           "name": "Santa Ana",
           "distance": "10 miles",
-          "slug": "dmv-santa-ana"
+          "slug": "santa-ana-dmv"
         },
         {
           "name": "Westminster",
@@ -859,12 +849,7 @@
         {
           "name": "San Mateo",
           "distance": "10 miles",
-          "slug": "dmv-san-mateo"
-        },
-        {
-          "name": "South San Francisco",
-          "distance": "3 miles",
-          "slug": "south-san-francisco-dmv"
+          "slug": "san-mateo-dmv"
         }
       ],
       "has_kiosk": true
@@ -1308,7 +1293,7 @@
         {
           "name": "Clovis",
           "distance": "8 miles",
-          "slug": "clovis-dmv"
+          "slug": "dmv-clovis"
         },
         {
           "name": "Visalia",
@@ -1412,17 +1397,12 @@
         {
           "name": "Santa Ana",
           "distance": "12 miles",
-          "slug": "dmv-santa-ana"
+          "slug": "santa-ana-dmv"
         },
         {
           "name": "Westminster",
           "distance": "10 miles",
           "slug": "westminster-dmv"
-        },
-        {
-          "name": "Anaheim",
-          "distance": "8 miles",
-          "slug": "dmv-anaheim"
         }
       ],
       "has_kiosk": true
@@ -2134,17 +2114,17 @@
         {
           "name": "Culver City",
           "distance": "6 miles",
-          "slug": "dmv-culver-city"
+          "slug": "culver-city-dmv"
         },
         {
           "name": "Hollywood",
           "distance": "8 miles",
-          "slug": "dmv-hollywood"
+          "slug": "hollywood-dmv"
         },
         {
           "name": "Glendale",
           "distance": "9 miles",
-          "slug": "dmv-glendale"
+          "slug": "glendale-dmv"
         }
       ],
       "has_kiosk": true
@@ -2386,7 +2366,7 @@
         {
           "name": "Stockton",
           "distance": "35 miles",
-          "slug": "dmv-stockton"
+          "slug": "stockton-dmv"
         },
         {
           "name": "Tracy",
@@ -3649,7 +3629,7 @@
         {
           "name": "Riverside",
           "distance": "25 miles",
-          "slug": "dmv-riverside"
+          "slug": "riverside-dmv"
         }
       ],
       "has_kiosk": true
@@ -3719,12 +3699,12 @@
         {
           "name": "El Cajon",
           "distance": "15 miles",
-          "slug": "el-cajon-dmv"
+          "slug": "dmv-el-cajon"
         },
         {
-          "name": "Clairemont",
+          "name": "San Diego Clairemont",
           "distance": "8 miles",
-          "slug": "clairemont-dmv"
+          "slug": "san-diego-clairemont-dmv"
         }
       ],
       "has_kiosk": true
@@ -3794,12 +3774,12 @@
         {
           "name": "San Mateo",
           "distance": "15 miles",
-          "slug": "dmv-san-mateo"
+          "slug": "san-mateo-dmv"
         },
         {
-          "name": "Oakland Claremont",
+          "name": "Oakland Coliseum",
           "distance": "12 miles",
-          "slug": "oakland-claremont-dmv"
+          "slug": "oakland-coliseum-dmv"
         }
       ],
       "has_kiosk": true
@@ -3836,16 +3816,6 @@
           "name": "Santa Clara",
           "distance": "8 miles",
           "slug": "santa-clara-dmv"
-        },
-        {
-          "name": "Sunnyvale",
-          "distance": "12 miles",
-          "slug": "sunnyvale-dmv"
-        },
-        {
-          "name": "Morgan Hill",
-          "distance": "18 miles",
-          "slug": "morgan-hill-dmv"
         }
       ],
       "has_kiosk": true
@@ -3896,17 +3866,12 @@
         {
           "name": "Paso Robles",
           "distance": "30 miles",
-          "slug": "paso-robles-dmv"
+          "slug": "dmv-paso-robles"
         },
         {
           "name": "Santa Maria",
           "distance": "35 miles",
           "slug": "dmv-santa-maria"
-        },
-        {
-          "name": "Atascadero",
-          "distance": "15 miles",
-          "slug": "atascadero-dmv"
         }
       ],
       "has_kiosk": true
