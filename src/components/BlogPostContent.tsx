@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import InArticleAd from './InArticleAd';
 
 type BlogPostContentProps = {
   content: string;
@@ -85,31 +86,39 @@ export default function BlogPostContent({
         dangerouslySetInnerHTML={{ __html: displayContent }}
       />
 
+      {/* Show ad after truncated content */}
       {shouldShowButton && (
-        <div className="my-8 text-center border-t border-gray-200 pt-8">
-          <div className="relative">
-            {/* Gradient overlay effect */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none -mt-32" />
+        <>
+          <InArticleAd />
 
-            <button
-              onClick={handleReadMore}
-              className="relative z-10 inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-              Read Full Article
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
+          <div className="my-8 text-center border-t border-gray-200 pt-8">
+            <div className="relative">
+              {/* Gradient overlay effect */}
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent pointer-events-none -mt-32" />
 
-            <p className="text-sm text-gray-500 mt-4">
-              Click to continue reading and see the complete article
-            </p>
+              <button
+                onClick={handleReadMore}
+                className="relative z-10 inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+                Read Full Article
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              <p className="text-sm text-gray-500 mt-4">
+                Click to continue reading and see the complete article
+              </p>
+            </div>
           </div>
-        </div>
+        </>
       )}
+
+      {/* Show ad after full article loads */}
+      {showFullArticle && <InArticleAd />}
     </>
   );
 }
