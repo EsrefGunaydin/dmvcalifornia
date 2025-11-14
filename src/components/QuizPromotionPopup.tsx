@@ -67,13 +67,13 @@ export default function QuizPromotionPopup() {
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/20 z-[9998] animate-in fade-in duration-300"
+        className="fixed inset-0 bg-black/20 z-[99999] animate-in fade-in duration-300 pointer-events-auto"
         onClick={handleDismiss}
       />
 
       {/* Popup */}
-      <div className="fixed bottom-4 right-4 z-[9999] w-full max-w-sm animate-in slide-in-from-bottom-4 duration-500">
-        <div className="bg-white rounded-lg shadow-2xl border-2 border-primary p-6 m-4 relative">
+      <div className="fixed bottom-4 right-4 z-[100000] w-full max-w-sm animate-in slide-in-from-bottom-4 duration-500 pointer-events-auto">
+        <div className="bg-white rounded-lg shadow-2xl border-2 border-primary p-6 m-4 relative pointer-events-auto">
           {/* Close Button */}
           <button
             onClick={(e) => {
@@ -81,7 +81,7 @@ export default function QuizPromotionPopup() {
               e.stopPropagation();
               handleDismiss();
             }}
-            className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition-colors z-10 cursor-pointer"
+            className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition-colors z-[100001] cursor-pointer pointer-events-auto"
             aria-label="Close popup"
             type="button"
           >
@@ -142,7 +142,7 @@ export default function QuizPromotionPopup() {
                 e.stopPropagation();
                 handleDismiss();
               }}
-              className="px-4 py-3 text-gray-600 hover:text-gray-800 font-medium text-sm transition-colors cursor-pointer"
+              className="px-4 py-3 text-gray-600 hover:text-gray-800 font-medium text-sm transition-colors cursor-pointer pointer-events-auto z-[100001] relative"
               type="button"
             >
               Maybe Later
