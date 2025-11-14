@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Quiz, Question, QuizResult, ShuffledQuestion } from '@/types/quiz';
 import Results from './Results';
 import AdRefreshManager from '@/components/ads/AdRefreshManager';
+import QuizAd from '@/components/QuizAd';
 
 interface QuizEngineProps {
   quiz: Quiz;
@@ -384,6 +385,9 @@ export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
           )}
         </div>
       </div>
+
+      {/* Ad between answers and questions list */}
+      <QuizAd />
 
       {/* Question Navigation */}
       <div className="bg-white rounded-lg shadow p-4">
