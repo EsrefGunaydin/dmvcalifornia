@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import MultiplexAd from '@/components/MultiplexAd';
 
 type FilterSection = 'sort' | 'tags' | null;
 
@@ -244,14 +245,15 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredPosts.map((post) => {
+            {filteredPosts.map((post, index) => {
               const firstImage = extractFirstImage(post.content);
 
               return (
-                <article
-                  key={post.id}
-                  className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden group"
-                >
+                <>
+                  <article
+                    key={post.id}
+                    className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden group"
+                  >
                   {/* Post Hero Image */}
                   {firstImage ? (
                     <div className="h-48 overflow-hidden">
@@ -340,6 +342,14 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
                     </div>
                   </div>
                 </article>
+
+                {/* Insert Multiplex Ad after 6th card */}
+                {index === 5 && (
+                  <div className="lg:col-span-3 md:col-span-2">
+                    <MultiplexAd />
+                  </div>
+                )}
+              </>
               );
             })}
           </div>
