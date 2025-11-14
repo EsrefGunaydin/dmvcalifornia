@@ -386,8 +386,8 @@ export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
         </div>
       </div>
 
-      {/* Ad between answers and questions list */}
-      <QuizAd />
+      {/* Ad between answers and questions list - Refreshes on each question */}
+      <QuizAd currentQuestionIndex={currentQuestionIndex} />
 
       {/* Question Navigation */}
       <div className="bg-white rounded-lg shadow p-4">
