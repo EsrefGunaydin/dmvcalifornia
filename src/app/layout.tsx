@@ -84,25 +84,15 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
-        {/* Google AdSense */}
-        <script
-          async
+      <body className={inter.className}>
+        {/* Google AdSense - Load in head with beforeInteractive */}
+        <Script
+          id="google-adsense"
+          strategy="beforeInteractive"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7030490358552434"
           crossOrigin="anonymous"
         />
 
-        {/* Schema.org Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
-        />
-      </head>
-      <body className={inter.className}>
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
@@ -123,6 +113,18 @@ export default function RootLayout({
           }}
         />
         <GoogleAnalytics GA_MEASUREMENT_ID={GA_MEASUREMENT_ID} />
+
+        {/* Schema.org Structured Data */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <Script
+          id="website-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
 
         {children}
       </body>
