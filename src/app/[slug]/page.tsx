@@ -13,7 +13,6 @@ import ADSENSE_CONFIG from '@/config/adsense';
 import QuizPromotionPopup from '@/components/QuizPromotionPopup';
 import BlogViewTracker from '@/components/BlogViewTracker';
 import BlogPostContent from '@/components/BlogPostContent';
-import SidebarAd from '@/components/SidebarAd';
 
 // Type for blog post
 type BlogPost = {
@@ -439,16 +438,8 @@ function renderBlogPost(post: BlogPost) {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      {/* Article with Sidebar Ads */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr_300px] gap-8">
-          {/* Left Sidebar Ad - Hidden on mobile/tablet */}
-          <aside className="hidden lg:block">
-            <SidebarAd />
-          </aside>
-
-          {/* Main Content */}
-          <article className="max-w-4xl mx-auto w-full">
+      {/* Article */}
+      <article className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-4xl">
             {/* Breadcrumb */}
             <nav className="mb-8">
               <ol className="flex items-center space-x-2 text-sm text-gray-600">
@@ -647,13 +638,6 @@ function renderBlogPost(post: BlogPost) {
           )}
         </div>
       </article>
-
-      {/* Right Sidebar Ad - Hidden on mobile/tablet */}
-      <aside className="hidden lg:block">
-        <SidebarAd />
-      </aside>
-    </div>
-  </div>
 
       <Footer />
       <CookieBanner />
