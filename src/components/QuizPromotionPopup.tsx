@@ -67,20 +67,25 @@ export default function QuizPromotionPopup() {
     <>
       {/* Backdrop */}
       <div
-        className="fixed inset-0 bg-black/20 z-40 animate-in fade-in duration-300"
+        className="fixed inset-0 bg-black/20 z-[9998] animate-in fade-in duration-300"
         onClick={handleDismiss}
       />
 
       {/* Popup */}
-      <div className="fixed bottom-4 right-4 z-50 w-full max-w-sm animate-in slide-in-from-bottom-4 duration-500">
+      <div className="fixed bottom-4 right-4 z-[9999] w-full max-w-sm animate-in slide-in-from-bottom-4 duration-500">
         <div className="bg-white rounded-lg shadow-2xl border-2 border-primary p-6 m-4 relative">
           {/* Close Button */}
           <button
-            onClick={handleDismiss}
-            className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition-colors"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              handleDismiss();
+            }}
+            className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition-colors z-10 cursor-pointer"
             aria-label="Close popup"
+            type="button"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
@@ -132,8 +137,13 @@ export default function QuizPromotionPopup() {
               Start Practice Test
             </Link>
             <button
-              onClick={handleDismiss}
-              className="px-4 py-3 text-gray-600 hover:text-gray-800 font-medium text-sm transition-colors"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                handleDismiss();
+              }}
+              className="px-4 py-3 text-gray-600 hover:text-gray-800 font-medium text-sm transition-colors cursor-pointer"
+              type="button"
             >
               Maybe Later
             </button>
