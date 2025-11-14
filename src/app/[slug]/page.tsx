@@ -13,6 +13,7 @@ import ADSENSE_CONFIG from '@/config/adsense';
 import QuizPromotionPopup from '@/components/QuizPromotionPopup';
 import BlogViewTracker from '@/components/BlogViewTracker';
 import BlogPostContent from '@/components/BlogPostContent';
+import SidebarAd from '@/components/SidebarAd';
 
 // Type for blog post
 type BlogPost = {
@@ -438,46 +439,54 @@ function renderBlogPost(post: BlogPost) {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
-      {/* Article */}
-      <article className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-4xl">
-        {/* Breadcrumb */}
-        <nav className="mb-8">
-          <ol className="flex items-center space-x-2 text-sm text-gray-600">
-            <li>
-              <Link href="/" className="hover:text-primary">
-                Home
-              </Link>
-            </li>
-            <li>/</li>
-            <li>
-              <Link href="/blog" className="hover:text-primary">
-                Blog
-              </Link>
-            </li>
-            <li>/</li>
-            <li className="text-gray-900 font-medium">{post.title}</li>
-          </ol>
-        </nav>
+      {/* Article with Sidebar Ads */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr_300px] gap-8">
+          {/* Left Sidebar Ad - Hidden on mobile/tablet */}
+          <aside className="hidden lg:block">
+            <SidebarAd />
+          </aside>
 
-        {/* Post Header */}
-        <header className="mb-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            {post.title}
-          </h1>
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-4 text-gray-600">
-              <time dateTime={post.publishedAt}>{formattedDate}</time>
-              <span>•</span>
-              <span>By {post.author}</span>
-            </div>
+          {/* Main Content */}
+          <article className="max-w-4xl mx-auto w-full">
+            {/* Breadcrumb */}
+            <nav className="mb-8">
+              <ol className="flex items-center space-x-2 text-sm text-gray-600">
+                <li>
+                  <Link href="/" className="hover:text-primary">
+                    Home
+                  </Link>
+                </li>
+                <li>/</li>
+                <li>
+                  <Link href="/blog" className="hover:text-primary">
+                    Blog
+                  </Link>
+                </li>
+                <li>/</li>
+                <li className="text-gray-900 font-medium">{post.title}</li>
+              </ol>
+            </nav>
 
-            {/* Share Buttons */}
-            <ShareButtons postSlug={post.slug} postTitle={post.title} />
-          </div>
-        </header>
+            {/* Post Header */}
+            <header className="mb-8">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                {post.title}
+              </h1>
+              <div className="flex flex-wrap items-center justify-between gap-4">
+                <div className="flex items-center gap-4 text-gray-600">
+                  <time dateTime={post.publishedAt}>{formattedDate}</time>
+                  <span>•</span>
+                  <span>By {post.author}</span>
+                </div>
 
-        {/* Post Content - Centered */}
-        <div className="bg-white rounded-lg shadow-sm p-4 md:p-8 mb-8">
+                {/* Share Buttons */}
+                <ShareButtons postSlug={post.slug} postTitle={post.title} />
+              </div>
+            </header>
+
+            {/* Post Content - Centered */}
+            <div className="bg-white rounded-lg shadow-sm p-4 md:p-8 mb-8">
           {/* Blog post content with read more functionality */}
           <Suspense fallback={
             <div
@@ -638,6 +647,13 @@ function renderBlogPost(post: BlogPost) {
           )}
         </div>
       </article>
+
+      {/* Right Sidebar Ad - Hidden on mobile/tablet */}
+      <aside className="hidden lg:block">
+        <SidebarAd />
+      </aside>
+    </div>
+  </div>
 
       <Footer />
       <CookieBanner />
