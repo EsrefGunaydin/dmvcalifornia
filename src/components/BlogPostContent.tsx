@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import InArticleAd from './InArticleAd';
 
@@ -16,6 +16,8 @@ export default function BlogPostContent({
   const router = useRouter();
   const searchParams = useSearchParams();
   const [showFullArticle, setShowFullArticle] = useState(false);
+  const [adRefreshKey, setAdRefreshKey] = useState(0);
+  const readMoreButtonRef = useRef<HTMLDivElement>(null);
 
   // Check if we should show full article based on URL parameter
   useEffect(() => {
@@ -84,9 +86,29 @@ export default function BlogPostContent({
   };
 
   const handleReadMore = () => {
+    // Store current scroll position relative to the button
+    const buttonPosition = readMoreButtonRef.current?.offsetTop || 0;
+
+    // Show full article without page refresh
+    setShowFullArticle(true);
+
+    // Refresh ads by changing key
+    setAdRefreshKey(prev => prev + 1);
+
+    // Update URL without reload
     const currentPath = window.location.pathname;
-    router.push(`${currentPath}?full=true`);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.history.pushState({}, '', `${currentPath}?full=true`);
+
+    // Keep user at the same position (don't scroll)
+    // Small delay to let content render
+    setTimeout(() => {
+      if (readMoreButtonRef.current) {
+        window.scrollTo({
+          top: buttonPosition - 100, // Scroll to just above where button was
+          behavior: 'smooth'
+        });
+      }
+    }, 100);
   };
 
   // Process content based on whether we're showing full article or not
@@ -115,7 +137,7 @@ export default function BlogPostContent({
         // For full article, we need to split by ad placeholders and render ads as components
         <>
           {processedContent.split(/<div class="ad-placeholder" data-ad-index="\d+"><\/div>/).map((section, index) => (
-            <div key={index}>
+            <div key={`section-${index}-${adRefreshKey}`}>
               <div
                 className="prose prose-lg max-w-none
                   prose-headings:text-gray-900 prose-headings:font-bold prose-headings:mb-4 prose-headings:mt-8
@@ -129,7 +151,7 @@ export default function BlogPostContent({
                 dangerouslySetInnerHTML={{ __html: section }}
               />
               {/* Render ad after each section except the last one */}
-              {index < adMatches.length && <InArticleAd key={`ad-${index}`} />}
+              {index < adMatches.length && <InArticleAd key={`ad-${index}-${adRefreshKey}`} />}
             </div>
           ))}
         </>
@@ -151,8 +173,8 @@ export default function BlogPostContent({
 
       {/* Show ad and Read More button after truncated content */}
       {shouldShowButton && (
-        <>
-          <InArticleAd />
+        <div ref={readMoreButtonRef}>
+          <InArticleAd key={`truncated-ad-${adRefreshKey}`} />
 
           <div className="my-8 text-center border-t border-gray-200 pt-8">
             <div className="relative">
@@ -161,6 +183,7 @@ export default function BlogPostContent({
               <button
                 onClick={handleReadMore}
                 className="relative z-10 inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                type="button"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -176,7 +199,7 @@ export default function BlogPostContent({
               </p>
             </div>
           </div>
-        </>
+        </div>
       )}
     </>
   );

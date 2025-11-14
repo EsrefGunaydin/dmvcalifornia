@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Search, LayoutGrid, List, SlidersHorizontal } from 'lucide-react';
+import MultiplexAd from './MultiplexAd';
 
 interface Quiz {
   id: string | number;
@@ -134,12 +135,13 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
       {/* Quiz Display */}
       {viewMode === 'grid' ? (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {filteredQuizzes.map((quiz) => (
-            <Link
-              key={quiz.id}
-              href={`/practice-test/${quiz.slug}`}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
-            >
+          {filteredQuizzes.map((quiz, index) => (
+            <>
+              <Link
+                key={quiz.id}
+                href={`/practice-test/${quiz.slug}`}
+                className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+              >
               <div className="p-6">
                 {/* Category Badge */}
                 <div className="mb-4">
@@ -193,6 +195,14 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
                 </div>
               </div>
             </Link>
+
+            {/* Insert Multiplex Ad after 6th card */}
+            {index === 5 && (
+              <div className="md:col-span-3">
+                <MultiplexAd />
+              </div>
+            )}
+          </>
           ))}
         </div>
       ) : (

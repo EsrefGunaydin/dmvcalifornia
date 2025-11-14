@@ -13,6 +13,7 @@ import ADSENSE_CONFIG from '@/config/adsense';
 import QuizPromotionPopup from '@/components/QuizPromotionPopup';
 import BlogViewTracker from '@/components/BlogViewTracker';
 import BlogPostContent from '@/components/BlogPostContent';
+import MultiplexAd from '@/components/MultiplexAd';
 
 // Type for blog post
 type BlogPost = {
@@ -499,6 +500,9 @@ function renderBlogPost(post: BlogPost) {
           {/* Post Views Counter - Dynamic */}
           <BlogViewTracker slug={post.slug} initialViews={post.views || 0} />
         </div>
+
+        {/* Multiplex Ad above Related Stories */}
+        <MultiplexAd />
 
         {/* Related Stories */}
         {relatedPosts.length > 0 && (

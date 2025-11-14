@@ -59,7 +59,10 @@
       "Bash(env /usr/bin/arch -arm64 /bin/bash -c:*)",
       "Bash(timeout 3 curl:*)",
       "Bash(xcrun devicectl device install app:*)",
-      "Bash(xcrun devicectl device uninstall app:*)"
+      "Bash(xcrun devicectl device uninstall app:*)",
+      "Bash(node scripts/add-chinese-quiz.js:*)",
+      "Bash(node /tmp/reorganize-chinese.js:*)",
+      "Bash(node /tmp/find-duplicates.js:*)"
     ],
     "deny": [],
     "ask": []
