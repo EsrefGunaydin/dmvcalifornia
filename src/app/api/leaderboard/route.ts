@@ -121,10 +121,14 @@ export async function GET(request: NextRequest) {
       { leaderboard },
       { status: 200 }
     );
-  } catch (error) {
+  } catch (error: any) {
     console.error('Leaderboard API error:', error);
     return NextResponse.json(
-      { error: 'Failed to fetch leaderboard' },
+      {
+        error: 'Failed to fetch leaderboard',
+        details: error?.message || 'Unknown error',
+        hasMongoUri: !!process.env.MONGODB_URI
+      },
       { status: 500 }
     );
   }
