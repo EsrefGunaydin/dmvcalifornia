@@ -399,7 +399,7 @@ export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
 
             return (
               <button
-                key={question.id}
+                key={`q-${index}-${question.id}`}
                 onClick={() => {
                   setCurrentQuestionIndex(index);
                   setShowExplanation(false);

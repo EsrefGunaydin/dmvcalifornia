@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 declare global {
   interface Window {
@@ -9,34 +9,33 @@ declare global {
 }
 
 interface QuizAdProps {
-  currentQuestionIndex?: number; // Pass this to trigger refresh
+  currentQuestionIndex?: number;
 }
 
 export default function QuizAd({ currentQuestionIndex }: QuizAdProps) {
   const adContainerRef = useRef<HTMLDivElement>(null);
-  const [adKey, setAdKey] = useState(0);
+  const adInitialized = useRef(false);
 
   useEffect(() => {
-    // Refresh ad when question changes
-    if (currentQuestionIndex !== undefined) {
-      // Force re-render by updating key
-      setAdKey(prev => prev + 1);
-    }
-  }, [currentQuestionIndex]);
+    // Only initialize ad once
+    if (adInitialized.current) return;
 
-  useEffect(() => {
     try {
       if (typeof window !== 'undefined' && adContainerRef.current) {
-        // Push to adsbygoogle to initialize the ad
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        const insElement = adContainerRef.current.querySelector('.adsbygoogle');
+        // Check if ad is already loaded
+        if (insElement && !insElement.getAttribute('data-ad-status')) {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          adInitialized.current = true;
+        }
       }
     } catch (error) {
       console.error('AdSense error:', error);
     }
-  }, [adKey]); // Re-run when adKey changes
+  }, []);
 
   return (
-    <div className="my-6" ref={adContainerRef} key={adKey}>
+    <div className="my-6" ref={adContainerRef}>
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
