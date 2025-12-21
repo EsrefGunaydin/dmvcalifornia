@@ -321,9 +321,10 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata for SEO
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   // Check if it's a blog post
-  const post = blogPostsData.posts.find((p: BlogPost) => p.slug === params.slug);
+  const post = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
 
   if (post) {
     return {
@@ -333,7 +334,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 
   // Check if it's an office page
-  const office = officesData.offices.find((o: Office) => o.slug === params.slug);
+  const office = officesData.offices.find((o: Office) => o.slug === slug);
 
   if (office) {
     return {
@@ -348,9 +349,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 
 // Page component that handles both blog posts and office pages
-export default function SlugPage({ params }: { params: { slug: string } }) {
+export default async function SlugPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   // Check if it's a blog post first
-  const post = blogPostsData.posts.find((p: BlogPost) => p.slug === params.slug);
+  const post = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
 
   if (post) {
     // Render blog post page (rest of the existing code)
@@ -358,7 +360,7 @@ export default function SlugPage({ params }: { params: { slug: string } }) {
   }
 
   // Check if it's an office page
-  const office = officesData.offices.find((o: Office) => o.slug === params.slug);
+  const office = officesData.offices.find((o: Office) => o.slug === slug);
 
   if (office) {
     return <OfficePage office={office} />;

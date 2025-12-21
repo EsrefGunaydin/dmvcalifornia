@@ -8,6 +8,7 @@ import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import clientPromise from '@/lib/mongodb';
 
 // Combine all quizzes
 const allQuizzes = [...quizzesData.quizzes, ...chineseQuizzesData.quizzes];
@@ -18,8 +19,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const quiz = allQuizzes.find((q) => q.slug === params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const quiz = allQuizzes.find((q) => q.slug === slug);
 
   if (!quiz) {
     return {
@@ -35,26 +37,50 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
 async function fetchLeaderboard(quizId: string | number) {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-    const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
-      cache: 'no-store', // Always fetch fresh data
-    });
-
-    if (!response.ok) {
-      console.error('Failed to fetch leaderboard:', response.status);
+    if (!process.env.MONGODB_URI) {
+      console.error('MONGODB_URI not configured');
       return [];
     }
 
-    const data = await response.json();
-    return data.leaderboard || [];
+    const client = await clientPromise;
+    const db = client.db('dmvcalifornia');
+    const collection = db.collection('leaderboard');
+
+    // Build query
+    let query: any = {};
+    if (quizId) {
+      const numericQuizId = typeof quizId === 'string' ? parseInt(quizId) : quizId;
+      if (!isNaN(numericQuizId)) {
+        query = { $or: [{ quizId: numericQuizId }, { quizId: String(quizId) }] };
+      } else {
+        query = { quizId: quizId };
+      }
+    }
+
+    const entries = await collection
+      .find(query)
+      .sort({ percentage: -1, completedAt: 1 })
+      .toArray();
+
+    return entries.map((entry: any) => ({
+      id: entry._id.toString(),
+      quizId: entry.quizId,
+      date: entry.date,
+      name: entry.name,
+      email: entry.email || '',
+      points: entry.points,
+      percentage: entry.percentage,
+      completedAt: entry.completedAt,
+    }));
   } catch (error) {
     console.error('Error fetching leaderboard:', error);
     return [];
   }
 }
 
-export default async function QuizPage({ params }: { params: { slug: string } }) {
-  const quiz = allQuizzes.find((q) => q.slug === params.slug);
+export default async function QuizPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const quiz = allQuizzes.find((q) => q.slug === slug);
 
   if (!quiz) {
     notFound();

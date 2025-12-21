@@ -6,10 +6,10 @@ import chineseQuizzesData from '@/data/chinese-quizzes.json';
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params;
+    const { id } = await params;
 
     // Combine all quizzes (English, Turkish, Spanish, Chinese)
     // Note: Spanish quiz data has different structure (single quiz object vs array)

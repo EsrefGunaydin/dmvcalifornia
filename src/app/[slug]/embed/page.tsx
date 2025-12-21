@@ -7,8 +7,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function EmbedPage({ params }: { params: { slug: string } }) {
-  const post = blogPostsData.posts.find((p: any) => p.slug === params.slug);
+export default async function EmbedPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPostsData.posts.find((p: any) => p.slug === slug);
 
   if (!post) {
     notFound();
@@ -16,5 +17,5 @@ export default async function EmbedPage({ params }: { params: { slug: string } }
 
   // Redirect embed URLs to the main post page
   // This handles old WordPress embed URLs
-  redirect(`/${params.slug}`);
+  redirect(`/${slug}`);
 }
