@@ -8,7 +8,7 @@ import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import clientPromise from '@/lib/mongodb';
+import { getMongoClient } from '@/lib/mongodb';
 
 // Combine all quizzes
 const allQuizzes = [...quizzesData.quizzes, ...chineseQuizzesData.quizzes];
@@ -42,7 +42,7 @@ async function fetchLeaderboard(quizId: string | number) {
       return [];
     }
 
-    const client = await clientPromise;
+    const client = await getMongoClient();
     const db = client.db('dmvcalifornia');
     const collection = db.collection('leaderboard');
 

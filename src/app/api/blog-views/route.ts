@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import clientPromise from '@/lib/mongodb';
+import { getMongoClient } from '@/lib/mongodb';
 
 // GET: Retrieve view count for a specific blog post
 export async function GET(request: NextRequest) {
@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    const client = await clientPromise;
+    const client = await getMongoClient();
     const db = client.db('dmvcalifornia');
     const collection = db.collection('blog_views');
 
@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const client = await clientPromise;
+    const client = await getMongoClient();
     const db = client.db('dmvcalifornia');
     const collection = db.collection('blog_views');
 

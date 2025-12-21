@@ -1,34 +1,34 @@
 import { MongoClient } from 'mongodb';
 
-// Allow build to succeed even without MongoDB URI
-// Runtime checks will happen in the API routes
-const uri = process.env.MONGODB_URI || '';
 const options = {};
 
-let client: MongoClient | null = null;
-let clientPromise: Promise<MongoClient> | null = null;
+declare global {
+  var _mongoClientPromise: Promise<MongoClient> | undefined;
+}
 
-// Only initialize MongoDB connection if URI is available
-if (uri) {
+// Lazy initialization - creates connection only when actually called
+export async function getMongoClient(): Promise<MongoClient> {
+  const uri = process.env.MONGODB_URI;
+
+  if (!uri) {
+    throw new Error('MONGODB_URI environment variable is not set');
+  }
+
   if (process.env.NODE_ENV === 'development') {
     // In development mode, use a global variable so that the value
     // is preserved across module reloads caused by HMR (Hot Module Replacement).
-    let globalWithMongo = global as typeof globalThis & {
-      _mongoClientPromise?: Promise<MongoClient>;
-    };
-
-    if (!globalWithMongo._mongoClientPromise) {
-      client = new MongoClient(uri, options);
-      globalWithMongo._mongoClientPromise = client.connect();
+    if (!global._mongoClientPromise) {
+      const client = new MongoClient(uri, options);
+      global._mongoClientPromise = client.connect();
     }
-    clientPromise = globalWithMongo._mongoClientPromise;
+    return global._mongoClientPromise;
   } else {
-    // In production mode, it's best to not use a global variable.
-    client = new MongoClient(uri, options);
-    clientPromise = client.connect();
+    // In production mode, create a new client for each invocation
+    // Vercel serverless functions are stateless
+    const client = new MongoClient(uri, options);
+    return client.connect();
   }
 }
 
-// Export a module-scoped MongoClient promise. By doing this in a
-// separate module, the client can be shared across functions.
-export default clientPromise as Promise<MongoClient>;
+// For backwards compatibility - but callers should migrate to getMongoClient()
+export default { getMongoClient };

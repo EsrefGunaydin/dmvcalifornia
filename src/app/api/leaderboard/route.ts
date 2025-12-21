@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import clientPromise from '@/lib/mongodb';
+import { getMongoClient } from '@/lib/mongodb';
 
 export async function POST(request: NextRequest) {
   try {
@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Connect to MongoDB
-    const client = await clientPromise;
+    const client = await getMongoClient();
     const db = client.db('dmvcalifornia');
     const collection = db.collection('leaderboard');
 
@@ -81,7 +81,7 @@ export async function GET(request: NextRequest) {
     const quizId = searchParams.get('quizId');
 
     // Connect to MongoDB
-    const client = await clientPromise;
+    const client = await getMongoClient();
     const db = client.db('dmvcalifornia');
     const collection = db.collection('leaderboard');
 
