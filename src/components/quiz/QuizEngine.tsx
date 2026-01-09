@@ -6,6 +6,7 @@ import { Quiz, Question, QuizResult, ShuffledQuestion } from '@/types/quiz';
 import Results from './Results';
 import AdRefreshManager from '@/components/ads/AdRefreshManager';
 import QuizAd from '@/components/QuizAd';
+import StickyVerticalAd from '@/components/ads/StickyVerticalAd';
 
 interface QuizEngineProps {
   quiz: Quiz;
@@ -214,6 +215,10 @@ export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
 
   return (
     <div className="max-w-3xl mx-auto">
+      {/* Sticky Vertical Ads - Left and Right sides */}
+      <StickyVerticalAd position="left" currentIndex={currentQuestionIndex} />
+      <StickyVerticalAd position="right" currentIndex={currentQuestionIndex} />
+
       {/* Ad Refresh Manager - handles smart ad refreshes */}
       <AdRefreshManager
         currentQuestionIndex={currentQuestionIndex}

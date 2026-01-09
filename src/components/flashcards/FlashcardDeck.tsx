@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import QuizAd from '@/components/QuizAd';
+import StickyVerticalAd from '@/components/ads/StickyVerticalAd';
 
 interface Flashcard {
   id: number;
@@ -50,6 +52,10 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
 
   return (
     <div className="max-w-4xl mx-auto">
+      {/* Sticky Vertical Ads - Left and Right sides */}
+      <StickyVerticalAd position="left" currentIndex={currentIndex} />
+      <StickyVerticalAd position="right" currentIndex={currentIndex} />
+
       {/* Progress Bar */}
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">
@@ -162,6 +168,9 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
           </button>
         )}
       </div>
+
+      {/* Ad - Refreshes on each card navigation */}
+      <QuizAd currentQuestionIndex={currentIndex} />
 
       {/* Card Counter */}
       <div className="mt-6 flex justify-center gap-2">
