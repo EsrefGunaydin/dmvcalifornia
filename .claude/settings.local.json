@@ -63,7 +63,9 @@
       "Bash(node scripts/add-chinese-quiz.js:*)",
       "Bash(node /tmp/reorganize-chinese.js:*)",
       "Bash(node /tmp/find-duplicates.js:*)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(killall:*)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "ask": []
