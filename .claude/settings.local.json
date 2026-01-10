@@ -65,7 +65,8 @@
       "Bash(node /tmp/find-duplicates.js:*)",
       "Bash(npm run build:*)",
       "Bash(killall:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(xcodegen generate:*)"
     ],
     "deny": [],
     "ask": []

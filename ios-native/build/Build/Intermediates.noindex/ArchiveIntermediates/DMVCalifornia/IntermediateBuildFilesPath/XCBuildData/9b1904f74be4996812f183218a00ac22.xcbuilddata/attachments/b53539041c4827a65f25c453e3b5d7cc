@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/GoogleMobileAdsTarget-primary.swiftconstvalues",
+    "dependencies" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/GoogleMobileAdsTarget-primary.d",
+    "diagnostics" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/GoogleMobileAdsTarget-primary.dia",
+    "emit-module-dependencies" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/GoogleMobileAdsTarget-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/GoogleMobileAdsTarget-primary-emit-module.dia",
+    "pch" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/GoogleMobileAdsTarget-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/GoogleMobileAdsTarget-primary.swiftdeps"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/SourcePackages/checkouts/swift-package-manager-google-mobile-ads/GoogleMobileAdsTarget/placeholder.swift" : {
+    "index-unit-output-path" : "/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/placeholder.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/placeholder.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/GoogleMobileAds.build/Release-iphonesimulator/GoogleMobileAdsTarget.build/Objects-normal/arm64/placeholder.o"
+  }
+}

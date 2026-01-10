@@ -1,0 +1,246 @@
+{
+  "" : {
+    "const-values" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCalifornia-primary.swiftconstvalues",
+    "dependencies" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCalifornia-primary.d",
+    "diagnostics" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCalifornia-primary.dia",
+    "emit-module-dependencies" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCalifornia-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCalifornia-primary-emit-module.dia",
+    "pch" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCalifornia-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCalifornia-primary.swiftdeps"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Ads/BannerAdView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/BannerAdView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/BannerAdView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/BannerAdView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Ads/InterstitialAdManager.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/InterstitialAdManager.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/InterstitialAdManager.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/InterstitialAdManager.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Ads/NativeAdView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/NativeAdView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/NativeAdView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/NativeAdView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/App/AppDelegate.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AppDelegate.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AppDelegate.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AppDelegate.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/App/Configuration/Constants.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Constants.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Constants.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Constants.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/App/DMVCaliforniaApp.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCaliforniaApp.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCaliforniaApp.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCaliforniaApp.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Models/Bookmark.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Bookmark.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Bookmark.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Bookmark.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Models/Flashcard.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Flashcard.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Flashcard.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Flashcard.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Models/Gamification.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Gamification.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Gamification.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Gamification.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Models/Leaderboard.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Leaderboard.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Leaderboard.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Leaderboard.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Models/Progress.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Progress.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Progress.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Progress.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Models/Quiz.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Quiz.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Quiz.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Quiz.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Network/APIClient.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/APIClient.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/APIClient.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/APIClient.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Services/GamificationService.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamificationService.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamificationService.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamificationService.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Services/HapticManager.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HapticManager.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HapticManager.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HapticManager.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Services/OfflineSyncManager.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/OfflineSyncManager.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/OfflineSyncManager.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/OfflineSyncManager.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Services/QuizDataService.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDataService.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDataService.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDataService.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Services/StorageService.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/StorageService.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/StorageService.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/StorageService.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Services/WidgetDataSync.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/WidgetDataSync.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/WidgetDataSync.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/WidgetDataSync.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Bookmarks/BookmarksView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/BookmarksView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/BookmarksView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/BookmarksView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Flashcards/FlashcardDeckView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/FlashcardDeckView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/FlashcardDeckView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/FlashcardDeckView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Flashcards/FlashcardsListView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/FlashcardsListView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/FlashcardsListView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/FlashcardsListView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Home/GamifiedHomeView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedHomeView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedHomeView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedHomeView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Home/HomeView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HomeView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HomeView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HomeView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Home/HomeViewModel.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HomeViewModel.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HomeViewModel.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/HomeViewModel.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Progress/ProgressView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ProgressView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ProgressView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ProgressView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Progress/ProgressViewModel.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ProgressViewModel.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ProgressViewModel.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ProgressViewModel.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Quizzes/QuizDetailView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDetailView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDetailView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDetailView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Quizzes/QuizDetailViewModel.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDetailViewModel.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDetailViewModel.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizDetailViewModel.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Quizzes/QuizResultsView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizResultsView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizResultsView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizResultsView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Quizzes/QuizResultsViewModel.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizResultsViewModel.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizResultsViewModel.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizResultsViewModel.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Quizzes/QuizzesView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizzesView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizzesView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizzesView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Quizzes/QuizzesViewModel.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizzesViewModel.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizzesViewModel.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/QuizzesViewModel.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Features/Settings/AboutView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AboutView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AboutView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AboutView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Components/Animations/ConfettiView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ConfettiView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ConfettiView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ConfettiView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Components/DMVButton.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVButton.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVButton.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVButton.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Components/DMVCard.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCard.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCard.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/DMVCard.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Components/Gamified/GamifiedAnswerOption.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedAnswerOption.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedAnswerOption.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedAnswerOption.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Components/Gamified/LevelProgressView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/LevelProgressView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/LevelProgressView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/LevelProgressView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Components/Gamified/RewardPopups.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/RewardPopups.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/RewardPopups.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/RewardPopups.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Components/LoadingView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/LoadingView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/LoadingView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/LoadingView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Navigation/AppCoordinator.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AppCoordinator.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AppCoordinator.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/AppCoordinator.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Navigation/ContentView.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/ContentView.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Styles/Colors.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Colors.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Colors.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Colors.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Styles/GamifiedTheme.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedTheme.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedTheme.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GamifiedTheme.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/UI/Styles/Theme.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Theme.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Theme.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/Theme.o"
+  },
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/x86_64/GeneratedAssetSymbols.o"
+  }
+}

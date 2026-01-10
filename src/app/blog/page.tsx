@@ -2,7 +2,7 @@ import BlogList from './BlogList';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
-import AppPromotionIOS from '../../components/AppPromotionIOS';
+import AppPromotion from '../../components/AppPromotion';
 
 // Import the extracted blog posts
 import blogPostsData from '../../data/blog_posts.json';
@@ -38,9 +38,9 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* App Promotion Banner - iOS Only */}
+      {/* App Promotion Banner */}
       <div className="container mx-auto px-4 py-6">
-        <AppPromotionIOS variant="banner" />
+        <AppPromotion variant="banner" />
       </div>
 
       {/* Blog List with Filters */}

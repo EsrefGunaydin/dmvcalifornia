@@ -2,8 +2,11 @@
 
 import { Quiz, QuizResult } from '@/types/quiz';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+
+const APP_STORE_URL = 'https://apps.apple.com/app/dmv-california/id6754900213';
 
 interface ResultsProps {
   result: QuizResult;
@@ -244,6 +247,60 @@ export default function Results({ result, quiz, quizId, onRestart }: ResultsProp
           >
             All Practice Tests
           </Link>
+        </div>
+      </div>
+
+      {/* App Promotion */}
+      <div className="bg-gradient-to-r from-primary to-primary-600 rounded-lg shadow-lg p-6 mb-6 text-white">
+        <div className="flex flex-col md:flex-row items-center gap-6">
+          <div className="flex-shrink-0">
+            <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center">
+              <span className="text-5xl">📱</span>
+            </div>
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <h3 className="text-xl font-bold mb-2">Practice Anytime, Anywhere!</h3>
+            <p className="text-white/90 mb-4">
+              Download our free iOS app for offline practice, flashcards, and progress tracking.
+              Perfect for studying on the go!
+            </p>
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start text-sm">
+              <span className="flex items-center gap-1">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                Offline Access
+              </span>
+              <span className="flex items-center gap-1">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                500+ Questions
+              </span>
+              <span className="flex items-center gap-1">
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                </svg>
+                Flashcards
+              </span>
+            </div>
+          </div>
+          <div className="flex-shrink-0">
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block hover:opacity-80 transition-opacity"
+            >
+              <Image
+                src="/images/app-store-badge.svg"
+                alt="Download on the App Store"
+                width={160}
+                height={48}
+                className="drop-shadow-lg"
+              />
+            </a>
+          </div>
         </div>
       </div>
 

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "turkish-flashcards-1",
+    "title": "DMV Calisma Kartlari - Set 1",
+    "description": "California surucu sinavi icin 15 temel DMV sorusu ve cevabi",
+    "category": "Turkish",
+    "slug": "turkish-flashcards-set-1",
+    "language": "Turkish",
+    "cards": [
+      { "id": 1, "question": "21 yas ve uzerindeki bir kisinin kandaki alkol konsantrasyonu (BAC) ____ veya daha yuksekken arac kullanmasi yasaktir.", "answer": "0.08% - yuzdede sekiz" },
+      { "id": 2, "question": "Asagidaki durumlarda 5 gun icinde DMV'ye bildirim yapmaniz gerekir:", "answer": "aracinizi sattginizda veya devrettiginizde" },
+      { "id": 3, "question": "Saga donmeye hazirlaniyorsunuz. Ne yapmalisiniz?", "answer": "donmeden onceki son 100 feet boyunca sinyal verin" },
+      { "id": 4, "question": "Hangi trafik isiklari icin her zaman durmaniz gerekir?", "answer": "sabit kirmizi isiklar, yanip sonen kirmizi isiklar ve calismayan trafik isiklari" },
+      { "id": 5, "question": "Surerken eller serbest cihaz olmadan cep telefonu kullanmak ne zaman yasaldir?", "answer": "acil yardim icin arama yaptiginda" },
+      { "id": 6, "question": "Bir kavsaktaki trafik isigi calismiyorsa ne yapmalisiniz?", "answer": "tamamen durun ve guvenli oldugunda devam edin" },
+      { "id": 7, "question": "Dikiz ve yan aynalarinizi ne zaman ayarlamalisiniz?", "answer": "surmeye baslamadan once" },
+      { "id": 8, "question": "18 yasindan kucuk bir kisi varken arac icinde sigara icmek:", "answer": "her zaman yasaktir" },
+      { "id": 9, "question": "Herhangi bir ara sokakta hiz siniri:", "answer": "15 mph" },
+      { "id": 10, "question": "Cocuklarin bulundugu okul bolgesinde hiz siniri:", "answer": "25 mph" },
+      { "id": 11, "question": "Hafif rayli aracla yolu paylasirken:", "answer": "yaklasan bir hafif rayli aracin onunde asla donmeyin" },
+      { "id": 12, "question": "Demiryolu gecitlerini gecmeden once durmalisiniz:", "answer": "bir tren yaklasiyorsa, onu gorup gorememenize bakmaksizin" },
+      { "id": 13, "question": "Gor engelli bir yaya yaya gecidinde beklerken ne yapmalisiniz?", "answer": "yaya gecidinde durun ve yayanin karsiya gecmesini bekleyin" },
+      { "id": 14, "question": "Dar iki seritli bir yolda bes veya daha fazla arac sizi takip ediyorsa:", "answer": "gecis yapmalaini saglamak icin cekilis alanina girin" },
+      { "id": 15, "question": "Yaya gecidi olmayan bir kavsaktda gecis hakki kimindir?", "answer": "yayalarin her zaman gecis hakki vardir" }
+    ]
+  },
+  {
+    "id": "turkish-flashcards-2",
+    "title": "DMV Calisma Kartlari - Set 2",
+    "description": "California trafik kurallari ve guvenli surusu icin 15 ek DMV sorusu",
+    "category": "Turkish",
+    "slug": "turkish-flashcards-set-2",
+    "language": "Turkish",
+    "cards": [
+      { "id": 16, "question": "Bir viraja veya tepenin zirvesine yaklasiyorsaniz ve onunuzdeki yolu net goremiyorsaniz:", "answer": "gerekirse durabilmek icin yavaslayin" },
+      { "id": 17, "question": "Ilaclarinizin surmenizi nasil etkiledigini bilmek kimin sorumlulugudur?", "answer": "sizin" },
+      { "id": 18, "question": "Yogun sis nedeniyle surerken onunuzdeki yolu goremiyorsaniz ve silecekler yardimci olmuyorsa:", "answer": "gorus mesafesi duzlene kadar yoldan tamamen cekilin" },
+      { "id": 19, "question": "Hareket halindeki bir aracta emniyet kemerinizi takmak zorundasiniz:", "answer": "ve takmamak trafik cezasiyla sonuclanir" },
+      { "id": 20, "question": "Bir kavsagi gecerken siren ve yanip sonen isikli bir acil durum araci yaklasiyorsa:", "answer": "kavsagi gecin, saga cekilin ve durun" },
+      { "id": 21, "question": "Yesil isiginiz var ama trafik kavsagi tikiyorsa:", "answer": "kavsakin disinda kalin ve trafik acilana kadar bekleyin" },
+      { "id": 22, "question": "Serit degistirirken veya baska bir seride katilirken:", "answer": "trafikte en az 4 sanyelik bosluk gerekir" },
+      { "id": 23, "question": "Tekerlekleriniz duz ileriyi gostermeli, eger:", "answer": "bir tepede veya egimli bir yolda park etmediyseniz" },
+      { "id": 24, "question": "Asagidakilerden hangisi yasal bir U donusudur?", "answer": "donus icin asfalt acikligi olan bolunmus bir karayolunda" },
+      { "id": 25, "question": "Serit degistirmeden once seridin bos oldugunu kontrol etmek icin:", "answer": "girmek istediginiz seride omzunuzun uzerinden bakin" },
+      { "id": 26, "question": "Sis, kar veya yagmurda surerken kullanmalisiniz:", "answer": "kisa farlar" },
+      { "id": 27, "question": "Asagidakilerin hepsi surerken tehlikelidir. Hangisi ayni zamanda yasadisidir?", "answer": "her iki kulagi kapatan kulaklik takmak" },
+      { "id": 28, "question": "Tek yonlu bir caddeden sola donmek icin baslayin:", "answer": "sol bordure en yakin seritten" },
+      { "id": 29, "question": "Yolda keskin bir viraja yaklasiyorsunuz. Ne yapmalisiniz?", "answer": "viraja girmeden once frene basmaya baslayin" },
+      { "id": 30, "question": "Herhangi bir tepede park ederken her zaman el frenini cekin ve:", "answer": "aracinizi viteste veya 'park' konumunda birakin" }
+    ]
+  }
+]

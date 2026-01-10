@@ -1,0 +1,12 @@
+{
+  "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/DMVCalifornia/Core/Network/APIClient.swift" : {
+    "abi-baseline-json" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia.abi.json",
+    "const-values" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia-primary.swiftconstvalues",
+    "dependencies" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia-primary.d",
+    "diagnostics" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia-primary.dia",
+    "objc-header" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia-Swift.h",
+    "swiftdoc" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia.swiftdoc",
+    "swiftmodule" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia.swiftmodule",
+    "swiftsourceinfo" : "/Users/thedaybreak/Desktop/CODE/dmvcalifornia/ios-native/build/Build/Intermediates.noindex/ArchiveIntermediates/DMVCalifornia/IntermediateBuildFilesPath/DMVCalifornia.build/Release-iphonesimulator/DMVCalifornia.build/Objects-normal/arm64/DMVCalifornia.swiftsourceinfo"
+  }
+}

@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
-import AppPromotionIOS from '@/components/AppPromotionIOS';
+import AppPromotion from '@/components/AppPromotion';
 import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import { notFound } from 'next/navigation';
@@ -167,8 +167,8 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
                     limit={10}
                   />
 
-                  {/* App Promotion - iOS Only */}
-                  <AppPromotionIOS variant="sidebar" />
+                  {/* App Promotion */}
+                  <AppPromotion variant="sidebar" />
 
                   {/* Compact Quick Tips Card */}
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">

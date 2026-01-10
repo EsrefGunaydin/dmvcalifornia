@@ -1,0 +1,367 @@
+{
+  "quiz": {
+    "id": "turkish-sign-test",
+    "title": "DMV Türkçe Trafik İşareti Testi / DMV Turkish Traffic Sign Test",
+    "description": "DMV California Türkçe Trafik İşareti Testi - 24 soruluk trafik işaretleri testi. California DMV Turkish Traffic Sign Test with 24 sign identification questions.",
+    "category": "Turkish Tests / Türkçe Testler",
+    "slug": "dmv-california-turkce-trafik-isareti-testi",
+    "passingScore": 75,
+    "timeLimit": 30,
+    "language": "tr",
+    "questions": [
+      {
+        "id": 1,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/divided-highway-begins.webp",
+        "options": [
+          "İleride şeritler birleşiyor",
+          "İleride yol çift yönlü bölünmüş otoyol oluyor",
+          "İleride yol tıkalı"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret yolun ileride çift yönlü bölünmüş otoyola dönüştüğünü gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 2,
+        "question": "Bu işaret kimin park edebileceğini göstermektedir?",
+        "image": "/images/traffic-signs/handicap-parking.webp",
+        "options": [
+          "Yalnız tekerlekli sandalye kullanan kişilerin",
+          "Özel levhası ya da plakası olmayan engellilerin",
+          "Yalnız özel levhası ya da plakası olan engellilerin"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Engelli park yerleri sadece özel levhası veya plakası olan kişiler içindir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 3,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/one-way-right.webp",
+        "options": [
+          "Tek yönlü sokak – trafik sağa doğru gider",
+          "Tek şeritli yol",
+          "İleride tüm trafik sağa dönmelidir"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Bu işaret tek yönlü sokağı ve trafik yönünü gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 5,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/stop-sign.webp",
+        "options": [
+          "Yavaşla ve devam et",
+          "Her seferinde tam dur",
+          "Yol ver"
+        ],
+        "correctAnswer": 1,
+        "explanation": "STOP işareti her durumda tam durmanız gerektiği anlamına gelir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 6,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/yield-sign.webp",
+        "options": [
+          "Tam dur",
+          "Diğer araçlara yol ver",
+          "Hızlan"
+        ],
+        "correctAnswer": 1,
+        "explanation": "YIELD (yol ver) işareti diğer araçlara ve yayalara öncelik vermeniz gerektiği anlamına gelir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 7,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/no-u-turn-sign.webp",
+        "options": [
+          "U dönüşü bölgesi",
+          "U dönüşü yasak",
+          "Geçiş yasak"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret U dönüşü yapmanın yasak olduğunu gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 8,
+        "question": "Bu işaret hangi anlama gelir?",
+        "image": "/images/traffic-signs/wrong-way-sign.webp",
+        "options": [
+          "Ters yönde gidiyorsunuz",
+          "Yol kapalı",
+          "Tek yönlü sokak"
+        ],
+        "correctAnswer": 0,
+        "explanation": "WRONG WAY işareti ters yönde gittiğinizi ve derhal dönmeniz gerektiğini gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 9,
+        "question": "Bu tabelanın şekli şunu gösteriyor:",
+        "image": "/images/traffic-signs/diamond-warning-shape.webp",
+        "options": [
+          "Geçiş hakkını hemen ver",
+          "Uyarı",
+          "Bilgi",
+          "Dur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Elmas (baklava) şekli uyarı işaretlerini gösterir. Bu şekildeki tabelalar sürücüleri ilerideki potansiyel tehlikeler konusunda uyarır.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 10,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/school-crossing.webp",
+        "options": [
+          "Yaya geçidi",
+          "Okul geçidi",
+          "Okul bölgesi",
+          "Yolda çocuklar"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret okul geçidini gösterir. Okul çocuklarının yolu geçtiği bir bölgeye yaklaştığınızı belirtir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 11,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/merge-right.webp",
+        "options": [
+          "Tek yönlü trafik",
+          "Otoyol ileride virajlı",
+          "İleride kavşak",
+          "Sağdan katılan trafik"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Bu işaret sağdan birleşen trafiği gösterir. Sağdan gelen araçların ana yola katılacağını belirtir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 13,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/hospital-sign.webp",
+        "options": [
+          "Sağda otoyol değişimi",
+          "Sağda hastane var",
+          "Sağda otel var",
+          "Sağda yürüyüş parkuru"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Mavi H işareti sağda hastane olduğunu gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 15,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/no-right-turn.webp",
+        "options": [
+          "Sağa dönmeden önce dur",
+          "Sağa dönüş serbest",
+          "Sağa dönüş yasak",
+          "İleride keskin viraj"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bu işaret sağa dönüşün yasak olduğunu gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 16,
+        "question": "Bu tabela gösteriyor ki:",
+        "image": "/images/traffic-signs/flagger-ahead.webp",
+        "options": [
+          "Yaya geçidi",
+          "Okul bölgesi",
+          "İleride bayrak tutan görevli",
+          "Oynayan çocuklar"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bu işaret ileride yol işlerinde bayrak tutan bir görevli olduğunu gösterir. Yavaşlayın ve talimatları izleyin.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 17,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/narrow-bridge.webp",
+        "options": [
+          "Araba kullanacaksan alkol alma",
+          "Dar köprü var",
+          "Islakken kaygan",
+          "İleride virajlı yol"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret ileride dar köprü olduğunu gösterir. Yol daralıyor, dikkatli olun.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 19,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/stop-ahead.webp",
+        "options": [
+          "İleride yavaş araç var",
+          "İleride okul geçidi var",
+          "İleride yürüyüş parkuru var",
+          "İleride 'Stop' tabelası var"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Bu işaret ileride STOP tabelası olduğunu gösterir. Durmaya hazırlanın.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 20,
+        "question": "Bu tabela gösteriyor ki:",
+        "image": "/images/traffic-signs/lane-ends.webp",
+        "options": [
+          "Bölünmüş yol",
+          "İleride başka rota/detour",
+          "Şerit bitiyor",
+          "Birleşen trafik"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bu işaret şeritin sona erdiğini gösterir. Sağ şerit bitiyor, sol şeride geçin.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 21,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/steep-hill.webp",
+        "options": [
+          "Kamyonların önceliği var",
+          "Sadece kamyonlar",
+          "İleride dik yokuş",
+          "Kamyonlar yola giriyor"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bu işaret ileride dik yokuş olduğunu gösterir. Düşük vites kullanın ve frenlerinizi kontrol edin.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 23,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/speed-limit-65.webp",
+        "options": [
+          "En düşük hız sınırı",
+          "Yasal olarak en yüksek hız",
+          "Tavsiye edilen en yüksek hız",
+          "En güvenli hız sınırı"
+        ],
+        "correctAnswer": 1,
+        "explanation": "SPEED LIMIT işareti yasal olarak izin verilen maksimum hızı gösterir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 24,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/traffic-signal-ahead.webp",
+        "options": [
+          "Şerit trafiğe kapalı",
+          "İleride tren geçidi",
+          "İleride trafik lambası",
+          "Şerit sinyali"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bu işaret ileride trafik ışığı olduğunu gösterir. Durmaya hazır olun.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 25,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/winding-road.webp",
+        "options": [
+          "Sağ şerit bitiyor, sola geçin",
+          "Sağdan gelen trafik şeride katılıyor",
+          "İleride bölünmüş yol",
+          "İleride virajlı yol"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Bu işaret ileride virajlı yol olduğunu gösterir. Hızınızı azaltın ve dikkatli sürün.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 26,
+        "question": "Bu tabela bir uyarı ve yaklaştığın yer şurası:",
+        "image": "/images/traffic-signs/railroad-crossing.webp",
+        "options": [
+          "A railroad crossing (Bir tren geçidi)",
+          "A crosswalk (Bir yaya geçidi)",
+          "An intersection (Bir kavşak)",
+          "A blasting zone (Patlama alanı)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Bu işaret tren geçidini gösterir. Yaklaşırken yavaşlayın, durabilmek için hazırlıklı olun ve her iki yöne bakın.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 27,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/donot-pass.webp",
+        "options": [
+          "Geçiş yasak",
+          "Sağa dönüş yasak",
+          "U dönüşü yasak",
+          "Dur işareti ileride"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Bu işaret geçişin yasak olduğunu gösterir. Önünüzdeki aracı geçemezsiniz.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "easy"
+      },
+      {
+        "id": 28,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/divided-highway-ends.webp",
+        "options": [
+          "Bölünmüş yol başlıyor",
+          "Bölünmüş yol bitiyor",
+          "İleride tek yönlü yol",
+          "Şeritler birleşiyor"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret bölünmüş otoyolun sona erdiğini gösterir. İki yönlü trafik karşı yönden gelebilir.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      },
+      {
+        "id": 29,
+        "question": "Bu tabela şu anlama gelir:",
+        "image": "/images/traffic-signs/low-clearance.webp",
+        "options": [
+          "Dar köprü",
+          "Alçak geçit - araç yükseklik sınırı",
+          "Dik iniş",
+          "Tünel ileride"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bu işaret alçak geçit veya köprü altı olduğunu gösterir. Yüksek araçlar geçemez.",
+        "category": "Trafik İşaretleri",
+        "difficulty": "medium"
+      }
+    ]
+  }
+}

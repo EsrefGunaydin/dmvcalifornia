@@ -14,6 +14,7 @@ import QuizPromotionPopup from '@/components/QuizPromotionPopup';
 import BlogViewTracker from '@/components/BlogViewTracker';
 import BlogPostContent from '@/components/BlogPostContent';
 import MultiplexAd from '@/components/MultiplexAd';
+import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 
 // Type for blog post
 type BlogPost = {
@@ -401,6 +402,17 @@ function renderBlogPost(post: BlogPost) {
         '\n' + tocHtml + '\n' +
         processedContent.slice(insertPosition);
     }
+  }
+
+  // Insert inline app promotion after 3rd paragraph (for articles with 3+ paragraphs)
+  const paragraphMatches = processedContent.matchAll(/<p[^>]*>.*?<\/p>/gis);
+  const paragraphs = Array.from(paragraphMatches);
+  if (paragraphs.length >= 3) {
+    const thirdParagraphEnd = paragraphs[2].index! + paragraphs[2][0].length;
+    processedContent =
+      processedContent.slice(0, thirdParagraphEnd) +
+      '\n' + inlineAppPromotionHtml + '\n' +
+      processedContent.slice(thirdParagraphEnd);
   }
 
   // Get all posts sorted by date for prev/next navigation

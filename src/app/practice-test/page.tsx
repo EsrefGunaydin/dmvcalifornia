@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
-import AppPromotionIOS from '@/components/AppPromotionIOS';
+import AppPromotion from '@/components/AppPromotion';
 import PracticeTestsContent from '@/components/PracticeTestsContent';
 import quizzesData from '@/data/quizzes.json';
 
@@ -51,9 +51,9 @@ export default function PracticeTestsPage() {
           </div>
         </section>
 
-        {/* App Promotion Banner - iOS Only */}
+        {/* App Promotion Banner */}
         <div className="container mx-auto px-4 pt-6">
-          <AppPromotionIOS variant="banner" />
+          <AppPromotion variant="banner" />
         </div>
 
         {/* Quiz Cards */}
