@@ -285,7 +285,18 @@ export default function Results({ result, quiz, quizId, onRestart }: ResultsProp
               </span>
             </div>
           </div>
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center gap-4">
+            {/* QR Code - visible on desktop */}
+            <div className="hidden md:block text-center">
+              <Image
+                src="/images/dmv-qrcode.png"
+                alt="Scan to download DMV California app"
+                width={80}
+                height={80}
+                className="rounded-lg border-2 border-white/30"
+              />
+              <p className="text-xs text-white/70 mt-1">Scan to download</p>
+            </div>
             <a
               href={APP_STORE_URL}
               target="_blank"

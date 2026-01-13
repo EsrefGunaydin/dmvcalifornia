@@ -139,22 +139,37 @@ export default function ExitIntentPopup() {
             </div>
           </div>
 
-          {/* CTA */}
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full"
-            onClick={handleClose}
-          >
-            <Image
-              src="/images/app-store-badge.svg"
-              alt="Download on the App Store"
-              width={200}
-              height={60}
-              className="mx-auto hover:opacity-80 transition-opacity"
-            />
-          </a>
+          {/* CTA with QR Code */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            {/* QR Code - visible on desktop */}
+            <div className="hidden sm:block text-center">
+              <Image
+                src="/images/dmv-qrcode.png"
+                alt="Scan to download DMV California app"
+                width={100}
+                height={100}
+                className="rounded-lg border-2 border-gray-200"
+              />
+              <p className="text-xs text-gray-500 mt-1">Scan with phone</p>
+            </div>
+
+            {/* App Store Badge */}
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+              onClick={handleClose}
+            >
+              <Image
+                src="/images/app-store-badge.svg"
+                alt="Download on the App Store"
+                width={180}
+                height={54}
+                className="hover:opacity-80 transition-opacity"
+              />
+            </a>
+          </div>
 
           {/* Skip link */}
           <button

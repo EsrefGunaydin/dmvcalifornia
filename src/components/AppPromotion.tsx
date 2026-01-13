@@ -15,10 +15,14 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
       <div className={`bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl shadow-lg overflow-hidden ${className}`}>
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 md:p-8">
           <div className="flex items-center gap-4">
-            <div className="flex-shrink-0 bg-white rounded-2xl p-3 shadow-lg">
-              <div className="w-12 h-12 md:w-16 md:h-16 bg-primary-500 rounded-xl flex items-center justify-center">
-                <span className="text-2xl md:text-3xl">📱</span>
-              </div>
+            <div className="flex-shrink-0 bg-white rounded-2xl p-2 shadow-lg">
+              <Image
+                src="/images/dmv-qrcode.png"
+                alt="Scan to download DMV California app"
+                width={96}
+                height={96}
+                className="rounded-lg"
+              />
             </div>
             <div className="flex-1">
               <h3 className="text-xl md:text-2xl font-bold mb-1">
@@ -124,22 +128,36 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
           </div>
         </div>
 
-        <a
-          href={appStoreUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block hover:opacity-80 transition-opacity"
-        >
-          <Image
-            src="/images/app-store-badge.svg"
-            alt="Download on the App Store"
-            width={200}
-            height={60}
-            className="w-full max-w-[180px] mx-auto"
-          />
-        </a>
+        {/* QR Code and App Store Badge */}
+        <div className="flex items-center justify-center gap-4 mb-4">
+          {/* QR Code */}
+          <div className="text-center">
+            <Image
+              src="/images/dmv-qrcode.png"
+              alt="Scan to download DMV California app"
+              width={70}
+              height={70}
+              className="rounded-lg border border-gray-200"
+            />
+            <p className="text-xs text-gray-500 mt-1">Scan me</p>
+          </div>
 
-        <div className="mt-4 pt-4 border-t border-gray-200">
+          <a
+            href={appStoreUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:opacity-80 transition-opacity"
+          >
+            <Image
+              src="/images/app-store-badge.svg"
+              alt="Download on the App Store"
+              width={140}
+              height={42}
+            />
+          </a>
+        </div>
+
+        <div className="pt-4 border-t border-gray-200">
           <Link href="/mobileapp" className="text-primary hover:text-primary-600 text-sm font-semibold flex items-center justify-center gap-1">
             Learn More
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
