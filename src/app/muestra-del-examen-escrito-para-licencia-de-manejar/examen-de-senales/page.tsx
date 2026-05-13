@@ -6,6 +6,7 @@ import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import spanishSignTestData from '@/data/spanish-sign-test.json';
 import Link from 'next/link';
+import type { Quiz } from '@/types/quiz';
 
 export const metadata: Metadata = {
   title: 'Examen de Señales de Tráfico en Español | DMV California',
@@ -39,7 +40,7 @@ async function fetchLeaderboard(quizId: string | number) {
 }
 
 export default async function SpanishSignTestPage() {
-  const quiz = spanishSignTestData.quiz;
+  const quiz = spanishSignTestData.quiz as Quiz;
   const quizId = quiz.id; // Use the quiz's id field
 
   // Fetch leaderboard from MongoDB API

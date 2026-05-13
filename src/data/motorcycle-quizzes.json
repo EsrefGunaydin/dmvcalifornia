@@ -1,0 +1,276 @@
+{
+  "quizzes": [
+    {
+      "id": "motorcycle-class-m-test-1",
+      "title": "California Motorcycle (Class M) Practice Test #1",
+      "description": "California DMV Class M motorcycle license practice test #1. Real questions covering helmets, lane position, braking, cornering and group riding.",
+      "category": "Motorcycle (Class M)",
+      "slug": "motorcycle-class-m-test-1",
+      "language": "en",
+      "passingScore": 80,
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Helmets are required to be worn by:",
+          "options": [
+            "Passengers only.",
+            "All motorcycle riders and passengers at all times.",
+            "No one when driving on city streets."
+          ],
+          "correctAnswer": 1,
+          "explanation": "California law requires all motorcycle riders and passengers to wear a U.S. DOT compliant helmet at all times when the motorcycle is in motion.",
+          "category": "Helmets",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "Grabbing the front brake or jamming down on the rear brake:",
+          "options": [
+            "Can cause the brakes to lock.",
+            "Is the best way to stop in an emergency.",
+            "Is the best way to slow down when streets are wet."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Suddenly grabbing the front brake or jamming the rear brake can cause the brakes to lock and lead to a skid. Apply both brakes smoothly and firmly.",
+          "category": "Braking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "Motorcycle passengers should:",
+          "options": [
+            "Put their feet on the ground when stopped.",
+            "Not ride without a back rest.",
+            "Sit as far forward as possible without crowding you."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Passengers should sit as far forward as they can without crowding the operator, with both feet on the footrests at all times, even when stopped.",
+          "category": "Passengers",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "Riding in a staggered formation when in a group:",
+          "options": [
+            "Is recommended at all times.",
+            "Should not be used when entering or exiting a highway.",
+            "Should be used when riding on curves."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Staggered formation is recommended for straight roads, but when entering or exiting a highway or riding through curves, riders should move to single-file formation.",
+          "category": "Group Riding",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "Eye protection:",
+          "options": [
+            "Is not needed if your motorcycle is equipped with a windshield.",
+            "Is only needed in bad weather.",
+            "Should give a clear view to either side."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Proper eye protection must give a clear view to either side. A windshield is not a substitute for eye protection.",
+          "category": "Protective Gear",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "The primary cause of single-vehicle motorcycle collisions is:",
+          "options": [
+            "Driving too fast for weather conditions.",
+            "Running wide in a curve and colliding with the roadway or a fixed object.",
+            "Running off the road to avoid other vehicles."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Most single-vehicle motorcycle crashes occur when riders run wide in a curve and collide with the roadway or fixed objects.",
+          "category": "Cornering",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "The best lane position for a motorcycle:",
+          "options": [
+            "Is in the left part of the lane, next to the center line.",
+            "Is in the right part of the lane, next to the curb.",
+            "Can vary depending on road and/or traffic conditions."
+          ],
+          "correctAnswer": 2,
+          "explanation": "There is no single best lane position. Riders should adjust their lane position based on changing road, traffic, and weather conditions.",
+          "category": "Lane Position",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "When riding at night you should:",
+          "options": [
+            "Move closer to the vehicle ahead to use its lights.",
+            "Keep your normal speed to avoid being hit from behind.",
+            "Reduce your speed because visibility is harder at night."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Visibility is reduced at night, so reduce your speed, increase your following distance, and use the headlights of cars ahead to help see the road.",
+          "category": "Night Riding",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "The motorcycle engine cut-off switch should be used and the clutch squeezed when:",
+          "options": [
+            "The throttle is stuck and you can't free it.",
+            "You start to lose control in a curve.",
+            "The motorcycle starts to wobble."
+          ],
+          "correctAnswer": 0,
+          "explanation": "If the throttle sticks and you cannot free it, use the engine cut-off switch and squeeze the clutch to stop the engine from driving the rear wheel.",
+          "category": "Emergencies",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "Which class of driver license is required to operate a moped?",
+          "options": [
+            "Class M1",
+            "Class M2",
+            "Class C"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A Class M2 license is required to operate a moped or motorized bicycle. A Class M1 license is required for a regular motorcycle.",
+          "category": "Licensing",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "Upshifting or downshifting in a curve:",
+          "options": [
+            "Should only be done if it can be done smoothly.",
+            "Is better than shifting before the curve.",
+            "Is the best way to control your speed."
+          ],
+          "correctAnswer": 0,
+          "explanation": "It is best to change gears before entering a curve. If you must shift in a curve, do so very smoothly because sudden shifts can cause the rear wheel to skid.",
+          "category": "Cornering",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "To avoid confusing other drivers, you should:",
+          "options": [
+            "Increase the following distance between your motorcycle and the vehicle in front of you if you are being tailgated.",
+            "Make sure your turn signal turns off after you finish a turn.",
+            "Use your horn only in emergency situations."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Always check that your turn signal turns off after completing a turn. A signal left on can mislead other drivers about your intentions.",
+          "category": "Signaling",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "A major factor in motorcycle collisions is:",
+          "options": [
+            "Following too closely.",
+            "Lane sharing.",
+            "Not being seen by other drivers."
+          ],
+          "correctAnswer": 2,
+          "explanation": "The most common cause of motorcycle crashes with other vehicles is that motorists fail to see the motorcycle. Make yourself visible with bright clothing and proper lane position.",
+          "category": "Visibility",
+          "difficulty": "easy"
+        },
+        {
+          "id": 14,
+          "question": "If your motorcycle starts to wander while crossing metal bridge gratings, you should:",
+          "options": [
+            "Downshift immediately to a lower gear to improve traction.",
+            "Proceed in a zig-zag pattern until you cross the bridge.",
+            "Relax, stay on course and ride straight across."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Metal bridge gratings cause the motorcycle to wander. The safest response is to relax, maintain a steady speed, and ride straight across.",
+          "category": "Road Surfaces",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "When carrying a load on a motorcycle, it should be:",
+          "options": [
+            "Either over or in front of the rear axle.",
+            "Carried on the gas tank in front of the driver.",
+            "Piled up against a sissy bar or frame on the back of the seat."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Loads should be kept low and either over or in front of the rear axle. Loads placed behind the rear axle can affect how the motorcycle turns and brakes.",
+          "category": "Carrying Loads",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "Grabbing the front brake or jamming down on the rear brake can:",
+          "options": [
+            "Cause the brakes to lock.",
+            "Be the best way to stop in an emergency.",
+            "Be the best way to slow down when the streets are wet."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Grabbing the front brake or jamming the rear brake can cause the wheels to lock and result in a loss of control. Apply both brakes smoothly.",
+          "category": "Braking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "The best way to stay out of trouble while riding a motorcycle is:",
+          "options": [
+            "To see it coming by looking well ahead.",
+            "By avoiding high density traffic areas.",
+            "By increasing the following distance between your motorcycle and the vehicle in front of you."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Search well ahead of you to identify hazards early. The further ahead you look, the more time you have to react and avoid problems.",
+          "category": "Hazard Awareness",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "A motorcycle has the advantage over an automobile when passing parked vehicles because:",
+          "options": [
+            "A motorcycle can accelerate faster than a car.",
+            "A motorcycle rider can avoid opening door problems by driving in the left part of the lane.",
+            "Motorcycles have a shorter stopping distance."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Motorcycles can use the left portion of the lane when passing parked vehicles, which helps avoid being struck by suddenly opening doors.",
+          "category": "Lane Position",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "Brightly colored, reflective helmets and clothing:",
+          "options": [
+            "Should only be worn while riding at night.",
+            "Can make motorcycle riders easier to see.",
+            "Do not increase a motorcycle rider's safety."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bright, reflective clothing and helmets make motorcycle riders far more visible to other motorists during the day and at night.",
+          "category": "Visibility",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "To execute a turn safely, you should:",
+          "options": [
+            "Lean the motorcycle in the direction of the curve or turn.",
+            "Slow down in the turn.",
+            "Turn using the handle bars only."
+          ],
+          "correctAnswer": 0,
+          "explanation": "To turn, the motorcycle must lean in the direction of the turn. Slow down before entering the turn, then lean and look through the turn to where you want to go.",
+          "category": "Cornering",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}

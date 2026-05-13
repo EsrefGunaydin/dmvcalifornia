@@ -1,0 +1,808 @@
+{
+  "quizzes": [
+    {
+      "id": "commercial-class-a-b-test-1",
+      "title": "California Commercial Driver (Class A/B) Practice Test #1",
+      "description": "California DMV Class A or B commercial driver's license (CDL) practice test #1. Real questions covering general knowledge, air brakes, combination vehicles and pre-trip inspection.",
+      "category": "Commercial (Class A/B)",
+      "slug": "commercial-class-a-b-test-1",
+      "language": "en",
+      "passingScore": 80,
+      "timeLimit": 40,
+      "questions": [
+        {
+          "id": 1,
+          "question": "A pre-trip inspection of your commercial vehicle should be performed:",
+          "options": [
+            "At least once a week.",
+            "Only if any problems occurred the last time the vehicle was operated.",
+            "Before operating the vehicle."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Federal and state regulations require commercial drivers to inspect their vehicle before every trip to identify any safety defects before driving.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "To stay safe while driving at night, you should:",
+          "options": [
+            "Drive slowly enough to stop within the range of your headlights in emergencies.",
+            "Roll down the window for fresh air to stay awake.",
+            "Drink coffee or other caffeinated beverages if you become sleepy."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Your headlights only illuminate so far ahead. Driving at a speed that lets you stop within that distance is essential to avoid hitting unseen obstacles at night.",
+          "category": "Night Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "The term used to describe the rear wheels of a commercial vehicle following a different path than the front wheels while turning is:",
+          "options": [
+            "Sidetracking.",
+            "Offtracking.",
+            "Fishtailing."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Offtracking occurs when the rear wheels of a long vehicle take a shorter path than the front wheels through a turn, which is why CDL drivers must swing wide.",
+          "category": "General Knowledge",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "When dealing with a pressurized cooling system, you should:",
+          "options": [
+            "Check the coolant level only when the engine has cooled.",
+            "Safely remove the radiator cap and add coolant while the engine is hot.",
+            "Use water only in the cooling system."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Hot pressurized coolant can spray out violently and cause serious burns. Always let the engine cool before opening the cap or checking the level.",
+          "category": "Vehicle Systems",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "If you must park on the side of a road at night, you should:",
+          "options": [
+            "Turn on your 4-way emergency flashers.",
+            "Place warning devices within 15 minutes.",
+            "Use your left turn signal lights."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Activating the 4-way emergency flashers warns approaching traffic of your stopped vehicle. Reflective triangles must also be placed within 10 minutes.",
+          "category": "Emergency Procedures",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "During a pre-trip inspection of the steering system, which of the following would require immediate repair?",
+          "options": [
+            "Too many vertical stacks.",
+            "Oil on the tie rod.",
+            "Steering wheel play exceeding 10 degrees."
+          ],
+          "correctAnswer": 2,
+          "explanation": "More than 10 degrees (about 2 inches on a 20-inch wheel) of steering wheel play makes it difficult to steer accurately and is unsafe.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "Containerized loads:",
+          "options": [
+            "Are exempt from hazardous materials restrictions.",
+            "Are exempt from weight limits.",
+            "Are generally used for transporting freight by rail or ship."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Containerized loads are sealed cargo containers designed for intermodal transport (truck, rail, and ship). They must still comply with hazmat and weight regulations.",
+          "category": "Cargo",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "Approaching a downhill curved offramp, you should:",
+          "options": [
+            "Do nothing because the posted limits account for safety.",
+            "Slow to a safe speed before entering the curve.",
+            "Downshift after entering the curve."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Brake to a safe speed before entering the curve. Posted speeds on offramps are designed for cars; trucks must drive slower because of their higher center of gravity.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "Which method of fire suppression is safe?",
+          "options": [
+            "Water on electrical fires.",
+            "Water on gasoline fires.",
+            "Neither of the above."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Water conducts electricity (worsening electrical fires) and spreads gasoline fires. Use a B:C or A:B:C rated fire extinguisher instead.",
+          "category": "Emergency Procedures",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "Total stopping distance is the sum of:",
+          "options": [
+            "Perception distance, reaction distance, and braking distance.",
+            "Observation distance, reaction distance, and slowing distance.",
+            "Perception distance, response distance, and reaction distance."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Total stopping distance is perception distance (seeing the hazard) + reaction distance (moving foot to brake) + braking distance (vehicle slowing to a stop).",
+          "category": "Driving Techniques",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11,
+          "question": "When checking your trailer connection, you should make sure that:",
+          "options": [
+            "The fifth wheel is tilted upward.",
+            "There is no space between the upper and lower fifth wheel.",
+            "The kingpin is bent."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Any gap between the upper and lower fifth wheel means the connection isn't secure and the trailer could come loose.",
+          "category": "Combination Vehicles",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "When driving with air brakes, what is brake lag?",
+          "options": [
+            "The time it takes for brakes to wear out.",
+            "The time it takes for air to flow through the lines when the brake pedal is pressed.",
+            "The time it takes to move your foot from the accelerator to the brake."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Air brakes have a built-in lag (about a half second) because compressed air must travel through the brake lines before brakes engage. This adds to total stopping distance.",
+          "category": "Air Brakes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "What should you do if you experience brake failure while going down a grade?",
+          "options": [
+            "Pull onto the shoulder and wait for help.",
+            "Use an escape ramp if one is available.",
+            "Shift to neutral to reduce wear on the brakes."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Escape ramps are designed to stop runaway vehicles safely. Always use one if available rather than continuing down the grade.",
+          "category": "Emergency Procedures",
+          "difficulty": "easy"
+        },
+        {
+          "id": 14,
+          "question": "What documents must you have in your possession while operating with a Commercial Learner's Permit (CLP)?",
+          "options": [
+            "Just your CLP.",
+            "Your CLP and a valid driver's license.",
+            "Your CLP, a valid driver's license, and a medical examiner's certificate."
+          ],
+          "correctAnswer": 2,
+          "explanation": "CLP holders must carry the CLP, their underlying valid driver's license, and a current medical examiner's certificate while operating a commercial motor vehicle.",
+          "category": "General Knowledge",
+          "difficulty": "easy"
+        },
+        {
+          "id": 15,
+          "question": "What is counter steering?",
+          "options": [
+            "Turning the steering wheel counter clockwise.",
+            "Steering in the opposite direction from what other drivers expect.",
+            "Turning the wheel in the opposite direction after steering to avoid a traffic emergency."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Counter steering is the corrective step taken after an emergency swerve, when you bring the wheel back to straighten the vehicle after avoiding a hazard.",
+          "category": "Emergency Procedures",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "When approaching a railroad crossing, you must stop within how many feet of the nearest rail if you transport passengers or hazardous materials?",
+          "options": [
+            "5 to 25 feet.",
+            "15 to 50 feet.",
+            "100 feet or more."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Passenger buses, school buses, and hazmat vehicles must stop between 15 and 50 feet of the nearest rail at all railroad crossings.",
+          "category": "General Knowledge",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "When backing a commercial vehicle, you should:",
+          "options": [
+            "Back toward the driver's side whenever possible.",
+            "Back toward the passenger's side whenever possible.",
+            "Rely on your mirrors only and never get out of the cab."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Backing toward the driver's side gives you a much better view of where you're going. Avoid blind-side (passenger-side) backing whenever possible.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "How can you tell if your vehicle is hydroplaning?",
+          "options": [
+            "The steering will feel heavy and stiff.",
+            "The steering will feel light, and the rear of the vehicle may slide.",
+            "The brake pedal will pulse rapidly."
+          ],
+          "correctAnswer": 1,
+          "explanation": "When tires lose contact with the road surface and ride on a film of water, steering becomes very light and the rear may begin to slide. Ease off the accelerator until traction returns.",
+          "category": "Driving Techniques",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "Which of the following items is NOT considered part of the pre-trip inspection?",
+          "options": [
+            "Checking tire pressure.",
+            "Checking that all required emergency equipment is on board.",
+            "Tuning the radio."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Pre-trip inspections focus on safety items: tires, brakes, lights, cargo, fluids, and emergency equipment. Adjusting the radio is not safety-related.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "If you are convicted of driving a commercial vehicle while under the influence of alcohol (BAC 0.04% or higher), you will lose your CDL for at least:",
+          "options": [
+            "30 days.",
+            "6 months.",
+            "1 year."
+          ],
+          "correctAnswer": 2,
+          "explanation": "A first DUI offense while operating a CMV results in a minimum one-year CDL disqualification. A second offense results in a lifetime disqualification.",
+          "category": "General Knowledge",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "What is the minimum tread depth required on the front (steering) tires of a commercial vehicle?",
+          "options": [
+            "2/32 inch.",
+            "4/32 inch.",
+            "6/32 inch."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Steer-axle tires must have at least 4/32 inch tread depth in every major groove. Other tires require at least 2/32 inch.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "medium"
+        },
+        {
+          "id": 22,
+          "question": "What is the proper way to test hydraulic brakes for leaks?",
+          "options": [
+            "Pump the pedal three times, apply firm pressure, hold for five seconds, and see if the pedal moves.",
+            "Push down on the pedal once and listen for hissing.",
+            "Drive slowly and brake hard."
+          ],
+          "correctAnswer": 0,
+          "explanation": "If the pedal moves under steady pressure, you may have a leak in the hydraulic brake system. Do not drive the vehicle until it is repaired.",
+          "category": "Air Brakes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 23,
+          "question": "When loading cargo, the weight should be:",
+          "options": [
+            "Concentrated as high as possible.",
+            "Distributed as low as possible and balanced.",
+            "Placed entirely toward the rear."
+          ],
+          "correctAnswer": 1,
+          "explanation": "A low, balanced load lowers the center of gravity and reduces the risk of rollover. Improperly loaded high cargo increases tip-over risk during turns.",
+          "category": "Cargo",
+          "difficulty": "easy"
+        },
+        {
+          "id": 24,
+          "question": "Which of the following is true about communicating with other drivers?",
+          "options": [
+            "You should signal your intentions and tap the brake lightly to flash brake lights when slowing.",
+            "Only use the horn in heavy traffic.",
+            "Flash your high beams continuously to warn drivers behind."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Signaling, tapping the brakes to flash the lights, and using the horn appropriately are all part of communicating with other drivers safely.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "If your truck has dual tires, you should check that:",
+          "options": [
+            "The tires are touching each other.",
+            "There is space between the tires and they are not touching.",
+            "Both tires have different tread patterns."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dual tires must not touch each other or rub on other parts of the vehicle. Touching tires generate heat and can cause blowouts.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "What is the safest way to handle a tire blowout on a front tire?",
+          "options": [
+            "Brake hard and steer toward the shoulder.",
+            "Stay off the brake, hold the steering wheel firmly, and let the vehicle slow before pulling off the road.",
+            "Accelerate to maintain control."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Heavy braking after a blowout can cause loss of control. Grip the wheel firmly, let the vehicle slow naturally, then gently steer off the road.",
+          "category": "Emergency Procedures",
+          "difficulty": "hard"
+        },
+        {
+          "id": 27,
+          "question": "The proper way to test the parking brake is to:",
+          "options": [
+            "Drive at high speed and pull it on.",
+            "Stop the vehicle, put it in low gear, release the service brake, set the parking brake, and gently apply power.",
+            "Push down the brake pedal and hold it for 1 minute."
+          ],
+          "correctAnswer": 1,
+          "explanation": "With the parking brake set, gently apply power in low gear. The vehicle should remain still. This confirms the parking brake will hold the vehicle.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "What does ABS (Anti-lock Braking System) do for a commercial vehicle?",
+          "options": [
+            "It shortens your stopping distance significantly.",
+            "It helps you maintain steering control during hard braking by preventing wheel lockup.",
+            "It eliminates the need for normal braking technique."
+          ],
+          "correctAnswer": 1,
+          "explanation": "ABS prevents wheels from locking up under hard braking so you can steer to avoid hazards. It does not necessarily shorten stopping distance.",
+          "category": "Air Brakes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "When inspecting your vehicle, you find that the air leakage rate is higher than the maximum allowed. You should:",
+          "options": [
+            "Continue your trip and have it checked at the destination.",
+            "Have the system repaired before driving.",
+            "Drive only at low speeds."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Excessive air leakage means the brakes cannot be relied on. The system must be repaired before driving the vehicle.",
+          "category": "Air Brakes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "At what point should you use the trailer hand valve in normal driving?",
+          "options": [
+            "To park the vehicle.",
+            "To test the trailer brakes only; never as a regular service brake.",
+            "Every time you slow down."
+          ],
+          "correctAnswer": 1,
+          "explanation": "The trailer hand valve should only be used to test the trailer brakes. Using it for normal braking can cause the trailer to skid or jackknife.",
+          "category": "Combination Vehicles",
+          "difficulty": "hard"
+        }
+      ]
+    },
+    {
+      "id": "commercial-class-a-b-test-2",
+      "title": "California Commercial Driver (Class A/B) Practice Test #2",
+      "description": "California DMV Class A or B commercial driver's license (CDL) practice test #2. Real questions covering general knowledge, air brakes, combination vehicles and pre-trip inspection.",
+      "category": "Commercial (Class A/B)",
+      "slug": "commercial-class-a-b-test-2",
+      "language": "en",
+      "passingScore": 80,
+      "timeLimit": 40,
+      "questions": [
+        {
+          "id": 1,
+          "question": "You are about to go down a long, steep, downhill grade in a newer truck. You should:",
+          "options": [
+            "Use a lower gear than you would use to climb the uphill grade.",
+            "Use the same gear you would use to climb the uphill grade.",
+            "Use a higher gear than you would use to climb the uphill grade."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Newer trucks with more aerodynamic designs and improved drivetrains require a lower gear going down a steep grade than they would going up the same grade.",
+          "category": "Driving Techniques",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "Which of these items is checked during a pre-trip inspection?",
+          "options": [
+            "Cargo securement.",
+            "Whether all vehicle lights are working and are clean.",
+            "Both cargo securement and vehicle lights."
+          ],
+          "correctAnswer": 2,
+          "explanation": "A complete pre-trip inspection covers cargo securement, all vehicle lights, brakes, tires, fluid levels, and many other safety items.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "If you are stopped on a one-way or divided highway, you should place reflective triangles at:",
+          "options": [
+            "10 feet, 100 feet, and 200 feet toward approaching traffic.",
+            "25 feet, 100 feet, and 250 feet toward approaching traffic.",
+            "50 feet, 100 feet, and 300 feet toward approaching traffic."
+          ],
+          "correctAnswer": 0,
+          "explanation": "On a one-way or divided highway, place reflective triangles at 10 feet, 100 feet, and 200 feet toward approaching traffic.",
+          "category": "Emergency Procedures",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "When heavy fog occurs, you should:",
+          "options": [
+            "Use high beams for best visibility.",
+            "Park off to the right side of the road with parking lights on.",
+            "Park at a rest area or truck stop until the fog has lifted."
+          ],
+          "correctAnswer": 2,
+          "explanation": "The safest option in heavy fog is to wait it out at a safe location. If you must drive, use low beams (high beams reflect off fog and reduce visibility).",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "You should plan ahead when you park your vehicle so that:",
+          "options": [
+            "It will be very easy for you to check your vehicle before you get back on the road.",
+            "You are only required to pull forward when you leave.",
+            "You don't need to back up more than ten feet."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Parking strategically lets you easily inspect the vehicle before continuing and helps you leave without dangerous blind-side backing maneuvers.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "The term 'Gross Combination Weight' refers to:",
+          "options": [
+            "Total weight of a powered unit and the trailer.",
+            "Total weight of the trailer and the load.",
+            "Total weight of a powered unit, the trailer, and the cargo."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Gross Combination Weight (GCW) is the total weight of the powered unit (tractor), the trailer, and the cargo being carried.",
+          "category": "General Knowledge",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "A driver should look how far ahead of the vehicle while driving?",
+          "options": [
+            "2 to 5 seconds.",
+            "12 to 15 seconds.",
+            "20 to 30 seconds."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Commercial drivers should look 12 to 15 seconds ahead (about a quarter mile at highway speed) to anticipate hazards early.",
+          "category": "Driving Techniques",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "Which of the following statements is true about overhead clearance?",
+          "options": [
+            "Posted signs for overhead clearance are always correct.",
+            "Paving a road does not affect the clearance height under bridges.",
+            "Cargo weight may change the height of your vehicle."
+          ],
+          "correctAnswer": 2,
+          "explanation": "A heavily loaded truck rides lower than an empty one. Cargo weight (and changes to roadway pavement) can affect actual clearance, so posted heights are not always reliable.",
+          "category": "Driving Techniques",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "Which of the following statements is true when performing a pre-trip inspection on brakes and suspension?",
+          "options": [
+            "Brake shoes should be free of oil, grease, and brake fluid.",
+            "One missing leaf spring is not dangerous.",
+            "A cracked spring hanger is not dangerous."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Contaminants on the brake shoes greatly reduce braking effectiveness. Any missing leaf spring or cracked spring hanger is dangerous and must be repaired.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "A broken exhaust system is dangerous because:",
+          "options": [
+            "Exhaust noise will damage the driver's ears.",
+            "Toxic fumes and gases could enter the cab or sleeper berth.",
+            "The leaking exhaust smoke pollutes the air."
+          ],
+          "correctAnswer": 1,
+          "explanation": "A leaking exhaust can allow carbon monoxide and other toxic fumes into the cab, which can sicken or kill the driver.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "Whenever you stop for a break during your trip, you should:",
+          "options": [
+            "Call in and check with dispatch.",
+            "Check critical items such as the tires, brakes, and cargo tie-downs.",
+            "Check critical items such as the windshield wipers, heater, and defroster."
+          ],
+          "correctAnswer": 1,
+          "explanation": "En-route inspections (during breaks) require checking critical safety items: tires, brakes, and cargo securement, in particular.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "What is the most important hand signal that you and your helper should agree on when backing?",
+          "options": [
+            "A signal meaning 'slow down.'",
+            "A signal meaning 'stop.'",
+            "A signal meaning 'turn left.'"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Stop is the most critical signal because it is needed to prevent collisions during backing. Driver and helper must agree on it clearly before starting.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "What two things should you do if a fire happens in your tire on the road?",
+          "options": [
+            "Park the vehicle as soon as possible and use a fire extinguisher to put out the fire.",
+            "Drive to the nearest fire station.",
+            "Pour water from a water bottle on the tire."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Stop right away in a safe location and use a fire extinguisher. Continuing to drive will fan the flames and could damage the vehicle further.",
+          "category": "Emergency Procedures",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "When using a fire extinguisher, you should:",
+          "options": [
+            "Stay as close to the fire as possible.",
+            "Stay upwind so the fire blows away from you, and aim at the base of the fire.",
+            "Aim at the top of the flames."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Stand upwind 6 to 8 feet from the fire, aim the extinguisher at the base of the flames, and sweep side to side until the fire is out.",
+          "category": "Emergency Procedures",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "Which of these is a sign of fatigued driving?",
+          "options": [
+            "Drifting from your lane and missing exits.",
+            "Singing along with the radio.",
+            "Drinking water frequently."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Drifting out of your lane, missing exits, frequent yawning, and trouble keeping your eyes open are all warning signs of fatigue. Pull over and rest.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "If your vehicle hydroplanes, you should:",
+          "options": [
+            "Brake hard immediately.",
+            "Release the accelerator and push in the clutch to let the wheels slow down.",
+            "Accelerate to power through the water."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hard braking can cause skidding. Releasing the accelerator (and clutching) lets the tires regain contact with the road surface.",
+          "category": "Emergency Procedures",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "On wet roads, you should reduce your speed by:",
+          "options": [
+            "About one-third (e.g., from 55 to 35 mph).",
+            "About one-quarter.",
+            "About one-half."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Reduce speed by about one-third on wet roads. On snow, reduce speed by one-half. On ice, reduce speed to a crawl and stop as soon as it is safe.",
+          "category": "Driving Techniques",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "Which axle of a commercial vehicle is most likely to skid because it has less weight?",
+          "options": [
+            "The drive axle.",
+            "The trailer axle on an empty trailer.",
+            "The steering axle."
+          ],
+          "correctAnswer": 1,
+          "explanation": "A lightly loaded or empty trailer has less weight pressing the tires down, which means less traction and a higher chance of skidding.",
+          "category": "Driving Techniques",
+          "difficulty": "hard"
+        },
+        {
+          "id": 19,
+          "question": "What is the most common cause of serious vehicle skids?",
+          "options": [
+            "Worn-out brake pads.",
+            "Driving too fast for road conditions.",
+            "Worn tires."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Driving too fast for road conditions is the leading cause of skids. Speed should always be adjusted for weather, traffic, and road surface.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "If a drive-wheel skid occurs (the rear wheels slide sideways), you should:",
+          "options": [
+            "Stop braking, push in the clutch, and steer in the direction you want to go.",
+            "Brake hard and hold the wheel straight.",
+            "Speed up to straighten the vehicle."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Stop braking to let the wheels turn freely, push the clutch in to disconnect the drive train, and counter-steer toward where you want the vehicle to go.",
+          "category": "Emergency Procedures",
+          "difficulty": "hard"
+        },
+        {
+          "id": 21,
+          "question": "What is the proper way to hold the steering wheel?",
+          "options": [
+            "With one hand at the bottom.",
+            "With both hands on opposite sides of the wheel.",
+            "With both hands inside the wheel for better grip."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Keep both hands firmly on opposite sides of the wheel (about 9 and 3 o'clock). Hands inside the wheel can cause severe injury if the wheel jerks.",
+          "category": "Driving Techniques",
+          "difficulty": "easy"
+        },
+        {
+          "id": 22,
+          "question": "When making a right turn at an intersection in a large vehicle, you should:",
+          "options": [
+            "Swing wide to the left before turning.",
+            "Turn wide as you complete the turn (keep the rear of the vehicle close to the curb).",
+            "Use the left lane to make the turn."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Keep the rear of your vehicle close to the curb while turning to prevent other drivers from passing on the right and being trapped between you and the curb.",
+          "category": "Driving Techniques",
+          "difficulty": "medium"
+        },
+        {
+          "id": 23,
+          "question": "How can you avoid jackknifing a trailer?",
+          "options": [
+            "Brake hard with the trailer hand valve.",
+            "Avoid hard braking, especially while turning, and use the service brake gently.",
+            "Always speed up through curves."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Jackknifing happens when the trailer pushes the tractor sideways, often from braking too hard. Brake gently, especially in curves, and never rely on the hand valve.",
+          "category": "Combination Vehicles",
+          "difficulty": "hard"
+        },
+        {
+          "id": 24,
+          "question": "When uncoupling a trailer, what should you do before pulling the tractor away?",
+          "options": [
+            "Lower the landing gear until it firmly supports the trailer.",
+            "Drive forward a few feet to test the connection.",
+            "Apply the trailer parking brake only."
+          ],
+          "correctAnswer": 0,
+          "explanation": "The landing gear must be fully supporting the trailer's weight before the kingpin is released, or the trailer can fall when the tractor pulls away.",
+          "category": "Combination Vehicles",
+          "difficulty": "medium"
+        },
+        {
+          "id": 25,
+          "question": "When inspecting the air brake system, the warning device for low air pressure should activate before pressure drops below:",
+          "options": [
+            "20 psi.",
+            "60 psi.",
+            "100 psi."
+          ],
+          "correctAnswer": 1,
+          "explanation": "The low-air warning must activate before pressure falls below 60 psi. Below that level, brakes lose stopping power and emergency brakes may apply.",
+          "category": "Air Brakes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "What does it mean if the spring brakes apply automatically while you are driving?",
+          "options": [
+            "The system is functioning normally.",
+            "There is a major air loss, and you should stop and have the system checked.",
+            "You should release the parking brake and continue driving."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Spring (emergency) brakes apply automatically when air pressure drops too low. This indicates a major leak, and the vehicle must be repaired before continuing.",
+          "category": "Air Brakes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 27,
+          "question": "Which of the following is true about cargo securement?",
+          "options": [
+            "Cargo should be inspected once at the start of the trip.",
+            "Cargo must be inspected within the first 50 miles and every 150 miles or 3 hours after that.",
+            "Only oversize loads require securement inspection during a trip."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Drivers must re-check cargo within the first 50 miles, then every 150 miles or every 3 hours (whichever comes first), and after every break.",
+          "category": "Cargo",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "What is the best way to check that your headlights are working before a trip?",
+          "options": [
+            "Turn them on and walk around the vehicle to look at them.",
+            "Listen for a clicking noise.",
+            "Wait until it gets dark."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Walk around the vehicle to confirm all lights actually illuminate. Doing so finds burned-out bulbs, dirty lenses, and wiring problems.",
+          "category": "Pre-Trip Inspection",
+          "difficulty": "easy"
+        },
+        {
+          "id": 29,
+          "question": "Which of the following is a sign your vehicle's brakes are out of adjustment?",
+          "options": [
+            "Stopping power is reduced and stopping distance increases.",
+            "The brakes feel firmer than usual.",
+            "The engine runs rougher."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Out-of-adjustment brakes cannot deliver full braking force, which increases stopping distance. Brakes must be inspected and adjusted regularly.",
+          "category": "Air Brakes",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "Empty trucks require ____ stopping distances than fully loaded trucks because empty trucks have ____ traction.",
+          "options": [
+            "Shorter; more.",
+            "Longer; less.",
+            "The same; equal."
+          ],
+          "correctAnswer": 1,
+          "explanation": "An empty truck has less weight pressing the tires onto the road, which reduces traction and means brakes can lock up sooner, lengthening stopping distance.",
+          "category": "Driving Techniques",
+          "difficulty": "hard"
+        }
+      ]
+    }
+  ]
+}

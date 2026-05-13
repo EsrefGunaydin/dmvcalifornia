@@ -1,9 +1,22 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, Fragment } from 'react';
 import Link from 'next/link';
-import { Search, LayoutGrid, List, SlidersHorizontal } from 'lucide-react';
+import { Search, LayoutGrid, List, SlidersHorizontal, Globe } from 'lucide-react';
 import MultiplexAd from './MultiplexAd';
+
+type QuizLanguage =
+  | 'en'
+  | 'es'
+  | 'tr'
+  | 'zh'
+  | 'ar'
+  | 'hy'
+  | 'fa'
+  | 'pa'
+  | 'ru'
+  | 'tl'
+  | 'vi';
 
 interface Quiz {
   id: string | number;
@@ -13,6 +26,7 @@ interface Quiz {
   slug: string;
   passingScore: number;
   timeLimit?: number;
+  language?: QuizLanguage;
   questions: any[];
 }
 
@@ -20,17 +34,58 @@ interface PracticeTestsContentProps {
   quizzes: Quiz[];
 }
 
+const LANGUAGE_OPTIONS: { value: 'all' | QuizLanguage; label: string }[] = [
+  { value: 'all', label: '🌐 All Languages' },
+  { value: 'en', label: '🇺🇸 English' },
+  { value: 'es', label: '🇪🇸 Español' },
+  { value: 'tr', label: '🇹🇷 Türkçe' },
+  { value: 'zh', label: '🇨🇳 中文' },
+  { value: 'ar', label: '🇸🇦 العربية' },
+  { value: 'hy', label: '🇦🇲 Հայերեն' },
+  { value: 'fa', label: '🇮🇷 فارسی' },
+  { value: 'pa', label: '🇮🇳 ਪੰਜਾਬੀ' },
+  { value: 'ru', label: '🇷🇺 Русский' },
+  { value: 'tl', label: '🇵🇭 Tagalog' },
+  { value: 'vi', label: '🇻🇳 Tiếng Việt' },
+];
+
+const LANGUAGE_FLAG: Record<QuizLanguage, string> = {
+  en: '🇺🇸',
+  es: '🇪🇸',
+  tr: '🇹🇷',
+  zh: '🇨🇳',
+  ar: '🇸🇦',
+  hy: '🇦🇲',
+  fa: '🇮🇷',
+  pa: '🇮🇳',
+  ru: '🇷🇺',
+  tl: '🇵🇭',
+  vi: '🇻🇳',
+};
+
 export default function PracticeTestsContent({ quizzes }: PracticeTestsContentProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('default');
   const [filterCategory, setFilterCategory] = useState('all');
+  const [filterLanguage, setFilterLanguage] = useState<'all' | QuizLanguage>('all');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
-  // Get unique categories
+  // Get unique categories, narrowed to the selected language so categories from
+  // hidden languages don't clutter the dropdown
   const categories = useMemo(() => {
-    const cats = new Set(quizzes.map(q => q.category));
+    const visible = filterLanguage === 'all'
+      ? quizzes
+      : quizzes.filter(q => (q.language ?? 'en') === filterLanguage);
+    const cats = new Set(visible.map(q => q.category));
     return ['all', ...Array.from(cats)];
-  }, [quizzes]);
+  }, [quizzes, filterLanguage]);
+
+  // Reset category when it's no longer valid for the chosen language
+  useEffect(() => {
+    if (filterCategory !== 'all' && !categories.includes(filterCategory)) {
+      setFilterCategory('all');
+    }
+  }, [categories, filterCategory]);
 
   // Filter and sort quizzes
   const filteredQuizzes = useMemo(() => {
@@ -38,7 +93,9 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
       const matchesSearch = quiz.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            quiz.description.toLowerCase().includes(searchQuery.toLowerCase());
       const matchesCategory = filterCategory === 'all' || quiz.category === filterCategory;
-      return matchesSearch && matchesCategory;
+      const quizLang = quiz.language ?? 'en';
+      const matchesLanguage = filterLanguage === 'all' || quizLang === filterLanguage;
+      return matchesSearch && matchesCategory && matchesLanguage;
     });
 
     // Sort
@@ -51,10 +108,11 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
     }
 
     return filtered;
-  }, [quizzes, searchQuery, sortBy, filterCategory]);
+  }, [quizzes, searchQuery, sortBy, filterCategory, filterLanguage]);
 
   return (
     <>
+      <div id="language-filter-anchor" className="scroll-mt-24" />
       {/* Filter and Search Controls */}
       <div className="mb-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
         {/* Left side: Sort, Filter, View Mode */}
@@ -72,6 +130,23 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
               <option value="category">Sort by Category</option>
             </select>
             <SlidersHorizontal className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+          </div>
+
+          {/* Language Filter */}
+          <div className="relative">
+            <select
+              value={filterLanguage}
+              onChange={(e) => setFilterLanguage(e.target.value as 'all' | QuizLanguage)}
+              className="appearance-none bg-white border border-gray-300 rounded-lg pl-9 pr-8 py-2.5 text-sm font-medium text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer"
+              aria-label="Filter by language"
+            >
+              {LANGUAGE_OPTIONS.map(opt => (
+                <option key={opt.value} value={opt.value}>
+                  {opt.label}
+                </option>
+              ))}
+            </select>
+            <Globe className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
           </div>
 
           {/* Category Filter */}
@@ -136,18 +211,23 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
       {viewMode === 'grid' ? (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {filteredQuizzes.map((quiz, index) => (
-            <>
+            <Fragment key={quiz.id}>
               <Link
-                key={quiz.id}
                 href={`/practice-test/${quiz.slug}`}
                 className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
+                dir={quiz.language === 'ar' || quiz.language === 'fa' ? 'rtl' : 'auto'}
               >
               <div className="p-6">
-                {/* Category Badge */}
-                <div className="mb-4">
+                {/* Category Badge + Language Flag */}
+                <div className="mb-4 flex items-center gap-2 flex-wrap">
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
                     {quiz.category}
                   </span>
+                  {quiz.language && quiz.language !== 'en' && (
+                    <span className="text-xl" aria-label={`Language: ${quiz.language}`} title={`Language: ${quiz.language}`}>
+                      {LANGUAGE_FLAG[quiz.language]}
+                    </span>
+                  )}
                 </div>
 
                 {/* Title */}
@@ -202,7 +282,7 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
                 <MultiplexAd />
               </div>
             )}
-          </>
+          </Fragment>
           ))}
         </div>
       ) : (
@@ -214,11 +294,16 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
               className="bg-white rounded-lg shadow hover:shadow-lg transition-shadow overflow-hidden group flex items-center"
             >
               <div className="p-6 flex-1 flex items-center gap-6">
-                {/* Category Badge */}
-                <div className="flex-shrink-0">
+                {/* Category Badge + Language Flag */}
+                <div className="flex-shrink-0 flex items-center gap-2">
                   <span className="bg-primary/10 text-primary px-3 py-1.5 rounded-full text-sm font-medium">
                     {quiz.category}
                   </span>
+                  {quiz.language && quiz.language !== 'en' && (
+                    <span className="text-lg" aria-label={`Language: ${quiz.language}`} title={`Language: ${quiz.language}`}>
+                      {LANGUAGE_FLAG[quiz.language]}
+                    </span>
+                  )}
                 </div>
 
                 {/* Title and Description */}
@@ -275,6 +360,7 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
             onClick={() => {
               setSearchQuery('');
               setFilterCategory('all');
+              setFilterLanguage('all');
               setSortBy('default');
             }}
             className="mt-4 text-primary hover:underline font-medium"

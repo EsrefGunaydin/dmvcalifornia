@@ -10,7 +10,14 @@ struct Quiz: Identifiable, Codable, Hashable {
     let category: String?
     let passingScore: Int?
     let timeLimit: Double?  // Changed to Double to handle decimal values like 22.5
+    let language: String?
     var questions: [Question]?
+
+    /// True when the quiz content should render right-to-left (Arabic, Farsi, etc.)
+    var isRTL: Bool {
+        guard let language = language else { return false }
+        return language == "ar" || language == "fa"
+    }
 
     // Computed property for questions count
     var questionsCount: Int {
@@ -37,7 +44,7 @@ struct Quiz: Identifiable, Codable, Hashable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, title, description, slug, category, passingScore, timeLimit, questions
+        case id, title, description, slug, category, passingScore, timeLimit, language, questions
     }
 
     init(from decoder: Decoder) throws {
@@ -56,6 +63,7 @@ struct Quiz: Identifiable, Codable, Hashable {
         self.category = try container.decodeIfPresent(String.self, forKey: .category)
         self.passingScore = try container.decodeIfPresent(Int.self, forKey: .passingScore)
         self.timeLimit = try container.decodeIfPresent(Double.self, forKey: .timeLimit)
+        self.language = try container.decodeIfPresent(String.self, forKey: .language)
         self.questions = try container.decodeIfPresent([Question].self, forKey: .questions)
     }
 
@@ -67,6 +75,7 @@ struct Quiz: Identifiable, Codable, Hashable {
         category: String? = nil,
         passingScore: Int? = nil,
         timeLimit: Double? = nil,
+        language: String? = nil,
         questions: [Question]? = nil
     ) {
         self.id = id
@@ -76,6 +85,7 @@ struct Quiz: Identifiable, Codable, Hashable {
         self.category = category
         self.passingScore = passingScore
         self.timeLimit = timeLimit
+        self.language = language
         self.questions = questions
     }
 }

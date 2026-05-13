@@ -610,7 +610,8 @@
           "difficulty": "easy",
           "id": 46
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "dmv-simulation-test-2",
@@ -1223,7 +1224,8 @@
           "difficulty": "medium",
           "id": 46
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-1",
@@ -1521,7 +1523,8 @@
           "category": "Traffic Signs",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-2",
@@ -1794,7 +1797,8 @@
           "category": "Safe Driving",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-3",
@@ -2041,7 +2045,8 @@
           "category": "Turning",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-4",
@@ -2250,7 +2255,8 @@
           "category": "Speed Limits",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-5",
@@ -2514,7 +2520,8 @@
           "category": "Railroad Crossings",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-6",
@@ -2698,7 +2705,8 @@
           "category": "Parking",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-7",
@@ -2906,7 +2914,8 @@
           "category": "Safe Driving",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-8",
@@ -3075,7 +3084,8 @@
           "category": "Speed Limits",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-9",
@@ -3270,7 +3280,8 @@
           "difficulty": "easy",
           "id": 14
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-10",
@@ -3463,7 +3474,8 @@
           "category": "Turning",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-11",
@@ -3619,7 +3631,8 @@
           "category": "Freeway Driving",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-12",
@@ -3812,7 +3825,8 @@
           "category": "Traffic Signals",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-13",
@@ -4020,7 +4034,8 @@
           "category": "Traffic Signs",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-14",
@@ -4217,7 +4232,8 @@
           "id": 14,
           "image": "/images/traffic-signs/no-right-turn-sign.webp"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-15",
@@ -4429,7 +4445,8 @@
           "category": "Speed Laws",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-16",
@@ -4700,7 +4717,8 @@
           "category": "Parking",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-mixed-review",
@@ -5535,7 +5553,8 @@
           "difficulty": "easy",
           "id": 63
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "dmv-simulation-test-3",
@@ -6190,7 +6209,8 @@
           "category": "Lane Markings",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "sample-questions-test",
@@ -6761,7 +6781,8 @@
           "category": "Traffic Signs",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "dmv-spanish-practice-test-1",
@@ -7032,7 +7053,8 @@
           "category": "Safe Driving",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "es"
     },
     {
       "id": "dmv-spanish-practice-test-2",
@@ -7303,7 +7325,8 @@
           "category": "Adverse Conditions",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "es"
     },
     {
       "id": "dmv-spanish-simulation-test-1",
@@ -7834,7 +7857,8 @@
           "category": "Adverse Conditions",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "es"
     }
   ]
 }

@@ -30,8 +30,9 @@ struct QuizDetailView: View {
                         // Progress Header
                         progressHeader
 
-                        // Question Card
+                        // Question Card — flips to RTL for Arabic/Farsi quizzes
                         questionCard(question)
+                            .environment(\.layoutDirection, viewModel.isRTL ? .rightToLeft : .leftToRight)
 
                         // Native Ad
                         NativeAdView(refreshKey: viewModel.nativeAdRefreshKey)
@@ -254,7 +255,7 @@ struct QuizDetailView: View {
                     Button {
                         viewModel.checkAnswer()
                     } label: {
-                        Text("Check Answer")
+                        Text(viewModel.canCheckAnswer ? "Check Answer" : "Select an answer")
                             .font(DMVTheme.Typography.headline)
                             .foregroundColor(.white)
                             .frame(maxWidth: .infinity)

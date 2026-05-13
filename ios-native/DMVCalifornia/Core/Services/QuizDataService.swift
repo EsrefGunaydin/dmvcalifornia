@@ -35,6 +35,13 @@ protocol QuizDataServiceProtocol {
     func getSpanishQuizzes() async throws -> [Quiz]
     func getTurkishQuizzes() async throws -> [Quiz]
     func getChineseQuizzes() async throws -> [Quiz]
+    func getArabicQuizzes() async throws -> [Quiz]
+    func getArmenianQuizzes() async throws -> [Quiz]
+    func getFarsiQuizzes() async throws -> [Quiz]
+    func getPunjabiQuizzes() async throws -> [Quiz]
+    func getRussianQuizzes() async throws -> [Quiz]
+    func getTagalogQuizzes() async throws -> [Quiz]
+    func getVietnameseQuizzes() async throws -> [Quiz]
     func getFlashcardSets() async throws -> [FlashcardSet]
     func getSpanishFlashcards() async throws -> [FlashcardSet]
     func getTurkishFlashcards() async throws -> [FlashcardSet]
@@ -52,6 +59,13 @@ final class QuizDataService: QuizDataServiceProtocol {
     private var spanishQuizzesCache: [Quiz]?
     private var turkishQuizzesCache: [Quiz]?
     private var chineseQuizzesCache: [Quiz]?
+    private var arabicQuizzesCache: [Quiz]?
+    private var armenianQuizzesCache: [Quiz]?
+    private var farsiQuizzesCache: [Quiz]?
+    private var punjabiQuizzesCache: [Quiz]?
+    private var russianQuizzesCache: [Quiz]?
+    private var tagalogQuizzesCache: [Quiz]?
+    private var vietnameseQuizzesCache: [Quiz]?
     private var flashcardsCache: [FlashcardSet]?
     private var spanishFlashcardsCache: [FlashcardSet]?
     private var turkishFlashcardsCache: [FlashcardSet]?
@@ -90,7 +104,19 @@ final class QuizDataService: QuizDataServiceProtocol {
 
     func getQuizzes() async throws -> [Quiz] {
         try await loadAndSeparateQuizzes()
-        return englishQuizzesCache ?? []
+        var english = englishQuizzesCache ?? []
+
+        // Motorcycle (Class M) — English-language quizzes
+        if let response = try? await loadJSON(filename: "motorcycle-quizzes", type: QuizzesResponse.self) {
+            english.append(contentsOf: response.quizzes)
+        }
+        // Commercial (Class A/B) — English-language quizzes
+        if let response = try? await loadJSON(filename: "commercial-quizzes", type: QuizzesResponse.self) {
+            english.append(contentsOf: response.quizzes)
+        }
+
+        englishQuizzesCache = english
+        return english
     }
 
     func getQuizById(_ id: String) async throws -> Quiz? {
@@ -164,6 +190,83 @@ final class QuizDataService: QuizDataServiceProtocol {
         }
     }
 
+    // MARK: - Arabic Quizzes
+
+    func getArabicQuizzes() async throws -> [Quiz] {
+        if let cached = arabicQuizzesCache { return cached }
+        do {
+            let response = try await loadJSON(filename: "arabic-quizzes", type: QuizzesResponse.self)
+            arabicQuizzesCache = response.quizzes
+            return response.quizzes
+        } catch { return [] }
+    }
+
+    // MARK: - Armenian Quizzes
+
+    func getArmenianQuizzes() async throws -> [Quiz] {
+        if let cached = armenianQuizzesCache { return cached }
+        do {
+            let response = try await loadJSON(filename: "armenian-quizzes", type: QuizzesResponse.self)
+            armenianQuizzesCache = response.quizzes
+            return response.quizzes
+        } catch { return [] }
+    }
+
+    // MARK: - Farsi Quizzes
+
+    func getFarsiQuizzes() async throws -> [Quiz] {
+        if let cached = farsiQuizzesCache { return cached }
+        do {
+            let response = try await loadJSON(filename: "farsi-quizzes", type: QuizzesResponse.self)
+            farsiQuizzesCache = response.quizzes
+            return response.quizzes
+        } catch { return [] }
+    }
+
+    // MARK: - Punjabi Quizzes
+
+    func getPunjabiQuizzes() async throws -> [Quiz] {
+        if let cached = punjabiQuizzesCache { return cached }
+        do {
+            let response = try await loadJSON(filename: "punjabi-quizzes", type: QuizzesResponse.self)
+            punjabiQuizzesCache = response.quizzes
+            return response.quizzes
+        } catch { return [] }
+    }
+
+    // MARK: - Russian Quizzes
+
+    func getRussianQuizzes() async throws -> [Quiz] {
+        if let cached = russianQuizzesCache { return cached }
+        do {
+            let response = try await loadJSON(filename: "russian-quizzes", type: QuizzesResponse.self)
+            russianQuizzesCache = response.quizzes
+            return response.quizzes
+        } catch { return [] }
+    }
+
+    // MARK: - Tagalog Quizzes
+
+    func getTagalogQuizzes() async throws -> [Quiz] {
+        if let cached = tagalogQuizzesCache { return cached }
+        do {
+            let response = try await loadJSON(filename: "tagalog-quizzes", type: QuizzesResponse.self)
+            tagalogQuizzesCache = response.quizzes
+            return response.quizzes
+        } catch { return [] }
+    }
+
+    // MARK: - Vietnamese Quizzes
+
+    func getVietnameseQuizzes() async throws -> [Quiz] {
+        if let cached = vietnameseQuizzesCache { return cached }
+        do {
+            let response = try await loadJSON(filename: "vietnamese-quizzes", type: QuizzesResponse.self)
+            vietnameseQuizzesCache = response.quizzes
+            return response.quizzes
+        } catch { return [] }
+    }
+
     // MARK: - All Quizzes (Combined)
 
     func getAllQuizzes() async throws -> [Quiz] {
@@ -171,9 +274,29 @@ final class QuizDataService: QuizDataServiceProtocol {
         async let spanish = getSpanishQuizzes()
         async let turkish = getTurkishQuizzes()
         async let chinese = getChineseQuizzes()
+        async let arabic = getArabicQuizzes()
+        async let armenian = getArmenianQuizzes()
+        async let farsi = getFarsiQuizzes()
+        async let punjabi = getPunjabiQuizzes()
+        async let russian = getRussianQuizzes()
+        async let tagalog = getTagalogQuizzes()
+        async let vietnamese = getVietnameseQuizzes()
 
-        let (englishQuizzes, spanishQuizzes, turkishQuizzes, chineseQuizzes) = try await (english, spanish, turkish, chinese)
+        let englishQuizzes = try await english
+        let spanishQuizzes = try await spanish
+        let turkishQuizzes = try await turkish
+        let chineseQuizzes = try await chinese
+        let arabicQuizzes = try await arabic
+        let armenianQuizzes = try await armenian
+        let farsiQuizzes = try await farsi
+        let punjabiQuizzes = try await punjabi
+        let russianQuizzes = try await russian
+        let tagalogQuizzes = try await tagalog
+        let vietnameseQuizzes = try await vietnamese
+
         return englishQuizzes + spanishQuizzes + turkishQuizzes + chineseQuizzes
+            + arabicQuizzes + armenianQuizzes + farsiQuizzes + punjabiQuizzes
+            + russianQuizzes + tagalogQuizzes + vietnameseQuizzes
     }
 
     // MARK: - Flashcards (English)
@@ -265,6 +388,13 @@ final class QuizDataService: QuizDataServiceProtocol {
         spanishQuizzesCache = nil
         turkishQuizzesCache = nil
         chineseQuizzesCache = nil
+        arabicQuizzesCache = nil
+        armenianQuizzesCache = nil
+        farsiQuizzesCache = nil
+        punjabiQuizzesCache = nil
+        russianQuizzesCache = nil
+        tagalogQuizzesCache = nil
+        vietnameseQuizzesCache = nil
         flashcardsCache = nil
         spanishFlashcardsCache = nil
         turkishFlashcardsCache = nil

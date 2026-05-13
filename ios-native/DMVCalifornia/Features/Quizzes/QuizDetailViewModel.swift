@@ -50,6 +50,7 @@ final class QuizDetailViewModel: ObservableObject {
     // Quiz metadata
     @Published var timeLimit: Double?
     @Published var passingScore: Int?
+    @Published var isRTL: Bool = false
 
     // Timer
     @Published var remainingSeconds: Int = 0
@@ -230,6 +231,7 @@ final class QuizDetailViewModel: ObservableObject {
             if let quiz = try await quizDataService.getQuizById(quizId) {
                 timeLimit = quiz.timeLimit
                 passingScore = quiz.passingScore
+                isRTL = quiz.isRTL
                 questions = quiz.questions ?? []
             } else {
                 questions = try await quizDataService.getQuizQuestions(quizId: quizId)

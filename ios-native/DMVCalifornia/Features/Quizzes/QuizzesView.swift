@@ -8,6 +8,13 @@ enum LanguageFilter: String, CaseIterable {
     case spanish = "🇪🇸"
     case turkish = "🇹🇷"
     case chinese = "🇨🇳"
+    case arabic = "🇸🇦"
+    case armenian = "🇦🇲"
+    case farsi = "🇮🇷"
+    case punjabi = "🇮🇳"
+    case russian = "🇷🇺"
+    case tagalog = "🇵🇭"
+    case vietnamese = "🇻🇳"
 }
 
 struct QuizzesView: View {

@@ -1,0 +1,510 @@
+{
+  "quizzes": [
+    {
+      "id": "vietnamese-simulator-test",
+      "title": "DMV Vietnamese Simulator Test / DMV Bài Thi Mô Phỏng Tiếng Việt",
+      "description": "California DMV bài thi mô phỏng bằng tiếng Việt. California DMV Vietnamese driving test with real practice questions from official DMV sample tests.",
+      "category": "Vietnamese Tests / Bài Thi Tiếng Việt",
+      "slug": "vietnamese-simulator-test",
+      "language": "vi",
+      "passingScore": 83,
+      "timeLimit": 60,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Khi nào được phép lái xe ra khỏi làn đường để vượt xe khác?",
+          "options": [
+            "Nếu xe đằng trước đang rẽ trái.",
+            "Trường hợp đó không hợp pháp trong bất kỳ điều kiện nào.",
+            "Nếu có từ hai làn đường một chiều trở lên."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Được phép lái xe ra khỏi làn đường để vượt xe khác nếu có từ hai làn đường một chiều trở lên.",
+          "category": "Vượt xe",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "Nếu đường ngang giao cắt với đường sắt không được kiểm soát, giới hạn tốc độ là bao nhiêu khi bạn đang trong phạm vi 100 feet và không thể quan sát phạm vi 400 feet từ cả hai hướng?",
+          "options": [
+            "15 dặm/giờ.",
+            "25 dặm/giờ.",
+            "10 dặm/giờ."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Giới hạn tốc độ là 15 dặm/giờ khi bạn trong phạm vi 100 feet của đường ngang giao cắt đường sắt không được kiểm soát và không thể quan sát 400 feet từ cả hai hướng.",
+          "category": "Tốc độ",
+          "difficulty": "hard"
+        },
+        {
+          "id": 3,
+          "question": "Điều nào sau đây là ví dụ cho việc đỗ xe song song đúng cách trên đường phố?",
+          "options": [
+            "Bánh trước và bánh sau đang chạm vào lề đường liền kề.",
+            "Xe cách các xe khác ít nhất hai feet.",
+            "Bánh trước và bánh sau cách lề đường 18 inch."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Khi đỗ xe song song đúng cách, bánh trước và bánh sau phải cách lề đường 18 inch.",
+          "category": "Đậu xe",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "Bạn nên lái xe với tốc độ nào khi đi vào đường cao tốc?",
+          "options": [
+            "Bằng hoặc gần bằng tốc độ các xe đang lưu thông.",
+            "Chậm hơn tốc độ các xe đang lưu thông.",
+            "Nhanh hơn tốc độ các xe đang lưu thông."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Khi đi vào đường cao tốc, bạn nên lái xe với tốc độ bằng hoặc gần bằng tốc độ các xe đang lưu thông.",
+          "category": "Đường cao tốc",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "Bạn nên chuyển từ đèn pha sang đèn cốt khi đến gần xe đang đi về phía mình bao nhiêu feet?",
+          "options": [
+            "700 feet.",
+            "900 feet.",
+            "500 feet."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bạn nên chuyển từ đèn pha sang đèn cốt khi đến gần xe đang đi về phía mình trong khoảng 900 feet.",
+          "category": "Đèn xe",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "Ai có thể đỗ xe hợp pháp bên cạnh lề đường sơn màu xanh?",
+          "options": [
+            "Một người nào đó đang đón hoặc trả khách tại địa điểm đó.",
+            "Người khuyết tật có biển hiệu hoặc biển số xe đặc biệt dành cho người khuyết tật.",
+            "Một người sẽ chỉ được đỗ ở lề đường trong vòng ít hơn 15 phút."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Lề đường sơn màu xanh chỉ dành cho người khuyết tật có biển hiệu hoặc biển số xe đặc biệt.",
+          "category": "Đậu xe",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "Bạn nên làm gì nếu xe buýt trường học đi phía trước bắt đầu nháy đèn cảnh báo màu vàng?",
+          "options": [
+            "Giảm tốc độ và chuẩn bị dừng lại.",
+            "Dừng lại ngay lập tức và đứng yên.",
+            "Thận trọng vượt xe buýt trường học từ bên trái."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Khi xe buýt trường học nháy đèn vàng, bạn nên giảm tốc độ và chuẩn bị dừng lại.",
+          "category": "Xe buýt trường học",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "Điều nào sau đây là yêu cầu thuộc Luật Tốc độ Căn bản của California?",
+          "options": [
+            "Luôn lái xe trong giới hạn tốc độ dù trong bất kể điều kiện nào.",
+            "Đồng nhất tốc độ của bạn với tốc độ giao thông xung quanh.",
+            "Không bao giờ lái xe nhanh hơn mức an toàn đối với điều kiện hiện tại."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Luật Tốc độ Căn bản của California yêu cầu không bao giờ lái xe nhanh hơn mức an toàn đối với điều kiện hiện tại.",
+          "category": "Tốc độ",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "Bạn phải thông báo cho DMV trong vòng 5 ngày, nếu bạn:",
+          "options": [
+            "Nhận lỗi vi phạm giao thông.",
+            "Bán hoặc chuyển nhượng quyền sở hữu xe của bạn.",
+            "Sơn xe của bạn thành một màu khác."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bạn phải thông báo cho DMV trong vòng 5 ngày nếu bán hoặc chuyển nhượng quyền sở hữu xe của bạn.",
+          "category": "Luật DMV",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "Điều nào sau đây là ví dụ về thực hành lái xe an toàn?",
+          "options": [
+            "Chỉ nhìn chằm chằm vào phần giữa đường.",
+            "Luôn di chuyển mắt để quan sát xung quanh.",
+            "Sử dụng đèn pha trong sương mù."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Thực hành lái xe an toàn là luôn di chuyển mắt để quan sát xung quanh.",
+          "category": "Lái xe an toàn",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "Bạn nên làm gì khi đến giao lộ có người điều khiển xe lăn đã đi vào phần đường dành cho người đi bộ qua đường?",
+          "options": [
+            "Tiếp tục dừng lại phía sau vạch sang đường cho đến khi xe lăn có động cơ kết thúc việc sang đường an toàn.",
+            "Nhận quyền ưu tiên nếu xe lăn có động cơ dừng ở lối dành cho người đi bộ qua đường.",
+            "Tiếp tục dừng lại sau vạch sang đường gần nhất cho đến khi xe lăn có động cơ vượt ra ngoài phạm vi của xe bạn."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Bạn phải tiếp tục dừng lại phía sau vạch sang đường cho đến khi xe lăn có động cơ kết thúc việc sang đường an toàn.",
+          "category": "Người đi bộ",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "Điều nào sau đây là đúng về xe tải cỡ lớn?",
+          "options": [
+            "Xe có hệ thống phanh khẩn cấp lớn và mạnh mẽ, giúp xe có khả năng dừng lại nhanh chóng.",
+            "Xe có những điểm mù lớn, khiến tài xế xe tải khó nhìn thấy các phương tiện khác.",
+            "Xe kết cấu từ nhiều rơ-moóc, giúp xe cơ động hơn so với các phương tiện chở khách."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Xe tải cỡ lớn có những điểm mù lớn, khiến tài xế xe tải khó nhìn thấy các phương tiện khác.",
+          "category": "An toàn",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "Một trong những nguyên nhân phổ biến nhất gây ra va chạm giao thông là gì?",
+          "options": [
+            "Chú ý đến không gian xung quanh bạn.",
+            "Luồng lượng giao thông cải thiện hơn.",
+            "Người lái xe mất tập trung."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Người lái xe mất tập trung là một trong những nguyên nhân phổ biến nhất gây ra va chạm giao thông.",
+          "category": "An toàn",
+          "difficulty": "easy"
+        },
+        {
+          "id": 14,
+          "question": "Bất kỳ người lái xe nào cố tình bỏ trốn hoặc cố gắng trốn tránh người thi hành luật pháp, mà trong trường hợp đó có một người bị thương nặng, sẽ phải:",
+          "options": [
+            "Bị giam trong nhà tù tiểu bang lên đến bảy năm.",
+            "Mức phạt dưới $1.000.",
+            "Tham gia lớp học kiềm chế cơn tức giận."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Người lái xe bỏ trốn khỏi cảnh sát gây thương tích nặng có thể bị giam trong nhà tù tiểu bang lên đến bảy năm.",
+          "category": "Luật pháp",
+          "difficulty": "hard"
+        },
+        {
+          "id": 15,
+          "question": "Người lái xe đang dừng xe ở ngã tư và muốn rẽ trái nên làm gì?",
+          "options": [
+            "Giành quyền ưu tiên trước luồng giao thông đang tới.",
+            "Rẽ ngay lập tức nếu không có người đi bộ.",
+            "Nhường quyền ưu tiên cho bất kỳ xe nào đang đến gần và đủ khả năng gây nguy hiểm."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Khi rẽ trái, bạn phải nhường quyền ưu tiên cho bất kỳ xe nào đang đến gần và đủ khả năng gây nguy hiểm.",
+          "category": "Quyền ưu tiên",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "Ngoài việc cài phanh, bạn nên làm gì khi đỗ xe trên dốc?",
+          "options": [
+            "Đảm bảo bánh xe phía trước song song với vỉa hè.",
+            "Đảm bảo rằng xe của bạn ở trạng thái \"tự do\".",
+            "Đảm bảo rằng xe của bạn đang ở vị trí \"đỗ\" hoặc vào số."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Khi đỗ xe trên dốc, ngoài việc cài phanh, bạn nên đảm bảo xe ở vị trí \"đỗ\" hoặc vào số.",
+          "category": "Đậu xe",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "Bạn dưới 18 tuổi và đã có giấy phép lái xe được tám tháng. Bạn có thể lái:",
+          "options": [
+            "Bất cứ lúc nào.",
+            "Từ 5 giờ sáng đến 11 giờ tối.",
+            "Từ 7 giờ sáng đến 8 giờ tối."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Người dưới 18 tuổi đã có bằng lái 8 tháng có thể lái xe từ 5 giờ sáng đến 11 giờ tối.",
+          "category": "Lái xe vị thành niên",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "Bạn nên bắt đầu rẽ trái từ đường một chiều sang đường một chiều tại đâu?",
+          "options": [
+            "Làn đường gần với trung tâm con phố nhất.",
+            "Làn đường bên trái ngoài cùng.",
+            "Bạn có thể rẽ từ bất kỳ làn đường nào."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Khi rẽ trái từ đường một chiều sang đường một chiều, bạn nên bắt đầu rẽ từ làn đường bên trái ngoài cùng.",
+          "category": "Rẽ xe",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "Bạn phải thông báo cho DMV bằng cách nộp biểu mẫu Báo cáo Xảy ra Tai nạn Giao thông ở California (SR-1) nếu:",
+          "options": [
+            "Bạn đã cho phép một tài xế có giấy phép từ tiểu bang khác lái xe của bạn.",
+            "Bạn đã tham gia vào một vụ va chạm gây ra thiệt hại hơn $1.000.",
+            "Bạn không thanh toán được phí đăng ký."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bạn phải nộp biểu mẫu SR-1 nếu tham gia vào vụ va chạm gây ra thiệt hại hơn $1.000.",
+          "category": "Luật DMV",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "Trong một ngày nắng nóng, ở lượng mưa là bao nhiêu sẽ khiến đường trở nên trơn trượt?",
+          "options": [
+            "Khi trời đã mưa được vài giờ.",
+            "Trong vài phút đầu tiên.",
+            "Ngay sau khi trời tạnh mưa."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trong một ngày nắng nóng, đường trở nên trơn trượt nhất trong vài phút đầu tiên khi trời bắt đầu mưa.",
+          "category": "Điều kiện đường",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "Lề đường sơn màu gì không cho phép các xe dừng, đỗ?",
+          "options": [
+            "Vàng.",
+            "Đỏ.",
+            "Trắng."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Lề đường sơn màu đỏ không cho phép các xe dừng hoặc đỗ.",
+          "category": "Đậu xe",
+          "difficulty": "easy"
+        },
+        {
+          "id": 22,
+          "question": "Bạn phải thông báo cho DMV bằng cách nộp biểu mẫu Báo cáo Xảy ra Tai nạn Giao thông ở California (SR-1) nếu:",
+          "options": [
+            "Xe của bạn không đạt yêu cầu trong chương trình kiểm tra khói bụi.",
+            "Bạn đã tham gia vào một vụ va chạm có gây ra thương tích.",
+            "Bạn thay đổi công ty bảo hiểm."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bạn phải nộp biểu mẫu SR-1 nếu tham gia vào vụ va chạm có gây ra thương tích.",
+          "category": "Luật DMV",
+          "difficulty": "medium"
+        },
+        {
+          "id": 23,
+          "question": "Điều gì được biểu thị bằng bộ hai đường đôi màu vàng cách nhau hơn 2 feet?",
+          "options": [
+            "Các làn đường di chuyển cùng chiều.",
+            "Rào chắn.",
+            "Làn đường cho xe chở nhiều người/Làn đường dành cho xe cộ đông đúc (HOV)."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Bộ hai đường đôi màu vàng cách nhau hơn 2 feet biểu thị làn đường HOV (xe chở nhiều người).",
+          "category": "Vạch đường",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "Bạn nên làm gì nếu muốn rẽ phải ở ngã tư sắp tới?",
+          "options": [
+            "Nhập vào làn đường dành cho xe đạp trước khi rẽ.",
+            "Chờ đến khi đi hết làn đường dành cho xe đạp, sau đó rẽ.",
+            "Rẽ khỏi làn đường hiện tại của bạn và không đi vào làn đường dành cho xe đạp."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Khi muốn rẽ phải ở ngã tư có làn đường xe đạp, bạn nên nhập vào làn đường xe đạp trước khi rẽ. Lưu ý: Đáp án chính thức của DMV là nhập vào làn đường dành cho xe đạp trước khi rẽ.",
+          "category": "Rẽ xe",
+          "difficulty": "medium"
+        },
+        {
+          "id": 25,
+          "question": "Đường cao tốc có giới hạn tốc độ cho phép là 65 dặm/giờ. Điều đó có ý nghĩa gì?",
+          "options": [
+            "Bạn chỉ có thể lái xe nhanh hơn nếu không có phương tiện nào khác.",
+            "Bạn phải luôn luôn lái xe với tốc độ 65 dặm/giờ trên đường cao tốc đó.",
+            "Bạn chỉ được lái xe với tốc độ 65 dặm/giờ nếu điều kiện lái lý tưởng."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Giới hạn tốc độ 65 dặm/giờ chỉ áp dụng khi điều kiện lái lý tưởng.",
+          "category": "Tốc độ",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "Khi nào được phép đỗ xe trong khu vực cắt ngang (đường chéo)?",
+          "options": [
+            "Không bao giờ được phép đỗ xe ở khu vực có đường chéo.",
+            "Nếu khu vực này cách đường ray xe lửa ít nhất 20 feet.",
+            "Nếu khu vực được đặt biển báo là làn đường dành cho xe đạp, trừ trường hợp có biển báo khác."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Không bao giờ được phép đỗ xe ở khu vực có đường chéo.",
+          "category": "Đậu xe",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "Bạn nên làm gì nếu điện thoại di động đổ chuông và bạn không có thiết bị rảnh tay?",
+          "options": [
+            "Nghe điện thoại và trao đổi ngắn gọn.",
+            "Không nghe điện thoại và chuyển tin nhắn vào hộp thư thoại.",
+            "Nghe điện thoại nếu bạn đang dừng ở đèn đỏ."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Nếu không có thiết bị rảnh tay, bạn không nên nghe điện thoại và để tin nhắn chuyển vào hộp thư thoại.",
+          "category": "Mất tập trung",
+          "difficulty": "easy"
+        },
+        {
+          "id": 28,
+          "question": "Bạn nên làm gì nếu đèn đang xanh nhưng tại ngã tư đang tắc đường?",
+          "options": [
+            "Đi vào một phần ngã tư khi luồng giao thông cho phép.",
+            "Chờ và không đi qua ngã tư cho đến khi xe của bạn có thể băng qua hoàn toàn.",
+            "Lái xe trên lề đường, vòng qua luồng giao thông để giúp giảm ùn tắc."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bạn phải chờ và không đi qua ngã tư cho đến khi xe có thể băng qua hoàn toàn để không gây ùn tắc.",
+          "category": "Ngã tư",
+          "difficulty": "easy"
+        },
+        {
+          "id": 29,
+          "question": "Bạn nên kết thúc đoạn rẽ ở làn nào khi đang rẽ phải?",
+          "options": [
+            "Bất kỳ làn đường nào thông thoáng.",
+            "Làn đường gần mép đường bên trái nhất.",
+            "Làn đường gần mép đường bên phải nhất."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Khi rẽ phải, bạn nên kết thúc đoạn rẽ ở làn đường gần mép đường bên phải nhất.",
+          "category": "Rẽ xe",
+          "difficulty": "easy"
+        },
+        {
+          "id": 30,
+          "question": "Khi nào bạn bắt buộc phải tuân theo chỉ dẫn của người điều hướng giao thông?",
+          "options": [
+            "Tại mọi thời điểm.",
+            "Chỉ khi trẻ em có mặt trước trường học.",
+            "Chỉ trong giờ học."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Bạn phải tuân theo chỉ dẫn của người điều hướng giao thông tại mọi thời điểm.",
+          "category": "Luật giao thông",
+          "difficulty": "easy"
+        },
+        {
+          "id": 31,
+          "question": "Điều nào sau đây là vi phạm luật khi đang lái xe?",
+          "options": [
+            "Đeo tai nghe hoặc nút bịt tai bịt cả hai tai.",
+            "Đeo tai nghe hoặc nút bịt tai bịt một bên tai.",
+            "Sử dụng hệ thống kiểm soát hành trình đối với đường khu phố dân cư."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Vi phạm luật khi lái xe nếu đeo tai nghe hoặc nút bịt tai bịt cả hai tai.",
+          "category": "Luật pháp",
+          "difficulty": "easy"
+        },
+        {
+          "id": 32,
+          "question": "Bạn nên làm gì khi luồng giao thông di chuyển chậm và đông đúc, và bạn phải băng qua đường sắt để đến ngã tư sắp tới?",
+          "options": [
+            "Bắt đầu sang đường khi xe phía trước băng qua đường rầy.",
+            "Chờ trên đường ray cho đến khi đèn giao thông ở ngã tư chuyển sang xanh.",
+            "Chờ đến khi bạn có thể sang phía bên kia đường rầy trước khi đi tiếp."
+          ],
+          "correctAnswer": 2,
+          "explanation": "Bạn phải chờ đến khi có thể băng qua hoàn toàn phía bên kia đường rầy trước khi đi tiếp, không được dừng trên đường sắt.",
+          "category": "Đường sắt",
+          "difficulty": "medium"
+        },
+        {
+          "id": 33,
+          "question": "Bạn nên làm điều gì sau đây nếu có người đi sau bám đuôi?",
+          "options": [
+            "Chuyển làn và cho phép người đi sau vượt qua.",
+            "Tăng tốc độ để bắt kịp với tốc độ của xe.",
+            "Nhấn vào phanh để báo hiệu bạn đang di chuyển với tốc độ chậm hơn."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Nếu có người đi sau bám đuôi, bạn nên chuyển làn và cho phép người đó vượt qua.",
+          "category": "An toàn",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "Khi bạn đang lái xe vượt quá tốc độ, bạn có thể bị phạt lỗi chạy quá tốc độ:",
+          "options": [
+            "Nếu điều kiện đường xá hoặc thời tiết yêu cầu tốc độ chậm hơn.",
+            "Trong mọi trường hợp vì trường hợp đó luôn luôn hợp pháp.",
+            "Chỉ khi bạn đang đến gần một khúc cua gấp trên đường."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Bạn có thể bị phạt lỗi chạy quá tốc độ nếu điều kiện đường xá hoặc thời tiết yêu cầu tốc độ chậm hơn.",
+          "category": "Tốc độ",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "Nên sử dụng đèn nào trong trường hợp người lái xe khó nhìn thấy các xe khác do khói bụi bay qua đường?",
+          "options": [
+            "Đèn đỗ xe.",
+            "Đèn nháy khẩn cấp.",
+            "Đèn pha."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trong trường hợp khói bụi bay qua đường, nên sử dụng đèn nháy khẩn cấp để các xe khác có thể nhìn thấy bạn.",
+          "category": "Đèn xe",
+          "difficulty": "medium"
+        },
+        {
+          "id": 36,
+          "question": "Đèn tín hiệu giao thông màu vàng nhấp nháy hướng dẫn người lái xe phải làm gì?",
+          "options": [
+            "Dừng lại và đi tiếp khi điều kiện giao thông cho phép bạn đi tiếp an toàn.",
+            "Giảm tốc độ và đi tiếp một cách thận trọng.",
+            "Dừng lại và chờ tín hiệu đèn xanh nhấp nháy."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Đèn tín hiệu giao thông màu vàng nhấp nháy yêu cầu người lái xe giảm tốc độ và đi tiếp một cách thận trọng. Lưu ý: Theo đáp án DMV, người lái cần dừng lại nếu cần thiết và đi tiếp khi an toàn.",
+          "category": "Đèn tín hiệu",
+          "difficulty": "medium"
+        },
+        {
+          "id": 37,
+          "question": "Bạn nên làm gì nếu người đi bộ vẫn sang đường tại lối đi qua đường sau khi biển báo \"DON'T WALK\" bắt đầu nhấp nháy và đèn giao thông của bạn đã chuyển sang xanh lá cây?",
+          "options": [
+            "Chờ đến khi người đi bộ đi ra khỏi phần đường của bạn trước khi đi tiếp.",
+            "Chờ đến khi người đi bộ báo hiệu rằng bạn có thể đi tiếp.",
+            "Chờ đến khi người đi bộ sang phía bên kia đường trước khi đi tiếp."
+          ],
+          "correctAnswer": 0,
+          "explanation": "Bạn phải chờ đến khi người đi bộ đi ra khỏi phần đường của bạn trước khi đi tiếp.",
+          "category": "Người đi bộ",
+          "difficulty": "easy"
+        },
+        {
+          "id": 38,
+          "question": "Khi nào một người được phép lái xe cùng đồ uống có cồn đã mở nắp?",
+          "options": [
+            "Nếu thùng hàng để trong thùng xe.",
+            "Nếu thùng chứa ở trong thùng xe.",
+            "Nếu thùng hàng ở dưới ghế trước."
+          ],
+          "correctAnswer": 1,
+          "explanation": "Một người chỉ được phép lái xe cùng đồ uống có cồn đã mở nắp nếu thùng chứa ở trong thùng xe (cốp xe).",
+          "category": "Luật pháp",
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}

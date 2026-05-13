@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import turkishSignTestData from '@/data/turkish-sign-test.json';
+import type { Quiz } from '@/types/quiz';
 
 export const metadata: Metadata = {
   title: 'DMV Türkçe Trafik İşareti Testi | DMV California',
@@ -35,7 +36,7 @@ async function fetchLeaderboard(quizId: string | number) {
 }
 
 export default async function TurkishSignTestPage() {
-  const quiz = turkishSignTestData.quiz;
+  const quiz = turkishSignTestData.quiz as Quiz;
   const quizId = quiz.id; // Use the quiz's id field
 
   // Fetch leaderboard from MongoDB API

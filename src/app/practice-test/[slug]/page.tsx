@@ -6,12 +6,40 @@ import Leaderboard from '@/components/quiz/Leaderboard';
 import AppPromotion from '@/components/AppPromotion';
 import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
+import turkishQuizzesData from '@/data/turkish-quizzes.json';
+import turkishSignTestData from '@/data/turkish-sign-test.json';
+import spanishSignTestData from '@/data/spanish-sign-test.json';
+import arabicQuizzesData from '@/data/arabic-quizzes.json';
+import armenianQuizzesData from '@/data/armenian-quizzes.json';
+import farsiQuizzesData from '@/data/farsi-quizzes.json';
+import punjabiQuizzesData from '@/data/punjabi-quizzes.json';
+import russianQuizzesData from '@/data/russian-quizzes.json';
+import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
+import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
+import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
+import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getMongoClient } from '@/lib/mongodb';
+import type { Quiz } from '@/types/quiz';
 
-// Combine all quizzes
-const allQuizzes = [...quizzesData.quizzes, ...chineseQuizzesData.quizzes];
+// Combine all quizzes across languages
+const allQuizzes = [
+  ...quizzesData.quizzes,
+  ...chineseQuizzesData.quizzes,
+  ...turkishQuizzesData.quizzes,
+  turkishSignTestData.quiz,
+  spanishSignTestData.quiz,
+  ...arabicQuizzesData.quizzes,
+  ...armenianQuizzesData.quizzes,
+  ...farsiQuizzesData.quizzes,
+  ...punjabiQuizzesData.quizzes,
+  ...russianQuizzesData.quizzes,
+  ...tagalogQuizzesData.quizzes,
+  ...vietnameseQuizzesData.quizzes,
+  ...motorcycleQuizzesData.quizzes,
+  ...commercialQuizzesData.quizzes,
+] as Quiz[];
 
 export async function generateStaticParams() {
   return allQuizzes.map((quiz) => ({

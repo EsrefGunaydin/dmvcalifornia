@@ -5,6 +5,7 @@ import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import turkishQuizzesData from '@/data/turkish-quizzes.json';
 import Link from 'next/link';
+import type { Quiz } from '@/types/quiz';
 
 export const metadata = {
   title: 'DMV Turkish Test #2 / DMV Türkçe Test #2 | DMV California',
@@ -32,7 +33,7 @@ async function fetchLeaderboard(quizId: string | number) {
 }
 
 export default async function TurkishTest2Page() {
-  const quiz = turkishQuizzesData.quizzes[1]; // Second Turkish quiz
+  const quiz = turkishQuizzesData.quizzes[1] as Quiz; // Second Turkish quiz
   const quizId = quiz.id; // Use the quiz's id field
 
   // Fetch leaderboard from MongoDB API

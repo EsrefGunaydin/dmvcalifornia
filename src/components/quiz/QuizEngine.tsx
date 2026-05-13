@@ -243,7 +243,7 @@ export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
       </div>
 
       {/* Question Card */}
-      <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-6">
+      <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-6" dir={quiz.language === 'ar' || quiz.language === 'fa' ? 'rtl' : 'auto'}>
         {/* Question Header */}
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-4">

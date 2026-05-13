@@ -319,12 +319,18 @@ struct FlashcardOnboardingPage: View {
                 }
             }
 
-            // Language flags
-            HStack(spacing: 16) {
-                ForEach(["🇺🇸", "🇪🇸", "🇹🇷", "🇨🇳"], id: \.self) { flag in
-                    Text(flag)
-                        .font(.system(size: 24))
+            // Language flags — all 11 supported languages
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 14) {
+                    ForEach(
+                        ["🇺🇸", "🇪🇸", "🇹🇷", "🇨🇳", "🇸🇦", "🇦🇲", "🇮🇷", "🇮🇳", "🇷🇺", "🇵🇭", "🇻🇳"],
+                        id: \.self
+                    ) { flag in
+                        Text(flag)
+                            .font(.system(size: 24))
+                    }
                 }
+                .padding(.horizontal, DMVTheme.Spacing.xl)
             }
             .padding(.top, 8)
 
@@ -334,7 +340,7 @@ struct FlashcardOnboardingPage: View {
                     .fontWeight(.bold)
                     .foregroundColor(.dmvText)
 
-                Text("Master key concepts with interactive flashcards. Available in 4 languages!")
+                Text("Practice in 11 languages including English, Spanish, Chinese, Arabic, Russian, Vietnamese and more.")
                     .font(DMVTheme.Typography.body)
                     .foregroundColor(.dmvTextSecondary)
                     .multilineTextAlignment(.center)

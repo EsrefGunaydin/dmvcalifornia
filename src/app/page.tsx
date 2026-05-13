@@ -9,19 +9,47 @@ import quizzesData from '../data/quizzes.json';
 import turkishQuizzesData from '../data/turkish-quizzes.json';
 import chineseQuizzesData from '../data/chinese-quizzes.json';
 import spanishSignTestData from '../data/spanish-sign-test.json';
+import turkishSignTestData from '../data/turkish-sign-test.json';
+import arabicQuizzesData from '../data/arabic-quizzes.json';
+import armenianQuizzesData from '../data/armenian-quizzes.json';
+import farsiQuizzesData from '../data/farsi-quizzes.json';
+import punjabiQuizzesData from '../data/punjabi-quizzes.json';
+import russianQuizzesData from '../data/russian-quizzes.json';
+import tagalogQuizzesData from '../data/tagalog-quizzes.json';
+import vietnameseQuizzesData from '../data/vietnamese-quizzes.json';
+import motorcycleQuizzesData from '../data/motorcycle-quizzes.json';
+import commercialQuizzesData from '../data/commercial-quizzes.json';
 import AdSense from '@/components/AdSense';
 import ADSENSE_CONFIG from '@/config/adsense';
 
 export default function Home() {
-  // Calculate total questions across all languages
-  const englishQuestions = quizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
-  const turkishQuestions = turkishQuizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
-  const chineseQuestions = chineseQuizzesData.quizzes.reduce((sum, quiz) => sum + quiz.questions.length, 0);
-  const spanishQuestions = spanishSignTestData.quiz ? spanishSignTestData.quiz.questions.length : 0;
-  const totalQuestions = englishQuestions + turkishQuestions + chineseQuestions + spanishQuestions;
+  // Aggregate every quiz source so the homepage stats stay in sync with the grid
+  const multiQuizSources = [
+    quizzesData,
+    chineseQuizzesData,
+    turkishQuizzesData,
+    arabicQuizzesData,
+    armenianQuizzesData,
+    farsiQuizzesData,
+    punjabiQuizzesData,
+    russianQuizzesData,
+    tagalogQuizzesData,
+    vietnameseQuizzesData,
+    motorcycleQuizzesData,
+    commercialQuizzesData,
+  ];
+  const singleQuizSources = [spanishSignTestData, turkishSignTestData];
 
-  // Calculate total tests
-  const totalTests = quizzesData.quizzes.length + turkishQuizzesData.quizzes.length + chineseQuizzesData.quizzes.length + 1; // +1 for Spanish
+  const totalQuestions =
+    multiQuizSources.reduce(
+      (sum, src) => sum + src.quizzes.reduce((s, q) => s + q.questions.length, 0),
+      0,
+    ) + singleQuizSources.reduce((sum, src) => sum + src.quiz.questions.length, 0);
+
+  const totalTests =
+    multiQuizSources.reduce((sum, src) => sum + src.quizzes.length, 0) + singleQuizSources.length;
+
+  const yearsServing = new Date().getFullYear() - 2017;
 
   // Select 6 featured items (2 simulation tests + interactive flashcards + Spanish + Turkish + Chinese)
   const simulationTests = quizzesData.quizzes.filter(q => q.category === 'Full Simulation Tests').slice(0, 2);
@@ -93,10 +121,22 @@ export default function Home() {
 
       <div className="container mx-auto px-4 py-8">
 
+        {/* Trust Banner */}
+        <div className="mb-8 mx-auto max-w-3xl bg-gradient-to-r from-primary/10 via-amber-50 to-primary/10 border-2 border-primary/30 rounded-2xl px-6 py-5 text-center shadow-md">
+          <div className="flex items-center justify-center gap-2 text-primary font-bold text-2xl md:text-3xl mb-1">
+            <span>⭐</span>
+            <span>Trusted by 150,000+ California drivers</span>
+            <span>⭐</span>
+          </div>
+          <p className="text-gray-700 text-sm md:text-base">
+            {yearsServing} years helping people pass their California DMV test on the first try
+          </p>
+        </div>
+
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
           <div className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">{totalQuestions}+</div>
+            <div className="text-5xl font-bold text-primary mb-3">{totalQuestions.toLocaleString()}+</div>
             <div className="text-gray-700 font-semibold text-lg">Practice Questions</div>
           </div>
           <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
@@ -108,9 +148,9 @@ export default function Home() {
             </div>
           </div>
           <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">4</div>
+            <div className="text-5xl font-bold text-primary mb-3">11</div>
             <div className="text-gray-700 font-semibold text-lg">Languages</div>
-            <div className="text-sm text-gray-500 mt-1">🇺🇸 🇪🇸 🇹🇷 🇨🇳</div>
+            <div className="text-sm text-gray-500 mt-1">🇺🇸 🇪🇸 🇹🇷 🇨🇳 🇸🇦 🇦🇲 🇮🇷 🇮🇳 🇷🇺 🇵🇭 🇻🇳</div>
           </div>
           <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
             <div className="text-5xl font-bold text-primary mb-3">50+</div>
@@ -211,7 +251,7 @@ export default function Home() {
                   Examen de práctica del DMV en español. California DMV practice test in Spanish 2025 with complete answers.
                 </p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>{spanishQuestions} Questions</span>
+                  <span>{spanishSignTestData.quiz.questions.length} Questions</span>
                   <span className="text-orange-600 font-medium group-hover:underline">
                     Comenzar →
                   </span>
@@ -238,7 +278,7 @@ export default function Home() {
                   California DMV Türkçe sürücü testleri. Turkish driving knowledge tests with complete explanations.
                 </p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>{turkishQuestions} Questions • {turkishQuizzesData.quizzes.length} Tests</span>
+                  <span>{turkishQuizzesData.quizzes.reduce((s, q) => s + q.questions.length, 0)} Questions • {turkishQuizzesData.quizzes.length} Tests</span>
                   <span className="text-red-600 font-medium group-hover:underline">
                     Başla →
                   </span>
@@ -265,7 +305,7 @@ export default function Home() {
                   加州 DMV 中文駕駛考試。California DMV Chinese driving knowledge tests with complete answers.
                 </p>
                 <div className="flex items-center justify-between text-sm text-gray-500">
-                  <span>{chineseQuestions} Questions • {chineseQuizzesData.quizzes.length} Tests</span>
+                  <span>{chineseQuizzesData.quizzes.reduce((s, q) => s + q.questions.length, 0)} Questions • {chineseQuizzesData.quizzes.length} Tests</span>
                   <span className="text-yellow-600 font-medium group-hover:underline">
                     開始 →
                   </span>

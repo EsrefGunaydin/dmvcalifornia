@@ -1,0 +1,52 @@
+[
+  {
+    "id": "spanish-flashcards-1",
+    "title": "Tarjetas de Estudio DMV - Conjunto 1",
+    "description": "15 preguntas esenciales del DMV para preparación del examen de manejo de California",
+    "category": "Spanish",
+    "slug": "spanish-flashcards-set-1",
+    "language": "Spanish",
+    "cards": [
+      { "id": 1, "question": "Es ilegal que una persona de 21 años o más conduzca con una concentración de alcohol en la sangre (BAC) de ____ o más.", "answer": "0.08% - ocho centésimas de un por ciento" },
+      { "id": 2, "question": "Debe notificar al DMV dentro de 5 días si:", "answer": "vende o transfiere su vehículo" },
+      { "id": 3, "question": "Se está preparando para girar a la derecha. Debe:", "answer": "señalar durante los últimos 100 pies antes de girar" },
+      { "id": 4, "question": "¿Para cuáles de los siguientes semáforos debe siempre detener su vehículo?", "answer": "luces rojas fijas, luces rojas intermitentes y semáforos apagados" },
+      { "id": 5, "question": "¿Cuándo es legal usar un teléfono celular sin dispositivo de manos libres mientras conduce?", "answer": "al hacer una llamada de emergencia" },
+      { "id": 6, "question": "Cuando un semáforo no funciona en una intersección, debe:", "answer": "detenerse por completo y luego proceder cuando sea seguro" },
+      { "id": 7, "question": "Debe ajustar los espejos retrovisores y laterales:", "answer": "antes de comenzar a conducir" },
+      { "id": 8, "question": "Fumar dentro de un vehículo cuando hay una persona menor de 18 años presente es:", "answer": "ilegal en todo momento" },
+      { "id": 9, "question": "El límite de velocidad en cualquier callejón es:", "answer": "15 mph" },
+      { "id": 10, "question": "El límite de velocidad en una zona escolar donde hay niños presentes es:", "answer": "25 mph" },
+      { "id": 11, "question": "Al compartir la carretera con un vehículo de tren ligero:", "answer": "nunca gire frente a un tren ligero que se aproxima" },
+      { "id": 12, "question": "Debe detenerse antes de cruzar las vías del tren:", "answer": "cada vez que un tren pueda estar aproximándose, ya sea que pueda verlo o no" },
+      { "id": 13, "question": "Al acercarse a un cruce peatonal donde un peatón ciego está esperando para cruzar, debe:", "answer": "detenerse en el cruce peatonal y esperar a que el peatón cruce la calle" },
+      { "id": 14, "question": "Si cinco o más vehículos lo siguen en una carretera angosta de dos carriles:", "answer": "conduzca hacia las áreas de desvío o carriles para dejarlos pasar" },
+      { "id": 15, "question": "¿Quién tiene el derecho de paso en una intersección sin cruces peatonales?", "answer": "los peatones siempre tienen el derecho de paso" }
+    ]
+  },
+  {
+    "id": "spanish-flashcards-2",
+    "title": "Tarjetas de Estudio DMV - Conjunto 2",
+    "description": "15 preguntas adicionales del DMV sobre seguridad vial y leyes de tránsito de California",
+    "category": "Spanish",
+    "slug": "spanish-flashcards-set-2",
+    "language": "Spanish",
+    "cards": [
+      { "id": 16, "question": "Si se aproxima a una curva o la cima de una colina y no tiene una vista clara de la carretera adelante, debe:", "answer": "reducir la velocidad para poder detenerse si es necesario" },
+      { "id": 17, "question": "¿De quién es la responsabilidad de saber cómo sus medicamentos afectan su conducción?", "answer": "suya" },
+      { "id": 18, "question": "Si no puede ver la carretera adelante mientras conduce debido a niebla densa y los limpiaparabrisas no ayudan, debe:", "answer": "salirse completamente de la carretera hasta que mejore la visibilidad" },
+      { "id": 19, "question": "Está obligado a usar su cinturón de seguridad en un vehículo en movimiento:", "answer": "y no hacerlo resultará en una multa de tránsito" },
+      { "id": 20, "question": "Está cruzando una intersección y un vehículo de emergencia se aproxima con sirena y luces intermitentes. Debe:", "answer": "continuar a través de la intersección, moverse a la derecha y detenerse" },
+      { "id": 21, "question": "Si tiene luz verde, pero el tráfico está bloqueando la intersección:", "answer": "manténgase fuera de la intersección y espere hasta que se despeje el tráfico" },
+      { "id": 22, "question": "Cuando cambia o se fusiona con otro carril, necesita:", "answer": "al menos un espacio de 4 segundos en el tráfico" },
+      { "id": 23, "question": "Sus ruedas deben apuntar hacia adelante, a menos que esté:", "answer": "estacionado en una colina o entrada inclinada" },
+      { "id": 24, "question": "¿Cuál de los siguientes es un giro en U legal?", "answer": "en una autopista dividida donde hay una abertura pavimentada para girar" },
+      { "id": 25, "question": "Para asegurarse de que un carril esté despejado antes de cambiar de carril, debe:", "answer": "mirar sobre su hombro hacia el carril al que desea entrar" },
+      { "id": 26, "question": "Al conducir en niebla, nieve o lluvia debe usar sus:", "answer": "luces bajas" },
+      { "id": 27, "question": "Todo lo siguiente es peligroso mientras conduce. ¿Cuál es también ilegal?", "answer": "usar audífonos que cubran ambos oídos" },
+      { "id": 28, "question": "Para girar a la izquierda desde una calle de un solo sentido, comience desde:", "answer": "el carril más cercano al bordillo izquierdo" },
+      { "id": 29, "question": "Se aproxima a una curva cerrada en la carretera. Debe:", "answer": "comenzar a frenar antes de entrar a la curva" },
+      { "id": 30, "question": "Al estacionarse en cualquier colina, siempre ponga el freno de estacionamiento y:", "answer": "deje su vehículo en marcha o en posición de 'estacionamiento'" }
+    ]
+  }
+]

@@ -1,0 +1,119 @@
+[
+  {
+    "id": "dmv-flashcards-1",
+    "title": "DMV California Practice Flashcards - Set 1",
+    "description": "15 essential DMV questions and answers for California driving test preparation",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-1",
+    "cards": [
+      { "id": 1, "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.", "answer": "0.08% - eight hundredths of one percent" },
+      { "id": 2, "question": "You must notify DMV within 5 days if you:", "answer": "sell or transfer your vehicle" },
+      { "id": 3, "question": "You are getting ready to make a right turn. You should:", "answer": "signal during the last 100 feet before you turn" },
+      { "id": 4, "question": "For which of the following traffic lights must you always stop your vehicle?", "answer": "solid red lights, flashing red lights, and blacked-out traffic signals" },
+      { "id": 5, "question": "When is it legal to use a cell phone without a hands-free device while driving?", "answer": "when making a call for emergency assistance" },
+      { "id": 6, "question": "When a traffic signal light isn't working at an intersection, you should:", "answer": "come to a complete stop then proceed when it is safe" },
+      { "id": 7, "question": "You should adjust your rear view and side view mirrors:", "answer": "before you start driving" },
+      { "id": 8, "question": "Smoking inside a vehicle when a person younger than 18 years of age is present is:", "answer": "illegal at all times" },
+      { "id": 9, "question": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:", "answer": "are involved in a collision and there is more than $750 in damages" },
+      { "id": 10, "question": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:", "answer": "even if you do not see any other vehicles around" },
+      { "id": 11, "question": "When sharing the road with a light rail vehicle:", "answer": "never turn in front of an approaching light rail vehicle" },
+      { "id": 12, "question": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:", "answer": "a vehicle approaching you from behind" },
+      { "id": 13, "question": "Allow extra space in front of your vehicle when following a:", "answer": "large tour bus" },
+      { "id": 14, "question": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:", "answer": "there may be a stalled car or collision ahead that you can't see" },
+      { "id": 15, "question": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:", "answer": "look for cars or bicycles on the traffic side of your vehicle" }
+    ]
+  },
+  {
+    "id": "dmv-flashcards-2",
+    "title": "DMV California Practice Flashcards - Set 2",
+    "description": "15 essential DMV questions covering right-of-way, safety, and road rules for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-2",
+    "cards": [
+      { "id": 16, "question": "Who has the right-of-way at an intersection with no crosswalks?", "answer": "pedestrians always have the right-of-way" },
+      { "id": 17, "question": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:", "answer": "slow down so you can stop if necessary" },
+      { "id": 18, "question": "Whose responsibility is it to know how your medications affect your driving?", "answer": "yours" },
+      { "id": 19, "question": "Which of the following is true about safety belts and collisions?", "answer": "they increase your chances of survival in most types of collisions" },
+      { "id": 20, "question": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:", "answer": "pull off the road completely until visibility improves" },
+      { "id": 21, "question": "This red and white sign means:", "answer": "you may not enter the road from your direction" },
+      { "id": 22, "question": "You are required to wear your safety belt in a moving vehicle:", "answer": "and failure to do so will result in a traffic ticket" },
+      { "id": 23, "question": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:", "answer": "pull to the right in the intersection and stop" },
+      { "id": 24, "question": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:", "answer": "if there is enough road between the curb and the vehicle" },
+      { "id": 25, "question": "If you have a green light, but traffic is blocking the intersection:", "answer": "stay out of the intersection and wait until traffic clears" },
+      { "id": 26, "question": "This white sign means:", "answer": "look, listen, and prepare to stop at the crossing, if necessary" },
+      { "id": 27, "question": "Which statement is true about motorcyclists and motorists?", "answer": "motorcyclists have the same rights/responsibilities as other motorists" },
+      { "id": 28, "question": "When you change or merge with another lane, you:", "answer": "need at least a 4-second gap in traffic" },
+      { "id": 29, "question": "Your wheels should be pointed straight ahead, unless you are:", "answer": "parked on a hill or sloping driveway" },
+      { "id": 30, "question": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:", "answer": "an exit lane" }
+    ]
+  },
+  {
+    "id": "dmv-flashcards-3",
+    "title": "DMV California Practice Flashcards - Set 3",
+    "description": "15 essential DMV questions covering lane changes, U-turns, cargo rules, and school zones for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-3",
+    "cards": [
+      { "id": 46, "question": "If five or more vehicles are following you on a narrow two-lane road:", "answer": "drive into the turnout areas or lanes to let them pass" },
+      { "id": 47, "question": "Which of these is a legal U-turn?", "answer": "on a divided highway where there is a paved opening for a turn" },
+      { "id": 48, "question": "You see a car approaching from the rear. When you check your mirror again to change lanes, you no longer see the car:", "answer": "look over your shoulder to be sure the car isn't in your blind spot" },
+      { "id": 49, "question": "If you are towing another vehicle or trailer on a freeway with four lanes in your direction, you may travel in:", "answer": "either of the two right lanes" },
+      { "id": 50, "question": "This red and white sign means you should:", "answer": "give the right-of-way to traffic on the road you wish to enter or cross" },
+      { "id": 51, "question": "To be sure a lane is clear before you change lanes, you should:", "answer": "glance over your shoulder into the lane you want to enter" },
+      { "id": 52, "question": "When driving in fog, snow, or rain you should use your:", "answer": "low beam headlights" },
+      { "id": 53, "question": "Which of these statements is true about child passengers?", "answer": "children under the age one should not ride in the front seat in airbag-equipped vehicles" },
+      { "id": 54, "question": "All of the following are dangerous while driving. Which is also illegal?", "answer": "wearing a headset that covers both ears" },
+      { "id": 55, "question": "You should stop before crossing railroad tracks:", "answer": "any time a train may be approaching, whether or not you can see it" },
+      { "id": 56, "question": "To turn left from a one-way street, start from:", "answer": "the lane closest to the left curb" },
+      { "id": 57, "question": "Cargo extending more than four feet from your rear bumper:", "answer": "must be marked with a red flag or lights" },
+      { "id": 58, "question": "A pedestrian who is blind or is visually impaired uses traffic sounds before deciding to cross the street. If you see a pedestrian with a guide dog or white cane waiting to cross at a corner, you should:", "answer": "pull up to the crosswalk so the person can hear your engine" },
+      { "id": 59, "question": "Two vehicles are approaching an uncontrolled \"T\" intersection. One vehicle is on the through road and the other is on the road that ends. Who has the right-of-way at the intersection?", "answer": "the vehicle on the through road" },
+      { "id": 60, "question": "The speed limit for a school zone where children are present is ____.", "answer": "25 mph" }
+    ]
+  },
+  {
+    "id": "dmv-flashcards-4",
+    "title": "DMV California Practice Flashcards - Set 4",
+    "description": "12 essential DMV questions covering peace officers, medications, crossing guards, and parking rules for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-4",
+    "cards": [
+      { "id": 61, "question": "A peace officer is signaling you to drive to the edge of the roadway. You decide to ignore the officer's warning and flee the scene. You are guilty of a misdemeanor and can be punished by being:", "answer": "jailed in the county jail for not more than one year" },
+      { "id": 62, "question": "Which of these statements is true about driving and taking medications?", "answer": "most cold medications can make a person drowsy" },
+      { "id": 63, "question": "Instructions from school crossing guard must be obeyed:", "answer": "at all times" },
+      { "id": 64, "question": "Which of the following is true about large trucks?", "answer": "trucks often appear to travel slower because of their large size" },
+      { "id": 65, "question": "If there is a deep puddle in the road ahead, you should:", "answer": "avoid the puddle, if possible" },
+      { "id": 66, "question": "The speed limit in any alley is:", "answer": "15 mph" },
+      { "id": 67, "question": "This yellow sign means:", "answer": "vehicles on this road travel in two directions" },
+      { "id": 68, "question": "You are approaching a sharp curve in the road. You should:", "answer": "start braking before you enter the curve" },
+      { "id": 69, "question": "When parking on any hill, always set your parking brake and:", "answer": "leave your vehicle in gear or the \"park\" position" },
+      { "id": 70, "question": "All children under age six riding in your vehicle must use a child passenger restraint system unless:", "answer": "they weigh 60 pounds or more and wear a safety belt" },
+      { "id": 71, "question": "This yellow sign means:", "answer": "there is a pedestrian crossing ahead" },
+      { "id": 72, "question": "This lane in the middle of a two-way street is used to:", "answer": "begin or end left turns, or start a permitted U-turn" }
+    ]
+  },
+  {
+    "id": "dmv-flashcards-5",
+    "title": "DMV California Practice Flashcards - Set 5",
+    "description": "15 essential DMV questions covering intersections, pedestrians, emergency situations, and safe driving practices for California driving test",
+    "category": "Practice Flashcards",
+    "slug": "dmv-california-flashcards-set-5",
+    "cards": [
+      { "id": 31, "question": "When you see this yellow sign, you should:", "answer": "be prepared to stop if children are in the crosswalk" },
+      { "id": 32, "question": "You must notify DMV within 5 days if you:", "answer": "sell or transfer your vehicle" },
+      { "id": 33, "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol consumption (BAC) that is ___ or higher.", "answer": "0.08% - eight hundredths of one percent" },
+      { "id": 34, "question": "You are driving 55 mph on a two-lane highway, one lane in each direction, and want to pass the car ahead of you. To pass safely, you need to:", "answer": "have a large enough gap in the oncoming traffic" },
+      { "id": 35, "question": "If you approach an intersection without a stop sign or signals, you:", "answer": "slow down and be ready to stop if necessary" },
+      { "id": 36, "question": "If a driver looks like he or she is going to pull out in front of you, the safest thing to do is:", "answer": "slow or stop your car and use your horn" },
+      { "id": 37, "question": "When approaching a crosswalk where a blind pedestrian is waiting to cross, you must stop:", "answer": "at the crosswalk and wait for the pedestrian to cross the street" },
+      { "id": 38, "question": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:", "answer": "continue through the intersection, pull to the right, and stop" },
+      { "id": 39, "question": "You must notify law enforcement and make a written report of traffic accident occurring in California (SR 1) to DMV if:", "answer": "you are involved in a collision and there is a death" },
+      { "id": 40, "question": "To see vehicles in your blind spots, you must look:", "answer": "over your shoulders" },
+      { "id": 41, "question": "Smoking inside a vehicle when a person younger than 18 years of age is present is:", "answer": "illegal at all times" },
+      { "id": 42, "question": "You are stopped at an intersection. The traffic light just turned green. Should you go immediately?", "answer": "yes, but yield to any vehicle or person still in the intersection" },
+      { "id": 43, "question": "If your cell phone rings while you are driving and you do not have a hands-free device, you should:", "answer": "let the call go to voicemail" },
+      { "id": 44, "question": "When driving near road work zones, you should:", "answer": "pass the work zone carefully and avoid \"rubbernecking\"" },
+      { "id": 45, "question": "It is very foggy. You should slow down, turn on your windshield wipers, and your:", "answer": "low beam lights" }
+    ]
+  }
+]

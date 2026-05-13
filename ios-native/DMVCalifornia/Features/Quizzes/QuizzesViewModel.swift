@@ -18,6 +18,13 @@ final class QuizzesViewModel: ObservableObject {
     private var spanishQuizzes: [Quiz] = []
     private var turkishQuizzes: [Quiz] = []
     private var chineseQuizzes: [Quiz] = []
+    private var arabicQuizzes: [Quiz] = []
+    private var armenianQuizzes: [Quiz] = []
+    private var farsiQuizzes: [Quiz] = []
+    private var punjabiQuizzes: [Quiz] = []
+    private var russianQuizzes: [Quiz] = []
+    private var tagalogQuizzes: [Quiz] = []
+    private var vietnameseQuizzes: [Quiz] = []
 
     init(quizDataService: QuizDataServiceProtocol = QuizDataService.shared) {
         self.quizDataService = quizDataService
@@ -44,16 +51,41 @@ final class QuizzesViewModel: ObservableObject {
             async let spanishTask = quizDataService.getSpanishQuizzes()
             async let turkishTask = quizDataService.getTurkishQuizzes()
             async let chineseTask = quizDataService.getChineseQuizzes()
+            async let arabicTask = quizDataService.getArabicQuizzes()
+            async let armenianTask = quizDataService.getArmenianQuizzes()
+            async let farsiTask = quizDataService.getFarsiQuizzes()
+            async let punjabiTask = quizDataService.getPunjabiQuizzes()
+            async let russianTask = quizDataService.getRussianQuizzes()
+            async let tagalogTask = quizDataService.getTagalogQuizzes()
+            async let vietnameseTask = quizDataService.getVietnameseQuizzes()
 
-            let (english, spanish, turkish, chinese) = try await (englishTask, spanishTask, turkishTask, chineseTask)
+            let english = try await englishTask
+            let spanish = try await spanishTask
+            let turkish = try await turkishTask
+            let chinese = try await chineseTask
+            let arabic = try await arabicTask
+            let armenian = try await armenianTask
+            let farsi = try await farsiTask
+            let punjabi = try await punjabiTask
+            let russian = try await russianTask
+            let tagalog = try await tagalogTask
+            let vietnamese = try await vietnameseTask
 
             englishQuizzes = english
             spanishQuizzes = spanish
             turkishQuizzes = turkish
             chineseQuizzes = chinese
+            arabicQuizzes = arabic
+            armenianQuizzes = armenian
+            farsiQuizzes = farsi
+            punjabiQuizzes = punjabi
+            russianQuizzes = russian
+            tagalogQuizzes = tagalog
+            vietnameseQuizzes = vietnamese
 
             // Combine all quizzes
             quizzes = english + spanish + turkish + chinese
+                + arabic + armenian + farsi + punjabi + russian + tagalog + vietnamese
 
             // Apply initial filter
             applyFilters(query: searchQuery, filter: languageFilter)
@@ -66,16 +98,18 @@ final class QuizzesViewModel: ObservableObject {
 
     func getCount(for filter: LanguageFilter) -> Int {
         switch filter {
-        case .all:
-            return quizzes.count
-        case .english:
-            return englishQuizzes.count
-        case .spanish:
-            return spanishQuizzes.count
-        case .turkish:
-            return turkishQuizzes.count
-        case .chinese:
-            return chineseQuizzes.count
+        case .all: return quizzes.count
+        case .english: return englishQuizzes.count
+        case .spanish: return spanishQuizzes.count
+        case .turkish: return turkishQuizzes.count
+        case .chinese: return chineseQuizzes.count
+        case .arabic: return arabicQuizzes.count
+        case .armenian: return armenianQuizzes.count
+        case .farsi: return farsiQuizzes.count
+        case .punjabi: return punjabiQuizzes.count
+        case .russian: return russianQuizzes.count
+        case .tagalog: return tagalogQuizzes.count
+        case .vietnamese: return vietnameseQuizzes.count
         }
     }
 
@@ -84,16 +118,18 @@ final class QuizzesViewModel: ObservableObject {
 
         // Apply language filter
         switch filter {
-        case .all:
-            result = quizzes
-        case .english:
-            result = englishQuizzes
-        case .spanish:
-            result = spanishQuizzes
-        case .turkish:
-            result = turkishQuizzes
-        case .chinese:
-            result = chineseQuizzes
+        case .all: result = quizzes
+        case .english: result = englishQuizzes
+        case .spanish: result = spanishQuizzes
+        case .turkish: result = turkishQuizzes
+        case .chinese: result = chineseQuizzes
+        case .arabic: result = arabicQuizzes
+        case .armenian: result = armenianQuizzes
+        case .farsi: result = farsiQuizzes
+        case .punjabi: result = punjabiQuizzes
+        case .russian: result = russianQuizzes
+        case .tagalog: result = tagalogQuizzes
+        case .vietnamese: result = vietnameseQuizzes
         }
 
         // Apply search query

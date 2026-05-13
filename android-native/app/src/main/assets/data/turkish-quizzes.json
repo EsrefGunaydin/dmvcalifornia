@@ -1,0 +1,968 @@
+{
+  "quizzes": [
+    {
+      "id": "turkish-test-1",
+      "title": "DMV Turkish Test #1 / DMV Türkçe Test #1",
+      "description": "California DMV Türkçe Test - Temel trafik kuralları ve işaretler. California DMV Turkish driving test with 36 real questions.",
+      "category": "Turkish Tests / Türkçe Testler",
+      "slug": "test-1",
+      "passingScore": 85,
+      "timeLimit": 60,
+      "language": "tr",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Caddenin trafiğe açık kısmına park edilmiş araçtan çıkmadan önce ne yapmalısınız?",
+          "options": [
+            "Çıktığınızı belirtmek için kol işareti yapmalısınız",
+            "Sola dönüş sinyalinizi yakmalısınız",
+            "Arkadan yaklaşan trafiği kontrol etmelisiniz"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Araçtan çıkmadan önce arkadan gelen trafiği kontrol etmek çok önemlidir.",
+          "category": "Güvenlik",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "Yanıp sönen kırmızı trafik sinyaline yaklaşıyorsanız ne yapmalısınız?",
+          "options": [
+            "Dikkatli şekilde ilerlemelisiniz",
+            "Durmalı ve güvenli olduğunda geçmelisiniz",
+            "Durmalı ve yeşil ışığı beklemelisiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yanıp sönen kırmızı ışık STOP işareti gibidir - durmalı ve güvenli olduğunda geçmelisiniz.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "Yeşil ışık yanıyor fakat kavşakta araçlar beklemektedir. Ne yapmalısınız?",
+          "options": [
+            "Araçlar çıkana kadar beklemelisiniz",
+            "Kenarından güvenli şekilde geçebiliyorsanız ilerlemelisiniz",
+            "Kavşağa girip trafiğin açılmasını beklemelisiniz"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yeşil ışık olsa bile, kavşağı tıkamamak için araçların geçmesini beklemelisiniz.",
+          "category": "Kavşaklar",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "Yaklaşan araç önünüzden sola dönmeye başlarsa ne yapmalısınız?",
+          "options": [
+            "Sürücüyü uyarmak için kornaya basıp hızınızı korursunuz",
+            "Hızınızı korursunuz ve geçiş hakkınızı kullanırsınız",
+            "Kaza engellemek için yavaşlatır veya durdurursunuz"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Kazayı önlemek her zaman en önemli önceliktir - yavaşlayın veya durun.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "Açılı park alanından geri çıkarken her zaman yavaş olmalı ve:",
+          "options": [
+            "Arka aynasına bakmalısınız",
+            "Yan aynalara bakmalısınız",
+            "Sağ omzunuzdan arkaya bakmalısınız"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Geri giderken sağ omzunuzdan arkaya bakarak kör noktaları kontrol etmelisiniz.",
+          "category": "Park Etme",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "Diğer sürücüler için hangisi geçerlidir?",
+          "options": [
+            "Her zaman trafik işaretlerine uyarlar",
+            "Dönüş sinyali verenleri her zaman dönerler",
+            "Hiçbir zaman diğer sürücülerin size yol vereceği varsayılmamalıdır"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Asla diğer sürücülerin ne yapacağını varsaymayın - her zaman dikkatli olun.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "Aracınızı daha dikkatli kullanmanız gereken yer hangisidir?",
+          "options": [
+            "Okul, çocuk bahçesi ve konut alanlarında",
+            "Çevre yolunda büyük kamyonları geçerken",
+            "Kaza yerini bakmak istediğinizde"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Okul, çocuk bahçesi ve konut alanlarında çocuklar olabileceği için ekstra dikkat gerekir.",
+          "category": "Okul Bölgeleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "1000$ para cezası ve altı ay hapis hangisini yapmanız halinde verilebilir?",
+          "options": [
+            "Otoyolda çöp boşaltma veya hayvan terk etme",
+            "Ortadaki şerittten U dönüşü yapma",
+            "Bisiklet şeridine park etme"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Otoyolda çöp atmak veya hayvan terk etmek ciddi bir suçtur.",
+          "category": "Trafik Kuralları",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "Çiftli kesintisiz sarı çizgilerden hangisi için geçilmez?",
+          "options": [
+            "Diğer araçları geçmek",
+            "Sola dönmek",
+            "Özel araç yoluna girmek"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Çift sarı çizgiler diğer araçları geçmek için kesinlikle geçilemez.",
+          "category": "Şerit İşaretleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 10,
+          "question": "Yeşil okla kontrol edilen dönüş şeridinde hangisi doğru?",
+          "options": [
+            "Tüm araçlar veya yayalar size yol vermelidir",
+            "Karşıdan gelen araçlar kırmızıyla durdurulur",
+            "Trafiği kontrol etmeden dönebilirsiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yeşil ok sinyalinde karşıdan gelen trafik kırmızı ışıkla durdurulur.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11,
+          "question": "Acil araçlara geçiş hakkı verirken ne yapmalısınız?",
+          "options": [
+            "Yolun sağ kenarına yakın durmalısınız",
+            "Sağ şerite geçip yavaş sürmeli",
+            "Kavşakta bile derhal durmalısınız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Acil araçlar için yolun sağ kenarına çekilip durmalısınız.",
+          "category": "Acil Durumlar",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "Araç kullanırken bakışınız nasıl olmalıdır?",
+          "options": [
+            "Her zaman tam karşıya bakmalısınız",
+            "Sadece önümdeki arabalara bakmalısınız",
+            "Arkaya ve öne, yakına ve uzağa bakmalısınız"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Güvenli sürüş için tüm yönleri kontrol etmelisiniz - arkaya, öne, yakına ve uzağa.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "Dönüş yapmadan motosikleti dikkatlice izlemeli çünkü:",
+          "options": [
+            "Tam trafik şeritleri olmalıdır",
+            "Kavşaklarda her zaman geçiş hakları vardır",
+            "Boyutları küçük olduğu için görülmesi zordur"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Motosikletlerin tam şerit hakları vardır ve dikkatli olunmalıdır.",
+          "category": "Yolu Paylaşma",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "Dört şeritli çevre yolunda hızlı şeritte yavaş gidiyorsanız:",
+          "options": [
+            "Hız sınırındaysanız şerit değiştirmemelisiniz",
+            "Güvenli olduğunda sağ şerite geçmelisiniz",
+            "Sadece beş araç arkada olursa değiştirmelisiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yavaş gidiyorsanız, daha hızlı trafiğe izin vermek için sağ şeride geçmelisiniz.",
+          "category": "Otoyol Sürüşü",
+          "difficulty": "easy"
+        },
+        {
+          "id": 15,
+          "question": "BAC yasal sınırda yakalanırsanız ne olur?",
+          "options": [
+            "Sürücü hakkınız süresiz askıya alınır",
+            "Nefes testi tek başına yeterli değildir",
+            "Arabanıza hemen el konur ve satılır"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yasal BAC sınırında yakalanırsanız ehliyetiniz askıya alınabilir.",
+          "category": "Alkol Kuralları",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "Toplu taşıma şeridini kullanma yasaldır:",
+          "options": [
+            "Diğer şeritlerdeki trafik yoğunsa",
+            "Arabada işarette belirtilen kişi sayısı varsa",
+            "Akşam 7 ile sabah 7 arasında"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Toplu taşıma şeridini sadece işarette belirtilen minimum yolcu sayısı varsa kullanabilirsiniz.",
+          "category": "Şerit Kullanımı",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "Demiryolu geçidinde ne zaman karşıya geçmelisiniz?",
+          "options": [
+            "İki yönü de görebildiğinizde",
+            "Tren geçtikten sonra",
+            "Diğer araçlar geçmeye başladığında"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Demiryolu geçidinde her iki yönü de görebildiğinizde ve güvenli olduğunda geçin.",
+          "category": "Demiryolu Geçitleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "Trafik akışından yavaş araç kullanmak:",
+          "options": [
+            "Kaza yapma olasılığını azaltır",
+            "Kaza yapma olasılığını yükseltir",
+            "Olasılığı değiştirmez"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trafik akışından çok yavaş gitmek kaza riskini artırır.",
+          "category": "Hız Limitleri",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "Yokuş aşağı dururken ön tekerlekleri nereye çevirmeli?",
+          "options": [
+            "Kaldırıma doğru",
+            "Yokuş yukarı dururken",
+            "Düz yolda dururken"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yokuş aşağı park ederken tekerlekleri kaldırıma doğru çevirin.",
+          "category": "Park Etme",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "DMV'ye 5 gün içinde hangisi bildirmelisiniz?",
+          "options": [
+            "Aracınızı sattıysanız",
+            "Aracınızı boyadıysanız",
+            "Trafik ihlali nedeniyle mahkemeye çağrıldıysanız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Aracınızı satarsanız 5 gün içinde DMV'ye bildirmelisiniz.",
+          "category": "Araç Kaydı",
+          "difficulty": "easy"
+        },
+        {
+          "id": 21,
+          "question": "21 yaş+ sürücünün BAC ____ veya daha yüksek olduğunda yasaya aykırıdır:",
+          "options": [
+            "%0,08",
+            "%0,10",
+            "%0,05"
+          ],
+          "correctAnswer": 0,
+          "explanation": "21 yaş ve üzeri sürücüler için yasal BAC sınırı %0.08'dir.",
+          "category": "Alkol Kuralları",
+          "difficulty": "easy"
+        },
+        {
+          "id": 22,
+          "question": "Trafik ışığında sola işaret eden yeşil ışık yanıyorsa:",
+          "options": [
+            "Gösterilen yöne doğru emniyetli dönüş yapabilirsiniz",
+            "Sola dönersiniz veya düz gidersiniz",
+            "Durur sonra dönüşünü yaparsınız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yeşil ok, gösterilen yöne güvenli bir şekilde dönebileceğiniz anlamına gelir.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 23,
+          "question": "Tek şerit yolda önündeki araç sık yavaşlarsa ne yapmalı?",
+          "options": [
+            "En kısa zamanda geçmek için hızlanmalısınız",
+            "Mesafeyi arttırmalısınız",
+            "Farları açıp kapamalısınız"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Önünüzdeki araç sık fren yaparsa takip mesafesini artırın.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 24,
+          "question": "Beş şeritli çevre yolda sağ çıkışa çıkmak için ne yapmalı?",
+          "options": [
+            "Tüm şeritleri bir defada geçmelisiniz",
+            "Şeritleri birer birer değiştirmelisiniz",
+            "Her değişiklikte yavaşlamalısınız"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Şerit değiştirirken güvenlik için her seferinde bir şerit değiştirin.",
+          "category": "Şerit Değiştirme",
+          "difficulty": "medium"
+        },
+        {
+          "id": 25,
+          "question": "Büyük kamyonu geçmek istiyorsanız en uygun şekil:",
+          "options": [
+            "Hızlı soldan geçersiniz",
+            "Çok yavaş soldan geçersiniz",
+            "Çok hızlı sağdan geçersiniz"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Büyük kamyonları geçerken hızlı ve soldan geçin.",
+          "category": "Geçiş",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "Gece uzun farlarınızı:",
+          "options": [
+            "Mümkün olduğunca az kullanırsınız",
+            "Sadece ışıksız sokaklarda",
+            "Sadece yasalara uygun ve güvenliyse"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Uzun farları sadece yasalara uygun olduğunda ve güvenli olduğunda kullanın.",
+          "category": "Gece Sürüşü",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "Islak yolda arabanız kayarsa ne yapmalı?",
+          "options": [
+            "Ayağınızı yavaşça gaz pedalından çekmelisiniz",
+            "Daha düşük vites geçmelisiniz",
+            "Frenlere sert basmalısınız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Araç kayarsa yavaşça gaz pedalından ayağınızı çekin.",
+          "category": "Hava Koşulları",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "Beyaz baston tutan yaya geçmeye hazırsa:",
+          "options": [
+            "Yaya geçmeye hazır olmadığı için devam etmelisiniz",
+            "1,8m kala durup geçmesini beklemelisiniz",
+            "Ne zaman geçeceğini belirtmek için kornaya basmalısınız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Beyaz baston taşıyan yayalar (görme engelli) her zaman geçiş hakkına sahiptir.",
+          "category": "Yayalar",
+          "difficulty": "easy"
+        },
+        {
+          "id": 29,
+          "question": "Kazada hangi bilgileri almalısınız?",
+          "options": [
+            "Sadece sigorta belgesi",
+            "Sigorta ve kayıt belgesi",
+            "Sigorta, kayıt belgesi ve adres"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Kazada sigorta, kayıt belgesi ve adres bilgilerini almalısınız.",
+          "category": "Kazalar",
+          "difficulty": "easy"
+        },
+        {
+          "id": 30,
+          "question": "Okul otobüsü yanıp sönen kırmızı ışıklar gösteriyor ise:",
+          "options": [
+            "Önce durup sonra ilerlemeliysiniz",
+            "Işıklar yanıp söndüğü sürece durmalısınız",
+            "Tüm çocuklar geçinceye kadar beklemeliysiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Okul otobüsünün kırmızı ışıkları yanıp sönerken durmalısınız.",
+          "category": "Okul Bölgeleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 31,
+          "question": "Altı yaşında veya daha küçük çocuğu yalnız bırakma yasaldır:",
+          "options": [
+            "Anahtarlar marşa takılıysa",
+            "12 yaşında kardeş varsa",
+            "Sadece motor çalışıyorsa"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Altı yaş veya altındaki çocukları anahtarlar kontak yerindeyken yalnız bırakmak yasadışıdır.",
+          "category": "Çocuk Güvenliği",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "Keskin virajda frenleri ne zaman kullanmalı?",
+          "options": [
+            "Viraja girdikten sonra",
+            "Virajdan geçerken",
+            "Viraja girmeden önce"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Keskin virajlarda viraja girmeden önce yavaşlayın.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 33,
+          "question": "U dönüşü yapmak istiyorsanız nereden başlamalı?",
+          "options": [
+            "Ortadan",
+            "Banketten",
+            "Sol şeritten"
+          ],
+          "correctAnswer": 2,
+          "explanation": "U dönüşü yapmak için en sol şeritten başlayın.",
+          "category": "Dönüşler",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "Yaya geçidi ve sınır çizgisi yoksa araç nerede durur?",
+          "options": [
+            "Köşeyi döndükten sonra",
+            "Köşede",
+            "Köşeden altı metre önce"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yaya geçidi veya dur çizgisi yoksa köşede durun.",
+          "category": "Kavşaklar",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "İş merkezi bölgesinde hız sınırı:",
+          "options": [
+            "25 mph",
+            "35 mph",
+            "30 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "İş merkezi bölgelerinde hız sınırı 25 mph'dir.",
+          "category": "Hız Limitleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 36,
+          "question": "Yoğun sis ve toz varken yapılması gereken şey:",
+          "options": [
+            "Durum iyileşene kadar araç kullanmamaya çalışmak",
+            "Çok yavaş sürmemek çünkü diğerleri çarpabilir",
+            "Kısa ve uzun farları değişimli kullanmak"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yoğun sis ve toz varken mümkünse araç kullanmamak en güvenlidir.",
+          "category": "Hava Koşulları",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "turkish-test-2",
+      "title": "DMV Turkish Test #2 / DMV Türkçe Test #2",
+      "description": "California DMV Türkçe Test #2 - İleri seviye trafik kuralları ve güvenli sürüş. Advanced traffic rules and safe driving with 36 real questions.",
+      "category": "Turkish Tests / Türkçe Testler",
+      "slug": "test-2",
+      "passingScore": 85,
+      "timeLimit": 60,
+      "language": "tr",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Motorlu Araçlar Dairesi'ne (DMV) 5 gün içinde aşağıdakilerden hangisi olursa bildirmelisiniz?",
+          "options": [
+            "Aracınızı sattıysanız ya da devrettiyseniz",
+            "Aracınızın rengini değiştirdiyseniz",
+            "Trafik ihlali nedeniyle mahkemeye çağrıldıysanız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Aracınızı sattığınızda veya devrettiğinizde 5 gün içinde DMV'ye bildirmeniz gerekir.",
+          "category": "DMV Kuralları",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "21 yaş veya daha üstü bir yaşta olan bir sürücünün kan alkol derecesi (BAC) — – veya daha yüksek olduğunda araba kullanması yasaya aykırıdır.",
+          "options": [
+            "% 0,08-On binde sekiz",
+            "% 0,10-Binde bir",
+            "% 0,05-On binde beş"
+          ],
+          "correctAnswer": 0,
+          "explanation": "21 yaş ve üzeri sürücüler için yasal BAC sınırı %0.08'dir.",
+          "category": "Alkol Kuralları",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "Çok hatlı bir demiryolu geçidinde durduktan sonra ne zaman karşıya geçmeli.",
+          "options": [
+            "Sadece her iki yönü de rahatça görebildiğinizde",
+            "Tren sizin tarafınızdan geçtikten hemen sonra",
+            "Sadece diğer araçlar geçmeye başladıktan sonra"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Demiryolu geçidinde her iki yönü de görebildiğinizde ve güvenli olduğunda geçin.",
+          "category": "Demiryolu Geçitleri",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "Bu işaret hangi anlama gelir?",
+          "image": "/images/traffic-signs/divided-highway.png",
+          "options": [
+            "İleride şeritler birleşiyor",
+            "İleride yol çift yönlü bölünmüş otoyol oluyor",
+            "İleride yol tıkalı"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bu işaret yolun ileride çift yönlü bölünmüş otoyola dönüştüğünü gösterir.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "Bu işaret kimin park edebileceğini göstermektedir?",
+          "image": "/images/traffic-signs/handicap-parking.png",
+          "options": [
+            "Yalnız tekerlekli sandalye kullanan kişilerin",
+            "Özel levhası ya da plakası olmayan engellilerin",
+            "Yalnız özel levhası ya da plakası olan engellilerin"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Engelli park yerleri sadece özel levhası veya plakası olan kişiler içindir.",
+          "category": "Park Etme",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "Beş şeritli bir çevreyolunda, ortadaki bölücüye en yakın olan şeritten gidiyorsunuz. Çevreyolunun sağ tarafındaki çıkışından çıkmak için ne yapmalısınız?",
+          "options": [
+            "Tüm şeritleri bir defada dikkatli bir şekilde geçmelisiniz",
+            "Doğru şeride girene kadar şeritleri birer birer değiştirmelisiniz",
+            "Her şerit değişikliğinden önce yavaşlamalısınız"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Güvenlik için şeritleri birer birer değiştirmelisiniz.",
+          "category": "Şerit Değiştirme",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "Gittiğiniz yönde sadece tek şerit var ve önünüzdeki araç da anlayamadığınız bir nedenden dolayı sık sık yavaşlıyor. Bu durumda ne yapmalısınız?",
+          "options": [
+            "Önünüzdeki aracı en kısa zamanda geçmek için hızlanmalısınız",
+            "Önündeki araca olan uzaklığınızı arttırmalısınız",
+            "Diğer aracın sürücüsünü uyarmak için farlarınızı hızlı bir şekilde açıp kapamalısınız"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Önünüzdeki araç sık fren yaparsa takip mesafesini artırmalısınız.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "Bir yaya geçidi işaretlemesi veya sınır çizgisi yoksa aracınızı nerede durdurmanız gerekir?",
+          "options": [
+            "Köşeyi döndükten hemen sonra",
+            "Köşede",
+            "Köşeden altı metre (yirmi fit) önce"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yaya geçidi veya dur çizgisi yoksa köşede durmalısınız.",
+          "category": "Kavşaklar",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "Köşede yolun karşısına geçmeye hazır beyaz bastonlu bir yaya gördünüz. Yaya bir adım geri der ve bastonunu geri çeker. Ne yapmalısınız?",
+          "options": [
+            "Yola devam etmelisiniz, çünkü yaya geçmeye hazır değildir",
+            "Arabanızı yaya geçidine en az 1,8 m (altı fit) kala durdurmalısınız ve yayanın caddenin karşısına geçmesini beklemelisiniz",
+            "Yayanın caddenin karşısına ne zaman geçebileceğini belirtmek için kornaya basmalısınız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Beyaz baston taşıyan yaya geri çekilirse, geçmek istemediğini belirtir, devam edebilirsiniz.",
+          "category": "Yayalar",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "Karşı yönden gelen bir araç önünüzden sola dönmeye başlarsa ne yapmalısınız?",
+          "options": [
+            "Sürücüyü uyarmak için kornaya basıp hızınızı korursunuz",
+            "Hızınızı korursunuz ve geçiş hakkınızı kullanırsınız",
+            "Bir kaza olmasını engellemek için arabanızı yavaşlatır veya durdurursunuz"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Kaza engellemek her zaman en önemli önceliktir - yavaşlayın veya durun.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "Yeşil okla kontrol edilen dönüş için ayrılmış özel bir şeritteyseniz, aşağıdakilerden hangisi doğru olur?",
+          "options": [
+            "Kavşaktaki tüm araçlar veya yayalar size yol vermelidir",
+            "Karşı yönden gelen tüm araçlar ve bekleyen yayalar kırmızı ışıklarla durdurulur",
+            "Trafiği kontrol etmeden ok yönüne dönebilirsiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yeşil ok sinyalinde karşıdan gelen trafik kırmızı ışıkla durdurulur.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "Bir kazaya karıştığınızda, kazayı yapan diğer kişi veya kişilerle sürücü belgesi bilgilerinizin yanı sıra hangi bilgileri alıp vermeniz gereklidir?",
+          "options": [
+            "Sadece sigorta kanıt belgesi",
+            "Sadece sigorta kanıt belgesi ve araç kayıt belgesi (ruhsat)",
+            "Sigorta kanıt belgesi, araç kayıt belgesi (ruhsat) ve geçerli adresiniz"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Kazada sigorta, kayıt belgesi ve adres bilgilerini alıp vermelisiniz.",
+          "category": "Kazalar",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "Trafik lambasında sola işaret eden yeşil oklu ışık, hangi anlama gelir?",
+          "options": [
+            "O yönde korunmalı bir dönüş yapabilirsiniz",
+            "Sola dönebilirsiniz ya da düz gidebilirsiniz",
+            "Ancak durduktan sonra o yöne dönebilirsiniz"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yeşil ok, gösterilen yöne güvenli bir şekilde dönebileceğiniz anlamına gelir.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 14,
+          "question": "Keskin bir virajda, aracınızı yavaşlatmak için frenlerinizi hangi durumda kullanırsınız?",
+          "options": [
+            "Viraja girdikten hemen sonra",
+            "Virajda olduğunuz süre boyunca",
+            "Viraja girmeden önce"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Keskin virajlarda viraja girmeden önce yavaşlamalısınız.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 15,
+          "question": "Gece uzun farlarınızı;",
+          "options": [
+            "Mümkün olduğunca az kullanmalısınız",
+            "Sadece ışıklandırmanın olmadığı yollarda kullanmalısınız",
+            "Yasal ve güvenli olduğu her zaman kullanmalısınız"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Uzun farları sadece ışıklandırmanın olmadığı yollarda kullanmalısınız.",
+          "category": "Gece Sürüşü",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "Nerede park ettiğinizde ön tekerleklerinizi kaldırıma doğru çevirmelisiniz?",
+          "options": [
+            "Yokuş aşağı dururken",
+            "Yokuş yukarı dururken",
+            "Düz bir yolda dururken"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yokuş aşağı park ederken tekerlekleri kaldırıma doğru çevirmelisiniz.",
+          "category": "Park Etme",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "Aşağıdakilerden hangisi diğer sürücüler için geçerlidir?",
+          "options": [
+            "Sürücüler her zaman trafik işaretleri ve sinyallerine uyar",
+            "Dönüş sinyali veren sürücüler her zaman işaret verdikleri yöne dönerler",
+            "Hiçbir zaman diğer sürücülerin size geçiş hakkı vereceği varsayımında bulunamazsınız"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Asla diğer sürücülerin ne yapacağını varsaymayın - her zaman dikkatli olun.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "Dört şeritli bir çevreyolunda hızlı şeritte yavaş gidiyorsunuz. Bulunduğunuz şeritte arkanızda trafik oluşmuş durumda. Arkanızdaki araç sürücüsü daha hızlı gitmek istiyor. Ne yapmalısınız?",
+          "options": [
+            "Hız sınırında ilerliyorsanız, şerit değiştirmemelisiniz",
+            "Güvenli olduğunda sağ şeride geçmelisiniz",
+            "Sadece arkanızda beş veya daha fazla araç varsa şerit değiştirmelisiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yavaş gidiyorsanız, daha hızlı trafiğe izin vermek için sağ şeride geçmelisiniz.",
+          "category": "Otoyol Sürüşü",
+          "difficulty": "easy"
+        },
+        {
+          "id": 19,
+          "question": "Bölünmüş ve sizin yönünüzde birden fazla şeridin olduğu bir yolda araba kullanıyorsunuz U dönüşü yapmak isterseniz, nereden başlamanız gereklidir?",
+          "options": [
+            "Sol şeritten",
+            "Orta refüjdan",
+            "Banketten"
+          ],
+          "correctAnswer": 0,
+          "explanation": "U dönüşü yapmak için en sol şeritten başlamalısınız.",
+          "category": "Dönüşler",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "Yoğun sisli ve tozlu koşullarda araç kullanırken yapılması gereken en iyi şey nedir?",
+          "options": [
+            "Koşullar iyileşene kadar araç kullanmamaya çalışmak",
+            "Diğer sürücüler size çarpabileceğinden, aracı çok yavaş sürmemek",
+            "Görüşünüzü iyileştirmek için kısa ve uzun farları değişimli olarak kullanmak"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Yoğun sis ve toz varken mümkünse araç kullanmamak en güvenlidir.",
+          "category": "Hava Koşulları",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "Bir kavşağa yaklaşıyorsunuz. Yanıp sönen kırmızı bir trafik sinyali var. Ne yapmalısınız?",
+          "options": [
+            "Dikkatle ilerlemeye devam ederek kavşağı geçmelisiniz",
+            "Kavşağa girmeden önce durmalı ve güvenli olduğunda geçmelisiniz",
+            "Kavşağa girmeden önce durmalısınız. Geçmeden önce yeşil ışığı beklemelisiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yanıp sönen kırmızı ışık STOP işareti gibidir - durmalı ve güvenli olduğunda geçmelisiniz.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 22,
+          "question": "Aşağıdakilerden hangisinde altı yaşında veya daha küçük bir çocuğun motorlu bir araçta yalnız bırakılması yasalara aykırıdır?",
+          "options": [
+            "Anahtarlar kontağa takılıysa",
+            "Çocuğun yanında 12 yaşında olan erkek veya kız kardeşi varsa",
+            "Soğuk, yağmurlu bir günde bütün camlar kapalıyken"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Altı yaş veya altındaki çocukları anahtarlar kontak yerindeyken yalnız bırakmak yasadışıdır.",
+          "category": "Çocuk Güvenliği",
+          "difficulty": "medium"
+        },
+        {
+          "id": 23,
+          "question": "Bu işaret hangi anlama gelir?",
+          "image": "/images/traffic-signs/one-way-right.png",
+          "options": [
+            "Tek yönlü sokak – trafik sağa doğru gider",
+            "Tek şeritli yol",
+            "İleride tüm trafik sağa dönmelidir"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Bu işaret tek yönlü sokağı ve trafik yönünü gösterir.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 24,
+          "question": "Acil servis araçlarına yol vermek için;",
+          "options": [
+            "Aracınızı mümkün olduğu kadar yolun sağ tarafına çekmeli ve durmalısınız",
+            "Sağ şeride doğru ilerlemeli ve araç sizi geçene kadar yavaş ilerlemelisiniz",
+            "Kavşakta bile olsanız, derhal durmalısınız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Acil araçlar için yolun sağ kenarına çekilip durmalısınız.",
+          "category": "Acil Durumlar",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "Dönüş yapmadan önce motorsikletlere karşı her zaman dikkatli olmalısınız, çünkü;",
+          "options": [
+            "Bir trafik şeridinin tamamını kullanmalıdırlar",
+            "Kavşaklarda her zaman geçiş hakkı üstünlüğü vardır",
+            "Küçük olmaları, görülebilirliklerini zorlaştırır"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Motosikletler küçük olduğu için görülmeleri zor olabilir, ekstra dikkat gerektirir.",
+          "category": "Yolu Paylaşma",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "Bu işaret hangi anlama gelir?",
+          "image": "/images/traffic-signs/left-turn-u-turn.png",
+          "options": [
+            "Yeşil ok ışığında sola dönüş veya U dönüşüne izin verilir",
+            "Herhangi bir yeşil ışıkta sola dönüş veya U dönüşüne izin verilir",
+            "Sola dönmeli ya da bir U dönüşü yapmalısınız"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Bu işaret yeşil ok ışığında sola dönüş veya U dönüşü yapabileceğinizi gösterir.",
+          "category": "Trafik İşaretleri",
+          "difficulty": "medium"
+        },
+        {
+          "id": 27,
+          "question": "Aracınızı aşağıdakilerden hangisinde genellikle daha dikkatli kullanmanız gereklidir?",
+          "options": [
+            "Okul, çocuk bahçesi yakınlarında ve yerleşim alanlarında",
+            "Çevreyolunda büyük kamyonları geçerken",
+            "Kontrol altına alınmış kaza yerine bakmak istediğinizde"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Okul, çocuk bahçesi ve konut alanlarında çocuklar olabileceği için ekstra dikkat gerekir.",
+          "category": "Okul Bölgeleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 28,
+          "question": "Aracı trafik akışından daha yavaş kullanmak;",
+          "options": [
+            "Kaza yapma olasılığını azaltır",
+            "Kaza yapma olasılığını arttırır",
+            "Kaza yapma olasılığını değiştirmez"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trafik akışından çok yavaş gitmek kaza riskini artırır.",
+          "category": "Hız Limitleri",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "$ para cezası ve altı aylık hapis cezası aşağıdakilerden hangisini yapmanız durumunda verilebilir?",
+          "options": [
+            "Otoyolda çöp boşaltma veya bir hayvanı terk etme",
+            "Ortadaki bir sola dönüş şeridinden U dönüşü yapma",
+            "Bisiklet şeridine park etme"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Otoyolda çöp atmak veya hayvan terk etmek ciddi bir suçtur ve ağır ceza alabilir.",
+          "category": "Trafik Kuralları",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "Aksi belirtilmedikçe, işyeri alanı olan bir bölgedeki hız sınırı:",
+          "options": [
+            "25 mph (Saatte 25 mil)",
+            "35 mph (Saatte 35 mil)",
+            "30 mph (Saatte 30 mil)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "İş merkezi bölgelerinde hız sınırı 25 mph'dir.",
+          "category": "Hız Limitleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 31,
+          "question": "Açılı bir park alanından geri geri çıkmak istiyorsunuz. Geriye doğru çıkarken her zaman yavaş ilerlemeli ve:",
+          "options": [
+            "Geri giderken arka dikiz aynanıza bakmalısınız",
+            "Geri giderken yan aynalarınıza bakmalısınız",
+            "Geri geri giderken sağ omuzunuzdan geriye bakmalısınız"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Geri giderken sağ omzunuzdan arkaya bakarak kör noktaları kontrol etmelisiniz.",
+          "category": "Park Etme",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "Yolun sizin gittiğiniz tarafında bir okul otobüsü durmuş ve kırmızı ışıkları yanıp sönüyor. Ne yapmalısınız?",
+          "options": [
+            "Önce durmalı, daha sonra güvenli olduğunu düşündüğünüzde yola devam etmelisiniz",
+            "Kırmızı ışıklar yanıp söndüğü sürece durmalısınız",
+            "Tüm çocuklar sizin bulunduğunuz şeritten karşıya geçinceye kadar beklemelisiniz"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Okul otobüsünün kırmızı ışıkları yanıp sönerken durmalısınız.",
+          "category": "Okul Bölgeleri",
+          "difficulty": "easy"
+        },
+        {
+          "id": 33,
+          "question": "Aracınızı kullanırken ve önünüze bakarken aşağıdaki şekilde davranmalısınız:",
+          "options": [
+            "Her zaman dümdüz ileri bakmalısınız",
+            "Yalnız önünüzde giden arabalara bakmalısınız",
+            "Arkaya, öne, uzağa, yakına bakmalısınız"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Güvenli sürüş için tüm yönleri kontrol etmelisiniz - arkaya, öne, yakına ve uzağa.",
+          "category": "Güvenli Sürüş",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "Kan alkol dereceniz (BAC) yasal sınırda veya bu sınırın üzerindeyken yakalanırsanız;",
+          "options": [
+            "Mahkeme para cezası verebilir",
+            "Sadece nefes testinin sonucu tek başına suçlu bulunmanız için yeterli değildir",
+            "Sürücü belgenizin durumuna bakılmaksızın, sürücü belgeniz otomatik olarak iptal edilir"
+          ],
+          "correctAnswer": 0,
+          "explanation": "BAC yasal sınırda yakalanırsanız mahkeme para cezası ve diğer cezalar verebilir.",
+          "category": "Alkol Kuralları",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "Büyük bir kamyon üç şeritli bir yolda orta şeritte ilerliyor. Büyük kamyonu geçmek istiyorsunuz. En uygun şekilde nasıl geçersiniz?",
+          "options": [
+            "Hızlı bir şekilde solundan önüne geçersiniz",
+            "Yavaş bir şekilde solundan önüne geçersiniz",
+            "Çok hızlı bir şekilde sağından önüne geçersiniz"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Büyük kamyonları geçerken hızlı ve soldan geçmelisiniz.",
+          "category": "Geçiş",
+          "difficulty": "medium"
+        },
+        {
+          "id": 36,
+          "question": "Yolun ortasındaki çift ve kesintisiz sarı çizgilerden aşağıdakilerden hangisini yapmak için geçilmez?",
+          "options": [
+            "Diğer araçları geçmek",
+            "Sola dönüş yapmak",
+            "Özel bir araç yoluna girmek"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Çift sarı çizgiler diğer araçları geçmek için kesinlikle geçilemez.",
+          "category": "Şerit İşaretleri",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ]
+}

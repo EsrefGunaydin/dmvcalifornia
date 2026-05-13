@@ -2,6 +2,15 @@ import { MetadataRoute } from 'next';
 import blogPostsData from '@/data/blog_posts.json';
 import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
+import arabicQuizzesData from '@/data/arabic-quizzes.json';
+import armenianQuizzesData from '@/data/armenian-quizzes.json';
+import farsiQuizzesData from '@/data/farsi-quizzes.json';
+import punjabiQuizzesData from '@/data/punjabi-quizzes.json';
+import russianQuizzesData from '@/data/russian-quizzes.json';
+import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
+import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
+import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
+import commercialQuizzesData from '@/data/commercial-quizzes.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.dmvcalifornia.us';
@@ -40,6 +49,60 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/dmv-chinese-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-arabic-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-armenian-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-farsi-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-punjabi-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-russian-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-tagalog-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-vietnamese-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/motorcycle-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/commercial-test`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -104,5 +167,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...blogPages, ...quizPages, ...turkishPages, ...chinesePages];
+  // Newly added languages + license-class quizzes
+  const newLanguageQuizzes = [
+    ...arabicQuizzesData.quizzes,
+    ...armenianQuizzesData.quizzes,
+    ...farsiQuizzesData.quizzes,
+    ...punjabiQuizzesData.quizzes,
+    ...russianQuizzesData.quizzes,
+    ...tagalogQuizzesData.quizzes,
+    ...vietnameseQuizzesData.quizzes,
+    ...motorcycleQuizzesData.quizzes,
+    ...commercialQuizzesData.quizzes,
+  ];
+  const newLanguagePages: MetadataRoute.Sitemap = newLanguageQuizzes.map((quiz) => ({
+    url: `${baseUrl}/practice-test/${quiz.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
+  return [
+    ...staticPages,
+    ...blogPages,
+    ...quizPages,
+    ...turkishPages,
+    ...chinesePages,
+    ...newLanguagePages,
+  ];
 }
