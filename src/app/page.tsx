@@ -165,6 +165,32 @@ export default function Home() {
         {/* App Promotion Banner */}
         <AppPromotion variant="banner" className="mb-12" />
 
+        {/* Intersection Game Promo */}
+        <Link href="/intersection" className="block mb-12 group">
+          <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 border-2 border-slate-600">
+            <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 px-6 md:px-10 py-8">
+              <div className="flex-shrink-0 text-6xl md:text-7xl" aria-hidden="true">🚦</div>
+              <div className="flex-1 text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+                  <span className="bg-primary text-white text-xs font-bold px-2.5 py-1 rounded-full">NEW</span>
+                  <span className="text-amber-300 text-xs font-semibold uppercase tracking-wide">Free Interactive Game</span>
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                  Intersection — Who Goes First?
+                </h2>
+                <p className="text-slate-300 text-sm md:text-base max-w-2xl">
+                  Master right-of-way — the hardest-tested DMV topic — with 10 hand-built puzzles. Tap the cars, pedestrians, and cyclists in the legal order they may proceed, and watch the collision play out when you get it wrong.
+                </p>
+              </div>
+              <div className="flex-shrink-0">
+                <span className="inline-block bg-primary group-hover:bg-primary-600 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
+                  Play Now →
+                </span>
+              </div>
+            </div>
+          </div>
+        </Link>
+
         {/* All Practice Tests */}
         <div className="mb-12">
           <div className="text-center mb-10">
