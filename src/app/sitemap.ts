@@ -12,6 +12,7 @@ import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
 import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
+import intersectionLevelsData from '@/data/intersection-levels.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.dmvcalifornia.us';
@@ -29,6 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/intersection`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/practice-test`,
@@ -242,6 +249,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // Intersection puzzle game levels
+  const intersectionPages: MetadataRoute.Sitemap = intersectionLevelsData.levels.map((lvl) => ({
+    url: `${baseUrl}/intersection/${lvl.id}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
   return [
     ...staticPages,
     ...blogPages,
@@ -251,5 +266,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...turkishPages,
     ...chinesePages,
     ...newLanguagePages,
+    ...intersectionPages,
   ];
 }

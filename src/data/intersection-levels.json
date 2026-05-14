@@ -1,0 +1,212 @@
+{
+  "levels": [
+    {
+      "id": "level-1",
+      "title": "First to Arrive",
+      "description": "Two cars at a four-way stop. Who goes first?",
+      "intersectionType": "four-way-stop",
+      "agents": [
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "straight", "label": "Arrived first" },
+        { "id": "car-2", "type": "car", "approachFrom": "west", "intent": "straight", "label": "Arrived second" }
+      ],
+      "correctOrder": ["car-1", "car-2"],
+      "stepRules": {
+        "car-1": "Arrived at the stop first, so it proceeds first.",
+        "car-2": "Arrived second — waits until the first car clears the intersection."
+      },
+      "collisionRules": {
+        "car-2>car-1": "At a four-way stop, the vehicle that arrives and stops first has the right of way. Car 2 arrived second and must wait.",
+        "*": "At a four-way stop, the first vehicle to arrive and stop goes first."
+      },
+      "cvcReference": "CVC §21800(a)"
+    },
+    {
+      "id": "level-2",
+      "title": "Arrived Together",
+      "description": "Two cars reach the stop at the same moment. Yield to the right.",
+      "intersectionType": "four-way-stop",
+      "agents": [
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "straight", "label": "Arrived together" },
+        { "id": "car-2", "type": "car", "approachFrom": "east", "intent": "straight", "label": "Arrived together" }
+      ],
+      "correctOrder": ["car-2", "car-1"],
+      "stepRules": {
+        "car-2": "When two vehicles arrive at the same time, the one with no vehicle on its right goes first. Nothing is to Car 2's right.",
+        "car-1": "Car 2 is on Car 1's right, so Car 1 yields and goes second."
+      },
+      "collisionRules": {
+        "car-1>car-2": "When vehicles reach a four-way stop at the same time, the vehicle on the right has the right of way. Car 2 is to Car 1's right.",
+        "*": "When you arrive at the same time as another vehicle, yield to the one on your right."
+      },
+      "cvcReference": "CVC §21800(a)"
+    },
+    {
+      "id": "level-3",
+      "title": "Pedestrian Crossing",
+      "description": "A pedestrian is in the crosswalk as a car approaches.",
+      "intersectionType": "uncontrolled",
+      "agents": [
+        { "id": "ped-1", "type": "pedestrian", "approachFrom": "north", "intent": "straight", "label": "In crosswalk" },
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "straight" }
+      ],
+      "correctOrder": ["ped-1", "car-1"],
+      "stepRules": {
+        "ped-1": "Pedestrians in a crosswalk always have the right of way.",
+        "car-1": "Must wait for the pedestrian to finish crossing before proceeding."
+      },
+      "collisionRules": {
+        "car-1>ped-1": "Pedestrians in a crosswalk have the right of way. You must always yield to them before proceeding.",
+        "*": "Always yield to pedestrians in a crosswalk."
+      },
+      "cvcReference": "CVC §21950"
+    },
+    {
+      "id": "level-4",
+      "title": "Three at the Stop",
+      "description": "Three cars at a four-way stop. Combine arrival order and yielding right.",
+      "intersectionType": "four-way-stop",
+      "agents": [
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "straight", "label": "Arrived first" },
+        { "id": "car-2", "type": "car", "approachFrom": "north", "intent": "straight", "label": "Arrived second" },
+        { "id": "car-3", "type": "car", "approachFrom": "east", "intent": "straight", "label": "Arrived second" }
+      ],
+      "correctOrder": ["car-1", "car-2", "car-3"],
+      "stepRules": {
+        "car-1": "Arrived first — goes first.",
+        "car-2": "Of the two cars that arrived next, nothing is to Car 2's right, so it goes before Car 3.",
+        "car-3": "Car 2 is on Car 3's right, so Car 3 goes last."
+      },
+      "collisionRules": {
+        "car-2>car-1": "Car 1 arrived first and has priority over everyone.",
+        "car-3>car-1": "Car 1 arrived first and has priority over everyone.",
+        "car-3>car-2": "Car 2 and Car 3 arrived together — Car 2 has no one on its right, so it goes before Car 3.",
+        "*": "First to arrive goes first; when two tie, yield to the one on the right."
+      },
+      "cvcReference": "CVC §21800(a)"
+    },
+    {
+      "id": "level-5",
+      "title": "Turning Left",
+      "description": "A car turning left faces oncoming traffic on a green light.",
+      "intersectionType": "signal",
+      "agents": [
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "left", "label": "Green light" },
+        { "id": "car-2", "type": "car", "approachFrom": "north", "intent": "straight", "label": "Green light" }
+      ],
+      "correctOrder": ["car-2", "car-1"],
+      "stepRules": {
+        "car-2": "Going straight on a green light — has the right of way over oncoming left-turning traffic.",
+        "car-1": "Turning left must yield to oncoming traffic going straight, even on a green light."
+      },
+      "collisionRules": {
+        "car-1>car-2": "A left-turning vehicle must yield to oncoming traffic that is going straight or turning right.",
+        "*": "Left turns yield to oncoming straight traffic."
+      },
+      "cvcReference": "CVC §21801"
+    },
+    {
+      "id": "level-6",
+      "title": "T-Intersection",
+      "description": "A car enters from a side road onto a through road.",
+      "intersectionType": "t-intersection",
+      "agents": [
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "right", "label": "Side road" },
+        { "id": "car-2", "type": "car", "approachFrom": "east", "intent": "straight", "label": "Through road" }
+      ],
+      "correctOrder": ["car-2", "car-1"],
+      "stepRules": {
+        "car-2": "Traveling on the through road — has the right of way.",
+        "car-1": "Entering from the terminating side road must yield to all traffic on the through road."
+      },
+      "collisionRules": {
+        "car-1>car-2": "A driver entering a through road from a terminating road at a T-intersection must yield to traffic already on the through road.",
+        "*": "Yield to traffic already on the through road."
+      },
+      "cvcReference": "CVC §21800"
+    },
+    {
+      "id": "level-7",
+      "title": "No Signs At All",
+      "description": "An uncontrolled intersection with no signs or signals.",
+      "intersectionType": "uncontrolled",
+      "agents": [
+        { "id": "car-1", "type": "car", "approachFrom": "west", "intent": "straight" },
+        { "id": "car-2", "type": "car", "approachFrom": "north", "intent": "straight" }
+      ],
+      "correctOrder": ["car-1", "car-2"],
+      "stepRules": {
+        "car-1": "At an uncontrolled intersection, yield to the vehicle on your right. Nothing is to Car 1's right, so it goes first.",
+        "car-2": "Car 1 is on Car 2's right, so Car 2 yields."
+      },
+      "collisionRules": {
+        "car-2>car-1": "At an uncontrolled intersection, you must yield to vehicles approaching from your right. Car 1 is on Car 2's right.",
+        "*": "At an uncontrolled intersection, yield to the vehicle on your right."
+      },
+      "cvcReference": "CVC §21800(d)"
+    },
+    {
+      "id": "level-8",
+      "title": "Sharing With a Cyclist",
+      "description": "A bicycle and a car at a four-way stop.",
+      "intersectionType": "four-way-stop",
+      "agents": [
+        { "id": "cyclist-1", "type": "cyclist", "approachFrom": "south", "intent": "straight", "lane": "bike", "label": "Arrived first" },
+        { "id": "car-1", "type": "car", "approachFrom": "east", "intent": "straight", "label": "Arrived second" }
+      ],
+      "correctOrder": ["cyclist-1", "car-1"],
+      "stepRules": {
+        "cyclist-1": "Bicyclists have the same rights and duties as drivers. This cyclist arrived first, so it goes first.",
+        "car-1": "Must treat the bicycle like any other vehicle and wait its turn."
+      },
+      "collisionRules": {
+        "car-1>cyclist-1": "Bicycles are treated as vehicles at intersections. The cyclist arrived first and has the right of way.",
+        "*": "Treat bicycles as vehicles — the one that arrived first goes first."
+      },
+      "cvcReference": "CVC §21200"
+    },
+    {
+      "id": "level-9",
+      "title": "Reading the Signals",
+      "description": "A green left arrow for one car, a red light for the other.",
+      "intersectionType": "signal",
+      "agents": [
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "left", "label": "Green arrow" },
+        { "id": "car-2", "type": "car", "approachFrom": "north", "intent": "straight", "label": "Red light" }
+      ],
+      "correctOrder": ["car-1", "car-2"],
+      "stepRules": {
+        "car-1": "A green left-turn arrow gives a protected left turn — proceed.",
+        "car-2": "Facing a red light — must stop and wait for a green signal."
+      },
+      "collisionRules": {
+        "car-2>car-1": "A red light means stop. Car 1 has a green arrow and the protected right of way.",
+        "*": "Obey the signal — green proceeds, red stops."
+      },
+      "cvcReference": "CVC §21451"
+    },
+    {
+      "id": "level-10",
+      "title": "Emergency Vehicle",
+      "description": "An ambulance with lights and siren is approaching the stop.",
+      "intersectionType": "four-way-stop",
+      "agents": [
+        { "id": "emergency-1", "type": "emergency", "approachFrom": "west", "intent": "straight", "label": "Siren on" },
+        { "id": "car-1", "type": "car", "approachFrom": "south", "intent": "straight", "label": "Arrived first" },
+        { "id": "car-2", "type": "car", "approachFrom": "north", "intent": "straight", "label": "Arrived second" }
+      ],
+      "correctOrder": ["emergency-1", "car-1", "car-2"],
+      "stepRules": {
+        "emergency-1": "An emergency vehicle with siren and lights on has the right of way over everyone — let it pass first.",
+        "car-1": "After the emergency vehicle clears, normal rules resume — Car 1 arrived first.",
+        "car-2": "Goes last — arrived after Car 1."
+      },
+      "collisionRules": {
+        "car-1>emergency-1": "You must always yield to an emergency vehicle using its siren and lights, even if you have the right of way.",
+        "car-2>emergency-1": "You must always yield to an emergency vehicle using its siren and lights, even if you have the right of way.",
+        "car-2>car-1": "After the emergency vehicle passes, Car 1 still has priority — it arrived first.",
+        "*": "Yield to emergency vehicles first, then follow normal right-of-way."
+      },
+      "cvcReference": "CVC §21806"
+    }
+  ]
+}

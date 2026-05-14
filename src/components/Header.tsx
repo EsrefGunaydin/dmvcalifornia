@@ -23,6 +23,9 @@ export default function Header() {
             <Link href="/practice-test" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Practice Tests
             </Link>
+            <Link href="/intersection" className="text-gray-700 hover:text-primary font-medium transition-colors">
+              Intersection 🚦
+            </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Blog
             </Link>
@@ -73,6 +76,13 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Practice Tests
+              </Link>
+              <Link
+                href="/intersection"
+                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Intersection 🚦
               </Link>
               <Link
                 href="/blog"
