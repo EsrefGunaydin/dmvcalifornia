@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 declare global {
   interface Window {
@@ -9,11 +9,17 @@ declare global {
 }
 
 export default function MultiplexAd() {
+  const insRef = useRef<HTMLModElement | null>(null);
+  const pushed = useRef(false);
+
   useEffect(() => {
+    if (pushed.current) return;
+    if (typeof window === 'undefined') return;
+    if (insRef.current?.getAttribute('data-adsbygoogle-status')) return;
+
     try {
-      if (typeof window !== 'undefined') {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      }
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      pushed.current = true;
     } catch (error) {
       console.error('AdSense error:', error);
     }
@@ -22,6 +28,7 @@ export default function MultiplexAd() {
   return (
     <div className="my-8">
       <ins
+        ref={insRef}
         className="adsbygoogle"
         style={{ display: 'block' }}
         data-ad-format="autorelaxed"
