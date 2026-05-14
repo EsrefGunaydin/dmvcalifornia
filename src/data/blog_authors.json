@@ -1,0 +1,67 @@
+{
+  "authors": [
+    {
+      "slug": "sarah-mitchell",
+      "name": "Sarah Mitchell",
+      "role": "Senior Editor, Driver Education",
+      "bio": "Sarah covers California driver licensing, vehicle registration, and DMV procedures. She's been writing about transportation topics for over a decade and is committed to making bureaucratic processes easy for everyday drivers.",
+      "expertise": ["Driver License", "Vehicle Registration", "DMV Forms"]
+    },
+    {
+      "slug": "michael-anderson",
+      "name": "Michael Anderson",
+      "role": "Driving Test Coach",
+      "bio": "Michael is a former driving instructor with 15+ years of experience preparing first-time drivers for the California DMV permit and behind-the-wheel tests. His articles focus on test-taking strategy and real-world driving skills.",
+      "expertise": ["Driving Test", "Written Test", "Test Prep"]
+    },
+    {
+      "slug": "lisa-thompson",
+      "name": "Lisa Thompson",
+      "role": "Auto Insurance & Compliance Writer",
+      "bio": "Lisa breaks down California's auto insurance requirements, financial responsibility laws, and SR-1 procedures. She helps drivers understand the rules without the legalese.",
+      "expertise": ["Insurance", "Traffic Laws", "Compliance"]
+    },
+    {
+      "slug": "jennifer-rodriguez",
+      "name": "Jennifer Rodriguez",
+      "role": "California Traffic Law Correspondent",
+      "bio": "Jennifer reports on new California traffic legislation, DMV policy changes, and rule updates that affect everyday drivers. She tracks bills from Sacramento and translates them into plain English.",
+      "expertise": ["Traffic Laws", "Legislation", "DMV Policy"]
+    },
+    {
+      "slug": "robert-johnson",
+      "name": "Robert Johnson",
+      "role": "DMV Services Guide",
+      "bio": "Robert helps drivers navigate the online and in-person DMV experience — appointments, kiosks, REAL ID, and renewal services. He's spent years cataloging every shortcut around long DMV wait times.",
+      "expertise": ["DMV Services", "Appointments", "REAL ID"]
+    },
+    {
+      "slug": "david-chen",
+      "name": "David Chen",
+      "role": "Road Safety Analyst",
+      "bio": "David covers defensive driving, road conditions, and California-specific safety topics — from Santa Ana winds to mountain driving. He pulls from CHP reports and DMV safety data.",
+      "expertise": ["Road Safety", "Defensive Driving", "Tips"]
+    },
+    {
+      "slug": "jennifer-lee",
+      "name": "Jennifer Lee",
+      "role": "Driver Education Specialist",
+      "bio": "Jennifer specializes in driver's ed curriculum, teen driver requirements, and provisional licensing. She helps parents and new drivers understand California's graduated licensing system.",
+      "expertise": ["Teen Drivers", "Driver Education", "Provisional License"]
+    },
+    {
+      "slug": "michael-rodriguez",
+      "name": "Michael Rodriguez",
+      "role": "Vehicle Registration Expert",
+      "bio": "Michael covers California vehicle registration, smog checks, transfer of ownership, and out-of-state vehicle imports. He demystifies the DMV's vehicle paperwork.",
+      "expertise": ["Vehicle Registration", "Smog Check", "Title Transfer"]
+    },
+    {
+      "slug": "thomas-anderson",
+      "name": "Thomas Anderson",
+      "role": "Commercial & Motorcycle Licensing Writer",
+      "bio": "Thomas writes about California Class M motorcycle endorsements and Class A/B commercial driver licenses. Former DMV examiner with a focus on test prep and licensing pathways.",
+      "expertise": ["Motorcycle License", "Commercial License", "CDL"]
+    }
+  ]
+}

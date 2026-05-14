@@ -111,7 +111,7 @@ export default function ExitIntentPopup() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span className="text-gray-700">500+ Practice Questions</span>
+              <span className="text-gray-700">1,164+ Practice Questions in 11 Languages</span>
             </div>
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">

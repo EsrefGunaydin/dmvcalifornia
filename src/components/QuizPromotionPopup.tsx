@@ -102,7 +102,7 @@ export default function QuizPromotionPopup() {
             Ready to Pass Your DMV Test?
           </h3>
           <p className="text-gray-600 mb-4">
-            Practice with 500+ Real DMV Questions
+            Practice with 1,164+ Real DMV Questions in 11 Languages
           </p>
 
           {/* Benefits */}

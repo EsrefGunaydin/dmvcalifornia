@@ -15,6 +15,8 @@ import BlogViewTracker from '@/components/BlogViewTracker';
 import BlogPostContent from '@/components/BlogPostContent';
 import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
+import ArticleSchema from '@/components/blog/ArticleSchema';
+import { countWords, readingTimeMinutes } from '@/lib/strip-html';
 
 // Type for blog post
 type BlogPost = {
@@ -24,10 +26,15 @@ type BlogPost = {
   content: string;
   excerpt: string;
   publishedAt: string;
+  updatedAt?: string;
   author: string;
   tags?: string[];
   views?: number;
+  hero_image?: string;
+  faq?: { question: string; answer: string }[];
 };
+
+const SITE_URL = 'https://www.dmvcalifornia.us';
 
 // Type for DMV office
 type Office = {
@@ -328,9 +335,39 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
 
   if (post) {
+    const typedPost = post as BlogPost;
+    const canonicalUrl = `${SITE_URL}/${typedPost.slug}`;
+    const heroImage = typedPost.hero_image
+      || extractFirstImageFromHtml(typedPost.content)
+      || '/images/hero-image.png';
+    const absoluteImage = heroImage.startsWith('http') ? heroImage : `${SITE_URL}${heroImage}`;
+
     return {
-      title: `${post.title} - DMV California`,
-      description: post.excerpt,
+      title: `${typedPost.title} - DMV California`,
+      description: typedPost.excerpt,
+      authors: [{ name: typedPost.author }],
+      keywords: typedPost.tags,
+      alternates: {
+        canonical: canonicalUrl,
+      },
+      openGraph: {
+        title: typedPost.title,
+        description: typedPost.excerpt,
+        url: canonicalUrl,
+        siteName: 'DMV California',
+        type: 'article',
+        publishedTime: typedPost.publishedAt,
+        modifiedTime: typedPost.updatedAt || typedPost.publishedAt,
+        authors: [typedPost.author],
+        tags: typedPost.tags,
+        images: [{ url: absoluteImage, alt: typedPost.title }],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: typedPost.title,
+        description: typedPost.excerpt,
+        images: [absoluteImage],
+      },
     };
   }
 
@@ -338,9 +375,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const office = officesData.offices.find((o: Office) => o.slug === slug);
 
   if (office) {
+    const canonicalUrl = `${SITE_URL}/${office.slug}`;
     return {
       title: `${office.name} DMV Office - Hours, Location & Phone | DMV California`,
       description: `Find ${office.name} DMV office hours, location, phone number, and services. Call ${office.phone} or visit for driver license, vehicle registration, and REAL ID services.`,
+      alternates: { canonical: canonicalUrl },
+      openGraph: {
+        title: `${office.name} DMV Office`,
+        description: `Hours, location, phone, and services for ${office.name} DMV. ${office.address}`,
+        url: canonicalUrl,
+        type: 'website',
+      },
     };
   }
 
@@ -372,7 +417,10 @@ export default async function SlugPage({ params }: { params: Promise<{ slug: str
 }
 
 // Render blog post (extracted to keep code organized)
-function renderBlogPost(post: BlogPost) {
+function renderBlogPost(postIn: BlogPost) {
+  // Cast to our extended type so optional fields (updatedAt, hero_image, faq)
+  // are visible even though they may be absent on legacy posts in blog_posts.json.
+  const post = postIn as BlogPost;
 
   // Format date
   const formattedDate = new Date(post.publishedAt).toLocaleDateString('en-US', {
@@ -381,8 +429,26 @@ function renderBlogPost(post: BlogPost) {
     day: 'numeric',
   });
 
+  const wasUpdated = post.updatedAt && post.updatedAt !== post.publishedAt;
+  const formattedUpdatedDate = wasUpdated
+    ? new Date(post.updatedAt!).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })
+    : null;
+
   // Process content for better image SEO
   let processedContent = processContentImages(post.content, post.title);
+
+  // Reading time + word count for schema and UI badge
+  const totalWords = countWords(post.content);
+  const readMinutes = readingTimeMinutes(post.content);
+
+  // Resolve hero image: explicit hero_image > first image in content > site default
+  const heroImage = post.hero_image
+    || extractFirstImageFromHtml(post.content)
+    || '/images/hero-image.png';
 
   // Generate Table of Contents for long articles (>1000 words)
   const wordCount = post.content.replace(/<[^>]*>/g, '').split(/\s+/).length;
@@ -453,10 +519,24 @@ function renderBlogPost(post: BlogPost) {
     <div className="min-h-screen bg-gray-50">
       <Header />
 
+      {/* Structured data — Article + Breadcrumb (+ FAQPage if FAQ present) */}
+      <ArticleSchema
+        title={post.title}
+        description={post.excerpt}
+        slug={post.slug}
+        publishedAt={post.publishedAt}
+        updatedAt={post.updatedAt}
+        author={post.author}
+        image={heroImage}
+        keywords={post.tags}
+        wordCount={totalWords}
+        faq={post.faq}
+      />
+
       {/* Article */}
       <article className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-4xl">
             {/* Breadcrumb */}
-            <nav className="mb-8">
+            <nav className="mb-8" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2 text-sm text-gray-600">
                 <li>
                   <Link href="/" className="hover:text-primary">
@@ -480,10 +560,25 @@ function renderBlogPost(post: BlogPost) {
                 {post.title}
               </h1>
               <div className="flex flex-wrap items-center justify-between gap-4">
-                <div className="flex items-center gap-4 text-gray-600">
-                  <time dateTime={post.publishedAt}>{formattedDate}</time>
-                  <span>•</span>
-                  <span>By {post.author}</span>
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-gray-600 text-sm">
+                  <time dateTime={post.publishedAt}>Published {formattedDate}</time>
+                  {wasUpdated && formattedUpdatedDate && (
+                    <>
+                      <span aria-hidden>•</span>
+                      <time dateTime={post.updatedAt} className="text-primary font-medium">
+                        Updated {formattedUpdatedDate}
+                      </time>
+                    </>
+                  )}
+                  <span aria-hidden>•</span>
+                  <Link
+                    href={`/blog/author/${post.author.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-')}`}
+                    className="hover:text-primary"
+                  >
+                    By {post.author}
+                  </Link>
+                  <span aria-hidden>•</span>
+                  <span>{readMinutes} min read</span>
                 </div>
 
                 {/* Share Buttons */}
@@ -514,6 +609,40 @@ function renderBlogPost(post: BlogPost) {
           {/* Post Views Counter - Dynamic */}
           <BlogViewTracker slug={post.slug} initialViews={post.views || 0} />
         </div>
+
+        {/* FAQ Section (visible content; backs the FAQPage JSON-LD above) */}
+        {post.faq && post.faq.length > 0 && (
+          <section
+            className="bg-white rounded-lg shadow-sm p-6 md:p-8 mb-8"
+            aria-labelledby="faq-heading"
+          >
+            <h2 id="faq-heading" className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              Frequently Asked Questions
+            </h2>
+            <div className="space-y-6">
+              {post.faq.map((item, index) => (
+                <details
+                  key={index}
+                  className="group border-b border-gray-200 pb-4 last:border-0 last:pb-0"
+                >
+                  <summary className="cursor-pointer text-lg font-semibold text-gray-900 hover:text-primary flex items-start justify-between gap-3">
+                    <span>{item.question}</span>
+                    <span
+                      className="text-primary text-2xl leading-none flex-shrink-0 group-open:rotate-45 transition-transform"
+                      aria-hidden
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <div
+                    className="mt-3 text-gray-700 leading-relaxed prose prose-sm max-w-none prose-a:text-primary"
+                    dangerouslySetInnerHTML={{ __html: item.answer }}
+                  />
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Multiplex Ad above Related Stories */}
         <MultiplexAd />

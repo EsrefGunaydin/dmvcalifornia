@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import blogPostsData from '@/data/blog_posts.json';
+import authorsData from '@/data/blog_authors.json';
 import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import arabicQuizzesData from '@/data/arabic-quizzes.json';
@@ -115,12 +116,67 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Blog posts
-  const blogPages: MetadataRoute.Sitemap = blogPostsData.posts.map((post) => ({
-    url: `${baseUrl}/${post.slug}`,
-    lastModified: new Date(post.publishedAt),
+  // Blog posts — dynamic changeFrequency + priority based on recency and views.
+  // Newer/high-traffic posts signal freshness more aggressively.
+  const now = Date.now();
+  const DAY = 86_400_000;
+  const blogPages: MetadataRoute.Sitemap = blogPostsData.posts.map((post: any) => {
+    const ageDays = (now - new Date(post.publishedAt).getTime()) / DAY;
+    let changeFrequency: 'weekly' | 'monthly' | 'yearly';
+    let priority: number;
+
+    if (ageDays < 30) {
+      changeFrequency = 'weekly';
+      priority = 0.9;
+    } else if (ageDays < 365) {
+      changeFrequency = 'monthly';
+      priority = 0.8;
+    } else {
+      changeFrequency = 'yearly';
+      priority = 0.6;
+    }
+
+    // High-traffic posts bump priority by 0.1 (capped at 0.95)
+    if ((post.views || 0) > 15000) {
+      priority = Math.min(0.95, priority + 0.1);
+    }
+
+    return {
+      url: `${baseUrl}/${post.slug}`,
+      lastModified: new Date(post.updatedAt || post.publishedAt),
+      changeFrequency,
+      priority,
+    };
+  });
+
+  // Blog category landing pages — one per unique tag
+  const allTags = new Set<string>();
+  for (const post of blogPostsData.posts) {
+    for (const tag of (post.tags as string[] | undefined) || []) {
+      allTags.add(tag);
+    }
+  }
+  const categoryPages: MetadataRoute.Sitemap = Array.from(allTags).map((tag) => {
+    const slug = tag
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, '')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .trim();
+    return {
+      url: `${baseUrl}/blog/category/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+    };
+  });
+
+  // Author bio pages
+  const authorPages: MetadataRoute.Sitemap = authorsData.authors.map((author) => ({
+    url: `${baseUrl}/blog/author/${author.slug}`,
+    lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    priority: 0.5,
   }));
 
   // Quiz pages (English)
@@ -189,6 +245,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages,
     ...blogPages,
+    ...categoryPages,
+    ...authorPages,
     ...quizPages,
     ...turkishPages,
     ...chinesePages,

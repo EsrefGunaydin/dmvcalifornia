@@ -17,7 +17,7 @@ export default function InlineAppPromotion() {
               Preparing for your DMV test?
             </h3>
             <p className="text-gray-600 text-sm mb-3">
-              Download our free iOS app for 500+ practice questions, flashcards, and offline study!
+              Download our free iOS app — 1,164+ practice questions in 11 languages, flashcards, and offline study!
             </p>
             <a
               href={APP_STORE_URL}
@@ -54,7 +54,7 @@ export const inlineAppPromotionHtml = `
           Preparing for your DMV test?
         </h3>
         <p class="text-gray-600 text-sm mb-3">
-          Download our free iOS app for 500+ practice questions, flashcards, and offline study!
+          Download our free iOS app — 1,164+ practice questions in 11 languages, flashcards, and offline study!
         </p>
         <a
           href="https://apps.apple.com/app/dmv-california/id6754900213"
