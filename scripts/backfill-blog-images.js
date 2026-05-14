@@ -89,18 +89,35 @@ function buildQuery(post) {
   return `${tagQuery} ${titleWords}`.replace(/\s+/g, ' ').trim();
 }
 
-async function fetchPexels(query) {
-  const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=landscape&size=large&per_page=5`;
+async function fetchPexelsPage(query, page = 1) {
+  const url = `https://api.pexels.com/v1/search?query=${encodeURIComponent(
+    query,
+  )}&orientation=landscape&size=large&per_page=15&page=${page}`;
   const res = await fetch(url, { headers: { Authorization: PEXELS_KEY } });
   if (!res.ok) {
     throw new Error(`Pexels API ${res.status}: ${await res.text()}`);
   }
-  const data = await res.json();
-  if (!data.photos || data.photos.length === 0) {
-    return null;
+  return res.json();
+}
+
+/**
+ * Pick the first Pexels photo for `query` whose ID isn't in `usedIds`.
+ * Walks up to 3 pages of results before giving up. This is what keeps every
+ * post's hero image unique across the whole run.
+ */
+async function fetchUniquePexels(query, usedIds) {
+  for (let page = 1; page <= 3; page++) {
+    const data = await fetchPexelsPage(query, page);
+    const photos = data.photos || [];
+    if (photos.length === 0) return null;
+    for (const photo of photos) {
+      if (!usedIds.has(photo.id)) {
+        return photo;
+      }
+    }
+    // All photos on this page were used; try the next page
   }
-  // Prefer the top result; could randomize if you want variety on repeated runs
-  return data.photos[0];
+  return null;
 }
 
 async function downloadAndConvert(photo, outPath) {
@@ -115,7 +132,7 @@ async function downloadAndConvert(photo, outPath) {
     .toFile(outPath);
 }
 
-async function processPost(post, isLast) {
+async function processPost(post, isLast, usedIds) {
   const slug = post.slug;
   if (ONLY_SLUG && slug !== ONLY_SLUG) return null;
 
@@ -134,23 +151,26 @@ async function processPost(post, isLast) {
 
   const query = buildQuery(post);
   try {
-    const photo = await fetchPexels(query);
+    const photo = await fetchUniquePexels(query, usedIds);
     if (!photo) {
-      console.warn(`⚠️  No Pexels match for "${slug}" (query: ${query})`);
+      console.warn(`⚠️  No unique Pexels match for "${slug}" (query: ${query})`);
       return { slug, action: 'no-match', query };
     }
 
+    usedIds.add(photo.id);
     await downloadAndConvert(photo, outPath);
     post.hero_image = relPath;
-    // Persist source credit in a sidecar field (not required by license but courteous + future-proof)
+    // Persist source credit in a sidecar field (not required by license but
+    // courteous + future-proof). photo_id lets re-runs avoid duplicates.
     post.hero_image_credit = {
       source: 'Pexels',
+      photo_id: photo.id,
       photographer: photo.photographer,
       photographer_url: photo.photographer_url,
       photo_url: photo.url,
     };
 
-    return { slug, action: 'generated', query, by: photo.photographer };
+    return { slug, action: 'generated', query, by: photo.photographer, photo_id: photo.id };
   } catch (err) {
     console.error(`❌  ${slug}: ${err.message}`);
     return { slug, action: 'error', error: err.message };
@@ -165,11 +185,25 @@ async function main() {
   const json = JSON.parse(fs.readFileSync(POSTS_FILE, 'utf-8'));
   const posts = json.posts;
 
-  console.log(`Processing ${posts.length} posts. Force=${FORCE}, OnlySlug=${ONLY_SLUG || '<none>'}`);
+  // Seed usedIds with photos already assigned to posts we're NOT regenerating,
+  // so we don't accidentally pick the same Pexels photo twice across the run.
+  const usedIds = new Set();
+  for (const p of posts) {
+    if (ONLY_SLUG && p.slug !== ONLY_SLUG && p.hero_image_credit?.photo_id) {
+      usedIds.add(p.hero_image_credit.photo_id);
+    }
+    if (!FORCE && !ONLY_SLUG && p.hero_image_credit?.photo_id) {
+      usedIds.add(p.hero_image_credit.photo_id);
+    }
+  }
+
+  console.log(
+    `Processing ${posts.length} posts. Force=${FORCE}, OnlySlug=${ONLY_SLUG || '<none>'}, seeded usedIds=${usedIds.size}`,
+  );
 
   const results = [];
   for (let i = 0; i < posts.length; i++) {
-    const result = await processPost(posts[i], i === posts.length - 1);
+    const result = await processPost(posts[i], i === posts.length - 1, usedIds);
     if (result) results.push(result);
   }
 
