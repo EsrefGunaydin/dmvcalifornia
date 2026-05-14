@@ -18,6 +18,9 @@ export default function BlogPostContent({
   const [showFullArticle, setShowFullArticle] = useState(false);
   const [adRefreshKey, setAdRefreshKey] = useState(0);
   const readMoreButtonRef = useRef<HTMLDivElement>(null);
+  // Wall-clock timestamp the user landed on this article — used to compute
+  // dwell time before the Read More click for the GA event.
+  const mountedAtRef = useRef<number>(Date.now());
 
   // Check if we should show full article based on URL parameter
   useEffect(() => {
@@ -98,6 +101,20 @@ export default function BlogPostContent({
     // Update URL without reload
     const currentPath = window.location.pathname;
     window.history.pushState({}, '', `${currentPath}?full=true`);
+
+    // GA4 event so we can measure Read More CTR per post + dwell time before click.
+    // Custom params (post_slug, seconds_before_click, scroll_y) need to be
+    // registered as custom dimensions in GA4 Admin → Custom definitions to
+    // surface in standard reports, but they're queryable in Explore from day 1.
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      const slug = currentPath.replace(/^\//, '');
+      window.gtag('event', 'read_more_clicked', {
+        post_slug: slug,
+        page_path: currentPath,
+        seconds_before_click: Math.round((Date.now() - mountedAtRef.current) / 1000),
+        scroll_y: Math.round(window.scrollY),
+      });
+    }
 
     // Keep user at the same position (don't scroll)
     // Small delay to let content render
