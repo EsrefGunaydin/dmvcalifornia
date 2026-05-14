@@ -349,7 +349,10 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const absoluteImage = heroImage.startsWith('http') ? heroImage : `${SITE_URL}${heroImage}`;
 
     return {
-      title: `${typedPost.title} - DMV California`,
+      // Return just the post title — the root layout's title template
+      // automatically appends " | DMV California". Doing it again here
+      // caused the double-suffix you see in search results.
+      title: typedPost.title,
       description: typedPost.excerpt,
       authors: [{ name: typedPost.author }],
       keywords: typedPost.tags,
@@ -383,7 +386,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (office) {
     const canonicalUrl = `${SITE_URL}/${office.slug}`;
     return {
-      title: `${office.name} DMV Office - Hours, Location & Phone | DMV California`,
+      // Root layout template adds " | DMV California" automatically.
+      title: `${office.name} DMV Office — Hours, Location & Phone`,
       description: `Find ${office.name} DMV office hours, location, phone number, and services. Call ${office.phone} or visit for driver license, vehicle registration, and REAL ID services.`,
       alternates: { canonical: canonicalUrl },
       openGraph: {
