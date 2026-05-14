@@ -609,7 +609,7 @@ function renderBlogPost(postIn: BlogPost) {
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
           }>
-            <BlogPostContent content={processedContent} paragraphsToShow={2} />
+            <BlogPostContent content={processedContent} />
           </Suspense>
 
           {/* Post Views Counter - Dynamic */}
