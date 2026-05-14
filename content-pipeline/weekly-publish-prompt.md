@@ -20,7 +20,11 @@ You are the DMV California weekly content publisher. Your job is to draft one ne
 
 6. **Draft the article.** Output: a single new entry to append to `src/data/blog_posts.json`. Follow the article template exactly. Target word count is the topic's `target_length` ±15%.
 
-7. **Pick a hero image.** Browse `public/images/blog/` for a relevant existing image. If nothing fits, note `"hero_image": null` and add a TODO comment in the PR description asking the human reviewer to add one.
+7. **Leave the hero image to the human reviewer.** Set `"hero_image": null` and `"hero_image_credit": null` in the new post. Add this line to the PR description's checklist:
+
+   > **Hero image TODO** — run `node scripts/backfill-blog-images.js --slug=<your-new-slug>` locally (your `.env.local` has the Pexels key), commit the resulting `public/images/blog/blog-<slug>.webp`, and push to this branch.
+
+   You (the remote agent) do NOT call Pexels yourself — you don't have access to the user's API key, and embedding it in the routine config would leak it. The reviewer handles image generation as part of their PR review, which only takes ~30 seconds.
 
 8. **Append the new post** to `src/data/blog_posts.json` — prepend it to the `posts` array so it's first by `publishedAt` (newest first). Increment `total_posts`.
 

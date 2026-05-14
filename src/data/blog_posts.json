@@ -66,7 +66,7 @@
         "DMV Services"
       ],
       "views": 0,
-      "hero_image": "/images/blog/ak_real_id_example.png",
+      "hero_image": "/images/blog/blog-california-real-id-complete-guide-2026.webp",
       "faq": [
         {
           "question": "Do I really need a California REAL ID?",
@@ -88,7 +88,13 @@
           "question": "How long does it take to receive my California REAL ID after applying?",
           "answer": "You'll leave the DMV with a temporary paper license valid for 60-90 days. Your permanent REAL ID card arrives by mail typically within 4-6 weeks. If you don't receive it after 60 days, call the DMV directly to follow up."
         }
-      ]
+      ],
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "DΛVΞ GΛRCIΛ",
+        "photographer_url": "https://www.pexels.com/@davegarcia",
+        "photo_url": "https://www.pexels.com/photo/close-up-of-us-passport-with-travel-essentials-32642491/"
+      }
     },
     {
       "id": 9011,
@@ -104,7 +110,7 @@
         "California DMV"
       ],
       "views": 0,
-      "hero_image": "/images/blog/dmv-office.jpg",
+      "hero_image": "/images/blog/blog-california-new-traffic-laws-2026-every-change-explained.webp",
       "faq": [
         {
           "question": "When did the 2026 California traffic laws take effect?",
@@ -126,7 +132,13 @@
           "question": "When do California school zone speed limits drop to 20 mph?",
           "answer": "California's statewide 20 mph school zone speed limit takes effect January 1, 2031, not 2026. Local jurisdictions can adopt lower limits earlier if they choose, but the statewide standard remains 25 mph in school zones until the 2031 transition date."
         }
-      ]
+      ],
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Rhonda  Temple Evans",
+        "photographer_url": "https://www.pexels.com/@rhonda-temple-evans-380846",
+        "photo_url": "https://www.pexels.com/photo/us-route-101-signs-in-san-miguel-california-35874535/"
+      }
     },
     {
       "id": 9012,
@@ -143,7 +155,7 @@
         "International Students"
       ],
       "views": 0,
-      "hero_image": "/images/blog/COMMON-MISTAKES-ON-ROAD-TEST.png",
+      "hero_image": "/images/blog/blog-free-california-dmv-practice-test-arabic.webp",
       "faq": [
         {
           "question": "Can I take the California DMV written test in Arabic?",
@@ -165,7 +177,13 @@
           "question": "Are the answers on our Arabic practice tests the same as the real DMV test?",
           "answer": "Our practice questions are drawn from real California DMV sample tests and the official California Driver Handbook. While the exact wording may differ slightly from the live exam, every rule and answer is accurate to current California Vehicle Code. Most users who score 90%+ on our practice tests pass the real exam on their first try."
         }
-      ]
+      ],
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Clément Proust",
+        "photographer_url": "https://www.pexels.com/@clement-proust-363898785",
+        "photo_url": "https://www.pexels.com/photo/voiture-chevrolet-pickup-dans-los-angeles-16038653/"
+      }
     },
     {
       "id": 158,
@@ -182,7 +200,14 @@
       "views": 16290,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-drivers-license.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Kindel Media",
+        "photographer_url": "https://www.pexels.com/@kindelmedia",
+        "photo_url": "https://www.pexels.com/photo/man-handing-his-driver-s-license-to-the-police-officer-7715194/"
+      }
     },
     {
       "id": 162,
@@ -198,7 +223,14 @@
       "views": 11147,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-used-cars.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Mikhail Nilov",
+        "photographer_url": "https://www.pexels.com/@mikhail-nilov",
+        "photo_url": "https://www.pexels.com/photo/person-in-long-sleeve-shirt-holding-a-calculator-8297031/"
+      }
     },
     {
       "id": 337,
@@ -215,7 +247,14 @@
       "views": 8406,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-behind-the-wheel-mistakes.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Vlad Deep",
+        "photographer_url": "https://www.pexels.com/@vlad-deep-29415806",
+        "photo_url": "https://www.pexels.com/photo/photo-of-a-woman-driving-a-car-11160619/"
+      }
     },
     {
       "id": 339,
@@ -233,7 +272,14 @@
       "views": 8004,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-car-accidents-not-reported-dmv.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Jorge Romero",
+        "photographer_url": "https://www.pexels.com/@jorgeromeroortiz",
+        "photo_url": "https://www.pexels.com/photo/close-up-of-damaged-yellow-car-front-bumper-33749906/"
+      }
     },
     {
       "id": 341,
@@ -250,7 +296,14 @@
       "views": 18337,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-california-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Kindel Media",
+        "photographer_url": "https://www.pexels.com/@kindelmedia",
+        "photo_url": "https://www.pexels.com/photo/man-handing-his-driver-s-license-to-the-police-officer-7715194/"
+      }
     },
     {
       "id": 343,
@@ -267,7 +320,14 @@
       "views": 1782,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-driver-license.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Kindel Media",
+        "photographer_url": "https://www.pexels.com/@kindelmedia",
+        "photo_url": "https://www.pexels.com/photo/man-handing-his-driver-s-license-to-the-police-officer-7715194/"
+      }
     },
     {
       "id": 346,
@@ -284,7 +344,14 @@
       "views": 17661,
       "published_date": "2023-08-12 13:55:03",
       "created_at": "2017-09-18 18:44:30",
-      "updated_at": "2023-08-12 13:55:03"
+      "updated_at": "2023-08-12 13:55:03",
+      "hero_image": "/images/blog/blog-obtain-car-accident-report-california.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Huu Huynh",
+        "photographer_url": "https://www.pexels.com/@imhh",
+        "photo_url": "https://www.pexels.com/photo/two-damaged-vans-in-a-residential-area-28443036/"
+      }
     },
     {
       "id": 349,
@@ -300,7 +367,14 @@
       "views": 18389,
       "published_date": "2023-08-12 13:54:36",
       "created_at": "2017-09-18 18:45:43",
-      "updated_at": "2023-08-12 13:54:36"
+      "updated_at": "2023-08-12 13:54:36",
+      "hero_image": "/images/blog/blog-how-many-car-collisions-happen-in-california.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Mike Bird",
+        "photographer_url": "https://www.pexels.com/@mikebirdy",
+        "photo_url": "https://www.pexels.com/photo/car-crash-on-dirt-road-11985980/"
+      }
     },
     {
       "id": 351,
@@ -317,7 +391,14 @@
       "views": 20702,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-what-to-do-in-a-california-car-accident.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Jorge Romero",
+        "photographer_url": "https://www.pexels.com/@jorgeromeroortiz",
+        "photo_url": "https://www.pexels.com/photo/close-up-of-damaged-yellow-car-front-bumper-33749906/"
+      }
     },
     {
       "id": 354,
@@ -335,7 +416,14 @@
       "views": 23052,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-dmv-appointment.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "www.kaboompics.com",
+        "photographer_url": "https://www.pexels.com/@karola-g",
+        "photo_url": "https://www.pexels.com/photo/close-up-photo-of-a-person-holding-documents-7681195/"
+      }
     },
     {
       "id": 456,
@@ -351,7 +439,14 @@
       "views": 18251,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-practice-driving-test.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Łukasz Promiler",
+        "photographer_url": "https://www.pexels.com/@lukasz-promiler-2150473657",
+        "photo_url": "https://www.pexels.com/photo/police-officer-conducting-breathalyzer-test-in-car-31154456/"
+      }
     },
     {
       "id": 460,
@@ -367,7 +462,14 @@
       "views": 24306,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-dmv-behind-the-wheel-test.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Vlad Deep",
+        "photographer_url": "https://www.pexels.com/@vlad-deep-29415806",
+        "photo_url": "https://www.pexels.com/photo/photo-of-a-woman-driving-a-car-11160619/"
+      }
     },
     {
       "id": 635,
@@ -383,7 +485,14 @@
       "views": 10378,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-top-28-defensive-driving-tips.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Luke Miller",
+        "photographer_url": "https://www.pexels.com/@bylukemiller",
+        "photo_url": "https://www.pexels.com/photo/view-of-a-road-inside-the-car-14667461/"
+      }
     },
     {
       "id": 654,
@@ -399,7 +508,14 @@
       "views": 12934,
       "published_date": "2023-08-12 13:29:54",
       "created_at": "2017-10-17 20:46:48",
-      "updated_at": "2023-08-12 13:29:54"
+      "updated_at": "2023-08-12 13:29:54",
+      "hero_image": "/images/blog/blog-read-article-using-smartphone-driving.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "cottonbro studio",
+        "photographer_url": "https://www.pexels.com/@cottonbro",
+        "photo_url": "https://www.pexels.com/photo/gold-framed-eyeglasses-on-docoments-9062786/"
+      }
     },
     {
       "id": 722,
@@ -415,7 +531,14 @@
       "views": 17045,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-real-defensive-driving.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Jorge Romero",
+        "photographer_url": "https://www.pexels.com/@jorgeromeroortiz",
+        "photo_url": "https://www.pexels.com/photo/close-up-of-damaged-yellow-car-front-bumper-33749906/"
+      }
     },
     {
       "id": 776,
@@ -431,7 +554,14 @@
       "views": 12946,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-12-important-tips-buy-used-cars.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Luke Miller",
+        "photographer_url": "https://www.pexels.com/@bylukemiller",
+        "photo_url": "https://www.pexels.com/photo/view-of-a-road-inside-the-car-14667461/"
+      }
     },
     {
       "id": 785,
@@ -449,7 +579,14 @@
       "views": 16187,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-driving-performance-evaluation-score-sheet.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Andy Barbour",
+        "photographer_url": "https://www.pexels.com/@andy-barbour",
+        "photo_url": "https://www.pexels.com/photo/a-person-marking-a-test-paper-6684373/"
+      }
     },
     {
       "id": 793,
@@ -466,7 +603,14 @@
       "views": 11579,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-laguna-hills-dmv-driving-test.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "AI25.Studio  Studio",
+        "photographer_url": "https://www.pexels.com/@ai25studioai",
+        "photo_url": "https://www.pexels.com/photo/smiling-woman-sitting-inside-the-car-7144214/"
+      }
     },
     {
       "id": 1335,
@@ -483,7 +627,14 @@
       "views": 10703,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-california-real-id-checklist.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Clément Proust",
+        "photographer_url": "https://www.pexels.com/@clement-proust-363898785",
+        "photo_url": "https://www.pexels.com/photo/voiture-chevrolet-pickup-dans-los-angeles-16038653/"
+      }
     },
     {
       "id": 1397,
@@ -499,7 +650,14 @@
       "views": 18282,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-bad-driving-habits.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Mike Bird",
+        "photographer_url": "https://www.pexels.com/@mikebirdy",
+        "photo_url": "https://www.pexels.com/photo/car-crash-on-dirt-road-11985980/"
+      }
     },
     {
       "id": 1482,
@@ -517,7 +675,14 @@
       "views": 24069,
       "published_date": "2022-04-22 18:47:17",
       "created_at": "2018-02-23 22:47:39",
-      "updated_at": "2022-04-22 18:47:17"
+      "updated_at": "2022-04-22 18:47:17",
+      "hero_image": "/images/blog/blog-california-driver-handbook.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Erik Schereder",
+        "photographer_url": "https://www.pexels.com/@erik-schereder-3173655",
+        "photo_url": "https://www.pexels.com/photo/a-woman-driving-a-vehicle-13009048/"
+      }
     },
     {
       "id": 1524,
@@ -534,7 +699,14 @@
       "views": 6174,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-driving-test-tips.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "AI25.Studio  Studio",
+        "photographer_url": "https://www.pexels.com/@ai25studioai",
+        "photo_url": "https://www.pexels.com/photo/smiling-woman-sitting-inside-the-car-7144214/"
+      }
     },
     {
       "id": 1608,
@@ -550,7 +722,14 @@
       "views": 4332,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-dui-california-limits.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Robert So",
+        "photographer_url": "https://www.pexels.com/@robertkso",
+        "photo_url": "https://www.pexels.com/photo/white-car-on-road-near-concrete-barriers-12567104/"
+      }
     },
     {
       "id": 1627,
@@ -567,7 +746,14 @@
       "views": 1333,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-international-student-driver-license.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Kindel Media",
+        "photographer_url": "https://www.pexels.com/@kindelmedia",
+        "photo_url": "https://www.pexels.com/photo/man-handing-his-driver-s-license-to-the-police-officer-7715194/"
+      }
     },
     {
       "id": 1653,
@@ -583,7 +769,14 @@
       "views": 21040,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-why-dmv-so-slow.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Tara Winstead",
+        "photographer_url": "https://www.pexels.com/@tara-winstead",
+        "photo_url": "https://www.pexels.com/photo/pink-pen-on-white-printer-paper-8386745/"
+      }
     },
     {
       "id": 1720,
@@ -599,7 +792,14 @@
       "views": 3038,
       "published_date": "2021-08-18 22:41:08",
       "created_at": "2018-09-07 17:58:56",
-      "updated_at": "2021-08-18 22:41:08"
+      "updated_at": "2021-08-18 22:41:08",
+      "hero_image": "/images/blog/blog-muestra-del-examen-escrito-para-licencia-de-manejar.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Cytonn Photography",
+        "photographer_url": "https://www.pexels.com/@cytonn",
+        "photo_url": "https://www.pexels.com/photo/white-paper-and-silver-fountain-pen-955394/"
+      }
     },
     {
       "id": 1875,
@@ -616,7 +816,14 @@
       "views": 22192,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-safe-driving-tips-for-novice-drivers.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Erik Schereder",
+        "photographer_url": "https://www.pexels.com/@erik-schereder-3173655",
+        "photo_url": "https://www.pexels.com/photo/a-woman-driving-a-vehicle-13009048/"
+      }
     },
     {
       "id": 1914,
@@ -632,7 +839,14 @@
       "views": 19032,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-drivers-license-by-state.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "AI25.Studio  Studio",
+        "photographer_url": "https://www.pexels.com/@ai25studioai",
+        "photo_url": "https://www.pexels.com/photo/smiling-woman-sitting-inside-the-car-7144214/"
+      }
     },
     {
       "id": 2253,
@@ -649,7 +863,14 @@
       "views": 4648,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-14-tips-for-passing-behind-the-wheel-test-in-california.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "AI25.Studio  Studio",
+        "photographer_url": "https://www.pexels.com/@ai25studioai",
+        "photo_url": "https://www.pexels.com/photo/smiling-woman-sitting-inside-the-car-7144214/"
+      }
     },
     {
       "id": 2276,
@@ -665,7 +886,14 @@
       "views": 6926,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-top-12-factors-that-affect-nighttime-driving.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Clément Proust",
+        "photographer_url": "https://www.pexels.com/@clement-proust-363898785",
+        "photo_url": "https://www.pexels.com/photo/voiture-chevrolet-pickup-dans-los-angeles-16038653/"
+      }
     },
     {
       "id": 2332,
@@ -682,7 +910,14 @@
       "views": 11304,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-california-driving-test-tips.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "AI25.Studio  Studio",
+        "photographer_url": "https://www.pexels.com/@ai25studioai",
+        "photo_url": "https://www.pexels.com/photo/smiling-woman-sitting-inside-the-car-7144214/"
+      }
     },
     {
       "id": 2386,
@@ -698,7 +933,14 @@
       "views": 3317,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-10-most-important-roadway-signs-with-meaning.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Mik Dominguez",
+        "photographer_url": "https://www.pexels.com/@mik-dominguez-1539465333",
+        "photo_url": "https://www.pexels.com/photo/beach-road-signs-with-speed-limit-and-turn-29891465/"
+      }
     },
     {
       "id": 2453,
@@ -715,7 +957,14 @@
       "views": 22378,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-driving-performance-evaluation-score-explained.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Andy Barbour",
+        "photographer_url": "https://www.pexels.com/@andy-barbour",
+        "photo_url": "https://www.pexels.com/photo/a-person-marking-a-test-paper-6684373/"
+      }
     },
     {
       "id": 2856,
@@ -732,7 +981,14 @@
       "views": 13095,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-alabama-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Erik Schereder",
+        "photographer_url": "https://www.pexels.com/@erik-schereder-3173655",
+        "photo_url": "https://www.pexels.com/photo/a-woman-driving-a-vehicle-13009048/"
+      }
     },
     {
       "id": 2879,
@@ -749,7 +1005,14 @@
       "views": 17586,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-alaska-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Erik Schereder",
+        "photographer_url": "https://www.pexels.com/@erik-schereder-3173655",
+        "photo_url": "https://www.pexels.com/photo/a-woman-driving-a-vehicle-13009048/"
+      }
     },
     {
       "id": 2887,
@@ -766,7 +1029,14 @@
       "views": 13697,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-arizona-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Erik Schereder",
+        "photographer_url": "https://www.pexels.com/@erik-schereder-3173655",
+        "photo_url": "https://www.pexels.com/photo/a-woman-driving-a-vehicle-13009048/"
+      }
     },
     {
       "id": 2907,
@@ -782,7 +1052,14 @@
       "views": 18383,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-dmv-nightmare-over-with-these-online-services.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Tima Miroshnichenko",
+        "photographer_url": "https://www.pexels.com/@tima-miroshnichenko",
+        "photo_url": "https://www.pexels.com/photo/floor-plans-on-white-table-6615036/"
+      }
     },
     {
       "id": 2935,
@@ -798,7 +1075,14 @@
       "views": 15124,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-can-i-renew-my-license-at-a-dmv-kiosk.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Luke Miller",
+        "photographer_url": "https://www.pexels.com/@bylukemiller",
+        "photo_url": "https://www.pexels.com/photo/view-of-a-road-inside-the-car-14667461/"
+      }
     },
     {
       "id": 2980,
@@ -814,7 +1098,14 @@
       "views": 14313,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-10-useful-tips-on-how-to-drive-in-santa-ana-winds.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Luke Miller",
+        "photographer_url": "https://www.pexels.com/@bylukemiller",
+        "photo_url": "https://www.pexels.com/photo/view-of-a-road-inside-the-car-14667461/"
+      }
     },
     {
       "id": 3014,
@@ -830,7 +1121,14 @@
       "views": 12640,
       "published_date": "2025-03-25 23:54:32",
       "created_at": "2025-03-05 20:58:48",
-      "updated_at": "2025-03-25 23:54:32"
+      "updated_at": "2025-03-25 23:54:32",
+      "hero_image": "/images/blog/blog-new-traffic-laws-for-california-drivers-in-2025.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Rhonda  Temple Evans",
+        "photographer_url": "https://www.pexels.com/@rhonda-temple-evans-380846",
+        "photo_url": "https://www.pexels.com/photo/us-route-101-signs-in-san-miguel-california-35874535/"
+      }
     },
     {
       "id": 9001,
@@ -848,7 +1146,14 @@
       "views": 1035,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-how-to-drive-safely-and-avoid-fines.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Rhonda  Temple Evans",
+        "photographer_url": "https://www.pexels.com/@rhonda-temple-evans-380846",
+        "photo_url": "https://www.pexels.com/photo/us-route-101-signs-in-san-miguel-california-35874535/"
+      }
     },
     {
       "id": 9002,
@@ -866,7 +1171,14 @@
       "views": 14688,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-how-to-update-your-address-with-the-dmv.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Tima Miroshnichenko",
+        "photographer_url": "https://www.pexels.com/@tima-miroshnichenko",
+        "photo_url": "https://www.pexels.com/photo/a-person-filling-up-a-form-on-a-clipboard-6169647/"
+      }
     },
     {
       "id": 9003,
@@ -884,7 +1196,14 @@
       "views": 20131,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-car-registration.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Magda Ehlers",
+        "photographer_url": "https://www.pexels.com/@magda-ehlers-pexels",
+        "photo_url": "https://www.pexels.com/photo/close-up-of-vehicle-license-plate-with-reflective-strip-37517718/"
+      }
     },
     {
       "id": 9004,
@@ -902,7 +1221,14 @@
       "views": 16754,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-auto-insurance.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Vlad Deep",
+        "photographer_url": "https://www.pexels.com/@vlad-deep-29415806",
+        "photo_url": "https://www.pexels.com/photo/magnifying-glass-and-a-document-10341357/"
+      }
     },
     {
       "id": 9005,
@@ -920,7 +1246,14 @@
       "views": 12223,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-drivers-licenses-design-by-state.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Clément Proust",
+        "photographer_url": "https://www.pexels.com/@clement-proust-363898785",
+        "photo_url": "https://www.pexels.com/photo/voiture-chevrolet-pickup-dans-los-angeles-16038653/"
+      }
     },
     {
       "id": 9006,
@@ -938,7 +1271,14 @@
       "views": 8452,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-10-most-important-roadway-signs-with-meaning.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Alexas Fotos",
+        "photographer_url": "https://www.pexels.com/@alexasfotos",
+        "photo_url": "https://www.pexels.com/photo/high-angle-shot-of-expressway-10802497/"
+      }
     },
     {
       "id": 9007,
@@ -956,7 +1296,14 @@
       "views": 7890,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-international-student-driver-license.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Gustavo Fring",
+        "photographer_url": "https://www.pexels.com/@gustavo-fring",
+        "photo_url": "https://www.pexels.com/photo/man-in-white-hoodie-sitting-inside-car-with-a-woman-6817037/"
+      }
     },
     {
       "id": 9008,
@@ -974,7 +1321,14 @@
       "views": 5420,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-can-i-renew-my-license-at-a-dmv-kiosk.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Marta Branco",
+        "photographer_url": "https://www.pexels.com/@martabranco",
+        "photo_url": "https://www.pexels.com/photo/portuguese-passport-and-citizen-card-close-up-32081457/"
+      }
     },
     {
       "id": 9009,
@@ -992,7 +1346,14 @@
       "views": 6230,
       "published_date": "2023-01-01 00:00:00",
       "created_at": "2023-01-01 00:00:00",
-      "updated_at": "2023-01-01 00:00:00"
+      "updated_at": "2023-01-01 00:00:00",
+      "hero_image": "/images/blog/blog-why-dmv-so-slow.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photographer": "Yan Krukau",
+        "photographer_url": "https://www.pexels.com/@yankrukov",
+        "photo_url": "https://www.pexels.com/photo/a-person-working-in-the-call-center-8867274/"
+      }
     }
   ]
 }
