@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { Fragment, useState, useMemo } from 'react';
 import Link from 'next/link';
 import MultiplexAd from '@/components/MultiplexAd';
 
@@ -15,12 +15,20 @@ type BlogPost = {
   publishedAt: string;
   author: string;
   tags?: string[];
+  hero_image?: string | null;
 };
 
 // Helper to extract first image from HTML content
 function extractFirstImage(htmlContent: string): string | null {
   const imgMatch = htmlContent.match(/<img[^>]+src="([^">]+)"/);
   return imgMatch ? imgMatch[1] : null;
+}
+
+// Resolve the card image: prefer the explicit hero_image, fall back to
+// the first <img> inside the post body for legacy posts that don't have
+// a hero_image set.
+function resolveCardImage(post: BlogPost): string | null {
+  return post.hero_image || extractFirstImage(post.content);
 }
 
 export default function BlogList({ posts }: { posts: BlogPost[] }) {
@@ -246,12 +254,11 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredPosts.map((post, index) => {
-              const firstImage = extractFirstImage(post.content);
+              const firstImage = resolveCardImage(post);
 
               return (
-                <>
+                <Fragment key={post.id}>
                   <article
-                    key={post.id}
                     className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow overflow-hidden group"
                   >
                   {/* Post Hero Image */}
@@ -349,7 +356,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
                     <MultiplexAd />
                   </div>
                 )}
-              </>
+              </Fragment>
               );
             })}
           </div>

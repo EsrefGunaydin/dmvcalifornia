@@ -16,6 +16,7 @@ interface BlogPostLike {
   author: string;
   tags?: string[];
   content: string;
+  hero_image?: string | null;
 }
 
 interface Author {
@@ -146,7 +147,7 @@ export default async function AuthorPage({ params }: { params: Promise<{ slug: s
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => {
-              const image = extractFirstImage(post.content);
+              const image = post.hero_image || extractFirstImage(post.content);
               return (
                 <Link
                   key={post.id}

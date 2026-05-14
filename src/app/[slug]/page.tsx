@@ -69,6 +69,12 @@ function extractFirstImageFromHtml(htmlContent: string): string | null {
   return imgMatch ? imgMatch[1] : null;
 }
 
+// Resolve the card/preview image for a post — prefer the explicit
+// hero_image, fall back to the first <img> embedded in legacy content.
+function resolvePostImage(post: { hero_image?: string | null; content: string }): string | null {
+  return post.hero_image || extractFirstImageFromHtml(post.content);
+}
+
 // Generate Table of Contents from H2 headings
 function generateTableOfContents(htmlContent: string): { toc: string; processedHtml: string } {
   const h2Regex = /<h2[^>]*>(.*?)<\/h2>/gi;
@@ -655,7 +661,7 @@ function renderBlogPost(postIn: BlogPost) {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {relatedPosts.map(relatedPost => {
-                const postImage = extractFirstImageFromHtml(relatedPost.content);
+                const postImage = resolvePostImage(relatedPost);
                 return (
                   <Link
                     key={relatedPost.id}
@@ -723,10 +729,10 @@ function renderBlogPost(postIn: BlogPost) {
                   className="group block bg-white rounded-lg shadow-sm hover:shadow-md transition-all border border-gray-200 overflow-hidden"
                 >
                   <div className="flex h-full">
-                    {extractFirstImageFromHtml(prevPost.content) && (
+                    {resolvePostImage(prevPost) && (
                       <div className="w-24 h-24 flex-shrink-0 overflow-hidden bg-gray-100">
                         <img
-                          src={extractFirstImageFromHtml(prevPost.content) || ''}
+                          src={resolvePostImage(prevPost) || ''}
                           alt={prevPost.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                           loading="lazy"
@@ -768,10 +774,10 @@ function renderBlogPost(postIn: BlogPost) {
                         {nextPost.title}
                       </h3>
                     </div>
-                    {extractFirstImageFromHtml(nextPost.content) && (
+                    {resolvePostImage(nextPost) && (
                       <div className="w-24 h-24 flex-shrink-0 overflow-hidden bg-gray-100">
                         <img
-                          src={extractFirstImageFromHtml(nextPost.content) || ''}
+                          src={resolvePostImage(nextPost) || ''}
                           alt={nextPost.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                           loading="lazy"
