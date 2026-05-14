@@ -11,6 +11,7 @@ enum Constants {
         static let bookmarks = "@dmv_bookmarks"
         static let streak = "@dmv_streak"
         static let quizProgress = "@dmv_quiz_progress"
+        static let intersectionResults = "@dmv_intersection_results"
         static let appGroup = "group.com.esref.dmvcalifornia"
     }
 

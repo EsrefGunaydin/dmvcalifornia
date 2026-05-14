@@ -86,6 +86,10 @@ struct ContentView: View {
             BookmarksView()
         case .about:
             AboutView()
+        case .intersectionLanding:
+            IntersectionLandingView()
+        case .intersectionLevel(let levelId):
+            IntersectionLevelView(levelId: levelId)
         }
     }
 }

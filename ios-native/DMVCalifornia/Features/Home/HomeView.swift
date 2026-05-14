@@ -22,6 +22,9 @@ struct HomeView: View {
                     // Quick Actions
                     quickActionsSection
 
+                    // Intersection game
+                    intersectionSection
+
                     // Features
                     featuresSection
 
@@ -104,6 +107,61 @@ struct HomeView: View {
                 }
             }
         }
+    }
+
+    // MARK: - Intersection Game Section
+
+    private var intersectionSection: some View {
+        Button {
+            coordinator.navigate(to: .intersectionLanding)
+        } label: {
+            HStack(spacing: DMVTheme.Spacing.md) {
+                ZStack {
+                    Circle()
+                        .fill(Color.white.opacity(0.2))
+                        .frame(width: 56, height: 56)
+                    Image(systemName: "arrow.triangle.branch")
+                        .font(.system(size: 26, weight: .bold))
+                        .foregroundColor(.white)
+                }
+
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack(spacing: DMVTheme.Spacing.sm) {
+                        Text("Intersection")
+                            .font(DMVTheme.Typography.headline)
+                            .foregroundColor(.white)
+                        Text("NEW")
+                            .font(.system(size: 10, weight: .bold))
+                            .foregroundColor(.dmvOrange)
+                            .padding(.horizontal, 6)
+                            .padding(.vertical, 2)
+                            .background(Color.white)
+                            .cornerRadius(DMVTheme.CornerRadius.sm)
+                    }
+                    Text("Right-of-way puzzles — who goes first?")
+                        .font(DMVTheme.Typography.caption)
+                        .foregroundColor(.white.opacity(0.9))
+                }
+
+                Spacer()
+
+                Image(systemName: "chevron.right")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(.white.opacity(0.8))
+            }
+            .padding()
+            .frame(maxWidth: .infinity)
+            .background(
+                LinearGradient(
+                    colors: [.dmvOrange, .dmvTeal],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            )
+            .cornerRadius(DMVTheme.CornerRadius.lg)
+            .dmvShadow(DMVTheme.Shadow.sm)
+        }
+        .buttonStyle(PlainButtonStyle())
     }
 
     // MARK: - Features Section

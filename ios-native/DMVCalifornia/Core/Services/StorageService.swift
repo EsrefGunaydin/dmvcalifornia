@@ -30,6 +30,10 @@ protocol StorageServiceProtocol {
     func getQuizProgress() async -> QuizProgress?
     func clearQuizProgress() async
 
+    // Intersection game results
+    func saveIntersectionResult(_ result: IntersectionResult) async throws
+    func getIntersectionResults() async -> [String: IntersectionResult]
+
     // Clear Data
     func clearAllData() async throws
 }
@@ -291,6 +295,29 @@ final class StorageService: StorageServiceProtocol {
         defaults.removeObject(forKey: Constants.Storage.quizProgress)
     }
 
+    // MARK: - Intersection Game Results
+
+    func saveIntersectionResult(_ result: IntersectionResult) async throws {
+        var all = await getIntersectionResults()
+        let prev = all[result.levelId]
+        // Keep the best run: more stars, then fewer attempts.
+        if prev == nil
+            || result.stars > prev!.stars
+            || (result.stars == prev!.stars && result.attempts < prev!.attempts) {
+            all[result.levelId] = result
+            let data = try encoder.encode(all)
+            defaults.set(data, forKey: Constants.Storage.intersectionResults)
+        }
+    }
+
+    func getIntersectionResults() async -> [String: IntersectionResult] {
+        guard let data = defaults.data(forKey: Constants.Storage.intersectionResults),
+              let results = try? decoder.decode([String: IntersectionResult].self, from: data) else {
+            return [:]
+        }
+        return results
+    }
+
     // MARK: - Clear Data
 
     func clearAllData() async throws {
@@ -298,6 +325,7 @@ final class StorageService: StorageServiceProtocol {
         defaults.removeObject(forKey: Constants.Storage.bookmarks)
         defaults.removeObject(forKey: Constants.Storage.streak)
         defaults.removeObject(forKey: Constants.Storage.quizProgress)
+        defaults.removeObject(forKey: Constants.Storage.intersectionResults)
     }
 }
 

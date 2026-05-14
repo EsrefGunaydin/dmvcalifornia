@@ -37,6 +37,8 @@ enum AppRoute: Hashable {
     case flashcardDeck(flashcardSet: FlashcardSet)
     case bookmarks
     case about
+    case intersectionLanding
+    case intersectionLevel(levelId: String)
 }
 
 // MARK: - App Coordinator

@@ -93,6 +93,17 @@ function travelAngle(approachFrom: Direction): number {
   }
 }
 
+// Direction (deg, 0 = up) a pedestrian crosses, given the arm they wait on.
+// They cross perpendicular to the traffic on that arm.
+function pedestrianWalkAngle(approachFrom: Direction): number {
+  switch (approachFrom) {
+    case 'north': return 90;   // crosses eastbound
+    case 'south': return 270;  // crosses westbound
+    case 'west': return 0;     // crosses northbound
+    case 'east': return 180;   // crosses southbound
+  }
+}
+
 const AGENT_COLORS = ['#2563eb', '#7c3aed', '#0891b2', '#db2777', '#ca8a04'];
 
 // Colour-code the label pill by what it conveys, so signal state reads at a
@@ -248,17 +259,40 @@ function IntentArrow({ intent }: { intent: Intent }) {
   );
 }
 
+// Compact straight arrow for pedestrians, pointing "up" by default; the
+// caller rotates and offsets it into the crossing direction.
+function PedestrianArrow() {
+  const shaft = 'M 0 7 L 0 -5';
+  const headPath = 'M 0 -14 L 7 -2 L -7 -2 Z';
+  return (
+    <g>
+      <path d={shaft} fill="none" stroke="#ffffff" strokeWidth={8} strokeLinecap="round" />
+      <path d={shaft} fill="none" stroke="#f59e0b" strokeWidth={4.5} strokeLinecap="round" />
+      <path d={headPath} fill="#f59e0b" stroke="#ffffff" strokeWidth={2.5} strokeLinejoin="round" />
+    </g>
+  );
+}
+
 // All sprites are drawn pointing "up" (north / front at top); the parent
 // group rotates them to face their travel direction.
 
 function AgentSprite({ agent, color }: { agent: Agent; color: string }) {
   if (agent.type === 'pedestrian') {
+    // Pedestrians never rotate, so the crossing-direction arrow is placed
+    // ahead of them in the direction they walk.
+    const walkAngle = pedestrianWalkAngle(agent.approachFrom);
+    const rad = (walkAngle * Math.PI) / 180;
+    const d = 24;
     return (
       <g>
         {/* shoulders */}
         <ellipse cx={0} cy={3} rx={9} ry={6.5} fill="#f59e0b" stroke="#fff" strokeWidth={2} />
         {/* head */}
         <circle cx={0} cy={-4} r={6} fill="#fcd34d" stroke="#fff" strokeWidth={2} />
+        {/* crossing-direction arrow */}
+        <g transform={`translate(${Math.sin(rad) * d} ${-Math.cos(rad) * d}) rotate(${walkAngle})`}>
+          <PedestrianArrow />
+        </g>
       </g>
     );
   }
@@ -460,15 +494,20 @@ export default function IntersectionScene({
                   </g>
                 )}
 
-                {/* label tag — colour-coded, placed behind the vehicle so it
-                    never overlaps the turn arrow (which emanates from the front) */}
+                {/* label tag — colour-coded. Kept over the roadway and clear
+                    of the corner stop signs: behind N/S cars, and pulled into
+                    the travel lane (never into a corner) for E/W cars. */}
                 {agent.label && status === 'idle' && (() => {
                   const { bg, fg } = labelStyle(agent.label);
                   const w = Math.max(60, agent.label.length * 6.2 + 14);
-                  // "Behind the car" — opposite the travel direction.
-                  const labelY = agent.approachFrom === 'north' ? -44 : 40;
+                  const labelOffset = {
+                    north: { x: 0, y: -44 },
+                    south: { x: 0, y: 40 },
+                    west: { x: 30, y: -40 },
+                    east: { x: -30, y: 40 },
+                  }[agent.approachFrom];
                   return (
-                    <g transform={`translate(0 ${labelY})`}>
+                    <g transform={`translate(${labelOffset.x} ${labelOffset.y})`}>
                       <rect x={-w / 2} y={-10} width={w} height={20} rx={10} fill={bg} />
                       <text textAnchor="middle" y={4} fontSize={10} fontWeight={600} fill={fg}>
                         {agent.label}
