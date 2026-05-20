@@ -243,7 +243,7 @@
       "search_intent": "informational",
       "target_length": 1800,
       "tier": 2,
-      "priority": 3,
+      "priority": 2,
       "status": "ready",
       "tags": ["Driving Test", "Tips"],
       "author_slug": "michael-anderson",
@@ -275,7 +275,7 @@
       "search_intent": "transactional",
       "target_length": 1600,
       "tier": 2,
-      "priority": 3,
+      "priority": 2,
       "status": "ready",
       "tags": ["DMV Services", "DMV Appointments", "Wait Times"],
       "author_slug": "robert-johnson",
@@ -284,20 +284,20 @@
       "notes": "Cover online portal, MyDMV account, walk-in vs appointment, cancellation policy, best times of day to book."
     },
     {
-      "slug": "california-behind-the-wheel-driving-test-what-to-expect",
-      "title": "California Behind-the-Wheel Driving Test: What to Expect Step-by-Step",
-      "target_keyword": "California behind the wheel test",
-      "secondary_keywords": ["California road test", "DMV driving test what to expect"],
+      "slug": "california-driver-test-guide-2026",
+      "title": "California Driver Test 2026: Score, Requirements & Prep",
+      "target_keyword": "California driver test",
+      "secondary_keywords": ["California behind the wheel test", "California DMV driving test", "California driver test passing score"],
       "search_intent": "informational",
       "target_length": 2200,
-      "tier": 2,
-      "priority": 3,
-      "status": "ready",
+      "tier": 1,
+      "priority": 2,
+      "status": "drafted",
       "tags": ["Driving Test", "Tips"],
       "author_slug": "michael-anderson",
-      "internal_links": ["/practice-test", "/california-driving-test-scoring-explained"],
+      "internal_links": ["/practice-test", "/driving-performance-evaluation-score-explained", "/dmv-appointment"],
       "outbound_links": ["https://www.dmv.ca.gov/portal/file/california-driver-handbook-pdf/"],
-      "notes": "Pre-drive check (lights, signals, brakes, horn, defroster, wipers), route, common maneuvers (3-point turn, parallel park, lane change), what examiner watches for."
+      "notes": "PILLAR retargeted to the 'California driver test' SERP cluster. Structure H2s as the Things-to-know module questions (passing score, requirements, preparation, appointment); FAQ covers the People-also-ask queries (is it hard, mistakes allowed, online, medical conditions)."
     },
     {
       "slug": "california-permit-test-cheat-sheet-50-questions",
@@ -391,7 +391,7 @@
       "status": "ready",
       "tags": ["Driver License", "Tips"],
       "author_slug": "jennifer-lee",
-      "internal_links": ["/practice-test", "/california-behind-the-wheel-driving-test-what-to-expect"],
+      "internal_links": ["/practice-test", "/california-driver-test-guide-2026"],
       "outbound_links": ["https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/teen-drivers/"],
       "notes": "Cover: 15.5 min permit age, 6 months supervised, no passengers under 20 for first 12 months, no driving 11pm-5am for first 12 months, exceptions."
     },
@@ -490,6 +490,22 @@
       "internal_links": ["/practice-test", "/mobileapp"],
       "outbound_links": [],
       "notes": "Brand story. 11 languages, free, offline iOS app, leaderboard. Conversion-focused."
+    },
+    {
+      "slug": "driving-with-a-medical-condition-in-california",
+      "title": "Driving With a Medical Condition in California: DMV Rules",
+      "target_keyword": "driving with a medical condition California",
+      "secondary_keywords": ["California DMV medical review", "epilepsy driving California", "California DMV reexamination"],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 2,
+      "priority": 3,
+      "status": "ready",
+      "tags": ["Driver License", "Traffic Laws"],
+      "author_slug": "lisa-thompson",
+      "internal_links": ["/practice-test", "/california-driver-test-guide-2026"],
+      "outbound_links": ["https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/"],
+      "notes": "Added from the 'California driver test' SERP analysis — answers the 'can someone with epilepsy drive in California' People-also-ask query. Cover DMV medical evaluation, conditions that trigger review (epilepsy/seizures, diabetes, vision, dementia), physician reporting, the reexamination process, and that there is no fixed seizure-free period in law."
     }
   ]
 }
