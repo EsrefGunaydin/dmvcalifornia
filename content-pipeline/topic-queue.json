@@ -490,6 +490,22 @@
       "internal_links": ["/practice-test", "/mobileapp"],
       "outbound_links": [],
       "notes": "Brand story. 11 languages, free, offline iOS app, leaderboard. Conversion-focused."
+    },
+    {
+      "slug": "most-commonly-missed-california-permit-test-questions-2026",
+      "title": "Most Commonly Missed California Permit Test Questions",
+      "target_keyword": "commonly missed California permit test questions",
+      "secondary_keywords": ["hardest California permit test questions", "California DMV test trick questions", "California permit test questions to know"],
+      "search_intent": "informational",
+      "target_length": 2200,
+      "tier": 1,
+      "priority": 2,
+      "status": "drafted",
+      "tags": ["Written Test", "Tips", "Driving Test"],
+      "author_slug": "michael-anderson",
+      "internal_links": ["/practice-test", "/practice-test/california-dmv-sample-questions", "/california-driver-handbook"],
+      "outbound_links": ["https://www.dmv.ca.gov/portal/file/california-driver-handbook-pdf/"],
+      "notes": "Ad-hoc article requested to outrank the driversed.com 'commonly missed teen permit questions' piece. Q&A breakdown of the most-missed CA permit test topics with the reasoning behind each answer."
     }
   ]
 }
