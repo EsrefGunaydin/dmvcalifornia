@@ -68,7 +68,7 @@
       "target_length": 1500,
       "tier": 1,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": ["Driver License", "DMV Services"],
       "author_slug": "robert-johnson",
       "internal_links": ["/practice-test", "/dmv-offices"],
