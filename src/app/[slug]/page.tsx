@@ -189,6 +189,71 @@ function processContentImages(htmlContent: string, postTitle: string): string {
     }
   );
 
+  // Promo `<figure><div><a>NAKED URL</a></div></figure>` blocks — these are
+  // the most common "see this article" callouts the old WordPress export
+  // produced. Convert each one into the same internal-post card.
+  processedHtml = processedHtml.replace(
+    /<figure[^>]*>\s*<div[^>]*>\s*<a[^>]*href=["'](https?:\/\/(?:www\.)?dmvcalifornia\.us\/([a-z0-9-]+)\/?)["'][^>]*>([^<]*)<\/a>\s*<\/div>\s*<\/figure>/gi,
+    (match, url, slug, linkText) => {
+      // Only transform when the link text is the URL itself (naked link).
+      // If someone wrote real anchor text, leave it alone.
+      const text = (linkText || '').trim();
+      const isNaked = !text || text === url || text === url.replace(/\/$/, '') || text.replace(/\/$/, '') === url.replace(/\/$/, '');
+      if (!isNaked) return match;
+
+      const referencedPost = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
+      if (!referencedPost) {
+        // Internal page that isn't a blog post (e.g. /dmv-offices). Render a
+        // simple styled call-out instead of leaking the bare URL.
+        const humanLabel = slug
+          .split('-')
+          .map((w: string) => w.charAt(0).toUpperCase() + w.slice(1))
+          .join(' ');
+        return `<p class="not-prose my-6"><a href="/${slug}" class="inline-flex items-center gap-2 bg-primary/10 hover:bg-primary/20 text-primary font-semibold px-4 py-2 rounded-lg transition-colors">→ ${humanLabel}</a></p>`;
+      }
+
+      const postImage = extractFirstImageFromHtml(referencedPost.content);
+      return `<div class="my-8 not-prose">
+  <a href="/${referencedPost.slug}" class="block group">
+    <div class="bg-gradient-to-br from-primary-50 to-white border-2 border-primary-100 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+      <div class="flex flex-col md:flex-row">
+        ${postImage ? `
+        <div class="md:w-2/5 h-48 md:h-auto overflow-hidden bg-gray-100">
+          <img
+            src="${postImage}"
+            alt="${referencedPost.title}"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+          />
+        </div>` : ''}
+        <div class="flex-1 p-6">
+          <div class="flex items-start gap-3 mb-3">
+            <svg class="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+            </svg>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 group-hover:text-primary transition-colors mb-2">
+                ${referencedPost.title}
+              </h3>
+              <p class="text-gray-600 text-sm line-clamp-2">
+                ${referencedPost.excerpt}
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center text-primary font-semibold text-sm mt-4">
+            Read More
+            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>`;
+    },
+  );
+
   // Also handle plain <a> links to internal blog posts (not in embed blocks)
   processedHtml = processedHtml.replace(
     /<p>\s*<a[^>]*href=["'](https?:\/\/(?:www\.)?dmvcalifornia\.us\/([a-z0-9-]+)\/)["'][^>]*>.*?<\/a>\s*<\/p>/gi,
