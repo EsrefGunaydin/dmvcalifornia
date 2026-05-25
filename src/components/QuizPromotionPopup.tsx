@@ -7,6 +7,10 @@ export default function QuizPromotionPopup() {
   const [isVisible, setIsVisible] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [hasTimePassed, setHasTimePassed] = useState(false);
+  // Once dismissed in-session, never auto-reopen. Without this the "open
+  // popup" effect would re-fire as soon as isVisible flipped to false and the
+  // popup would blink back instantly.
+  const [dismissed, setDismissed] = useState(false);
 
   useEffect(() => {
     // Check if user has dismissed popup in last 7 days
@@ -43,14 +47,18 @@ export default function QuizPromotionPopup() {
     };
   }, []);
 
-  // Show popup when both conditions are met
+  // Show popup when both conditions are met (and the user hasn't dismissed it
+  // in this session).
   useEffect(() => {
-    if (hasTimePassed && hasScrolled && !isVisible) {
+    if (hasTimePassed && hasScrolled && !dismissed) {
       setIsVisible(true);
     }
-  }, [hasTimePassed, hasScrolled, isVisible]);
+  }, [hasTimePassed, hasScrolled, dismissed]);
 
-  const handleDismiss = () => {
+  const handleDismiss = (e?: React.MouseEvent) => {
+    e?.preventDefault();
+    e?.stopPropagation();
+    setDismissed(true);
     setIsVisible(false);
     // Don't show again for 7 days
     const dismissUntil = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
@@ -58,19 +66,23 @@ export default function QuizPromotionPopup() {
   };
 
   const handleClickCTA = () => {
+    setDismissed(true);
     setIsVisible(false);
     sessionStorage.setItem('visitedQuizPage', 'true');
   };
 
   if (!isVisible) return null;
 
+  // Wrapper is pointer-events-none so the 16px margin region around the card
+  // doesn't swallow clicks meant for the page behind it. The card itself opts
+  // back in with pointer-events-auto so its own buttons remain clickable.
   return (
-    <div className="fixed bottom-4 right-4 z-[100000] w-full max-w-sm animate-in slide-in-from-bottom-4 duration-500">
-      <div className="bg-white rounded-lg shadow-2xl border-2 border-primary p-6 m-4 relative">
+    <div className="fixed bottom-4 right-4 z-[100000] w-full max-w-sm animate-in slide-in-from-bottom-4 duration-500 pointer-events-none">
+      <div className="bg-white rounded-lg shadow-2xl border-2 border-primary p-6 m-4 relative pointer-events-auto">
         {/* Close Button */}
         <button
           onClick={handleDismiss}
-          className="absolute top-3 right-3 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
+          className="absolute top-3 right-3 p-2 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer"
           aria-label="Close popup"
           type="button"
         >
