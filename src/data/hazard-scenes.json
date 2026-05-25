@@ -1,0 +1,164 @@
+{
+  "scenes": [
+    {
+      "id": "scene-1",
+      "title": "Quiet Residential Street",
+      "description": "A calm neighborhood street — but three things on it could put you in danger. Find them before the timer runs out.",
+      "setting": "residential",
+      "timeLimit": 16,
+      "reference": "CA Driver Handbook — Scanning the road",
+      "elements": [
+        { "id": "s1-cross", "kind": "pedestrian", "x": 110, "y": 170, "rotation": 180, "cue": "crossing", "isHazard": true, "hazardLabel": "Pedestrian crossing", "hazardWhy": "A pedestrian has stepped off the curb into your lane. Cover the brake and be ready to stop." },
+        { "id": "s1-ball", "kind": "ball", "x": 272, "y": 228, "cue": "rolling", "isHazard": true, "hazardLabel": "Ball rolling into the road", "hazardWhy": "A ball rolling out usually means a child is about to chase it. Slow down immediately." },
+        { "id": "s1-dog", "kind": "dog", "x": 200, "y": 205, "isHazard": true, "hazardLabel": "Loose dog in the road", "hazardWhy": "An animal in the roadway is unpredictable. Ease off the gas and be prepared to stop." },
+        { "id": "s1-tree1", "kind": "tree", "x": 58, "y": 68, "isHazard": false },
+        { "id": "s1-tree2", "kind": "tree", "x": 330, "y": 332, "isHazard": false },
+        { "id": "s1-hyd", "kind": "hydrant", "x": 150, "y": 252, "isHazard": false },
+        { "id": "s1-ped-safe", "kind": "pedestrian", "x": 300, "y": 145, "rotation": 90, "isHazard": false },
+        { "id": "s1-parked", "kind": "car", "x": 60, "y": 172, "rotation": 90, "isHazard": false }
+      ]
+    },
+    {
+      "id": "scene-2",
+      "title": "Busy Parking Lot",
+      "description": "Parking lots are full of slow-moving surprises. Spot the three real hazards among the parked cars.",
+      "setting": "parking-lot",
+      "timeLimit": 16,
+      "reference": "CA Driver Handbook — Parking lots",
+      "elements": [
+        { "id": "s2-reverse", "kind": "car", "x": 130, "y": 158, "rotation": 180, "cue": "reversing", "isHazard": true, "hazardLabel": "Car backing out", "hazardWhy": "A car is reversing out of its space and the driver may not see you. Slow down and give it room." },
+        { "id": "s2-ped", "kind": "pedestrian", "x": 250, "y": 200, "rotation": 270, "isHazard": true, "hazardLabel": "Pedestrian in the drive lane", "hazardWhy": "Someone is walking down the lane. Pedestrians have the right of way in parking lots." },
+        { "id": "s2-ball", "kind": "ball", "x": 322, "y": 210, "cue": "rolling", "isHazard": true, "hazardLabel": "Ball in the lane", "hazardWhy": "A ball in a parking lot means a child may dart out after it. Stop and check." },
+        { "id": "s2-park1", "kind": "car", "x": 62, "y": 108, "rotation": 180, "isHazard": false },
+        { "id": "s2-park2", "kind": "car", "x": 200, "y": 108, "rotation": 180, "isHazard": false },
+        { "id": "s2-park3", "kind": "car", "x": 100, "y": 292, "rotation": 0, "isHazard": false },
+        { "id": "s2-park4", "kind": "car", "x": 300, "y": 292, "rotation": 0, "isHazard": false },
+        { "id": "s2-tree", "kind": "tree", "x": 32, "y": 32, "isHazard": false }
+      ]
+    },
+    {
+      "id": "scene-3",
+      "title": "Uncontrolled Intersection",
+      "description": "Four hazards are converging on this crossing. Read the whole intersection and tap every one.",
+      "setting": "intersection",
+      "timeLimit": 15,
+      "reference": "CA Driver Handbook — Intersections",
+      "elements": [
+        { "id": "s3-ped", "kind": "pedestrian", "x": 126, "y": 200, "rotation": 90, "cue": "crossing", "isHazard": true, "hazardLabel": "Pedestrian in the crosswalk", "hazardWhy": "Someone is in the crosswalk. They have the right of way — you must stop." },
+        { "id": "s3-car", "kind": "car", "x": 216, "y": 236, "rotation": 0, "isHazard": true, "hazardLabel": "Car entering the intersection", "hazardWhy": "A car is moving into the intersection across your path. Be ready to yield." },
+        { "id": "s3-cyc", "kind": "cyclist", "x": 175, "y": 108, "rotation": 180, "cue": "wobbling", "isHazard": true, "hazardLabel": "Cyclist drifting", "hazardWhy": "A cyclist is heading into the intersection and drifting in the lane. Give them plenty of room." },
+        { "id": "s3-dog", "kind": "dog", "x": 292, "y": 200, "isHazard": true, "hazardLabel": "Loose dog in the road", "hazardWhy": "An animal in the road is unpredictable. Slow down and be prepared to stop." },
+        { "id": "s3-tree1", "kind": "tree", "x": 74, "y": 74, "isHazard": false },
+        { "id": "s3-tree2", "kind": "tree", "x": 326, "y": 326, "isHazard": false },
+        { "id": "s3-tree3", "kind": "tree", "x": 74, "y": 326, "isHazard": false },
+        { "id": "s3-cone", "kind": "cone", "x": 320, "y": 80, "isHazard": false },
+        { "id": "s3-parked", "kind": "car", "x": 48, "y": 232, "rotation": 90, "isHazard": false }
+      ]
+    },
+    {
+      "id": "scene-4",
+      "title": "Cars Parked Both Sides",
+      "description": "Parked cars hide a lot. Four hazards are developing on this street — find them fast.",
+      "setting": "residential",
+      "timeLimit": 14,
+      "reference": "CA Driver Handbook — Sharing the road",
+      "elements": [
+        { "id": "s4-door", "kind": "car", "x": 92, "y": 228, "rotation": 90, "cue": "door-open", "isHazard": true, "hazardLabel": "Car door opening", "hazardWhy": "A parked car's door has swung into the lane. Someone is about to step out — slow and move over." },
+        { "id": "s4-cross", "kind": "pedestrian", "x": 250, "y": 232, "rotation": 0, "cue": "crossing", "isHazard": true, "hazardLabel": "Pedestrian crossing", "hazardWhy": "A pedestrian has stepped off the curb into the road. Be ready to stop." },
+        { "id": "s4-cyc", "kind": "cyclist", "x": 322, "y": 184, "rotation": 270, "cue": "wobbling", "isHazard": true, "hazardLabel": "Wobbling cyclist", "hazardWhy": "A cyclist is drifting in your lane. Pass wide and slow, or wait." },
+        { "id": "s4-ball", "kind": "ball", "x": 162, "y": 176, "cue": "rolling", "isHazard": true, "hazardLabel": "Ball in the road", "hazardWhy": "A ball in the road often means a child will chase it. Slow down now." },
+        { "id": "s4-tree1", "kind": "tree", "x": 48, "y": 58, "isHazard": false },
+        { "id": "s4-tree2", "kind": "tree", "x": 200, "y": 68, "isHazard": false },
+        { "id": "s4-tree3", "kind": "tree", "x": 352, "y": 340, "isHazard": false },
+        { "id": "s4-hyd", "kind": "hydrant", "x": 292, "y": 252, "isHazard": false },
+        { "id": "s4-ped-safe", "kind": "pedestrian", "x": 60, "y": 145, "rotation": 90, "isHazard": false },
+        { "id": "s4-parked", "kind": "car", "x": 352, "y": 228, "rotation": 90, "isHazard": false }
+      ]
+    },
+    {
+      "id": "scene-5",
+      "title": "Crowded Lot at Closing Time",
+      "description": "The lot is filling up and people are everywhere. Four hazards — can you catch them all?",
+      "setting": "parking-lot",
+      "timeLimit": 13,
+      "reference": "CA Driver Handbook — Parking lots",
+      "elements": [
+        { "id": "s5-reverse", "kind": "car", "x": 280, "y": 162, "rotation": 180, "cue": "reversing", "isHazard": true, "hazardLabel": "Car backing out", "hazardWhy": "A car is reversing into the lane. Stop and let it finish — the driver's view is limited." },
+        { "id": "s5-ped", "kind": "pedestrian", "x": 132, "y": 132, "rotation": 180, "isHazard": true, "hazardLabel": "Pedestrian between cars", "hazardWhy": "Someone is stepping out from between parked cars where you can barely see them." },
+        { "id": "s5-door", "kind": "car", "x": 92, "y": 290, "rotation": 0, "cue": "door-open", "isHazard": true, "hazardLabel": "Car door opening", "hazardWhy": "A door has opened into the lane. Expect a person to follow it out." },
+        { "id": "s5-dog", "kind": "dog", "x": 338, "y": 205, "isHazard": true, "hazardLabel": "Loose dog in the lane", "hazardWhy": "An animal loose in the lot is unpredictable. Slow right down." },
+        { "id": "s5-park1", "kind": "car", "x": 60, "y": 108, "rotation": 180, "isHazard": false },
+        { "id": "s5-park2", "kind": "car", "x": 200, "y": 108, "rotation": 180, "isHazard": false },
+        { "id": "s5-park3", "kind": "car", "x": 180, "y": 292, "rotation": 0, "isHazard": false },
+        { "id": "s5-park4", "kind": "car", "x": 320, "y": 292, "rotation": 0, "isHazard": false },
+        { "id": "s5-cone", "kind": "cone", "x": 30, "y": 372, "isHazard": false },
+        { "id": "s5-tree", "kind": "tree", "x": 372, "y": 30, "isHazard": false }
+      ]
+    },
+    {
+      "id": "scene-6",
+      "title": "Signal Intersection Rush",
+      "description": "Five hazards are in play at once. Scan corner to corner and don't miss a thing.",
+      "setting": "intersection",
+      "timeLimit": 12,
+      "reference": "CA Driver Handbook — Intersections",
+      "elements": [
+        { "id": "s6-ped-n", "kind": "pedestrian", "x": 200, "y": 126, "rotation": 180, "cue": "crossing", "isHazard": true, "hazardLabel": "Pedestrian in the north crosswalk", "hazardWhy": "A pedestrian is crossing ahead. You must yield the whole crosswalk." },
+        { "id": "s6-ped-e", "kind": "pedestrian", "x": 274, "y": 200, "rotation": 270, "cue": "crossing", "isHazard": true, "hazardLabel": "Pedestrian in the east crosswalk", "hazardWhy": "A second pedestrian is crossing. Check every crosswalk before you move." },
+        { "id": "s6-car", "kind": "car", "x": 168, "y": 184, "rotation": 90, "isHazard": true, "hazardLabel": "Car running the intersection", "hazardWhy": "A car is moving through the intersection on your path. Do not assume it will stop." },
+        { "id": "s6-ball", "kind": "ball", "x": 200, "y": 292, "cue": "rolling", "isHazard": true, "hazardLabel": "Ball in the road", "hazardWhy": "A ball has rolled into the road. A child may follow — slow down." },
+        { "id": "s6-cyc", "kind": "cyclist", "x": 216, "y": 92, "rotation": 180, "cue": "wobbling", "isHazard": true, "hazardLabel": "Cyclist entering", "hazardWhy": "A cyclist is approaching the intersection and drifting. Give them space." },
+        { "id": "s6-tree1", "kind": "tree", "x": 70, "y": 70, "isHazard": false },
+        { "id": "s6-tree2", "kind": "tree", "x": 330, "y": 70, "isHazard": false },
+        { "id": "s6-tree3", "kind": "tree", "x": 70, "y": 330, "isHazard": false },
+        { "id": "s6-cone", "kind": "cone", "x": 330, "y": 330, "isHazard": false },
+        { "id": "s6-parked", "kind": "car", "x": 360, "y": 176, "rotation": 270, "isHazard": false },
+        { "id": "s6-hyd", "kind": "hydrant", "x": 108, "y": 108, "isHazard": false }
+      ]
+    },
+    {
+      "id": "scene-7",
+      "title": "School's Out",
+      "description": "Kids, bikes, and balls everywhere. Five hazards, eleven seconds — keep your eyes moving.",
+      "setting": "residential",
+      "timeLimit": 11,
+      "reference": "CA Driver Handbook — School zones",
+      "elements": [
+        { "id": "s7-cross", "kind": "pedestrian", "x": 90, "y": 170, "rotation": 180, "cue": "crossing", "isHazard": true, "hazardLabel": "Child crossing", "hazardWhy": "A child has stepped into the road. Children are unpredictable — stop early." },
+        { "id": "s7-door", "kind": "car", "x": 182, "y": 226, "rotation": 270, "cue": "door-open", "isHazard": true, "hazardLabel": "Car door opening", "hazardWhy": "A door has opened into the lane. Someone is about to get out." },
+        { "id": "s7-ball", "kind": "ball", "x": 300, "y": 180, "cue": "rolling", "isHazard": true, "hazardLabel": "Ball in the road", "hazardWhy": "A ball rolling across the road — a child will likely chase it." },
+        { "id": "s7-dog", "kind": "dog", "x": 240, "y": 214, "isHazard": true, "hazardLabel": "Loose dog", "hazardWhy": "A dog is loose in the roadway. Be ready for it to change direction." },
+        { "id": "s7-cyc", "kind": "cyclist", "x": 60, "y": 216, "rotation": 90, "cue": "wobbling", "isHazard": true, "hazardLabel": "Wobbling cyclist", "hazardWhy": "A young cyclist is drifting in the lane. Slow down and pass with room." },
+        { "id": "s7-tree1", "kind": "tree", "x": 40, "y": 50, "isHazard": false },
+        { "id": "s7-tree2", "kind": "tree", "x": 132, "y": 60, "isHazard": false },
+        { "id": "s7-tree3", "kind": "tree", "x": 262, "y": 68, "isHazard": false },
+        { "id": "s7-tree4", "kind": "tree", "x": 360, "y": 332, "isHazard": false },
+        { "id": "s7-hyd", "kind": "hydrant", "x": 330, "y": 253, "isHazard": false },
+        { "id": "s7-ped-safe", "kind": "pedestrian", "x": 205, "y": 145, "rotation": 90, "isHazard": false },
+        { "id": "s7-parked", "kind": "car", "x": 350, "y": 172, "rotation": 90, "isHazard": false }
+      ]
+    },
+    {
+      "id": "scene-8",
+      "title": "Downtown Crossing",
+      "description": "The hardest scan yet — five hazards, ten seconds, and plenty to distract you.",
+      "setting": "intersection",
+      "timeLimit": 10,
+      "reference": "CA Driver Handbook — Intersections",
+      "elements": [
+        { "id": "s8-ped-w", "kind": "pedestrian", "x": 126, "y": 216, "rotation": 90, "cue": "crossing", "isHazard": true, "hazardLabel": "Pedestrian in the west crosswalk", "hazardWhy": "Someone is crossing on your left. Yield the entire crosswalk." },
+        { "id": "s8-ped-s", "kind": "pedestrian", "x": 186, "y": 274, "rotation": 0, "cue": "crossing", "isHazard": true, "hazardLabel": "Pedestrian in the south crosswalk", "hazardWhy": "A second pedestrian is crossing. Always check before you proceed." },
+        { "id": "s8-car", "kind": "car", "x": 186, "y": 166, "rotation": 180, "isHazard": true, "hazardLabel": "Car entering the intersection", "hazardWhy": "A car is moving into the intersection across your path. Be ready to yield." },
+        { "id": "s8-cyc", "kind": "cyclist", "x": 300, "y": 184, "rotation": 270, "cue": "wobbling", "isHazard": true, "hazardLabel": "Cyclist drifting", "hazardWhy": "A cyclist is in the lane and drifting. Give them room — never squeeze past." },
+        { "id": "s8-dog", "kind": "dog", "x": 216, "y": 216, "isHazard": true, "hazardLabel": "Loose dog in the intersection", "hazardWhy": "An animal is loose in the middle of the intersection. Slow right down." },
+        { "id": "s8-tree1", "kind": "tree", "x": 70, "y": 70, "isHazard": false },
+        { "id": "s8-tree2", "kind": "tree", "x": 330, "y": 70, "isHazard": false },
+        { "id": "s8-tree3", "kind": "tree", "x": 70, "y": 330, "isHazard": false },
+        { "id": "s8-tree4", "kind": "tree", "x": 330, "y": 330, "isHazard": false },
+        { "id": "s8-cone1", "kind": "cone", "x": 110, "y": 290, "isHazard": false },
+        { "id": "s8-cone2", "kind": "cone", "x": 290, "y": 110, "isHazard": false },
+        { "id": "s8-parked", "kind": "car", "x": 216, "y": 372, "rotation": 0, "isHazard": false }
+      ]
+    }
+  ]
+}
