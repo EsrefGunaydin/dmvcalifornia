@@ -1,6 +1,6 @@
 {
   "extracted_at": "2025-11-02T19:05:19.229925",
-  "total_posts": 55,
+  "total_posts": 62,
   "featured_images": {
     "158": 2317,
     "337": 2319,
@@ -51,6 +51,181 @@
     "3014": 3021
   },
   "posts": [
+    {
+      "id": 9022,
+      "title": "Michigan Driver's License Issue Date",
+      "slug": "michigan-drivers-license-issue-date",
+      "content": "<p>Your Michigan driver's license issue date appears as <strong>\"ISS\"</strong> on the front of the card, printed in the lower portion right next to the expiration date (EXP). On a Michigan Secretary of State-issued license, ISS marks the day the current physical card was printed — not the day you first qualified to drive in Michigan.</p> <figure ><img src=\"/images/blog/michigan-dl.jpg\" alt=\"Michigan Driver's License showing the issue date\"/></figure> <p>\"ISS\" is short for \"Issue Date\" — the day your current license card was printed. It is not necessarily the day you first became a licensed driver in the state.</p> <h2 >What does \"DD\" mean on a Michigan license?</h2><p>DD is the <strong>Document Discriminator</strong>, a unique serial number tied to that one printed card. It changes whenever the Michigan SOS reissues your license.</p> <h2 >What does \"RSTR\" mean on a Michigan license?</h2><p>RSTR is Restrictions — common Michigan codes include \"A\" for corrective lenses, \"B\" for an outside mirror, and graduated driver license restrictions for drivers under 18.</p> <h2 >What is the difference between a Standard, REAL ID, and Enhanced license?</h2><p>A <strong>Standard</strong> license works for driving and most everyday ID purposes. A <strong>REAL ID</strong> (gold star in the upper corner) is federally accepted for domestic flights. An <strong>Enhanced</strong> Michigan license additionally lets you cross land and sea borders from Canada, Mexico, and the Caribbean without a passport.</p> <h2 >How long is a Michigan driver's license valid?</h2><p>A standard Michigan driver's license is valid for <strong>4 years</strong>. Renewals are available online, by mail, or in person at any Michigan SOS branch.</p> <h2 >Need an older issue date?</h2><p>If you need the date you were <em>first</em> licensed in Michigan (for an insurance discount, employment screening, or a CDL application), that information lives in your full driving record — not on the plastic card. Request it from the Michigan Secretary of State at <a href=\"https://www.michigan.gov/sos/license-id\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.michigan.gov/sos/license-id</a>.</p> <p>For a visual tour of every state's driver license design, see our full guide.</p><figure ><div ><a href=\"https://www.dmvcalifornia.us/drivers-license-by-state/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dmvcalifornia.us/drivers-license-by-state/</a></div></figure>",
+      "excerpt": "Your Michigan driver's license issue date appears as \"ISS\" on the front of the card, near the expiration date. Here is what every abbreviation means.",
+      "publishedAt": "2026-05-25 13:00:00",
+      "author": "Michael Rodriguez",
+      "tags": [
+        "Driver License",
+        "Driving Test"
+      ],
+      "views": 0,
+      "published_date": "2026-05-25 00:00:00",
+      "created_at": "2026-05-25 00:00:00",
+      "updated_at": "2026-05-25 00:00:00",
+      "hero_image": "/images/blog/blog-michigan-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photo_id": 20696776,
+        "photographer": "Nadim Shaikh",
+        "photographer_url": "https://www.pexels.com/@nadim-shaikh-2923533",
+        "photo_url": "https://www.pexels.com/photo/man-sitting-on-the-hood-of-an-suv-parked-in-the-desert-20696776/"
+      }
+    },
+    {
+      "id": 9021,
+      "title": "Georgia Driver's License Issue Date",
+      "slug": "georgia-drivers-license-issue-date",
+      "content": "<p>Georgia driver's licenses are different from most other states: the issue date is <strong>not printed on the front of the card</strong>. The Georgia Department of Driver Services (DDS) only shows the expiration date and your date of birth on the visible side. The issue date lives inside the machine-readable barcode on the back, labeled <strong>DBD</strong> (Document Issue Date).</p> <figure ><img src=\"/images/blog/georgia-dl.jpg\" alt=\"Georgia Driver's License showing the issue date\"/></figure> <p>\"ISS\" is short for \"Issue Date\" — the day your current license card was printed. It is not necessarily the day you first became a licensed driver in the state.</p> <h2 >What does the gold or black star mean on a Georgia license?</h2><p>A small star in the upper-right corner marks the card as REAL ID compliant. Georgia issues both REAL ID and non-REAL-ID cards; only REAL-ID-compliant cards work as federally accepted ID for domestic flights starting May 7, 2025.</p> <h2 >What does \"DD\" mean on a Georgia license?</h2><p>DD is the <strong>Document Discriminator</strong>, a serial number unique to that specific card. It is reissued every time you renew or replace your license.</p> <h2 >What does \"RSTR\" or \"END\" mean?</h2><p>RSTR is Restrictions (corrective lenses, daylight-only, etc.), and END is Endorsements (mostly for CDL holders).</p> <h2 >Where is the Georgia issue date actually printed?</h2><p>Georgia driver's licenses are unusual: the visible front of the card prints only the expiration date — <strong>not the issue date</strong>. The day your current card was issued is encoded in the PDF417 <strong>barcode</strong> on the back, under the AAMVA field code <strong>DBD</strong> (\"Document Issue Date\").</p><p>That means if a bank, employer, or insurance company needs the issue date, they have to either:</p><ul><li>Scan the back-of-card barcode with a compliant reader, or</li><li>Pull your record from the Georgia Department of Driver Services online portal.</li></ul><p>You cannot recover the issue date by looking at the front of the card alone.</p> <h2 >How long is a Georgia driver's license valid?</h2><p>A standard Georgia Class C driver's license is valid for <strong>8 years</strong>. Drivers 60 and older have a 5-year option, and online renewal is available every other cycle through Georgia DDS Online Services.</p> <h2 >Need an older issue date?</h2><p>If you need the date you were <em>first</em> licensed in Georgia (for an insurance discount, employment screening, or a CDL application), that information lives in your full driving record — not on the plastic card. Request it from the Georgia Department of Driver Services at <a href=\"https://dds.georgia.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">https://dds.georgia.gov/</a>.</p> <p>For a visual tour of every state's driver license design, see our full guide.</p><figure ><div ><a href=\"https://www.dmvcalifornia.us/drivers-license-by-state/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dmvcalifornia.us/drivers-license-by-state/</a></div></figure>",
+      "excerpt": "Georgia driver licenses do not print the issue date on the front of the card — it is hidden in the barcode (DBD field). Here is how to read it.",
+      "publishedAt": "2026-05-25 13:10:00",
+      "author": "Jennifer Lee",
+      "tags": [
+        "Driver License",
+        "Driving Test"
+      ],
+      "views": 0,
+      "published_date": "2026-05-25 00:00:00",
+      "created_at": "2026-05-25 00:00:00",
+      "updated_at": "2026-05-25 00:00:00",
+      "hero_image": "/images/blog/blog-georgia-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photo_id": 5249231,
+        "photographer": "Mehmet Ali Turan",
+        "photographer_url": "https://www.pexels.com/@mehmetalituran",
+        "photo_url": "https://www.pexels.com/photo/a-man-in-gray-shirt-driving-a-car-5249231/"
+      }
+    },
+    {
+      "id": 9020,
+      "title": "Ohio Driver's License Issue Date",
+      "slug": "ohio-drivers-license-issue-date",
+      "content": "<p>Your Ohio driver's license issue date is marked as <strong>\"ISS\"</strong> on the front of the card, printed in the bottom section directly under the expiration date (EXP). On a standard Ohio BMV license, ISS shows when the current card was printed — not necessarily when you first received a license.</p> <figure ><img src=\"/images/blog/ohio-dl.jpg\" alt=\"Ohio Driver's License showing the issue date\"/></figure> <p>\"ISS\" is short for \"Issue Date\" — the day your current license card was printed. It is not necessarily the day you first became a licensed driver in the state.</p> <h2 >What does \"DD\" mean on an Ohio license?</h2><p>DD is the <strong>Document Discriminator</strong>, a unique serial number tied to that one printed card. It updates whenever you replace or renew the license.</p> <h2 >What does \"RSTR\" mean on an Ohio license?</h2><p>RSTR stands for <strong>Restrictions</strong> — common ones include \"A\" for corrective lenses, \"B\" for an outside mirror, or \"C\" for daylight driving only.</p> <h2 >Is the gold star important?</h2><p>Yes. The small gold star in the upper-right corner indicates a REAL-ID-compliant Ohio license. From May 7, 2025 onward you need a REAL ID (or another federally accepted ID like a passport) to board a domestic flight.</p> <h2 >How long is a Ohio driver's license valid?</h2><p>A standard Ohio driver's license is valid for <strong>4 years</strong>. Drivers can renew at any Deputy Registrar license agency or, when eligible, online through the Ohio BMV.</p> <h2 >Need an older issue date?</h2><p>If you need the date you were <em>first</em> licensed in Ohio (for an insurance discount, employment screening, or a CDL application), that information lives in your full driving record — not on the plastic card. Request it from the Ohio Bureau of Motor Vehicles at <a href=\"https://bmv.ohio.gov/drivers-license.aspx\" target=\"_blank\" rel=\"noopener noreferrer\">https://bmv.ohio.gov/drivers-license.aspx</a>.</p> <p>For a visual tour of every state's driver license design, see our full guide.</p><figure ><div ><a href=\"https://www.dmvcalifornia.us/drivers-license-by-state/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dmvcalifornia.us/drivers-license-by-state/</a></div></figure>",
+      "excerpt": "Your Ohio driver's license issue date appears as \"ISS\" on the front of the card, under the expiration date. Here is what every Ohio BMV abbreviation means.",
+      "publishedAt": "2026-05-25 13:20:00",
+      "author": "David Chen",
+      "tags": [
+        "Driver License",
+        "Driving Test"
+      ],
+      "views": 0,
+      "published_date": "2026-05-25 00:00:00",
+      "created_at": "2026-05-25 00:00:00",
+      "updated_at": "2026-05-25 00:00:00",
+      "hero_image": "/images/blog/blog-ohio-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photo_id": 7715190,
+        "photographer": "Kindel Media",
+        "photographer_url": "https://www.pexels.com/@kindelmedia",
+        "photo_url": "https://www.pexels.com/photo/man-sitting-on-the-driver-s-seat-looking-at-the-police-officer-7715190/"
+      }
+    },
+    {
+      "id": 9019,
+      "title": "Pennsylvania Driver's License Issue Date",
+      "slug": "pennsylvania-drivers-license-issue-date",
+      "content": "<p>Your Pennsylvania driver's license issue date appears as <strong>\"ISS\"</strong> on the front of the card, printed in the lower portion under your photo and just above the expiration date (EXP). On a standard PennDOT-issued license, ISS marks the day your <em>current</em> card was printed — not the day you were first licensed.</p> <figure ><img src=\"/images/blog/penn-dl.jpg\" alt=\"Pennsylvania Driver's License showing the issue date\"/></figure> <p>\"ISS\" is short for \"Issue Date\" — the day your current license card was printed. It is not necessarily the day you first became a licensed driver in the state.</p> <h2 >What does \"DD\" mean on a Pennsylvania license?</h2><p>DD is the <strong>Document Discriminator</strong>, a serial number assigned to that specific piece of plastic. It is regenerated each time you renew or replace the card.</p> <h2 >What does \"REST\" or \"RESTR\" mean?</h2><p>REST/RESTR stands for <strong>Restrictions</strong> — common codes include \"1\" for corrective lenses and \"2\" for a mechanical aid. The Pennsylvania Driver's Manual lists every restriction code.</p> <h2 >What is the gold star on a PA REAL ID license?</h2><p>A small gold star in the upper-right corner means the card is REAL ID compliant — it can be used to board a domestic flight or enter a federal building. Non-REAL-ID cards say \"NOT FOR REAL ID PURPOSES\" instead.</p> <h2 >How long is a Pennsylvania driver's license valid?</h2><p>A standard Pennsylvania driver's license is valid for <strong>4 years</strong> for most drivers, with options to renew online via the PennDOT Driver and Vehicle Services portal.</p> <h2 >Need an older issue date?</h2><p>If you need the date you were <em>first</em> licensed in Pennsylvania (for an insurance discount, employment screening, or a CDL application), that information lives in your full driving record — not on the plastic card. Request it from the PennDOT Driver and Vehicle Services at <a href=\"https://www.pa.gov/agencies/penndot/driver-vehicle-services.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.pa.gov/agencies/penndot/driver-vehicle-services.html</a>.</p> <p>For a visual tour of every state's driver license design, see our full guide.</p><figure ><div ><a href=\"https://www.dmvcalifornia.us/drivers-license-by-state/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dmvcalifornia.us/drivers-license-by-state/</a></div></figure>",
+      "excerpt": "Your Pennsylvania driver's license issue date appears as \"ISS\" on the front of the card, under your photo. Here is what every PennDOT abbreviation means.",
+      "publishedAt": "2026-05-25 13:30:00",
+      "author": "Lisa Thompson",
+      "tags": [
+        "Driver License",
+        "Driving Test"
+      ],
+      "views": 0,
+      "published_date": "2026-05-25 00:00:00",
+      "created_at": "2026-05-25 00:00:00",
+      "updated_at": "2026-05-25 00:00:00",
+      "hero_image": "/images/blog/blog-pennsylvania-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photo_id": 5320413,
+        "photographer": "Furkan Dolunay",
+        "photographer_url": "https://www.pexels.com/@makerologist",
+        "photo_url": "https://www.pexels.com/photo/close-up-photo-of-a-person-driving-a-car-5320413/"
+      }
+    },
+    {
+      "id": 9018,
+      "title": "New York Driver's License Issue Date",
+      "slug": "new-york-drivers-license-issue-date",
+      "content": "<p>Your New York driver's license issue date is marked as <strong>\"ISS\"</strong> on the front of the card, printed in the lower-left area beneath your photo and signature. On a standard New York Class D license, ISS appears right under the expiration date (EXP), making the two easy to confuse at a glance.</p> <figure ><img src=\"/images/blog/ny-dl.jpg\" alt=\"New York Driver's License showing the issue date\"/></figure> <p>\"ISS\" is short for \"Issue Date\" — the day your current license card was printed. It is not necessarily the day you first became a licensed driver in the state.</p> <h2 >What does \"DD\" mean on a New York driver's license?</h2><p>DD is the <strong>Document Discriminator</strong> — a serial number that uniquely identifies that one physical card. New York DMV regenerates it whenever a card is reprinted, even if your DMV ID stays the same.</p> <h2 >What is \"CLASS\" on a New York license?</h2><p>Class identifies what you are licensed to drive. <strong>Class D</strong> is the standard non-commercial license; <strong>DJ</strong> is a junior license for drivers under 18; <strong>M</strong>, <strong>MJ</strong> are motorcycle classes; <strong>A, B, C</strong> cover commercial vehicles.</p> <h2 >What does \"RESTR\" mean on a New York license?</h2><p>RESTR stands for <strong>Restrictions</strong> — for example, \"B\" for corrective lenses or \"R\" for medical review. The New York Driver's Manual lists every restriction letter.</p> <h2 >How long is a New York driver's license valid?</h2><p>A standard New York driver license (Class D, Enhanced, or REAL ID) is valid for <strong>8 years</strong>. Renewals can be completed online if you have no medical changes; otherwise an in-person visit is required.</p> <h2 >Need an older issue date?</h2><p>If you need the date you were <em>first</em> licensed in New York (for an insurance discount, employment screening, or a CDL application), that information lives in your full driving record — not on the plastic card. Request it from the New York State DMV at <a href=\"https://dmv.ny.gov/driver-record/get-my-own-driver-record-abstract\" target=\"_blank\" rel=\"noopener noreferrer\">https://dmv.ny.gov/driver-record/get-my-own-driver-record-abstract</a>.</p> <p>For a visual tour of every state's driver license design, see our full guide.</p><figure ><div ><a href=\"https://www.dmvcalifornia.us/drivers-license-by-state/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dmvcalifornia.us/drivers-license-by-state/</a></div></figure>",
+      "excerpt": "Your New York driver's license issue date appears as \"ISS\" on the front of the card, near your photo. Here is what every abbreviation means.",
+      "publishedAt": "2026-05-25 13:40:00",
+      "author": "Robert Johnson",
+      "tags": [
+        "Driver License",
+        "Driving Test"
+      ],
+      "views": 0,
+      "published_date": "2026-05-25 00:00:00",
+      "created_at": "2026-05-25 00:00:00",
+      "updated_at": "2026-05-25 00:00:00",
+      "hero_image": "/images/blog/blog-new-york-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photo_id": 5835311,
+        "photographer": "Tim  Samuel",
+        "photographer_url": "https://www.pexels.com/@tim-samuel",
+        "photo_url": "https://www.pexels.com/photo/anonymous-person-driving-car-on-highway-5835311/"
+      }
+    },
+    {
+      "id": 9017,
+      "title": "Florida Driver's License Issue Date",
+      "slug": "florida-drivers-license-issue-date",
+      "content": "<p>Florida driver licenses label the issue date as <strong>\"4a ISS\"</strong> — a quirk of the AAMVA-standardized layout the Florida Highway Safety and Motor Vehicles uses. It sits in the lower portion of the card, just below your name, date of birth and address.</p> <figure ><img src=\"/images/blog/florida-dl.jpg\" alt=\"Florida Driver's License showing the issue date\"/></figure> <p>\"ISS\" is short for \"Issue Date\" — the day your current license card was printed. It is not necessarily the day you first became a licensed driver in the state.</p> <h2 >Why \"4a ISS\" instead of just \"ISS\"?</h2><p>Florida prints AAMVA field numbers in front of each label. \"4a ISS\" is the issue date; \"4b EXP\" is the expiration date right below it; \"4d DLN\" is your Driver License Number; \"3 DOB\" is your date of birth. The numbers come from the federal REAL ID layout standard — they look unusual at first but they are correct.</p> <h2 >What does \"DD\" mean on a Florida license?</h2><p>DD is the <strong>Document Discriminator</strong>, a unique serial number for that specific piece of plastic. It changes every time you replace or renew your card; your DLN does not.</p> <h2 >What does \"END\" or \"RESTR\" mean?</h2><p>\"END\" lists Endorsements (mostly for commercial drivers). \"RESTR\" lists Restrictions — \"A\" is corrective lenses, \"B\" requires an outside mirror, and so on.</p> <h2 >The \"original issue date\" trap on Florida licenses</h2><p>This is the question most Florida drivers actually search for: \"When was I first licensed in Florida?\" The painful truth is that <strong>your original issue date is not printed on your renewed card</strong>. Every time you renew (every 8 years for most drivers), the <strong>4a ISS</strong> field resets to the date that latest card was printed.</p><p>This trips people up constantly when:</p><ul><li>Applying for car insurance discounts that reward years-licensed</li><li>Proving residency or driving history for an employer</li><li>Filing for a commercial license or rideshare driver application</li></ul><p>To recover your original Florida issue date, order a <strong>complete (lifetime) driver record</strong> from the Florida Highway Safety and Motor Vehicles. A 3-year or 7-year record will not be enough if you have been driving longer than that.</p> <h2 >How long is a Florida driver's license valid?</h2><p>A Florida Class E driver license is valid for <strong>8 years</strong> for drivers between 18 and 79, and <strong>6 years</strong> for drivers 80 and older (vision tested at every renewal).</p> <h2 >Need an older issue date?</h2><p>If you need the date you were <em>first</em> licensed in Florida (for an insurance discount, employment screening, or a CDL application), that information lives in your full driving record — not on the plastic card. Request it from the Florida Highway Safety and Motor Vehicles at <a href=\"https://www.flhsmv.gov/driver-licenses-id-cards/motor-vehicle-records/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.flhsmv.gov/driver-licenses-id-cards/motor-vehicle-records/</a>.</p> <p>For a visual tour of every state's driver license design, see our full guide.</p><figure ><div ><a href=\"https://www.dmvcalifornia.us/drivers-license-by-state/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dmvcalifornia.us/drivers-license-by-state/</a></div></figure>",
+      "excerpt": "Florida driver licenses use the \"4a ISS\" label for the issue date — and your original first-licensed date is not printed at all. Here is how to find it.",
+      "publishedAt": "2026-05-25 13:50:00",
+      "author": "Sarah Mitchell",
+      "tags": [
+        "Driver License",
+        "Driving Test"
+      ],
+      "views": 0,
+      "published_date": "2026-05-25 00:00:00",
+      "created_at": "2026-05-25 00:00:00",
+      "updated_at": "2026-05-25 00:00:00",
+      "hero_image": "/images/blog/blog-florida-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photo_id": 34521710,
+        "photographer": "Caio Cezar",
+        "photographer_url": "https://www.pexels.com/@caiospil",
+        "photo_url": "https://www.pexels.com/photo/busy-traffic-scene-in-miami-with-palm-trees-34521710/"
+      }
+    },
+    {
+      "id": 9016,
+      "title": "Texas Driver's License Issue Date",
+      "slug": "texas-drivers-license-issue-date",
+      "content": "<p>Your Texas driver's license issue date is marked as <strong>\"ISS\"</strong> on the front of the card, printed under the date-of-birth row and right next to the expiration date (EXP). On a sample Texas Class C license, ISS might read 06/14/2022 — that is the day the Texas Department of Public Safety printed your current card.</p> <figure ><img src=\"/images/blog/texas-dl.jpg\" alt=\"Texas Driver's License showing the issue date\"/></figure> <p>\"ISS\" is short for \"Issue Date\" — the day your current license card was printed. It is not necessarily the day you first became a licensed driver in the state.</p> <h2 >What does \"DD\" mean on a Texas driver's license?</h2><p>DD is the <strong>Document Discriminator</strong> — a unique serial number Texas DPS assigns to each individual card it prints. If you replace a lost license, the new card has a new DD even though your driver license number stays the same. Banks and rental car companies sometimes check the DD when verifying ID authenticity.</p> <h2 >What is \"REST\" or \"RSTR\" on a Texas license?</h2><p>RSTR stands for <strong>Restrictions</strong> — for example, \"A\" for corrective lenses or \"B\" for an outside mirror requirement. The Texas Driver Handbook lists every restriction code.</p> <h2 >What does \"END\" mean?</h2><p>END stands for <strong>Endorsements</strong>, which apply to commercial drivers (CDL). A standard Class C Texas license usually shows \"NONE\" here.</p> <h2 >How long is a Texas driver's license valid?</h2><p>A standard Texas Class C driver license is valid for <strong>8 years</strong> if you are between 18 and 84, and <strong>2 years</strong> if you are 85 or older. New drivers under 18 receive a license that expires the day before their 18th birthday.</p> <h2 >Need an older issue date?</h2><p>If you need the date you were <em>first</em> licensed in Texas (for an insurance discount, employment screening, or a CDL application), that information lives in your full driving record — not on the plastic card. Request it from the Texas Department of Public Safety at <a href=\"https://www.dps.texas.gov/section/driver-license\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dps.texas.gov/section/driver-license</a>.</p> <p>For a visual tour of every state's driver license design, see our full guide.</p><figure ><div ><a href=\"https://www.dmvcalifornia.us/drivers-license-by-state/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.dmvcalifornia.us/drivers-license-by-state/</a></div></figure>",
+      "excerpt": "Your Texas driver's license issue date is labeled \"ISS\" on the front of the card, right next to the expiration date. Here is what every abbreviation means.",
+      "publishedAt": "2026-05-25 14:00:00",
+      "author": "Michael Anderson",
+      "tags": [
+        "Driver License",
+        "Driving Test"
+      ],
+      "views": 0,
+      "published_date": "2026-05-25 00:00:00",
+      "created_at": "2026-05-25 00:00:00",
+      "updated_at": "2026-05-25 00:00:00",
+      "hero_image": "/images/blog/blog-texas-drivers-license-issue-date.webp",
+      "hero_image_credit": {
+        "source": "Pexels",
+        "photo_id": 12470869,
+        "photographer": "Alessandro Avilés",
+        "photographer_url": "https://www.pexels.com/@alessvisuals",
+        "photo_url": "https://www.pexels.com/photo/hands-on-steering-wheel-12470869/"
+      }
+    },
     {
       "id": 9015,
       "title": "SB 506: Duplicate California License After Address Change",
