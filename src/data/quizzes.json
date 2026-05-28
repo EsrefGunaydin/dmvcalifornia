@@ -1288,7 +1288,8 @@
           "correctAnswer": 0,
           "explanation": "When railroad crossing signals are flashing, you must stop at least 15 feet from the tracks. Proceed only when signals stop and it's safe.",
           "category": "Railroad Crossings",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/railroad-crossing.webp"
         },
         {
           "id": 5,
@@ -4110,7 +4111,7 @@
           "explanation": "'Do Not Enter' means you cannot enter from your direction.",
           "category": "Traffic Signs",
           "difficulty": "easy",
-          "image": "/images/traffic-signs/sign-22.webp",
+          "image": "/images/traffic-signs-2/do-not-enter.jpeg",
           "hasImage": true
         },
         {
@@ -4459,263 +4460,277 @@
       "questions": [
         {
           "id": 1,
-          "question": "Which of these statements is true about driving and taking drugs?",
+          "question": "What does this sign mean?",
           "options": [
-            "Most drugs taken for headaches or colds can make a person drowsy",
-            "Drugs and alcohol can be used at the same time",
-            "Prescription drugs are safe at any time"
+            "Stop only if there is cross traffic",
+            "Come to a complete stop, then proceed when safe",
+            "Slow down and yield to other traffic"
           ],
-          "correctAnswer": 0,
-          "explanation": "Many common medications can cause drowsiness and impair driving.",
-          "category": "DUI Laws",
-          "difficulty": "easy"
+          "correctAnswer": 1,
+          "explanation": "A red octagonal stop sign means you must come to a complete stop at the limit line and proceed only when it is safe.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/stop.jpeg"
         },
         {
           "id": 2,
-          "question": "You reach an intersection with stop signs on all four corners at the same time as the driver on your left. Who has the right-of-way?",
+          "question": "What does this sign mean?",
           "options": [
-            "The driver on your left has the right-of-way",
-            "You have the right-of-way",
-            "Whoever is signaling to make a turn has the right-of-way"
+            "Stop only if there is cross traffic",
+            "Slow down and prepare to yield right of way",
+            "Merge into the right lane"
           ],
           "correctAnswer": 1,
-          "explanation": "At a four-way stop, when two vehicles arrive at the same time, the vehicle on the right has the right-of-way. Since the other driver is on your left, you have the right-of-way.",
-          "category": "Right-of-Way",
-          "difficulty": "medium"
+          "explanation": "A red and white inverted triangle yield sign means you must slow down and give the right of way to oncoming or cross traffic.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/yield.jpeg"
         },
         {
-          "question": "You must not cross a solid double line in the center of the roadway to",
+          "id": 3,
+          "question": "What does this sign mean?",
           "options": [
-            "Overtake and pass another vehicle",
-            "Make a left turn",
-            "Enter a private driveway"
+            "Do not enter the road from your direction",
+            "No vehicles in either direction",
+            "Slow zone ahead"
           ],
           "correctAnswer": 0,
-          "explanation": "Never cross double solid yellow lines to pass another vehicle.",
-          "category": "Lane Markings",
+          "explanation": "The Do Not Enter sign indicates you may not enter the road from your direction. It is typically posted at one-way street exits and freeway off-ramps.",
+          "category": "Regulatory Signs",
           "difficulty": "easy",
-          "id": 3
+          "image": "/images/traffic-signs-2/do-not-enter.jpeg"
         },
         {
           "id": 4,
-          "question": "When can you merge into a bike lane for a right turn?",
+          "question": "What does this sign mean?",
           "options": [
-            "Under no circumstances",
-            "No more than 100 feet before turning",
-            "No more than 200 feet before turning"
+            "You are heading the wrong direction on a one-way road",
+            "No U-turn allowed",
+            "Do not enter unless authorized"
           ],
-          "correctAnswer": 2,
-          "explanation": "You may enter a bike lane no more than 200 feet before turning right.",
-          "category": "Bike Lanes",
-          "difficulty": "medium"
+          "correctAnswer": 0,
+          "explanation": "The Wrong Way sign means you are heading the wrong direction on a one-way road. Stop safely, find a way to turn around, and reverse direction.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/wrong-way.jpeg"
         },
         {
           "id": 5,
-          "question": "If you sell your vehicle, you must notify ___ within 5 days.",
+          "question": "A solid yellow line on your side of the centerline means:",
           "options": [
-            "Your insurance company",
-            "Your bank or credit union",
-            "The DMV"
+            "You may pass when safe",
+            "Passing is not allowed on your side",
+            "There is a school zone ahead"
           ],
-          "correctAnswer": 2,
-          "explanation": "When you sell your vehicle, you must notify the DMV within 5 days to protect yourself from liability for any tickets or accidents involving the vehicle after the sale.",
-          "category": "Vehicle Registration",
+          "correctAnswer": 1,
+          "explanation": "A solid yellow line on your side of the centerline means passing is prohibited from your direction. A broken yellow line means passing is allowed when safe.",
+          "category": "Pavement Markings",
           "difficulty": "easy"
         },
         {
           "id": 6,
-          "question": "Which of the following statement is true about light rail vehicles?",
+          "question": "A broken white line between two lanes traveling in the same direction means:",
           "options": [
-            "Light rail vehicles can interrupt traffic signals",
-            "You must always pass a light rail vehicle on the right",
-            "Light rail vehicles do not have the same responsibilities as other vehicles on public roadways"
+            "You may change lanes when safe",
+            "Passing is prohibited",
+            "The lane ends ahead"
           ],
           "correctAnswer": 0,
-          "explanation": "Light rail vehicles can preempt traffic signals and have priority at intersections.",
-          "category": "Sharing the Road",
-          "difficulty": "medium"
+          "explanation": "A broken white line separates two lanes traveling in the same direction. You may cross it to change lanes when safe.",
+          "category": "Pavement Markings",
+          "difficulty": "easy"
         },
         {
           "id": 7,
-          "question": "Which of the following is true about lap-only seat belts?",
+          "question": "What does this sign mean?",
           "options": [
-            "They are safer for young children than using shoulder-belts",
-            "They are safest when used in combination with a shoulder belt",
-            "Pregnant women should not wear them unless combined with a shoulder belt"
+            "School zone ahead",
+            "Pedestrian crossing",
+            "Children playing area"
           ],
-          "correctAnswer": 1,
-          "explanation": "Lap belts are safest when used in combination with shoulder belts. California law requires all available seat belts to be used.",
-          "category": "Safety Equipment",
-          "difficulty": "easy"
+          "correctAnswer": 0,
+          "explanation": "A pentagon-shaped fluorescent yellow-green sign with children figures means a school zone is ahead. Reduce speed to 25 mph (CVC §22352) when school is in session.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/school-zone.jpeg"
         },
         {
           "id": 8,
-          "question": "Which of these statements is true about slippery road surfaces?",
+          "question": "What does this sign mean?",
           "options": [
-            "Bridges and overpasses tend to freeze after open roads",
-            "On cold, wet days, shade from buildings or trees can hide spots of ice",
-            "The pavement is slippery for the first few minutes after it starts to rain on a hot day afterward"
+            "Road work ahead",
+            "Railroad crossing ahead",
+            "Hospital ahead"
           ],
           "correctAnswer": 1,
-          "explanation": "Shaded areas can hide ice patches on cold days. Also, the pavement is most slippery during the first few minutes of rain as oil and water mix.",
-          "category": "Weather Conditions",
-          "difficulty": "medium"
+          "explanation": "A round yellow sign with a black X and \"RR\" letters is the advance warning for a railroad crossing. Slow down and be prepared to stop if signals activate.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/railroad-crossing.jpeg"
         },
         {
           "id": 9,
-          "question": "Which of these statements is true about blind spots?",
+          "question": "In a construction zone, traffic warning signs are which color?",
           "options": [
-            "You only need to turn and look over your right shoulder for lane changes",
-            "Look over your right shoulder for a right lane change and your left shoulder for a left lane change",
-            "Vehicles with two outside mirrors do not have blind spots"
+            "Yellow",
+            "Orange",
+            "White"
           ],
           "correctAnswer": 1,
-          "explanation": "Look over the appropriate shoulder to check blind spots before lane changes.",
-          "category": "Safe Driving",
+          "explanation": "Orange diamond-shaped signs indicate construction zones. Fines for moving violations in construction zones are doubled in California.",
+          "category": "Sign Colors",
           "difficulty": "easy"
         },
         {
-          "question": "Where a left turn at an intersection can be started from either of two lanes, a U-turn can be started from",
+          "id": 10,
+          "question": "What does this sign mean?",
           "options": [
-            "Either of the two lanes",
-            "Only the left lane",
-            "Any lane that is open"
+            "Slippery when wet",
+            "Winding road ahead",
+            "Loose gravel"
           ],
-          "correctAnswer": 1,
-          "explanation": "U-turns must be started from the left lane only.",
-          "category": "Turning",
-          "difficulty": "medium",
-          "id": 10
+          "correctAnswer": 0,
+          "explanation": "The slippery-when-wet sign warns of a road surface that can become hazardous when wet. Reduce speed and avoid sudden braking or sharp turns.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/slippery-when-wet.jpeg"
         },
         {
           "id": 11,
           "question": "A curb painted red means:",
           "options": [
-            "Not allowed (except buses may stop)",
-            "Allowed for a disabled vehicle only",
-            "For emergency vehicles only"
+            "No stopping, parking, or standing at any time",
+            "Loading and unloading only",
+            "Disabled parking only"
           ],
-          "correctAnswer": 2,
-          "explanation": "A red curb means no stopping, standing, or parking. Buses may stop at red zones marked for bus stops.",
-          "category": "Parking",
+          "correctAnswer": 0,
+          "explanation": "A red curb prohibits stopping, parking, or standing at any time. Exception: a marked bus stop where buses may load passengers.",
+          "category": "Pavement Markings",
           "difficulty": "easy"
         },
         {
           "id": 12,
-          "question": "Where should you stop your vehicle when there is no limit line?",
+          "question": "A curb painted white means:",
           "options": [
-            "Out far enough to see cross traffic",
-            "At the corner",
-            "After the crosswalk"
+            "No parking at any time",
+            "Loading or unloading passengers or mail; usually 3 minutes maximum",
+            "Disabled parking only"
           ],
-          "correctAnswer": 0,
-          "explanation": "Stop where you have a clear view of cross traffic before entering the intersection.",
-          "category": "Intersections",
-          "difficulty": "medium"
+          "correctAnswer": 1,
+          "explanation": "A white curb is for loading or unloading passengers or mail only, usually limited to 3 minutes maximum.",
+          "category": "Pavement Markings",
+          "difficulty": "easy"
         },
         {
           "id": 13,
-          "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ___ or higher.",
+          "question": "What does this sign mean?",
           "options": [
-            "0.08% - Eight hundredths of one percent",
-            "0.10% - One tenth of one percent",
-            "0.05% - Five hundredths of one percent"
+            "Hospital ahead",
+            "Rest area ahead",
+            "Hotel services ahead"
           ],
           "correctAnswer": 0,
-          "explanation": "The legal BAC limit for drivers 21 and over in California is 0.08%. Driving at or above this level is illegal.",
-          "category": "DUI Laws",
-          "difficulty": "easy"
+          "explanation": "A blue square sign with a white \"H\" indicates a hospital ahead. Blue service signs guide drivers to nearby services.",
+          "category": "Guide Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/hospital-ahead.jpeg"
         },
         {
           "id": 14,
-          "question": "When can you drive using only your parking lights?",
+          "question": "What does this sign mean?",
           "options": [
-            "30 minutes after sunset or 30 minutes before sunrise",
-            "Not under any circumstances",
-            "On foggy days"
+            "No U-turn allowed",
+            "No left turn",
+            "Roundabout ahead"
           ],
-          "correctAnswer": 1,
-          "explanation": "Parking lights are never sufficient for driving. Use headlights from sunset to sunrise.",
-          "category": "Night Driving",
-          "difficulty": "easy"
+          "correctAnswer": 0,
+          "explanation": "A circular sign with a U-turn arrow crossed out by a red diagonal line means U-turns are prohibited at this intersection.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/no-uturn.jpeg"
         },
         {
-          "question": "A white painted curb means:",
+          "id": 15,
+          "question": "What does this sign mean?",
           "options": [
-            "Loading zone for freight or passengers",
-            "Loading zone for passengers or mail only",
-            "Loading zone for freight only"
+            "No left turn",
+            "Left turn yield on green",
+            "One way only — no left turn"
           ],
-          "correctAnswer": 1,
-          "explanation": "White curbs are for passenger and mail loading only.",
-          "category": "Parking",
+          "correctAnswer": 0,
+          "explanation": "A circular sign with a left-turn arrow crossed out by a red diagonal line means left turns are prohibited at this intersection.",
+          "category": "Regulatory Signs",
           "difficulty": "easy",
-          "id": 15
+          "image": "/images/traffic-signs-2/no-left-turn.jpeg"
         },
         {
           "id": 16,
-          "question": "The 'implied consent law' means you have given your consent:",
+          "question": "What does this sign mean?",
           "options": [
-            "To inspection of your vehicle for alcohol",
-            "To be tested for alcohol in your blood",
-            "For a field sobriety test"
+            "School zone",
+            "Pedestrian crossing ahead",
+            "Bicycle crossing"
           ],
           "correctAnswer": 1,
-          "explanation": "By driving in California, you consent to BAC testing if suspected of DUI.",
-          "category": "DUI Laws",
-          "difficulty": "medium"
+          "explanation": "A yellow or fluorescent yellow-green diamond with a pedestrian symbol warns of a pedestrian crossing ahead. Drivers must yield to pedestrians at every crosswalk (CVC §21950).",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/pedestrian-crossing.jpeg"
         },
         {
-          "question": "It is against the law to have an open alcoholic beverage container in your vehicle, except",
+          "id": 17,
+          "question": "What does this sign mean?",
           "options": [
-            "On the back seat",
-            "In the trunk",
-            "In the glove compartment"
+            "Steep hill ahead",
+            "Bumpy road ahead",
+            "Rough road surface"
           ],
-          "correctAnswer": 1,
-          "explanation": "Open containers must be in the trunk.",
-          "category": "DUI Laws",
+          "correctAnswer": 0,
+          "explanation": "A diamond sign with a vehicle on an incline warns of a steep hill ahead. Reduce speed and consider downshifting before descending.",
+          "category": "Warning Signs",
           "difficulty": "easy",
-          "id": 17
+          "image": "/images/traffic-signs-2/steep-hill-ahead.jpeg"
         },
         {
           "id": 18,
-          "question": "Flash your brake lights or turn on your emergency flashers if you:",
+          "question": "A flashing red traffic signal means:",
           "options": [
-            "Need to warn other drivers of an accident ahead",
-            "Are driving much slower than other traffic",
-            "Are backing out of a parking space"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Use your flashers or flash brake lights to warn drivers behind you of hazards or accidents ahead.",
-          "category": "Safe Driving",
-          "difficulty": "medium"
-        },
-        {
-          "id": 19,
-          "question": "You are almost through an intersection when you realize you want to turn left instead of going straight. What should you do now?",
-          "options": [
-            "Stop in the intersection until it is safe to make the left turn",
-            "Continue to the next intersection and find a route to work your way back",
-            "Back up, check for other vehicles, and make the left turn"
+            "Slow down and proceed with caution",
+            "Stop completely, then proceed when safe — same as a stop sign",
+            "Stop only if cross traffic is present"
           ],
           "correctAnswer": 1,
-          "explanation": "If you miss your turn, continue to the next intersection. Never stop or back up in an intersection.",
-          "category": "Intersections",
+          "explanation": "A flashing red signal must be treated as a stop sign. Come to a complete stop and proceed only when safe to do so.",
+          "category": "Traffic Signals",
           "difficulty": "easy"
         },
         {
-          "id": 20,
-          "question": "You want to park uphill on a two-way road and there is no curb. Which way do you turn your wheels?",
+          "id": 19,
+          "question": "What does this sign mean?",
           "options": [
-            "So they face straight ahead",
-            "Right - towards side of the road",
-            "Left - towards the center of the road"
+            "Winding road ahead",
+            "Slippery when wet",
+            "Sharp curve ahead"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A diamond sign with a curving arrow indicates a winding road ahead — a series of curves in opposite directions. Reduce speed and stay in your lane.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/winding-road.webp"
+        },
+        {
+          "id": 20,
+          "question": "What does this sign mean?",
+          "options": [
+            "Police checkpoint ahead",
+            "Flagger (worker directing traffic) ahead",
+            "Pedestrian crossing"
           ],
           "correctAnswer": 1,
-          "explanation": "When parking uphill with no curb, turn wheels to the right. If the vehicle rolls, it will go off the road rather than into traffic.",
-          "category": "Parking",
-          "difficulty": "medium"
+          "explanation": "An orange diamond sign with a person holding a flag warns of a flagger (worker directing traffic) ahead. Slow down and follow the flagger's directions.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/flagger-ahead.jpeg"
         }
       ],
       "language": "en"
