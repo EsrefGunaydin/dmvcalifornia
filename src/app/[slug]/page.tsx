@@ -33,9 +33,16 @@ type BlogPost = {
   views?: number;
   hero_image?: string;
   faq?: { question: string; answer: string }[];
+  lang?: string;
+  // Map of hreflang code -> slug of the same article in another language.
+  translations?: { [lang: string]: string };
 };
 
 const SITE_URL = 'https://www.dmvcalifornia.us';
+
+// JSON imports infer a heterogeneous union once posts carry optional fields
+// (lang/translations) on only some entries. Cast once to the canonical type.
+const blogPosts = blogPostsData.posts as unknown as BlogPost[];
 
 // Type for DMV office
 type Office = {
@@ -139,7 +146,7 @@ function processContentImages(htmlContent: string, postTitle: string): string {
     /<figure[^>]*wp-block-embed[^>]*>.*?<div[^>]*wp-block-embed__wrapper[^>]*>\s*(https?:\/\/(?:www\.)?dmvcalifornia\.us\/([^\/\s<]+)\/?)\s*<\/div><\/figure>/gis,
     (match, url, slug) => {
       // Find the referenced post
-      const referencedPost = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
+      const referencedPost = blogPosts.find((p: BlogPost) => p.slug === slug);
 
       if (!referencedPost) {
         // If post not found, return a simple link
@@ -202,7 +209,7 @@ function processContentImages(htmlContent: string, postTitle: string): string {
       const isNaked = !text || text === url || text === url.replace(/\/$/, '') || text.replace(/\/$/, '') === url.replace(/\/$/, '');
       if (!isNaked) return match;
 
-      const referencedPost = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
+      const referencedPost = blogPosts.find((p: BlogPost) => p.slug === slug);
       if (!referencedPost) {
         // Internal page that isn't a blog post (e.g. /dmv-offices). Render a
         // simple styled call-out instead of leaking the bare URL.
@@ -265,7 +272,7 @@ function processContentImages(htmlContent: string, postTitle: string): string {
       }
 
       // Find the referenced post
-      const referencedPost = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
+      const referencedPost = blogPosts.find((p: BlogPost) => p.slug === slug);
 
       if (!referencedPost) {
         // If post not found, keep the original link
@@ -437,7 +444,7 @@ const RESERVED_SLUGS = new Set<string>([
 
 // Generate static params for all blog posts and office pages (for static generation)
 export async function generateStaticParams() {
-  const blogSlugs = blogPostsData.posts
+  const blogSlugs = blogPosts
     .filter((post: BlogPost) => !RESERVED_SLUGS.has(post.slug))
     .map((post: BlogPost) => ({
       slug: post.slug,
@@ -456,7 +463,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   // Check if it's a blog post
-  const post = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
+  const post = blogPosts.find((p: BlogPost) => p.slug === slug);
 
   if (post) {
     const typedPost = post as BlogPost;
@@ -465,6 +472,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       || extractFirstImageFromHtml(typedPost.content)
       || '/images/hero-image.png';
     const absoluteImage = heroImage.startsWith('http') ? heroImage : `${SITE_URL}${heroImage}`;
+
+    // Build a reciprocal hreflang cluster for translated articles. Each post
+    // declares its own language plus every translation listed in `translations`,
+    // with the English version as x-default.
+    const selfLang = typedPost.lang || 'en';
+    const languageAlternates =
+      typedPost.translations && Object.keys(typedPost.translations).length > 0
+        ? {
+            [selfLang]: canonicalUrl,
+            ...Object.fromEntries(
+              Object.entries(typedPost.translations).map(([lang, s]) => [
+                lang,
+                `${SITE_URL}/${s}`,
+              ])
+            ),
+          }
+        : undefined;
+    if (languageAlternates) {
+      // x-default points at the English version (self if this post is English).
+      languageAlternates['x-default'] = languageAlternates['en'] || canonicalUrl;
+    }
 
     return {
       // Return just the post title — the root layout's title template
@@ -476,6 +504,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       keywords: typedPost.tags,
       alternates: {
         canonical: canonicalUrl,
+        ...(languageAlternates ? { languages: languageAlternates } : {}),
       },
       openGraph: {
         title: typedPost.title,
@@ -526,7 +555,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function SlugPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   // Check if it's a blog post first
-  const post = blogPostsData.posts.find((p: BlogPost) => p.slug === slug);
+  const post = blogPosts.find((p: BlogPost) => p.slug === slug);
 
   if (post) {
     // Render blog post page (rest of the existing code)
@@ -610,7 +639,7 @@ function renderBlogPost(postIn: BlogPost) {
   }
 
   // Get all posts sorted by date for prev/next navigation
-  const sortedPosts = [...blogPostsData.posts].sort((a, b) =>
+  const sortedPosts = [...blogPosts].sort((a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
   );
 
@@ -624,7 +653,7 @@ function renderBlogPost(postIn: BlogPost) {
 
     // First, try to find posts with matching tags
     if (post.tags && post.tags.length > 0) {
-      related = blogPostsData.posts.filter(p =>
+      related = blogPosts.filter(p =>
         p.id !== post.id &&
         p.tags?.some(tag => post.tags?.includes(tag))
       );
@@ -632,7 +661,7 @@ function renderBlogPost(postIn: BlogPost) {
 
     // If not enough related posts, add random posts
     if (related.length < 3) {
-      const remaining = blogPostsData.posts
+      const remaining = blogPosts
         .filter(p => p.id !== post.id && !related.includes(p))
         .sort(() => Math.random() - 0.5);
       related = [...related, ...remaining];
@@ -659,10 +688,11 @@ function renderBlogPost(postIn: BlogPost) {
         keywords={post.tags}
         wordCount={totalWords}
         faq={post.faq}
+        lang={post.lang}
       />
 
       {/* Article */}
-      <article className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-4xl">
+      <article lang={post.lang || 'en'} className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12 max-w-4xl">
             {/* Breadcrumb */}
             <nav className="mb-8" aria-label="Breadcrumb">
               <ol className="flex items-center space-x-2 text-sm text-gray-600">
