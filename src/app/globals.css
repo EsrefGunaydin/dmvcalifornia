@@ -46,6 +46,13 @@ img[class*="wp-image"] {
   height: auto !important;
 }
 
+/* Cursor affordance — all article body images are click-to-zoom (handled by
+   the BlogImageLightbox component). */
+article figure img,
+article p > img {
+  cursor: zoom-in;
+}
+
 /* Mobile-specific image adjustments */
 @media (max-width: 768px) {
   .prose img,

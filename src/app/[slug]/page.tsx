@@ -13,6 +13,7 @@ import ADSENSE_CONFIG from '@/config/adsense';
 import QuizPromotionPopup from '@/components/QuizPromotionPopup';
 import BlogViewTracker from '@/components/BlogViewTracker';
 import BlogPostContent from '@/components/BlogPostContent';
+import BlogImageLightbox from '@/components/BlogImageLightbox';
 import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 import ArticleSchema from '@/components/blog/ArticleSchema';
@@ -864,6 +865,7 @@ function renderBlogPost(postIn: BlogPost) {
       <Footer />
       <CookieBanner />
       <QuizPromotionPopup />
+      <BlogImageLightbox />
     </div>
   );
 }
