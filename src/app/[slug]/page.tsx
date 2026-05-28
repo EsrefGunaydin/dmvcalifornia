@@ -378,10 +378,31 @@ function processContentImages(htmlContent: string, postTitle: string): string {
     }
   );
 
-  // Ensure images have loading="lazy" for performance
+  // Performance: the FIRST content image is almost always the LCP candidate
+  // (especially on legacy articles where a figure appears right after the
+  // intro paragraph). Lazy-loading it hurts the LCP score. We mark the first
+  // image as eager + fetchpriority=high; every subsequent image gets
+  // loading=lazy and decoding=async to avoid blocking render.
+  let imgIndex = 0;
   processedHtml = processedHtml.replace(
-    /<img(?![^>]*loading=)([^>]*?)>/gi,
-    '<img loading="lazy"$1>'
+    /<img([^>]*?)>/gi,
+    (_, attrs) => {
+      const isFirst = imgIndex === 0;
+      imgIndex += 1;
+      const hasLoading = /\bloading\s*=/.test(attrs);
+      const hasDecoding = /\bdecoding\s*=/.test(attrs);
+      const hasFetchPriority = /\bfetchpriority\s*=/.test(attrs);
+
+      let next = attrs;
+      if (!hasDecoding) next = ` decoding="async"${next}`;
+      if (isFirst) {
+        if (!hasFetchPriority) next = ` fetchpriority="high"${next}`;
+        if (!hasLoading) next = ` loading="eager"${next}`;
+      } else if (!hasLoading) {
+        next = ` loading="lazy"${next}`;
+      }
+      return `<img${next}>`;
+    },
   );
 
   return processedHtml;
