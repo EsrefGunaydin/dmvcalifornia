@@ -86,22 +86,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* Google AdSense - Load in head with beforeInteractive */}
+        {/* Google AdSense — `lazyOnload` defers until after the page is
+            fully loaded. `beforeInteractive` (the previous setting) blocked
+            page interactivity until AdSense finished loading, accounting for
+            most of the 3,350ms mobile TBT and the 16.7s LCP. Google itself
+            recommends `lazyOnload` for AdSense scripts. */}
         <Script
           id="google-adsense"
-          strategy="beforeInteractive"
+          strategy="lazyOnload"
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7030490358552434"
           crossOrigin="anonymous"
         />
 
-        {/* Google Analytics */}
+        {/* Google Analytics — gtag.js doesn't need to fire before paint.
+            `lazyOnload` lets it run after the page is interactive without
+            adding to TBT or main-thread work. */}
         <Script
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         />
         <Script
           id="google-analytics"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
