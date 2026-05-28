@@ -59,11 +59,22 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Header />
 
+      {/* Preload the hero background image so the browser starts the
+          download immediately rather than discovering it via the inline
+          style. Cuts LCP discovery time and is the single biggest LCP fix
+          for the homepage. */}
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero-image.webp"
+        fetchPriority="high"
+      />
+
       {/* Hero Section - Full Width */}
       <div
         className="text-center relative w-full"
         style={{
-          backgroundImage: 'url(/images/hero-image.png)',
+          backgroundImage: 'url(/images/hero-image.webp)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -78,7 +89,7 @@ export default function Home() {
             {/* DMV Logo - Left side on desktop */}
             <div className="flex-shrink-0 hidden md:block">
               <Image
-                src="/images/dmv-logo.png"
+                src="/images/dmv-logo.webp"
                 alt="DMV California Logo"
                 width={240}
                 height={240}
@@ -107,7 +118,7 @@ export default function Home() {
             {/* Seal of Success - Right side on desktop */}
             <div className="flex-shrink-0 hidden md:block">
               <Image
-                src="/images/success-green.png"
+                src="/images/success-green.webp"
                 alt="Seal of Success"
                 width={240}
                 height={240}
@@ -119,7 +130,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <main id="main-content" className="container mx-auto px-4 py-8">
 
         {/* Trust Banner */}
         <div className="mb-8 mx-auto max-w-3xl bg-gradient-to-r from-primary/10 via-amber-50 to-primary/10 border-2 border-primary/30 rounded-2xl px-6 py-5 text-center shadow-md">
@@ -390,7 +401,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </main>
 
       <Footer />
       <CookieBanner />
