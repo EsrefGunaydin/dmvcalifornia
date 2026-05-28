@@ -58,3 +58,125 @@ img[class*="wp-image"] {
     margin-right: 0 !important;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   DMV Guide visual components
+   --------------------------------------------------------------------------- */
+
+/* Callout boxes — soft tinted blocks that break up the article flow. Used for
+   tips, warnings, requirements, and California law citations. */
+@layer components {
+  .dmv-callout {
+    @apply my-6 rounded-xl border-l-4 px-5 py-4 flex gap-4 items-start;
+  }
+  .dmv-callout-icon {
+    @apply flex-shrink-0 text-2xl leading-none;
+  }
+  .dmv-callout-body {
+    @apply flex-1 text-[15px] leading-relaxed;
+  }
+  .dmv-callout-title {
+    @apply block font-bold text-[13px] uppercase tracking-wide mb-1;
+  }
+  .dmv-callout-body > p:first-child {
+    @apply mt-0;
+  }
+  .dmv-callout-body > p:last-child {
+    @apply mb-0;
+  }
+  .dmv-callout-tip {
+    @apply bg-blue-50 border-blue-400 text-blue-900;
+  }
+  .dmv-callout-tip .dmv-callout-title {
+    @apply text-blue-700;
+  }
+  .dmv-callout-warning {
+    @apply bg-red-50 border-red-400 text-red-900;
+  }
+  .dmv-callout-warning .dmv-callout-title {
+    @apply text-red-700;
+  }
+  .dmv-callout-required {
+    @apply bg-green-50 border-green-500 text-green-900;
+  }
+  .dmv-callout-required .dmv-callout-title {
+    @apply text-green-700;
+  }
+  .dmv-callout-law {
+    @apply bg-amber-50 border-amber-500 text-amber-900;
+  }
+  .dmv-callout-law .dmv-callout-title {
+    @apply text-amber-700;
+  }
+
+  /* Stat highlight cards — pull-out numbers near the top of pillar articles.
+     Renders as a responsive grid of large numbers + short labels. */
+  .dmv-stats {
+    @apply my-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3;
+  }
+  .dmv-stat {
+    @apply bg-gradient-to-br from-primary-50 to-white border-2 border-primary-100 rounded-xl p-4 text-center;
+  }
+  .dmv-stat-value {
+    @apply block text-2xl sm:text-3xl font-bold text-primary leading-none mb-1;
+  }
+  .dmv-stat-label {
+    @apply block text-xs sm:text-[13px] text-gray-700 font-medium leading-tight;
+  }
+
+  /* Roadmap — numbered vertical step list with connecting line. Renders at
+     the top of pillar articles as a visual TOC. Each step links to its H2. */
+  .dmv-roadmap {
+    @apply my-8 bg-gray-50 border border-gray-200 rounded-xl p-6;
+  }
+  .dmv-roadmap-title {
+    @apply text-center text-[13px] font-bold uppercase tracking-wide text-gray-500 mb-5;
+  }
+  .dmv-roadmap-list {
+    @apply relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3;
+    list-style: none;
+    padding-left: 0;
+    counter-reset: roadmap;
+  }
+  .dmv-roadmap-list > li {
+    @apply m-0 p-0;
+    counter-increment: roadmap;
+  }
+  .dmv-roadmap-list > li > a {
+    @apply flex items-start gap-3 bg-white border border-gray-200 rounded-lg p-3 transition-all hover:border-primary/40 hover:shadow-md no-underline;
+  }
+  .dmv-roadmap-list > li > a::before {
+    content: counter(roadmap);
+    @apply flex-shrink-0 w-7 h-7 rounded-full bg-primary text-white text-sm font-bold flex items-center justify-center;
+  }
+  .dmv-roadmap-list > li > a > span {
+    @apply text-[14px] leading-snug text-gray-800 font-medium pt-0.5;
+  }
+
+  /* Comparison tables — replace bullet-list comparisons. Adds zebra stripes,
+     a header band, and rounded corners. Embeds inside the prose content. */
+  .dmv-table-wrap {
+    @apply my-8 overflow-x-auto rounded-xl border border-gray-200 shadow-sm;
+  }
+  .dmv-table {
+    @apply w-full text-[14px] border-collapse;
+  }
+  .dmv-table thead {
+    @apply bg-gradient-to-r from-primary-50 to-amber-50;
+  }
+  .dmv-table thead th {
+    @apply text-left font-bold text-gray-900 px-4 py-3 text-[13px] uppercase tracking-wide border-b-2 border-primary/20;
+  }
+  .dmv-table tbody td {
+    @apply px-4 py-3 align-top text-gray-700 border-b border-gray-100;
+  }
+  .dmv-table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+  .dmv-table tbody tr:nth-child(even) {
+    @apply bg-gray-50;
+  }
+  .dmv-table tbody td:first-child {
+    @apply font-semibold text-gray-900;
+  }
+}
