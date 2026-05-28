@@ -63,50 +63,100 @@ img[class*="wp-image"] {
    DMV Guide visual components
    --------------------------------------------------------------------------- */
 
-/* Callout boxes — soft tinted blocks that break up the article flow. Used for
-   tips, warnings, requirements, and California law citations. */
+/* Callout boxes — two-band cards (colored header strip + tinted body) that
+   stand out clearly against the article flow. Plain CSS rather than @apply
+   so that the Tailwind Typography (.prose) plugin can't override the look.
+   The !important on margin resets fights .prose paragraph spacing. */
 @layer components {
   .dmv-callout {
-    @apply my-6 rounded-xl border-l-4 px-5 py-4 flex gap-4 items-start;
+    margin: 1.75rem 0;
+    border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    overflow: hidden;
+    background: #ffffff;
+  }
+  .dmv-callout-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.8125rem;
+    line-height: 1.2;
   }
   .dmv-callout-icon {
-    @apply flex-shrink-0 text-2xl leading-none;
-  }
-  .dmv-callout-body {
-    @apply flex-1 text-[15px] leading-relaxed;
+    font-size: 1.125rem;
+    line-height: 1;
+    flex-shrink: 0;
   }
   .dmv-callout-title {
-    @apply block font-bold text-[13px] uppercase tracking-wide mb-1;
+    flex: 1;
   }
-  .dmv-callout-body > p:first-child {
-    @apply mt-0;
+  .dmv-callout-body {
+    padding: 0.875rem 1rem 1rem;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .dmv-callout-body > p {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
   }
   .dmv-callout-body > p:last-child {
-    @apply mb-0;
+    margin-bottom: 0 !important;
   }
+  .dmv-callout-body ul,
+  .dmv-callout-body ol {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  /* Color variants — header strip is bold tinted, body is soft tinted */
   .dmv-callout-tip {
-    @apply bg-blue-50 border-blue-400 text-blue-900;
+    border-color: #60a5fa;
   }
-  .dmv-callout-tip .dmv-callout-title {
-    @apply text-blue-700;
+  .dmv-callout-tip .dmv-callout-header {
+    background: #dbeafe;
+    color: #1d4ed8;
+  }
+  .dmv-callout-tip .dmv-callout-body {
+    background: #eff6ff;
+    color: #1e3a8a;
   }
   .dmv-callout-warning {
-    @apply bg-red-50 border-red-400 text-red-900;
+    border-color: #f87171;
   }
-  .dmv-callout-warning .dmv-callout-title {
-    @apply text-red-700;
+  .dmv-callout-warning .dmv-callout-header {
+    background: #fee2e2;
+    color: #b91c1c;
+  }
+  .dmv-callout-warning .dmv-callout-body {
+    background: #fef2f2;
+    color: #7f1d1d;
   }
   .dmv-callout-required {
-    @apply bg-green-50 border-green-500 text-green-900;
+    border-color: #34d399;
   }
-  .dmv-callout-required .dmv-callout-title {
-    @apply text-green-700;
+  .dmv-callout-required .dmv-callout-header {
+    background: #d1fae5;
+    color: #047857;
+  }
+  .dmv-callout-required .dmv-callout-body {
+    background: #ecfdf5;
+    color: #064e3b;
   }
   .dmv-callout-law {
-    @apply bg-amber-50 border-amber-500 text-amber-900;
+    border-color: #fbbf24;
   }
-  .dmv-callout-law .dmv-callout-title {
-    @apply text-amber-700;
+  .dmv-callout-law .dmv-callout-header {
+    background: #fef3c7;
+    color: #b45309;
+  }
+  .dmv-callout-law .dmv-callout-body {
+    background: #fffbeb;
+    color: #78350f;
   }
 
   /* Stat highlight cards — pull-out numbers near the top of pillar articles.
