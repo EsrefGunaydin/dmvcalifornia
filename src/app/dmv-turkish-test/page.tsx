@@ -2,8 +2,10 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
+  alternates: languageAlternates('tr'),
   title: 'California DMV Türkçe Test | DMV California',
   description: 'California DMV sınav soruları Türkçe. Kaliforniya ehliyet sınavına hazırlanmak için ücretsiz Türkçe pratik testleri.',
 };

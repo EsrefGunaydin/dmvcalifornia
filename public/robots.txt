@@ -6,7 +6,5 @@ Allow: /
 # Disallow admin areas
 Disallow: /api/
 
-# Sitemaps
+# Sitemap (single sitemap.xml covers blog posts, quizzes, offices, and authors)
 Sitemap: https://www.dmvcalifornia.us/sitemap.xml
-Sitemap: https://www.dmvcalifornia.us/blog-sitemap.xml
-Sitemap: https://www.dmvcalifornia.us/quiz-sitemap.xml

@@ -4,8 +4,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import arabicQuizzesData from '@/data/arabic-quizzes.json';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
+  alternates: languageAlternates('ar'),
   title: 'DMV California اختبار عربي | DMV California',
   description:
     'اختبار DMV كاليفورنيا مجاناً باللغة العربية. أسئلة حقيقية من الامتحان الرسمي للتحضير لرخصة القيادة في كاليفورنيا. California DMV practice test in Arabic.',

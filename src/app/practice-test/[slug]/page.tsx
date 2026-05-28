@@ -47,6 +47,8 @@ export async function generateStaticParams() {
   }));
 }
 
+const SITE_URL = 'https://www.dmvcalifornia.us';
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const quiz = allQuizzes.find((q) => q.slug === slug);
@@ -57,9 +59,28 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     };
   }
 
+  const url = `${SITE_URL}/practice-test/${quiz.slug}`;
+  const lang = quiz.language || 'en';
+
   return {
     title: `${quiz.title} | DMV California`,
     description: quiz.description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title: quiz.title,
+      description: quiz.description,
+      url,
+      type: 'website',
+      siteName: 'DMV California',
+      locale: lang === 'en' ? 'en_US' : lang,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: quiz.title,
+      description: quiz.description,
+    },
   };
 }
 
@@ -120,8 +141,40 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
   // Fetch leaderboard from MongoDB API
   const quizLeaderboard = await fetchLeaderboard(quizId);
 
+  const quizSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Quiz',
+    name: quiz.title,
+    description: quiz.description,
+    url: `${SITE_URL}/practice-test/${quiz.slug}`,
+    educationalLevel: 'Beginner',
+    inLanguage: quiz.language || 'en',
+    about: {
+      '@type': 'Thing',
+      name: 'California DMV written knowledge test',
+    },
+    hasPart: quiz.questions.slice(0, 10).map((q) => ({
+      '@type': 'Question',
+      eduQuestionType: 'Multiple choice',
+      text: q.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.options[q.correctAnswer],
+      },
+    })),
+    provider: {
+      '@type': 'Organization',
+      name: 'DMV California',
+      url: SITE_URL,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(quizSchema) }}
+      />
       <Header />
 
       <main className="min-h-screen bg-gray-50 py-8">

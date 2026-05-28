@@ -408,15 +408,46 @@ function processContentImages(htmlContent: string, postTitle: string): string {
   return processedHtml;
 }
 
+// Slugs that have their own dedicated route under src/app/. A blog post must
+// never be prerendered at one of these paths by this catch-all route, or it
+// shadows the purpose-built page (e.g. the Spanish test hub was being
+// overwritten by a same-slug blog article). Keep in sync with src/app/.
+const RESERVED_SLUGS = new Set<string>([
+  'muestra-del-examen-escrito-para-licencia-de-manejar',
+  'practice-test',
+  'blog',
+  'about',
+  'privacy-policy',
+  'dmv-offices',
+  'mobileapp',
+  'intersection',
+  'eyes-on-the-road',
+  'motorcycle-test',
+  'commercial-test',
+  'dmv-turkish-test',
+  'dmv-chinese-test',
+  'dmv-arabic-test',
+  'dmv-armenian-test',
+  'dmv-farsi-test',
+  'dmv-punjabi-test',
+  'dmv-russian-test',
+  'dmv-tagalog-test',
+  'dmv-vietnamese-test',
+]);
+
 // Generate static params for all blog posts and office pages (for static generation)
 export async function generateStaticParams() {
-  const blogSlugs = blogPostsData.posts.map((post: BlogPost) => ({
-    slug: post.slug,
-  }));
+  const blogSlugs = blogPostsData.posts
+    .filter((post: BlogPost) => !RESERVED_SLUGS.has(post.slug))
+    .map((post: BlogPost) => ({
+      slug: post.slug,
+    }));
 
-  const officeSlugs = officesData.offices.map((office: Office) => ({
-    slug: office.slug,
-  }));
+  const officeSlugs = officesData.offices
+    .filter((office: Office) => !RESERVED_SLUGS.has(office.slug))
+    .map((office: Office) => ({
+      slug: office.slug,
+    }));
 
   return [...blogSlugs, ...officeSlugs];
 }

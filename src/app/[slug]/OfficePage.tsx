@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
+import OfficeSchema from '../../components/OfficeSchema';
 
 type Office = {
   id: number;
@@ -33,6 +34,7 @@ export default function OfficePage({ office }: { office: Office }) {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <OfficeSchema office={office} />
       <Header />
 
       {/* Office Content */}

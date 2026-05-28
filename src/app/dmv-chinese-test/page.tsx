@@ -3,8 +3,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
+  alternates: languageAlternates('zh'),
   title: 'California DMV 中文考試 | DMV California',
   description: '加州 DMV 駕駛考試中文版。免費的中文練習測試，幫助您準備加州駕駛執照考試。',
 };
