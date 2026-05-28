@@ -50,9 +50,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     }
   },
-  verification: {
-    google: 'your-google-verification-code', // Add when available
-  }
 };
 
 export default function RootLayout({
