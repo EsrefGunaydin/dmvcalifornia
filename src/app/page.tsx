@@ -349,6 +349,47 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
+        {/* Specialized Driver Guides */}
+        <div className="mb-12">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Specialized Driver Guides
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Complete 2026 guides for teens, seniors, veterans, commercial drivers, and other groups with unique California DMV requirements.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            {[
+              { href: '/new-to-california-driver-guide-2026', icon: '🏖️', title: 'New to California', desc: '10-day license + 20-day registration rules' },
+              { href: '/california-teen-driver-complete-guide-2026', icon: '🎓', title: 'Teen Drivers', desc: 'From learner’s permit to provisional license' },
+              { href: '/california-senior-driver-license-guide-2026', icon: '👵', title: 'Senior Drivers', desc: 'In-person renewal at 70+ and re-examination' },
+              { href: '/california-disabled-driver-license-guide-2026', icon: '♿', title: 'People With Disabilities', desc: 'DP placards, plates, adaptive equipment' },
+              { href: '/california-veterans-active-military-dmv-guide-2026', icon: '🎖️', title: 'Veterans & Active Military', desc: 'Designation, plates, SCRA extensions' },
+              { href: '/california-motorcycle-license-class-m-guide-2026', icon: '🏍️', title: 'Motorcyclists', desc: 'Class M1, CMSP, helmet and lane-splitting law' },
+              { href: '/california-truck-driver-cdl-guide-2026', icon: '🚛', title: 'Truck Drivers (CDL)', desc: 'Class A/B/C, ELDT, DOT physical, endorsements' },
+              { href: '/california-boat-vessel-owner-guide-2026', icon: '⛵', title: 'Boat & Vessel Owners', desc: 'California Boater Card, registration, BUI' },
+              { href: '/california-bicyclist-pedestrian-safety-guide-2026', icon: '🚴', title: 'Bicyclists & Pedestrians', desc: 'Bike laws, e-bike classes, Daylighting Law' },
+            ].map((guide) => (
+              <Link
+                key={guide.href}
+                href={guide.href}
+                className="group flex items-start gap-4 bg-white border-2 border-gray-100 hover:border-primary/40 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all"
+              >
+                <span className="text-3xl flex-shrink-0" aria-hidden="true">{guide.icon}</span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">
+                    {guide.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 line-clamp-2">{guide.desc}</p>
+                </div>
+                <span className="text-primary text-lg flex-shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
 
       <Footer />
