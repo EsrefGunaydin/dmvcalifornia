@@ -66,7 +66,9 @@
       "Bash(npm run build:*)",
       "Bash(killall:*)",
       "Bash(grep:*)",
-      "Bash(xcodegen generate:*)"
+      "Bash(xcodegen generate:*)",
+      "Bash(wc:*)",
+      "Bash(ls:*)"
     ],
     "deny": [],
     "ask": []

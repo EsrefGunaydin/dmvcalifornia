@@ -34,16 +34,19 @@ export default function BlogImageLightbox() {
       // Skip if the image is itself a tiny UI element (decorative icons)
       if (img.naturalWidth > 0 && img.naturalWidth < 60) return;
 
-      // If the image is wrapped in <a href="/images/..."> (the common pattern
-      // in our blog markup), use the linked full-size source; otherwise use
-      // the displayed src.
+      // If the image is wrapped in an <a>, respect the link's intent:
+      //  - href points to an image asset → zoom that full-size source
+      //  - href is a real navigation link (e.g. the App Store badge, a related
+      //    article) → do NOT hijack the tap; let the link navigate.
       const anchor = img.closest('a') as HTMLAnchorElement | null;
       let target_src = img.currentSrc || img.src;
       if (anchor && anchor.href) {
         const href = anchor.getAttribute('href') || '';
-        // Use the anchor target only if it points to an image asset
         if (/\.(jpe?g|png|webp|gif|avif)(\?|#|$)/i.test(href)) {
           target_src = href;
+        } else {
+          // Linked to a page/app/external URL — this is a button, not a zoom.
+          return;
         }
       }
 
