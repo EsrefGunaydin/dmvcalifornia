@@ -13,8 +13,12 @@ export const metadata = {
 };
 
 async function fetchLeaderboard(quizId: string | number) {
+  // Skip this non-essential fetch during the static build: a localhost site URL
+  // (or a dev server on the same port) makes the page dynamic and breaks
+  // generation. The leaderboard still loads at runtime in dev and production.
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  if (!baseUrl || process.env.NEXT_PHASE === 'phase-production-build') return [];
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
     const response = await fetch(`${baseUrl}/api/leaderboard?quizId=${quizId}`, {
       cache: 'no-store',
     });
