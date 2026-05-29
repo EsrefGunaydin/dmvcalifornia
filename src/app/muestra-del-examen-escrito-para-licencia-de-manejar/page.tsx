@@ -2,8 +2,10 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
+  alternates: languageAlternates('es'),
   title: 'Examen del DMV de California en Español | DMV California',
   description: 'Examen del DMV de California en español. Pruebas de práctica gratuitas en español para prepararse para su examen de licencia de conducir.',
 };

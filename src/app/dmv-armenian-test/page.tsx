@@ -4,8 +4,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import armenianQuizzesData from '@/data/armenian-quizzes.json';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
+  alternates: languageAlternates('hy'),
   title: 'DMV California Հայերեն Թեստ | DMV California',
   description:
     'Անվճար Կալիֆորնիայի DMV փորձնական թեստ հայերենով։ Իրական հարցեր պաշտոնական քննությունից վարորդական իրավունքի համար նախապատրաստվելու համար։ California DMV practice test in Armenian.',

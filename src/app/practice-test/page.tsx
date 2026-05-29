@@ -19,8 +19,10 @@ import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import type { Quiz } from '@/types/quiz';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
+  alternates: languageAlternates('en'),
   title: 'California DMV Practice Tests | DMV California',
   description: 'Free California DMV practice tests in English, Spanish, Turkish and Chinese. Test your knowledge with real DMV questions and prepare for your permit test.',
 };

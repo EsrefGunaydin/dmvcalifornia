@@ -4,8 +4,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
+  alternates: languageAlternates('vi'),
   title: 'DMV California Bài Thi Tiếng Việt | DMV California',
   description:
     'Bài thi thử DMV California miễn phí bằng tiếng Việt. Câu hỏi thực tế từ kỳ thi chính thức để chuẩn bị cho bằng lái xe. California DMV practice test in Vietnamese.',

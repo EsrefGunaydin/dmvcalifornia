@@ -11,6 +11,7 @@ interface ArticleSchemaProps {
   keywords?: string[];
   wordCount?: number;
   faq?: { question: string; answer: string }[];
+  lang?: string;
 }
 
 const SITE_URL = 'https://www.dmvcalifornia.us';
@@ -33,6 +34,7 @@ export default function ArticleSchema({
   keywords,
   wordCount,
   faq,
+  lang,
 }: ArticleSchemaProps) {
   const url = `${SITE_URL}/${slug}`;
   const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
@@ -66,7 +68,7 @@ export default function ArticleSchema({
     url,
     keywords: keywords?.join(', '),
     wordCount,
-    inLanguage: 'en-US',
+    inLanguage: lang === 'es' ? 'es' : 'en-US',
   };
 
   const breadcrumbSchema = {

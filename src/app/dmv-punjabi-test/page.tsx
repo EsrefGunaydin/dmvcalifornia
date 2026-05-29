@@ -4,8 +4,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import punjabiQuizzesData from '@/data/punjabi-quizzes.json';
+import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
+  alternates: languageAlternates('pa'),
   title: 'DMV California ਪੰਜਾਬੀ ਟੈਸਟ | DMV California',
   description:
     'ਮੁਫ਼ਤ ਕੈਲੀਫੋਰਨੀਆ DMV ਅਭਿਆਸ ਟੈਸਟ ਪੰਜਾਬੀ ਵਿੱਚ। ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਦੀ ਤਿਆਰੀ ਲਈ ਅਸਲ ਪ੍ਰਸ਼ਨ। California DMV practice test in Punjabi.',
