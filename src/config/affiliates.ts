@@ -43,6 +43,13 @@ export const AFFILIATES: Record<string, Affiliate> = {
     url: 'https://www.besttrafficschool.com/',
     isPlaceholder: true,
   },
+  // Not a traffic school — a traffic-ticket legal-defense subscription. Promoted
+  // separately (the "fight the ticket" angle), never in the school comparison.
+  autoallies: {
+    name: 'Auto Allies',
+    url: 'https://autoallies.com',
+    isPlaceholder: true,
+  },
 };
 
 export const AFFILIATE_FALLBACK_URL = 'https://www.dmvcalifornia.us/';
