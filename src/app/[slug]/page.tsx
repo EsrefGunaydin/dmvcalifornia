@@ -17,6 +17,7 @@ import BlogImageLightbox from '@/components/BlogImageLightbox';
 import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 import ArticleSchema from '@/components/blog/ArticleSchema';
+import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
 import { countWords, readingTimeMinutes } from '@/lib/strip-html';
 
 // Type for blog post
@@ -43,6 +44,25 @@ const SITE_URL = 'https://www.dmvcalifornia.us';
 // JSON imports infer a heterogeneous union once posts carry optional fields
 // (lang/translations) on only some entries. Cast once to the canonical type.
 const blogPosts = blogPostsData.posts as unknown as BlogPost[];
+
+// High-intent posts that get a contextual IMPROV affiliate banner after the
+// article body. Keep this small and topical — random placement doesn't convert.
+const AFFILIATE_BANNER_BY_SLUG: Record<string, string> = {
+  'california-online-traffic-school': 'ts-300x250',
+  'dui-california-limits': 'ts-300x250',
+  'new-traffic-laws-for-california-drivers-in-2025': 'ts-300x250',
+  'california-new-traffic-laws-2026-every-change-explained': 'ts-300x250',
+  'auto-insurance': 'mature-300x250',
+};
+
+// Build the in-content affiliate banner HTML (label + AWIN creative). Injected
+// into the article body so it sits in the reading flow, not bolted to the page.
+function affiliateBannerHtml(creativeKey: string): string {
+  const c = AFFILIATE_CREATIVES[creativeKey];
+  if (!c || !c.code) return '';
+  const lazyCode = c.code.replace('<img ', '<img loading="lazy" ');
+  return `<div class="not-prose" style="margin:1.75rem auto;max-width:${c.width}px;text-align:center;"><div style="font-size:0.625rem;letter-spacing:0.05em;text-transform:uppercase;color:#9ca3af;margin-bottom:6px;">Sponsored</div>${lazyCode}</div>`;
+}
 
 // Type for DMV office
 type Office = {
@@ -638,6 +658,18 @@ function renderBlogPost(postIn: BlogPost) {
       processedContent.slice(thirdParagraphEnd);
   }
 
+  // Contextual affiliate banner after the first paragraph (high-intent posts only)
+  const affiliateBannerKey = AFFILIATE_BANNER_BY_SLUG[post.slug];
+  if (affiliateBannerKey) {
+    const bannerHtml = affiliateBannerHtml(affiliateBannerKey);
+    const firstP = processedContent.match(/<p[^>]*>.*?<\/p>/is);
+    if (bannerHtml && firstP && firstP.index !== undefined) {
+      const pos = firstP.index + firstP[0].length;
+      processedContent =
+        processedContent.slice(0, pos) + '\n' + bannerHtml + '\n' + processedContent.slice(pos);
+    }
+  }
+
   // Get all posts sorted by date for prev/next navigation
   const sortedPosts = [...blogPosts].sort((a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -761,7 +793,10 @@ function renderBlogPost(postIn: BlogPost) {
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
           }>
-            <BlogPostContent content={processedContent} />
+            <BlogPostContent
+              content={processedContent}
+              adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 3 : 2}
+            />
           </Suspense>
 
           {/* Post Views Counter - Dynamic */}

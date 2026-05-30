@@ -6,5 +6,8 @@ Allow: /
 # Disallow admin areas
 Disallow: /api/
 
+# Cloaked affiliate redirects (not for indexing)
+Disallow: /go/
+
 # Sitemap (single sitemap.xml covers blog posts, quizzes, offices, and authors)
 Sitemap: https://www.dmvcalifornia.us/sitemap.xml
