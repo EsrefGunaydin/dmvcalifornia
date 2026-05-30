@@ -33,9 +33,9 @@ export const AFFILIATES: Record<string, Affiliate> = {
   },
   improv: {
     name: 'Improv Traffic School',
-    // Applied via AWIN — replace with your AWIN tracking link once approved.
-    url: 'https://www.myimprov.com/traffic-school/california/',
-    isPlaceholder: true,
+    // Live AWIN affiliate link (earns commission).
+    url: 'https://www.awin1.com/cread.php?awinmid=125116&awinaffid=2914013&campaign=CA+Mature+Driver+Deal',
+    isPlaceholder: false,
   },
   besttrafficschool: {
     name: 'Best Traffic School',
