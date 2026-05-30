@@ -755,6 +755,11 @@ function renderBlogPost(postIn: BlogPost) {
               </div>
             </header>
 
+            {/* Contextual affiliate banner — high-intent posts only (above the fold) */}
+            {AFFILIATE_BANNER_BY_SLUG[post.slug] && (
+              <AffiliateBanner creative={AFFILIATE_BANNER_BY_SLUG[post.slug]} />
+            )}
+
             {/* Post Content - Centered */}
             <div className="bg-white rounded-lg shadow-sm p-4 md:p-8 mb-8">
           {/* Blog post content with read more functionality */}
@@ -811,11 +816,6 @@ function renderBlogPost(postIn: BlogPost) {
               ))}
             </div>
           </section>
-        )}
-
-        {/* Contextual affiliate banner on high-intent posts */}
-        {AFFILIATE_BANNER_BY_SLUG[post.slug] && (
-          <AffiliateBanner creative={AFFILIATE_BANNER_BY_SLUG[post.slug]} />
         )}
 
         {/* Multiplex Ad above Related Stories */}
