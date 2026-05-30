@@ -17,6 +17,7 @@ import BlogImageLightbox from '@/components/BlogImageLightbox';
 import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 import ArticleSchema from '@/components/blog/ArticleSchema';
+import AffiliateBanner from '@/components/AffiliateBanner';
 import { countWords, readingTimeMinutes } from '@/lib/strip-html';
 
 // Type for blog post
@@ -43,6 +44,16 @@ const SITE_URL = 'https://www.dmvcalifornia.us';
 // JSON imports infer a heterogeneous union once posts carry optional fields
 // (lang/translations) on only some entries. Cast once to the canonical type.
 const blogPosts = blogPostsData.posts as unknown as BlogPost[];
+
+// High-intent posts that get a contextual IMPROV affiliate banner after the
+// article body. Keep this small and topical — random placement doesn't convert.
+const AFFILIATE_BANNER_BY_SLUG: Record<string, string> = {
+  'california-online-traffic-school': 'ts-300x250',
+  'dui-california-limits': 'ts-300x250',
+  'new-traffic-laws-for-california-drivers-in-2025': 'ts-300x250',
+  'california-new-traffic-laws-2026-every-change-explained': 'ts-300x250',
+  'auto-insurance': 'mature-300x250',
+};
 
 // Type for DMV office
 type Office = {
@@ -800,6 +811,11 @@ function renderBlogPost(postIn: BlogPost) {
               ))}
             </div>
           </section>
+        )}
+
+        {/* Contextual affiliate banner on high-intent posts */}
+        {AFFILIATE_BANNER_BY_SLUG[post.slug] && (
+          <AffiliateBanner creative={AFFILIATE_BANNER_BY_SLUG[post.slug]} />
         )}
 
         {/* Multiplex Ad above Related Stories */}
