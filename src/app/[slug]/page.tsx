@@ -17,7 +17,7 @@ import BlogImageLightbox from '@/components/BlogImageLightbox';
 import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 import ArticleSchema from '@/components/blog/ArticleSchema';
-import AffiliateBanner from '@/components/AffiliateBanner';
+import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
 import { countWords, readingTimeMinutes } from '@/lib/strip-html';
 
 // Type for blog post
@@ -54,6 +54,15 @@ const AFFILIATE_BANNER_BY_SLUG: Record<string, string> = {
   'california-new-traffic-laws-2026-every-change-explained': 'ts-300x250',
   'auto-insurance': 'mature-300x250',
 };
+
+// Build the in-content affiliate banner HTML (label + AWIN creative). Injected
+// into the article body so it sits in the reading flow, not bolted to the page.
+function affiliateBannerHtml(creativeKey: string): string {
+  const c = AFFILIATE_CREATIVES[creativeKey];
+  if (!c || !c.code) return '';
+  const lazyCode = c.code.replace('<img ', '<img loading="lazy" ');
+  return `<div class="not-prose" style="margin:1.75rem auto;max-width:${c.width}px;text-align:center;"><div style="font-size:0.625rem;letter-spacing:0.05em;text-transform:uppercase;color:#9ca3af;margin-bottom:6px;">Sponsored</div>${lazyCode}</div>`;
+}
 
 // Type for DMV office
 type Office = {
@@ -649,6 +658,18 @@ function renderBlogPost(postIn: BlogPost) {
       processedContent.slice(thirdParagraphEnd);
   }
 
+  // Contextual affiliate banner after the first paragraph (high-intent posts only)
+  const affiliateBannerKey = AFFILIATE_BANNER_BY_SLUG[post.slug];
+  if (affiliateBannerKey) {
+    const bannerHtml = affiliateBannerHtml(affiliateBannerKey);
+    const firstP = processedContent.match(/<p[^>]*>.*?<\/p>/is);
+    if (bannerHtml && firstP && firstP.index !== undefined) {
+      const pos = firstP.index + firstP[0].length;
+      processedContent =
+        processedContent.slice(0, pos) + '\n' + bannerHtml + '\n' + processedContent.slice(pos);
+    }
+  }
+
   // Get all posts sorted by date for prev/next navigation
   const sortedPosts = [...blogPosts].sort((a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -755,11 +776,6 @@ function renderBlogPost(postIn: BlogPost) {
               </div>
             </header>
 
-            {/* Contextual affiliate banner — high-intent posts only (above the fold) */}
-            {AFFILIATE_BANNER_BY_SLUG[post.slug] && (
-              <AffiliateBanner creative={AFFILIATE_BANNER_BY_SLUG[post.slug]} />
-            )}
-
             {/* Post Content - Centered */}
             <div className="bg-white rounded-lg shadow-sm p-4 md:p-8 mb-8">
           {/* Blog post content with read more functionality */}
@@ -777,7 +793,10 @@ function renderBlogPost(postIn: BlogPost) {
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
           }>
-            <BlogPostContent content={processedContent} />
+            <BlogPostContent
+              content={processedContent}
+              adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 3 : 2}
+            />
           </Suspense>
 
           {/* Post Views Counter - Dynamic */}
