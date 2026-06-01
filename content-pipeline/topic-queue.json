@@ -223,7 +223,7 @@
       "target_length": 2000,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Driving Test",
         "Tips",
@@ -237,7 +237,8 @@
       "outbound_links": [
         "https://www.dmv.ca.gov/portal/file/california-driver-handbook-pdf/"
       ],
-      "notes": "Evergreen pillar piece. Cover the 46 questions, 38 passing threshold, common trick questions, study strategy, practice test cadence."
+      "notes": "Evergreen pillar piece. Cover the 46 questions, 38 passing threshold, common trick questions, study strategy, practice test cadence.",
+      "drafted_at": "2026-06-01"
     },
     {
       "slug": "free-california-dmv-practice-test-russian",
