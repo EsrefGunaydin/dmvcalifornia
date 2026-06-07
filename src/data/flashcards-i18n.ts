@@ -1,13 +1,23 @@
-import esData from './flashcards-es-1.json';
-import trData from './flashcards-tr-1.json';
-import zhData from './flashcards-zh-1.json';
-import arData from './flashcards-ar-1.json';
-import hyData from './flashcards-hy-1.json';
-import faData from './flashcards-fa-1.json';
-import paData from './flashcards-pa-1.json';
-import ruData from './flashcards-ru-1.json';
-import tlData from './flashcards-tl-1.json';
-import viData from './flashcards-vi-1.json';
+import es1 from './flashcards-es-1.json';
+import es2 from './flashcards-es-2.json';
+import tr1 from './flashcards-tr-1.json';
+import tr2 from './flashcards-tr-2.json';
+import zh1 from './flashcards-zh-1.json';
+import zh2 from './flashcards-zh-2.json';
+import ar1 from './flashcards-ar-1.json';
+import ar2 from './flashcards-ar-2.json';
+import hy1 from './flashcards-hy-1.json';
+import hy2 from './flashcards-hy-2.json';
+import fa1 from './flashcards-fa-1.json';
+import fa2 from './flashcards-fa-2.json';
+import pa1 from './flashcards-pa-1.json';
+import pa2 from './flashcards-pa-2.json';
+import ru1 from './flashcards-ru-1.json';
+import ru2 from './flashcards-ru-2.json';
+import tl1 from './flashcards-tl-1.json';
+import tl2 from './flashcards-tl-2.json';
+import vi1 from './flashcards-vi-1.json';
+import vi2 from './flashcards-vi-2.json';
 
 export type FlashcardLang =
   | 'es'
@@ -41,7 +51,7 @@ export interface FlashcardSet {
   };
 }
 
-/** UI strings used by the flashcard deck and the localized CTAs. */
+/** UI strings used by the flashcard deck, the set index, and the CTAs. */
 export interface FlashcardLabels {
   question: string;
   answer: string;
@@ -58,7 +68,8 @@ export interface FlashcardLabels {
   ctaHeading: string;
   ctaSubtext: string;
   ctaButton: string;
-  cardsCount: string;
+  chooseSet: string;
+  cards: string;
 }
 
 export interface FlashcardLangConfig {
@@ -70,7 +81,8 @@ export interface FlashcardLangConfig {
   /** Localized hub page these flashcards belong to (e.g. /dmv-punjabi-test). */
   hubHref: string;
   gradient: string;
-  data: FlashcardSet;
+  /** All flashcard sets for this language, in order (set 1, set 2, ...). */
+  sets: FlashcardSet[];
   labels: FlashcardLabels;
 }
 
@@ -83,7 +95,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/muestra-del-examen-escrito-para-licencia-de-manejar',
     gradient: 'from-red-600 to-yellow-500',
-    data: esData as FlashcardSet,
+    sets: [es1 as FlashcardSet, es2 as FlashcardSet],
     labels: {
       question: 'Pregunta',
       answer: 'Respuesta',
@@ -98,9 +110,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'Empezar de nuevo',
       backToTests: 'Volver a los exámenes de práctica',
       ctaHeading: 'Estudia con tarjetas didácticas',
-      ctaSubtext: 'Domina 15 preguntas esenciales del DMV a tu propio ritmo, en español e inglés.',
+      ctaSubtext: 'Domina preguntas esenciales del DMV a tu propio ritmo, en español e inglés.',
       ctaButton: 'Estudiar tarjetas',
-      cardsCount: '15 tarjetas',
+      chooseSet: 'Elige un conjunto de tarjetas',
+      cards: 'tarjetas',
     },
   },
   tr: {
@@ -111,7 +124,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/dmv-turkish-test',
     gradient: 'from-red-600 to-rose-500',
-    data: trData as FlashcardSet,
+    sets: [tr1 as FlashcardSet, tr2 as FlashcardSet],
     labels: {
       question: 'Soru',
       answer: 'Cevap',
@@ -126,9 +139,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'Baştan başla',
       backToTests: 'Pratik testlere geri dön',
       ctaHeading: 'Bilgi kartlarıyla çalış',
-      ctaSubtext: '15 temel DMV sorusunu Türkçe ve İngilizce olarak kendi hızında öğren.',
+      ctaSubtext: 'Temel DMV sorularını Türkçe ve İngilizce olarak kendi hızında öğren.',
       ctaButton: 'Kartlarla çalış',
-      cardsCount: '15 kart',
+      chooseSet: 'Bir kart seti seç',
+      cards: 'kart',
     },
   },
   zh: {
@@ -139,7 +153,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/dmv-chinese-test',
     gradient: 'from-red-600 to-red-700',
-    data: zhData as FlashcardSet,
+    sets: [zh1 as FlashcardSet, zh2 as FlashcardSet],
     labels: {
       question: '问题',
       answer: '答案',
@@ -154,9 +168,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: '重新开始',
       backToTests: '返回练习测试',
       ctaHeading: '用学习卡复习',
-      ctaSubtext: '用中文和英文，按自己的节奏掌握 15 道核心 DMV 题目。',
+      ctaSubtext: '用中文和英文，按自己的节奏掌握核心 DMV 题目。',
       ctaButton: '开始学习',
-      cardsCount: '15 张卡片',
+      chooseSet: '选择一组学习卡',
+      cards: '张卡片',
     },
   },
   ar: {
@@ -167,7 +182,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'rtl',
     hubHref: '/dmv-arabic-test',
     gradient: 'from-green-600 to-emerald-600',
-    data: arData as FlashcardSet,
+    sets: [ar1 as FlashcardSet, ar2 as FlashcardSet],
     labels: {
       question: 'سؤال',
       answer: 'إجابة',
@@ -182,9 +197,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'ابدأ من جديد',
       backToTests: 'العودة إلى اختبارات التدريب',
       ctaHeading: 'ادرس بالبطاقات التعليمية',
-      ctaSubtext: 'أتقن 15 سؤالاً أساسياً من DMV بالعربية والإنجليزية بالوتيرة التي تناسبك.',
+      ctaSubtext: 'أتقن أسئلة DMV الأساسية بالعربية والإنجليزية بالوتيرة التي تناسبك.',
       ctaButton: 'ابدأ الدراسة',
-      cardsCount: '15 بطاقة',
+      chooseSet: 'اختر مجموعة بطاقات',
+      cards: 'بطاقة',
     },
   },
   hy: {
@@ -195,7 +211,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/dmv-armenian-test',
     gradient: 'from-blue-600 to-orange-500',
-    data: hyData as FlashcardSet,
+    sets: [hy1 as FlashcardSet, hy2 as FlashcardSet],
     labels: {
       question: 'Հարց',
       answer: 'Պատասխան',
@@ -210,9 +226,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'Սկսել նորից',
       backToTests: 'Վերադառնալ պրակտիկ թեստերին',
       ctaHeading: 'Սովորիր քարտերով',
-      ctaSubtext: 'Յուրացրու DMV-ի 15 հիմնական հարցը հայերեն և անգլերեն՝ քո տեմպով։',
+      ctaSubtext: 'Յուրացրու DMV-ի հիմնական հարցերը հայերեն և անգլերեն՝ քո տեմպով։',
       ctaButton: 'Սկսել',
-      cardsCount: '15 քարտ',
+      chooseSet: 'Ընտրիր քարտերի հավաքածու',
+      cards: 'քարտ',
     },
   },
   fa: {
@@ -223,7 +240,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'rtl',
     hubHref: '/dmv-farsi-test',
     gradient: 'from-emerald-600 to-teal-600',
-    data: faData as FlashcardSet,
+    sets: [fa1 as FlashcardSet, fa2 as FlashcardSet],
     labels: {
       question: 'سؤال',
       answer: 'پاسخ',
@@ -238,9 +255,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'شروع دوباره',
       backToTests: 'بازگشت به آزمون‌های تمرینی',
       ctaHeading: 'با کارت‌های آموزشی مطالعه کنید',
-      ctaSubtext: '۱۵ سؤال اساسی DMV را به فارسی و انگلیسی با سرعت خودتان یاد بگیرید.',
+      ctaSubtext: 'سؤالات اساسی DMV را به فارسی و انگلیسی با سرعت خودتان یاد بگیرید.',
       ctaButton: 'شروع مطالعه',
-      cardsCount: '۱۵ کارت',
+      chooseSet: 'یک مجموعه کارت انتخاب کنید',
+      cards: 'کارت',
     },
   },
   pa: {
@@ -251,7 +269,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/dmv-punjabi-test',
     gradient: 'from-orange-500 to-yellow-500',
-    data: paData as FlashcardSet,
+    sets: [pa1 as FlashcardSet, pa2 as FlashcardSet],
     labels: {
       question: 'ਪ੍ਰਸ਼ਨ',
       answer: 'ਜਵਾਬ',
@@ -266,9 +284,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'ਮੁੜ ਸ਼ੁਰੂ ਕਰੋ',
       backToTests: 'ਅਭਿਆਸ ਟੈਸਟਾਂ ਵੱਲ ਵਾਪਸ ਜਾਓ',
       ctaHeading: 'ਫਲੈਸ਼ਕਾਰਡ ਨਾਲ ਪੜ੍ਹੋ',
-      ctaSubtext: 'ਆਪਣੀ ਰਫ਼ਤਾਰ ਨਾਲ 15 ਜ਼ਰੂਰੀ DMV ਪ੍ਰਸ਼ਨਾਂ ਵਿੱਚ ਮੁਹਾਰਤ ਹਾਸਲ ਕਰੋ — ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।',
+      ctaSubtext: 'ਆਪਣੀ ਰਫ਼ਤਾਰ ਨਾਲ ਜ਼ਰੂਰੀ DMV ਪ੍ਰਸ਼ਨਾਂ ਵਿੱਚ ਮੁਹਾਰਤ ਹਾਸਲ ਕਰੋ — ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।',
       ctaButton: 'ਪੜ੍ਹਨਾ ਸ਼ੁਰੂ ਕਰੋ',
-      cardsCount: '15 ਕਾਰਡ',
+      chooseSet: 'ਇੱਕ ਫਲੈਸ਼ਕਾਰਡ ਸੈੱਟ ਚੁਣੋ',
+      cards: 'ਕਾਰਡ',
     },
   },
   ru: {
@@ -279,7 +298,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/dmv-russian-test',
     gradient: 'from-blue-600 to-indigo-600',
-    data: ruData as FlashcardSet,
+    sets: [ru1 as FlashcardSet, ru2 as FlashcardSet],
     labels: {
       question: 'Вопрос',
       answer: 'Ответ',
@@ -294,9 +313,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'Начать заново',
       backToTests: 'Вернуться к пробным тестам',
       ctaHeading: 'Учитесь по карточкам',
-      ctaSubtext: 'Освойте 15 основных вопросов DMV на русском и английском в своём темпе.',
+      ctaSubtext: 'Освойте основные вопросы DMV на русском и английском в своём темпе.',
       ctaButton: 'Начать',
-      cardsCount: '15 карточек',
+      chooseSet: 'Выберите набор карточек',
+      cards: 'карточек',
     },
   },
   tl: {
@@ -307,7 +327,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/dmv-tagalog-test',
     gradient: 'from-blue-700 to-sky-500',
-    data: tlData as FlashcardSet,
+    sets: [tl1 as FlashcardSet, tl2 as FlashcardSet],
     labels: {
       question: 'Tanong',
       answer: 'Sagot',
@@ -322,9 +342,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'Magsimula muli',
       backToTests: 'Bumalik sa mga practice test',
       ctaHeading: 'Mag-aral gamit ang flashcards',
-      ctaSubtext: 'Masteryn ang 15 mahahalagang tanong sa DMV sa Tagalog at Ingles sa sarili mong bilis.',
+      ctaSubtext: 'Masteryn ang mahahalagang tanong sa DMV sa Tagalog at Ingles sa sarili mong bilis.',
       ctaButton: 'Mag-aral na',
-      cardsCount: '15 kard',
+      chooseSet: 'Pumili ng set ng flashcard',
+      cards: 'kard',
     },
   },
   vi: {
@@ -335,7 +356,7 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
     dir: 'ltr',
     hubHref: '/dmv-vietnamese-test',
     gradient: 'from-red-700 to-amber-500',
-    data: viData as FlashcardSet,
+    sets: [vi1 as FlashcardSet, vi2 as FlashcardSet],
     labels: {
       question: 'Câu hỏi',
       answer: 'Đáp án',
@@ -350,9 +371,10 @@ export const FLASHCARD_LANGUAGES: Record<FlashcardLang, FlashcardLangConfig> = {
       startOver: 'Bắt đầu lại',
       backToTests: 'Quay lại các bài thi thử',
       ctaHeading: 'Học với thẻ ghi nhớ',
-      ctaSubtext: 'Nắm vững 15 câu hỏi DMV thiết yếu bằng tiếng Việt và tiếng Anh theo tốc độ của bạn.',
+      ctaSubtext: 'Nắm vững các câu hỏi DMV thiết yếu bằng tiếng Việt và tiếng Anh theo tốc độ của bạn.',
       ctaButton: 'Bắt đầu học',
-      cardsCount: '15 thẻ',
+      chooseSet: 'Chọn một bộ thẻ',
+      cards: 'thẻ',
     },
   },
 };
@@ -361,4 +383,42 @@ export const FLASHCARD_LANG_CODES = Object.keys(FLASHCARD_LANGUAGES) as Flashcar
 
 export function getFlashcardLang(code: string): FlashcardLangConfig | undefined {
   return FLASHCARD_LANGUAGES[code as FlashcardLang];
+}
+
+/** Parse a set slug like "set-2" into a 1-based number, or null if invalid. */
+export function parseSetSlug(setSlug: string): number | null {
+  const match = /^set-(\d+)$/.exec(setSlug);
+  if (!match) return null;
+  const n = parseInt(match[1], 10);
+  return Number.isNaN(n) ? null : n;
+}
+
+/** Get a specific set for a language by its slug (e.g. "set-1"). */
+export function getFlashcardSet(
+  code: string,
+  setSlug: string
+): { config: FlashcardLangConfig; set: FlashcardSet; setNumber: number } | undefined {
+  const config = getFlashcardLang(code);
+  if (!config) return undefined;
+  const setNumber = parseSetSlug(setSlug);
+  if (setNumber === null) return undefined;
+  const set = config.sets[setNumber - 1];
+  if (!set) return undefined;
+  return { config, set, setNumber };
+}
+
+/** Total card count across all sets for a language. */
+export function totalCards(config: FlashcardLangConfig): number {
+  return config.sets.reduce((sum, s) => sum + s.flashcards.cards.length, 0);
+}
+
+/** Every (lang, set-slug) pair, for generateStaticParams. */
+export function allFlashcardSetParams(): { lang: FlashcardLang; set: string }[] {
+  const params: { lang: FlashcardLang; set: string }[] = [];
+  for (const code of FLASHCARD_LANG_CODES) {
+    FLASHCARD_LANGUAGES[code].sets.forEach((_, i) => {
+      params.push({ lang: code, set: `set-${i + 1}` });
+    });
+  }
+  return params;
 }

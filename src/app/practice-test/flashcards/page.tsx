@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import Link from 'next/link';
-import { FLASHCARD_LANG_CODES, FLASHCARD_LANGUAGES } from '@/data/flashcards-i18n';
+import { FLASHCARD_LANG_CODES, FLASHCARD_LANGUAGES, totalCards } from '@/data/flashcards-i18n';
 
 export const metadata: Metadata = {
   title: 'DMV California Practice Flashcards | Study for Your Driving Test',
@@ -223,7 +223,7 @@ export default function FlashcardsPage() {
                       <span className="text-3xl">{lang.flag}</span>
                       <span className="font-bold text-gray-900">{lang.nativeName}</span>
                       <span className="text-xs text-gray-500">{lang.englishName}</span>
-                      <span className="mt-1 text-xs font-medium text-blue-600">{lang.labels.cardsCount}</span>
+                      <span className="mt-1 text-xs font-medium text-blue-600">{totalCards(lang)} {lang.labels.cards}</span>
                     </Link>
                   );
                 })}

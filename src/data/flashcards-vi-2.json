@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-vi-2",
+    "language": "vi",
+    "title": "Thẻ ghi nhớ DMV - Bộ 2: Quyền ưu tiên và An toàn",
+    "description": "15 câu hỏi DMV thiết yếu về quyền ưu tiên, an toàn và luật đường bộ (tiếng Việt và tiếng Anh).",
+    "category": "Thẻ ghi nhớ",
+    "slug": "dmv-california-flashcards-vi-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "Ai có quyền ưu tiên tại giao lộ không có vạch dành cho người đi bộ?",
+        "answer": "người đi bộ luôn có quyền ưu tiên",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "Nếu bạn đến gần khúc cua hoặc đỉnh dốc và không nhìn rõ đường phía trước, bạn nên:",
+        "answer": "giảm tốc độ để có thể dừng lại nếu cần",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "Trách nhiệm biết thuốc của bạn ảnh hưởng đến việc lái xe như thế nào là của ai?",
+        "answer": "của bạn",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "Điều nào sau đây là đúng về dây an toàn và va chạm?",
+        "answer": "chúng làm tăng cơ hội sống sót của bạn trong hầu hết các loại va chạm",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "Nếu bạn không thể nhìn thấy đường phía trước khi lái xe vì sương mù dày đặc và cần gạt nước không giúp ích, bạn nên:",
+        "answer": "tấp hẳn ra khỏi đường cho đến khi tầm nhìn cải thiện",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "Biển báo đỏ và trắng này có nghĩa là:",
+        "answer": "bạn không được vào đường từ hướng của mình",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "Bạn bắt buộc phải thắt dây an toàn trong xe đang di chuyển:",
+        "answer": "và không thắt sẽ bị phạt giao thông",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "Bạn đang băng qua giao lộ và một xe cấp cứu đang đến gần với còi hú và đèn nhấp nháy. Bạn nên:",
+        "answer": "tấp sang phải trong giao lộ và dừng lại",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "Bạn đang ở trên đường hai chiều và xe phía trước đang rẽ trái vào một lối vào nhà. Bạn có thể vượt hợp pháp ở bên phải:",
+        "answer": "nếu có đủ đường giữa lề và chiếc xe",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "Nếu bạn có đèn xanh, nhưng giao thông đang chặn giao lộ:",
+        "answer": "không vào giao lộ và chờ đến khi giao thông thông thoáng",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "Biển báo trắng này có nghĩa là:",
+        "answer": "nhìn, lắng nghe và chuẩn bị dừng tại nơi giao cắt nếu cần",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "Câu nào đúng về người đi mô tô và người lái xe?",
+        "answer": "người đi mô tô có cùng quyền và trách nhiệm như những người lái xe khác",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "Khi bạn chuyển làn hoặc nhập vào làn khác, bạn:",
+        "answer": "cần khoảng cách ít nhất 4 giây trong dòng xe",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "Bánh xe của bạn phải hướng thẳng về phía trước, trừ khi bạn:",
+        "answer": "đang đậu trên đồi hoặc lối vào dốc",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "Bạn đang lái ở làn ngoài cùng bên phải của xa lộ bốn làn và nhận thấy các vạch trắng đứt nét dày ở phía bên trái làn của bạn. Bạn đang lái trong:",
+        "answer": "một làn ra (exit lane)",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

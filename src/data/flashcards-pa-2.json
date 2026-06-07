@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-pa-2",
+    "language": "pa",
+    "title": "DMV ਫਲੈਸ਼ਕਾਰਡ - ਸੈੱਟ 2: ਰਾਹ ਦਾ ਹੱਕ ਅਤੇ ਸੁਰੱਖਿਆ",
+    "description": "ਰਾਹ ਦੇ ਹੱਕ, ਸੁਰੱਖਿਆ ਅਤੇ ਸੜਕ ਨਿਯਮਾਂ ਬਾਰੇ 15 ਜ਼ਰੂਰੀ DMV ਪ੍ਰਸ਼ਨ (ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ)।",
+    "category": "ਫਲੈਸ਼ਕਾਰਡ",
+    "slug": "dmv-california-flashcards-pa-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "ਬਿਨਾਂ ਕਰਾਸਵਾਕ ਵਾਲੇ ਚੌਰਾਹੇ 'ਤੇ ਰਾਹ ਦਾ ਹੱਕ ਕਿਸ ਕੋਲ ਹੁੰਦਾ ਹੈ?",
+        "answer": "ਪੈਦਲ ਚੱਲਣ ਵਾਲਿਆਂ ਕੋਲ ਹਮੇਸ਼ਾ ਰਾਹ ਦਾ ਹੱਕ ਹੁੰਦਾ ਹੈ",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "ਜੇ ਤੁਸੀਂ ਕਿਸੇ ਮੋੜ ਜਾਂ ਪਹਾੜੀ ਦੀ ਚੋਟੀ ਕੋਲ ਪਹੁੰਚਦੇ ਹੋ ਅਤੇ ਤੁਹਾਨੂੰ ਅੱਗੇ ਦੀ ਸੜਕ ਸਾਫ਼ ਨਹੀਂ ਦਿਖਦੀ, ਤਾਂ ਤੁਹਾਨੂੰ ਚਾਹੀਦਾ ਹੈ:",
+        "answer": "ਹੌਲੀ ਹੋਣਾ ਤਾਂ ਜੋ ਲੋੜ ਪੈਣ 'ਤੇ ਰੁਕ ਸਕੋ",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "ਇਹ ਜਾਣਨਾ ਕਿ ਤੁਹਾਡੀਆਂ ਦਵਾਈਆਂ ਤੁਹਾਡੀ ਡਰਾਈਵਿੰਗ ਨੂੰ ਕਿਵੇਂ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀਆਂ ਹਨ, ਕਿਸ ਦੀ ਜ਼ਿੰਮੇਵਾਰੀ ਹੈ?",
+        "answer": "ਤੁਹਾਡੀ",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "ਸੀਟ ਬੈਲਟਾਂ ਅਤੇ ਟੱਕਰਾਂ ਬਾਰੇ ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਸੱਚ ਹੈ?",
+        "answer": "ਇਹ ਬਹੁਤੀਆਂ ਕਿਸਮਾਂ ਦੀਆਂ ਟੱਕਰਾਂ ਵਿੱਚ ਤੁਹਾਡੇ ਬਚਣ ਦੇ ਮੌਕੇ ਵਧਾਉਂਦੀਆਂ ਹਨ",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "ਜੇ ਸੰਘਣੀ ਧੁੰਦ ਕਾਰਨ ਡਰਾਈਵਿੰਗ ਦੌਰਾਨ ਤੁਸੀਂ ਅੱਗੇ ਦੀ ਸੜਕ ਨਹੀਂ ਦੇਖ ਸਕਦੇ ਅਤੇ ਵਾਈਪਰ ਵੀ ਮਦਦ ਨਹੀਂ ਕਰਦੇ, ਤਾਂ ਤੁਹਾਨੂੰ ਚਾਹੀਦਾ ਹੈ:",
+        "answer": "ਜਦੋਂ ਤੱਕ ਦਿੱਖ ਠੀਕ ਨਾ ਹੋਵੇ, ਪੂਰੀ ਤਰ੍ਹਾਂ ਸੜਕ ਤੋਂ ਪਾਸੇ ਹੋ ਜਾਓ",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "ਇਹ ਲਾਲ ਅਤੇ ਚਿੱਟਾ ਸਾਈਨ ਇਹ ਦਰਸਾਉਂਦਾ ਹੈ:",
+        "answer": "ਤੁਸੀਂ ਆਪਣੀ ਦਿਸ਼ਾ ਤੋਂ ਸੜਕ ਵਿੱਚ ਦਾਖਲ ਨਹੀਂ ਹੋ ਸਕਦੇ",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "ਚੱਲਦੇ ਵਾਹਨ ਵਿੱਚ ਤੁਹਾਨੂੰ ਸੀਟ ਬੈਲਟ ਪਹਿਨਣੀ ਲਾਜ਼ਮੀ ਹੈ:",
+        "answer": "ਅਤੇ ਅਜਿਹਾ ਨਾ ਕਰਨ 'ਤੇ ਟ੍ਰੈਫਿਕ ਟਿਕਟ ਮਿਲੇਗੀ",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "ਤੁਸੀਂ ਚੌਰਾਹਾ ਪਾਰ ਕਰ ਰਹੇ ਹੋ ਅਤੇ ਇੱਕ ਐਮਰਜੈਂਸੀ ਵਾਹਨ ਸਾਇਰਨ ਅਤੇ ਝਪਕਦੀਆਂ ਲਾਈਟਾਂ ਨਾਲ ਨੇੜੇ ਆ ਰਿਹਾ ਹੈ। ਤੁਹਾਨੂੰ ਚਾਹੀਦਾ ਹੈ:",
+        "answer": "ਚੌਰਾਹੇ ਵਿੱਚ ਸੱਜੇ ਪਾਸੇ ਹੋ ਕੇ ਰੁਕ ਜਾਓ",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "ਤੁਸੀਂ ਦੋ-ਪਾਸੀ ਸੜਕ 'ਤੇ ਹੋ ਅਤੇ ਤੁਹਾਡੇ ਅੱਗੇ ਵਾਲਾ ਵਾਹਨ ਖੱਬੇ ਮੁੜ ਕੇ ਇੱਕ ਡਰਾਈਵਵੇ ਵਿੱਚ ਜਾ ਰਿਹਾ ਹੈ। ਤੁਸੀਂ ਕਾਨੂੰਨੀ ਤੌਰ 'ਤੇ ਸੱਜੇ ਪਾਸਿਓਂ ਲੰਘ ਸਕਦੇ ਹੋ:",
+        "answer": "ਜੇ ਕਰਬ ਅਤੇ ਵਾਹਨ ਵਿਚਕਾਰ ਕਾਫ਼ੀ ਸੜਕ ਹੋਵੇ",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਹਰੀ ਬੱਤੀ ਹੈ, ਪਰ ਟ੍ਰੈਫਿਕ ਨੇ ਚੌਰਾਹਾ ਰੋਕਿਆ ਹੋਇਆ ਹੈ:",
+        "answer": "ਚੌਰਾਹੇ ਤੋਂ ਬਾਹਰ ਰਹੋ ਅਤੇ ਟ੍ਰੈਫਿਕ ਸਾਫ਼ ਹੋਣ ਤੱਕ ਉਡੀਕ ਕਰੋ",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "ਇਹ ਚਿੱਟਾ ਸਾਈਨ ਇਹ ਦਰਸਾਉਂਦਾ ਹੈ:",
+        "answer": "ਦੇਖੋ, ਸੁਣੋ ਅਤੇ ਲੋੜ ਪੈਣ 'ਤੇ ਕ੍ਰਾਸਿੰਗ 'ਤੇ ਰੁਕਣ ਲਈ ਤਿਆਰ ਰਹੋ",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "ਮੋਟਰਸਾਈਕਲ ਸਵਾਰਾਂ ਅਤੇ ਮੋਟਰ ਚਾਲਕਾਂ ਬਾਰੇ ਕਿਹੜਾ ਕਥਨ ਸੱਚ ਹੈ?",
+        "answer": "ਮੋਟਰਸਾਈਕਲ ਸਵਾਰਾਂ ਕੋਲ ਹੋਰ ਮੋਟਰ ਚਾਲਕਾਂ ਵਾਂਗ ਹੀ ਉਹੀ ਹੱਕ ਅਤੇ ਜ਼ਿੰਮੇਵਾਰੀਆਂ ਹਨ",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "ਜਦੋਂ ਤੁਸੀਂ ਲੇਨ ਬਦਲਦੇ ਹੋ ਜਾਂ ਕਿਸੇ ਹੋਰ ਲੇਨ ਵਿੱਚ ਰਲ਼ਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਨੂੰ:",
+        "answer": "ਟ੍ਰੈਫਿਕ ਵਿੱਚ ਘੱਟੋ-ਘੱਟ 4 ਸਕਿੰਟ ਦੇ ਫ਼ਾਸਲੇ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "ਤੁਹਾਡੇ ਪਹੀਏ ਸਿੱਧੇ ਅੱਗੇ ਵੱਲ ਹੋਣੇ ਚਾਹੀਦੇ ਹਨ, ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ:",
+        "answer": "ਪਹਾੜੀ ਜਾਂ ਢਲਾਣ ਵਾਲੇ ਡਰਾਈਵਵੇ 'ਤੇ ਪਾਰਕ ਨਾ ਕੀਤਾ ਹੋਵੇ",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "ਤੁਸੀਂ ਚਾਰ-ਲੇਨ ਵਾਲੇ ਫ੍ਰੀਵੇ ਦੀ ਸਭ ਤੋਂ ਸੱਜੀ ਲੇਨ ਵਿੱਚ ਚਲਾ ਰਹੇ ਹੋ ਅਤੇ ਆਪਣੀ ਲੇਨ ਦੇ ਖੱਬੇ ਪਾਸੇ ਮੋਟੀਆਂ ਟੁੱਟੀਆਂ ਚਿੱਟੀਆਂ ਲਾਈਨਾਂ ਦੇਖਦੇ ਹੋ। ਤੁਸੀਂ ਚਲਾ ਰਹੇ ਹੋ:",
+        "answer": "ਇੱਕ ਐਗਜ਼ਿਟ ਲੇਨ ਵਿੱਚ",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

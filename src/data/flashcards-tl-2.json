@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-tl-2",
+    "language": "tl",
+    "title": "DMV Flashcards - Set 2: Right-of-Way at Kaligtasan",
+    "description": "15 mahahalagang tanong sa DMV tungkol sa right-of-way, kaligtasan, at mga tuntunin sa daan (Tagalog at Ingles).",
+    "category": "Flashcards",
+    "slug": "dmv-california-flashcards-tl-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "Sino ang may right-of-way sa isang interseksyon na walang crosswalk?",
+        "answer": "ang mga tao na naglalakad ay laging may right-of-way",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "Kung papalapit ka sa isang kurba o tuktok ng burol at wala kang malinaw na tanaw sa daan sa unahan, dapat kang:",
+        "answer": "magpabagal para makahinto kung kinakailangan",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "Kaninong responsibilidad na malaman kung paano nakakaapekto ang iyong mga gamot sa iyong pagmamaneho?",
+        "answer": "sa iyo",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "Alin sa mga sumusunod ang totoo tungkol sa safety belt at banggaan?",
+        "answer": "pinapataas nila ang iyong tsansa na mabuhay sa karamihan ng uri ng banggaan",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "Kung hindi mo makita ang daan sa unahan habang nagmamaneho dahil sa makapal na ulap-usok (fog) at hindi nakakatulong ang wiper, dapat kang:",
+        "answer": "tuluyang huminto sa gilid ng daan hanggang gumanda ang visibility",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "Ang pula at puting karatulang ito ay nangangahulugang:",
+        "answer": "hindi ka maaaring pumasok sa daan mula sa iyong direksyon",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "Kailangan mong magsuot ng safety belt sa isang gumagalaw na sasakyan:",
+        "answer": "at ang hindi pagsunod ay magreresulta sa traffic ticket",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "Tumatawid ka sa isang interseksyon at may papalapit na emergency vehicle na may sirena at kumukurap na ilaw. Dapat kang:",
+        "answer": "gumilid sa kanan sa loob ng interseksyon at huminto",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "Nasa two-way na daan ka at ang sasakyan sa unahan mo ay lumiliko pakaliwa papasok sa isang driveway. Maaari kang legal na lumampas sa kanan:",
+        "answer": "kung may sapat na daan sa pagitan ng curb at ng sasakyan",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "Kung may green light ka, ngunit may trapikong humaharang sa interseksyon:",
+        "answer": "manatili sa labas ng interseksyon at maghintay hanggang lumuwag ang trapiko",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "Ang puting karatulang ito ay nangangahulugang:",
+        "answer": "tumingin, makinig, at maghandang huminto sa krosing kung kinakailangan",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "Aling pahayag ang totoo tungkol sa mga motorsiklista at motorista?",
+        "answer": "ang mga motorsiklista ay may parehong karapatan at responsibilidad gaya ng ibang motorista",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "Kapag lumilipat ka o sumasanib sa ibang lane, ikaw ay:",
+        "answer": "nangangailangan ng hindi bababa sa 4-segundong puwang sa trapiko",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "Ang iyong mga gulong ay dapat nakaturo nang diretso sa unahan, maliban kung ikaw ay:",
+        "answer": "nakaparada sa burol o nakasalubong na driveway",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "Nagmamaneho ka sa pinakakanang lane ng isang four-lane na freeway at napansin mo ang makapal na putol-putol na puting linya sa kaliwa ng iyong lane. Nagmamaneho ka sa:",
+        "answer": "isang exit lane",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

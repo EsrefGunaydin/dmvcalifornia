@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-ar-2",
+    "language": "ar",
+    "title": "بطاقات تعليمية DMV - المجموعة 2: أحقية المرور والسلامة",
+    "description": "15 سؤالاً أساسياً من DMV حول أحقية المرور والسلامة وقواعد الطريق (بالعربية والإنجليزية).",
+    "category": "بطاقات تعليمية",
+    "slug": "dmv-california-flashcards-ar-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "من له أحقية المرور عند تقاطع لا توجد فيه ممرات للمشاة؟",
+        "answer": "المشاة لهم دائماً أحقية المرور",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "إذا اقتربت من منعطف أو قمة تلّة ولم تكن لديك رؤية واضحة للطريق أمامك، يجب عليك:",
+        "answer": "إبطاء السرعة حتى تتمكن من التوقف عند الضرورة",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "على من تقع مسؤولية معرفة كيفية تأثير أدويتك على قيادتك؟",
+        "answer": "عليك أنت",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "أي مما يلي صحيح بشأن أحزمة الأمان والاصطدامات؟",
+        "answer": "تزيد من فرص نجاتك في معظم أنواع الاصطدامات",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "إذا لم تتمكن من رؤية الطريق أمامك أثناء القيادة بسبب الضباب الكثيف ولم تساعد الممسحات، يجب عليك:",
+        "answer": "الخروج من الطريق تماماً حتى تتحسن الرؤية",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "هذه الإشارة الحمراء والبيضاء تعني:",
+        "answer": "لا يمكنك دخول الطريق من اتجاهك",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "يجب عليك ارتداء حزام الأمان في مركبة متحركة:",
+        "answer": "وعدم القيام بذلك سيؤدي إلى مخالفة مرورية",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "أنت تعبر تقاطعاً وتقترب مركبة طوارئ بصفارة وأضواء وامضة. يجب عليك:",
+        "answer": "الانحراف إلى اليمين داخل التقاطع والتوقف",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "أنت على طريق ذي اتجاهين والمركبة التي أمامك تنعطف يساراً إلى مدخل سيارات. يمكنك التجاوز قانونياً من اليمين:",
+        "answer": "إذا كان هناك طريق كافٍ بين الرصيف والمركبة",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "إذا كانت لديك إشارة خضراء لكن الازدحام يسد التقاطع:",
+        "answer": "ابقَ خارج التقاطع وانتظر حتى ينحسر الازدحام",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "هذه الإشارة البيضاء تعني:",
+        "answer": "انظر واستمع واستعد للتوقف عند المعبر إذا لزم الأمر",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "أي عبارة صحيحة بشأن سائقي الدراجات النارية والسائقين الآخرين؟",
+        "answer": "لسائقي الدراجات النارية الحقوق والمسؤوليات نفسها التي للسائقين الآخرين",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "عندما تغيّر المسار أو تندمج مع مسار آخر، فإنك:",
+        "answer": "تحتاج إلى فجوة لا تقل عن 4 ثوانٍ في حركة المرور",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "يجب أن تكون عجلاتك موجهة بشكل مستقيم للأمام، إلا إذا كنت:",
+        "answer": "متوقفاً على تلة أو مدخل سيارات منحدر",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "تقود في أقصى المسار الأيمن من طريق سريع بأربعة مسارات وتلاحظ خطوطاً بيضاء متقطعة سميكة على الجانب الأيسر من مسارك. أنت تقود في:",
+        "answer": "مسار خروج",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

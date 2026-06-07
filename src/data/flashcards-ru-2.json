@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-ru-2",
+    "language": "ru",
+    "title": "Карточки DMV - Набор 2: Преимущество проезда и безопасность",
+    "description": "15 основных вопросов DMV о преимуществе проезда, безопасности и правилах дороги (на русском и английском).",
+    "category": "Карточки",
+    "slug": "dmv-california-flashcards-ru-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "У кого преимущество проезда на перекрёстке без пешеходных переходов?",
+        "answer": "у пешеходов всегда есть преимущество",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "Если вы приближаетесь к повороту или вершине холма и не видите ясно дорогу впереди, вам следует:",
+        "answer": "снизить скорость, чтобы при необходимости можно было остановиться",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "Чья обязанность — знать, как ваши лекарства влияют на вождение?",
+        "answer": "ваша",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "Что из перечисленного верно о ремнях безопасности и столкновениях?",
+        "answer": "они повышают ваши шансы выжить при большинстве типов столкновений",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "Если из-за густого тумана во время движения вы не видите дорогу впереди, а дворники не помогают, вам следует:",
+        "answer": "полностью съехать с дороги, пока видимость не улучшится",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "Этот красно-белый знак означает:",
+        "answer": "вам нельзя выезжать на дорогу со своего направления",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "Вы обязаны пристёгиваться ремнём безопасности в движущемся автомобиле:",
+        "answer": "и несоблюдение этого приведёт к штрафу",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "Вы пересекаете перекрёсток, и приближается машина экстренной службы с сиреной и мигающими огнями. Вам следует:",
+        "answer": "прижаться вправо на перекрёстке и остановиться",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "Вы на двусторонней дороге, и машина впереди поворачивает налево в подъезд. Вы можете законно обогнать справа:",
+        "answer": "если между бордюром и автомобилем достаточно места",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "Если у вас зелёный свет, но движение заблокировало перекрёсток:",
+        "answer": "не выезжайте на перекрёсток и ждите, пока движение не освободится",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "Этот белый знак означает:",
+        "answer": "смотрите, слушайте и будьте готовы остановиться у переезда, если необходимо",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "Какое утверждение верно о мотоциклистах и водителях?",
+        "answer": "у мотоциклистов те же права и обязанности, что и у других водителей",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "Когда вы перестраиваетесь или вливаетесь в другую полосу, вам:",
+        "answer": "нужен интервал не менее 4 секунд в потоке",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "Ваши колёса должны быть направлены прямо, если только вы не:",
+        "answer": "припаркованы на холме или наклонном подъезде",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "Вы едете в крайней правой полосе четырёхполосного шоссе и замечаете толстые прерывистые белые линии слева от вашей полосы. Вы едете по:",
+        "answer": "полосе выезда",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

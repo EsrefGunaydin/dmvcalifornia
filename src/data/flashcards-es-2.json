@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-es-2",
+    "language": "es",
+    "title": "Tarjetas de Estudio DMV - Conjunto 2: Derecho de Paso y Seguridad",
+    "description": "15 preguntas esenciales del DMV sobre derecho de paso, seguridad y reglas de la vía (español e inglés).",
+    "category": "Tarjetas de Estudio",
+    "slug": "dmv-california-flashcards-es-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "¿Quién tiene el derecho de paso en una intersección sin cruces peatonales?",
+        "answer": "los peatones siempre tienen el derecho de paso",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "Si se aproxima a una curva o a la cima de una colina y no tiene una vista clara del camino más adelante, debe:",
+        "answer": "reducir la velocidad para poder detenerse si es necesario",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "¿De quién es la responsabilidad de saber cómo sus medicamentos afectan su manejo?",
+        "answer": "suya",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "¿Cuál de las siguientes afirmaciones es verdadera sobre los cinturones de seguridad y las colisiones?",
+        "answer": "aumentan sus probabilidades de supervivencia en la mayoría de los tipos de colisiones",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "Si no puede ver el camino más adelante mientras conduce debido a una niebla densa y los limpiaparabrisas no ayudan, debe:",
+        "answer": "salirse completamente del camino hasta que mejore la visibilidad",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "Esta señal roja y blanca significa:",
+        "answer": "no puede entrar al camino desde su dirección",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "Está obligado a usar el cinturón de seguridad en un vehículo en movimiento:",
+        "answer": "y no hacerlo resultará en una multa de tránsito",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "Está cruzando una intersección y un vehículo de emergencia se aproxima con sirena y luces intermitentes. Debe:",
+        "answer": "hacerse a la derecha en la intersección y detenerse",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "Está en un camino de doble sentido y el vehículo delante de usted está girando a la izquierda hacia una entrada. Puede pasar legalmente por la derecha:",
+        "answer": "si hay suficiente espacio en el camino entre la acera y el vehículo",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "Si tiene luz verde, pero el tráfico está bloqueando la intersección:",
+        "answer": "manténgase fuera de la intersección y espere hasta que el tráfico se despeje",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "Esta señal blanca significa:",
+        "answer": "mire, escuche y prepárese para detenerse en el cruce, si es necesario",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "¿Cuál afirmación es verdadera sobre los motociclistas y los automovilistas?",
+        "answer": "los motociclistas tienen los mismos derechos y responsabilidades que otros automovilistas",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "Cuando cambia de carril o se incorpora a otro carril, usted:",
+        "answer": "necesita al menos un espacio de 4 segundos en el tráfico",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "Sus ruedas deben apuntar hacia adelante, a menos que esté:",
+        "answer": "estacionado en una colina o en una entrada inclinada",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "Conduce en el carril del extremo derecho de una autopista de cuatro carriles y nota gruesas líneas blancas discontinuas en el lado izquierdo de su carril. Está conduciendo en:",
+        "answer": "un carril de salida",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-tr-2",
+    "language": "tr",
+    "title": "DMV Bilgi Kartları - Set 2: Geçiş Hakkı ve Güvenlik",
+    "description": "Geçiş hakkı, güvenlik ve yol kuralları hakkında 15 temel DMV sorusu (Türkçe ve İngilizce).",
+    "category": "Bilgi Kartları",
+    "slug": "dmv-california-flashcards-tr-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "Yaya geçidi olmayan bir kavşakta geçiş hakkı kimindir?",
+        "answer": "yayaların her zaman geçiş hakkı vardır",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "Bir viraja veya tepe noktasına yaklaşıyorsanız ve ileride yolu net göremiyorsanız şunu yapmalısınız:",
+        "answer": "gerekirse durabilmek için yavaşlamalısınız",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "İlaçlarınızın sürüşünüzü nasıl etkilediğini bilmek kimin sorumluluğundadır?",
+        "answer": "sizin",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "Emniyet kemerleri ve çarpışmalar hakkında aşağıdakilerden hangisi doğrudur?",
+        "answer": "çoğu çarpışma türünde hayatta kalma şansınızı artırırlar",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "Yoğun sis nedeniyle sürüş sırasında ileride yolu göremiyorsanız ve sileceğiniz yardımcı olmuyorsa şunu yapmalısınız:",
+        "answer": "görüş düzelene kadar yoldan tamamen çıkmalısınız",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "Bu kırmızı ve beyaz işaret şu anlama gelir:",
+        "answer": "kendi yönünüzden yola giremezsiniz",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "Hareket halindeki bir araçta emniyet kemeri takmanız zorunludur:",
+        "answer": "ve takmamak trafik cezasıyla sonuçlanır",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "Bir kavşaktan geçerken siren ve yanıp sönen ışıklarla bir acil durum aracı yaklaşıyor. Şunu yapmalısınız:",
+        "answer": "kavşakta sağa çekip durmalısınız",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "Çift yönlü bir yoldasınız ve önünüzdeki araç sola, bir araba yoluna dönüyor. Sağdan yasal olarak şu durumda geçebilirsiniz:",
+        "answer": "kaldırım ile araç arasında yeterli yol varsa",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "Yeşil ışığınız var ancak trafik kavşağı kapatmışsa:",
+        "answer": "kavşağa girmeyin ve trafik açılana kadar bekleyin",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "Bu beyaz işaret şu anlama gelir:",
+        "answer": "geçitte bakın, dinleyin ve gerekirse durmaya hazırlanın",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "Motosikletliler ve sürücüler hakkında hangi ifade doğrudur?",
+        "answer": "motosikletlilerin diğer sürücülerle aynı hak ve sorumlulukları vardır",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "Şerit değiştirdiğinizde veya başka bir şeride katıldığınızda:",
+        "answer": "trafikte en az 4 saniyelik bir boşluğa ihtiyacınız vardır",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "Tekerlekleriniz, şu durumda olmadıkça düz ileriye doğru olmalıdır:",
+        "answer": "bir yokuşta veya eğimli bir araba yolunda park etmiş",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "Dört şeritli bir otoyolun en sağ şeridinde sürüyorsunuz ve şeridinizin sol tarafında kalın kesik beyaz çizgiler fark ediyorsunuz. Şurada sürüyorsunuz:",
+        "answer": "bir çıkış şeridi",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

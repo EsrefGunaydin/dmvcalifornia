@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-hy-2",
+    "language": "hy",
+    "title": "DMV ուսումնական քարտեր - Հավաքածու 2. Անցման իրավունք և անվտանգություն",
+    "description": "DMV-ի 15 հիմնական հարց՝ անցման իրավունքի, անվտանգության և ճանապարհային կանոնների մասին (հայերեն և անգլերեն)։",
+    "category": "Ուսումնական քարտեր",
+    "slug": "dmv-california-flashcards-hy-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "Ո՞վ ունի անցման իրավունք առանց հետիոտնային անցումների խաչմերուկում։",
+        "answer": "հետիոտները միշտ ունեն անցման իրավունք",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "Եթե մոտենում եք շրջադարձին կամ բլրի գագաթին և չունեք առջևի ճանապարհի հստակ տեսանելիություն, դուք պետք է՝",
+        "answer": "դանդաղեցնեք, որպեսզի անհրաժեշտության դեպքում կարողանաք կանգ առնել",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "Ո՞ւմ պարտականությունն է իմանալ, թե ձեր դեղամիջոցները ինչպես են ազդում ձեր վարման վրա։",
+        "answer": "ձերը",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "Հետևյալներից ո՞րն է ճիշտ անվտանգության գոտիների և բախումների մասին։",
+        "answer": "դրանք մեծացնում են ձեր գոյատևման հնարավորությունները բախումների մեծ մասի դեպքում",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "Եթե խիտ մառախուղի պատճառով վարելիս չեք տեսնում առջևի ճանապարհը, և ապակեմաքրիչները չեն օգնում, դուք պետք է՝",
+        "answer": "ամբողջովին դուրս գաք ճանապարհից, մինչև տեսանելիությունը բարելավվի",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "Այս կարմիր ու սպիտակ նշանը նշանակում է՝",
+        "answer": "դուք չեք կարող ձեր ուղղությունից մտնել ճանապարհ",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "Դուք պարտավոր եք կրել անվտանգության գոտի շարժվող ավտոմեքենայում՝",
+        "answer": "և չկրելը կհանգեցնի ճանապարհային տուգանքի",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "Դուք անցնում եք խաչմերուկ, և շտապ օգնության մեքենան մոտենում է շչակով ու թարթող լույսերով։ Դուք պետք է՝",
+        "answer": "խաչմերուկում մոտենաք աջ եզրին և կանգ առնեք",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "Դուք երկկողմանի ճանապարհին եք, և ձեր առջևի ավտոմեքենան ձախ է թեքվում դեպի մուտք։ Դուք կարող եք օրինական կերպով աջից առաջ անցնել՝",
+        "answer": "եթե եզրաքարի և ավտոմեքենայի միջև բավարար ճանապարհ կա",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "Եթե ունեք կանաչ լույս, բայց երթևեկությունը փակել է խաչմերուկը՝",
+        "answer": "մնացեք խաչմերուկից դուրս և սպասեք, մինչև երթևեկությունը բացվի",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "Այս սպիտակ նշանը նշանակում է՝",
+        "answer": "նայեք, լսեք և անհրաժեշտության դեպքում պատրաստ եղեք կանգ առնել անցման մոտ",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "Ո՞ր պնդումն է ճիշտ մոտոցիկլավարների և վարորդների մասին։",
+        "answer": "մոտոցիկլավարներն ունեն նույն իրավունքներն ու պարտականությունները, ինչ մյուս վարորդները",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "Երբ փոխում եք գոտին կամ միանում մեկ այլ գոտու, դուք՝",
+        "answer": "երթևեկության մեջ ունեք առնվազն 4 վայրկյան ընդմիջման կարիք",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "Ձեր անիվները պետք է ուղղված լինեն ուղիղ առաջ, եթե դուք՝",
+        "answer": "կայանված չեք բլրի կամ թեք մուտքի վրա",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "Դուք վարում եք քառագոտի ավտոմայրուղու ամենաաջ գոտում և նկատում եք հաստ կետագծված սպիտակ գծեր ձեր գոտու ձախ կողմում։ Դուք վարում եք՝",
+        "answer": "ելքի գոտում",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

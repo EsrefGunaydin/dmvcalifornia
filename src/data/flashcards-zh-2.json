@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-zh-2",
+    "language": "zh",
+    "title": "DMV 学习卡 - 第2组：路权与安全",
+    "description": "15 道关于路权、安全和道路规则的核心 DMV 题目（中文和英文）。",
+    "category": "学习卡",
+    "slug": "dmv-california-flashcards-zh-set-2",
+    "cards": [
+      {
+        "id": 16,
+        "question": "在没有人行横道的路口，谁拥有优先通行权？",
+        "answer": "行人始终拥有优先通行权",
+        "questionEn": "Who has the right-of-way at an intersection with no crosswalks?",
+        "answerEn": "pedestrians always have the right-of-way"
+      },
+      {
+        "id": 17,
+        "question": "如果您接近弯道或山顶，且看不清前方道路，您应该：",
+        "answer": "减速，以便必要时能够停车",
+        "questionEn": "If you approach a curve or the top of a hill and you do not have a clear view of the road ahead, you should:",
+        "answerEn": "slow down so you can stop if necessary"
+      },
+      {
+        "id": 18,
+        "question": "了解您的药物如何影响驾驶是谁的责任？",
+        "answer": "您自己",
+        "questionEn": "Whose responsibility is it to know how your medications affect your driving?",
+        "answerEn": "yours"
+      },
+      {
+        "id": 19,
+        "question": "关于安全带和碰撞，以下哪项是正确的？",
+        "answer": "在大多数类型的碰撞中，它们能提高您的生存几率",
+        "questionEn": "Which of the following is true about safety belts and collisions?",
+        "answerEn": "they increase your chances of survival in most types of collisions"
+      },
+      {
+        "id": 20,
+        "question": "如果因浓雾驾车时看不清前方道路，而雨刷也无济于事，您应该：",
+        "answer": "完全驶离道路，直到能见度改善",
+        "questionEn": "If you are unable to see the road ahead while driving because of heavy fog and your wipers do not help, you should:",
+        "answerEn": "pull off the road completely until visibility improves"
+      },
+      {
+        "id": 21,
+        "question": "这个红白相间的标志的含义是：",
+        "answer": "您不可从您所在方向驶入该道路",
+        "questionEn": "This red and white sign means:",
+        "answerEn": "you may not enter the road from your direction"
+      },
+      {
+        "id": 22,
+        "question": "在行驶的车辆中，您必须系好安全带：",
+        "answer": "否则将会收到交通罚单",
+        "questionEn": "You are required to wear your safety belt in a moving vehicle:",
+        "answerEn": "and failure to do so will result in a traffic ticket"
+      },
+      {
+        "id": 23,
+        "question": "您正在通过路口，一辆急救车鸣笛并闪着灯驶近。您应该：",
+        "answer": "在路口内靠右停车",
+        "questionEn": "You are crossing an intersection and an emergency vehicle is approaching with a siren and flashing lights. You should:",
+        "answerEn": "pull to the right in the intersection and stop"
+      },
+      {
+        "id": 24,
+        "question": "您在双向道路上，前方车辆正左转驶入车道入口。您可以合法地从右侧超车：",
+        "answer": "如果路缘与该车辆之间有足够的道路空间",
+        "questionEn": "You are on a two-way road and the vehicle ahead of you is turning left into a driveway. You may legally pass on the right:",
+        "answerEn": "if there is enough road between the curb and the vehicle"
+      },
+      {
+        "id": 25,
+        "question": "如果您是绿灯，但车流堵住了路口：",
+        "answer": "停在路口外，等到车流疏通",
+        "questionEn": "If you have a green light, but traffic is blocking the intersection:",
+        "answerEn": "stay out of the intersection and wait until traffic clears"
+      },
+      {
+        "id": 26,
+        "question": "这个白色标志的含义是：",
+        "answer": "查看、倾听，必要时准备在道口停车",
+        "questionEn": "This white sign means:",
+        "answerEn": "look, listen, and prepare to stop at the crossing, if necessary"
+      },
+      {
+        "id": 27,
+        "question": "关于摩托车手和机动车驾驶人，哪项陈述是正确的？",
+        "answer": "摩托车手与其他机动车驾驶人享有相同的权利和责任",
+        "questionEn": "Which statement is true about motorcyclists and motorists?",
+        "answerEn": "motorcyclists have the same rights/responsibilities as other motorists"
+      },
+      {
+        "id": 28,
+        "question": "当您变道或并入另一条车道时，您：",
+        "answer": "需要车流中至少 4 秒的间隔",
+        "questionEn": "When you change or merge with another lane, you:",
+        "answerEn": "need at least a 4-second gap in traffic"
+      },
+      {
+        "id": 29,
+        "question": "您的车轮应指向正前方，除非您：",
+        "answer": "停在坡道或倾斜的车道入口上",
+        "questionEn": "Your wheels should be pointed straight ahead, unless you are:",
+        "answerEn": "parked on a hill or sloping driveway"
+      },
+      {
+        "id": 30,
+        "question": "您在四车道高速公路最右侧车道行驶，注意到车道左侧有粗的白色虚线。您正行驶在：",
+        "answer": "出口车道",
+        "questionEn": "You are driving in the far right lane of a four-lane freeway and notice thick broken white lines on the left side of your lane. You are driving in:",
+        "answerEn": "an exit lane"
+      }
+    ]
+  }
+}

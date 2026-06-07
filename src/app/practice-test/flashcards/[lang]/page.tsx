@@ -4,11 +4,11 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
-import FlashcardDeck from '@/components/flashcards/FlashcardDeck';
 import {
   FLASHCARD_LANG_CODES,
   FLASHCARD_LANGUAGES,
   getFlashcardLang,
+  totalCards,
 } from '@/data/flashcards-i18n';
 
 // Only the languages defined in the registry are valid; anything else 404s.
@@ -27,19 +27,19 @@ export async function generateMetadata({
   const config = getFlashcardLang(lang);
   if (!config) return {};
 
-  const set = config.data.flashcards;
+  const title = `${config.nativeName} DMV Flashcards (${config.englishName}) | DMV California`;
   return {
-    title: `${set.title} | DMV California`,
-    description: set.description,
+    title,
+    description: config.labels.ctaSubtext,
     openGraph: {
-      title: set.title,
-      description: set.description,
+      title,
+      description: config.labels.ctaSubtext,
       type: 'website',
     },
   };
 }
 
-export default async function LanguageFlashcardsPage({
+export default async function LanguageFlashcardIndexPage({
   params,
 }: {
   params: Promise<{ lang: string }>;
@@ -48,10 +48,8 @@ export default async function LanguageFlashcardsPage({
   const config = getFlashcardLang(lang);
   if (!config) notFound();
 
-  const set = config.data.flashcards;
-  const { labels, dir, gradient, hubHref, flag } = config;
+  const { labels, dir, gradient, hubHref, flag, sets } = config;
 
-  // Other languages to suggest below the deck
   const otherLangs = FLASHCARD_LANG_CODES.filter((code) => code !== config.code).map(
     (code) => FLASHCARD_LANGUAGES[code]
   );
@@ -62,7 +60,7 @@ export default async function LanguageFlashcardsPage({
 
       <main className="min-h-screen bg-gray-50">
         {/* Hero Section */}
-        <section className={`bg-gradient-to-r ${gradient} text-white py-12`}>
+        <section className={`bg-gradient-to-r ${gradient} text-white py-14`}>
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <Link
@@ -75,24 +73,57 @@ export default async function LanguageFlashcardsPage({
                 {labels.backToTests}
               </Link>
               <div className="text-5xl mb-3">{flag}</div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4" dir={dir}>
-                {set.title}
+              <h1 className="text-3xl md:text-4xl font-bold mb-3" dir={dir}>
+                {labels.ctaHeading}
               </h1>
-              <p className="text-lg text-white/90 mb-2" dir={dir}>
-                {set.description}
+              <p className="text-lg text-white/90 mb-4 max-w-2xl mx-auto" dir={dir}>
+                {labels.ctaSubtext}
               </p>
-              <div className="flex items-center justify-center gap-3 text-sm mt-4">
-                <span className="bg-white/20 px-3 py-1 rounded-full">{labels.cardsCount}</span>
+              <div className="flex items-center justify-center gap-3 text-sm">
+                <span className="bg-white/20 px-3 py-1 rounded-full">
+                  {totalCards(config)} {labels.cards}
+                </span>
                 <span className="bg-white/20 px-3 py-1 rounded-full">{config.nativeName} + English</span>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Flashcard Section */}
+        {/* Set list */}
         <section className="py-12">
           <div className="container mx-auto px-4">
-            <FlashcardDeck cards={set.cards} title={set.title} dir={dir} labels={labels} />
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 text-center" dir={dir}>
+                {labels.chooseSet}
+              </h2>
+              <div className="grid md:grid-cols-2 gap-6">
+                {sets.map((set, i) => {
+                  const data = set.flashcards;
+                  return (
+                    <Link
+                      key={data.id}
+                      href={`/practice-test/flashcards/${config.code}/set-${i + 1}`}
+                      dir={dir}
+                      className="bg-white hover:bg-gray-50 rounded-xl p-6 border-2 border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all transform hover:-translate-y-1"
+                    >
+                      <div className="flex items-center justify-between mb-3 gap-3">
+                        <h3 className="font-bold text-lg text-gray-900">{data.title}</h3>
+                        <span className="flex-shrink-0 bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+                          {data.cards.length} {labels.cards}
+                        </span>
+                      </div>
+                      <p className="text-gray-600 text-sm mb-4">{data.description}</p>
+                      <span className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600">
+                        {labels.ctaButton}
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                      </span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </section>
 
