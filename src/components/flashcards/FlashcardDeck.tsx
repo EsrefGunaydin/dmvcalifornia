@@ -8,14 +8,49 @@ interface Flashcard {
   id: number;
   question: string;
   answer: string;
+  questionEn?: string;
+  answerEn?: string;
 }
+
+export interface FlashcardLabels {
+  question: string;
+  answer: string;
+  flipToAnswer: string;
+  flipToQuestion: string;
+  card: string;
+  of: string;
+  complete: string;
+  previous: string;
+  next: string;
+  reset: string;
+  startOver: string;
+}
+
+const DEFAULT_LABELS: FlashcardLabels = {
+  question: 'Question',
+  answer: 'Answer',
+  flipToAnswer: 'Click to see answer',
+  flipToQuestion: 'Click to see question',
+  card: 'Card',
+  of: 'of',
+  complete: 'Complete',
+  previous: 'Previous',
+  next: 'Next',
+  reset: 'Reset',
+  startOver: 'Start Over',
+};
 
 interface FlashcardDeckProps {
   cards: Flashcard[];
   title: string;
+  /** Text direction for the primary (native) card text. */
+  dir?: 'ltr' | 'rtl';
+  /** Localized UI strings. Falls back to English. */
+  labels?: Partial<FlashcardLabels>;
 }
 
-export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
+export default function FlashcardDeck({ cards, title, dir = 'ltr', labels }: FlashcardDeckProps) {
+  const t: FlashcardLabels = { ...DEFAULT_LABELS, ...labels };
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [showAnswer, setShowAnswer] = useState(false);
@@ -60,10 +95,10 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
       <div className="mb-6">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm font-medium text-gray-700">
-            Card {currentIndex + 1} of {cards.length}
+            {t.card} {currentIndex + 1} {t.of} {cards.length}
           </span>
           <span className="text-sm font-medium text-gray-700">
-            {Math.round(progress)}% Complete
+            {Math.round(progress)}% {t.complete}
           </span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
@@ -91,14 +126,19 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
             <div className="flex flex-col h-full justify-between">
               <div>
                 <div className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                  Question
+                  {t.question}
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 mb-3" dir={dir}>
                   {currentCard.question}
                 </h3>
+                {currentCard.questionEn && (
+                  <p className="text-base text-gray-500 italic" dir="ltr">
+                    {currentCard.questionEn}
+                  </p>
+                )}
               </div>
               <div className="text-center">
-                <p className="text-gray-500 text-sm">Click to see answer</p>
+                <p className="text-gray-500 text-sm">{t.flipToAnswer}</p>
               </div>
             </div>
           </div>
@@ -112,14 +152,19 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
             <div className="flex flex-col h-full justify-between">
               <div>
                 <div className="inline-block bg-white text-blue-700 px-3 py-1 rounded-full text-sm font-medium mb-4">
-                  Answer
+                  {t.answer}
                 </div>
-                <p className="text-2xl font-bold text-white leading-relaxed">
+                <p className="text-2xl font-bold text-white leading-relaxed mb-3" dir={dir}>
                   {currentCard.answer}
                 </p>
+                {currentCard.answerEn && (
+                  <p className="text-base text-white/80 italic" dir="ltr">
+                    {currentCard.answerEn}
+                  </p>
+                )}
               </div>
               <div className="text-center">
-                <p className="text-white/80 text-sm">Click to see question</p>
+                <p className="text-white/80 text-sm">{t.flipToQuestion}</p>
               </div>
             </div>
           </div>
@@ -136,14 +181,14 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          Previous
+          {t.previous}
         </button>
 
         <button
           onClick={handleReset}
           className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg font-medium hover:bg-gray-200 transition-colors"
         >
-          Reset
+          {t.reset}
         </button>
 
         {currentIndex === cards.length - 1 ? (
@@ -151,7 +196,7 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
             onClick={handleReset}
             className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg font-medium hover:bg-green-700 transition-colors"
           >
-            Start Over
+            {t.startOver}
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
@@ -161,7 +206,7 @@ export default function FlashcardDeck({ cards, title }: FlashcardDeckProps) {
             onClick={handleNext}
             className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
           >
-            Next
+            {t.next}
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

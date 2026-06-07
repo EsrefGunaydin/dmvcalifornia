@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import LanguageFlashcardCTA from '@/components/flashcards/LanguageFlashcardCTA';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import { languageAlternates } from '@/lib/language-alternates';
 
@@ -134,6 +135,12 @@ export default function ChineseTestPage() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        {/* Flashcards CTA */}
+        <section className="container mx-auto px-4 pb-12">
+          <div className="max-w-6xl mx-auto">
+            <LanguageFlashcardCTA lang="zh" />
           </div>
         </section>
       </main>

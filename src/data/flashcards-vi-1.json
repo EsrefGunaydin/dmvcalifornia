@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-vi-1",
+    "language": "vi",
+    "title": "Thẻ ghi nhớ DMV - Bộ 1: Quy tắc Thiết yếu",
+    "description": "15 câu hỏi và câu trả lời thiết yếu của kỳ thi DMV California để chuẩn bị cho bài thi lái xe (tiếng Việt và tiếng Anh).",
+    "category": "Thẻ ghi nhớ",
+    "slug": "dmv-california-flashcards-vi-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "Người từ 21 tuổi trở lên lái xe với nồng độ cồn trong máu (BAC) bằng ____ hoặc cao hơn là bất hợp pháp.",
+        "answer": "0,08% - tám phần trăm của một phần trăm",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "Bạn phải thông báo cho DMV trong vòng 5 ngày nếu bạn:",
+        "answer": "bán hoặc chuyển nhượng xe của mình",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "Bạn đang chuẩn bị rẽ phải. Bạn nên:",
+        "answer": "bật xi-nhan trong 100 feet cuối cùng trước khi rẽ",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "Đối với đèn giao thông nào sau đây bạn luôn phải dừng xe?",
+        "answer": "đèn đỏ cố định, đèn đỏ nhấp nháy và đèn giao thông tắt hẳn",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "Khi nào việc dùng điện thoại di động mà không có thiết bị rảnh tay khi lái xe là hợp pháp?",
+        "answer": "khi gọi điện để xin trợ giúp khẩn cấp",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "Khi đèn tín hiệu giao thông tại giao lộ không hoạt động, bạn nên:",
+        "answer": "dừng lại hoàn toàn rồi đi tiếp khi an toàn",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "Bạn nên điều chỉnh gương chiếu hậu và gương bên:",
+        "answer": "trước khi bắt đầu lái xe",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "Hút thuốc trong xe khi có người dưới 18 tuổi hiện diện là:",
+        "answer": "bất hợp pháp mọi lúc",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "Bạn phải nộp báo cáo bằng văn bản về tai nạn giao thông xảy ra ở California (SR 1) cho DMV nếu bạn:",
+        "answer": "liên quan đến một vụ va chạm và thiệt hại hơn $750",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "Đó là thói quen tốt khi bật xi-nhan liên tục trong 100 feet cuối cùng trước khi rẽ tại giao lộ:",
+        "answer": "ngay cả khi bạn không thấy bất kỳ xe nào khác xung quanh",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "Khi chia sẻ đường với xe điện nhẹ (light rail):",
+        "answer": "không bao giờ rẽ phía trước một xe điện nhẹ đang đến gần",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "Bạn đang lái xe ban đêm trên con đường thiếu ánh sáng và dùng đèn pha. Bạn nên hạ đèn khi ở trong phạm vi 500 feet của:",
+        "answer": "một xe đang đến gần bạn từ phía sau",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "Chừa thêm khoảng cách phía trước xe của bạn khi đi theo sau:",
+        "answer": "một xe buýt du lịch lớn",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "Ngay cả khi bạn biết xe của mình có thể vào khúc cua gấp ở tốc độ giới hạn hợp pháp, bạn vẫn nên giảm tốc độ vì:",
+        "answer": "phía trước có thể có xe chết máy hoặc vụ va chạm mà bạn không thể nhìn thấy",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "Bạn đậu xe sát lề trên một con đường hai chiều bằng phẳng. Trước khi ra khỏi xe, bạn nên:",
+        "answer": "quan sát xem có xe hơi hoặc xe đạp ở phía giao thông của xe bạn không",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-tr-1",
+    "language": "tr",
+    "title": "DMV Bilgi Kartları - Set 1: Temel Kurallar",
+    "description": "California DMV sürücü sınavına hazırlık için 15 temel soru ve cevap (Türkçe ve İngilizce).",
+    "category": "Bilgi Kartları",
+    "slug": "dmv-california-flashcards-tr-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "21 yaşında veya daha büyük bir kişinin kandaki alkol konsantrasyonu (BAC) ____ veya daha yüksekken araç kullanması yasa dışıdır.",
+        "answer": "%0,08 - yüzde sıfır virgül sekiz",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "Aşağıdaki durumda DMV'yi 5 gün içinde bilgilendirmelisiniz:",
+        "answer": "aracınızı sattığınızda veya devrettiğinizde",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "Sağa dönüş yapmaya hazırlanıyorsunuz. Şunu yapmalısınız:",
+        "answer": "dönüşten önceki son 100 fit boyunca sinyal vermelisiniz",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "Aşağıdaki trafik ışıklarından hangisinde aracınızı her zaman durdurmalısınız?",
+        "answer": "sabit kırmızı ışıklar, yanıp sönen kırmızı ışıklar ve tamamen sönmüş trafik sinyalleri",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "Araç kullanırken eller serbest cihaz olmadan cep telefonu kullanmak ne zaman yasaldır?",
+        "answer": "acil yardım için arama yaparken",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "Bir kavşakta trafik ışığı çalışmadığında şunu yapmalısınız:",
+        "answer": "tamamen durup güvenli olduğunda devam etmelisiniz",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "Dikiz aynanızı ve yan aynalarınızı ne zaman ayarlamalısınız:",
+        "answer": "sürmeye başlamadan önce",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "18 yaşından küçük bir kişi varken araç içinde sigara içmek:",
+        "answer": "her zaman yasa dışıdır",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "California'da meydana gelen bir trafik kazasını (SR 1) DMV'ye yazılı olarak şu durumda bildirmelisiniz:",
+        "answer": "bir çarpışmaya karıştıysanız ve 750 dolardan fazla hasar varsa",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "Bir kavşakta dönmeden önceki son 100 fit boyunca sürekli sinyal vermek iyi bir alışkanlıktır:",
+        "answer": "etrafta başka araç görmeseniz bile",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "Hafif raylı bir taşıtla yolu paylaşırken:",
+        "answer": "yaklaşan hafif raylı bir taşıtın önünde asla dönmeyin",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "Gece az aydınlatılmış bir caddede uzun farlarla araç kullanıyorsunuz. Şuna 500 fit yaklaştığınızda farlarınızı kısmalısınız:",
+        "answer": "arkanızdan yaklaşan bir araca",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "Şunu takip ederken aracınızın önünde fazladan boşluk bırakın:",
+        "answer": "büyük bir tur otobüsü",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "Aracınızın keskin bir virajı yasal hız sınırında alabileceğini bilseniz bile yine de yavaşlamalısınız çünkü:",
+        "answer": "ileride göremediğiniz arızalı bir araç veya çarpışma olabilir",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "Aracınızı düz, çift yönlü bir caddede kaldırım kenarına park ediyorsunuz. Araçtan inmeden önce şunu yapmalısınız:",
+        "answer": "aracınızın trafik tarafında araç veya bisiklet olup olmadığına bakın",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-pa-1",
+    "language": "pa",
+    "title": "DMV ਫਲੈਸ਼ਕਾਰਡ - ਸੈੱਟ 1: ਜ਼ਰੂਰੀ ਨਿਯਮ",
+    "description": "ਕੈਲੀਫੋਰਨੀਆ DMV ਡਰਾਈਵਿੰਗ ਟੈਸਟ ਦੀ ਤਿਆਰੀ ਲਈ 15 ਜ਼ਰੂਰੀ ਪ੍ਰਸ਼ਨ ਅਤੇ ਜਵਾਬ (ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ)।",
+    "category": "ਫਲੈਸ਼ਕਾਰਡ",
+    "slug": "dmv-california-flashcards-pa-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "21 ਸਾਲ ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ ਉਮਰ ਦੇ ਵਿਅਕਤੀ ਲਈ ____ ਜਾਂ ਇਸ ਤੋਂ ਵੱਧ ਖੂਨ ਵਿੱਚ ਅਲਕੋਹਲ ਦੀ ਮਾਤਰਾ (BAC) ਨਾਲ ਗੱਡੀ ਚਲਾਉਣਾ ਗੈਰ-ਕਾਨੂੰਨੀ ਹੈ।",
+        "answer": "0.08% - ਇੱਕ ਫੀਸਦੀ ਦਾ ਅੱਠ ਸੌਵਾਂ ਹਿੱਸਾ",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "ਤੁਹਾਨੂੰ 5 ਦਿਨਾਂ ਦੇ ਅੰਦਰ DMV ਨੂੰ ਸੂਚਿਤ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ ਜੇਕਰ ਤੁਸੀਂ:",
+        "answer": "ਆਪਣਾ ਵਾਹਨ ਵੇਚਦੇ ਜਾਂ ਤਬਦੀਲ ਕਰਦੇ ਹੋ",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "ਤੁਸੀਂ ਸੱਜੇ ਮੁੜਨ ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਹੋ। ਤੁਹਾਨੂੰ ਕਰਨਾ ਚਾਹੀਦਾ ਹੈ:",
+        "answer": "ਮੁੜਨ ਤੋਂ ਪਹਿਲਾਂ ਆਖਰੀ 100 ਫੁੱਟ ਦੌਰਾਨ ਸਿਗਨਲ ਦੇਣਾ",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "ਹੇਠ ਲਿਖੀਆਂ ਟ੍ਰੈਫਿਕ ਲਾਈਟਾਂ ਵਿੱਚੋਂ ਕਿਸ ਲਈ ਤੁਹਾਨੂੰ ਆਪਣਾ ਵਾਹਨ ਹਮੇਸ਼ਾ ਰੋਕਣਾ ਚਾਹੀਦਾ ਹੈ?",
+        "answer": "ਲਗਾਤਾਰ ਲਾਲ ਬੱਤੀਆਂ, ਝਪਕਦੀਆਂ ਲਾਲ ਬੱਤੀਆਂ ਅਤੇ ਪੂਰੀ ਤਰ੍ਹਾਂ ਬੰਦ ਟ੍ਰੈਫਿਕ ਸਿਗਨਲ",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "ਗੱਡੀ ਚਲਾਉਂਦੇ ਸਮੇਂ ਹੈਂਡਜ਼-ਫ੍ਰੀ ਡਿਵਾਈਸ ਤੋਂ ਬਿਨਾਂ ਮੋਬਾਈਲ ਫੋਨ ਵਰਤਣਾ ਕਦੋਂ ਕਾਨੂੰਨੀ ਹੈ?",
+        "answer": "ਜਦੋਂ ਐਮਰਜੈਂਸੀ ਮਦਦ ਲਈ ਕਾਲ ਕਰ ਰਹੇ ਹੋ",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "ਜਦੋਂ ਕਿਸੇ ਚੌਰਾਹੇ 'ਤੇ ਟ੍ਰੈਫਿਕ ਸਿਗਨਲ ਲਾਈਟ ਕੰਮ ਨਹੀਂ ਕਰ ਰਹੀ ਹੋਵੇ, ਤਾਂ ਤੁਹਾਨੂੰ ਚਾਹੀਦਾ ਹੈ:",
+        "answer": "ਪੂਰੀ ਤਰ੍ਹਾਂ ਰੁਕਣਾ ਅਤੇ ਫਿਰ ਸੁਰੱਖਿਅਤ ਹੋਣ 'ਤੇ ਅੱਗੇ ਵਧਣਾ",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "ਤੁਹਾਨੂੰ ਆਪਣੇ ਪਿਛਲੇ ਅਤੇ ਪਾਸੇ ਵਾਲੇ ਸ਼ੀਸ਼ੇ ਕਦੋਂ ਠੀਕ ਕਰਨੇ ਚਾਹੀਦੇ ਹਨ:",
+        "answer": "ਗੱਡੀ ਚਲਾਉਣਾ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "ਜਦੋਂ 18 ਸਾਲ ਤੋਂ ਘੱਟ ਉਮਰ ਦਾ ਕੋਈ ਵਿਅਕਤੀ ਮੌਜੂਦ ਹੋਵੇ ਤਾਂ ਵਾਹਨ ਦੇ ਅੰਦਰ ਸਿਗਰਟ ਪੀਣਾ:",
+        "answer": "ਹਰ ਸਮੇਂ ਗੈਰ-ਕਾਨੂੰਨੀ ਹੈ",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "ਤੁਹਾਨੂੰ ਕੈਲੀਫੋਰਨੀਆ ਵਿੱਚ ਹੋਏ ਟ੍ਰੈਫਿਕ ਹਾਦਸੇ ਦੀ ਲਿਖਤੀ ਰਿਪੋਰਟ (SR 1) DMV ਨੂੰ ਦੇਣੀ ਚਾਹੀਦੀ ਹੈ ਜੇਕਰ ਤੁਸੀਂ:",
+        "answer": "ਕਿਸੇ ਟੱਕਰ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋ ਅਤੇ $750 ਤੋਂ ਵੱਧ ਦਾ ਨੁਕਸਾਨ ਹੈ",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "ਚੌਰਾਹੇ 'ਤੇ ਮੁੜਨ ਤੋਂ ਪਹਿਲਾਂ ਆਖਰੀ 100 ਫੁੱਟ ਦੌਰਾਨ ਲਗਾਤਾਰ ਸਿਗਨਲ ਦੇਣਾ ਇੱਕ ਚੰਗੀ ਆਦਤ ਹੈ:",
+        "answer": "ਭਾਵੇਂ ਤੁਹਾਨੂੰ ਆਲੇ-ਦੁਆਲੇ ਕੋਈ ਹੋਰ ਵਾਹਨ ਨਾ ਦਿਖਾਈ ਦੇਵੇ",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "ਲਾਈਟ ਰੇਲ ਵਾਹਨ ਨਾਲ ਸੜਕ ਸਾਂਝੀ ਕਰਦੇ ਸਮੇਂ:",
+        "answer": "ਨੇੜੇ ਆ ਰਹੇ ਲਾਈਟ ਰੇਲ ਵਾਹਨ ਦੇ ਅੱਗੇ ਕਦੇ ਨਾ ਮੁੜੋ",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "ਤੁਸੀਂ ਰਾਤ ਨੂੰ ਮੱਧਮ ਰੌਸ਼ਨੀ ਵਾਲੀ ਸੜਕ 'ਤੇ ਹਾਈ ਬੀਮ ਵਰਤਦੇ ਹੋਏ ਗੱਡੀ ਚਲਾ ਰਹੇ ਹੋ। ਤੁਹਾਨੂੰ ਆਪਣੀਆਂ ਲਾਈਟਾਂ ਮੱਧਮ ਕਰਨੀਆਂ ਚਾਹੀਦੀਆਂ ਹਨ ਜਦੋਂ ਤੁਸੀਂ ਇਸ ਤੋਂ 500 ਫੁੱਟ ਦੇ ਅੰਦਰ ਹੋਵੋ:",
+        "answer": "ਪਿੱਛੇ ਤੋਂ ਤੁਹਾਡੇ ਨੇੜੇ ਆ ਰਹੇ ਵਾਹਨ",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "ਇਸ ਦੇ ਪਿੱਛੇ ਚੱਲਦੇ ਸਮੇਂ ਆਪਣੇ ਵਾਹਨ ਦੇ ਅੱਗੇ ਵਾਧੂ ਥਾਂ ਛੱਡੋ:",
+        "answer": "ਇੱਕ ਵੱਡੀ ਟੂਰ ਬੱਸ",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "ਭਾਵੇਂ ਤੁਹਾਨੂੰ ਪਤਾ ਹੋਵੇ ਕਿ ਤੁਹਾਡਾ ਵਾਹਨ ਕਾਨੂੰਨੀ ਗਤੀ ਸੀਮਾ 'ਤੇ ਤਿੱਖੇ ਮੋੜ ਨੂੰ ਪਾਰ ਕਰ ਸਕਦਾ ਹੈ, ਫਿਰ ਵੀ ਤੁਹਾਨੂੰ ਹੌਲੀ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਕਿਉਂਕਿ:",
+        "answer": "ਅੱਗੇ ਕੋਈ ਖੜ੍ਹੀ ਕਾਰ ਜਾਂ ਟੱਕਰ ਹੋ ਸਕਦੀ ਹੈ ਜੋ ਤੁਸੀਂ ਨਹੀਂ ਦੇਖ ਸਕਦੇ",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "ਤੁਸੀਂ ਆਪਣੀ ਕਾਰ ਨੂੰ ਇੱਕ ਪੱਧਰੀ ਦੋ-ਪਾਸੀ ਸੜਕ 'ਤੇ ਕਰਬ ਕੋਲ ਪਾਰਕ ਕਰਦੇ ਹੋ। ਕਾਰ ਤੋਂ ਬਾਹਰ ਨਿਕਲਣ ਤੋਂ ਪਹਿਲਾਂ ਤੁਹਾਨੂੰ ਚਾਹੀਦਾ ਹੈ:",
+        "answer": "ਆਪਣੇ ਵਾਹਨ ਦੇ ਟ੍ਰੈਫਿਕ ਵਾਲੇ ਪਾਸੇ ਕਾਰਾਂ ਜਾਂ ਸਾਈਕਲਾਂ ਨੂੰ ਦੇਖਣਾ",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

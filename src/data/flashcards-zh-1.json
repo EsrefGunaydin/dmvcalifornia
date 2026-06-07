@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-zh-1",
+    "language": "zh",
+    "title": "DMV 学习卡 - 第1组：基本规则",
+    "description": "加州 DMV 驾驶考试备考的 15 道核心题目和答案（中文和英文）。",
+    "category": "学习卡",
+    "slug": "dmv-california-flashcards-zh-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "年满 21 周岁或以上的人在血液酒精浓度 (BAC) 达到 ____ 或更高时驾车是违法的。",
+        "answer": "0.08% - 百分之零点零八",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "在以下情况下，您必须在 5 天内通知 DMV：",
+        "answer": "出售或转让您的车辆时",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "您正准备右转。您应该：",
+        "answer": "在转弯前最后 100 英尺内打转向灯",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "遇到以下哪种交通信号灯时，您必须始终停车？",
+        "answer": "常亮的红灯、闪烁的红灯以及完全熄灭的交通信号灯",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "在驾车时，什么情况下可以合法地不使用免提设备拨打手机？",
+        "answer": "在拨打紧急求助电话时",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "当路口的交通信号灯失灵时，您应该：",
+        "answer": "完全停车，然后在安全时再通行",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "您应该在以下时间调整后视镜和侧视镜：",
+        "answer": "在开始驾驶之前",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "当车内有未满 18 岁的人时，在车内吸烟：",
+        "answer": "在任何时候都是违法的",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "在以下情况下，您必须向 DMV 提交在加州发生的交通事故书面报告 (SR 1)：",
+        "answer": "您卷入碰撞事故且损失超过 750 美元",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "在路口转弯前的最后 100 英尺持续打转向灯是一个好习惯：",
+        "answer": "即使您周围看不到其他车辆",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "与轻轨车辆共用道路时：",
+        "answer": "切勿在驶近的轻轨车辆前方转弯",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "您在夜间一条光线昏暗的街道上使用远光灯驾驶。当您距离以下情况 500 英尺以内时，应将灯光调暗：",
+        "answer": "从后方驶近您的车辆",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "跟随以下车辆时，请在车前预留额外的空间：",
+        "answer": "大型旅游巴士",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "即使您知道自己的车辆能以法定速度通过急弯，您仍应减速，因为：",
+        "answer": "前方可能有您看不到的抛锚车辆或碰撞事故",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "您将车停在一条平坦的双向街道路边。下车前，您应该：",
+        "answer": "查看车辆靠车流一侧是否有车辆或自行车",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

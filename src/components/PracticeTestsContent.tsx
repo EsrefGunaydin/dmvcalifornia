@@ -207,6 +207,32 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
         Showing {filteredQuizzes.length} of {quizzes.length} tests
       </div>
 
+      {/* Flashcards callout — shown when a single language is selected so the
+          page stays useful even when that language has only a few tests */}
+      {filterLanguage !== 'all' && (
+        <Link
+          href={filterLanguage === 'en'
+            ? '/practice-test/flashcards'
+            : `/practice-test/flashcards/${filterLanguage}`}
+          className="mb-6 flex items-center justify-between gap-4 rounded-xl border-2 border-primary/20 bg-primary/5 p-5 hover:bg-primary/10 transition-colors group"
+        >
+          <div className="flex items-center gap-4">
+            <span className="text-3xl">{LANGUAGE_FLAG[filterLanguage]}</span>
+            <div>
+              <p className="font-bold text-gray-900">
+                {LANGUAGE_OPTIONS.find(o => o.value === filterLanguage)?.label} — Flashcards
+              </p>
+              <p className="text-sm text-gray-600">
+                Study essential DMV questions with interactive flashcards in your language.
+              </p>
+            </div>
+          </div>
+          <span className="text-primary font-semibold whitespace-nowrap group-hover:underline">
+            Study now →
+          </span>
+        </Link>
+      )}
+
       {/* Quiz Display */}
       {viewMode === 'grid' ? (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

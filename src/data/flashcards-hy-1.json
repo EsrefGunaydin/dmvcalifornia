@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-hy-1",
+    "language": "hy",
+    "title": "DMV ուսումնական քարտեր - Հավաքածու 1. Հիմնական կանոններ",
+    "description": "Կալիֆոռնիայի DMV վարորդական քննությանը նախապատրաստվելու 15 հիմնական հարց ու պատասխան (հայերեն և անգլերեն)։",
+    "category": "Ուսումնական քարտեր",
+    "slug": "dmv-california-flashcards-hy-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "21 տարեկան կամ ավելի մեծ անձի համար անօրինական է վարել ավտոմեքենան, երբ արյան մեջ ալկոհոլի խտությունը (BAC) ____ կամ ավելի բարձր է։",
+        "answer": "0.08% - մեկ տոկոսի ութ հարյուրերորդական մաս",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "Դուք պետք է 5 օրվա ընթացքում տեղեկացնեք DMV-ին, եթե՝",
+        "answer": "վաճառում կամ փոխանցում եք ձեր ավտոմեքենան",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "Դուք պատրաստվում եք աջ թեքվել։ Դուք պետք է՝",
+        "answer": "ազդանշան տաք թեքվելուց առաջ վերջին 100 ֆուտի ընթացքում",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "Հետևյալ լուսացույցներից ո՞ր դեպքում պետք է միշտ կանգնեցնեք ձեր ավտոմեքենան։",
+        "answer": "կարմիր անշարժ լույսեր, թարթող կարմիր լույսեր և ամբողջովին հանգած լուսացույցներ",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "Ե՞րբ է օրինական վարելու ընթացքում բջջային հեռախոս օգտագործել առանց ձեռքերն ազատ թողնող սարքի։",
+        "answer": "երբ զանգ եք կատարում շտապ օգնության համար",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "Երբ խաչմերուկում լուսացույցը չի աշխատում, դուք պետք է՝",
+        "answer": "ամբողջովին կանգ առնեք, ապա շարժվեք, երբ անվտանգ է",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "Դուք պետք է կարգավորեք ձեր հետևի և կողային հայելիները՝",
+        "answer": "նախքան վարելը սկսելը",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "Ավտոմեքենայի ներսում ծխելը, երբ ներկա է 18 տարեկանից փոքր անձ՝",
+        "answer": "միշտ անօրինական է",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "Դուք պետք է Կալիֆոռնիայում տեղի ունեցած ճանապարհային պատահարի մասին գրավոր հաշվետվություն (SR 1) ներկայացնեք DMV-ին, եթե՝",
+        "answer": "ներգրավված եք բախման մեջ, և վնասը գերազանցում է $750-ը",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "Լավ սովորություն է խաչմերուկում թեքվելուց առաջ վերջին 100 ֆուտի ընթացքում շարունակաբար ազդանշան տալը՝",
+        "answer": "նույնիսկ եթե ձեր շուրջը այլ ավտոմեքենաներ չեք տեսնում",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "Թեթև ռելսային տրանսպորտի հետ ճանապարհը կիսելիս՝",
+        "answer": "երբեք մի՛ թեքվեք մոտեցող թեթև ռելսային տրանսպորտի դիմացից",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "Գիշերը վատ լուսավորված փողոցում վարում եք՝ օգտագործելով հեռահար լույսերը։ Դուք պետք է նվազեցնեք ձեր լույսերը, երբ 500 ֆուտի սահմաններում եք՝",
+        "answer": "ձեր հետևից մոտեցող ավտոմեքենայից",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "Թողեք լրացուցիչ տարածություն ձեր ավտոմեքենայի դիմաց, երբ հետևում եք՝",
+        "answer": "մեծ զբոսաշրջային ավտոբուսի",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "Նույնիսկ եթե գիտեք, որ ձեր ավտոմեքենան կարող է կտրուկ շրջադարձն անցնել թույլատրելի արագությամբ, դուք պետք է այնուամենայնիվ դանդաղեցնեք, քանի որ՝",
+        "answer": "առջևում կարող է լինել կանգնած մեքենա կամ բախում, որը չեք տեսնում",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "Դուք կայանում եք ձեր մեքենան մայթեզրին հարթ երկկողմանի փողոցում։ Մեքենայից դուրս գալուց առաջ դուք պետք է՝",
+        "answer": "ստուգեք՝ արդյոք ձեր մեքենայի երթևեկության կողմում մեքենաներ կամ հեծանիվներ կան",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

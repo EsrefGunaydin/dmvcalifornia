@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import Link from 'next/link';
+import { FLASHCARD_LANG_CODES, FLASHCARD_LANGUAGES } from '@/data/flashcards-i18n';
 
 export const metadata: Metadata = {
   title: 'DMV California Practice Flashcards | Study for Your Driving Test',
@@ -199,8 +200,40 @@ export default function FlashcardsPage() {
           </div>
         </section>
 
-        {/* How It Works */}
+        {/* Study in Your Language */}
         <section className="py-12 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl font-bold text-gray-900 mb-3 text-center">
+                Study Flashcards in Your Language
+              </h2>
+              <p className="text-gray-600 mb-8 text-center max-w-2xl mx-auto">
+                Each set shows the question and answer in your language alongside the English, so you
+                learn the official DMV terms in both.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                {FLASHCARD_LANG_CODES.map((code) => {
+                  const lang = FLASHCARD_LANGUAGES[code];
+                  return (
+                    <Link
+                      key={code}
+                      href={`/practice-test/flashcards/${code}`}
+                      className="bg-gray-50 hover:bg-gray-100 rounded-xl p-4 border-2 border-gray-200 hover:border-gray-300 transition-all transform hover:-translate-y-0.5 flex flex-col items-center text-center gap-1"
+                    >
+                      <span className="text-3xl">{lang.flag}</span>
+                      <span className="font-bold text-gray-900">{lang.nativeName}</span>
+                      <span className="text-xs text-gray-500">{lang.englishName}</span>
+                      <span className="mt-1 text-xs font-medium text-blue-600">{lang.labels.cardsCount}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* How It Works */}
+        <section className="py-12 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">

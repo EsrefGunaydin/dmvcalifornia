@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-es-1",
+    "language": "es",
+    "title": "Tarjetas de Estudio DMV - Conjunto 1: Reglas Esenciales",
+    "description": "15 preguntas y respuestas esenciales del DMV de California para preparar el examen de manejo (español e inglés).",
+    "category": "Tarjetas de Estudio",
+    "slug": "dmv-california-flashcards-es-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "Es ilegal que una persona de 21 años de edad o mayor conduzca con una concentración de alcohol en la sangre (BAC) de ____ o más.",
+        "answer": "0.08% - ocho centésimas de uno por ciento",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "Debe notificar al DMV dentro de los 5 días si usted:",
+        "answer": "vende o transfiere su vehículo",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "Se está preparando para girar a la derecha. Usted debe:",
+        "answer": "señalizar durante los últimos 100 pies antes de girar",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "¿Para cuáles de los siguientes semáforos debe siempre detener su vehículo?",
+        "answer": "luces rojas fijas, luces rojas intermitentes y semáforos apagados",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "¿Cuándo es legal usar un teléfono celular sin un dispositivo de manos libres mientras conduce?",
+        "answer": "cuando hace una llamada para pedir ayuda de emergencia",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "Cuando un semáforo no funciona en una intersección, usted debe:",
+        "answer": "detenerse por completo y luego avanzar cuando sea seguro",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "Debe ajustar sus espejos retrovisor y laterales:",
+        "answer": "antes de comenzar a conducir",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "Fumar dentro de un vehículo cuando hay presente una persona menor de 18 años es:",
+        "answer": "ilegal en todo momento",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "Debe presentar un informe escrito de un accidente de tránsito ocurrido en California (SR 1) al DMV si usted:",
+        "answer": "está involucrado en una colisión y hay más de $750 en daños",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "Es un buen hábito señalizar continuamente durante los últimos 100 pies antes de girar en una intersección:",
+        "answer": "incluso si no ve ningún otro vehículo alrededor",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "Al compartir la vía con un tren ligero (light rail):",
+        "answer": "nunca gire frente a un tren ligero que se aproxima",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "Conduce de noche en una calle poco iluminada y usa las luces altas. Debe bajar las luces cuando esté a 500 pies de:",
+        "answer": "un vehículo que se aproxima por detrás",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "Deje espacio adicional delante de su vehículo cuando siga a:",
+        "answer": "un autobús turístico grande",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "Aunque sepa que su vehículo puede tomar una curva cerrada al límite de velocidad legal, debe reducir la velocidad porque:",
+        "answer": "puede haber un auto detenido o una colisión más adelante que no puede ver",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "Estaciona su auto junto a la acera en una calle plana de doble sentido. Antes de bajar del auto, debe:",
+        "answer": "fijarse si hay autos o bicicletas del lado del tráfico de su vehículo",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

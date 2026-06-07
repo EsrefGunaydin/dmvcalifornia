@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-fa-1",
+    "language": "fa",
+    "title": "کارت‌های آموزشی DMV - مجموعه ۱: قوانین اساسی",
+    "description": "۱۵ سؤال و پاسخ اساسی آزمون DMV کالیفرنیا برای آمادگی آزمون رانندگی (فارسی و انگلیسی).",
+    "category": "کارت‌های آموزشی",
+    "slug": "dmv-california-flashcards-fa-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "برای فردی که ۲۱ سال یا بیشتر دارد، رانندگی با غلظت الکل خون (BAC) برابر با ____ یا بالاتر غیرقانونی است.",
+        "answer": "۰٫۰۸٪ - هشت صدم یک درصد",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "در صورت انجام موارد زیر باید ظرف ۵ روز به DMV اطلاع دهید:",
+        "answer": "فروش یا انتقال خودروی خود",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "در حال آماده شدن برای گردش به راست هستید. باید:",
+        "answer": "در ۱۰۰ فوت آخر پیش از گردش راهنما بزنید",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "در کدام یک از چراغ‌های راهنمایی زیر همیشه باید خودرو را متوقف کنید؟",
+        "answer": "چراغ قرمز ثابت، چراغ قرمز چشمک‌زن و چراغ‌های راهنمایی کاملاً خاموش",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "چه زمانی استفاده از تلفن همراه بدون دستگاه هندزفری هنگام رانندگی قانونی است؟",
+        "answer": "هنگام برقراری تماس برای کمک اضطراری",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "وقتی چراغ راهنمایی در یک تقاطع کار نمی‌کند، باید:",
+        "answer": "به‌طور کامل توقف کنید و سپس وقتی ایمن بود حرکت کنید",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "باید آینه‌های دید عقب و بغل خود را در چه زمانی تنظیم کنید:",
+        "answer": "پیش از شروع رانندگی",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "سیگار کشیدن داخل خودرو هنگامی که فردی کمتر از ۱۸ سال حضور دارد:",
+        "answer": "در همه حال غیرقانونی است",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "در صورت وقوع موارد زیر باید گزارش کتبی تصادف رانندگی در کالیفرنیا (SR 1) را به DMV ارائه دهید:",
+        "answer": "در تصادفی درگیر شده‌اید و خسارت بیش از ۷۵۰ دلار است",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "زدن مداوم راهنما در ۱۰۰ فوت آخر پیش از گردش در تقاطع عادت خوبی است:",
+        "answer": "حتی اگر هیچ خودروی دیگری در اطراف نبینید",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "هنگام استفاده مشترک از جاده با قطار سبک شهری (لایت ریل):",
+        "answer": "هرگز جلوی قطار سبک شهری در حال نزدیک شدن گردش نکنید",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "شب در خیابانی کم‌نور با نور بالا رانندگی می‌کنید. باید نور خود را وقتی در فاصله ۵۰۰ فوتی از مورد زیر هستید کم کنید:",
+        "answer": "خودرویی که از پشت سر به شما نزدیک می‌شود",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "هنگام حرکت پشت سر مورد زیر فاصله بیشتری جلوی خودروی خود بگذارید:",
+        "answer": "یک اتوبوس گردشگری بزرگ",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "حتی اگر می‌دانید خودرویتان می‌تواند یک پیچ تند را با سرعت مجاز قانونی طی کند، باز هم باید سرعت را کم کنید، زیرا:",
+        "answer": "ممکن است خودروی متوقف‌شده یا تصادفی در جلو باشد که نمی‌توانید آن را ببینید",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "خودروی خود را کنار جدول در خیابانی مسطح و دوطرفه پارک می‌کنید. پیش از خروج از خودرو باید:",
+        "answer": "به دنبال خودروها یا دوچرخه‌ها در سمت عبور و مرور خودروی خود بگردید",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

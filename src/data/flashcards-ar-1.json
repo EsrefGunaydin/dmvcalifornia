@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-ar-1",
+    "language": "ar",
+    "title": "بطاقات تعليمية DMV - المجموعة 1: القواعد الأساسية",
+    "description": "15 سؤالاً وجواباً أساسياً من اختبار DMV في كاليفورنيا للتحضير لاختبار القيادة (بالعربية والإنجليزية).",
+    "category": "بطاقات تعليمية",
+    "slug": "dmv-california-flashcards-ar-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "من غير القانوني لشخص يبلغ من العمر 21 عاماً أو أكثر أن يقود وتركيز الكحول في دمه (BAC) يساوي ____ أو أعلى.",
+        "answer": "0.08% - ثمانية أجزاء من مئة من الواحد بالمئة",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "يجب عليك إبلاغ DMV خلال 5 أيام إذا قمت بـ:",
+        "answer": "بيع مركبتك أو نقل ملكيتها",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "أنت على وشك الانعطاف إلى اليمين. يجب عليك:",
+        "answer": "إعطاء الإشارة خلال آخر 100 قدم قبل الانعطاف",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "عند أي من إشارات المرور التالية يجب عليك دائماً إيقاف مركبتك؟",
+        "answer": "الأضواء الحمراء الثابتة، والأضواء الحمراء الوامضة، وإشارات المرور المنطفئة تماماً",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "متى يكون من القانوني استخدام الهاتف المحمول دون جهاز يدوي حر أثناء القيادة؟",
+        "answer": "عند إجراء مكالمة لطلب المساعدة في حالة الطوارئ",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "عندما لا تعمل إشارة المرور عند التقاطع، يجب عليك:",
+        "answer": "التوقف توقفاً تاماً ثم المتابعة عندما يكون الطريق آمناً",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "يجب عليك ضبط مرآة الرؤية الخلفية والمرايا الجانبية:",
+        "answer": "قبل أن تبدأ القيادة",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "التدخين داخل المركبة عند وجود شخص يقل عمره عن 18 عاماً هو:",
+        "answer": "غير قانوني في جميع الأوقات",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "يجب عليك تقديم تقرير مكتوب عن حادث مروري وقع في كاليفورنيا (SR 1) إلى DMV إذا:",
+        "answer": "كنت طرفاً في تصادم وكانت الأضرار تتجاوز 750 دولاراً",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "من العادات الجيدة إعطاء الإشارة باستمرار خلال آخر 100 قدم قبل الانعطاف عند التقاطع:",
+        "answer": "حتى لو لم تشاهد أي مركبات أخرى حولك",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "عند مشاركة الطريق مع مركبة قطار خفيف:",
+        "answer": "لا تنعطف أبداً أمام مركبة قطار خفيف مقتربة",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "تقود ليلاً في شارع خافت الإضاءة وتستخدم الأضواء العالية. يجب عليك خفض أضوائك عندما تكون على بعد 500 قدم من:",
+        "answer": "مركبة تقترب منك من الخلف",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "اترك مسافة إضافية أمام مركبتك عند السير خلف:",
+        "answer": "حافلة سياحية كبيرة",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "حتى لو كنت تعلم أن مركبتك تستطيع اجتياز منعطف حاد ضمن حد السرعة القانوني، يجب عليك مع ذلك إبطاء السرعة لأن:",
+        "answer": "قد تكون هناك سيارة متعطلة أو حادث تصادم أمامك لا يمكنك رؤيته",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "توقف سيارتك بجانب الرصيف في شارع مستوٍ ذي اتجاهين. قبل النزول من سيارتك، يجب عليك:",
+        "answer": "البحث عن السيارات أو الدراجات على جانب المرور من مركبتك",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}

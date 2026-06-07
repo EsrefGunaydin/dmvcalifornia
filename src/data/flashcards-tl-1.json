@@ -1,0 +1,117 @@
+{
+  "flashcards": {
+    "id": "dmv-flashcards-tl-1",
+    "language": "tl",
+    "title": "DMV Flashcards - Set 1: Mahahalagang Tuntunin",
+    "description": "15 mahahalagang tanong at sagot sa DMV ng California para sa paghahanda sa driving test (Tagalog at Ingles).",
+    "category": "Flashcards",
+    "slug": "dmv-california-flashcards-tl-set-1",
+    "cards": [
+      {
+        "id": 1,
+        "question": "Iligal para sa isang taong 21 taong gulang o mas matanda na magmaneho na may konsentrasyon ng alkohol sa dugo (BAC) na ____ o mas mataas.",
+        "answer": "0.08% - walong sandaanin ng isang porsiyento",
+        "questionEn": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ____ or higher.",
+        "answerEn": "0.08% - eight hundredths of one percent"
+      },
+      {
+        "id": 2,
+        "question": "Dapat mong ipaalam sa DMV sa loob ng 5 araw kung ikaw ay:",
+        "answer": "nagbenta o naglipat ng iyong sasakyan",
+        "questionEn": "You must notify DMV within 5 days if you:",
+        "answerEn": "sell or transfer your vehicle"
+      },
+      {
+        "id": 3,
+        "question": "Naghahanda kang lumiko pakanan. Dapat kang:",
+        "answer": "mag-senyas sa huling 100 talampakan bago ka lumiko",
+        "questionEn": "You are getting ready to make a right turn. You should:",
+        "answerEn": "signal during the last 100 feet before you turn"
+      },
+      {
+        "id": 4,
+        "question": "Sa alin sa mga sumusunod na ilaw-trapiko ka dapat laging huminto?",
+        "answer": "matatag na pulang ilaw, kumukurap na pulang ilaw, at mga patay na ilaw-trapiko",
+        "questionEn": "For which of the following traffic lights must you always stop your vehicle?",
+        "answerEn": "solid red lights, flashing red lights, and blacked-out traffic signals"
+      },
+      {
+        "id": 5,
+        "question": "Kailan legal na gumamit ng cell phone nang walang hands-free device habang nagmamaneho?",
+        "answer": "kapag tumatawag para humingi ng tulong sa emergency",
+        "questionEn": "When is it legal to use a cell phone without a hands-free device while driving?",
+        "answerEn": "when making a call for emergency assistance"
+      },
+      {
+        "id": 6,
+        "question": "Kapag hindi gumagana ang ilaw-trapiko sa isang interseksyon, dapat kang:",
+        "answer": "huminto nang ganap pagkatapos ay magpatuloy kapag ligtas na",
+        "questionEn": "When a traffic signal light isn't working at an intersection, you should:",
+        "answerEn": "come to a complete stop then proceed when it is safe"
+      },
+      {
+        "id": 7,
+        "question": "Dapat mong iayos ang iyong rear view at side view mirrors:",
+        "answer": "bago ka magsimulang magmaneho",
+        "questionEn": "You should adjust your rear view and side view mirrors:",
+        "answerEn": "before you start driving"
+      },
+      {
+        "id": 8,
+        "question": "Ang paninigarilyo sa loob ng sasakyan kapag may taong wala pang 18 taong gulang ay:",
+        "answer": "iligal sa lahat ng oras",
+        "questionEn": "Smoking inside a vehicle when a person younger than 18 years of age is present is:",
+        "answerEn": "illegal at all times"
+      },
+      {
+        "id": 9,
+        "question": "Dapat kang gumawa ng nakasulat na ulat ng aksidente sa trapiko na naganap sa California (SR 1) sa DMV kung ikaw ay:",
+        "answer": "kasangkot sa isang banggaan at may higit sa $750 na pinsala",
+        "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
+        "answerEn": "are involved in a collision and there is more than $750 in damages"
+      },
+      {
+        "id": 10,
+        "question": "Magandang ugali na patuloy na mag-senyas sa huling 100 talampakan bago ka lumiko sa isang interseksyon:",
+        "answer": "kahit na wala kang nakikitang ibang sasakyan sa paligid",
+        "questionEn": "It is a good habit to signal continuously during the last 100 feet before you turn at an intersection:",
+        "answerEn": "even if you do not see any other vehicles around"
+      },
+      {
+        "id": 11,
+        "question": "Kapag nagbabahagi ng kalsada sa isang light rail vehicle:",
+        "answer": "huwag kailanman lumiko sa harap ng papalapit na light rail vehicle",
+        "questionEn": "When sharing the road with a light rail vehicle:",
+        "answerEn": "never turn in front of an approaching light rail vehicle"
+      },
+      {
+        "id": 12,
+        "question": "Nagmamaneho ka sa gabi sa madilim na kalsada gamit ang high beams. Dapat mong babaan ang iyong ilaw kapag ikaw ay nasa loob ng 500 talampakan mula sa:",
+        "answer": "isang sasakyang papalapit sa iyo mula sa likuran",
+        "questionEn": "You are driving at night on a dimly lit street and using high beams. You should dim your lights when you are within 500 feet of:",
+        "answerEn": "a vehicle approaching you from behind"
+      },
+      {
+        "id": 13,
+        "question": "Mag-iwan ng dagdag na espasyo sa harap ng iyong sasakyan kapag sumusunod sa:",
+        "answer": "isang malaking tour bus",
+        "questionEn": "Allow extra space in front of your vehicle when following a:",
+        "answerEn": "large tour bus"
+      },
+      {
+        "id": 14,
+        "question": "Kahit alam mong kaya ng iyong sasakyan na liko sa matalim na kurba sa legal na limitasyon ng bilis, dapat ka pa ring magpabagal dahil:",
+        "answer": "maaaring may nasirang kotse o banggaan sa unahan na hindi mo nakikita",
+        "questionEn": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+        "answerEn": "there may be a stalled car or collision ahead that you can't see"
+      },
+      {
+        "id": 15,
+        "question": "Iniparada mo ang iyong kotse sa gilid ng isang patag na two-way na kalsada. Bago ka bumaba ng kotse, dapat kang:",
+        "answer": "tumingin ng mga kotse o bisikleta sa gilid ng trapiko ng iyong sasakyan",
+        "questionEn": "You park your car at the curb on a level two-way street. Before getting out of your car, you should:",
+        "answerEn": "look for cars or bicycles on the traffic side of your vehicle"
+      }
+    ]
+  }
+}
