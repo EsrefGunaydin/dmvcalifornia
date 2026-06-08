@@ -252,7 +252,8 @@
       "target_length": 1500,
       "tier": 2,
       "priority": 3,
-      "status": "ready",
+      "status": "drafted",
+      "drafted_at": "2026-06-08",
       "tags": [
         "Driver License",
         "Written Test",
