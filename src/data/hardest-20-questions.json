@@ -1,0 +1,225 @@
+{
+  "_note": "The 20 hardest CA DMV written-test questions, ranked #1 = hardest ... #20 = easiest. Source: user-provided screenshots. Article will render hardest-to-easiest (rank ascending). 'explanation' left blank pending decision on who writes them.",
+  "questions": [
+    {
+      "rank": 1,
+      "question": "If there are two solid lines in the center of the roadway, you:",
+      "options": [
+        { "label": "A", "text": "May cross the lines to turn left into a private driveway" },
+        { "label": "B", "text": "Are on a two-lane one-way street" },
+        { "label": "C", "text": "Should treat the lines as a solid wall and not cross for any reason" }
+      ],
+      "correct": "A",
+      "explanation": ""
+    },
+    {
+      "rank": 2,
+      "question": "You are approaching an uncontrolled intersection. You:",
+      "options": [
+        { "label": "A", "text": "Must always stop before driving through the intersection" },
+        { "label": "B", "text": "Should slow down and be ready to stop" },
+        { "label": "C", "text": "Must yield the right-of-way to all other vehicles" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 3,
+      "question": "Which of these is a legal U-turn?",
+      "options": [
+        { "label": "A", "text": "150 feet away from a hill or curve" },
+        { "label": "B", "text": "On a highway where there is an opening for a turn" },
+        { "label": "C", "text": "Over two sets of double yellow lines in the roadway" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 4,
+      "question": "When is it legal to use a cell phone without a hands-free device while driving?",
+      "options": [
+        { "label": "A", "text": "When making a call while stopped at a red light" },
+        { "label": "B", "text": "Never" },
+        { "label": "C", "text": "When making a call for emergency assistance" }
+      ],
+      "correct": "C",
+      "explanation": ""
+    },
+    {
+      "rank": 5,
+      "question": "What is the difference between traffic lights with red arrows and those with solid red lights?",
+      "options": [
+        { "label": "A", "text": "Red arrows are only used to stop traffic which is turning left" },
+        { "label": "B", "text": "You cannot turn on a red arrow, even if you stop first" },
+        { "label": "C", "text": "Red arrows are only used for protected turn lanes" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 6,
+      "question": "You are driving on a one-way street. You may turn left onto another one-way street:",
+      "options": [
+        { "label": "A", "text": "Only if a sign permits the turn" },
+        { "label": "B", "text": "If traffic on the street is moving to the right" },
+        { "label": "C", "text": "If traffic on the street is moving to the left" }
+      ],
+      "correct": "C",
+      "explanation": ""
+    },
+    {
+      "rank": 7,
+      "question": "Parking is NEVER permitted:",
+      "options": [
+        { "label": "A", "text": "Twenty feet from a railroad track" },
+        { "label": "B", "text": "In a crosshatched (diagonal) pattern space" },
+        { "label": "C", "text": "In a bicycle lane, unless otherwise posted" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 8,
+      "question": "On freezing, wet days, which of the following roadways is most likely to hide spots of ice?",
+      "options": [
+        { "label": "A", "text": "Roadways near the tops of hills" },
+        { "label": "B", "text": "Roadways on bridges and overpasses" },
+        { "label": "C", "text": "Roadways paved with asphalt" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 9,
+      "question": "If you are caught driving with a blood alcohol concentration (BAC) at or above the legal limit:",
+      "options": [
+        { "label": "A", "text": "You may be fined by the court" },
+        { "label": "B", "text": "Your breath test result by itself cannot be used to convict you" },
+        { "label": "C", "text": "Your driver license will automatically be revoked" }
+      ],
+      "correct": "A",
+      "explanation": ""
+    },
+    {
+      "rank": 10,
+      "question": "Other drivers are not making room for you to merge onto a freeway with heavy traffic. If necessary, you may:",
+      "options": [
+        { "label": "A", "text": "Drive on the freeway shoulder until a gap appears" },
+        { "label": "B", "text": "Stop before merging with freeway traffic" },
+        { "label": "C", "text": "Make room by forcing your way into a small gap" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 11,
+      "question": "You are driving on a road where the speed limit is 45 mph. All the other vehicles are driving 50 mph or faster. You may legally drive:",
+      "options": [
+        { "label": "A", "text": "50 mph or faster. The speed of traffic" },
+        { "label": "B", "text": "Anywhere between 45 mph and 50 mph" },
+        { "label": "C", "text": "No faster than 45 mph" }
+      ],
+      "correct": "C",
+      "explanation": ""
+    },
+    {
+      "rank": 12,
+      "question": "You want to pass a bicyclist riding on the right edge of your lane. You:",
+      "options": [
+        { "label": "A", "text": "Must not squeeze past the bicyclist" },
+        { "label": "B", "text": "May not pass the bicyclist for any reason" },
+        { "label": "C", "text": "Must honk your horn before passing the bicyclist" }
+      ],
+      "correct": "A",
+      "explanation": ""
+    },
+    {
+      "rank": 13,
+      "question": "You see a pedestrian with a white cane at the corner ready to cross the street. The person takes a step back and pulls in his cane. You should:",
+      "options": [
+        { "label": "A", "text": "Stop your car a minimum of six feet from the crosswalk and wait for the person to cross the street" },
+        { "label": "B", "text": "Stop. Proceed through the intersection. The person isn't ready to cross" },
+        { "label": "C", "text": "Honk your horn to let the person know when to cross the street" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 14,
+      "question": "If you are involved in a collision, you must exchange with the other person(s) involved, your driver license information and:",
+      "options": [
+        { "label": "A", "text": "Proof of insurance only" },
+        { "label": "B", "text": "Proof of insurance and vehicle registration only" },
+        { "label": "C", "text": "Proof of insurance, vehicle registration, and current address" }
+      ],
+      "correct": "C",
+      "explanation": ""
+    },
+    {
+      "rank": 15,
+      "question": "After passing a car, it is safe to return to your driving lane when:",
+      "options": [
+        { "label": "A", "text": "The driver you just passed signals you to return to your lane" },
+        { "label": "B", "text": "You signal for three seconds your intention to return to your lane" },
+        { "label": "C", "text": "You see the headlights of the passed car in your rearview mirror" }
+      ],
+      "correct": "C",
+      "explanation": ""
+    },
+    {
+      "rank": 16,
+      "question": "A white painted curb means:",
+      "options": [
+        { "label": "A", "text": "Loading zone for freight or passengers" },
+        { "label": "B", "text": "Loading zone for passengers or mail only" },
+        { "label": "C", "text": "Loading zone for freight only" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 17,
+      "question": "If you are towing another vehicle or trailer on a freeway with four lanes in your direction, you may travel in:",
+      "options": [
+        { "label": "A", "text": "The far right lane only" },
+        { "label": "B", "text": "Either of the two right lanes" },
+        { "label": "C", "text": "Any of the traffic lanes in your direction" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 18,
+      "question": "Where should you stop your vehicle if there is no crosswalk or limit line?",
+      "options": [
+        { "label": "A", "text": "Just past the corner" },
+        { "label": "B", "text": "At the corner" },
+        { "label": "C", "text": "Twenty feet before the corner" }
+      ],
+      "correct": "B",
+      "explanation": ""
+    },
+    {
+      "rank": 19,
+      "question": "Even if you know your vehicle can maneuver a sharp curve at the legal speed limit, you should still slow down because:",
+      "options": [
+        { "label": "A", "text": "There may be a stalled car or a collision ahead that you cannot see" },
+        { "label": "B", "text": "You must legally drive below the speed limit on sharp curves" },
+        { "label": "C", "text": "The strong inward pull on your vehicle can be dangerous" }
+      ],
+      "correct": "A",
+      "explanation": ""
+    },
+    {
+      "rank": 20,
+      "question": "At an uncontrolled intersection where you can't see cross traffic until you are just about to enter the intersection, the speed limit is:",
+      "options": [
+        { "label": "A", "text": "15 mph" },
+        { "label": "B", "text": "25 mph" },
+        { "label": "C", "text": "20 mph" }
+      ],
+      "correct": "A",
+      "explanation": ""
+    }
+  ]
+}
