@@ -221,7 +221,12 @@ export default function Home() {
                 className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group"
               >
                 <div className="p-6">
-                  <div className="mb-3">
+                  <div className="mb-3 flex items-center gap-2 flex-wrap">
+                    {(quiz as { badge?: string }).badge && (
+                      <span className="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
+                        {(quiz as { badge?: string }).badge}
+                      </span>
+                    )}
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
                       {quiz.category}
                     </span>
