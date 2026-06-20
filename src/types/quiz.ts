@@ -38,6 +38,8 @@ export type Quiz = {
   questions: Question[];
   passingScore: number;
   timeLimit?: number;
+  /** Optional highlight badge shown on the quiz card (e.g. "2026 NEW"). */
+  badge?: string;
 };
 
 export type QuizResult = {

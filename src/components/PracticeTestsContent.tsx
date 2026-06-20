@@ -28,6 +28,7 @@ interface Quiz {
   timeLimit?: number;
   language?: QuizLanguage;
   questions: any[];
+  badge?: string;
 }
 
 interface PracticeTestsContentProps {
@@ -246,6 +247,11 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
               <div className="p-6">
                 {/* Category Badge + Language Flag */}
                 <div className="mb-4 flex items-center gap-2 flex-wrap">
+                  {quiz.badge && (
+                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
+                      {quiz.badge}
+                    </span>
+                  )}
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">
                     {quiz.category}
                   </span>
@@ -322,6 +328,11 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
               <div className="p-6 flex-1 flex items-center gap-6">
                 {/* Category Badge + Language Flag */}
                 <div className="flex-shrink-0 flex items-center gap-2">
+                  {quiz.badge && (
+                    <span className="bg-green-600 text-white px-3 py-1.5 rounded-full text-sm font-bold uppercase tracking-wide">
+                      {quiz.badge}
+                    </span>
+                  )}
                   <span className="bg-primary/10 text-primary px-3 py-1.5 rounded-full text-sm font-medium">
                     {quiz.category}
                   </span>
