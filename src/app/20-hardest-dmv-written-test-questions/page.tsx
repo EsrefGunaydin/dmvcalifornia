@@ -41,7 +41,7 @@ export default function Hardest20Page() {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-semibold mb-5">
-                Ranked #1 hardest → #20
+                Counting down: #20 → #1 hardest
               </span>
               <h1 className="text-4xl md:text-5xl font-extrabold mb-5 leading-tight">
                 The 20 Hardest Questions on the DMV Written Test
@@ -60,8 +60,8 @@ export default function Hardest20Page() {
               <p className="text-gray-700 leading-relaxed">
                 Most people don&apos;t fail the California DMV written test because it&apos;s long —
                 they fail because of a handful of <strong>tricky questions</strong> with answers that
-                feel wrong but are right. We ranked the 20 that trip up the most teens, from the{' '}
-                <strong>#1 hardest</strong> down to #20.
+                feel wrong but are right. We ranked the 20 that trip up the most teens — starting at{' '}
+                <strong>#20</strong> and counting down to the <strong>#1 hardest of all</strong>.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 This isn&apos;t a typical quiz. For each one, <strong>tap the answer you think is

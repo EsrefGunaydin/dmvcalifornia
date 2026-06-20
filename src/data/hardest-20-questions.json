@@ -1,5 +1,5 @@
 {
-  "_note": "The 20 hardest CA DMV written-test questions, ranked #1 = hardest ... #20 = easiest. Source: user-provided screenshots. Article will render hardest-to-easiest (rank ascending). 'explanation' left blank pending decision on who writes them.",
+  "_note": "The 20 hardest CA DMV written-test questions, ranked #1 = hardest ... #20 = easiest. Source: user-provided screenshots (Drivers Ed Direct countdown). The page renders easiest-first (#20 on top) counting down to #1. Explanations drafted for review.",
   "questions": [
     {
       "rank": 1,
@@ -10,7 +10,7 @@
         { "label": "C", "text": "Should treat the lines as a solid wall and not cross for any reason" }
       ],
       "correct": "A",
-      "explanation": ""
+      "explanation": "Two solid lines mark a barrier you can't cross to pass another vehicle — but the law makes an exception for turning. You may cross them to turn left into or out of a driveway or private road. People assume \"double solid = never cross,\" which is exactly why option C is the trap."
     },
     {
       "rank": 2,
@@ -21,7 +21,7 @@
         { "label": "C", "text": "Must yield the right-of-way to all other vehicles" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "An uncontrolled intersection has no signs or signals, so you slow down and be ready to stop and yield. You don't have to come to a full stop every single time (A), and you don't automatically yield to everyone (C) — right-of-way depends on who arrived first and who's on the right."
     },
     {
       "rank": 3,
@@ -32,7 +32,7 @@
         { "label": "C", "text": "Over two sets of double yellow lines in the roadway" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "On a divided highway you may only make a U-turn where an opening is provided in the divider for turning. You can never cross two sets of double yellow lines to do it (C), and you must not U-turn on or near a hill or curve where other drivers can't see you — which is why A's framing is wrong."
     },
     {
       "rank": 4,
@@ -43,7 +43,7 @@
         { "label": "C", "text": "When making a call for emergency assistance" }
       ],
       "correct": "C",
-      "explanation": ""
+      "explanation": "Holding a phone while driving is illegal in California — the one exception is calling for emergency help (police, fire, or ambulance). Sitting at a red light still counts as driving (A), and \"never\" (B) ignores that emergency exception."
     },
     {
       "rank": 5,
@@ -54,7 +54,7 @@
         { "label": "C", "text": "Red arrows are only used for protected turn lanes" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "A red arrow means stop and wait. Unlike a solid red light — where you can turn after stopping if it's legal — you may NOT turn on a red arrow even after coming to a complete stop. People who treat a red arrow like a normal red light are the ones who get caught."
     },
     {
       "rank": 6,
@@ -65,7 +65,7 @@
         { "label": "C", "text": "If traffic on the street is moving to the left" }
       ],
       "correct": "C",
-      "explanation": ""
+      "explanation": "You can turn left from a one-way onto another one-way only when traffic on the street you're entering flows to the left. You don't need a special sign (A), and turning onto a street that flows right (B) would send you straight into oncoming traffic."
     },
     {
       "rank": 7,
@@ -76,7 +76,7 @@
         { "label": "C", "text": "In a bicycle lane, unless otherwise posted" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "Crosshatched (diagonal-striped) areas are buffer zones — often beside disabled spaces — and parking there is never allowed. The other options have conditions (a distance, or \"unless posted\"), but a striped space is always off-limits."
     },
     {
       "rank": 8,
@@ -87,7 +87,7 @@
         { "label": "C", "text": "Roadways paved with asphalt" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "Bridges and overpasses freeze first because cold air flows both above AND below the surface, so they lose heat faster than normal road. On a freezing, wet day they can hide ice even when the rest of the road just looks wet."
     },
     {
       "rank": 9,
@@ -98,7 +98,7 @@
         { "label": "C", "text": "Your driver license will automatically be revoked" }
       ],
       "correct": "A",
-      "explanation": ""
+      "explanation": "A DUI conviction can bring court fines — on top of possible jail, a license suspension, and higher insurance. A breath test result absolutely can be used to convict you (B is false), and your license isn't revoked automatically on the spot; that goes through a DMV and court process (C overstates it)."
     },
     {
       "rank": 10,
@@ -109,7 +109,7 @@
         { "label": "C", "text": "Make room by forcing your way into a small gap" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "If there's truly no gap, it's better to stop at the end of the on-ramp and wait for a safe opening than to create a crash. You can't drive up the shoulder (A) or force your way into a gap that isn't there (C)."
     },
     {
       "rank": 11,
@@ -120,7 +120,7 @@
         { "label": "C", "text": "No faster than 45 mph" }
       ],
       "correct": "C",
-      "explanation": ""
+      "explanation": "The posted limit is the legal maximum — \"everyone else is speeding\" doesn't make it legal for you. You may drive no faster than 45 mph here, even if traffic is flowing at 50+."
     },
     {
       "rank": 12,
@@ -131,7 +131,7 @@
         { "label": "C", "text": "Must honk your horn before passing the bicyclist" }
       ],
       "correct": "A",
-      "explanation": ""
+      "explanation": "If you can't give a cyclist at least 3 feet of space, you must not squeeze past inside the lane — slow down and wait or change lanes. You're allowed to pass when it's safe (so B is too extreme), and honking can startle a cyclist into a fall (C)."
     },
     {
       "rank": 13,
@@ -142,7 +142,7 @@
         { "label": "C", "text": "Honk your horn to let the person know when to cross the street" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "A pedestrian who pulls in the cane and steps back is signaling they are NOT crossing — so you may proceed when it's safe. People assume any white-cane user is about to step out, but here the body language means \"go ahead.\" Never honk at a blind pedestrian; it can disorient them."
     },
     {
       "rank": 14,
@@ -153,7 +153,7 @@
         { "label": "C", "text": "Proof of insurance, vehicle registration, and current address" }
       ],
       "correct": "C",
-      "explanation": ""
+      "explanation": "Besides your driver-license info, you must exchange proof of insurance, vehicle registration, AND your current address. Almost everyone forgets the address — which is exactly what makes the \"insurance only\" and \"insurance + registration\" options wrong."
     },
     {
       "rank": 15,
@@ -164,7 +164,7 @@
         { "label": "C", "text": "You see the headlights of the passed car in your rearview mirror" }
       ],
       "correct": "C",
-      "explanation": ""
+      "explanation": "Once you can see the passed car's headlights in your rearview mirror, you've opened enough room to merge back without cutting them off. Don't wait for the other driver to wave you in (A) or rely on a 3-second signal alone (B) — the visible gap is the real cue."
     },
     {
       "rank": 16,
@@ -175,7 +175,7 @@
         { "label": "C", "text": "Loading zone for freight only" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "White means a quick stop only — to load or unload passengers, or to drop off mail. Any answer that mentions freight is the trap, because loading freight belongs to yellow (commercial) zones."
     },
     {
       "rank": 17,
@@ -186,7 +186,7 @@
         { "label": "C", "text": "Any of the traffic lanes in your direction" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "Vehicles towing a trailer must keep right, but on a freeway with four or more lanes in your direction you may use either of the two right lanes — not just the far-right one. \"Far right lane only\" is the rule for narrower freeways, which is why most people pick it by mistake."
     },
     {
       "rank": 18,
@@ -197,7 +197,7 @@
         { "label": "C", "text": "Twenty feet before the corner" }
       ],
       "correct": "B",
-      "explanation": ""
+      "explanation": "With no painted crosswalk or limit (stop) line, you stop at the corner — the edge of the intersection, before entering it. \"Twenty feet before\" sounds official but isn't a real rule, and stopping just past the corner puts you into cross traffic."
     },
     {
       "rank": 19,
@@ -208,7 +208,7 @@
         { "label": "C", "text": "The strong inward pull on your vehicle can be dangerous" }
       ],
       "correct": "A",
-      "explanation": ""
+      "explanation": "A curve blocks your view of the road, so you slow down in case there's a stalled car, debris, or a crash just out of sight. There's no blanket law forcing you below the limit on every curve (B), and the wording in C is wrong — the force in a curve pushes you outward, not inward."
     },
     {
       "rank": 20,
@@ -219,7 +219,7 @@
         { "label": "C", "text": "20 mph" }
       ],
       "correct": "A",
-      "explanation": ""
+      "explanation": "At a blind intersection — where you can't see 100 feet in each direction during the last 100 feet before crossing — the limit drops to 15 mph. Teens default to the 25 mph residential limit, but limited visibility lowers it."
     }
   ]
 }

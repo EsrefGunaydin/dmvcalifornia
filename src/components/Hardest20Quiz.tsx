@@ -25,7 +25,8 @@ function rankTag(rank: number): { label: string; cls: string } {
 }
 
 export default function Hardest20Quiz({ questions }: { questions: HardestQuestion[] }) {
-  const ordered = [...questions].sort((a, b) => a.rank - b.rank);
+  // Easiest first (#20) counting down to the hardest (#1) at the bottom.
+  const ordered = [...questions].sort((a, b) => b.rank - a.rank);
   const [picks, setPicks] = useState<Record<number, string>>({});
 
   const answered = Object.keys(picks).length;
