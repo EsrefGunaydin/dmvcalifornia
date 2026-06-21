@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import AppPromotion from '@/components/AppPromotion';
 import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
@@ -293,6 +295,9 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
               </div>
             </div>
           </div>
+        </div>
+        <div className="container mx-auto px-4 pb-10">
+          <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
         </div>
       </main>
 

@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import turkishSignTestData from '@/data/turkish-sign-test.json';
 import type { Quiz } from '@/types/quiz';
 
@@ -139,6 +141,9 @@ export default async function TurkishSignTestPage() {
           </div>
         </div>
       </section>
-    </main>
+      <div className="container mx-auto px-4 pb-10">
+          <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
+        </div>
+      </main>
   );
 }

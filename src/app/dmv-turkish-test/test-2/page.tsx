@@ -3,6 +3,8 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import turkishQuizzesData from '@/data/turkish-quizzes.json';
 import Link from 'next/link';
 import type { Quiz } from '@/types/quiz';
@@ -153,6 +155,9 @@ export default async function TurkishTest2Page() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="container mx-auto px-4 pb-10">
+          <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
         </div>
       </main>
 
