@@ -4,6 +4,7 @@ import CookieBanner from '@/components/CookieBanner';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
 import { getBaseViews } from '@/lib/quiz-base-views';
 import AppPromotion from '@/components/AppPromotion';
 import quizzesData from '@/data/quizzes.json';
@@ -144,6 +145,24 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
 
   // Use the quiz's id field for leaderboard tracking
   const quizId = quiz.id;
+
+  // Related tests for cross-linking (same category first, then same language,
+  // then anything) — lifts pageviews-per-session.
+  const lang = (quiz.language as string) || 'en';
+  const others = allQuizzes.filter((q) => q.slug !== quiz.slug);
+  const sameCategory = others.filter((q) => q.category === quiz.category);
+  const sameLanguage = others.filter(
+    (q) => ((q.language as string) || 'en') === lang && q.category !== quiz.category
+  );
+  const picked = [...sameCategory, ...sameLanguage];
+  const rest = others.filter((q) => !picked.includes(q));
+  const relatedQuizzes = [...picked, ...rest].slice(0, 6).map((q) => ({
+    slug: q.slug,
+    title: q.title,
+    category: q.category,
+    questionCount: q.questions.length,
+    language: (q.language as string) || 'en',
+  }));
 
   // Fetch leaderboard from MongoDB API
   const quizLeaderboard = await fetchLeaderboard(quizId);
@@ -296,6 +315,8 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
             </div>
           </div>
         </div>
+        <RelatedQuizzes quizzes={relatedQuizzes} />
+
         <div className="container mx-auto px-4 pb-10">
           <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
         </div>

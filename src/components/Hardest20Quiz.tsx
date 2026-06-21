@@ -111,40 +111,50 @@ export default function Hardest20Quiz({ questions }: { questions: HardestQuestio
                 })}
               </div>
 
-              {/* Reveal area */}
-              {!revealed ? (
+              {/* Pre-reveal hint */}
+              {!revealed && (
                 <p className="px-6 pb-6 -mt-2 text-sm text-gray-400">
                   Tap an answer to see if you're right.
                 </p>
-              ) : (
-                <div className="mx-6 mb-6 rounded-xl bg-gray-50 border border-gray-200 p-5">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-lg">💡</span>
-                    <span className="font-bold text-gray-900">
-                      {picked === q.correct ? 'Correct!' : 'Why the answer is '}
-                      {picked !== q.correct && (
-                        <span className="text-green-700">{q.correct}</span>
-                      )}
-                    </span>
-                  </div>
-                  {q.explanation ? (
-                    <p className="text-gray-700 leading-relaxed">{q.explanation}</p>
-                  ) : (
-                    <p className="text-gray-500 italic">
-                      Explanation coming soon — correct answer is{' '}
-                      <span className="font-semibold text-gray-700">{q.correct}</span>.
-                    </p>
-                  )}
-                  {q.image && (
-                    <img
-                      src={q.image}
-                      alt={`Illustration for question ${q.rank}`}
-                      className="mt-4 rounded-lg shadow-sm w-full h-auto"
-                      loading="lazy"
-                    />
-                  )}
-                </div>
               )}
+
+              {/* Explanation — always rendered in the DOM (so search engines
+                  index the answers), visually hidden until the user reveals it. */}
+              <div
+                className={`mx-6 mb-6 rounded-xl bg-gray-50 border border-gray-200 p-5 ${
+                  revealed ? '' : 'hidden'
+                }`}
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-lg">💡</span>
+                  <span className="font-bold text-gray-900">
+                    {revealed && picked === q.correct ? (
+                      'Correct!'
+                    ) : (
+                      <>
+                        Why the answer is{' '}
+                        <span className="text-green-700">{q.correct}</span>
+                      </>
+                    )}
+                  </span>
+                </div>
+                {q.explanation ? (
+                  <p className="text-gray-700 leading-relaxed">{q.explanation}</p>
+                ) : (
+                  <p className="text-gray-500 italic">
+                    Explanation coming soon — correct answer is{' '}
+                    <span className="font-semibold text-gray-700">{q.correct}</span>.
+                  </p>
+                )}
+                {q.image && (
+                  <img
+                    src={q.image}
+                    alt={`Illustration for question ${q.rank}`}
+                    className="mt-4 rounded-lg shadow-sm w-full h-auto"
+                    loading="lazy"
+                  />
+                )}
+              </div>
             </div>
           );
         })}

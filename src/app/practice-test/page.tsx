@@ -87,6 +87,29 @@ export default function PracticeTestsPage() {
           <AppPromotion variant="banner" />
         </div>
 
+        {/* Featured: 20 Hardest Questions */}
+        <div className="container mx-auto px-4 pt-6">
+          <Link
+            href="/20-hardest-dmv-written-test-questions"
+            className="block rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 md:p-7 shadow-lg hover:shadow-xl transition-shadow group max-w-6xl mx-auto"
+          >
+            <div className="flex items-center gap-5">
+              <div className="text-4xl flex-shrink-0">🔥</div>
+              <div className="flex-1">
+                <h2 className="text-xl md:text-2xl font-bold mb-1">
+                  The 20 Hardest Questions on the DMV Written Test
+                </h2>
+                <p className="text-white/90 text-sm md:text-base">
+                  Ranked easiest to hardest — tap an answer, see if you got it right, and learn why teens always miss it.
+                </p>
+              </div>
+              <span className="hidden sm:inline-block bg-white text-gray-900 font-semibold px-5 py-2.5 rounded-lg whitespace-nowrap group-hover:bg-gray-100 transition-colors">
+                Try it →
+              </span>
+            </div>
+          </Link>
+        </div>
+
         {/* Quiz Cards */}
         <section className="container mx-auto px-4 py-12">
           <div className="max-w-6xl mx-auto">

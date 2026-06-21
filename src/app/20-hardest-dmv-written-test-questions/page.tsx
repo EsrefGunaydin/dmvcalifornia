@@ -25,9 +25,6 @@ export const metadata: Metadata = {
       'Ranked hardest to easiest. Tap an answer, see if you got it right, and learn why teens always miss it.',
     type: 'article',
   },
-  // Draft preview: keep out of the index until explanations are added and the
-  // page is wired into the sitemap + internal links.
-  robots: { index: false, follow: false },
 };
 
 export default function Hardest20Page() {
