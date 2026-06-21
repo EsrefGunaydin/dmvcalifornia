@@ -262,7 +262,15 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6">
               {/* Quiz Engine */}
               <div>
-                <QuizEngine quiz={quiz} quizId={quizId} />
+                <QuizEngine
+                  quiz={quiz}
+                  quizId={quizId}
+                  nextQuiz={
+                    relatedQuizzes[0]
+                      ? { slug: relatedQuizzes[0].slug, title: relatedQuizzes[0].title }
+                      : undefined
+                  }
+                />
               </div>
 
               {/* Compact Sidebar */}

@@ -11,6 +11,7 @@ import StickyVerticalAd from '@/components/ads/StickyVerticalAd';
 interface QuizEngineProps {
   quiz: Quiz;
   quizId: string | number;
+  nextQuiz?: { slug: string; title: string };
 }
 
 // Shuffle array using Fisher-Yates algorithm
@@ -62,7 +63,7 @@ function shuffleQuiz(questions: Question[]): ShuffledQuestion[] {
   });
 }
 
-export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
+export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) {
   // Shuffle questions on component mount or restart
   const [shuffledQuestions, setShuffledQuestions] = useState<ShuffledQuestion[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -192,7 +193,7 @@ export default function QuizEngine({ quiz, quizId }: QuizEngineProps) {
   };
 
   if (quizCompleted && quizResult) {
-    return <Results result={quizResult} quiz={quiz} quizId={quizId} onRestart={handleRestart} />;
+    return <Results result={quizResult} quiz={quiz} quizId={quizId} onRestart={handleRestart} nextQuiz={nextQuiz} />;
   }
 
   // Show loading state while shuffling

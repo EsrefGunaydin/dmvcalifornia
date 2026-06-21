@@ -13,9 +13,11 @@ interface ResultsProps {
   quiz: Quiz;
   quizId: string | number;
   onRestart: () => void;
+  /** A suggested next quiz to take (drives pageviews-per-session). */
+  nextQuiz?: { slug: string; title: string };
 }
 
-export default function Results({ result, quiz, quizId, onRestart }: ResultsProps) {
+export default function Results({ result, quiz, quizId, onRestart, nextQuiz }: ResultsProps) {
   const { passed, percentage, correctAnswers, totalQuestions } = result;
   const router = useRouter();
 
@@ -259,6 +261,25 @@ export default function Results({ result, quiz, quizId, onRestart }: ResultsProp
       {/* Action Buttons */}
       <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
         <h2 className="text-xl font-bold text-gray-900 mb-4">What's Next?</h2>
+
+        {/* Highest-intent moment: send them straight into another test */}
+        {nextQuiz && (
+          <Link
+            href={`/practice-test/${nextQuiz.slug}`}
+            className="mb-4 flex items-center justify-between gap-4 rounded-lg border-2 border-primary/30 bg-primary/5 px-5 py-4 hover:bg-primary/10 transition-colors group"
+          >
+            <span className="min-w-0">
+              <span className="block text-xs font-semibold uppercase tracking-wide text-primary">
+                Try another test
+              </span>
+              <span className="block font-bold text-gray-900 truncate">{nextQuiz.title}</span>
+            </span>
+            <span className="text-primary font-bold whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
+              Start →
+            </span>
+          </Link>
+        )}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <button
             onClick={onRestart}
