@@ -114,6 +114,7 @@ export default async function TurkishTest2Page() {
                 <Leaderboard
                   entries={quizLeaderboard}
                   quizTitle={quiz.title}
+                  quizId={quizId}
                   limit={10}
                 />
 

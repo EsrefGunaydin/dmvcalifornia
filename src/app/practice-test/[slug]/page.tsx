@@ -41,6 +41,11 @@ const allQuizzes = [
   ...commercialQuizzesData.quizzes,
 ] as Quiz[];
 
+// Regenerate the static page periodically so the server-rendered leaderboard
+// snapshot (used for first paint + crawlers) doesn't stay frozen at build time.
+// The Leaderboard widget also refreshes live on the client.
+export const revalidate = 300;
+
 export async function generateStaticParams() {
   return allQuizzes.map((quiz) => ({
     slug: quiz.slug,
@@ -245,6 +250,7 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
                   <Leaderboard
                     entries={quizLeaderboard}
                     quizTitle={quiz.title}
+                    quizId={quizId}
                     limit={10}
                   />
 

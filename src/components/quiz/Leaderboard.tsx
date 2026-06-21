@@ -1,19 +1,47 @@
 'use client';
 
 import { LeaderboardEntry } from '@/types/quiz';
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 interface LeaderboardProps {
   entries: LeaderboardEntry[];
   quizTitle: string;
+  quizId: string | number;
   limit?: number;
 }
 
-export default function Leaderboard({ entries, quizTitle, limit = 10 }: LeaderboardProps) {
+export default function Leaderboard({ entries, quizTitle, quizId, limit = 10 }: LeaderboardProps) {
   const [showAll, setShowAll] = useState(false);
+  // The quiz page is statically cached, so the server-passed `entries` can be a
+  // stale build-time snapshot. Fetch the live board client-side and refresh it
+  // whenever a new score is submitted (via the 'leaderboard:updated' event).
+  const [liveEntries, setLiveEntries] = useState<LeaderboardEntry[]>(entries);
+
+  const refresh = useCallback(async () => {
+    try {
+      const res = await fetch(
+        `/api/leaderboard?quizId=${encodeURIComponent(String(quizId))}`,
+        { cache: 'no-store' }
+      );
+      if (!res.ok) return;
+      const data = await res.json();
+      if (Array.isArray(data.leaderboard)) {
+        setLiveEntries(data.leaderboard);
+      }
+    } catch {
+      // network hiccup — keep whatever we already have
+    }
+  }, [quizId]);
+
+  useEffect(() => {
+    refresh();
+    const onUpdate = () => refresh();
+    window.addEventListener('leaderboard:updated', onUpdate);
+    return () => window.removeEventListener('leaderboard:updated', onUpdate);
+  }, [refresh]);
 
   // Get top entries (sorted by percentage descending)
-  const sortedEntries = [...entries]
+  const sortedEntries = [...liveEntries]
     .sort((a, b) => {
       if (b.percentage !== a.percentage) {
         return b.percentage - a.percentage;
@@ -40,7 +68,7 @@ export default function Leaderboard({ entries, quizTitle, limit = 10 }: Leaderbo
     });
   };
 
-  if (entries.length === 0) {
+  if (liveEntries.length === 0) {
     return (
       <div className="bg-white rounded-lg shadow-lg p-6">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
@@ -60,7 +88,7 @@ export default function Leaderboard({ entries, quizTitle, limit = 10 }: Leaderbo
           🏆 Leaderboard
         </h2>
         <span className="text-sm text-gray-500">
-          {entries.length} {entries.length === 1 ? 'entry' : 'entries'}
+          {liveEntries.length} {liveEntries.length === 1 ? 'entry' : 'entries'}
         </span>
       </div>
 

@@ -81,6 +81,7 @@ export default async function TurkishSignTestPage() {
                 <Leaderboard
                   entries={quizLeaderboard}
                   quizTitle={quiz.title}
+                  quizId={quizId}
                   limit={10}
                 />
 

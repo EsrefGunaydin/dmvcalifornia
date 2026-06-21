@@ -79,7 +79,11 @@ export default function Results({ result, quiz, quizId, onRestart }: ResultsProp
 
       setSubmitted(true);
 
-      // Refresh server component data to update leaderboard
+      // The quiz page is statically cached, so router.refresh() alone won't
+      // re-pull the board. Tell the live Leaderboard widget to refetch now.
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new Event('leaderboard:updated'));
+      }
       router.refresh();
 
       setTimeout(() => {

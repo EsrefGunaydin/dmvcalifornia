@@ -124,6 +124,7 @@ export default async function SpanishSignTestPage() {
                   <Leaderboard
                     entries={quizLeaderboard}
                     quizTitle={quiz.title}
+                    quizId={quizId}
                     limit={10}
                   />
 
