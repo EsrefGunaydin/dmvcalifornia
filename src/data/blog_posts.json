@@ -52,6 +52,42 @@
   },
   "posts": [
     {
+      "id": 9042,
+      "title": "California Driver's License Renewal 2026: Online, Mail, In-Person, Fees & REAL ID",
+      "slug": "california-drivers-license-renewal-2026",
+      "content": "<p><strong>TL;DR:</strong> Most California drivers under 70 can renew online or by mail in a few minutes. If you're 70 or older, your name/address changed, or you want a REAL ID, you'll need to visit a field office. The standard Class C renewal fee is around $45 — always confirm the current amount at <a href=\"https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/dl-renewal/\" rel=\"noopener\">dmv.ca.gov</a>.</p>\n\n<h2>Who can renew, and when</h2>\n<p>California mails a renewal notice about 60 days before your license expires. You can renew up to six months early. Your renewal method depends on your age and whether anything has changed:</p>\n<ul>\n<li><strong>Online or by mail:</strong> typically available if you're under 70 and your address, date of birth, physical description, and license class are unchanged.</li>\n<li><strong>In person:</strong> required if you're 70+, your information changed, your license has been expired for a while, or you want to switch to a REAL ID.</li>\n</ul>\n\n<h2>How to renew online</h2>\n<p>This is the fastest route. To renew online you generally must be under 70, eligible to renew by mail, have a verified Social Security Number, and make no changes to your address, date of birth, description, or license class. Log in or create an account at the <a href=\"https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/dl-renewal/\" rel=\"noopener\">DMV online renewal page</a>, confirm your details, and pay the fee. Your new license arrives by mail.</p>\n\n<h2>How to renew by mail</h2>\n<p>If the DMV mailed you a renewal notice (form DL 410) and you're eligible, follow the instructions on it, include payment, and mail it back. Mail renewal is usually limited to drivers who will be under 70 when the license expires and who hold a license from only one state.</p>\n\n<h2>How to renew in person</h2>\n<p>Make an appointment first — walk-ins wait much longer. Book at <a href=\"https://www.dmv.ca.gov/portal/make-an-appointment/\" rel=\"noopener\">dmv.ca.gov/make-an-appointment</a>. At the office you'll have your photo and thumbprint taken, pay the fee, and may take a vision test (and, in some cases, a written knowledge test). Find your nearest field office and hours on our <a href=\"/dmv-offices\">California DMV offices</a> directory.</p>\n\n<h2>California driver's license renewal fees (2026)</h2>\n<p>The standard renewal fee for a Class C (regular) license is about <strong>$45</strong>. Upgrading to a REAL ID at renewal does <em>not</em> cost extra. Fees change periodically and commercial, motorcycle, and senior categories differ, so verify the current amount on the official <a href=\"https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/licensing-fees/\" rel=\"noopener\">DMV licensing fees page</a> before you pay.</p>\n\n<h2>Renewing at 70 or older</h2>\n<p>Drivers 70 and older generally must renew <strong>in person</strong>. You'll take a vision test, and the DMV may require a written knowledge test. Because the rules of the road change, brush up first with a free <a href=\"/practice-test\">California DMV practice test</a> and our <a href=\"/california-dmv-cheat-sheet\">DMV cheat sheet</a>. For a full walkthrough, see our <a href=\"/california-senior-driver-license-guide-2026\">California senior driver guide</a>.</p>\n\n<h2>Should you upgrade to a REAL ID at renewal?</h2>\n<p>Starting May 7, 2025, you need a REAL ID (or a passport) to board domestic flights and enter secure federal facilities. Renewal is the perfect time to upgrade — it's the same fee, but you must apply in person and bring extra documents (proof of identity, your SSN, and two proofs of California residency).</p>\n\n<h2>What you need to bring</h2>\n<ul>\n<li>Your renewal notice or current/old license</li>\n<li>Proof of identity (passport or birth certificate) — required for a REAL ID</li>\n<li>Proof of your Social Security Number</li>\n<li>Two proofs of California residency — required for a REAL ID</li>\n<li>Payment for the renewal fee</li>\n</ul>\n\n<h2>What happens if your license expired</h2>\n<p>It's illegal to drive on an expired license, and there's no grace period for driving. If it's been expired for a long time, the DMV may require you to renew in person and retake the knowledge and/or driving test. Renew before the expiration date to avoid the hassle — set a reminder for 60 days out when your notice arrives.</p>",
+      "excerpt": "How to renew your California driver's license in 2026 — online, by mail, or in person. Eligibility, fees (~$45), REAL ID upgrades, and the 70+ rules, explained step by step.",
+      "publishedAt": "2026-06-22T09:00:00Z",
+      "updatedAt": "2026-06-22T09:00:00Z",
+      "author": "Robert Johnson",
+      "tags": [
+        "License Renewal",
+        "Driver License",
+        "DMV Services",
+        "Real ID"
+      ],
+      "views": 0,
+      "hero_image": "/images/blog/blog-california-drivers-license-issue-date.webp",
+      "faq": [
+        {
+          "question": "How much does it cost to renew a California driver’s license in 2026?",
+          "answer": "The standard Class C renewal fee is about $45. Upgrading to a REAL ID at renewal costs no extra. Commercial, motorcycle, and some senior categories differ — confirm the current fee at dmv.ca.gov."
+        },
+        {
+          "question": "Can I renew my California driver’s license online?",
+          "answer": "Usually yes if you are under 70, your address/date of birth/description/license class are unchanged, and your SSN is on file. If anything changed or you want a REAL ID, you must renew in person."
+        },
+        {
+          "question": "How early can I renew my California license?",
+          "answer": "You can renew up to six months before it expires. The DMV mails a renewal notice about 60 days out. Renew before the expiration date — it is illegal to drive on an expired license."
+        },
+        {
+          "question": "Do drivers over 70 have to renew in person?",
+          "answer": "Yes. Drivers 70 and older generally must renew in person, take a vision test, and may be required to pass a written knowledge test. Make an appointment to cut your wait time."
+        }
+      ]
+    },
+    {
       "id": 9041,
       "title": "Free California DMV Practice Test in Vietnamese (Tiếng Việt)",
       "slug": "free-california-dmv-practice-test-vietnamese",

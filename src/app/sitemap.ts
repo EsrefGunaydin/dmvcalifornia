@@ -13,6 +13,7 @@ import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import intersectionLevelsData from '@/data/intersection-levels.json';
+import officesData from '@/data/dmv_offices.json';
 import { FLASHCARD_LANG_CODES, allFlashcardSetParams } from '@/data/flashcards-i18n';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -46,6 +47,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/20-hardest-dmv-written-test-questions`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/california-dmv-road-signs-test`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/california-dmv-cheat-sheet`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -284,6 +297,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // DMV field office pages (e.g. /california-dmv-alturas-office). These are
+  // generated from dmv_offices.json via the [slug] route but were missing from
+  // the sitemap — high-intent local pages that need to be discoverable.
+  const officePages: MetadataRoute.Sitemap = officesData.offices.map((office: { slug: string }) => ({
+    url: `${baseUrl}/${office.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+
   return [
     ...staticPages,
     ...blogPages,
@@ -295,5 +318,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...newLanguagePages,
     ...intersectionPages,
     ...flashcardPages,
+    ...officePages,
   ];
 }

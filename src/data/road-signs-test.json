@@ -1,0 +1,463 @@
+{
+  "title": "California DMV Road Signs Test",
+  "slug": "california-dmv-road-signs-test",
+  "description": "Free California DMV road signs practice test with real sign images. Identify each sign, get instant answers and explanations.",
+  "questions": [
+    {
+      "id": 1,
+      "image": "/images/traffic-signs/sign-1.webp",
+      "question": "This sign means:",
+      "options": [
+        "Drive to the right",
+        "Change lanes to the right",
+        "Stay in the right lane"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign indicates you must keep to the right of a divider or obstruction ahead."
+    },
+    {
+      "id": 2,
+      "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
+      "question": "This sign means:",
+      "options": [
+        "You may turn right when the light is green",
+        "You may turn left on a green light when it is safe",
+        "You may turn left when the light is green"
+      ],
+      "correctAnswer": 1,
+      "explanation": "You can turn left on green, but must yield to oncoming traffic."
+    },
+    {
+      "id": 3,
+      "image": "/images/traffic-signs/sign-3.webp",
+      "question": "This sign means:",
+      "options": [
+        "The road curves to the left",
+        "You cannot make a left turn",
+        "Left turn permitted on green arrow only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign prohibits left turns. You must go straight or turn right."
+    },
+    {
+      "id": 4,
+      "image": "/images/traffic-signs/wrong-way-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Do not enter the road ahead unless it is safe",
+        "The road ahead is closed to all traffic",
+        "The road ahead is closed to traffic in your direction"
+      ],
+      "correctAnswer": 2,
+      "explanation": "WRONG WAY sign means you're going the wrong direction."
+    },
+    {
+      "id": 5,
+      "image": "/images/traffic-signs/sign-5.webp",
+      "question": "This sign means:",
+      "options": [
+        "The road ahead is closed to traffic",
+        "You cannot enter the road from your direction",
+        "Do not enter unless it is safe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "'Do Not Enter' means you cannot enter from your direction."
+    },
+    {
+      "id": 6,
+      "image": "/images/traffic-signs/railroad-crossing.webp",
+      "question": "There is a railroad crossing ahead. You see a mechanical signal warning you of an approaching train. You must:",
+      "options": [
+        "Stop, then proceed when safe",
+        "Slow down before crossing",
+        "Stop only if you see a train coming"
+      ],
+      "correctAnswer": 0,
+      "explanation": "When railroad crossing signals are flashing, you must stop at least 15 feet from the tracks. Proceed only when signals stop and it's safe."
+    },
+    {
+      "id": 7,
+      "image": "/images/traffic-signs/sign-9.webp",
+      "question": "A freeway on ramp is marked with this sign. Which of the following vehicles may use this lane?",
+      "options": [
+        "A convertible with an adult and two children",
+        "A carpool van containing only the driver",
+        "A sport utility vehicle containing an adult, child, and family pet"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Carpool lanes (HOV lanes) can only be used if you have the minimum number of occupants shown on the posted signs. Pets do not count as passengers."
+    },
+    {
+      "id": 8,
+      "image": "/images/traffic-signs/stop-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Stop",
+        "Stop only if other vehicles are present",
+        "Stop 10 feet behind the stop line"
+      ],
+      "correctAnswer": 0,
+      "explanation": "STOP sign requires complete stop every time."
+    },
+    {
+      "id": 9,
+      "image": "/images/traffic-signs/sign-7.webp",
+      "question": "This sign means:",
+      "options": [
+        "Right lane ends ahead",
+        "No right turn",
+        "Side road on the right"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This warning sign indicates that the right lane ends ahead and traffic must merge left."
+    },
+    {
+      "id": 10,
+      "image": "/images/traffic-signs/no-u-turn-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Left lane ends",
+        "No U-turn",
+        "You must turn left"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign prohibits U-turns at this location."
+    },
+    {
+      "id": 11,
+      "image": "/images/traffic-signs/cross-road-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Another lane is merging with yours",
+        "Another road crosses yours",
+        "Side road ahead on the right"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign warns of a cross road or intersection ahead."
+    },
+    {
+      "id": 12,
+      "image": "/images/traffic-signs/yield-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Vehicles on the right have the right-of-way",
+        "You have the right-of-way",
+        "Give the right-of-way to cross traffic"
+      ],
+      "correctAnswer": 2,
+      "explanation": "YIELD sign means give right-of-way to cross traffic."
+    },
+    {
+      "id": 13,
+      "image": "/images/traffic-signs/right-curve-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Right curve ahead",
+        "No right turn allowed",
+        "Right turn allowed on green arrow"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign warns of a curve to the right ahead."
+    },
+    {
+      "id": 14,
+      "image": "/images/traffic-signs/sign-26.webp",
+      "question": "A yellow sign with a traffic signal symbol means:",
+      "options": [
+        "Controlled railroad crossing ahead",
+        "Be prepared to stop if the light is flashing",
+        "There is a traffic signal ahead"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This warning sign indicates a traffic signal is ahead. Be prepared to stop if the light is red."
+    },
+    {
+      "id": 15,
+      "image": "/images/traffic-signs/sign-27.webp",
+      "question": "A yellow diamond-shaped sign with a black 'X' and two R's indicates:",
+      "options": [
+        "Railroad crossing ahead",
+        "Rest area ahead",
+        "Road closed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A yellow diamond with an X and two R's warns of a railroad crossing ahead."
+    },
+    {
+      "id": 16,
+      "image": "/images/traffic-signs/sign-13.webp",
+      "question": "This sign means:",
+      "options": [
+        "Pedestrians must walk facing traffic",
+        "Pedestrians may walk in the street",
+        "There is a pedestrian crosswalk ahead"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This yellow warning sign indicates a pedestrian crosswalk ahead. Drivers should be prepared to slow down or stop for pedestrians."
+    },
+    {
+      "id": 17,
+      "image": "/images/traffic-signs/slower-traffic-keep-right-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Always drive in the right lane",
+        "Slower traffic has the right-of-way",
+        "Drive in the right lane if you are driving slower than traffic"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Slower vehicles should keep right to allow faster traffic to pass."
+    },
+    {
+      "id": 18,
+      "image": "/images/traffic-signs/sign-15.webp",
+      "question": "This sign means:",
+      "options": [
+        "Side road ahead",
+        "Another lane is merging with yours",
+        "You have the right-of-way"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign warns that another lane is merging with your lane."
+    },
+    {
+      "id": 19,
+      "image": "/images/traffic-signs/sign-20.webp",
+      "question": "This sign means:",
+      "options": [
+        "The road ahead is closed to traffic in all directions",
+        "You cannot enter the road from your direction",
+        "Do not enter unless it is safe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "'Do Not Enter' means you cannot enter from your direction."
+    },
+    {
+      "id": 20,
+      "image": "/images/traffic-signs-2/do-not-enter.jpeg",
+      "question": "This sign means:",
+      "options": [
+        "The road ahead is closed to traffic in all directions",
+        "Do not enter the road from your direction",
+        "You cannot enter unless it is safe"
+      ],
+      "correctAnswer": 1,
+      "explanation": "'Do Not Enter' means you cannot enter from your direction."
+    },
+    {
+      "id": 21,
+      "image": "/images/traffic-signs/no-right-turn-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Right lane ends here",
+        "Side road to the right",
+        "No right turn"
+      ],
+      "correctAnswer": 2,
+      "explanation": "This sign prohibits right turns."
+    },
+    {
+      "id": 22,
+      "image": "/images/traffic-signs/rest-area-1-mile-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "The right lane is ending",
+        "A rest area is ahead",
+        "A restricted area is ahead"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign indicates a rest area is 1 mile ahead."
+    },
+    {
+      "id": 23,
+      "image": "/images/traffic-signs/sign-25.webp",
+      "question": "This sign means:",
+      "options": [
+        "Fewer lanes ahead",
+        "Divided highway ahead",
+        "Crossroad intersects the main road"
+      ],
+      "correctAnswer": 1,
+      "explanation": "This sign warns that you are approaching a divided highway. The road ahead is split by a median or divider."
+    },
+    {
+      "id": 24,
+      "image": "/images/traffic-signs-2/stop.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "Stop only if there is cross traffic",
+        "Come to a complete stop, then proceed when safe",
+        "Slow down and yield to other traffic"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A red octagonal stop sign means you must come to a complete stop at the limit line and proceed only when it is safe."
+    },
+    {
+      "id": 25,
+      "image": "/images/traffic-signs-2/yield.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "Stop only if there is cross traffic",
+        "Slow down and prepare to yield right of way",
+        "Merge into the right lane"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A red and white inverted triangle yield sign means you must slow down and give the right of way to oncoming or cross traffic."
+    },
+    {
+      "id": 26,
+      "image": "/images/traffic-signs-2/wrong-way.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "You are heading the wrong direction on a one-way road",
+        "No U-turn allowed",
+        "Do not enter unless authorized"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Wrong Way sign means you are heading the wrong direction on a one-way road. Stop safely, find a way to turn around, and reverse direction."
+    },
+    {
+      "id": 27,
+      "image": "/images/traffic-signs-2/school-zone.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "School zone ahead",
+        "Pedestrian crossing",
+        "Children playing area"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A pentagon-shaped fluorescent yellow-green sign with children figures means a school zone is ahead. Reduce speed to 25 mph (CVC §22352) when school is in session."
+    },
+    {
+      "id": 28,
+      "image": "/images/traffic-signs-2/railroad-crossing.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "Road work ahead",
+        "Railroad crossing ahead",
+        "Hospital ahead"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A round yellow sign with a black X and \"RR\" letters is the advance warning for a railroad crossing. Slow down and be prepared to stop if signals activate."
+    },
+    {
+      "id": 29,
+      "image": "/images/traffic-signs-2/slippery-when-wet.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "Slippery when wet",
+        "Winding road ahead",
+        "Loose gravel"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The slippery-when-wet sign warns of a road surface that can become hazardous when wet. Reduce speed and avoid sudden braking or sharp turns."
+    },
+    {
+      "id": 30,
+      "image": "/images/traffic-signs-2/hospital-ahead.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "Hospital ahead",
+        "Rest area ahead",
+        "Hotel services ahead"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A blue square sign with a white \"H\" indicates a hospital ahead. Blue service signs guide drivers to nearby services."
+    },
+    {
+      "id": 31,
+      "image": "/images/traffic-signs-2/no-uturn.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "No U-turn allowed",
+        "No left turn",
+        "Roundabout ahead"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A circular sign with a U-turn arrow crossed out by a red diagonal line means U-turns are prohibited at this intersection."
+    },
+    {
+      "id": 32,
+      "image": "/images/traffic-signs-2/no-left-turn.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "No left turn",
+        "Left turn yield on green",
+        "One way only — no left turn"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A circular sign with a left-turn arrow crossed out by a red diagonal line means left turns are prohibited at this intersection."
+    },
+    {
+      "id": 33,
+      "image": "/images/traffic-signs-2/pedestrian-crossing.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "School zone",
+        "Pedestrian crossing ahead",
+        "Bicycle crossing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A yellow or fluorescent yellow-green diamond with a pedestrian symbol warns of a pedestrian crossing ahead. Drivers must yield to pedestrians at every crosswalk (CVC §21950)."
+    },
+    {
+      "id": 34,
+      "image": "/images/traffic-signs-2/steep-hill-ahead.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "Steep hill ahead",
+        "Bumpy road ahead",
+        "Rough road surface"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A diamond sign with a vehicle on an incline warns of a steep hill ahead. Reduce speed and consider downshifting before descending."
+    },
+    {
+      "id": 35,
+      "image": "/images/traffic-signs/winding-road.webp",
+      "question": "What does this sign mean?",
+      "options": [
+        "Winding road ahead",
+        "Slippery when wet",
+        "Sharp curve ahead"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A diamond sign with a curving arrow indicates a winding road ahead — a series of curves in opposite directions. Reduce speed and stay in your lane."
+    },
+    {
+      "id": 36,
+      "image": "/images/traffic-signs-2/flagger-ahead.jpeg",
+      "question": "What does this sign mean?",
+      "options": [
+        "Police checkpoint ahead",
+        "Flagger (worker directing traffic) ahead",
+        "Pedestrian crossing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An orange diamond sign with a person holding a flag warns of a flagger (worker directing traffic) ahead. Slow down and follow the flagger's directions."
+    },
+    {
+      "id": 37,
+      "image": "/images/traffic-signs/merge-arrow-sign.webp",
+      "question": "This sign means:",
+      "options": [
+        "Another lane is merging with your lane",
+        "You have the right-of-way",
+        "Side road ahead"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This sign warns that another lane is merging with yours."
+    },
+    {
+      "id": 38,
+      "image": "/images/traffic-signs/sign-29.webp",
+      "question": "This sign means:",
+      "options": [
+        "Do NOT pass unless you do not see oncoming vehicles",
+        "Don't pass unless it seems safe to do so",
+        "Don't pass other vehicles for any reason"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A 'Do Not Pass' sign indicates it's unsafe to pass in that area. Only pass when it's clearly safe and legal."
+    }
+  ]
+}

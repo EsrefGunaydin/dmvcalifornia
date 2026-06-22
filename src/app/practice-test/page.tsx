@@ -110,6 +110,26 @@ export default function PracticeTestsPage() {
           </Link>
         </div>
 
+        {/* Study tools row */}
+        <div className="container mx-auto px-4 pt-4">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link href="/california-dmv-road-signs-test" className="flex items-center gap-3 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
+              <span className="text-3xl">🛑</span>
+              <span>
+                <span className="block font-bold text-gray-900 group-hover:text-primary transition-colors">Road Signs Test</span>
+                <span className="block text-sm text-gray-600">Identify real California signs with instant answers.</span>
+              </span>
+            </Link>
+            <Link href="/california-dmv-cheat-sheet" className="flex items-center gap-3 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
+              <span className="text-3xl">📝</span>
+              <span>
+                <span className="block font-bold text-gray-900 group-hover:text-primary transition-colors">DMV Cheat Sheet</span>
+                <span className="block text-sm text-gray-600">Every fact the written test asks, on one page.</span>
+              </span>
+            </Link>
+          </div>
+        </div>
+
         {/* Quiz Cards */}
         <section className="container mx-auto px-4 py-12">
           <div className="max-w-6xl mx-auto">

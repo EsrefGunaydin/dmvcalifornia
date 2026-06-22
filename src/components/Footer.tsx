@@ -29,6 +29,21 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/california-dmv-cheat-sheet" className="text-gray-300 hover:text-white transition-colors">
+                  DMV Cheat Sheet
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-road-signs-test" className="text-gray-300 hover:text-white transition-colors">
+                  Road Signs Test
+                </Link>
+              </li>
+              <li>
+                <Link href="/20-hardest-dmv-written-test-questions" className="text-gray-300 hover:text-white transition-colors">
+                  20 Hardest Questions
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
                   Blog
                 </Link>

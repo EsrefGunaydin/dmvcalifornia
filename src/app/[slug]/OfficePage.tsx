@@ -27,14 +27,74 @@ type Office = {
   }[];
 };
 
+const APPOINTMENT_URL = 'https://www.dmv.ca.gov/portal/make-an-appointment/';
+const ONLINE_SERVICES_URL = 'https://www.dmv.ca.gov/portal/dmv-online/';
+
+const WHAT_TO_BRING = [
+  'Your appointment confirmation (book online to skip the line)',
+  'A completed application form (DL 44 for a license/ID, if required)',
+  'Proof of identity — passport or birth certificate',
+  'Proof of your Social Security Number',
+  'Two proofs of California residency (for a REAL ID)',
+  'Payment for the application fee (card, check, or cash)',
+];
+
 export default function OfficePage({ office }: { office: Office }) {
   // Generate Google Maps embed URL using the free iframe method
   const mapQuery = encodeURIComponent(`${office.name} DMV California ${office.address || ''}`);
   const mapEmbedUrl = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
+  const isOpen = office.status !== 'CLOSED';
+  const phoneDigits = office.phone.replace(/[^\d]/g, '');
+
+  // Per-office FAQ — targets "[city] dmv hours / appointment / phone / what to
+  // bring / wait time" searches and powers the FAQPage rich result.
+  const faqs = isOpen
+    ? [
+        {
+          q: `What are the hours of the ${office.name} DMV office?`,
+          a: `${office.hours}. Hours can change on state holidays, so confirm before you go. See the full daily schedule above.`,
+        },
+        {
+          q: `How do I make an appointment at the ${office.name} DMV?`,
+          a: `Book online at dmv.ca.gov/portal/make-an-appointment or call ${office.phone}. An appointment dramatically cuts your wait versus walking in.`,
+        },
+        {
+          q: `What is the phone number for the ${office.name} DMV office?`,
+          a: `You can reach the ${office.name} DMV at ${office.phone}.`,
+        },
+        {
+          q: `What should I bring to the ${office.name} DMV?`,
+          a: `Bring your appointment confirmation, proof of identity (passport or birth certificate), proof of your Social Security Number, two proofs of California residency if you want a REAL ID, and payment for any fees.`,
+        },
+        {
+          q: `How can I reduce my wait time at the ${office.name} DMV?`,
+          a: `Make an appointment instead of walking in, go mid-week and mid-morning, and complete tasks like renewals or a change of address online at dmv.ca.gov when possible.`,
+        },
+      ]
+    : [];
+
+  const faqSchema = faqs.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <div className="min-h-screen bg-gray-50">
       <OfficeSchema office={office} />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <Header />
 
       {/* Office Content */}
@@ -100,6 +160,38 @@ export default function OfficePage({ office }: { office: Office }) {
             }
           </p>
         </header>
+
+        {/* Appointment CTA — highest-intent action for "[city] dmv appointment" */}
+        {isOpen && (
+          <div className="mb-8 rounded-2xl bg-gradient-to-r from-primary to-primary-600 text-white p-6 md:p-7 shadow-lg">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+              <div>
+                <h2 className="text-xl md:text-2xl font-bold mb-1">
+                  Skip the line at the {office.name} DMV
+                </h2>
+                <p className="text-white/90 text-sm md:text-base">
+                  Booking an appointment is free and cuts your wait time dramatically vs. walking in.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3 flex-shrink-0">
+                <a
+                  href={APPOINTMENT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-white text-primary font-semibold px-5 py-3 rounded-lg hover:bg-gray-100 transition-colors whitespace-nowrap"
+                >
+                  Make an Appointment →
+                </a>
+                <a
+                  href={`tel:${phoneDigits}`}
+                  className="bg-primary-700/40 border border-white/40 text-white font-semibold px-5 py-3 rounded-lg hover:bg-primary-700/60 transition-colors whitespace-nowrap"
+                >
+                  Call {office.phone}
+                </a>
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Office Details */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
@@ -217,6 +309,36 @@ export default function OfficePage({ office }: { office: Office }) {
           </div>
         </div>
 
+        {/* What to bring */}
+        {isOpen && (
+          <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+              <svg className="w-6 h-6 text-primary mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              What to Bring to the {office.name} DMV
+            </h2>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {WHAT_TO_BRING.map((item, i) => (
+                <li key={i} className="flex items-start">
+                  <svg className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span className="text-gray-700">{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-sm text-gray-500">
+              Requirements vary by service. Renewing or changing your address? Many tasks can be done
+              online at{' '}
+              <a href={ONLINE_SERVICES_URL} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                dmv.ca.gov
+              </a>{' '}
+              without visiting an office.
+            </p>
+          </div>
+        )}
+
         {/* Map */}
         <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
@@ -280,6 +402,26 @@ export default function OfficePage({ office }: { office: Office }) {
                     <p className="text-sm text-gray-600">{nearbyOffice.distance}</p>
                   </div>
                 </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* FAQ — powers the FAQPage rich result + answers local intent */}
+        {faqs.length > 0 && (
+          <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              {office.name} DMV — Frequently Asked Questions
+            </h2>
+            <div className="space-y-3">
+              {faqs.map((f, i) => (
+                <details key={i} className="group bg-gray-50 rounded-lg border border-gray-200 p-4">
+                  <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
+                    {f.q}
+                    <span className="text-primary group-open:rotate-180 transition-transform ml-2">▾</span>
+                  </summary>
+                  <p className="text-gray-700 mt-3 leading-relaxed">{f.a}</p>
+                </details>
               ))}
             </div>
           </div>
