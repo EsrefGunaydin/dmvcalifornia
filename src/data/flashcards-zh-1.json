@@ -66,9 +66,9 @@
       {
         "id": 9,
         "question": "在以下情况下，您必须向 DMV 提交在加州发生的交通事故书面报告 (SR 1)：",
-        "answer": "您卷入碰撞事故且损失超过 750 美元",
+        "answer": "您卷入碰撞事故且损失超过 1,000 美元",
         "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
-        "answerEn": "are involved in a collision and there is more than $750 in damages"
+        "answerEn": "are involved in a collision and there is more than $1,000 in damages"
       },
       {
         "id": 10,

@@ -66,9 +66,9 @@
       {
         "id": 9,
         "question": "Вы должны подать в DMV письменный отчёт о дорожно-транспортном происшествии в Калифорнии (SR 1), если вы:",
-        "answer": "стали участником столкновения, и ущерб превышает 750 долларов",
+        "answer": "стали участником столкновения, и ущерб превышает 1,000 долларов",
         "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
-        "answerEn": "are involved in a collision and there is more than $750 in damages"
+        "answerEn": "are involved in a collision and there is more than $1,000 in damages"
       },
       {
         "id": 10,

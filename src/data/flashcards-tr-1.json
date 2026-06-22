@@ -66,9 +66,9 @@
       {
         "id": 9,
         "question": "California'da meydana gelen bir trafik kazasını (SR 1) DMV'ye yazılı olarak şu durumda bildirmelisiniz:",
-        "answer": "bir çarpışmaya karıştıysanız ve 750 dolardan fazla hasar varsa",
+        "answer": "bir çarpışmaya karıştıysanız ve 1,000 dolardan fazla hasar varsa",
         "questionEn": "You must make a written report of traffic accident occurring in California (SR 1) to DMV if you:",
-        "answerEn": "are involved in a collision and there is more than $750 in damages"
+        "answerEn": "are involved in a collision and there is more than $1,000 in damages"
       },
       {
         "id": 10,
