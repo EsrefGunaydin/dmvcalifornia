@@ -17,6 +17,7 @@ import BlogImageLightbox from '@/components/BlogImageLightbox';
 import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 import ArticleSchema from '@/components/blog/ArticleSchema';
+import PracticeTestCTA from '@/components/blog/PracticeTestCTA';
 import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
 import { countWords, readingTimeMinutes } from '@/lib/strip-html';
 
@@ -37,6 +38,11 @@ type BlogPost = {
   lang?: string;
   // Map of hreflang code -> slug of the same article in another language.
   translations?: { [lang: string]: string };
+  // Optional SEO overrides (decouple the SERP title/description from the H1/excerpt).
+  metaTitle?: string;
+  metaDescription?: string;
+  // Optional in-content practice-test CTA (blog → tests funnel).
+  testCta?: import('@/components/blog/PracticeTestCTA').PracticeTestCtaConfig;
 };
 
 const SITE_URL = 'https://www.dmvcalifornia.us';
@@ -514,12 +520,17 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       languageAlternates['x-default'] = languageAlternates['en'] || canonicalUrl;
     }
 
+    // SEO title/description can be overridden per-post to optimize the SERP
+    // snippet without changing the on-page H1/excerpt.
+    const seoTitle = typedPost.metaTitle || typedPost.title;
+    const seoDescription = typedPost.metaDescription || typedPost.excerpt;
+
     return {
       // Return just the post title — the root layout's title template
       // automatically appends " | DMV California". Doing it again here
       // caused the double-suffix you see in search results.
-      title: typedPost.title,
-      description: typedPost.excerpt,
+      title: seoTitle,
+      description: seoDescription,
       authors: [{ name: typedPost.author }],
       keywords: typedPost.tags,
       alternates: {
@@ -527,8 +538,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         ...(languageAlternates ? { languages: languageAlternates } : {}),
       },
       openGraph: {
-        title: typedPost.title,
-        description: typedPost.excerpt,
+        title: seoTitle,
+        description: seoDescription,
         url: canonicalUrl,
         siteName: 'DMV California',
         type: 'article',
@@ -540,8 +551,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       },
       twitter: {
         card: 'summary_large_image',
-        title: typedPost.title,
-        description: typedPost.excerpt,
+        title: seoTitle,
+        description: seoDescription,
         images: [absoluteImage],
       },
     };
@@ -802,6 +813,10 @@ function renderBlogPost(postIn: BlogPost) {
           {/* Post Views Counter - Dynamic */}
           <BlogViewTracker slug={post.slug} initialViews={post.views || 0} />
         </div>
+
+        {/* Practice-test funnel CTA (blog → tests): turns informational
+            readers into engaged, returning users. Opt-in per post. */}
+        {post.testCta && <PracticeTestCTA config={post.testCta} />}
 
         {/* FAQ Section (visible content; backs the FAQPage JSON-LD above) */}
         {post.faq && post.faq.length > 0 && (
