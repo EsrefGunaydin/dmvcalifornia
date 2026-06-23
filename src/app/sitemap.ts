@@ -18,6 +18,7 @@ import intersectionLevelsData from '@/data/intersection-levels.json';
 import officesData from '@/data/dmv_offices.json';
 import { FLASHCARD_LANG_CODES, allFlashcardSetParams } from '@/data/flashcards-i18n';
 import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
+import { REGIONS } from '@/data/dmv-regions';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.dmvcalifornia.us';
@@ -368,9 +369,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Regional DMV office hub pages (e.g. /dmv-offices/los-angeles)
+  const regionPages: MetadataRoute.Sitemap = REGIONS.map((r) => ({
+    url: `${baseUrl}/dmv-offices/${r.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
     ...roadSignLangPages,
+    ...regionPages,
     ...blogPages,
     ...categoryPages,
     ...authorPages,

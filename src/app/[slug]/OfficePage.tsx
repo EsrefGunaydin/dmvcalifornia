@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
 import OfficeSchema from '../../components/OfficeSchema';
+import { regionOfOfficeSlug } from '../../data/dmv-regions';
 
 type Office = {
   id: number;
@@ -40,6 +41,7 @@ const WHAT_TO_BRING = [
 ];
 
 export default function OfficePage({ office }: { office: Office }) {
+  const region = regionOfOfficeSlug(office.slug);
   // Generate Google Maps embed URL using the free iframe method
   const mapQuery = encodeURIComponent(`${office.name} DMV California ${office.address || ''}`);
   const mapEmbedUrl = `https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
@@ -114,6 +116,16 @@ export default function OfficePage({ office }: { office: Office }) {
               </Link>
             </li>
             <li>/</li>
+            {region && (
+              <>
+                <li>
+                  <Link href={`/dmv-offices/${region.slug}`} className="hover:text-primary">
+                    {region.name}
+                  </Link>
+                </li>
+                <li>/</li>
+              </>
+            )}
             <li className="text-gray-900 font-medium">{office.name}</li>
           </ol>
         </nav>

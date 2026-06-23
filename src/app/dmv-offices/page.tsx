@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
 import officesData from '../../data/dmv_offices.json';
+import { REGIONS, officesInRegion } from '../../data/dmv-regions';
 
 const SITE_URL = 'https://www.dmvcalifornia.us';
 const DMV_PHONE = '1-800-777-0133';
@@ -193,6 +194,28 @@ export default function DMVOfficesPage() {
               Renewals, REAL ID, address change — 24/7.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Browse by region — internal-links the regional hub pages and helps
+          users find "[region] DMV offices" without scrolling the A–Z list. */}
+      <section className="container mx-auto px-4 mb-10">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">Browse DMV offices by region</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {REGIONS.map((r) => (
+            <Link
+              key={r.slug}
+              href={`/dmv-offices/${r.slug}`}
+              className="block p-4 bg-white rounded-lg shadow border border-gray-200 hover:border-primary hover:shadow-lg transition-all group"
+            >
+              <div className="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                {r.name}
+              </div>
+              <div className="text-sm text-gray-500 mt-1">
+                {officesInRegion(r.key).length} offices →
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
