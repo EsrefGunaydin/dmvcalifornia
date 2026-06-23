@@ -24,8 +24,13 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Study Tools</h3>
             <ul className="space-y-2">
               <li>
+                <Link href="/california-dmv-practice-test" className="text-gray-300 hover:text-white transition-colors">
+                  California DMV Practice Test
+                </Link>
+              </li>
+              <li>
                 <Link href="/practice-test" className="text-gray-300 hover:text-white transition-colors">
-                  Practice Tests
+                  All Practice Tests
                 </Link>
               </li>
               <li>

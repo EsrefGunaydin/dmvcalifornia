@@ -253,6 +253,12 @@ export default function Home() {
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               The most comprehensive collection of California DMV practice tests. Test your knowledge with real DMV questions and get instant feedback.
             </p>
+            <Link
+              href="/california-dmv-practice-test"
+              className="inline-block mt-5 bg-dmv-600 text-white font-bold px-6 py-3 rounded-lg shadow hover:bg-dmv-700 transition-colors"
+            >
+              Open the California DMV Practice Test hub →
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">

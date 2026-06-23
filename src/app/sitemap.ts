@@ -19,6 +19,7 @@ import officesData from '@/data/dmv_offices.json';
 import { FLASHCARD_LANG_CODES, allFlashcardSetParams } from '@/data/flashcards-i18n';
 import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
 import { REGIONS } from '@/data/dmv-regions';
+import { HUB_SLUGS } from '@/data/seo-hubs';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.dmvcalifornia.us';
@@ -377,8 +378,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Keyword SEO hub pages (e.g. /california-dmv-practice-test)
+  const hubPages: MetadataRoute.Sitemap = HUB_SLUGS.map((slug) => ({
+    url: `${baseUrl}/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
   return [
     ...staticPages,
+    ...hubPages,
     ...roadSignLangPages,
     ...regionPages,
     ...blogPages,

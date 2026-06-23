@@ -46,6 +46,21 @@ const config: Config = {
           800: "#9c2814",
           900: "#812617",
         },
+        // DMV blue — used by the keyword SEO hubs (the rest of the site stays
+        // on the orange `primary`). Base is rgb(78,128,196) = #4e80c4.
+        dmv: {
+          DEFAULT: "#4e80c4",
+          50: "#eef3fa",
+          100: "#d8e4f3",
+          200: "#b9cfe9",
+          300: "#8fb0db",
+          400: "#6a94cd",
+          500: "#4e80c4",
+          600: "#3d68a8",
+          700: "#345488",
+          800: "#2f4870",
+          900: "#2b3f5e",
+        },
       },
     },
   },
