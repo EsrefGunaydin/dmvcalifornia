@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-12 mt-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and Mission Section */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-block mb-4">
@@ -19,23 +19,13 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Study Tools */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4">Study Tools</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/practice-test" className="text-gray-300 hover:text-white transition-colors">
                   Practice Tests
-                </Link>
-              </li>
-              <li>
-                <Link href="/california-dmv-test-study-guide" className="text-gray-300 hover:text-white transition-colors">
-                  Study Guide
-                </Link>
-              </li>
-              <li>
-                <Link href="/california-dmv-cheat-sheet" className="text-gray-300 hover:text-white transition-colors">
-                  DMV Cheat Sheet
                 </Link>
               </li>
               <li>
@@ -44,8 +34,55 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/california-dmv-cheat-sheet" className="text-gray-300 hover:text-white transition-colors">
+                  DMV Cheat Sheet
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-test-study-guide" className="text-gray-300 hover:text-white transition-colors">
+                  Study Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-marathon-test" className="text-gray-300 hover:text-white transition-colors">
+                  Marathon Test
+                </Link>
+              </li>
+              <li>
                 <Link href="/20-hardest-dmv-written-test-questions" className="text-gray-300 hover:text-white transition-colors">
                   20 Hardest Questions
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Topics & More */}
+          <div>
+            <h3 className="text-xl font-bold mb-4">Topics &amp; More</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/california-dmv-drug-and-alcohol-test" className="text-gray-300 hover:text-white transition-colors">
+                  Drug &amp; Alcohol Test
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-parking-test" className="text-gray-300 hover:text-white transition-colors">
+                  Parking Test
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-speed-limit-test" className="text-gray-300 hover:text-white transition-colors">
+                  Speed Limit Test
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-fees" className="text-gray-300 hover:text-white transition-colors">
+                  DMV Fees
+                </Link>
+              </li>
+              <li>
+                <Link href="/dmv-offices" className="text-gray-300 hover:text-white transition-colors">
+                  DMV Offices
                 </Link>
               </li>
               <li>
@@ -56,11 +93,6 @@ export default function Footer() {
               <li>
                 <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
                   About
-                </Link>
-              </li>
-              <li>
-                <Link href="/dmv-offices" className="text-gray-300 hover:text-white transition-colors">
-                  DMV Offices
                 </Link>
               </li>
             </ul>

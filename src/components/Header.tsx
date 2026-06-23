@@ -3,8 +3,21 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
+const STUDY_TOOLS: { href: string; label: string }[] = [
+  { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+  { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet' },
+  { href: '/california-dmv-test-study-guide', label: 'Study Guide' },
+  { href: '/california-dmv-marathon-test', label: 'Marathon Test' },
+  { href: '/20-hardest-dmv-written-test-questions', label: '20 Hardest Questions' },
+  { href: '/california-dmv-drug-and-alcohol-test', label: 'Drug & Alcohol Test' },
+  { href: '/california-dmv-parking-test', label: 'Parking Test' },
+  { href: '/california-dmv-speed-limit-test', label: 'Speed Limit Test' },
+  { href: '/california-dmv-fees', label: 'DMV Fees' },
+];
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [toolsOpen, setToolsOpen] = useState(false);
 
   return (
     <header className="bg-gradient-to-r from-white via-orange-100 via-50% to-white shadow-sm border-b-4 border-primary sticky top-0 z-40">
@@ -23,6 +36,35 @@ export default function Header() {
             <Link href="/practice-test" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Practice Tests
             </Link>
+
+            {/* Study Tools dropdown (hover) */}
+            <div className="relative group">
+              <button
+                type="button"
+                className="flex items-center gap-1 text-gray-700 hover:text-primary font-medium transition-colors"
+                aria-haspopup="true"
+              >
+                Study Tools
+                <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {/* invisible bridge + panel keep hover alive across the gap */}
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block z-50">
+                <div className="w-60 bg-white rounded-xl shadow-xl border border-gray-100 py-2">
+                  {STUDY_TOOLS.map((t) => (
+                    <Link
+                      key={t.href}
+                      href={t.href}
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors"
+                    >
+                      {t.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
             <Link href="/intersection" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Intersection 🚦
             </Link>
@@ -31,9 +73,6 @@ export default function Header() {
             </Link>
             <Link href="/dmv-offices" className="text-gray-700 hover:text-primary font-medium transition-colors">
               DMV Offices
-            </Link>
-            <Link href="/privacy-policy" className="text-gray-700 hover:text-primary font-medium transition-colors">
-              Privacy
             </Link>
             <a
               href="https://apps.apple.com/app/dmv-california/id6754900213"
@@ -77,6 +116,36 @@ export default function Header() {
               >
                 Practice Tests
               </Link>
+
+              {/* Study Tools accordion */}
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setToolsOpen(!toolsOpen)}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                  aria-expanded={toolsOpen}
+                >
+                  Study Tools
+                  <svg className={`w-5 h-5 transition-transform ${toolsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {toolsOpen && (
+                  <div className="flex flex-col gap-1 pl-4 mt-1 border-l-2 border-orange-200">
+                    {STUDY_TOOLS.map((t) => (
+                      <Link
+                        key={t.href}
+                        href={t.href}
+                        className="text-gray-600 hover:text-primary text-sm py-2 transition-colors"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {t.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
               <Link
                 href="/intersection"
                 className="text-gray-700 hover:text-primary font-medium transition-colors py-2"

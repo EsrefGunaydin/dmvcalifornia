@@ -202,6 +202,48 @@ export default function Home() {
           </div>
         </Link>
 
+        {/* Free DMV Study Tools — surfaces the dedicated study pages so they
+            get homepage internal links (discovery + SEO authority). */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+              Free DMV Study Tools
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Everything you need to pass — road signs, a one-page cheat sheet, a full study plan, and more. All free, no signup.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {[
+              { href: '/california-dmv-road-signs-test', icon: '🚦', title: 'Road Signs Test', desc: 'Drill all 38 California road signs with real images and instant answers.' },
+              { href: '/california-dmv-cheat-sheet', icon: '📋', title: 'DMV Cheat Sheet', desc: 'Every number and rule the test loves — BAC, curb colors, speed limits — on one page.' },
+              { href: '/california-dmv-test-study-guide', icon: '📚', title: 'Study Guide', desc: 'A simple 7-step plan from the handbook all the way to test day.' },
+              { href: '/california-dmv-marathon-test', icon: '🏁', title: 'Marathon Test', desc: 'Every question in one run — miss one and it comes back until you master it.' },
+              { href: '/20-hardest-dmv-written-test-questions', icon: '🔥', title: '20 Hardest Questions', desc: 'The trickiest, most-missed questions, explained so they can’t surprise you.' },
+              { href: '/california-dmv-fees', icon: '💲', title: 'DMV Fees', desc: 'License, renewal, REAL ID, and registration costs — what you’ll actually pay.' },
+            ].map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="group bg-white rounded-xl shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-primary p-6 flex items-start gap-4"
+              >
+                <div className="text-4xl flex-shrink-0" aria-hidden="true">{tool.icon}</div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">
+                    {tool.title}
+                  </h3>
+                  <p className="text-sm text-gray-600">{tool.desc}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/california-dmv-test-study-guide" className="text-primary font-semibold hover:underline">
+              See the full study plan →
+            </Link>
+          </div>
+        </div>
+
         {/* All Practice Tests */}
         <div className="mb-12">
           <div className="text-center mb-10">
