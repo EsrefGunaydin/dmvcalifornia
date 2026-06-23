@@ -4,9 +4,19 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import SignQuiz, { type SignQuestion } from '@/components/SignQuiz';
+import LanguagePills from '@/components/LanguagePills';
 import signData from '@/data/road-signs-test.json';
+import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
 
 const questions = signData.questions as SignQuestion[];
+
+const SITE = 'https://www.dmvcalifornia.us';
+const BASE_PATH = '/california-dmv-road-signs-test';
+const hreflang: Record<string, string> = {
+  en: `${SITE}${BASE_PATH}`,
+  'x-default': `${SITE}${BASE_PATH}`,
+};
+for (const code of ROAD_SIGN_LANG_CODES) hreflang[code] = `${SITE}${BASE_PATH}/${code}`;
 
 export const metadata: Metadata = {
   title: 'California DMV Road Signs Test 2026 (Free, With Images) | DMV California',
@@ -19,7 +29,10 @@ export const metadata: Metadata = {
     'traffic signs test',
     'road signs and meanings',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-road-signs-test' },
+  alternates: {
+    canonical: 'https://www.dmvcalifornia.us/california-dmv-road-signs-test',
+    languages: hreflang,
+  },
   openGraph: {
     title: 'California DMV Road Signs Test 2026 (Free, With Images)',
     description: 'Identify real California traffic signs and learn what each one means.',
@@ -67,6 +80,7 @@ export default function RoadSignsTestPage() {
         <section className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white py-14">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
+              <LanguagePills active="en" />
               <span className="inline-block bg-white/20 px-4 py-1 rounded-full text-sm font-semibold mb-4">
                 {questions.length} real sign images · free
               </span>

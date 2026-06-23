@@ -15,6 +15,7 @@ import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import intersectionLevelsData from '@/data/intersection-levels.json';
 import officesData from '@/data/dmv_offices.json';
 import { FLASHCARD_LANG_CODES, allFlashcardSetParams } from '@/data/flashcards-i18n';
+import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.dmvcalifornia.us';
@@ -331,8 +332,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
+  // Localized road-signs test pages (e.g. /california-dmv-road-signs-test/es)
+  const roadSignLangPages: MetadataRoute.Sitemap = ROAD_SIGN_LANG_CODES.map((code) => ({
+    url: `${baseUrl}/california-dmv-road-signs-test/${code}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }));
+
   return [
     ...staticPages,
+    ...roadSignLangPages,
     ...blogPages,
     ...categoryPages,
     ...authorPages,

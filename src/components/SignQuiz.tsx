@@ -11,9 +11,34 @@ export interface SignQuestion {
   explanation?: string;
 }
 
+export interface SignQuizLabels {
+  answered: string;
+  correct: string;
+  pickPrompt: string;
+  correctWord: string;
+  answerWord: string;
+}
+
+const DEFAULT_LABELS: SignQuizLabels = {
+  answered: 'Answered',
+  correct: 'correct',
+  pickPrompt: 'Pick an answer to reveal the meaning.',
+  correctWord: 'Correct!',
+  answerWord: 'Answer:',
+};
+
 const LETTERS = ['A', 'B', 'C', 'D'];
 
-export default function SignQuiz({ questions }: { questions: SignQuestion[] }) {
+export default function SignQuiz({
+  questions,
+  labels,
+  dir = 'ltr',
+}: {
+  questions: SignQuestion[];
+  labels?: Partial<SignQuizLabels>;
+  dir?: 'ltr' | 'rtl';
+}) {
+  const t: SignQuizLabels = { ...DEFAULT_LABELS, ...labels };
   const [picks, setPicks] = useState<Record<number, number>>({});
   const answered = Object.keys(picks).length;
   const correct = questions.filter((q) => picks[q.id] === q.correctAnswer).length;
@@ -23,7 +48,7 @@ export default function SignQuiz({ questions }: { questions: SignQuestion[] }) {
       {/* Scoreboard */}
       <div className="sticky top-2 z-20 mb-8 flex items-center justify-between gap-4 rounded-xl bg-white/95 backdrop-blur border-2 border-gray-200 shadow-sm px-5 py-3">
         <span className="text-sm font-medium text-gray-600">
-          Answered <span className="font-bold text-gray-900">{answered}</span>/{questions.length}
+          {t.answered} <span className="font-bold text-gray-900">{answered}</span>/{questions.length}
         </span>
         <div className="flex-1 mx-2 h-2 rounded-full bg-gray-200 overflow-hidden">
           <div
@@ -32,7 +57,7 @@ export default function SignQuiz({ questions }: { questions: SignQuestion[] }) {
           />
         </div>
         <span className="text-sm font-medium text-gray-600">
-          <span className="font-bold text-green-600">{correct}</span> correct
+          <span className="font-bold text-green-600">{correct}</span> {t.correct}
         </span>
       </div>
 
@@ -85,7 +110,7 @@ export default function SignQuiz({ questions }: { questions: SignQuestion[] }) {
                       className={`w-full text-left flex items-start gap-3 rounded-xl border-2 px-4 py-3 transition-all ${cls}`}
                     >
                       <span className="font-bold text-gray-500 mt-0.5">{LETTERS[oi]}.</span>
-                      <span className="flex-1 text-gray-900">{opt}</span>
+                      <span className="flex-1 text-gray-900" dir={dir}>{opt}</span>
                       {revealed && isCorrect && <span className="text-green-600 font-bold">✓</span>}
                       {revealed && isPicked && !isCorrect && <span className="text-red-500 font-bold">✗</span>}
                     </button>
@@ -94,11 +119,11 @@ export default function SignQuiz({ questions }: { questions: SignQuestion[] }) {
               </div>
 
               {!revealed ? (
-                <p className="px-6 pb-6 -mt-1 text-sm text-gray-400">Pick an answer to reveal the meaning.</p>
+                <p className="px-6 pb-6 -mt-1 text-sm text-gray-400">{t.pickPrompt}</p>
               ) : (
-                <div className="mx-6 mb-6 rounded-xl bg-gray-50 border border-gray-200 p-4">
+                <div className="mx-6 mb-6 rounded-xl bg-gray-50 border border-gray-200 p-4" dir={dir}>
                   <span className="font-bold text-gray-900">
-                    {picked === q.correctAnswer ? 'Correct! ' : 'Answer: '}
+                    {picked === q.correctAnswer ? `${t.correctWord} ` : `${t.answerWord} `}
                     <span className="text-green-700">{q.options[q.correctAnswer]}</span>
                   </span>
                   {q.explanation && <p className="text-gray-700 mt-1 leading-relaxed">{q.explanation}</p>}
