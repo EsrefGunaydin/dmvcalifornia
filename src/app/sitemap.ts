@@ -10,6 +10,8 @@ import punjabiQuizzesData from '@/data/punjabi-quizzes.json';
 import russianQuizzesData from '@/data/russian-quizzes.json';
 import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
 import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
+import koreanQuizzesData from '@/data/ko-quizzes.json';
+import hindiQuizzesData from '@/data/hi-quizzes.json';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import intersectionLevelsData from '@/data/intersection-levels.json';
@@ -161,6 +163,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/dmv-korean-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/dmv-hindi-test`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/motorcycle-test`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
@@ -296,6 +310,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...russianQuizzesData.quizzes,
     ...tagalogQuizzesData.quizzes,
     ...vietnameseQuizzesData.quizzes,
+    ...koreanQuizzesData.quizzes,
+    ...hindiQuizzesData.quizzes,
     ...motorcycleQuizzesData.quizzes,
     ...commercialQuizzesData.quizzes,
   ];

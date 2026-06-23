@@ -26,7 +26,9 @@ export type QuizLanguage =
   | 'pa'
   | 'ru'
   | 'tl'
-  | 'vi';
+  | 'vi'
+  | 'ko'
+  | 'hi';
 
 export type Quiz = {
   id: string;

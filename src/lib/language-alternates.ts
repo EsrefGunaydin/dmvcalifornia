@@ -25,6 +25,8 @@ export const PRACTICE_TEST_HUBS: Record<string, string> = {
   ru: `${SITE_URL}/dmv-russian-test`,
   tl: `${SITE_URL}/dmv-tagalog-test`,
   vi: `${SITE_URL}/dmv-vietnamese-test`,
+  ko: `${SITE_URL}/dmv-korean-test`,
+  hi: `${SITE_URL}/dmv-hindi-test`,
 };
 
 /**

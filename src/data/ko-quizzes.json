@@ -1,0 +1,286 @@
+{
+  "quizzes": [
+    {
+      "id": "korean-simulator-test",
+      "title": "DMV Korean Simulator Test / DMV 한국어 모의시험",
+      "description": "California DMV 한국어 연습 시험. California DMV Korean driving test with real practice questions.",
+      "category": "Korean Tests / 한국어 시험",
+      "slug": "korean-simulator-test",
+      "language": "ko",
+      "passingScore": 83,
+      "timeLimit": 60,
+      "questions": [
+        {
+          "id": 1,
+          "question": "2피트 이상 떨어진 두 쌍의 실선 이중 황색선은:",
+          "options": ["사유지 진입로에 들어가거나 나올 때 넘을 수 있습니다", "별도의 차선으로 취급해야 합니다", "어떤 이유로도 넘을 수 없습니다"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "차선·회전·추월",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "전방 도로 공사 현장에서 수신호원을 봅니다. 당신은 그 사람의 지시를 따라야 합니다:",
+          "options": ["기존 표지판, 신호 또는 법규와 충돌하지 않는 한", "전방 도로에 주황색 콘이 보일 때만", "항상"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "차선·회전·추월",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "전방 교차로에서 깜박이는 황색 신호를 봅니다. 깜박이는 황색 신호의 의미는:",
+          "options": ["정지하시오. 교차로를 건너기 전에 모든 교차 차량에 양보하시오", "속도를 줄이고 교차로를 조심스럽게 건너시오", "안전하게 할 수 있는 한 교차로에 진입하기 전에 정지하시오"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "우선 통행권·교차로",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "다음 중 철도 선로를 건너기 전에 항상 정지해야 하는 차량은?",
+          "options": ["축이 3개 이상이거나 무게가 4,000파운드 이상인 모든 차량", "위험물 표지가 부착된 탱크 트럭", "보트 트레일러를 견인하는 모터홈이나 픽업트럭"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "철도 건널목",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "흰색으로 칠해진 연석의 의미는:",
+          "options": ["승객 또는 우편물 전용 승하차 구역", "화물 전용 하역 구역", "화물 또는 승객 승하차 구역"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "주차",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "도로가 가장 미끄러운 때는:",
+          "options": ["한동안 비가 내린 후", "폭우가 내리는 동안", "건조한 기간 후 첫 비가 올 때"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "악천후 조건",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "별도의 표시가 없는 한 주거 지역의 제한 속도는 ___",
+          "options": ["시속 25마일", "시속 30마일", "시속 20마일"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "제한 속도",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "Class C 운전면허로 운전할 수 있는 것은:",
+          "options": ["트레일러 두 개를 끄는 차량", "무게에 관계없이 모든 3축 차량", "총중량이 6,000파운드 미만인 3축 차량"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "법규·요건",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "연석이 없는 양방향 도로에서 오르막에 주차할 때 앞바퀴는:",
+          "options": ["왼쪽으로(도로 쪽으로) 돌려야 합니다", "노면과 평행해야 합니다", "오른쪽으로(도로 반대쪽으로) 돌려야 합니다"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "주차",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "여러 차선의 일방통행로에서 일방통행로로 좌회전할 때, 회전을 시작해야 하는 차선은:",
+          "options": ["도로 중앙의 차선", "(안전하다면) 아무 차선", "왼쪽 연석에 가장 가까운 차선"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "차선·회전·추월",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11,
+          "question": "캘리포니아의 '기본 속도법(Basic Speed Law)'은 다음을 명시합니다:",
+          "options": ["게시된 제한 속도보다 빠르게 운전해서는 안 됩니다", "현재 조건에서 안전한 속도보다 빠르게 운전해서는 안 됩니다", "캘리포니아의 최고 제한 속도는 일부 고속도로에서 시속 70마일입니다"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "제한 속도",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "당신 차선 앞의 스쿨버스가 빨간 불을 깜박이며 정지해 있습니다. 당신은:",
+          "options": ["시속 25마일로 줄이고 조심스럽게 지나가시오", "빨간 불이 깜박이는 동안 정지하시오", "정지한 후 모든 어린이가 버스에서 내렸다고 생각될 때 진행하시오"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "보행자·도로 공유",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "자전거 차선에서 운전할 수 있는 때는?",
+          "options": ["혼잡 시간대에 자전거 차선에 자전거 운전자가 없을 때", "우회전하려는 교차로에서 200피트 이내일 때", "우회전하는 앞 차량을 추월하려 할 때"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "보행자·도로 공유",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "다른 차량을 추월하기 위해 포장도로를 벗어나 운전할 수 있는 때는:",
+          "options": ["어떤 경우에도 안 됩니다", "갓길이 차량을 수용할 만큼 충분히 넓을 때", "앞 차량이 좌회전할 때"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "차선·회전·추월",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "차량을 주차할 수 없는 곳은:",
+          "options": ["빨간색으로 칠해진 연석 옆", "초등학교에서 100피트 이내", "비상시 고속도로 갓길"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "주차",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "고속도로에서 운전 중입니다. 앞 차량은 대형 트럭입니다. 당신은 다음과 같이 운전해야 합니다:",
+          "options": ["악천후에는 운전자가 더 멀리 볼 수 있으므로 트럭 바로 뒤에 바짝 붙어서", "승용차보다 트럭에서 더 멀리 떨어져서", "운전자가 당신을 볼 수 있도록 트럭 뒤 한 차 길이 이내로"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "차선·회전·추월",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "고속도로에 합류할 때, 당신은 다음 속도로 운전해야 합니다:",
+          "options": ["고속도로 차량의 게시된 제한 속도", "고속도로 차량보다 시속 5~10마일 느리게", "고속도로 차량과 같거나 비슷한 속도로"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "제한 속도",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "다른 차량을 추월하려는 경우, 당신은:",
+          "options": ["방향지시등을 켜면 상대 운전자가 추월하게 해줄 것이라고 가정하시오", "상대 운전자가 당신이 차선으로 돌아올 공간을 만들어 줄 것이라고 가정하지 마시오", "상대 운전자가 일정한 속도를 유지할 것이라고 가정하시오"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "차선·회전·추월",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "바람이 매우 강한 날입니다. 운전 중 모래폭풍이 고속도로를 가로질러 불어 시야가 나빠집니다. 속도를 줄이고 다음을 켜야 합니다:",
+          "options": ["전조등", "주차등", "실내등"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "악천후 조건",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "교차로를 합법적으로 막을 수 있는 때는:",
+          "options": ["혼잡 시간대에", "녹색 신호에 교차로에 진입했을 때", "어떤 경우에도 안 됩니다"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "우선 통행권·교차로",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "휴대전화 사용과 운전에 관해 취할 수 있는 가장 안전한 예방책은:",
+          "options": ["양손을 운전대에 둘 수 있도록 핸즈프리 장치를 사용한다", "전화를 받기 전에 번호를 확인한다", "도로에서 눈을 뗄 필요가 없도록 전화기를 손 닿는 곳에 둔다"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "법규·요건",
+          "difficulty": "medium"
+        },
+        {
+          "id": 22,
+          "question": "평지 도로에서 연석과 평행하게 차량을 주차할 때:",
+          "options": ["앞바퀴를 도로 쪽으로 돌려야 합니다", "뒷바퀴 중 하나가 연석에 닿아야 합니다", "바퀴가 연석에서 18인치 이내에 있어야 합니다"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "주차",
+          "difficulty": "medium"
+        },
+        {
+          "id": 23,
+          "question": "긴급차량의 사이렌이 들릴 때 교차로 한가운데에 있다면, 당신은:",
+          "options": ["교차로를 통과한 후 오른쪽으로 이동해 정지하시오", "오른쪽으로 이동해 교차로에서 정지하시오", "교차로를 통과한 후 왼쪽으로 이동해 정지하시오"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "우선 통행권·교차로",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "전방 교차로에서 우회전하려고 합니다. 속도를 줄이고:",
+          "options": ["차선의 왼쪽으로 이동하시오", "자전거 차선에서 운전하지 마시오", "회전하기 100피트 전에 신호를 보내시오"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "보행자·도로 공유",
+          "difficulty": "medium"
+        },
+        {
+          "id": 25,
+          "question": "다음의 경우 철도 선로를 건너기 전에 항상 정지하시오:",
+          "options": ["철도 건널목이 기차 통행이 잦은 도시나 마을에 위치할 때", "승용차에 어린아이 두 명 이상을 태우고 있을 때", "선로를 완전히 건널 공간이 반대편에 없을 때"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "철도 건널목",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "일방통행로에서 운전 중입니다. 다른 일방통행로로 좌회전할 수 있는 경우는 오직:",
+          "options": ["그 도로의 차량이 왼쪽으로 이동할 때", "표지판이 회전을 허용할 때", "그 도로의 차량이 오른쪽으로 이동할 때"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "차선·회전·추월",
+          "difficulty": "medium"
+        },
+        {
+          "id": 27,
+          "question": "항상 다른 차량보다 느리게 운전해야 합니까?",
+          "options": ["예, 다른 차량보다 빠르게 운전하는 것보다 항상 안전합니다", "예, 좋은 방어 운전 기법입니다", "아니요, 너무 느리게 운전하면 교통을 막을 수 있습니다"],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "안전 운전",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "녹색 신호이지만 차량이 교차로를 막고 있다면, 당신은:",
+          "options": ["교차로에 진입해 차량이 빠질 때까지 기다리시오", "차량이 빠질 때까지 교차로 밖에 있으시오", "다른 차선으로 합류해 차량을 우회하려 하시오"],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "우선 통행권·교차로",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "횡단보도가 없는데 전방에서 보행자가 당신 차선을 건너는 것이 보입니다. 당신은:",
+          "options": ["정지하고 그 사람이 길을 다 건너도록 하시오", "눈을 맞춘 후 그 사람을 지나가시오", "그 사람을 지나갈 때 속도를 줄이시오"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "보행자·도로 공유",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "교차로, 횡단보도, 철도 건널목에서 당신은 항상:",
+          "options": ["정지하고, 듣고, 조심스럽게 진행하시오", "이유 없이 멈춰 있는 듯한 차량을 천천히 지나가시오", "무엇이 오는지 보기 위해 차량 양옆을 살피시오"],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "철도 건널목",
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}

@@ -9,9 +9,11 @@ import paQ from './road-signs-pa.json';
 import ruQ from './road-signs-ru.json';
 import tlQ from './road-signs-tl.json';
 import viQ from './road-signs-vi.json';
+import koQ from './road-signs-ko.json';
+import hiQ from './road-signs-hi.json';
 import type { SignQuestion } from '@/components/SignQuiz';
 
-export type RoadSignLang = 'es' | 'tr' | 'zh' | 'ar' | 'hy' | 'fa' | 'pa' | 'ru' | 'tl' | 'vi';
+export type RoadSignLang = 'es' | 'tr' | 'zh' | 'ar' | 'hy' | 'fa' | 'pa' | 'ru' | 'tl' | 'vi' | 'ko' | 'hi';
 
 interface TranslatedQuestion {
   id: number;
@@ -200,6 +202,38 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
       { q: 'Bài thi biển báo này có miễn phí không?', a: 'Có. Bài thi này hoàn toàn miễn phí, dùng hình ảnh biển báo thật và cho bạn đáp án đúng kèm giải thích ngắn cho mỗi biển báo. Bạn có thể làm lại bao nhiêu lần tùy thích.' },
     ],
     questions: viQ.questions,
+  },
+  ko: {
+    code: 'ko', nativeName: '한국어', englishName: 'Korean', flag: '🇰🇷', dir: 'ltr',
+    metaTitle: '캘리포니아 DMV 도로 표지판 시험 2026 (무료) | DMV California',
+    metaDescription: '실제 표지판 이미지가 있는 무료 캘리포니아 DMV 도로 표지판 시험 (한국어). 각 표지판을 알아보고 즉시 답과 설명을 받으세요.',
+    h1: '캘리포니아 DMV 도로 표지판 시험',
+    intro: '캘리포니아의 모든 실제 교통 표지판을 보고, 그 의미를 선택하고, 즉시 답과 간단한 설명을 받으세요.',
+    badge: '실제 표지판 이미지 38개 · 무료',
+    keepStudying: '계속 공부하기', allTestsLabel: '모든 연습 시험',
+    labels: { answered: '답변함', correct: '정답', pickPrompt: '의미를 보려면 답을 선택하세요.', correctWord: '정답입니다!', answerWord: '답:' },
+    faq: [
+      { q: '캘리포니아 DMV 시험에는 표지판 문제가 몇 개 있나요?', a: '표지판과 신호는 캘리포니아 DMV의 46문항 필기 시험의 약 4분의 1을 차지합니다. 표지판을 한눈에 알아보는 것은 점수를 올리는 가장 빠른 방법 중 하나입니다.' },
+      { q: '교통 표지판의 세 가지 주요 유형은 무엇인가요?', a: '규제 표지판(정지나 속도 제한처럼 해야 하거나 하지 말아야 할 것), 경고 표지판(앞의 위험을 알리는 노란 마름모), 안내 표지판(방향, 거리, 서비스)입니다.' },
+      { q: '이 도로 표지판 시험은 무료인가요?', a: '예. 이 시험은 100% 무료이며, 실제 표지판 이미지를 사용하고, 각 표지판에 대해 정답과 간단한 설명을 제공합니다. 원하는 만큼 반복할 수 있습니다.' },
+    ],
+    questions: koQ.questions,
+  },
+  hi: {
+    code: 'hi', nativeName: 'हिन्दी', englishName: 'Hindi', flag: '🇮🇳', dir: 'ltr',
+    metaTitle: 'कैलिफोर्निया DMV रोड साइन टेस्ट 2026 (मुफ़्त) | DMV California',
+    metaDescription: 'असली चिह्न तस्वीरों के साथ मुफ़्त कैलिफोर्निया DMV रोड साइन टेस्ट (हिन्दी)। हर चिह्न को पहचानें और तुरंत उत्तर तथा स्पष्टीकरण पाएं।',
+    h1: 'कैलिफोर्निया DMV रोड साइन टेस्ट',
+    intro: 'कैलिफोर्निया के हर असली ट्रैफिक चिह्न को देखें, उसका अर्थ चुनें, और तुरंत उत्तर तथा एक संक्षिप्त स्पष्टीकरण पाएं।',
+    badge: '38 असली चिह्न तस्वीरें · मुफ़्त',
+    keepStudying: 'पढ़ाई जारी रखें', allTestsLabel: 'सभी अभ्यास टेस्ट',
+    labels: { answered: 'उत्तर दिए', correct: 'सही', pickPrompt: 'अर्थ देखने के लिए एक उत्तर चुनें।', correctWord: 'सही!', answerWord: 'उत्तर:' },
+    faq: [
+      { q: 'कैलिफोर्निया DMV टेस्ट में चिह्न के कितने प्रश्न होते हैं?', a: 'चिह्न और सिग्नल कैलिफोर्निया DMV की 46-प्रश्नों वाली लिखित परीक्षा का लगभग एक-चौथाई हिस्सा होते हैं। चिह्नों को एक नज़र में पहचानना आपका स्कोर बढ़ाने के सबसे तेज़ तरीकों में से एक है।' },
+      { q: 'ट्रैफिक चिह्नों के तीन मुख्य प्रकार कौन से हैं?', a: 'नियामक चिह्न (क्या करना या न करना चाहिए, जैसे रुकें और गति सीमा), चेतावनी चिह्न (पीले हीरे जो आगे के खतरों की चेतावनी देते हैं), और मार्गदर्शक चिह्न (दिशाएं, दूरियां और सेवाएं)।' },
+      { q: 'क्या यह रोड साइन टेस्ट मुफ़्त है?', a: 'हां। यह टेस्ट 100% मुफ़्त है, असली चिह्न तस्वीरों का उपयोग करता है, और हर चिह्न के लिए सही उत्तर एक संक्षिप्त स्पष्टीकरण के साथ देता है। आप इसे जितनी बार चाहें दोहरा सकते हैं।' },
+    ],
+    questions: hiQ.questions,
   },
 };
 

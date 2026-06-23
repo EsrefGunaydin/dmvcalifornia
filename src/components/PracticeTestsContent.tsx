@@ -16,7 +16,9 @@ type QuizLanguage =
   | 'pa'
   | 'ru'
   | 'tl'
-  | 'vi';
+  | 'vi'
+  | 'ko'
+  | 'hi';
 
 interface Quiz {
   id: string | number;
@@ -48,6 +50,8 @@ const LANGUAGE_OPTIONS: { value: 'all' | QuizLanguage; label: string }[] = [
   { value: 'ru', label: '🇷🇺 Русский' },
   { value: 'tl', label: '🇵🇭 Tagalog' },
   { value: 'vi', label: '🇻🇳 Tiếng Việt' },
+  { value: 'ko', label: '🇰🇷 한국어' },
+  { value: 'hi', label: '🇮🇳 हिन्दी' },
 ];
 
 const LANGUAGE_FLAG: Record<QuizLanguage, string> = {
@@ -62,6 +66,8 @@ const LANGUAGE_FLAG: Record<QuizLanguage, string> = {
   ru: '🇷🇺',
   tl: '🇵🇭',
   vi: '🇻🇳',
+  ko: '🇰🇷',
+  hi: '🇮🇳',
 };
 
 export default function PracticeTestsContent({ quizzes }: PracticeTestsContentProps) {
