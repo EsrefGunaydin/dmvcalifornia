@@ -119,6 +119,8 @@ export default function PracticeTestsPage() {
               { href: '/california-dmv-drug-and-alcohol-test', emoji: '🍺', title: 'Drug & Alcohol Test', desc: 'BAC limits, implied consent, and DUI penalties.' },
               { href: '/california-dmv-parking-test', emoji: '🅿️', title: 'Parking Test', desc: 'Curb colors and parking on hills, made simple.' },
               { href: '/california-dmv-speed-limit-test', emoji: '⏱️', title: 'Speed Limits Test', desc: 'Every California limit and the Basic Speed Law.' },
+              { href: '/california-dmv-marathon-test', emoji: '🏃', title: 'Marathon Test', desc: 'Every question in one run until you master them all.' },
+              { href: '/california-dmv-test-study-guide', emoji: '📚', title: 'Study Guide', desc: 'A 7-step plan from handbook to full marathon.' },
               { href: '/california-dmv-fees', emoji: '💳', title: 'DMV Fees', desc: 'License, REAL ID, and registration costs for 2026.' },
             ].map((c) => (
               <Link key={c.href} href={c.href} className="flex items-center gap-3 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
