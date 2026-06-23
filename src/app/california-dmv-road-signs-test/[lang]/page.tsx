@@ -57,7 +57,7 @@ export default async function LocalizedRoadSignsPage({
   if (!cfg) notFound();
 
   const questions = getSignQuestions(lang as RoadSignLang);
-  const allTestsLabel = cfg.code === 'es' ? 'Todos los exámenes de práctica' : 'All practice tests';
+  const allTestsLabel = cfg.allTestsLabel;
 
   const faqSchema = {
     '@context': 'https://schema.org',
