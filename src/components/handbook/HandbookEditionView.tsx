@@ -65,11 +65,9 @@ export default function HandbookEditionView({ edition: e }: { edition: HandbookE
               <p className="mt-3 text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">{e.pdfNote}</p>
             )}
             {e.archives && e.archives.length > 0 && (
-              <details className="mt-4 text-sm">
-                <summary className="cursor-pointer text-gray-500 hover:text-primary">
-                  Older editions (compare versions)
-                </summary>
-                <ul className="mt-2 space-y-1.5">
+              <div className="mt-4 pt-4 border-t border-gray-100 text-sm">
+                <p className="font-semibold text-gray-600 mb-2">Older editions (compare versions)</p>
+                <ul className="space-y-1.5">
                   {e.archives.map((a) => (
                     <li key={a.path}>
                       <a href={a.path} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
@@ -78,7 +76,7 @@ export default function HandbookEditionView({ edition: e }: { edition: HandbookE
                     </li>
                   ))}
                 </ul>
-              </details>
+              </div>
             )}
           </div>
 
