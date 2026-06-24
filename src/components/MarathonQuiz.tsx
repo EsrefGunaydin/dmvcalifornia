@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import QuizAd from '@/components/QuizAd';
 
 export interface MarathonQuestion {
@@ -22,6 +22,14 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
+function formatTime(secs: number): string {
+  const h = Math.floor(secs / 3600);
+  const m = Math.floor((secs % 3600) / 60);
+  const s = secs % 60;
+  if (h > 0) return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
 export default function MarathonQuiz({ questions }: { questions: MarathonQuestion[] }) {
   const total = questions.length;
   // The whole point of marathon mode: keep going until every question is
@@ -30,10 +38,27 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
   const [mastered, setMastered] = useState(0);
   const [picked, setPicked] = useState<number | null>(null);
   const [step, setStep] = useState(0); // drives the per-question ad refresh
+  const [elapsed, setElapsed] = useState(0);
+  const startRef = useRef<number>(Date.now());
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const current = queue[0];
   const revealed = picked !== null;
   const done = queue.length === 0;
+
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setElapsed(Math.floor((Date.now() - startRef.current) / 1000));
+    }, 1000);
+    return () => { if (intervalRef.current) clearInterval(intervalRef.current); };
+  }, []);
+
+  useEffect(() => {
+    if (done && intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  }, [done]);
 
   const next = () => {
     if (picked === null) return;
@@ -52,6 +77,13 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
     setMastered(0);
     setPicked(null);
     setStep(0);
+    setElapsed(0);
+    startRef.current = Date.now();
+    if (!intervalRef.current) {
+      intervalRef.current = setInterval(() => {
+        setElapsed(Math.floor((Date.now() - startRef.current) / 1000));
+      }, 1000);
+    }
   };
 
   const progress = total ? Math.round((mastered / total) * 100) : 0;
@@ -61,9 +93,12 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
       <div className="max-w-3xl mx-auto text-center bg-white rounded-2xl border-2 border-green-200 shadow-sm p-10">
         <div className="text-5xl mb-4">🏆</div>
         <h2 className="text-3xl font-bold text-gray-900 mb-2">Marathon complete!</h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-2">
           You answered all {total} questions correctly. If you can clear the marathon, you&apos;re
           ready for the real California DMV test.
+        </p>
+        <p className="text-lg font-semibold text-violet-600 mb-6">
+          Total time: {formatTime(elapsed)}
         </p>
         <button onClick={restart} className="bg-primary text-white px-7 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors">
           Start over
@@ -80,6 +115,7 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
           <span>
             Mastered <span className="font-bold text-green-600">{mastered}</span>/{total}
           </span>
+          <span className="font-mono text-violet-600 font-semibold">{formatTime(elapsed)}</span>
           <span>{queue.length} left</span>
         </div>
         <div className="h-2 rounded-full bg-gray-200 overflow-hidden">

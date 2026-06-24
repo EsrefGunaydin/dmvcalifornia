@@ -27,6 +27,7 @@ function buildPool(): MarathonQuestion[] {
   const seen = new Set<string>();
   const pool: MarathonQuestion[] = [];
   for (const quiz of quizzesData.quizzes as any[]) {
+    if (quiz.language && quiz.language !== 'en') continue;
     for (const q of quiz.questions || []) {
       if (q.image) continue;
       if (!Array.isArray(q.options) || q.options.length < 2) continue;
