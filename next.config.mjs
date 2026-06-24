@@ -23,6 +23,49 @@ const nextConfig = {
         destination: '/drivers-license-by-state',
         permanent: true,
       },
+      // Recover dead legacy WordPress handbook PDF URLs (now 403/404 but still
+      // ranking) into the revived, ad-supported HTML handbook pages.
+      {
+        source: '/wp-content/uploads/2018/02/california-driver-handbook-arabic.pdf',
+        destination: '/california-driver-handbook/california-driver-handbook-arabic',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/uploads/2018/02/california-driver-handbook-chinese.pdf',
+        destination: '/california-driver-handbook/california-driver-handbook-chinese',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/uploads/2018/02/california-driver-handbook-korean.pdf',
+        destination: '/california-driver-handbook/california-driver-handbook-korean',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/uploads/2018/02/california-driver-handbook-farsi.pdf',
+        destination: '/california-driver-handbook/california-driver-handbook-farsi',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/uploads/2018/02/california-driver-handbook-english.pdf',
+        destination: '/california-driver-handbook/california-driver-handbook-english',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/uploads/2020/02/driver-handbook-2020-en.pdf',
+        destination: '/california-driver-handbook/california-driver-handbook-english',
+        permanent: true,
+      },
+      // DL-44 application form: recover the dead legacy URL to the working PDF.
+      {
+        source: '/wp-content/uploads/2018/08/DRIVER-LICENSE-OR-IDENTIFICATION-CARD-APPLICATION-DL-44.pdf',
+        destination: '/pdfs/DRIVER-LICENSE-OR-IDENTIFICATION-CARD-APPLICATION-DL-44.pdf',
+        permanent: true,
+      },
+      {
+        source: '/wp-content/uploads/2018/08/SOLICITUD-DE-LICENCIA-DE-MANEJAR-O-TARJETA-DE-IDENTIDAD.pdf',
+        destination: '/pdfs/SOLICITUD-DE-LICENCIA-DE-MANEJAR-O-TARJETA-DE-IDENTIDAD.pdf',
+        permanent: true,
+      },
     ];
   },
 };

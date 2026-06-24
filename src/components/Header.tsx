@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 const STUDY_TOOLS: { href: string; label: string }[] = [
   { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+  { href: '/california-driver-handbook', label: 'Driver Handbook' },
   { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet' },
   { href: '/california-dmv-test-study-guide', label: 'Study Guide' },
   { href: '/california-dmv-marathon-test', label: 'Marathon Test' },

@@ -20,6 +20,7 @@ import { FLASHCARD_LANG_CODES, allFlashcardSetParams } from '@/data/flashcards-i
 import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
 import { REGIONS } from '@/data/dmv-regions';
 import { HUB_SLUGS } from '@/data/seo-hubs';
+import { HANDBOOK_EDITION_SLUGS } from '@/data/handbook-editions';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.dmvcalifornia.us';
@@ -386,9 +387,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,
   }));
 
+  // California Driver Handbook hub + per-language pages
+  const handbookPages: MetadataRoute.Sitemap = [
+    { url: `${baseUrl}/california-driver-handbook`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
+    ...HANDBOOK_EDITION_SLUGS.map((slug) => ({
+      url: `${baseUrl}/california-driver-handbook/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+  ];
+
   return [
     ...staticPages,
     ...hubPages,
+    ...handbookPages,
     ...roadSignLangPages,
     ...regionPages,
     ...blogPages,
