@@ -19,13 +19,15 @@ const hreflang: Record<string, string> = {
 for (const code of ROAD_SIGN_LANG_CODES) hreflang[code] = `${SITE}${BASE_PATH}/${code}`;
 
 export const metadata: Metadata = {
-  title: 'California DMV Road Signs Test 2026 (Free, With Images) | DMV California',
+  title: 'California DMV Road Signs Test 2026 — Regulatory, Warning & Guide Signs (Free)',
   description:
-    'Free California DMV road signs practice test with real sign images. Identify each traffic sign and get instant answers and explanations — regulatory, warning, and guide signs.',
+    'Free California DMV road signs practice test with real sign images. Practice all regulatory signs, warning signs, and guide signs — instant answers and explanations.',
   keywords: [
     'california road signs test',
+    'california regulatory signs test',
     'dmv sign test california',
     'california dmv road signs practice test',
+    'regulatory signs california',
     'traffic signs test',
     'road signs and meanings',
   ],
