@@ -14,6 +14,7 @@ const STUDY_TOOLS: { href: string; label: string }[] = [
   { href: '/california-dmv-parking-test', label: 'Parking Test' },
   { href: '/california-dmv-speed-limit-test', label: 'Speed Limit Test' },
   { href: '/california-dmv-fees', label: 'DMV Fees' },
+  { href: '/defensive-driving', label: 'Defensive Driving' },
 ];
 
 export default function Header() {
