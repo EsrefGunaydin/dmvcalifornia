@@ -43,6 +43,8 @@ type BlogPost = {
   metaDescription?: string;
   // Optional in-content practice-test CTA (blog → tests funnel).
   testCta?: import('@/components/blog/PracticeTestCTA').PracticeTestCtaConfig;
+  // Optional YouTube video embed shown after article body, before FAQ.
+  youtubeId?: string;
 };
 
 const SITE_URL = 'https://www.dmvcalifornia.us';
@@ -817,6 +819,23 @@ function renderBlogPost(postIn: BlogPost) {
         {/* Practice-test funnel CTA (blog → tests): turns informational
             readers into engaged, returning users. Opt-in per post. */}
         {post.testCta && <PracticeTestCTA config={post.testCta} />}
+
+        {/* YouTube video embed — opt-in per post via youtubeId field */}
+        {post.youtubeId && (
+          <section className="bg-white rounded-lg shadow-sm p-6 md:p-8 mb-8">
+            <h2 className="text-xl font-bold text-gray-900 mb-1">Watch: California DMV Practice Test 2026</h2>
+            <p className="text-sm text-gray-500 mb-4">46 real questions with answers and explanations — follow along or use it to study on the go.</p>
+            <div className="relative w-full rounded-xl overflow-hidden shadow border border-gray-200" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${post.youtubeId}?rel=0&modestbranding=1&autoplay=1&mute=1`}
+                title="California DMV Practice Test 2026 — 46 Questions with Answers"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </section>
+        )}
 
         {/* FAQ Section (visible content; backs the FAQPage JSON-LD above) */}
         {post.faq && post.faq.length > 0 && (
