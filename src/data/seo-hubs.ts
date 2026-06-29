@@ -433,6 +433,558 @@ export const HUBS: Record<string, KeywordHub> = {
     ],
   },
 
+  'california-dmv-practice-test-chinese': {
+    slug: 'california-dmv-practice-test-chinese',
+    metaTitle: 'California DMV Practice Test in Chinese 2026 — 免費中文駕照考試',
+    metaDescription: 'Free California DMV practice test in Chinese. Real exam-style questions in 中文 — no signup, instant answers. Updated for 2026.',
+    keywords: ['california dmv practice test chinese', 'dmv test chinese california', 'california dmv chinese', '加州驾照考试', 'dmv 中文 california 2026'],
+    breadcrumbLabel: 'Chinese / 中文',
+    h1: 'California DMV Practice Test in Chinese / 加州 DMV 中文考試 2026',
+    heroSubtitle: 'Practice for the California DMV written test with real questions in Chinese. 使用真實考題練習加州駕照筆試。Free, no signup, instant answers.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: '中文', icon: '🇨🇳', href: '/california-dmv-practice-test-chinese', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Chinese DMV Practice Tests / 中文 DMV 練習考試',
+        subtitle: 'Full-length tests in Chinese matching the real California DMV exam format.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/chinese-simulator-test', label: 'Chinese DMV Simulator / 中文模擬考試', questions: 46 },
+          { href: '/practice-test/chinese-practice-test-1', label: 'Chinese Practice Test 1 / 中文練習 1', questions: 40 },
+          { href: '/practice-test/chinese-practice-test-2', label: 'Chinese Practice Test 2 / 中文練習 2', questions: 40 },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/dmv-chinese-test', label: 'All Chinese DMV Tests', description: 'Full hub for Chinese DMV practice.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Chinese?', a: 'Yes. The California DMV knowledge test is available in Chinese (Traditional and Simplified) and over 30 other languages. Request your preferred language when you arrive at the DMV office or when scheduling your appointment.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version, requiring 30 correct.' },
+      { q: 'Is this Chinese DMV practice test free?', a: 'Yes — all tests on this page are 100% free, unlimited, and require no signup. You can retake them as many times as you like.' },
+      { q: 'What topics are covered on the California DMV knowledge test?', a: 'The test covers road signs, traffic laws, right-of-way rules, speed limits, parking regulations, DUI laws, and safe driving techniques — all based on the California Driver Handbook.' },
+      { q: 'How do I switch the DMV test language to Chinese?', a: 'At the DMV office, tell the staff you want to take the test in Chinese before you are seated at a computer terminal. You can also note your language preference when booking an appointment online.' },
+    ],
+    related: [
+      { href: '/dmv-chinese-test', label: 'Chinese DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-arabic': {
+    slug: 'california-dmv-practice-test-arabic',
+    metaTitle: 'California DMV Practice Test in Arabic 2026 — اختبار DMV بالعربية',
+    metaDescription: 'Free California DMV practice test in Arabic / اختبار DMV مجاني بالعربية. Real exam questions, instant answers, no signup. Updated 2026.',
+    keywords: ['california dmv practice test arabic', 'dmv test arabic california', 'california dmv arabic', 'اختبار dmv بالعربية', 'dmv عربي california 2026'],
+    breadcrumbLabel: 'Arabic / عربي',
+    h1: 'California DMV Practice Test in Arabic / اختبار DMV كاليفورنيا بالعربية 2026',
+    heroSubtitle: 'Practice for the California DMV written test with real questions in Arabic. تدرب على اختبار DMV بأسئلة حقيقية بالعربية. Free, no signup, instant answers.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'عربي', icon: '🇸🇦', href: '/california-dmv-practice-test-arabic', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Arabic DMV Practice Tests / اختبارات DMV بالعربية',
+        subtitle: 'Full-length tests in Arabic matching the real California DMV exam format.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/arabic-simulator-test', label: 'Arabic DMV Simulator / محاكي اختبار DMV', questions: 46 },
+          { href: '/practice-test/arabic-practice-test-1', label: 'Arabic Practice Test 1 / اختبار تدريبي 1', questions: 40 },
+          { href: '/practice-test/arabic-practice-test-2', label: 'Arabic Practice Test 2 / اختبار تدريبي 2', questions: 40 },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/dmv-arabic-test', label: 'All Arabic DMV Tests', description: 'Full hub for Arabic DMV practice.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Arabic?', a: 'Yes. The California DMV knowledge test is available in Arabic and over 30 other languages. Tell the DMV staff you want the test in Arabic before you sit at a computer terminal.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Arabic DMV practice test free?', a: 'Yes — all tests on this page are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'Where can I find a California DMV office near me?', a: 'Use our DMV Offices page to find the nearest California DMV office by city or ZIP code. You can also book an appointment online through the California DMV website.' },
+    ],
+    related: [
+      { href: '/dmv-arabic-test', label: 'Arabic DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-vietnamese': {
+    slug: 'california-dmv-practice-test-vietnamese',
+    metaTitle: 'California DMV Practice Test in Vietnamese 2026 — Bài Thi DMV Tiếng Việt',
+    metaDescription: 'Free California DMV practice test in Vietnamese / Bài thi DMV miễn phí bằng tiếng Việt. Real exam questions, no signup. Updated 2026.',
+    keywords: ['california dmv practice test vietnamese', 'dmv test vietnamese california', 'bài thi dmv tiếng việt', 'california dmv tiếng việt 2026'],
+    breadcrumbLabel: 'Vietnamese / Tiếng Việt',
+    h1: 'California DMV Practice Test in Vietnamese / Bài Thi DMV California Tiếng Việt 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Vietnamese. Luyện thi DMV California bằng tiếng Việt với câu hỏi thực tế. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'Tiếng Việt', icon: '🇻🇳', href: '/california-dmv-practice-test-vietnamese', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Vietnamese DMV Practice Tests / Bài Thi DMV Tiếng Việt',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/vietnamese-simulator-test', label: 'Vietnamese DMV Simulator / Bài Thi Mô Phỏng', questions: 46 },
+          { href: '/dmv-vietnamese-test', label: 'All Vietnamese Tests', description: 'Full Vietnamese DMV test hub.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'English Simulation Test 1', questions: 46 },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Vietnamese?', a: 'Yes. The California DMV knowledge test is available in Vietnamese and over 30 other languages. Request Vietnamese when you arrive at the DMV office or when booking your appointment.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Vietnamese DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-vietnamese-test', label: 'Vietnamese DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-korean': {
+    slug: 'california-dmv-practice-test-korean',
+    metaTitle: 'California DMV Practice Test in Korean 2026 — 한국어 DMV 시험',
+    metaDescription: 'Free California DMV practice test in Korean / 한국어 DMV 연습 시험. Real exam questions, no signup, instant answers. Updated 2026.',
+    keywords: ['california dmv practice test korean', 'dmv test korean california', 'california dmv 한국어', '한국어 dmv 시험 california 2026'],
+    breadcrumbLabel: 'Korean / 한국어',
+    h1: 'California DMV Practice Test in Korean / 캘리포니아 DMV 한국어 연습 시험 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Korean. 한국어로 캘리포니아 DMV 필기시험을 연습하세요. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: '한국어', icon: '🇰🇷', href: '/california-dmv-practice-test-korean', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Korean DMV Practice Tests / 한국어 DMV 연습 시험',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/korean-simulator-test', label: 'Korean DMV Simulator / 한국어 모의 시험', questions: 46 },
+          { href: '/dmv-korean-test', label: 'All Korean Tests', description: 'Full Korean DMV test hub.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'English Simulation Test 1', questions: 46 },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Korean?', a: 'Yes. The California DMV knowledge test is available in Korean and over 30 other languages. Request Korean when you arrive at the DMV office.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Korean DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What score do I need to pass the California DMV test?', a: 'You need to answer 83% of questions correctly — 38 out of 46, or 30 out of 36 for the shorter version given to applicants 18 and older.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-korean-test', label: 'Korean DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-russian': {
+    slug: 'california-dmv-practice-test-russian',
+    metaTitle: 'California DMV Practice Test in Russian 2026 — Тест DMV на русском',
+    metaDescription: 'Free California DMV practice test in Russian / Бесплатный тест ДМВ на русском. Real exam questions, no signup, instant answers. Updated 2026.',
+    keywords: ['california dmv practice test russian', 'dmv test russian california', 'тест dmv на русском california', 'california dmv русский 2026'],
+    breadcrumbLabel: 'Russian / Русский',
+    h1: 'California DMV Practice Test in Russian / Тест DMV Калифорния на Русском 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Russian. Подготовьтесь к тесту DMV Калифорния на русском языке. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'Русский', icon: '🇷🇺', href: '/california-dmv-practice-test-russian', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Russian DMV Practice Tests / Тесты DMV на русском',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/russian-simulator-test', label: 'Russian DMV Simulator / Симулятор DMV', questions: 46 },
+          { href: '/dmv-russian-test', label: 'All Russian Tests', description: 'Full Russian DMV test hub.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'English Simulation Test 1', questions: 46 },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Russian?', a: 'Yes. The California DMV knowledge test is available in Russian and over 30 other languages. Request Russian when you arrive at the DMV office or when scheduling your appointment.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Russian DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-russian-test', label: 'Russian DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-armenian': {
+    slug: 'california-dmv-practice-test-armenian',
+    metaTitle: 'California DMV Practice Test in Armenian 2026 — Հայերեն DMV Թեստ',
+    metaDescription: 'Free California DMV practice test in Armenian / Անվճար DMV թեստ հայերեն. Real exam questions, no signup, instant answers. Updated 2026.',
+    keywords: ['california dmv practice test armenian', 'dmv test armenian california', 'california dmv հայերեն', 'dmv թեստ հայերեն california 2026'],
+    breadcrumbLabel: 'Armenian / Հայերեն',
+    h1: 'California DMV Practice Test in Armenian / Կալիֆոռնիայի DMV Հայերեն Թեստ 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Armenian. Պատրաստվեք Կալիֆոռնիայի DMV թեստին հայերեն. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'Հայերեն', icon: '🇦🇲', href: '/california-dmv-practice-test-armenian', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Armenian DMV Practice Tests / Հայերեն DMV Թեստեր',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/armenian-simulator-test', label: 'Armenian DMV Simulator / Հայերեն Մոդելավոր', questions: 46 },
+          { href: '/dmv-armenian-test', label: 'All Armenian Tests', description: 'Full Armenian DMV test hub.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'English Simulation Test 1', questions: 46 },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Armenian?', a: 'Yes. The California DMV knowledge test is available in Armenian and over 30 other languages. Request Armenian when you arrive at the DMV office.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Armenian DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-armenian-test', label: 'Armenian DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-hindi': {
+    slug: 'california-dmv-practice-test-hindi',
+    metaTitle: 'California DMV Practice Test in Hindi 2026 — हिंदी DMV टेस्ट',
+    metaDescription: 'Free California DMV practice test in Hindi / हिंदी में मुफ़्त DMV अभ्यास परीक्षा. Real exam questions, no signup. Updated 2026.',
+    keywords: ['california dmv practice test hindi', 'dmv test hindi california', 'california dmv हिंदी', 'हिंदी dmv test california 2026'],
+    breadcrumbLabel: 'Hindi / हिंदी',
+    h1: 'California DMV Practice Test in Hindi / कैलिफोर्निया DMV हिंदी टेस्ट 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Hindi. हिंदी में कैलिफोर्निया DMV परीक्षा की तैयारी करें। Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'हिंदी', icon: '🇮🇳', href: '/california-dmv-practice-test-hindi', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Hindi DMV Practice Tests / हिंदी DMV अभ्यास परीक्षाएं',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/hindi-simulator-test', label: 'Hindi DMV Simulator / हिंदी मॉक टेस्ट', questions: 46 },
+          { href: '/dmv-hindi-test', label: 'All Hindi Tests', description: 'Full Hindi DMV test hub.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'English Simulation Test 1', questions: 46 },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Hindi?', a: 'Yes. The California DMV knowledge test is available in Hindi and over 30 other languages. Request Hindi when you arrive at the DMV office or when scheduling your appointment.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Hindi DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-hindi-test', label: 'Hindi DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-tagalog': {
+    slug: 'california-dmv-practice-test-tagalog',
+    metaTitle: 'California DMV Practice Test in Tagalog 2026 — Libreng Pagsasanay sa Filipino',
+    metaDescription: 'Free California DMV practice test in Tagalog / Filipino. Libreng pagsasanay para sa California DMV exam. Real questions, no signup. Updated 2026.',
+    keywords: ['california dmv practice test tagalog', 'dmv test tagalog california', 'california dmv filipino', 'libreng pagsasanay dmv california 2026'],
+    breadcrumbLabel: 'Tagalog / Filipino',
+    h1: 'California DMV Practice Test in Tagalog / Libreng Pagsasanay sa DMV ng California 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Tagalog. Magsanay para sa DMV exam ng California sa Filipino. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'Tagalog', icon: '🇵🇭', href: '/california-dmv-practice-test-tagalog', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Tagalog DMV Practice Tests / Pagsasanay sa DMV sa Tagalog',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/tagalog-simulator-test', label: 'Tagalog DMV Simulator / Simulation Test', questions: 46 },
+          { href: '/practice-test/tagalog-practice-test-1', label: 'Tagalog Practice Test 1', questions: 40 },
+          { href: '/dmv-tagalog-test', label: 'All Tagalog Tests', description: 'Full Tagalog/Filipino DMV test hub.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Tagalog?', a: 'Yes. The California DMV knowledge test is available in Tagalog (Filipino) and over 30 other languages. Request Tagalog when you arrive at the DMV office.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Tagalog DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-tagalog-test', label: 'Tagalog DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-punjabi': {
+    slug: 'california-dmv-practice-test-punjabi',
+    metaTitle: 'California DMV Practice Test in Punjabi 2026 — ਪੰਜਾਬੀ DMV ਟੈਸਟ',
+    metaDescription: 'Free California DMV practice test in Punjabi / ਪੰਜਾਬੀ ਵਿੱਚ ਮੁਫ਼ਤ DMV ਅਭਿਆਸ ਪ੍ਰੀਖਿਆ. Real exam questions, no signup. Updated 2026.',
+    keywords: ['california dmv practice test punjabi', 'dmv test punjabi california', 'california dmv ਪੰਜਾਬੀ', 'punjabi dmv test california 2026'],
+    breadcrumbLabel: 'Punjabi / ਪੰਜਾਬੀ',
+    h1: 'California DMV Practice Test in Punjabi / ਕੈਲੀਫੋਰਨੀਆ DMV ਪੰਜਾਬੀ ਟੈਸਟ 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Punjabi. ਪੰਜਾਬੀ ਵਿੱਚ ਕੈਲੀਫੋਰਨੀਆ DMV ਪ੍ਰੀਖਿਆ ਦੀ ਤਿਆਰੀ ਕਰੋ। Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'ਪੰਜਾਬੀ', icon: '🇮🇳', href: '/california-dmv-practice-test-punjabi', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Punjabi DMV Practice Tests / ਪੰਜਾਬੀ DMV ਅਭਿਆਸ ਟੈਸਟ',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/punjabi-simulator-test', label: 'Punjabi DMV Simulator / ਸਿਮੂਲੇਟਰ ਟੈਸਟ', questions: 46 },
+          { href: '/dmv-punjabi-test', label: 'All Punjabi Tests', description: 'Full Punjabi DMV test hub.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'English Simulation Test 1', questions: 46 },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Punjabi?', a: 'Yes. The California DMV knowledge test is available in Punjabi and over 30 other languages. Request Punjabi when you arrive at the DMV office or when booking your appointment.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Punjabi DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-punjabi-test', label: 'Punjabi DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-farsi': {
+    slug: 'california-dmv-practice-test-farsi',
+    metaTitle: 'California DMV Practice Test in Farsi 2026 — آزمون DMV به فارسی',
+    metaDescription: 'Free California DMV practice test in Farsi / آزمون تمرینی رایگان DMV کالیفرنیا به فارسی. Real exam questions, no signup. Updated 2026.',
+    keywords: ['california dmv practice test farsi', 'dmv test farsi california', 'california dmv فارسی', 'آزمون dmv به فارسی california 2026', 'california dmv persian'],
+    breadcrumbLabel: 'Farsi / فارسی',
+    h1: 'California DMV Practice Test in Farsi / آزمون تمرینی DMV کالیفرنیا به فارسی 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Farsi. برای آزمون DMV کالیفرنیا به فارسی تمرین کنید. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'فارسی', icon: '🇮🇷', href: '/california-dmv-practice-test-farsi', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Farsi DMV Practice Tests / آزمون‌های تمرینی DMV به فارسی',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/farsi-simulator-test', label: 'Farsi DMV Simulator / شبیه‌ساز آزمون', questions: 46 },
+          { href: '/dmv-farsi-test', label: 'All Farsi Tests', description: 'Full Farsi/Persian DMV test hub.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'English Simulation Test 1', questions: 46 },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Farsi?', a: 'Yes. The California DMV knowledge test is available in Farsi (Persian) and over 30 other languages. Request Farsi when you arrive at the DMV office or when scheduling your appointment.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Farsi DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-farsi-test', label: 'Farsi DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
+  'california-dmv-practice-test-turkish': {
+    slug: 'california-dmv-practice-test-turkish',
+    metaTitle: 'California DMV Practice Test in Turkish 2026 — Türkçe DMV Sınavı',
+    metaDescription: 'Free California DMV practice test in Turkish / Türkçe ücretsiz California DMV sınav soruları. Real exam questions, no signup. Updated 2026.',
+    keywords: ['california dmv practice test turkish', 'dmv test turkish california', 'california dmv türkçe', 'türkçe dmv sınavı california 2026'],
+    breadcrumbLabel: 'Turkish / Türkçe',
+    h1: 'California DMV Practice Test in Turkish / California DMV Türkçe Sınav Soruları 2026',
+    heroSubtitle: 'Practice for the California DMV written test in Turkish. California DMV sınavına Türkçe sorularla hazırlanın. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Based on the official California Driver Handbook',
+    vehicleTabs: [
+      { label: 'Türkçe', icon: '🇹🇷', href: '/california-dmv-practice-test-turkish', active: true },
+      { label: 'English', icon: '🇺🇸', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Turkish DMV Practice Tests / Türkçe DMV Sınav Soruları',
+        variant: 'cards',
+        cards: [
+          { href: '/dmv-turkish-test/test-1', label: 'Turkish DMV Test 1 / Türkçe Test 1', questions: 46 },
+          { href: '/dmv-turkish-test/test-2', label: 'Turkish DMV Test 2 / Türkçe Test 2', questions: 46 },
+          { href: '/dmv-turkish-test', label: 'All Turkish Tests', description: 'Full Turkish DMV test hub.' },
+        ],
+      },
+      {
+        title: 'More Study Tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California road signs.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/dmv-offices', label: 'Find a DMV Office', description: 'Locate the nearest DMV to you.' },
+        ],
+      },
+    ],
+    sidebarRequirements: CA_REQUIREMENTS,
+    helpfulResources: CA_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'Can I take the California DMV test in Turkish?', a: 'Yes. The California DMV knowledge test is available in Turkish and over 30 other languages. Request Turkish when you arrive at the DMV office or when booking your appointment.' },
+      { q: 'How many questions are on the California DMV test?', a: 'The test has 46 multiple-choice questions. You need 38 correct (83%) to pass. Applicants 18 and older take a 36-question version requiring 30 correct.' },
+      { q: 'Is this Turkish DMV practice test free?', a: 'Yes — all tests are 100% free, unlimited, and require no signup.' },
+      { q: 'What topics does the California DMV test cover?', a: 'Road signs, traffic laws, right-of-way rules, speed limits, parking, DUI laws, and safe driving — all based on the California Driver Handbook.' },
+      { q: 'How many times can I retake the California DMV test if I fail?', a: 'You get 3 attempts per application. If you fail all 3, you must submit a new application and pay the fee again.' },
+    ],
+    related: [
+      { href: '/dmv-turkish-test', label: 'Turkish DMV Tests' },
+      { href: '/california-dmv-practice-test', label: 'English Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+      { href: '/dmv-offices', label: 'DMV Offices' },
+    ],
+  },
+
   'california-dmv-practice-test-espanol': {
     slug: 'california-dmv-practice-test-espanol',
     metaTitle: 'Examen de Práctica DMV California 2026 — Gratis en Español',
