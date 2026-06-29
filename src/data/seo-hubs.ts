@@ -103,6 +103,35 @@ const CA_VEHICLE_TABS: VehicleTab[] = [
   { label: 'CDL', icon: '🚛', href: '/practice-test/commercial-class-a-b-test-1' },
 ];
 
+const STATE_REQUIREMENTS: HubSidebarList[] = [
+  {
+    title: 'What to bring to the DMV',
+    items: [
+      'Proof of identity (passport, birth certificate, or similar)',
+      'Social Security card or number',
+      'Two proofs of state residency (utility bill, bank statement)',
+      'Completed state application form',
+      'Application fee (check your state DMV website for current amount)',
+    ],
+  },
+  {
+    title: 'Knowledge test basics',
+    items: [
+      'Study your state driver handbook',
+      'Road signs are federally standardized — same in all 50 states',
+      'Bring valid ID on test day',
+      'Most states allow 2 to 3 attempts per application before you must reapply',
+      'Test is taken on a computer terminal at most DMV offices',
+    ],
+  },
+];
+
+const STATE_HELPFUL_RESOURCES: HubLink[] = [
+  { href: '/practice-test', label: 'Free practice tests' },
+  { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+  { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+];
+
 export const HUBS: Record<string, KeywordHub> = {
   'california-dmv-practice-test': {
     slug: 'california-dmv-practice-test',
@@ -1077,6 +1106,1026 @@ export const HUBS: Record<string, KeywordHub> = {
       { href: '/california-dmv-practice-test', label: 'Practice Test in English' },
       { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
       { href: '/dmv-appointment', label: 'Cita en el DMV' },
+    ],
+  },
+
+  'texas-dmv-practice-test': {
+    slug: 'texas-dmv-practice-test',
+    metaTitle: 'Texas DMV Practice Test 2026 — Free TX Written Test Questions',
+    metaDescription: 'Free Texas DMV practice test 2026. 30 questions, 70% to pass — road signs and traffic rules tested in Texas. No signup, instant answers.',
+    keywords: ['texas dmv practice test', 'dmv practice test texas', 'texas dmv test 2026', 'tx dmv practice test', 'free texas dmv test', 'texas permit test'],
+    breadcrumbLabel: 'Texas',
+    h1: 'Texas DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Road signs and traffic rules are the same in every U.S. state. These questions prepare you for the Texas DPS knowledge test. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Texas',
+    vehicleTabs: [
+      { label: 'TX', icon: 'TX', href: '/texas-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Texas DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Texas DPS knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Texas DMV test?', a: 'The Texas knowledge test has 30 questions. You need to answer 21 correctly (70%) to pass.' },
+      { q: 'How old do you need to be to get a Texas driver license?', a: 'You can apply for a Texas learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Texas road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Texas roads.' },
+      { q: 'Is this Texas DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Texas DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'florida-dmv-practice-test': {
+    slug: 'florida-dmv-practice-test',
+    metaTitle: 'Florida DMV Practice Test 2026 — Free FL Written Test Questions',
+    metaDescription: 'Free Florida DMV practice test 2026. 50 questions, 80% to pass — road signs and traffic rules tested in Florida. No signup, instant answers.',
+    keywords: ['florida dmv practice test', 'dmv practice test florida', 'florida dmv test 2026', 'fl dmv practice test', 'free florida dmv test', 'florida permit test'],
+    breadcrumbLabel: 'Florida',
+    h1: 'Florida DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'The core of every state DMV test is the same: road signs, right-of-way, and traffic laws. Practice here, pass in Florida. Free, no signup.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Florida',
+    vehicleTabs: [
+      { label: 'FL', icon: 'FL', href: '/florida-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Florida DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the FL DHSMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Florida DMV test?', a: 'The Florida knowledge test has 50 questions. You need to answer 40 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Florida driver license?', a: 'You can apply for a Florida learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Florida road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Florida roads.' },
+      { q: 'Is this Florida DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Florida DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'new-york-dmv-practice-test': {
+    slug: 'new-york-dmv-practice-test',
+    metaTitle: 'New York DMV Practice Test 2026 — Free NY Written Test Questions',
+    metaDescription: 'Free New York DMV practice test 2026. 20 questions, 70% to pass — road signs and traffic rules tested in New York. No signup, instant answers.',
+    keywords: ['new york dmv practice test', 'dmv practice test new york', 'new york dmv test 2026', 'ny dmv practice test', 'free new york dmv test', 'new york permit test'],
+    breadcrumbLabel: 'New York',
+    h1: 'New York DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'New York road signs follow the same federal standard as every other state. Use these tests to get ready for the NY DMV written exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in New York',
+    vehicleTabs: [
+      { label: 'NY', icon: 'NY', href: '/new-york-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'New York DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the NY DMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the New York DMV test?', a: 'The New York knowledge test has 20 questions. You need to answer 14 correctly (70%) to pass.' },
+      { q: 'How old do you need to be to get a New York driver license?', a: 'You can apply for a New York learner permit at age 16. A full unrestricted license is available at 17 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as New York road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on New York roads.' },
+      { q: 'Is this New York DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the New York DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'georgia-dmv-practice-test': {
+    slug: 'georgia-dmv-practice-test',
+    metaTitle: 'Georgia DMV Practice Test 2026 — Free GA Written Test Questions',
+    metaDescription: 'Free Georgia DMV practice test 2026. 40 questions, 75% to pass — road signs and traffic rules tested in Georgia. No signup, instant answers.',
+    keywords: ['georgia dmv practice test', 'dmv practice test georgia', 'georgia dmv test 2026', 'ga dmv practice test', 'free georgia dmv test', 'georgia permit test'],
+    breadcrumbLabel: 'Georgia',
+    h1: 'Georgia DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Georgia uses the same road signs and fundamental traffic laws as California. These questions map directly to the GA DDS knowledge test.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Georgia',
+    vehicleTabs: [
+      { label: 'GA', icon: 'GA', href: '/georgia-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Georgia DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the GA DDS knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Georgia DMV test?', a: 'The Georgia knowledge test has 40 questions. You need to answer 30 correctly (75%) to pass.' },
+      { q: 'How old do you need to be to get a Georgia driver license?', a: 'You can apply for a Georgia learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Georgia road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Georgia roads.' },
+      { q: 'Is this Georgia DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Georgia DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'north-carolina-dmv-practice-test': {
+    slug: 'north-carolina-dmv-practice-test',
+    metaTitle: 'North Carolina DMV Practice Test 2026 — Free NC Written Test Questions',
+    metaDescription: 'Free North Carolina DMV practice test 2026. 37 questions, 80% to pass — road signs and traffic rules tested in North Carolina. No signup, instant answers.',
+    keywords: ['north carolina dmv practice test', 'dmv practice test north carolina', 'north carolina dmv test 2026', 'nc dmv practice test', 'free north carolina dmv test', 'north carolina permit test'],
+    breadcrumbLabel: 'North Carolina',
+    h1: 'North Carolina DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'North Carolina road signs are federally standardized. Practice here for free — no signup, instant answers on every question.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in North Carolina',
+    vehicleTabs: [
+      { label: 'NC', icon: 'NC', href: '/north-carolina-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'North Carolina DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the NC DMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the North Carolina DMV test?', a: 'The North Carolina knowledge test has 37 questions. You need to answer 30 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a North Carolina driver license?', a: 'You can apply for a North Carolina learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as North Carolina road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on North Carolina roads.' },
+      { q: 'Is this North Carolina DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the North Carolina DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'new-jersey-dmv-practice-test': {
+    slug: 'new-jersey-dmv-practice-test',
+    metaTitle: 'New Jersey DMV Practice Test 2026 — Free NJ Written Test Questions',
+    metaDescription: 'Free New Jersey DMV practice test 2026. 50 questions, 80% to pass — road signs and traffic rules tested in New Jersey. No signup, instant answers.',
+    keywords: ['new jersey dmv practice test', 'dmv practice test new jersey', 'new jersey dmv test 2026', 'nj dmv practice test', 'free new jersey dmv test', 'new jersey permit test'],
+    breadcrumbLabel: 'New Jersey',
+    h1: 'New Jersey DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'New Jersey uses the same road sign standards as every U.S. state. These tests cover the rules that make up the bulk of the NJ MVC knowledge exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in New Jersey',
+    vehicleTabs: [
+      { label: 'NJ', icon: 'NJ', href: '/new-jersey-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'New Jersey DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the NJ MVC knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the New Jersey DMV test?', a: 'The New Jersey knowledge test has 50 questions. You need to answer 40 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a New Jersey driver license?', a: 'You can apply for a New Jersey learner permit at age 16. A full unrestricted license is available at 17 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as New Jersey road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on New Jersey roads.' },
+      { q: 'Is this New Jersey DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the New Jersey DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'virginia-dmv-practice-test': {
+    slug: 'virginia-dmv-practice-test',
+    metaTitle: 'Virginia DMV Practice Test 2026 — Free VA Written Test Questions',
+    metaDescription: 'Free Virginia DMV practice test 2026. 35 questions, 80% to pass — road signs and traffic rules tested in Virginia. No signup, instant answers.',
+    keywords: ['virginia dmv practice test', 'dmv practice test virginia', 'virginia dmv test 2026', 'va dmv practice test', 'free virginia dmv test', 'virginia permit test'],
+    breadcrumbLabel: 'Virginia',
+    h1: 'Virginia DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Virginia traffic laws and road signs follow the same federal standards as other states. Practice here and you are ready for the Virginia DMV written test.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Virginia',
+    vehicleTabs: [
+      { label: 'VA', icon: 'VA', href: '/virginia-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Virginia DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Virginia DMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Virginia DMV test?', a: 'The Virginia knowledge test has 35 questions. You need to answer 28 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Virginia driver license?', a: 'You can apply for a Virginia learner permit at age 15 and a half. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Virginia road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Virginia roads.' },
+      { q: 'Is this Virginia DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Virginia DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'washington-dmv-practice-test': {
+    slug: 'washington-dmv-practice-test',
+    metaTitle: 'Washington DMV Practice Test 2026 — Free WA Written Test Questions',
+    metaDescription: 'Free Washington DMV practice test 2026. 40 questions, 80% to pass — road signs and traffic rules tested in Washington. No signup, instant answers.',
+    keywords: ['washington dmv practice test', 'dmv practice test washington', 'washington dmv test 2026', 'wa dmv practice test', 'free washington dmv test', 'washington permit test'],
+    breadcrumbLabel: 'Washington',
+    h1: 'Washington DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Washington state uses the same road signs and right-of-way rules as the rest of the country. These tests prepare you for the WA DOL knowledge exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Washington',
+    vehicleTabs: [
+      { label: 'WA', icon: 'WA', href: '/washington-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Washington DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the WA DOL knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Washington DMV test?', a: 'The Washington knowledge test has 40 questions. You need to answer 32 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Washington driver license?', a: 'You can apply for a Washington learner permit at age 15 and a half. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Washington road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Washington roads.' },
+      { q: 'Is this Washington DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Washington DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'arizona-dmv-practice-test': {
+    slug: 'arizona-dmv-practice-test',
+    metaTitle: 'Arizona DMV Practice Test 2026 — Free AZ Written Test Questions',
+    metaDescription: 'Free Arizona DMV practice test 2026. 30 questions, 80% to pass — road signs and traffic rules tested in Arizona. No signup, instant answers.',
+    keywords: ['arizona dmv practice test', 'dmv practice test arizona', 'arizona dmv test 2026', 'az dmv practice test', 'free arizona dmv test', 'arizona permit test'],
+    breadcrumbLabel: 'Arizona',
+    h1: 'Arizona DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Arizona road signs are identical to every other state — they follow the federal MUTCD standard. Use these tests to prepare for the AZ MVD written exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Arizona',
+    vehicleTabs: [
+      { label: 'AZ', icon: 'AZ', href: '/arizona-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Arizona DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the AZ MVD knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Arizona DMV test?', a: 'The Arizona knowledge test has 30 questions. You need to answer 24 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Arizona driver license?', a: 'You can apply for a Arizona learner permit at age 15 and a half. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Arizona road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Arizona roads.' },
+      { q: 'Is this Arizona DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Arizona DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'tennessee-dmv-practice-test': {
+    slug: 'tennessee-dmv-practice-test',
+    metaTitle: 'Tennessee DMV Practice Test 2026 — Free TN Written Test Questions',
+    metaDescription: 'Free Tennessee DMV practice test 2026. 30 questions, 80% to pass — road signs and traffic rules tested in Tennessee. No signup, instant answers.',
+    keywords: ['tennessee dmv practice test', 'dmv practice test tennessee', 'tennessee dmv test 2026', 'tn dmv practice test', 'free tennessee dmv test', 'tennessee permit test'],
+    breadcrumbLabel: 'Tennessee',
+    h1: 'Tennessee DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Tennessee traffic rules are rooted in the same federal standards as all 50 states. Practice here, free, and be ready for the TN DOS knowledge test.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Tennessee',
+    vehicleTabs: [
+      { label: 'TN', icon: 'TN', href: '/tennessee-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Tennessee DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the TN DOS knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Tennessee DMV test?', a: 'The Tennessee knowledge test has 30 questions. You need to answer 24 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Tennessee driver license?', a: 'You can apply for a Tennessee learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Tennessee road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Tennessee roads.' },
+      { q: 'Is this Tennessee DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Tennessee DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'colorado-dmv-practice-test': {
+    slug: 'colorado-dmv-practice-test',
+    metaTitle: 'Colorado DMV Practice Test 2026 — Free CO Written Test Questions',
+    metaDescription: 'Free Colorado DMV practice test 2026. 25 questions, 80% to pass — road signs and traffic rules tested in Colorado. No signup, instant answers.',
+    keywords: ['colorado dmv practice test', 'dmv practice test colorado', 'colorado dmv test 2026', 'co dmv practice test', 'free colorado dmv test', 'colorado permit test'],
+    breadcrumbLabel: 'Colorado',
+    h1: 'Colorado DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Colorado road signs and traffic rules align with the federal standard. These tests target exactly what the Colorado DMV knowledge exam covers.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Colorado',
+    vehicleTabs: [
+      { label: 'CO', icon: 'CO', href: '/colorado-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Colorado DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Colorado DMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Colorado DMV test?', a: 'The Colorado knowledge test has 25 questions. You need to answer 20 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Colorado driver license?', a: 'You can apply for a Colorado learner permit at age 15 and a half. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Colorado road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Colorado roads.' },
+      { q: 'Is this Colorado DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Colorado DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'michigan-dmv-practice-test': {
+    slug: 'michigan-dmv-practice-test',
+    metaTitle: 'Michigan DMV Practice Test 2026 — Free MI Written Test Questions',
+    metaDescription: 'Free Michigan DMV practice test 2026. 50 questions, 70% to pass — road signs and traffic rules tested in Michigan. No signup, instant answers.',
+    keywords: ['michigan dmv practice test', 'dmv practice test michigan', 'michigan dmv test 2026', 'mi dmv practice test', 'free michigan dmv test', 'michigan permit test'],
+    breadcrumbLabel: 'Michigan',
+    h1: 'Michigan DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Michigan uses the same federal road sign standards as every other state. Practice here to prepare for the MI SOS written knowledge exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Michigan',
+    vehicleTabs: [
+      { label: 'MI', icon: 'MI', href: '/michigan-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Michigan DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the MI SOS knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Michigan DMV test?', a: 'The Michigan knowledge test has 50 questions. You need to answer 35 correctly (70%) to pass.' },
+      { q: 'How old do you need to be to get a Michigan driver license?', a: 'You can apply for a Michigan learner permit at age 14 years and 9 months. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Michigan road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Michigan roads.' },
+      { q: 'Is this Michigan DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Michigan DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'ohio-dmv-practice-test': {
+    slug: 'ohio-dmv-practice-test',
+    metaTitle: 'Ohio DMV Practice Test 2026 — Free OH Written Test Questions',
+    metaDescription: 'Free Ohio DMV practice test 2026. 40 questions, 75% to pass — road signs and traffic rules tested in Ohio. No signup, instant answers.',
+    keywords: ['ohio dmv practice test', 'dmv practice test ohio', 'ohio dmv test 2026', 'oh dmv practice test', 'free ohio dmv test', 'ohio permit test'],
+    breadcrumbLabel: 'Ohio',
+    h1: 'Ohio DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Ohio traffic laws are grounded in the same federal rules as California. Use these questions to get ready for the Ohio BMV knowledge test.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Ohio',
+    vehicleTabs: [
+      { label: 'OH', icon: 'OH', href: '/ohio-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Ohio DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Ohio BMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Ohio DMV test?', a: 'The Ohio knowledge test has 40 questions. You need to answer 30 correctly (75%) to pass.' },
+      { q: 'How old do you need to be to get a Ohio driver license?', a: 'You can apply for a Ohio learner permit at age 15 and a half. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Ohio road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Ohio roads.' },
+      { q: 'Is this Ohio DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Ohio DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'illinois-dmv-practice-test': {
+    slug: 'illinois-dmv-practice-test',
+    metaTitle: 'Illinois DMV Practice Test 2026 — Free IL Written Test Questions',
+    metaDescription: 'Free Illinois DMV practice test 2026. 35 questions, 80% to pass — road signs and traffic rules tested in Illinois. No signup, instant answers.',
+    keywords: ['illinois dmv practice test', 'dmv practice test illinois', 'illinois dmv test 2026', 'il dmv practice test', 'free illinois dmv test', 'illinois permit test'],
+    breadcrumbLabel: 'Illinois',
+    h1: 'Illinois DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Illinois road signs follow the federal MUTCD standard — the same signs you will see on every U.S. road. Practice here for the IL SOS written exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Illinois',
+    vehicleTabs: [
+      { label: 'IL', icon: 'IL', href: '/illinois-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Illinois DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the IL SOS knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Illinois DMV test?', a: 'The Illinois knowledge test has 35 questions. You need to answer 28 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Illinois driver license?', a: 'You can apply for a Illinois learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Illinois road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Illinois roads.' },
+      { q: 'Is this Illinois DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Illinois DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'pennsylvania-dmv-practice-test': {
+    slug: 'pennsylvania-dmv-practice-test',
+    metaTitle: 'Pennsylvania DMV Practice Test 2026 — Free PA Written Test Questions',
+    metaDescription: 'Free Pennsylvania DMV practice test 2026. 18 questions, 79% to pass — road signs and traffic rules tested in Pennsylvania. No signup, instant answers.',
+    keywords: ['pennsylvania dmv practice test', 'dmv practice test pennsylvania', 'pennsylvania dmv test 2026', 'pa dmv practice test', 'free pennsylvania dmv test', 'pennsylvania permit test'],
+    breadcrumbLabel: 'Pennsylvania',
+    h1: 'Pennsylvania DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Pennsylvania road signs and right-of-way rules match the federal standard. These questions prepare you for the PennDOT written knowledge test.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Pennsylvania',
+    vehicleTabs: [
+      { label: 'PA', icon: 'PA', href: '/pennsylvania-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Pennsylvania DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the PennDOT knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Pennsylvania DMV test?', a: 'Pennsylvania splits its test into 18 road sign questions and 25 traffic law questions (43 total). You must pass both sections. The Pennsylvania knowledge test has 18 questions. You need to answer 15 correctly (79%) to pass.' },
+      { q: 'How old do you need to be to get a Pennsylvania driver license?', a: 'You can apply for a Pennsylvania learner permit at age 16. A full unrestricted license is available at 17 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Pennsylvania road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Pennsylvania roads.' },
+      { q: 'Is this Pennsylvania DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Pennsylvania DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'maryland-dmv-practice-test': {
+    slug: 'maryland-dmv-practice-test',
+    metaTitle: 'Maryland DMV Practice Test 2026 — Free MD Written Test Questions',
+    metaDescription: 'Free Maryland DMV practice test 2026. 25 questions, 70% to pass — road signs and traffic rules tested in Maryland. No signup, instant answers.',
+    keywords: ['maryland dmv practice test', 'dmv practice test maryland', 'maryland dmv test 2026', 'md dmv practice test', 'free maryland dmv test', 'maryland permit test'],
+    breadcrumbLabel: 'Maryland',
+    h1: 'Maryland DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Maryland traffic laws are built on the same federal base as every U.S. state. Use these tests to prepare for the Maryland MVA written exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Maryland',
+    vehicleTabs: [
+      { label: 'MD', icon: 'MD', href: '/maryland-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Maryland DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Maryland MVA knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Maryland DMV test?', a: 'The Maryland knowledge test has 25 questions. You need to answer 18 correctly (70%) to pass.' },
+      { q: 'How old do you need to be to get a Maryland driver license?', a: 'You can apply for a Maryland learner permit at age 15 and a half. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Maryland road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Maryland roads.' },
+      { q: 'Is this Maryland DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Maryland DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'massachusetts-dmv-practice-test': {
+    slug: 'massachusetts-dmv-practice-test',
+    metaTitle: 'Massachusetts DMV Practice Test 2026 — Free MA Written Test Questions',
+    metaDescription: 'Free Massachusetts DMV practice test 2026. 25 questions, 72% to pass — road signs and traffic rules tested in Massachusetts. No signup, instant answers.',
+    keywords: ['massachusetts dmv practice test', 'dmv practice test massachusetts', 'massachusetts dmv test 2026', 'ma dmv practice test', 'free massachusetts dmv test', 'massachusetts permit test'],
+    breadcrumbLabel: 'Massachusetts',
+    h1: 'Massachusetts DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Massachusetts road signs are federally standardized — identical to California. Practice here, free, to prepare for the MA RMV knowledge test.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Massachusetts',
+    vehicleTabs: [
+      { label: 'MA', icon: 'MA', href: '/massachusetts-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Massachusetts DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the MA RMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Massachusetts DMV test?', a: 'The Massachusetts knowledge test has 25 questions. You need to answer 18 correctly (72%) to pass.' },
+      { q: 'How old do you need to be to get a Massachusetts driver license?', a: 'You can apply for a Massachusetts learner permit at age 16. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Massachusetts road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Massachusetts roads.' },
+      { q: 'Is this Massachusetts DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Massachusetts DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'missouri-dmv-practice-test': {
+    slug: 'missouri-dmv-practice-test',
+    metaTitle: 'Missouri DMV Practice Test 2026 — Free MO Written Test Questions',
+    metaDescription: 'Free Missouri DMV practice test 2026. 25 questions, 80% to pass — road signs and traffic rules tested in Missouri. No signup, instant answers.',
+    keywords: ['missouri dmv practice test', 'dmv practice test missouri', 'missouri dmv test 2026', 'mo dmv practice test', 'free missouri dmv test', 'missouri permit test'],
+    breadcrumbLabel: 'Missouri',
+    h1: 'Missouri DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Missouri traffic rules follow the same federal framework as every other state. Practice here to be ready for the Missouri DOR written knowledge exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Missouri',
+    vehicleTabs: [
+      { label: 'MO', icon: 'MO', href: '/missouri-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Missouri DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Missouri DOR knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Missouri DMV test?', a: 'The Missouri knowledge test has 25 questions. You need to answer 20 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Missouri driver license?', a: 'You can apply for a Missouri learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Missouri road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Missouri roads.' },
+      { q: 'Is this Missouri DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Missouri DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'nevada-dmv-practice-test': {
+    slug: 'nevada-dmv-practice-test',
+    metaTitle: 'Nevada DMV Practice Test 2026 — Free NV Written Test Questions',
+    metaDescription: 'Free Nevada DMV practice test 2026. 50 questions, 80% to pass — road signs and traffic rules tested in Nevada. No signup, instant answers.',
+    keywords: ['nevada dmv practice test', 'dmv practice test nevada', 'nevada dmv test 2026', 'nv dmv practice test', 'free nevada dmv test', 'nevada permit test'],
+    breadcrumbLabel: 'Nevada',
+    h1: 'Nevada DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Nevada road signs follow the same federal standard as California. These questions cover exactly what the Nevada DMV knowledge test examines.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Nevada',
+    vehicleTabs: [
+      { label: 'NV', icon: 'NV', href: '/nevada-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Nevada DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Nevada DMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Nevada DMV test?', a: 'The Nevada knowledge test has 50 questions. You need to answer 40 correctly (80%) to pass.' },
+      { q: 'How old do you need to be to get a Nevada driver license?', a: 'You can apply for a Nevada learner permit at age 15 and a half. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Nevada road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Nevada roads.' },
+      { q: 'Is this Nevada DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Nevada DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'indiana-dmv-practice-test': {
+    slug: 'indiana-dmv-practice-test',
+    metaTitle: 'Indiana DMV Practice Test 2026 — Free IN Written Test Questions',
+    metaDescription: 'Free Indiana DMV practice test 2026. 34 questions, 84% to pass — road signs and traffic rules tested in Indiana. No signup, instant answers.',
+    keywords: ['indiana dmv practice test', 'dmv practice test indiana', 'indiana dmv test 2026', 'in dmv practice test', 'free indiana dmv test', 'indiana permit test'],
+    breadcrumbLabel: 'Indiana',
+    h1: 'Indiana DMV Practice Test 2026 — Free Written Test Questions',
+    heroSubtitle: 'Indiana road signs and traffic rules are grounded in the same federal standards as every U.S. state. Practice here for the Indiana BMV knowledge exam.',
+    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in Indiana',
+    vehicleTabs: [
+      { label: 'IN', icon: 'IN', href: '/indiana-dmv-practice-test', active: true },
+      { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
+    ],
+    sections: [
+      {
+        title: 'Indiana DMV practice tests',
+        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the Indiana BMV knowledge test.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
+          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+        ],
+      },
+      {
+        title: 'More study tools',
+        variant: 'cards',
+        cards: [
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
+          { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
+        ],
+      },
+    ],
+    sidebarRequirements: STATE_REQUIREMENTS,
+    helpfulResources: STATE_HELPFUL_RESOURCES,
+    faq: [
+      { q: 'How many questions are on the Indiana DMV test?', a: 'The Indiana knowledge test has 34 questions. You need to answer 29 correctly (84%) to pass.' },
+      { q: 'How old do you need to be to get a Indiana driver license?', a: 'You can apply for a Indiana learner permit at age 15. A full unrestricted license is available at 16 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
+      { q: 'Are the road signs on this practice test the same as Indiana road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on Indiana roads.' },
+      { q: 'Is this Indiana DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
+      { q: 'What topics does the Indiana DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+    ],
+    related: [
+      { href: '/california-dmv-practice-test', label: 'California practice test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
+      { href: '/practice-test', label: 'All practice tests' },
+      { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
     ],
   },
 };
