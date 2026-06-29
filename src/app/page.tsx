@@ -19,8 +19,16 @@ import tagalogQuizzesData from '../data/tagalog-quizzes.json';
 import vietnameseQuizzesData from '../data/vietnamese-quizzes.json';
 import motorcycleQuizzesData from '../data/motorcycle-quizzes.json';
 import commercialQuizzesData from '../data/commercial-quizzes.json';
+import hiQuizzesData from '../data/hi-quizzes.json';
+import koQuizzesData from '../data/ko-quizzes.json';
+import roadSignsTestData from '../data/road-signs-test.json';
 import AdSense from '@/components/AdSense';
 import ADSENSE_CONFIG from '@/config/adsense';
+import {
+  TriangleAlert, ClipboardList, BookOpen, Timer, Flame, DollarSign,
+  MapPin, GraduationCap, UserCheck, Accessibility, Shield, Gauge, Truck, Anchor, Bike,
+  Navigation, ChevronRight,
+} from 'lucide-react';
 
 export default function Home() {
   // Aggregate every quiz source so the homepage stats stay in sync with the grid
@@ -37,6 +45,8 @@ export default function Home() {
     vietnameseQuizzesData,
     motorcycleQuizzesData,
     commercialQuizzesData,
+    hiQuizzesData,
+    koQuizzesData,
   ];
   const singleQuizSources = [spanishSignTestData, turkishSignTestData];
 
@@ -44,10 +54,13 @@ export default function Home() {
     multiQuizSources.reduce(
       (sum, src) => sum + src.quizzes.reduce((s, q) => s + q.questions.length, 0),
       0,
-    ) + singleQuizSources.reduce((sum, src) => sum + src.quiz.questions.length, 0);
+    ) +
+    singleQuizSources.reduce((sum, src) => sum + src.quiz.questions.length, 0) +
+    roadSignsTestData.questions.length;
 
   const totalTests =
-    multiQuizSources.reduce((sum, src) => sum + src.quizzes.length, 0) + singleQuizSources.length;
+    multiQuizSources.reduce((sum, src) => sum + src.quizzes.length, 0) +
+    singleQuizSources.length + 1;
 
   const yearsServing = new Date().getFullYear() - 2017;
 
@@ -130,77 +143,129 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Trust + Stats — full-width blue band */}
+      <section className="bg-gradient-to-br from-dmv-700 via-dmv-600 to-dmv-500 shadow-lg">
+        <div className="container mx-auto px-6 py-8">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            {/* Left: tagline */}
+            <div className="md:w-56 flex-shrink-0 text-center md:text-left">
+              <p className="text-dmv-200 text-xs font-semibold uppercase tracking-widest mb-2">California DMV</p>
+              <h2 className="text-xl font-extrabold text-white leading-snug mb-2">
+                Trusted by 150,000+ California drivers
+              </h2>
+              <p className="text-dmv-200 text-sm">{yearsServing} years helping people pass on the first try</p>
+            </div>
+
+            {/* Divider */}
+            <div className="hidden md:block w-px self-stretch bg-white/20 mx-2" />
+
+            {/* Stats */}
+            <div className="flex-1 grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-4 text-center">
+              <div>
+                <div className="text-4xl md:text-5xl font-extrabold text-white">{totalQuestions.toLocaleString()}+</div>
+                <div className="text-dmv-200 text-sm mt-1">Practice Questions</div>
+              </div>
+              <div>
+                <div className="text-4xl md:text-5xl font-extrabold text-white">{totalTests}+</div>
+                <div className="text-dmv-200 text-sm mt-1">
+                  <Link href="/practice-test" className="hover:text-white transition-colors">Practice Tests</Link>
+                </div>
+              </div>
+              <div>
+                <div className="text-4xl md:text-5xl font-extrabold text-white">13</div>
+                <div className="text-dmv-200 text-sm mt-1">Languages</div>
+              </div>
+              <div>
+                <div className="text-4xl md:text-5xl font-extrabold text-white">75+</div>
+                <div className="text-dmv-200 text-sm mt-1">
+                  <Link href="/blog" className="hover:text-white transition-colors">Blog Articles</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <main id="main-content" className="container mx-auto px-4 py-8">
 
-        {/* Trust Banner */}
-        <div className="mb-8 mx-auto max-w-3xl bg-gradient-to-r from-primary/10 via-amber-50 to-primary/10 border-2 border-primary/30 rounded-2xl px-6 py-5 text-center shadow-md">
-          <div className="flex items-center justify-center gap-2 text-primary font-bold text-2xl md:text-3xl mb-1">
-            <span>⭐</span>
-            <span>Trusted by 150,000+ California drivers</span>
-            <span>⭐</span>
-          </div>
-          <p className="text-gray-700 text-sm md:text-base">
-            {yearsServing} years helping people pass their California DMV test on the first try
-          </p>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
-          <div className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">{totalQuestions.toLocaleString()}+</div>
-            <div className="text-gray-700 font-semibold text-lg">Practice Questions</div>
-          </div>
-          <div className="bg-gradient-to-br from-green-50 to-white border-2 border-green-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">{totalTests}+</div>
-            <div className="text-gray-700 font-semibold text-lg">
-              <Link href="/practice-test" className="hover:text-primary">
-                Practice Tests
-              </Link>
-            </div>
-          </div>
-          <div className="bg-gradient-to-br from-blue-50 to-white border-2 border-blue-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">11</div>
-            <div className="text-gray-700 font-semibold text-lg">Languages</div>
-            <div className="text-sm text-gray-500 mt-1">🇺🇸 🇪🇸 🇹🇷 🇨🇳 🇸🇦 🇦🇲 🇮🇷 🇮🇳 🇷🇺 🇵🇭 🇻🇳</div>
-          </div>
-          <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 p-8 rounded-xl shadow-lg text-center hover:shadow-xl transition-shadow">
-            <div className="text-5xl font-bold text-primary mb-3">50+</div>
-            <div className="text-gray-700 font-semibold text-lg">
-              <Link href="/blog" className="hover:text-primary">
-                Blog Articles
-              </Link>
-            </div>
-          </div>
-        </div>
-
-        {/* App Promotion Banner */}
-        <AppPromotion variant="banner" className="mb-12" />
-
-        {/* Intersection Game Promo */}
-        <Link href="/intersection" className="block mb-12 group">
-          <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 border-2 border-slate-600">
-            <div className="relative z-10 flex flex-col md:flex-row items-center gap-6 px-6 md:px-10 py-8">
-              <div className="flex-shrink-0 text-6xl md:text-7xl" aria-hidden="true">🚦</div>
-              <div className="flex-1 text-center md:text-left">
-                <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-                  <span className="bg-primary text-white text-xs font-bold px-2.5 py-1 rounded-full">NEW</span>
-                  <span className="text-amber-300 text-xs font-semibold uppercase tracking-wide">Free Interactive Game</span>
+        {/* Testimonials */}
+        <div className="mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              {
+                rating: 5,
+                text: "passed first try!! honestly the questions on the real test felt so familiar after doing these. the 20 hardest questions section is a must do before your exam",
+                name: "Maria G.",
+                context: "Los Angeles, CA",
+                avatar: "MG",
+                color: "bg-orange-100 text-orange-700",
+              },
+              {
+                rating: 4,
+                text: "Really helpful for me. English is not my first language so I used the Chinese tests to study. I got 41 correct on the real exam. My only complaint is I wish there were more questions in Chinese but overall very good",
+                name: "Wei L.",
+                context: "San Francisco, CA · International Student",
+                avatar: "WL",
+                color: "bg-blue-100 text-blue-700",
+              },
+              {
+                rating: 5,
+                text: "ok so i failed TWICE and was so frustrated lol. my coworker told me about this site, i did like 3 full tests and read all the explanations. passed on my 3rd attempt. shouldve found this sooner honestly",
+                name: "James T.",
+                context: "Sacramento, CA",
+                avatar: "JT",
+                color: "bg-green-100 text-green-700",
+              },
+            ].map((r) => (
+              <div
+                key={r.name}
+                className="bg-white border border-gray-100 rounded-2xl shadow-sm hover:shadow-md transition-shadow p-6 flex flex-col gap-4"
+              >
+                <div className="flex items-center gap-3">
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold flex-shrink-0 ${r.color}`}>
+                    {r.avatar}
+                  </div>
+                  <div>
+                    <div className="font-bold text-gray-900 text-sm">{r.name}</div>
+                    <div className="text-xs text-gray-500">{r.context}</div>
+                  </div>
+                  <div className="ml-auto text-sm tracking-tight flex-shrink-0 select-none">
+                    <span className="text-green-500">{'★'.repeat(r.rating)}</span>
+                    <span className="text-gray-200">{'★'.repeat(5 - r.rating)}</span>
+                  </div>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                  Intersection — Who Goes First?
-                </h2>
-                <p className="text-slate-300 text-sm md:text-base max-w-2xl">
-                  Master right-of-way — the hardest-tested DMV topic — with 10 hand-built puzzles. Tap the cars, pedestrians, and cyclists in the legal order they may proceed, and watch the collision play out when you get it wrong.
-                </p>
+                <p className="text-gray-700 text-sm leading-relaxed">{r.text}</p>
               </div>
-              <div className="flex-shrink-0">
-                <span className="inline-block bg-primary group-hover:bg-primary-600 text-white font-bold py-3 px-6 rounded-lg transition-colors shadow-md">
-                  Play Now →
-                </span>
+            ))}
+          </div>
+        </div>
+
+        {/* App + Game — side by side */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
+          <AppPromotion variant="banner" className="h-full" />
+          <Link href="/intersection" className="group h-full">
+            <div className="relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-slate-800 via-slate-700 to-slate-800 border-2 border-slate-600 h-full">
+              <div className="relative z-10 flex items-center gap-5 px-6 py-6 h-full">
+                <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-white/10 flex items-center justify-center">
+                  <Navigation className="w-7 h-7 text-white" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-1.5">
+                    <span className="bg-primary text-white text-xs font-bold px-2.5 py-1 rounded-full">NEW</span>
+                    <span className="text-amber-300 text-xs font-semibold uppercase tracking-wide">Free Game</span>
+                  </div>
+                  <h2 className="text-lg font-bold text-white mb-1">Intersection — Who Goes First?</h2>
+                  <p className="text-slate-300 text-sm">Master right-of-way with 10 hand-built puzzles.</p>
+                </div>
+                <div className="flex-shrink-0">
+                  <span className="inline-block bg-primary group-hover:opacity-90 text-white font-bold py-2.5 px-5 rounded-lg transition-opacity shadow-md whitespace-nowrap">
+                    Play Now →
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
 
         {/* Free DMV Study Tools — surfaces the dedicated study pages so they
             get homepage internal links (discovery + SEO authority). */}
@@ -215,24 +280,26 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
-              { href: '/california-dmv-road-signs-test', icon: '🚦', title: 'Road Signs Test', desc: 'Drill all 38 California road signs with real images and instant answers.' },
-              { href: '/california-dmv-cheat-sheet', icon: '📋', title: 'DMV Cheat Sheet', desc: 'Every number and rule the test loves — BAC, curb colors, speed limits — on one page.' },
-              { href: '/california-dmv-test-study-guide', icon: '📚', title: 'Study Guide', desc: 'A simple 7-step plan from the handbook all the way to test day.' },
-              { href: '/california-dmv-marathon-test', icon: '🏁', title: 'Marathon Test', desc: 'Every question in one run — miss one and it comes back until you master it.' },
-              { href: '/20-hardest-dmv-written-test-questions', icon: '🔥', title: '20 Hardest Questions', desc: 'The trickiest, most-missed questions, explained so they can’t surprise you.' },
-              { href: '/california-dmv-fees', icon: '💲', title: 'DMV Fees', desc: 'License, renewal, REAL ID, and registration costs — what you’ll actually pay.' },
-            ].map((tool) => (
+              { href: '/california-dmv-road-signs-test', Icon: TriangleAlert, title: 'Road Signs Test', desc: 'Drill all 38 California road signs with real images and instant answers.' },
+              { href: '/california-dmv-cheat-sheet', Icon: ClipboardList, title: 'DMV Cheat Sheet', desc: 'Every number and rule the test loves — BAC, curb colors, speed limits — on one page.' },
+              { href: '/california-dmv-test-study-guide', Icon: BookOpen, title: 'Study Guide', desc: 'A simple 7-step plan from the handbook all the way to test day.' },
+              { href: '/california-dmv-marathon-test', Icon: Timer, title: 'Marathon Test', desc: 'Every question in one run — miss one and it comes back until you master it.' },
+              { href: '/20-hardest-dmv-written-test-questions', Icon: Flame, title: '20 Hardest Questions', desc: "The trickiest, most-missed questions, explained so they can't surprise you." },
+              { href: '/california-dmv-fees', Icon: DollarSign, title: 'DMV Fees', desc: "License, renewal, REAL ID, and registration costs — what you'll actually pay." },
+            ].map(({ href, Icon: ToolIcon, title, desc }) => (
               <Link
-                key={tool.href}
-                href={tool.href}
+                key={href}
+                href={href}
                 className="group bg-white rounded-xl shadow hover:shadow-lg transition-shadow border border-gray-200 hover:border-primary p-6 flex items-start gap-4"
               >
-                <div className="text-4xl flex-shrink-0" aria-hidden="true">{tool.icon}</div>
+                <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors flex items-center justify-center">
+                  <ToolIcon className="w-5 h-5 text-primary" />
+                </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">
-                    {tool.title}
+                    {title}
                   </h3>
-                  <p className="text-sm text-gray-600">{tool.desc}</p>
+                  <p className="text-sm text-gray-600">{desc}</p>
                 </div>
               </Link>
             ))}
@@ -427,29 +494,31 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {[
-              { href: '/new-to-california-driver-guide-2026', icon: '🏖️', title: 'New to California', desc: '10-day license + 20-day registration rules' },
-              { href: '/california-teen-driver-complete-guide-2026', icon: '🎓', title: 'Teen Drivers', desc: 'From learner’s permit to provisional license' },
-              { href: '/california-senior-driver-license-guide-2026', icon: '👵', title: 'Senior Drivers', desc: 'In-person renewal at 70+ and re-examination' },
-              { href: '/california-disabled-driver-license-guide-2026', icon: '♿', title: 'People With Disabilities', desc: 'DP placards, plates, adaptive equipment' },
-              { href: '/california-veterans-active-military-dmv-guide-2026', icon: '🎖️', title: 'Veterans & Active Military', desc: 'Designation, plates, SCRA extensions' },
-              { href: '/california-motorcycle-license-class-m-guide-2026', icon: '🏍️', title: 'Motorcyclists', desc: 'Class M1, CMSP, helmet and lane-splitting law' },
-              { href: '/california-truck-driver-cdl-guide-2026', icon: '🚛', title: 'Truck Drivers (CDL)', desc: 'Class A/B/C, ELDT, DOT physical, endorsements' },
-              { href: '/california-boat-vessel-owner-guide-2026', icon: '⛵', title: 'Boat & Vessel Owners', desc: 'California Boater Card, registration, BUI' },
-              { href: '/california-bicyclist-pedestrian-safety-guide-2026', icon: '🚴', title: 'Bicyclists & Pedestrians', desc: 'Bike laws, e-bike classes, Daylighting Law' },
-            ].map((guide) => (
+              { href: '/new-to-california-driver-guide-2026', Icon: MapPin, title: 'New to California', desc: '10-day license + 20-day registration rules' },
+              { href: '/california-teen-driver-complete-guide-2026', Icon: GraduationCap, title: 'Teen Drivers', desc: "From learner's permit to provisional license" },
+              { href: '/california-senior-driver-license-guide-2026', Icon: UserCheck, title: 'Senior Drivers', desc: 'In-person renewal at 70+ and re-examination' },
+              { href: '/california-disabled-driver-license-guide-2026', Icon: Accessibility, title: 'People With Disabilities', desc: 'DP placards, plates, adaptive equipment' },
+              { href: '/california-veterans-active-military-dmv-guide-2026', Icon: Shield, title: 'Veterans & Active Military', desc: 'Designation, plates, SCRA extensions' },
+              { href: '/california-motorcycle-license-class-m-guide-2026', Icon: Gauge, title: 'Motorcyclists', desc: 'Class M1, CMSP, helmet and lane-splitting law' },
+              { href: '/california-truck-driver-cdl-guide-2026', Icon: Truck, title: 'Truck Drivers (CDL)', desc: 'Class A/B/C, ELDT, DOT physical, endorsements' },
+              { href: '/california-boat-vessel-owner-guide-2026', Icon: Anchor, title: 'Boat & Vessel Owners', desc: 'California Boater Card, registration, BUI' },
+              { href: '/california-bicyclist-pedestrian-safety-guide-2026', Icon: Bike, title: 'Bicyclists & Pedestrians', desc: 'Bike laws, e-bike classes, Daylighting Law' },
+            ].map(({ href, Icon: GuideIcon, title, desc }) => (
               <Link
-                key={guide.href}
-                href={guide.href}
+                key={href}
+                href={href}
                 className="group flex items-start gap-4 bg-white border-2 border-gray-100 hover:border-primary/40 rounded-xl p-5 shadow-sm hover:shadow-lg transition-all"
               >
-                <span className="text-3xl flex-shrink-0" aria-hidden="true">{guide.icon}</span>
+                <div className="flex-shrink-0 w-9 h-9 rounded-lg bg-gray-100 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
+                  <GuideIcon className="w-4 h-4 text-gray-500 group-hover:text-primary transition-colors" />
+                </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">
-                    {guide.title}
+                    {title}
                   </h3>
-                  <p className="text-sm text-gray-600 line-clamp-2">{guide.desc}</p>
+                  <p className="text-sm text-gray-600 line-clamp-2">{desc}</p>
                 </div>
-                <span className="text-primary text-lg flex-shrink-0 group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+                <ChevronRight className="w-4 h-4 text-primary flex-shrink-0 group-hover:translate-x-1 transition-transform mt-0.5" />
               </Link>
             ))}
           </div>

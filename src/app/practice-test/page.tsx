@@ -2,8 +2,11 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
-import AppPromotion from '@/components/AppPromotion';
 import PracticeTestsContent from '@/components/PracticeTestsContent';
+import {
+  TriangleAlert, ClipboardList, Wine, SquareParking, Gauge,
+  Flame, BookOpen, CreditCard, Layers, Navigation, Globe,
+} from 'lucide-react';
 import quizzesData from '@/data/quizzes.json';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import turkishQuizzesData from '@/data/turkish-quizzes.json';
@@ -61,35 +64,12 @@ export default function PracticeTestsPage() {
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
                 California DMV Practice Tests
               </h1>
-              <p className="text-xl text-white/90 mb-6">
+              <p className="text-xl text-white/90">
                 Test your knowledge with real DMV questions. Practice as many times as you need to pass your permit test with confidence.
               </p>
-              <div className="flex flex-wrap gap-4 justify-center">
-                <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">33+</div>
-                  <div className="text-sm text-white/90">Practice Tests</div>
-                </div>
-                <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">800+</div>
-                  <div className="text-sm text-white/90">Total Questions</div>
-                </div>
-                <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">11</div>
-                  <div className="text-sm text-white/90">Languages 🇺🇸 🇪🇸 🇹🇷 🇨🇳 🇸🇦 🇦🇲 🇮🇷 🇮🇳 🇷🇺 🇵🇭 🇻🇳</div>
-                </div>
-                <div className="bg-white/20 backdrop-blur px-6 py-3 rounded-lg">
-                  <div className="text-3xl font-bold">100%</div>
-                  <div className="text-sm text-white/90">Free Forever</div>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-
-        {/* App Promotion Banner */}
-        <div className="container mx-auto px-4 pt-6">
-          <AppPromotion variant="banner" />
-        </div>
 
         {/* Featured: 20 Hardest Questions */}
         <div className="container mx-auto px-4 pt-6">
@@ -98,7 +78,9 @@ export default function PracticeTestsPage() {
             className="block rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 md:p-7 shadow-lg hover:shadow-xl transition-shadow group max-w-6xl mx-auto"
           >
             <div className="flex items-center gap-5">
-              <div className="text-4xl flex-shrink-0">🔥</div>
+              <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center">
+                <Flame className="w-6 h-6 text-white" />
+              </div>
               <div className="flex-1">
                 <h2 className="text-xl md:text-2xl font-bold mb-1">
                   The 20 Hardest Questions on the DMV Written Test
@@ -118,20 +100,22 @@ export default function PracticeTestsPage() {
         <div className="container mx-auto px-4 pt-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { href: '/california-dmv-road-signs-test', emoji: '🛑', title: 'Road Signs Test', desc: 'Identify real California signs with instant answers.' },
-              { href: '/california-dmv-cheat-sheet', emoji: '📝', title: 'DMV Cheat Sheet', desc: 'Every fact the written test asks, on one page.' },
-              { href: '/california-dmv-drug-and-alcohol-test', emoji: '🍺', title: 'Drug & Alcohol Test', desc: 'BAC limits, implied consent, and DUI penalties.' },
-              { href: '/california-dmv-parking-test', emoji: '🅿️', title: 'Parking Test', desc: 'Curb colors and parking on hills, made simple.' },
-              { href: '/california-dmv-speed-limit-test', emoji: '⏱️', title: 'Speed Limits Test', desc: 'Every California limit and the Basic Speed Law.' },
-              { href: '/california-dmv-marathon-test', emoji: '🏃', title: 'Marathon Test', desc: 'Every question in one run until you master them all.' },
-              { href: '/california-dmv-test-study-guide', emoji: '📚', title: 'Study Guide', desc: 'A 7-step plan from handbook to full marathon.' },
-              { href: '/california-dmv-fees', emoji: '💳', title: 'DMV Fees', desc: 'License, REAL ID, and registration costs for 2026.' },
-            ].map((c) => (
-              <Link key={c.href} href={c.href} className="flex items-center gap-3 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
-                <span className="text-3xl">{c.emoji}</span>
+              { href: '/california-dmv-road-signs-test', Icon: TriangleAlert, title: 'Road Signs Test', desc: 'Identify real California signs with instant answers.' },
+              { href: '/california-dmv-cheat-sheet', Icon: ClipboardList, title: 'DMV Cheat Sheet', desc: 'Every fact the written test asks, on one page.' },
+              { href: '/california-dmv-drug-and-alcohol-test', Icon: Wine, title: 'Drug & Alcohol Test', desc: 'BAC limits, implied consent, and DUI penalties.' },
+              { href: '/california-dmv-parking-test', Icon: SquareParking, title: 'Parking Test', desc: 'Curb colors and parking on hills, made simple.' },
+              { href: '/california-dmv-speed-limit-test', Icon: Gauge, title: 'Speed Limits Test', desc: 'Every California limit and the Basic Speed Law.' },
+              { href: '/california-dmv-marathon-test', Icon: Flame, title: 'Marathon Test', desc: 'Every question in one run until you master them all.' },
+              { href: '/california-dmv-test-study-guide', Icon: BookOpen, title: 'Study Guide', desc: 'A 7-step plan from handbook to full marathon.' },
+              { href: '/california-dmv-fees', Icon: CreditCard, title: 'DMV Fees', desc: 'License, REAL ID, and registration costs for 2026.' },
+            ].map(({ href, Icon: CardIcon, title, desc }) => (
+              <Link key={href} href={href} className="flex items-center gap-4 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
+                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
+                  <CardIcon className="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" />
+                </div>
                 <span>
-                  <span className="block font-bold text-gray-900 group-hover:text-primary transition-colors">{c.title}</span>
-                  <span className="block text-sm text-gray-600">{c.desc}</span>
+                  <span className="block font-bold text-gray-900 group-hover:text-primary transition-colors">{title}</span>
+                  <span className="block text-sm text-gray-600">{desc}</span>
                 </span>
               </Link>
             ))}
@@ -165,7 +149,7 @@ export default function PracticeTestsPage() {
                   <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium">
                     Study Tool
                   </span>
-                  <span className="text-2xl">🎴</span>
+                  <Layers className="w-5 h-5 text-purple-500" />
                 </div>
 
                 {/* Title */}
@@ -216,7 +200,7 @@ export default function PracticeTestsPage() {
                   <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium">
                     New Game
                   </span>
-                  <span className="text-2xl">🚦</span>
+                  <Navigation className="w-5 h-5 text-red-500" />
                 </div>
 
                 <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors">
@@ -263,7 +247,7 @@ export default function PracticeTestsPage() {
                   <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium">
                     Other Languages
                   </span>
-                  <span className="text-2xl">🌐</span>
+                  <Globe className="w-5 h-5 text-orange-500" />
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">
                   Tests in 10 More Languages
