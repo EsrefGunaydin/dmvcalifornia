@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useCallback } from 'react';
 import Image from 'next/image';
+import { Smartphone } from 'lucide-react';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/dmv-california/id6754900213';
 const STORAGE_KEY = 'exitIntentDismissed';
@@ -93,7 +94,7 @@ export default function ExitIntentPopup() {
         {/* Header with gradient */}
         <div className="bg-gradient-to-r from-primary to-primary-600 text-white p-6 text-center">
           <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <span className="text-4xl">📱</span>
+            <Smartphone className="w-8 h-8 text-white" />
           </div>
           <h2 className="text-2xl font-bold mb-2">Wait! Before You Go...</h2>
           <p className="text-white/90">

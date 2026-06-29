@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Layers } from 'lucide-react';
 import { getFlashcardLang, type FlashcardLang } from '@/data/flashcards-i18n';
 
 /**
@@ -21,7 +22,7 @@ export default function LanguageFlashcardCTA({ lang }: { lang: FlashcardLang }) 
         <div className="text-5xl flex-shrink-0">{flag}</div>
         <div className="flex-1">
           <div className="inline-flex items-center gap-2 bg-white/20 px-3 py-1 rounded-full text-xs font-semibold mb-2">
-            <span>📇</span>
+            <Layers className="w-3.5 h-3.5" />
             <span>{config.nativeName} + English</span>
           </div>
           <h3 className="text-xl md:text-2xl font-bold mb-1">{labels.ctaHeading}</h3>

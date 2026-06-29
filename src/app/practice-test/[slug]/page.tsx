@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import { Lightbulb } from 'lucide-react';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
@@ -293,7 +294,7 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
                   {/* Compact Quick Tips Card */}
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <h3 className="text-base font-bold text-gray-900 mb-2 flex items-center gap-1">
-                    💡 Quick Tips
+                    <Lightbulb className="w-4 h-4 text-amber-500 flex-shrink-0" /> Quick Tips
                   </h3>
                   <ul className="space-y-1.5 text-sm text-gray-700">
                     <li className="flex items-start gap-2">

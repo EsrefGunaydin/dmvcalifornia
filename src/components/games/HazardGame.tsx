@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
+import { Eye, Star, Timer, Check } from 'lucide-react';
 import {
   ElementKind,
   HazardResult,
@@ -165,7 +166,7 @@ export default function HazardGame({ scene, nextSceneId }: HazardGameProps) {
         {/* Pre-game cover — keeps the player from pre-scanning before the clock starts */}
         {status === 'ready' && (
           <div className="absolute inset-0 bg-gray-900/95 flex flex-col items-center justify-center text-center p-6">
-            <div className="text-5xl mb-3" aria-hidden>👀</div>
+            <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-3" aria-hidden><Eye className="w-8 h-8 text-white" /></div>
             <h3 className="text-white text-xl font-bold mb-2">{scene.title}</h3>
             <p className="text-gray-300 text-sm mb-2 max-w-sm">{scene.description}</p>
             <p className="text-amber-300 text-sm font-semibold mb-5">
@@ -196,7 +197,7 @@ export default function HazardGame({ scene, nextSceneId }: HazardGameProps) {
           <div>
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-2">
-                <span className="text-2xl" aria-hidden>⏱</span>
+                <Timer className="w-6 h-6 text-gray-600" aria-hidden />
                 <span
                   className={[
                     'text-2xl font-bold tabular-nums',
@@ -230,9 +231,9 @@ export default function HazardGame({ scene, nextSceneId }: HazardGameProps) {
         {status === 'finished' && savedStars && (
           <div className="rounded-lg border-2 border-gray-200 bg-gray-50 p-4">
             <div className="text-center mb-4">
-              <div className="text-3xl mb-1" aria-label={`${savedStars} out of 3 stars`}>
-                {'⭐'.repeat(savedStars)}
-                <span className="opacity-25">{'⭐'.repeat(3 - savedStars)}</span>
+              <div className="inline-flex items-center mb-1" aria-label={`${savedStars} out of 3 stars`}>
+                {Array.from({ length: savedStars }, (_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}
+                <span className="opacity-25 inline-flex">{Array.from({ length: 3 - savedStars }, (_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}</span>
               </div>
               <h3 className="text-xl font-bold text-gray-900">
                 {cleanRun ? 'Perfect scan!' : allFound ? 'All hazards found' : "Time's up"}
@@ -260,7 +261,7 @@ export default function HazardGame({ scene, nextSceneId }: HazardGameProps) {
                         ].join(' ')}
                         aria-hidden
                       >
-                        {got ? '✓' : '!'}
+                        {got ? <Check className="w-3 h-3" /> : '!'}
                       </span>
                       <span className="text-gray-700">
                         <strong className="text-gray-900">{e.hazardLabel}</strong>

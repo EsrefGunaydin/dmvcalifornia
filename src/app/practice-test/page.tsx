@@ -255,18 +255,6 @@ export default function PracticeTestsPage() {
                 <p className="text-gray-600 mb-4 line-clamp-2">
                   Practice the California DMV test in Spanish, Turkish, Chinese, Arabic, Armenian, Farsi, Punjabi, Russian, Tagalog and Vietnamese — use the language filter above to find your language.
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4 text-2xl">
-                  <span>🇪🇸</span>
-                  <span>🇹🇷</span>
-                  <span>🇨🇳</span>
-                  <span>🇸🇦</span>
-                  <span>🇦🇲</span>
-                  <span>🇮🇷</span>
-                  <span>🇮🇳</span>
-                  <span>🇷🇺</span>
-                  <span>🇵🇭</span>
-                  <span>🇻🇳</span>
-                </div>
                 <div className="flex items-center justify-between pt-4 border-t border-orange-200">
                   <span className="text-orange-600 font-semibold group-hover:underline">
                     Browse by language

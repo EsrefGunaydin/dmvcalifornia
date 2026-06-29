@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import MultiplexAd from '@/components/MultiplexAd';
+import { Check } from 'lucide-react';
 import type { HandbookEdition } from '@/data/handbook-editions';
 
 const SITE_URL = 'https://www.dmvcalifornia.us';
@@ -89,7 +90,7 @@ export default function HandbookEditionView({ edition: e }: { edition: HandbookE
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               {e.sections.map((s) => (
                 <li key={s} className="flex items-start gap-2 text-gray-700">
-                  <span className="text-primary flex-shrink-0">✓</span>
+                  <Check className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                   <span>{s}</span>
                 </li>
               ))}

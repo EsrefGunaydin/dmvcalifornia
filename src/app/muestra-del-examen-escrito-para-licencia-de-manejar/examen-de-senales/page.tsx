@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Globe, Navigation, Lightbulb } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -77,8 +78,8 @@ export default async function SpanishSignTestPage() {
               <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium">
                 {quiz.category}
               </span>
-              <span className="text-2xl">🇪🇸</span>
-              <span className="text-2xl">🚦</span>
+              <Globe className="w-5 h-5 text-blue-600" />
+              <Navigation className="w-5 h-5 text-blue-600" />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               {quiz.title}
@@ -133,7 +134,7 @@ export default async function SpanishSignTestPage() {
                   {/* Quick Tips Card */}
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                     <h3 className="text-base font-bold text-gray-900 mb-2 flex items-center gap-1">
-                      💡 Consejos Rápidos
+                      <Lightbulb className="w-4 h-4 text-amber-500 flex-shrink-0" /> Consejos Rápidos
                     </h3>
                     <ul className="space-y-1.5 text-sm text-gray-700">
                       <li className="flex items-start gap-2">

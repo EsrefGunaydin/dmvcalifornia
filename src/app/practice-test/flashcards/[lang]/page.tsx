@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Globe } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/Header';
@@ -149,7 +150,7 @@ export default async function LanguageFlashcardIndexPage({
                   href="/practice-test/flashcards"
                   className="flex items-center gap-2 bg-gray-50 hover:bg-gray-100 rounded-lg p-3 border border-gray-200 transition-colors"
                 >
-                  <span className="text-2xl">🇺🇸</span>
+                  <Globe className="w-5 h-5 text-gray-600" />
                   <span className="text-sm font-medium text-gray-800">English</span>
                 </Link>
               </div>

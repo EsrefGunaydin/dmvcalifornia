@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Check, X } from 'lucide-react';
 
 export interface SignQuestion {
   id: number;
@@ -111,8 +112,8 @@ export default function SignQuiz({
                     >
                       <span className="font-bold text-gray-500 mt-0.5">{LETTERS[oi]}.</span>
                       <span className="flex-1 text-gray-900" dir={dir}>{opt}</span>
-                      {revealed && isCorrect && <span className="text-green-600 font-bold">✓</span>}
-                      {revealed && isPicked && !isCorrect && <span className="text-red-500 font-bold">✗</span>}
+                      {revealed && isCorrect && <Check className="w-4 h-4 text-green-600 flex-shrink-0" />}
+                      {revealed && isPicked && !isCorrect && <X className="w-4 h-4 text-red-500 flex-shrink-0" />}
                     </button>
                   );
                 })}

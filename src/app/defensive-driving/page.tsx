@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import type { ReactNode } from 'react';
+import { Shield, CloudRain, AlertCircle, Ban, User, FileText } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -135,48 +137,48 @@ const RULES = [
   },
 ];
 
-const TESTS = [
+const TESTS: { href: string; label: string; desc: string; q: number | undefined; icon: ReactNode }[] = [
   {
     href: '/practice-test/practice-test-safe-driving-and-defensive-techniques',
     label: 'Safe Driving & Defensive Techniques',
     desc: 'The core defensive driving questions — exactly what the DMV tests.',
     q: 22,
-    icon: '🛡️',
+    icon: <Shield className="w-8 h-8" />,
   },
   {
     href: '/practice-test/practice-test-weather-and-night-driving',
     label: 'Weather & Night Driving',
     desc: 'Rain, fog, ice, low visibility — common DMV test scenarios.',
     q: 14,
-    icon: '🌧️',
+    icon: <CloudRain className="w-8 h-8" />,
   },
   {
     href: '/practice-test/practice-test-special-driving-situations',
     label: 'Special Driving Situations',
     desc: 'Emergency vehicles, school zones, construction — tricky spots.',
     q: 15,
-    icon: '⚠️',
+    icon: <AlertCircle className="w-8 h-8" />,
   },
   {
     href: '/practice-test/practice-test-dui-laws-and-safety-requirements',
     label: 'DUI Laws & Safety',
     desc: 'BAC limits, checkpoints, and the legal consequences of impaired driving.',
     q: 13,
-    icon: '🚫',
+    icon: <Ban className="w-8 h-8" />,
   },
   {
     href: '/practice-test/practice-test-sharing-the-road',
     label: 'Sharing the Road',
     desc: 'Cyclists, pedestrians, motorcyclists, and large trucks.',
     q: 15,
-    icon: '🚶',
+    icon: <User className="w-8 h-8" />,
   },
   {
     href: '/california-dmv-practice-test',
     label: 'Full CA DMV Practice Test',
     desc: 'All topics in one test — the closest thing to the real exam.',
     q: undefined,
-    icon: '📝',
+    icon: <FileText className="w-8 h-8" />,
   },
 ];
 
@@ -369,7 +371,7 @@ export default function DefensiveDrivingPage() {
                   href={t.href}
                   className="group bg-white rounded-2xl border-2 border-gray-100 hover:border-dmv-400 hover:shadow-lg transition-all p-6 flex flex-col"
                 >
-                  <div className="text-4xl mb-3" aria-hidden="true">{t.icon}</div>
+                  <div className="w-12 h-12 rounded-xl bg-dmv-100 text-dmv-600 flex items-center justify-center mb-3" aria-hidden="true">{t.icon}</div>
                   <h3 className="text-base font-bold text-gray-900 group-hover:text-dmv-700 transition-colors mb-2">
                     {t.label}
                   </h3>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 
 export interface TopicFact {
   term: string;
@@ -10,7 +11,7 @@ export interface TopicFaq {
 }
 
 export interface TopicTestLandingProps {
-  emoji: string;
+  icon: ReactNode;
   h1: string;
   /** Lead paragraph (HTML-free). */
   intro: string;
@@ -29,7 +30,7 @@ export interface TopicTestLandingProps {
  * so no duplicate-content risk.
  */
 export default function TopicTestLanding({
-  emoji,
+  icon,
   h1,
   intro,
   quizSlug,
@@ -58,7 +59,9 @@ export default function TopicTestLanding({
         <section className={`bg-gradient-to-r ${gradient} text-white py-14`}>
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="text-5xl mb-3">{emoji}</div>
+              <div className="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-4">
+                {icon}
+              </div>
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">{h1}</h1>
               <p className="text-xl text-white/90">{intro}</p>
               <Link

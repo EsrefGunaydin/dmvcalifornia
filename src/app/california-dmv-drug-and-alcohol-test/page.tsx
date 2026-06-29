@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import TopicTestLanding from '@/components/TopicTestLanding';
+import { Wine } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'California DMV Drug & Alcohol Test 2026 (Free Practice) | DMV California',
@@ -24,7 +25,7 @@ export default function Page() {
     <>
       <Header />
       <TopicTestLanding
-        emoji="🍺"
+        icon={<Wine className="w-10 h-10 text-white" />}
         h1="California DMV Drug & Alcohol Test"
         intro="Alcohol and drug questions are guaranteed on the California written test. Learn the limits and penalties, then practice the exact questions."
         quizSlug="practice-test-dui-laws-and-safety-requirements"

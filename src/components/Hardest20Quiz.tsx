@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useRef, useState } from 'react';
+import { Check, X, Lightbulb } from 'lucide-react';
 import Link from 'next/link';
 
 interface Option {
@@ -161,10 +162,10 @@ export default function Hardest20Quiz({ questions }: { questions: HardestQuestio
                       <span className="font-bold text-gray-500 mt-0.5">{o.label}.</span>
                       <span className="flex-1 text-gray-900">{o.text}</span>
                       {revealed && isCorrect && (
-                        <span className="text-green-600 font-bold" aria-label="Correct">✓</span>
+                        <Check className="w-4 h-4 text-green-600 flex-shrink-0" aria-label="Correct" />
                       )}
                       {revealed && isPicked && !isCorrect && (
-                        <span className="text-red-500 font-bold" aria-label="Your pick (incorrect)">✗</span>
+                        <X className="w-4 h-4 text-red-500 flex-shrink-0" aria-label="Your pick (incorrect)" />
                       )}
                     </button>
                   );
@@ -186,7 +187,7 @@ export default function Hardest20Quiz({ questions }: { questions: HardestQuestio
                 }`}
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-lg">💡</span>
+                  <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0" />
                   <span className="font-bold text-gray-900">
                     {revealed && picked === q.correct ? (
                       'Correct!'

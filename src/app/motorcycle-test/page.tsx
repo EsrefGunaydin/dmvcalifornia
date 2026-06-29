@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { Bike } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -34,7 +35,9 @@ export default function MotorcycleTestPage() {
         <section className="bg-gradient-to-r from-gray-900 to-gray-700 text-white py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="text-6xl mb-4">🏍️</div>
+              <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center mx-auto mb-4">
+                <Bike className="w-10 h-10 text-white" />
+              </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">California Motorcycle Practice Test</h1>
               <p className="text-xl text-white/90 mb-2">
                 Class M license practice test — covers helmets, lane position, braking, cornering & group riding.

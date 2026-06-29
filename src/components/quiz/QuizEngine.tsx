@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
+import { Check, X as XIcon } from 'lucide-react';
 import { Quiz, Question, QuizResult, ShuffledQuestion } from '@/types/quiz';
 import Results from './Results';
 import AdRefreshManager from '@/components/ads/AdRefreshManager';
@@ -320,11 +321,11 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
                   }`}>
                     {showExplanation && (isCorrectAnswer || isSelected) && (
                       <span className="text-white text-sm">
-                        {isCorrectAnswer ? '✓' : '✗'}
+                        {isCorrectAnswer ? <Check className="w-4 h-4" /> : <XIcon className="w-4 h-4" />}
                       </span>
                     )}
                     {!showExplanation && isSelected && (
-                      <span className="text-white text-sm">✓</span>
+                      <span className="text-white text-sm"><Check className="w-4 h-4" /></span>
                     )}
                   </div>
                   <span className="text-gray-900">{option}</span>
@@ -340,8 +341,8 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
             isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'
           }`}>
             <div className="flex items-start gap-3">
-              <span className={`text-2xl ${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
-                {isCorrect ? '✓' : '✗'}
+              <span className={`${isCorrect ? 'text-green-600' : 'text-red-600'}`}>
+                {isCorrect ? <Check className="w-6 h-6" /> : <XIcon className="w-6 h-6" />}
               </span>
               <div>
                 <h3 className={`font-bold mb-2 ${isCorrect ? 'text-green-900' : 'text-red-900'}`}>

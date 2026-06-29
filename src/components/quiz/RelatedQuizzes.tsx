@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Globe } from 'lucide-react';
 
 export interface RelatedQuiz {
   slug: string;
@@ -8,10 +9,6 @@ export interface RelatedQuiz {
   language?: string;
 }
 
-const FLAG: Record<string, string> = {
-  es: '🇪🇸', tr: '🇹🇷', zh: '🇨🇳', ar: '🇸🇦', hy: '🇦🇲',
-  fa: '🇮🇷', pa: '🇮🇳', ru: '🇷🇺', tl: '🇵🇭', vi: '🇻🇳',
-};
 
 /**
  * "Keep practicing" cross-links shown at the end of a quiz. Encourages another
@@ -43,7 +40,7 @@ export default function RelatedQuizzes({ quizzes }: { quizzes: RelatedQuiz[] }) 
                     {q.category}
                   </span>
                   {q.language && q.language !== 'en' && (
-                    <span className="text-base">{FLAG[q.language] || '🌐'}</span>
+                    <Globe className="w-4 h-4 text-gray-500" aria-label={`Language: ${q.language}`} />
                   )}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-3 group-hover:text-primary transition-colors line-clamp-2">

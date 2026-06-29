@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import TopicTestLanding from '@/components/TopicTestLanding';
+import { Timer } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'California DMV Speed Limits Test 2026 (Free Practice) | DMV California',
@@ -24,7 +25,7 @@ export default function Page() {
     <>
       <Header />
       <TopicTestLanding
-        emoji="⏱️"
+        icon={<Timer className="w-10 h-10 text-white" />}
         h1="California DMV Speed Limits Test"
         intro="From blind intersections to freeways, California has a speed limit for every situation. Learn them all, then practice the exact questions."
         quizSlug="practice-test-speed-limits-and-traffic-laws"

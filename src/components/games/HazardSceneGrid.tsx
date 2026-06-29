@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { Lock, Star } from 'lucide-react';
 import { HazardResult, HazardScene } from '@/types/hazard';
 
 interface HazardSceneGridProps {
@@ -66,11 +67,11 @@ export default function HazardSceneGrid({ scenes }: HazardSceneGridProps) {
                 >
                   Scene {sceneNumber}
                 </span>
-                {!unlocked && <span className="text-gray-400" aria-label="Locked">🔒</span>}
+                {!unlocked && <Lock className="w-4 h-4 text-gray-400" aria-label="Locked" />}
                 {played && result && (
-                  <span aria-label={`${result.stars} of 3 stars`} className="text-sm">
-                    {'⭐'.repeat(result.stars)}
-                    <span className="opacity-25">{'⭐'.repeat(3 - result.stars)}</span>
+                  <span aria-label={`${result.stars} of 3 stars`} className="inline-flex items-center">
+                    {Array.from({ length: result.stars }, (_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}
+                    <span className="opacity-25 inline-flex">{Array.from({ length: 3 - result.stars }, (_, i) => <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />)}</span>
                   </span>
                 )}
               </div>

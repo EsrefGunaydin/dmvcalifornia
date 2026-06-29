@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Globe, Check } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -24,7 +25,9 @@ export default function ChineseTestPage() {
         <section className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="text-6xl mb-4">🇨🇳</div>
+              <div className="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-4">
+                <Globe className="w-10 h-10 text-white" />
+              </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
                 DMV Driving Test in Chinese / DMV 中文駕駛考試
               </h1>
@@ -122,16 +125,16 @@ export default function ChineseTestPage() {
               </h3>
               <div className="grid md:grid-cols-2 gap-6 text-gray-600">
                 <div>
-                  <p className="mb-2">✓ 建議從模擬考試開始</p>
-                  <p className="mb-2">✓ 仔細閱讀每個問題</p>
-                  <p className="mb-2">✓ 複習錯誤的答案</p>
-                  <p className="mb-2">✓ 反複練習直到熟練</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> 建議從模擬考試開始</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> 仔細閱讀每個問題</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> 複習錯誤的答案</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> 反複練習直到熟練</p>
                 </div>
                 <div>
-                  <p className="mb-2">✓ Start with the simulator test</p>
-                  <p className="mb-2">✓ Read each question carefully</p>
-                  <p className="mb-2">✓ Review incorrect answers</p>
-                  <p className="mb-2">✓ Practice until proficient</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> Start with the simulator test</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> Read each question carefully</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> Review incorrect answers</p>
+                  <p className="mb-2 flex items-center gap-1"><Check className="w-4 h-4 text-green-600 flex-shrink-0" /> Practice until proficient</p>
                 </div>
               </div>
             </div>

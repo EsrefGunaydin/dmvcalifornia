@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import TopicTestLanding from '@/components/TopicTestLanding';
+import { MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'California DMV Parking Test 2026 (Free Practice) | DMV California',
@@ -24,7 +25,7 @@ export default function Page() {
     <>
       <Header />
       <TopicTestLanding
-        emoji="🅿️"
+        icon={<MapPin className="w-10 h-10 text-white" />}
         h1="California DMV Parking Test"
         intro="Curb colors and parking-on-a-hill questions trip up a lot of test-takers. Learn the rules, then practice the exact questions."
         quizSlug="practice-test-parking-and-vehicle-control"

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { RefreshCw, Timer, FileText } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -147,21 +148,21 @@ export default function FlashcardsSet5Page() {
               </h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-teal-50 rounded-lg p-6">
-                  <div className="text-3xl mb-3">🔄</div>
+                  <div className="w-10 h-10 rounded-lg bg-teal-100 flex items-center justify-center mb-3"><RefreshCw className="w-5 h-5 text-teal-600" /></div>
                   <h3 className="font-bold text-lg mb-2">Repeat & Review</h3>
                   <p className="text-gray-700 text-sm">
                     Go through the deck multiple times until you can answer each question confidently.
                   </p>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-6">
-                  <div className="text-3xl mb-3">⏱️</div>
+                  <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center mb-3"><Timer className="w-5 h-5 text-blue-600" /></div>
                   <h3 className="font-bold text-lg mb-2">Time Yourself</h3>
                   <p className="text-gray-700 text-sm">
                     Try to answer each question quickly to simulate real test conditions.
                   </p>
                 </div>
                 <div className="bg-green-50 rounded-lg p-6">
-                  <div className="text-3xl mb-3">📝</div>
+                  <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center mb-3"><FileText className="w-5 h-5 text-green-600" /></div>
                   <h3 className="font-bold text-lg mb-2">Write It Down</h3>
                   <p className="text-gray-700 text-sm">
                     Write down answers you struggle with to reinforce your memory.

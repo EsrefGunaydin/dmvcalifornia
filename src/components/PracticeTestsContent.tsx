@@ -38,37 +38,22 @@ interface PracticeTestsContentProps {
 }
 
 const LANGUAGE_OPTIONS: { value: 'all' | QuizLanguage; label: string }[] = [
-  { value: 'all', label: '🌐 All Languages' },
-  { value: 'en', label: '🇺🇸 English' },
-  { value: 'es', label: '🇪🇸 Español' },
-  { value: 'tr', label: '🇹🇷 Türkçe' },
-  { value: 'zh', label: '🇨🇳 中文' },
-  { value: 'ar', label: '🇸🇦 العربية' },
-  { value: 'hy', label: '🇦🇲 Հայերեն' },
-  { value: 'fa', label: '🇮🇷 فارسی' },
-  { value: 'pa', label: '🇮🇳 ਪੰਜਾਬੀ' },
-  { value: 'ru', label: '🇷🇺 Русский' },
-  { value: 'tl', label: '🇵🇭 Tagalog' },
-  { value: 'vi', label: '🇻🇳 Tiếng Việt' },
-  { value: 'ko', label: '🇰🇷 한국어' },
-  { value: 'hi', label: '🇮🇳 हिन्दी' },
+  { value: 'all', label: 'All Languages' },
+  { value: 'en', label: 'English' },
+  { value: 'es', label: 'Español' },
+  { value: 'tr', label: 'Türkçe' },
+  { value: 'zh', label: '中文' },
+  { value: 'ar', label: 'العربية' },
+  { value: 'hy', label: 'Հայերեն' },
+  { value: 'fa', label: 'فارسی' },
+  { value: 'pa', label: 'ਪੰਜਾਬੀ' },
+  { value: 'ru', label: 'Русский' },
+  { value: 'tl', label: 'Tagalog' },
+  { value: 'vi', label: 'Tiếng Việt' },
+  { value: 'ko', label: '한국어' },
+  { value: 'hi', label: 'हिन्दी' },
 ];
 
-const LANGUAGE_FLAG: Record<QuizLanguage, string> = {
-  en: '🇺🇸',
-  es: '🇪🇸',
-  tr: '🇹🇷',
-  zh: '🇨🇳',
-  ar: '🇸🇦',
-  hy: '🇦🇲',
-  fa: '🇮🇷',
-  pa: '🇮🇳',
-  ru: '🇷🇺',
-  tl: '🇵🇭',
-  vi: '🇻🇳',
-  ko: '🇰🇷',
-  hi: '🇮🇳',
-};
 
 export default function PracticeTestsContent({ quizzes }: PracticeTestsContentProps) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -224,7 +209,7 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
           className="mb-6 flex items-center justify-between gap-4 rounded-xl border-2 border-primary/20 bg-primary/5 p-5 hover:bg-primary/10 transition-colors group"
         >
           <div className="flex items-center gap-4">
-            <span className="text-3xl">{LANGUAGE_FLAG[filterLanguage]}</span>
+            <Globe className="w-7 h-7 text-gray-600" />
             <div>
               <p className="font-bold text-gray-900">
                 {LANGUAGE_OPTIONS.find(o => o.value === filterLanguage)?.label} — Flashcards
@@ -262,9 +247,7 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
                     {quiz.category}
                   </span>
                   {quiz.language && quiz.language !== 'en' && (
-                    <span className="text-xl" aria-label={`Language: ${quiz.language}`} title={`Language: ${quiz.language}`}>
-                      {LANGUAGE_FLAG[quiz.language]}
-                    </span>
+                    <Globe className="w-5 h-5 text-gray-500" aria-label={`Language: ${quiz.language}`} />
                   )}
                 </div>
 
@@ -343,9 +326,7 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
                     {quiz.category}
                   </span>
                   {quiz.language && quiz.language !== 'en' && (
-                    <span className="text-lg" aria-label={`Language: ${quiz.language}`} title={`Language: ${quiz.language}`}>
-                      {LANGUAGE_FLAG[quiz.language]}
-                    </span>
+                    <Globe className="w-5 h-5 text-gray-500" aria-label={`Language: ${quiz.language}`} />
                   )}
                 </div>
 

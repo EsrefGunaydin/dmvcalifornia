@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Smartphone } from 'lucide-react';
 
 interface AppPromotionProps {
   variant?: 'banner' | 'sidebar' | 'compact';
@@ -58,7 +59,7 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
       <div className={`bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 rounded-lg p-4 ${className}`}>
         <div className="flex items-center gap-3 mb-3">
           <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-            <span className="text-xl">📱</span>
+            <Smartphone className="w-5 h-5 text-primary" />
           </div>
           <div className="flex-1 min-w-0">
             <h4 className="font-bold text-gray-900 text-sm">Try Our Mobile App</h4>
@@ -89,7 +90,7 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
       <div className="p-6">
         <div className="flex items-center gap-3 mb-4">
           <div className="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center flex-shrink-0">
-            <span className="text-3xl">📱</span>
+            <Smartphone className="w-7 h-7 text-primary" />
           </div>
           <div>
             <h3 className="font-bold text-gray-900 text-lg">Mobile App</h3>
@@ -124,7 +125,7 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
             <svg className="w-4 h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
-            <span>11 Languages 🇺🇸 🇪🇸 🇹🇷 🇨🇳 🇸🇦 🇦🇲 🇮🇷 🇮🇳 🇷🇺 🇵🇭 🇻🇳</span>
+            <span>11 Languages (EN, ES, TR, ZH, AR, HY, FA, PA, RU, TL, VI)</span>
           </div>
         </div>
 

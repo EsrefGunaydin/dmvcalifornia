@@ -27,7 +27,7 @@ import ADSENSE_CONFIG from '@/config/adsense';
 import {
   TriangleAlert, ClipboardList, BookOpen, Timer, Flame, DollarSign,
   MapPin, GraduationCap, UserCheck, Accessibility, Shield, Gauge, Truck, Anchor, Bike,
-  Navigation, ChevronRight,
+  Navigation, ChevronRight, Globe, Layers,
 } from 'lucide-react';
 
 export default function Home() {
@@ -372,7 +372,7 @@ export default function Home() {
                   <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-xs font-medium">
                     Study Tool
                   </span>
-                  <span className="text-2xl">🎴</span>
+                  <Layers className="w-5 h-5 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">
                   Interactive Flashcards
@@ -399,7 +399,7 @@ export default function Home() {
                   <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-xs font-medium">
                     Spanish / Español
                   </span>
-                  <span className="text-2xl">🇪🇸</span>
+                  <Globe className="w-5 h-5 text-orange-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors">
                   Examen de Práctica (Español)
@@ -426,7 +426,7 @@ export default function Home() {
                   <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-xs font-medium">
                     Turkish / Türkçe
                   </span>
-                  <span className="text-2xl">🇹🇷</span>
+                  <Globe className="w-5 h-5 text-red-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-red-600 transition-colors">
                   DMV Türkçe Testler
@@ -453,7 +453,7 @@ export default function Home() {
                   <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-medium">
                     Chinese / 中文
                   </span>
-                  <span className="text-2xl">🇨🇳</span>
+                  <Globe className="w-5 h-5 text-yellow-600" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-yellow-600 transition-colors">
                   DMV 中文考試

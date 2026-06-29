@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import Link from 'next/link';
+import { Zap, Target, RefreshCw, PenLine, Shuffle, Clock } from 'lucide-react';
 import { FLASHCARD_LANG_CODES, FLASHCARD_LANGUAGES, totalCards } from '@/data/flashcards-i18n';
 
 export const metadata: Metadata = {
@@ -290,21 +291,21 @@ export default function FlashcardsPage() {
               </h2>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="bg-white rounded-lg p-6 shadow-md">
-                  <div className="text-4xl mb-4">🧠</div>
+                  <div className="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center mb-4"><Zap className="w-6 h-6 text-blue-600" /></div>
                   <h3 className="font-bold text-xl mb-3">Better Retention</h3>
                   <p className="text-gray-600">
                     Active recall through flashcards helps you remember information longer and perform better on the actual test.
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-6 shadow-md">
-                  <div className="text-4xl mb-4">⚡</div>
+                  <div className="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center mb-4"><Zap className="w-6 h-6 text-green-600" /></div>
                   <h3 className="font-bold text-xl mb-3">Study Anywhere</h3>
                   <p className="text-gray-600">
                     Quick study sessions perfect for learning on-the-go. Review cards during breaks, commutes, or whenever you have time.
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-6 shadow-md">
-                  <div className="text-4xl mb-4">🎯</div>
+                  <div className="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center mb-4"><Target className="w-6 h-6 text-purple-600" /></div>
                   <h3 className="font-bold text-xl mb-3">Focus on Weak Areas</h3>
                   <p className="text-gray-600">
                     Identify questions you struggle with and focus your study time where it matters most.
@@ -325,7 +326,7 @@ export default function FlashcardsPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="text-3xl">🔄</div>
+                    <div className="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0"><RefreshCw className="w-5 h-5 text-blue-600" /></div>
                     <div>
                       <h3 className="font-bold text-lg mb-2">Spaced Repetition</h3>
                       <p className="text-gray-700 text-sm">
@@ -336,7 +337,7 @@ export default function FlashcardsPage() {
                 </div>
                 <div className="bg-white rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="text-3xl">✍️</div>
+                    <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0"><PenLine className="w-5 h-5 text-green-600" /></div>
                     <div>
                       <h3 className="font-bold text-lg mb-2">Write It Down</h3>
                       <p className="text-gray-700 text-sm">
@@ -347,7 +348,7 @@ export default function FlashcardsPage() {
                 </div>
                 <div className="bg-white rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="text-3xl">🎲</div>
+                    <div className="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0"><Shuffle className="w-5 h-5 text-orange-600" /></div>
                     <div>
                       <h3 className="font-bold text-lg mb-2">Shuffle & Mix</h3>
                       <p className="text-gray-700 text-sm">
@@ -358,7 +359,7 @@ export default function FlashcardsPage() {
                 </div>
                 <div className="bg-white rounded-lg p-6">
                   <div className="flex items-start gap-4">
-                    <div className="text-3xl">⏰</div>
+                    <div className="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0"><Clock className="w-5 h-5 text-purple-600" /></div>
                     <div>
                       <h3 className="font-bold text-lg mb-2">Daily Practice</h3>
                       <p className="text-gray-700 text-sm">

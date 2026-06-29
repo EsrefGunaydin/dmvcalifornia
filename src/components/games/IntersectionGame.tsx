@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import Link from 'next/link';
+import { Zap, Star } from 'lucide-react';
 import {
   GameResult,
   IntersectionLevel,
@@ -145,7 +146,7 @@ export default function IntersectionGame({ level, nextLevelId }: IntersectionGam
         {status === 'crashed' && crashInfo && (
           <div className="rounded-lg border-2 border-red-200 bg-red-50 p-4">
             <div className="flex items-start gap-3">
-              <span className="text-2xl" aria-hidden>💥</span>
+              <Zap className="w-6 h-6 text-red-600 flex-shrink-0" aria-hidden />
               <div className="flex-1">
                 <h3 className="font-bold text-red-700 mb-1">Collision — wrong order</h3>
                 <p className="text-red-800 text-sm leading-relaxed">{crashInfo.rule}</p>
@@ -167,9 +168,9 @@ export default function IntersectionGame({ level, nextLevelId }: IntersectionGam
         {status === 'complete' && savedStars && (
           <div className="rounded-lg border-2 border-green-200 bg-green-50 p-4">
             <div className="text-center mb-4">
-              <div className="text-3xl mb-1" aria-label={`${savedStars} out of 3 stars`}>
-                {'⭐'.repeat(savedStars)}
-                <span className="opacity-25">{'⭐'.repeat(3 - savedStars)}</span>
+              <div className="inline-flex items-center mb-1" aria-label={`${savedStars} out of 3 stars`}>
+                {Array.from({ length: savedStars }, (_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}
+                <span className="opacity-25 inline-flex">{Array.from({ length: 3 - savedStars }, (_, i) => <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />)}</span>
               </div>
               <h3 className="text-xl font-bold text-green-800">Intersection cleared!</h3>
               <p className="text-sm text-green-700">

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { FileText, Layers, Check, BarChart3, Navigation, Smartphone, Globe } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -102,7 +103,7 @@ export default function MobileAppPage() {
             {/* Feature 1 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl">📝</span>
+                <FileText className="w-8 h-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 28+ Practice Tests
@@ -115,7 +116,7 @@ export default function MobileAppPage() {
             {/* Feature 2 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl">🎴</span>
+                <Layers className="w-8 h-8 text-purple-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Interactive Flashcards
@@ -128,7 +129,7 @@ export default function MobileAppPage() {
             {/* Feature 3 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl">✓</span>
+                <Check className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Instant Feedback
@@ -141,7 +142,7 @@ export default function MobileAppPage() {
             {/* Feature 4 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl">📊</span>
+                <BarChart3 className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Track Progress
@@ -154,7 +155,7 @@ export default function MobileAppPage() {
             {/* Feature 5 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl">🚦</span>
+                <Navigation className="w-8 h-8 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Traffic Signs Test
@@ -167,7 +168,7 @@ export default function MobileAppPage() {
             {/* Feature 6 */}
             <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl">📱</span>
+                <Smartphone className="w-8 h-8 text-red-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Offline Access
@@ -192,7 +193,7 @@ export default function MobileAppPage() {
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">3</div>
-              <div className="text-xl opacity-90">Languages 🇺🇸 🇪🇸 🇹🇷</div>
+              <div className="text-xl opacity-90 flex items-center justify-center gap-2">Languages <Globe className="w-5 h-5" /></div>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">72</div>
@@ -212,7 +213,7 @@ export default function MobileAppPage() {
           <div className="max-w-4xl mx-auto space-y-6">
             <div className="flex gap-4 items-start">
               <div className="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">✓</span>
+                <Check className="w-4 h-4 text-primary" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -226,7 +227,7 @@ export default function MobileAppPage() {
 
             <div className="flex gap-4 items-start">
               <div className="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">✓</span>
+                <Check className="w-4 h-4 text-primary" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -240,7 +241,7 @@ export default function MobileAppPage() {
 
             <div className="flex gap-4 items-start">
               <div className="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">✓</span>
+                <Check className="w-4 h-4 text-primary" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
@@ -254,7 +255,7 @@ export default function MobileAppPage() {
 
             <div className="flex gap-4 items-start">
               <div className="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center">
-                <span className="text-primary font-bold">✓</span>
+                <Check className="w-4 h-4 text-primary" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">

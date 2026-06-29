@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { PartyPopper, FileText, Smartphone } from 'lucide-react';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/dmv-california/id6754900213';
 
@@ -111,8 +112,8 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz }: R
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                {passed ? '🎉 Great Job!' : '📝 Nice Try!'}
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-2">
+                {passed ? <><PartyPopper className="w-6 h-6 text-primary" /> Great Job!</> : <><FileText className="w-6 h-6 text-primary" /> Nice Try!</>}
               </h3>
               <p className="text-gray-600 mb-1">
                 You scored <span className="font-bold text-primary">{percentage}%</span>
@@ -203,8 +204,8 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz }: R
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">
-              🎉 Submitted!
+            <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-2">
+              <PartyPopper className="w-6 h-6 text-green-600" /> Submitted!
             </h3>
             <p className="text-gray-600">
               Your score has been added to the leaderboard!
@@ -217,10 +218,8 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz }: R
       <div className={`rounded-lg shadow-lg p-8 mb-6 text-center ${
         passed ? 'bg-gradient-to-br from-green-500 to-green-600' : 'bg-gradient-to-br from-red-500 to-red-600'
       } text-white`}>
-        <div className="mb-4">
-          <span className="text-6xl">
-            {passed ? '🎉' : '📝'}
-          </span>
+        <div className="mb-4 flex justify-center">
+          {passed ? <PartyPopper className="w-16 h-16 text-white/90" /> : <FileText className="w-16 h-16 text-white/90" />}
         </div>
         <h1 className="text-3xl md:text-4xl font-bold mb-2">
           {passed ? 'Congratulations!' : 'Keep Practicing!'}
@@ -333,7 +332,7 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz }: R
         <div className="flex flex-col md:flex-row items-center gap-6">
           <div className="flex-shrink-0">
             <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center">
-              <span className="text-5xl">📱</span>
+              <Smartphone className="w-10 h-10 text-white" />
             </div>
           </div>
           <div className="flex-1 text-center md:text-left">

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { Trophy, Check, X } from 'lucide-react';
 import QuizAd from '@/components/QuizAd';
 
 export interface MarathonQuestion {
@@ -91,7 +92,7 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
   if (done) {
     return (
       <div className="max-w-3xl mx-auto text-center bg-white rounded-2xl border-2 border-green-200 shadow-sm p-10">
-        <div className="text-5xl mb-4">🏆</div>
+        <div className="w-16 h-16 rounded-2xl bg-yellow-100 flex items-center justify-center mx-auto mb-4"><Trophy className="w-8 h-8 text-yellow-600" /></div>
         <h2 className="text-3xl font-bold text-gray-900 mb-2">Marathon complete!</h2>
         <p className="text-gray-600 mb-2">
           You answered all {total} questions correctly. If you can clear the marathon, you&apos;re
@@ -151,8 +152,8 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
               >
                 <span className="font-bold text-gray-500 mt-0.5">{LETTERS[oi]}.</span>
                 <span className="flex-1 text-gray-900">{opt}</span>
-                {revealed && isCorrect && <span className="text-green-600 font-bold">✓</span>}
-                {revealed && isPicked && !isCorrect && <span className="text-red-500 font-bold">✗</span>}
+                {revealed && isCorrect && <Check className="w-4 h-4 text-green-600 flex-shrink-0" />}
+                {revealed && isPicked && !isCorrect && <X className="w-4 h-4 text-red-500 flex-shrink-0" />}
               </button>
             );
           })}

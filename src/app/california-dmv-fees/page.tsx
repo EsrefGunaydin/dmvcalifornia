@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { CreditCard } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -85,7 +86,9 @@ export default function FeesPage() {
         <section className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 text-white py-14">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="text-5xl mb-3">💳</div>
+              <div className="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-3">
+                <CreditCard className="w-10 h-10 text-white" />
+              </div>
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">California DMV Fees (2026)</h1>
               <p className="text-xl text-white/90">
                 What it costs to get a license, renew, upgrade to a REAL ID, or register a vehicle.

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import { Navigation } from 'lucide-react';
 
 const STUDY_TOOLS: { href: string; label: string }[] = [
   { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
@@ -68,7 +69,7 @@ export default function Header() {
             </div>
 
             <Link href="/intersection" className="text-gray-700 hover:text-primary font-medium transition-colors">
-              Intersection 🚦
+              Intersection <Navigation className="w-4 h-4 inline ml-1" />
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Blog
@@ -153,7 +154,7 @@ export default function Header() {
                 className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Intersection 🚦
+                Intersection <Navigation className="w-4 h-4 inline ml-1" />
               </Link>
               <Link
                 href="/blog"

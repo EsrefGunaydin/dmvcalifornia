@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { Lightbulb } from 'lucide-react';
 import QuizEngine from '@/components/quiz/QuizEngine';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
@@ -89,8 +90,8 @@ export default async function TurkishSignTestPage() {
 
                 {/* Quick Tips Card - Bilingual */}
                 <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-gray-900 mb-3">
-                    💡 İpuçları / Tips
+                  <h3 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                    <Lightbulb className="w-5 h-5 text-amber-500 flex-shrink-0" /> İpuçları / Tips
                   </h3>
                   <ul className="space-y-2 text-sm text-gray-700">
                     <li className="flex items-start gap-2">

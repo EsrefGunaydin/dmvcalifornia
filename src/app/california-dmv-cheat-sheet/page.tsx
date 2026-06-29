@@ -1,5 +1,10 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import type { ComponentType } from 'react';
+import {
+  Wine, Palette, Timer, Ruler, TriangleAlert, TrendingDown,
+  Navigation, ClipboardList, Shield,
+} from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -24,12 +29,12 @@ export const metadata: Metadata = {
 };
 
 type Item = { term: string; detail: string };
-type Section = { title: string; emoji: string; items: Item[] };
+type Section = { title: string; Icon: ComponentType<{ className?: string }>; items: Item[] };
 
 const SECTIONS: Section[] = [
   {
     title: 'Alcohol & DUI limits',
-    emoji: '🍺',
+    Icon: Wine,
     items: [
       { term: 'Legal BAC, age 21+', detail: '0.08%' },
       { term: 'Commercial drivers', detail: '0.04%' },
@@ -40,7 +45,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Curb colors',
-    emoji: '🎨',
+    Icon: Palette,
     items: [
       { term: 'White', detail: 'Quick stop to pick up / drop off passengers or mail' },
       { term: 'Green', detail: 'Limited-time parking (time is posted)' },
@@ -51,7 +56,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Speed limits (unless posted)',
-    emoji: '⏱️',
+    Icon: Timer,
     items: [
       { term: 'Residential / business district', detail: '25 mph' },
       { term: 'Near a school (children present)', detail: '25 mph or less' },
@@ -63,7 +68,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Signaling & distances',
-    emoji: '📏',
+    Icon: Ruler,
     items: [
       { term: 'Signal before a turn', detail: 'Continuously for the last 100 ft' },
       { term: 'Signal before a freeway lane change', detail: 'At least 5 seconds' },
@@ -75,7 +80,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Right-of-way',
-    emoji: '🛑',
+    Icon: TriangleAlert,
     items: [
       { term: 'Pedestrian in a crosswalk (marked or not)', detail: 'Always yield' },
       { term: '4-way stop / tie', detail: 'First to arrive goes; if tied, yield to the driver on your right' },
@@ -86,7 +91,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Parking on hills (turn your wheels…)',
-    emoji: '⛰️',
+    Icon: TrendingDown,
     items: [
       { term: 'Downhill (curb or no curb)', detail: 'Wheels toward the curb / edge' },
       { term: 'Uphill WITH a curb', detail: 'Wheels away from the curb' },
@@ -96,7 +101,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Lights, stops & crossings',
-    emoji: '🚦',
+    Icon: Navigation,
     items: [
       { term: 'Solid red arrow', detail: 'No turn — even after stopping' },
       { term: 'Flashing red light', detail: 'Treat as a stop sign' },
@@ -107,7 +112,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Reports, points & fines',
-    emoji: '📋',
+    Icon: ClipboardList,
     items: [
       { term: 'Report a crash to DMV (SR-1)', detail: 'Within 10 days if injury, death, or over $1,000 damage' },
       { term: 'Sold or transferred your vehicle', detail: 'Notify DMV within 5 days' },
@@ -117,7 +122,7 @@ const SECTIONS: Section[] = [
   },
   {
     title: 'Seat belts, kids & phones',
-    emoji: '👶',
+    Icon: Shield,
     items: [
       { term: 'Car seat / booster', detail: 'Under 8 years OR under 4 ft 9 in — ride in the back' },
       { term: 'Rear-facing seat', detail: 'Under 2 (unless 40+ lb or 40+ in)' },
@@ -184,7 +189,9 @@ export default function CheatSheetPage() {
               {SECTIONS.map((section) => (
                 <div key={section.title} className="bg-white rounded-2xl border-2 border-gray-200 shadow-sm p-6">
                   <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                    <span className="text-2xl">{section.emoji}</span>
+                    <div className="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center flex-shrink-0">
+                      <section.Icon className="w-4 h-4 text-gray-600" />
+                    </div>
                     {section.title}
                   </h2>
                   <dl className="space-y-2.5">

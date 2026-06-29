@@ -2,6 +2,8 @@
 
 import { LeaderboardEntry } from '@/types/quiz';
 import { useState, useEffect, useCallback } from 'react';
+import type { ReactNode } from 'react';
+import { Trophy, Medal } from 'lucide-react';
 
 interface LeaderboardProps {
   entries: LeaderboardEntry[];
@@ -52,11 +54,11 @@ export default function Leaderboard({ entries, quizTitle, quizId, limit = 10 }: 
 
   const displayedEntries = showAll ? sortedEntries : sortedEntries.slice(0, limit);
 
-  const getMedalEmoji = (rank: number) => {
-    if (rank === 1) return '🥇';
-    if (rank === 2) return '🥈';
-    if (rank === 3) return '🥉';
-    return '';
+  const getMedalElement = (rank: number): ReactNode => {
+    if (rank === 1) return <Medal className="w-4 h-4 text-yellow-500" />;
+    if (rank === 2) return <Medal className="w-4 h-4 text-gray-400" />;
+    if (rank === 3) return <Medal className="w-4 h-4 text-orange-400" />;
+    return null;
   };
 
   const formatDate = (dateString: string) => {
@@ -71,8 +73,8 @@ export default function Leaderboard({ entries, quizTitle, quizId, limit = 10 }: 
   if (liveEntries.length === 0) {
     return (
       <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          🏆 Leaderboard
+        <h2 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+          <Trophy className="w-5 h-5 text-yellow-500" /> Leaderboard
         </h2>
         <p className="text-gray-500 text-center py-8">
           Be the first to appear on the leaderboard!
@@ -84,8 +86,8 @@ export default function Leaderboard({ entries, quizTitle, quizId, limit = 10 }: 
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-xl font-bold text-gray-900">
-          🏆 Leaderboard
+        <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+          <Trophy className="w-5 h-5 text-yellow-500" /> Leaderboard
         </h2>
         <span className="text-sm text-gray-500">
           {liveEntries.length} {liveEntries.length === 1 ? 'entry' : 'entries'}
@@ -121,7 +123,7 @@ export default function Leaderboard({ entries, quizTitle, quizId, limit = 10 }: 
                 <span className={`text-sm font-bold ${
                   isTopThree ? 'text-orange-600' : 'text-gray-600'
                 }`}>
-                  {getMedalEmoji(rank) || `#${rank}`}
+                  {getMedalElement(rank) ?? `#${rank}`}
                 </span>
               </div>
 

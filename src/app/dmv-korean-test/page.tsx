@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { Globe, Navigation } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -36,7 +37,9 @@ export default function KoreanTestPage() {
         <section className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="text-6xl mb-4">🇰🇷</div>
+              <div className="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center mx-auto mb-4">
+                <Globe className="w-10 h-10 text-white" />
+              </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4">DMV 한국어 연습 시험</h1>
               <p className="text-xl text-white/90 mb-2">
                 캘리포니아 DMV 연습 시험 — 실제 문제로 연습하세요.
@@ -78,7 +81,7 @@ export default function KoreanTestPage() {
 
             {/* Road signs CTA */}
             <div className="bg-white rounded-2xl border-2 border-blue-100 shadow-sm p-6 text-center">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">🚦 한국어 도로 표지판 시험</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2 flex items-center justify-center gap-2"><Navigation className="w-5 h-5 text-blue-600" /> 한국어 도로 표지판 시험</h3>
               <p className="text-gray-600 mb-4">
                 실제 표지판 이미지 38개로 캘리포니아 교통 표지판을 연습하세요.
               </p>

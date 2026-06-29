@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { Lightbulb } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
@@ -194,7 +195,7 @@ export default function RegulatorySignsTestPage() {
                         <h3 className="font-bold text-gray-900 text-base">{sign.name}</h3>
                         <p className="text-xs text-gray-500 mb-2">{sign.color}</p>
                         <p className="text-gray-700 text-sm leading-relaxed">{sign.meaning}</p>
-                        <p className="text-blue-700 text-xs mt-2 font-medium">💡 {sign.tip}</p>
+                        <p className="text-blue-700 text-xs mt-2 font-medium flex items-start gap-1"><Lightbulb className="w-3.5 h-3.5 text-amber-500 flex-shrink-0 mt-0.5" /> {sign.tip}</p>
                       </div>
                     </div>
                   </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { FileText } from 'lucide-react';
 
 export interface PracticeTestCtaConfig {
   /** Bold heading, intent-matched to the article */
@@ -23,8 +24,8 @@ export default function PracticeTestCTA({ config }: { config: PracticeTestCtaCon
   return (
     <aside className="my-8 rounded-2xl border-2 border-dmv-200 bg-gradient-to-br from-dmv-50 to-white p-6 md:p-7 not-prose">
       <div className="flex items-start gap-4">
-        <div className="hidden sm:flex flex-shrink-0 items-center justify-center w-12 h-12 rounded-xl bg-dmv-600 text-white text-2xl" aria-hidden="true">
-          📝
+        <div className="hidden sm:flex flex-shrink-0 items-center justify-center w-12 h-12 rounded-xl bg-dmv-600 text-white" aria-hidden="true">
+          <FileText className="w-6 h-6" />
         </div>
         <div className="flex-1">
           <h2 className="text-xl font-bold text-dmv-800 mb-1.5">{config.heading}</h2>
