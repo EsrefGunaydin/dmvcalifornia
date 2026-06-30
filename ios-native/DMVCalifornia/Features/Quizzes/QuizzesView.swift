@@ -11,7 +11,9 @@ enum LanguageFilter: String, CaseIterable {
     case arabic = "🇸🇦"
     case armenian = "🇦🇲"
     case farsi = "🇮🇷"
-    case punjabi = "🇮🇳"
+    case hindi = "🇮🇳"
+    case korean = "🇰🇷"
+    case punjabi = "🇵🇰"
     case russian = "🇷🇺"
     case tagalog = "🇵🇭"
     case vietnamese = "🇻🇳"
@@ -35,17 +37,18 @@ struct QuizzesView: View {
                 .background(Color.dmvCard)
                 .cornerRadius(DMVTheme.CornerRadius.md)
 
-                // Language Filter
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: DMVTheme.Spacing.sm) {
-                        ForEach(LanguageFilter.allCases, id: \.self) { filter in
-                            FilterChip(
-                                title: filter.rawValue,
-                                isSelected: viewModel.languageFilter == filter,
-                                count: viewModel.getCount(for: filter)
-                            ) {
-                                viewModel.languageFilter = filter
-                            }
+                // Language Filter — wrapping grid, no horizontal scroll
+                LazyVGrid(
+                    columns: [GridItem(.adaptive(minimum: 72), spacing: 8)],
+                    spacing: 8
+                ) {
+                    ForEach(LanguageFilter.allCases, id: \.self) { filter in
+                        FilterChip(
+                            title: filter.rawValue,
+                            isSelected: viewModel.languageFilter == filter,
+                            count: viewModel.getCount(for: filter)
+                        ) {
+                            viewModel.languageFilter = filter
                         }
                     }
                 }
@@ -90,7 +93,7 @@ struct QuizzesView: View {
                 .padding(.horizontal)
         }
         .background(Color.dmvBackground)
-        .navigationTitle("Practice Tests")
+        .toolbar(.hidden, for: .navigationBar)
         .task {
             await viewModel.loadQuizzes()
         }

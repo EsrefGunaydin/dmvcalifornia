@@ -42,6 +42,8 @@
 		8AB4514DB1201F411D84A1F0 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCBDB6ED72820302EF8B9B8 /* HapticManager.swift */; };
 		8BF0DED694EE0C09034007CA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C12FC4713B2CD76E0B60C6 /* AboutView.swift */; };
 		96E4938B23D6FDA285E6B734 /* turkish-quizzes.json in Resources */ = {isa = PBXBuildFile; fileRef = B6C508A8C7E14EB936DBD43E /* turkish-quizzes.json */; };
+		B39373C512C240C0BFF0D535 /* hindi-quizzes.json in Resources */ = {isa = PBXBuildFile; fileRef = E44C7F4662224DFC92A0059B /* hindi-quizzes.json */; };
+		AE4E49E70015438584FACBFC /* korean-quizzes.json in Resources */ = {isa = PBXBuildFile; fileRef = F10198D840DC411DA3F81B00 /* korean-quizzes.json */; };
 		DEF2FED06F4393AE302391F7 /* arabic-quizzes.json in Resources */ = {isa = PBXBuildFile; fileRef = 41900FFF6C79500514CD3908 /* arabic-quizzes.json */; };
 		896CD51BCC045CC1C109D119 /* armenian-quizzes.json in Resources */ = {isa = PBXBuildFile; fileRef = 26F6247F23352AE4987C84A0 /* armenian-quizzes.json */; };
 		B8E835B49C8C441388112809 /* farsi-quizzes.json in Resources */ = {isa = PBXBuildFile; fileRef = 190E05766F28D0881B94F223 /* farsi-quizzes.json */; };
@@ -135,6 +137,8 @@
 		B6B731B5AC8CEA7FC6353211 /* LevelProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelProgressView.swift; sourceTree = "<group>"; };
 		B6C12FC4713B2CD76E0B60C6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		B6C508A8C7E14EB936DBD43E /* turkish-quizzes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "turkish-quizzes.json"; sourceTree = "<group>"; };
+		E44C7F4662224DFC92A0059B /* hindi-quizzes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "hindi-quizzes.json"; sourceTree = "<group>"; };
+		F10198D840DC411DA3F81B00 /* korean-quizzes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "korean-quizzes.json"; sourceTree = "<group>"; };
 		41900FFF6C79500514CD3908 /* arabic-quizzes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "arabic-quizzes.json"; sourceTree = "<group>"; };
 		26F6247F23352AE4987C84A0 /* armenian-quizzes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "armenian-quizzes.json"; sourceTree = "<group>"; };
 		190E05766F28D0881B94F223 /* farsi-quizzes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "farsi-quizzes.json"; sourceTree = "<group>"; };
@@ -257,6 +261,8 @@
 				41BA22B584584BB8B0A059F6 /* intersection-levels.json */,
 				45420D6DC49DF76EA43A361F /* quizzes.json */,
 				B6C508A8C7E14EB936DBD43E /* turkish-quizzes.json */,
+				E44C7F4662224DFC92A0059B /* hindi-quizzes.json */,
+				F10198D840DC411DA3F81B00 /* korean-quizzes.json */,
 				41900FFF6C79500514CD3908 /* arabic-quizzes.json */,
 				26F6247F23352AE4987C84A0 /* armenian-quizzes.json */,
 				190E05766F28D0881B94F223 /* farsi-quizzes.json */,
@@ -560,6 +566,8 @@
 				301325CF85305EEE58C22793 /* flashcards.json in Resources */,
 				EDEA73003211D724B582B23D /* quizzes.json in Resources */,
 				96E4938B23D6FDA285E6B734 /* turkish-quizzes.json in Resources */,
+				B39373C512C240C0BFF0D535 /* hindi-quizzes.json in Resources */,
+				AE4E49E70015438584FACBFC /* korean-quizzes.json in Resources */,
 				DEF2FED06F4393AE302391F7 /* arabic-quizzes.json in Resources */,
 				896CD51BCC045CC1C109D119 /* armenian-quizzes.json in Resources */,
 				B8E835B49C8C441388112809 /* farsi-quizzes.json in Resources */,

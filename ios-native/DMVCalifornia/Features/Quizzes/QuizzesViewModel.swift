@@ -21,6 +21,8 @@ final class QuizzesViewModel: ObservableObject {
     private var arabicQuizzes: [Quiz] = []
     private var armenianQuizzes: [Quiz] = []
     private var farsiQuizzes: [Quiz] = []
+    private var hindiQuizzes: [Quiz] = []
+    private var koreanQuizzes: [Quiz] = []
     private var punjabiQuizzes: [Quiz] = []
     private var russianQuizzes: [Quiz] = []
     private var tagalogQuizzes: [Quiz] = []
@@ -54,6 +56,8 @@ final class QuizzesViewModel: ObservableObject {
             async let arabicTask = quizDataService.getArabicQuizzes()
             async let armenianTask = quizDataService.getArmenianQuizzes()
             async let farsiTask = quizDataService.getFarsiQuizzes()
+            async let hindiTask = quizDataService.getHindiQuizzes()
+            async let koreanTask = quizDataService.getKoreanQuizzes()
             async let punjabiTask = quizDataService.getPunjabiQuizzes()
             async let russianTask = quizDataService.getRussianQuizzes()
             async let tagalogTask = quizDataService.getTagalogQuizzes()
@@ -66,6 +70,8 @@ final class QuizzesViewModel: ObservableObject {
             let arabic = try await arabicTask
             let armenian = try await armenianTask
             let farsi = try await farsiTask
+            let hindi = try await hindiTask
+            let korean = try await koreanTask
             let punjabi = try await punjabiTask
             let russian = try await russianTask
             let tagalog = try await tagalogTask
@@ -78,6 +84,8 @@ final class QuizzesViewModel: ObservableObject {
             arabicQuizzes = arabic
             armenianQuizzes = armenian
             farsiQuizzes = farsi
+            hindiQuizzes = hindi
+            koreanQuizzes = korean
             punjabiQuizzes = punjabi
             russianQuizzes = russian
             tagalogQuizzes = tagalog
@@ -85,7 +93,7 @@ final class QuizzesViewModel: ObservableObject {
 
             // Combine all quizzes
             quizzes = english + spanish + turkish + chinese
-                + arabic + armenian + farsi + punjabi + russian + tagalog + vietnamese
+                + arabic + armenian + farsi + hindi + korean + punjabi + russian + tagalog + vietnamese
 
             // Apply initial filter
             applyFilters(query: searchQuery, filter: languageFilter)
@@ -106,6 +114,8 @@ final class QuizzesViewModel: ObservableObject {
         case .arabic: return arabicQuizzes.count
         case .armenian: return armenianQuizzes.count
         case .farsi: return farsiQuizzes.count
+        case .hindi: return hindiQuizzes.count
+        case .korean: return koreanQuizzes.count
         case .punjabi: return punjabiQuizzes.count
         case .russian: return russianQuizzes.count
         case .tagalog: return tagalogQuizzes.count
@@ -126,6 +136,8 @@ final class QuizzesViewModel: ObservableObject {
         case .arabic: result = arabicQuizzes
         case .armenian: result = armenianQuizzes
         case .farsi: result = farsiQuizzes
+        case .hindi: result = hindiQuizzes
+        case .korean: result = koreanQuizzes
         case .punjabi: result = punjabiQuizzes
         case .russian: result = russianQuizzes
         case .tagalog: result = tagalogQuizzes
