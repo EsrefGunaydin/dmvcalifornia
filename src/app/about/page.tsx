@@ -16,7 +16,7 @@ export default function AboutPage() {
 
   // Select 4 featured blog posts (sorted by views)
   const featuredPosts = blogPostsData.posts
-    .sort((a, b) => b.views - a.views)
+    .sort((a, b) => (b.views ?? 0) - (a.views ?? 0))
     .slice(0, 4);
 
   return (
@@ -182,7 +182,7 @@ export default function AboutPage() {
                       <div className="flex items-center gap-2 mb-3 text-sm text-gray-500">
                         <span>{new Date(post.publishedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                         <span>•</span>
-                        <span>{post.views.toLocaleString()} views</span>
+                        <span>{(post.views ?? 0).toLocaleString()} views</span>
                       </div>
                       <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                         {post.title}
