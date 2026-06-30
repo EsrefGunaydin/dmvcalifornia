@@ -12,6 +12,7 @@ import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
 import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
 import koreanQuizzesData from '@/data/ko-quizzes.json';
 import hindiQuizzesData from '@/data/hi-quizzes.json';
+import turkishQuizzesData from '@/data/turkish-quizzes.json';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import intersectionLevelsData from '@/data/intersection-levels.json';
@@ -327,6 +328,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...vietnameseQuizzesData.quizzes,
     ...koreanQuizzesData.quizzes,
     ...hindiQuizzesData.quizzes,
+    ...turkishQuizzesData.quizzes,
     ...motorcycleQuizzesData.quizzes,
     ...commercialQuizzesData.quizzes,
   ];
