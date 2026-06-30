@@ -44,6 +44,7 @@ protocol QuizDataServiceProtocol {
     func getKoreanQuizzes() async throws -> [Quiz]
     func getTagalogQuizzes() async throws -> [Quiz]
     func getVietnameseQuizzes() async throws -> [Quiz]
+    func getAllQuizzes() async throws -> [Quiz]
     func getFlashcardSets() async throws -> [FlashcardSet]
     func getSpanishFlashcards() async throws -> [FlashcardSet]
     func getTurkishFlashcards() async throws -> [FlashcardSet]

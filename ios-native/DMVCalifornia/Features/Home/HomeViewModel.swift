@@ -26,11 +26,8 @@ final class HomeViewModel: ObservableObject {
         error = nil
 
         do {
-            // Load all quizzes (all languages)
-            async let englishQuizzesTask = quizDataService.getQuizzes()
-            async let spanishQuizzesTask = quizDataService.getSpanishQuizzes()
-            async let turkishQuizzesTask = quizDataService.getTurkishQuizzes()
-            async let chineseQuizzesTask = quizDataService.getChineseQuizzes()
+            // Load all quizzes across every language
+            async let allQuizzesTask = quizDataService.getAllQuizzes()
 
             // Load all flashcards (all languages)
             async let englishFlashcardsTask = quizDataService.getFlashcardSets()
@@ -38,15 +35,13 @@ final class HomeViewModel: ObservableObject {
             async let turkishFlashcardsTask = quizDataService.getTurkishFlashcards()
             async let chineseFlashcardsTask = quizDataService.getChineseFlashcards()
 
-            let (englishQuizzes, spanishQuizzes, turkishQuizzes, chineseQuizzes) = try await (
-                englishQuizzesTask, spanishQuizzesTask, turkishQuizzesTask, chineseQuizzesTask
-            )
+            let allQuizzes = try await allQuizzesTask
 
             let (englishFlashcards, spanishFlashcards, turkishFlashcards, chineseFlashcards) = try await (
                 englishFlashcardsTask, spanishFlashcardsTask, turkishFlashcardsTask, chineseFlashcardsTask
             )
 
-            totalQuizzes = englishQuizzes.count + spanishQuizzes.count + turkishQuizzes.count + chineseQuizzes.count
+            totalQuizzes = allQuizzes.count
             totalFlashcards = englishFlashcards.count + spanishFlashcards.count + turkishFlashcards.count + chineseFlashcards.count
 
             // Load streak and recent activity
