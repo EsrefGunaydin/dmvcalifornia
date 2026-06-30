@@ -505,6 +505,512 @@
           "difficulty": "medium"
         }
       ]
+    },
+    {
+      "id": "vietnamese-practice-test-1",
+      "slug": "vietnamese-practice-test-1",
+      "language": "vi",
+      "title": "DMV Vietnamese Practice Test 1 / Bài thi thực hành DMV tiếng Việt 1",
+      "description": "Quy tắc giao thông, biển báo, đỗ xe — California DMV.",
+      "category": "Vietnamese / Tiếng Việt",
+      "difficulty": "medium",
+      "timeLimit": 25,
+      "passingScore": 83,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Tốc độ tối đa trên đường dân cư khi không có biển báo là bao nhiêu?",
+          "options": [
+            "35 mph",
+            "25 mph",
+            "30 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Tốc độ"
+        },
+        {
+          "id": 2,
+          "question": "Bạn cần bật đèn xi-nhan trước khi quẹo bao nhiêu feet?",
+          "options": [
+            "50 feet",
+            "100 feet",
+            "200 feet"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Quẹo xe"
+        },
+        {
+          "id": 3,
+          "question": "Tốc độ tối đa trong khu vực trường học khi có trẻ em là bao nhiêu?",
+          "options": [
+            "25 mph",
+            "20 mph",
+            "15 mph"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Tốc độ"
+        },
+        {
+          "id": 4,
+          "question": "Bạn không được đậu xe trong phạm vi bao nhiêu feet tính từ trụ cứu hỏa?",
+          "options": [
+            "10 feet",
+            "15 feet",
+            "20 feet"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Đỗ xe"
+        },
+        {
+          "id": 5,
+          "question": "Tại ngã tư có biển dừng 4 chiều, hai xe đến cùng lúc. Xe nào được đi trước?",
+          "options": [
+            "Xe lớn hơn",
+            "Xe ở phía bên phải bạn",
+            "Xe đi nhanh hơn"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Quyền ưu tiên"
+        },
+        {
+          "id": 6,
+          "question": "Khi nghe tiếng còi xe cứu thương hay cảnh sát đang đến gần, bạn phải:",
+          "options": [
+            "Tăng tốc để tránh đường",
+            "Dừng lại tại chỗ",
+            "Chuyển sang lề phải và dừng lại"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Xe khẩn cấp"
+        },
+        {
+          "id": 7,
+          "question": "Biển báo hình thoi màu vàng có nghĩa là gì?",
+          "options": [
+            "Cấm đường",
+            "Cảnh báo nguy hiểm",
+            "Thông tin cho lái xe"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Biển báo"
+        },
+        {
+          "id": 8,
+          "question": "Khoảng cách an toàn tối thiểu khi đi sau xe phía trước trong điều kiện bình thường là:",
+          "options": [
+            "2 giây",
+            "3 giây",
+            "5 giây"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Khoảng cách an toàn"
+        },
+        {
+          "id": 9,
+          "question": "Vạch kẻ đường màu trắng đứt đoạn giữa các làn xe có nghĩa là gì?",
+          "options": [
+            "Không được chuyển làn",
+            "Được phép chuyển làn cẩn thận",
+            "Chỉ để quẹo phải"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Vạch kẻ đường"
+        },
+        {
+          "id": 10,
+          "question": "Vạch kẻ đường màu trắng liền có nghĩa là gì?",
+          "options": [
+            "Có thể vượt qua cẩn thận",
+            "Không nên vượt qua",
+            "Không được vượt qua"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Vạch kẻ đường"
+        },
+        {
+          "id": 11,
+          "question": "Đèn tín hiệu tại đường giao cắt đường sắt đang nhấp nháy. Bạn phải:",
+          "options": [
+            "Vượt qua nhanh chóng",
+            "Dừng lại và chờ đợi",
+            "Đi chậm qua đường ray"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Đường sắt"
+        },
+        {
+          "id": 12,
+          "question": "Khi nhập vào đường cao tốc từ đường dẫn, ai có quyền ưu tiên?",
+          "options": [
+            "Xe đang nhập làn",
+            "Xe đang lưu thông trên cao tốc",
+            "Xe đi nhanh hơn"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Quyền ưu tiên"
+        },
+        {
+          "id": 13,
+          "question": "Theo luật California, bạn phải bật đèn pha khi nào?",
+          "options": [
+            "Chỉ vào ban đêm",
+            "Từ hoàng hôn đến bình minh và khi tầm nhìn dưới 1.000 feet",
+            "Chỉ trong thời tiết xấu"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Đèn xe"
+        },
+        {
+          "id": 14,
+          "question": "Khi đậu xe xuống dốc có vỉa hè, bạn cần xoay bánh trước về hướng nào?",
+          "options": [
+            "Về phía vỉa hè (phải)",
+            "Ra xa vỉa hè (trái)",
+            "Để thẳng"
+          ],
+          "correctAnswer": 0,
+          "explanation": "",
+          "category": "Đỗ xe"
+        },
+        {
+          "id": 15,
+          "question": "Khi nào không được phép quay đầu xe (U-turn)?",
+          "options": [
+            "Trong khu dân cư",
+            "Trên đỉnh dốc hoặc khúc cua khuất khi tầm nhìn dưới 200 feet",
+            "Trên đường hai chiều"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Quẹo xe"
+        },
+        {
+          "id": 16,
+          "question": "Biển YIELD (Nhường đường) yêu cầu bạn:",
+          "options": [
+            "Dừng hẳn lại",
+            "Giảm tốc và nhường đường cho xe khác",
+            "Giảm tốc xuống 15 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Biển báo"
+        },
+        {
+          "id": 17,
+          "question": "Lề đường màu đỏ có nghĩa là gì?",
+          "options": [
+            "Được phép dừng ngắn",
+            "Cấm dừng và đỗ xe mọi lúc",
+            "Chỉ dành cho người khuyết tật"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Đỗ xe"
+        },
+        {
+          "id": 18,
+          "question": "Tốc độ tối đa trong khu thương mại khi không có biển báo là bao nhiêu?",
+          "options": [
+            "35 mph",
+            "30 mph",
+            "25 mph"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Tốc độ"
+        },
+        {
+          "id": 19,
+          "question": "Khi đậu xe lên dốc không có vỉa hè, bạn cần xoay bánh trước về hướng nào?",
+          "options": [
+            "Về phía trung tâm đường (trái)",
+            "Ra xa trung tâm đường (phải)",
+            "Để thẳng"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Đỗ xe"
+        },
+        {
+          "id": 20,
+          "question": "Đèn xanh giao thông có nghĩa là gì?",
+          "options": [
+            "Bắt buộc phải đi",
+            "Được phép đi nếu đường an toàn",
+            "Chuẩn bị dừng lại"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Đèn tín hiệu"
+        }
+      ]
+    },
+    {
+      "id": "vietnamese-practice-test-2",
+      "slug": "vietnamese-practice-test-2",
+      "language": "vi",
+      "title": "DMV Vietnamese Practice Test 2 / Bài thi thực hành DMV tiếng Việt 2",
+      "description": "Rượu bia lái xe, khẩn cấp, đường cao tốc — California DMV.",
+      "category": "Vietnamese / Tiếng Việt",
+      "difficulty": "medium",
+      "timeLimit": 25,
+      "passingScore": 83,
+      "questions": [
+        {
+          "id": 1,
+          "question": "Giới hạn nồng độ cồn trong máu (BAC) hợp pháp cho lái xe từ 21 tuổi trở lên là bao nhiêu?",
+          "options": [
+            "0.05%",
+            "0.08%",
+            "0.10%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Rượu bia lái xe"
+        },
+        {
+          "id": 2,
+          "question": "Xe của bạn bị trượt bánh. Bạn phải làm gì?",
+          "options": [
+            "Đạp phanh mạnh",
+            "Quay vô-lăng theo hướng trượt và nhả ga từ từ",
+            "Quay vô-lăng ngược hướng trượt"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Tình huống khẩn cấp"
+        },
+        {
+          "id": 3,
+          "question": "Khi lái xe trong mưa, khoảng cách an toàn tối thiểu phải:",
+          "options": [
+            "Như thời tiết khô ráo",
+            "Tăng ít nhất gấp đôi",
+            "Giảm lại để kiểm soát tốt hơn"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Thời tiết"
+        },
+        {
+          "id": 4,
+          "question": "Giới hạn BAC tối đa cho lái xe thương mại là bao nhiêu?",
+          "options": [
+            "0.08%",
+            "0.04%",
+            "0.06%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Rượu bia lái xe"
+        },
+        {
+          "id": 5,
+          "question": "Dây an toàn là bắt buộc cho:",
+          "options": [
+            "Chỉ lái xe và hành khách trước",
+            "Chỉ trẻ em",
+            "Tất cả hành khách trong xe"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "An toàn"
+        },
+        {
+          "id": 6,
+          "question": "Khi gặp đèn đỏ nhấp nháy tại giao lộ, bạn phải:",
+          "options": [
+            "Đi chậm qua",
+            "Dừng hẳn, quan sát và đi khi an toàn",
+            "Chờ đèn xanh"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Đèn tín hiệu"
+        },
+        {
+          "id": 7,
+          "question": "Luật 'Move Over' yêu cầu lái xe:",
+          "options": [
+            "Tăng tốc khi đi qua xe cứu hộ",
+            "Chuyển làn hoặc giảm tốc khi đi qua xe cứu hộ đỗ trên lề",
+            "Dừng lại khi thấy xe cứu hộ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Tình huống đặc biệt"
+        },
+        {
+          "id": 8,
+          "question": "Khi rẽ phải tại đèn đỏ, bạn phải:",
+          "options": [
+            "Từ từ rẽ không cần dừng",
+            "Dừng hẳn, kiểm tra xe và người đi bộ rồi mới rẽ",
+            "Chờ đèn xanh"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Quẹo xe"
+        },
+        {
+          "id": 9,
+          "question": "Tốc độ tối đa trong hẻm là bao nhiêu?",
+          "options": [
+            "25 mph",
+            "20 mph",
+            "15 mph"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Tốc độ"
+        },
+        {
+          "id": 10,
+          "question": "Trước khi chuyển làn, làm thế nào để kiểm tra điểm mù?",
+          "options": [
+            "Nhìn gương chiếu hậu",
+            "Quay đầu nhìn qua vai về phía điểm mù",
+            "Bóp còi rồi chuyển làn"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Chuyển làn"
+        },
+        {
+          "id": 11,
+          "question": "Nếu bạn lỡ mất đường ra trên cao tốc, bạn phải:",
+          "options": [
+            "Dừng và lùi xe lại",
+            "Quay đầu trên lề đường",
+            "Đi đến lối ra tiếp theo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Đường cao tốc"
+        },
+        {
+          "id": 12,
+          "question": "Vạch kẻ đường màu vàng đôi liền nghĩa là gì?",
+          "options": [
+            "Cấm dừng xe",
+            "Cấm vượt xe cả hai chiều",
+            "Cấm rẽ trái"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Vạch kẻ đường"
+        },
+        {
+          "id": 13,
+          "question": "Điện thoại di động khi lái xe tại California được phép sử dụng như thế nào?",
+          "options": [
+            "Chỉ được nói ngắn gọn",
+            "Chỉ được dùng thiết bị rảnh tay (hands-free)",
+            "Chỉ được dùng khi dừng đèn đỏ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Mất tập trung"
+        },
+        {
+          "id": 14,
+          "question": "Xe buýt trường học đang dừng có tay chắn mở ra trên đường hai làn. Bạn phải:",
+          "options": [
+            "Chỉ dừng nếu đi sau xe buýt",
+            "Chỉ dừng nếu thấy trẻ em",
+            "Dừng cả hai chiều đường"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Xe buýt trường học"
+        },
+        {
+          "id": 15,
+          "question": "Tại California, lái xe dưới 21 tuổi bị coi là vi phạm khi BAC là bao nhiêu?",
+          "options": [
+            "0.05%",
+            "0.02%",
+            "0.01%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Rượu bia lái xe"
+        },
+        {
+          "id": 16,
+          "question": "Khi nào được phép vượt qua vạch vàng đôi liền?",
+          "options": [
+            "Khi vượt xe chậm",
+            "Khi rẽ vào đường tư nhân hoặc lối vào nhà",
+            "Khi tầm nhìn kém"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Vạch kẻ đường"
+        },
+        {
+          "id": 17,
+          "question": "Khi lái xe trong sương mù dày, bạn phải:",
+          "options": [
+            "Bật đèn pha cao để nhìn rõ hơn",
+            "Giảm tốc và dùng đèn pha thấp hoặc đèn sương mù",
+            "Tăng tốc để thoát nhanh"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Thời tiết"
+        },
+        {
+          "id": 18,
+          "question": "Bạn phải nhường đường cho người đi bộ:",
+          "options": [
+            "Chỉ tại vạch qua đường có vạch kẻ",
+            "Chỉ khi đèn cho phép người đi bộ",
+            "Tại tất cả vạch qua đường, có hoặc không có vạch kẻ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Người đi bộ"
+        },
+        {
+          "id": 19,
+          "question": "Tốc độ tối đa trên hầu hết đường cao tốc ở California là bao nhiêu?",
+          "options": [
+            "55 mph",
+            "65 mph",
+            "70 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "",
+          "category": "Tốc độ"
+        },
+        {
+          "id": 20,
+          "question": "Rượu bia có thể được vận chuyển hợp pháp ở đâu trong xe?",
+          "options": [
+            "Ghế sau",
+            "Hộc để đồ",
+            "Cốp xe"
+          ],
+          "correctAnswer": 2,
+          "explanation": "",
+          "category": "Rượu bia lái xe"
+        }
+      ]
     }
   ]
 }
