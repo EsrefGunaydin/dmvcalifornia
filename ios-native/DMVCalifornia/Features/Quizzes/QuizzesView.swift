@@ -3,21 +3,61 @@ import SwiftUI
 // MARK: - Language Filter
 
 enum LanguageFilter: String, CaseIterable {
-    case all = "All"
-    case english = "🇺🇸"
-    case spanish = "🇪🇸"
-    case turkish = "🇹🇷"
-    case chinese = "🇨🇳"
-    case arabic = "🇸🇦"
-    case armenian = "🇦🇲"
-    case farsi = "🇮🇷"
-    case hindi = "🇮🇳"
-    case korean = "🇰🇷"
-    case punjabi = "🇵🇰"
-    case russian = "🇷🇺"
-    case tagalog = "🇵🇭"
-    case vietnamese = "🇻🇳"
+    case all
+    case english
+    case spanish
+    case turkish
+    case chinese
+    case arabic
+    case armenian
+    case farsi
+    case hindi
+    case korean
+    case punjabi
+    case russian
+    case tagalog
+    case vietnamese
+
+    var displayName: String {
+        switch self {
+        case .all:        return "All languages"
+        case .english:    return "English"
+        case .spanish:    return "Spanish"
+        case .turkish:    return "Turkish"
+        case .chinese:    return "Chinese"
+        case .arabic:     return "Arabic"
+        case .armenian:   return "Armenian"
+        case .farsi:      return "Farsi"
+        case .hindi:      return "Hindi"
+        case .korean:     return "Korean"
+        case .punjabi:    return "Punjabi"
+        case .russian:    return "Russian"
+        case .tagalog:    return "Tagalog"
+        case .vietnamese: return "Vietnamese"
+        }
+    }
+
+    var flag: String {
+        switch self {
+        case .all:        return "🌐"
+        case .english:    return "🇺🇸"
+        case .spanish:    return "🇪🇸"
+        case .turkish:    return "🇹🇷"
+        case .chinese:    return "🇨🇳"
+        case .arabic:     return "🇸🇦"
+        case .armenian:   return "🇦🇲"
+        case .farsi:      return "🇮🇷"
+        case .hindi:      return "🇮🇳"
+        case .korean:     return "🇰🇷"
+        case .punjabi:    return "🇵🇰"
+        case .russian:    return "🇷🇺"
+        case .tagalog:    return "🇵🇭"
+        case .vietnamese: return "🇻🇳"
+        }
+    }
 }
+
+// MARK: - Quizzes View
 
 struct QuizzesView: View {
     @EnvironmentObject private var coordinator: AppCoordinator
@@ -25,9 +65,10 @@ struct QuizzesView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            // Search and Filter
-            VStack(spacing: DMVTheme.Spacing.md) {
-                // Search Bar
+            // Search and Filter header
+            VStack(spacing: DMVTheme.Spacing.sm) {
+
+                // Search bar
                 HStack {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.dmvTextSecondary)
@@ -37,26 +78,79 @@ struct QuizzesView: View {
                 .background(Color.dmvCard)
                 .cornerRadius(DMVTheme.CornerRadius.md)
 
-                // Language Filter — wrapping grid, no horizontal scroll
-                LazyVGrid(
-                    columns: [GridItem(.adaptive(minimum: 72), spacing: 8)],
-                    spacing: 8
-                ) {
+                // Primary: language name dropdown
+                Menu {
                     ForEach(LanguageFilter.allCases, id: \.self) { filter in
-                        FilterChip(
-                            title: filter.rawValue,
-                            isSelected: viewModel.languageFilter == filter,
-                            count: viewModel.getCount(for: filter)
-                        ) {
+                        Button {
                             viewModel.languageFilter = filter
+                        } label: {
+                            if viewModel.languageFilter == filter {
+                                Label(
+                                    "\(filter.flag)  \(filter.displayName)  (\(viewModel.getCount(for: filter)))",
+                                    systemImage: "checkmark"
+                                )
+                            } else {
+                                Text("\(filter.flag)  \(filter.displayName)  (\(viewModel.getCount(for: filter)))")
+                            }
                         }
                     }
+                } label: {
+                    HStack(spacing: 8) {
+                        Text(viewModel.languageFilter.flag)
+                            .font(.system(size: 18))
+                        Text(viewModel.languageFilter.displayName)
+                            .font(.system(size: 15, weight: .semibold))
+                            .foregroundColor(.dmvText)
+                        Spacer()
+                        Text("\(viewModel.getCount(for: viewModel.languageFilter))")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundColor(.dmvOrange)
+                            .padding(.horizontal, 8)
+                            .padding(.vertical, 3)
+                            .background(Color.dmvOrange.opacity(0.12))
+                            .cornerRadius(10)
+                        Image(systemName: "chevron.down")
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundColor(.dmvTextSecondary)
+                    }
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 11)
+                    .background(Color.dmvCard)
+                    .cornerRadius(DMVTheme.CornerRadius.md)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: DMVTheme.CornerRadius.md)
+                            .stroke(Color.dmvBorder, lineWidth: 1.5)
+                    )
+                }
+
+                // Secondary: flag chips for quick switching
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 6) {
+                        ForEach(LanguageFilter.allCases, id: \.self) { filter in
+                            let isActive = viewModel.languageFilter == filter
+                            Button {
+                                viewModel.languageFilter = filter
+                            } label: {
+                                Text(filter.flag)
+                                    .font(.system(size: 18))
+                                    .frame(width: 38, height: 34)
+                                    .background(isActive ? Color.dmvOrange : Color.dmvCard)
+                                    .cornerRadius(8)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 8)
+                                            .stroke(isActive ? Color.clear : Color.dmvBorder, lineWidth: 1)
+                                    )
+                            }
+                            .buttonStyle(.press)
+                        }
+                    }
+                    .padding(.horizontal, 1)
                 }
             }
             .padding()
             .background(Color.dmvBackground)
 
-            // Quiz List
+            // Quiz list
             if viewModel.isLoading {
                 ScrollView {
                     SkeletonGrid(columns: 2, rows: 4)
@@ -88,7 +182,7 @@ struct QuizzesView: View {
                 }
             }
 
-            // Banner Ad at bottom
+            // Banner ad
             AdaptiveBannerAdView()
                 .padding(.horizontal)
         }
@@ -103,7 +197,7 @@ struct QuizzesView: View {
     }
 }
 
-// MARK: - Filter Chip
+// MARK: - Filter Chip (kept for potential reuse)
 
 struct FilterChip: View {
     let title: String
