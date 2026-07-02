@@ -8511,6 +8511,1030 @@
         }
       ],
       "language": "es"
+    },
+    {
+      "id": "examen-dmv-espanol-3",
+      "title": "Examen de Práctica del DMV #3 en Español",
+      "description": "Tercer examen de práctica del DMV de California en español con 20 preguntas sobre reglas de tráfico, señales y leyes de manejo. Basado en preguntas oficiales del DMV.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "examen-dmv-espanol-3",
+      "language": "es",
+      "passingScore": 83,
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "¿Cuándo es legal salirse del camino para rebasar a otro vehículo?",
+          "options": [
+            "Si el vehículo de adelante gira a la izquierda",
+            "Nunca es legal bajo ninguna circunstancia",
+            "Si hay dos o más carriles en un sentido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Salirse del camino pavimentado para rebasar nunca es legal en California. Debe rebasar solo por la izquierda dentro de los carriles de tráfico.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "Usted está a 100 pies de un cruce de ferrocarril sin señales de advertencia y no puede ver 400 pies en ambas direcciones. ¿Cuál es el límite de velocidad?",
+          "options": [
+            "15 mph",
+            "25 mph",
+            "10 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En un cruce de ferrocarril sin señales donde no puede ver 400 pies en ambas direcciones, el límite de velocidad es de 15 mph.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "¿Cuál describe el estacionamiento paralelo correcto en una calle?",
+          "options": [
+            "El vehículo está al menos a dos pies de otros vehículos",
+            "Las ruedas delanteras y traseras tocan el borde de la acera",
+            "Las ruedas delanteras y traseras están a menos de 18 pulgadas del borde de la acera"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Al estacionar en paralelo, las ruedas deben quedar a menos de 18 pulgadas del borde de la acera.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "¿A qué velocidad debe incorporarse a una autopista?",
+          "options": [
+            "A la misma velocidad del tráfico o cerca de ella",
+            "Más despacio que el tráfico",
+            "Más rápido que el tráfico para integrarse con seguridad"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Al incorporarse a una autopista debe igualar la velocidad del tráfico para integrarse de forma segura y sin causar peligro.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "¿A qué distancia debe cambiar de luces altas a luces bajas cuando se aproxima un vehículo en sentido contrario?",
+          "options": [
+            "900 pies",
+            "700 pies",
+            "500 pies"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe cambiar a luces bajas cuando un vehículo que viene en sentido contrario se encuentre a 500 pies o menos de distancia.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "¿Quién puede estacionar legalmente junto a un borde de acera azul?",
+          "options": [
+            "Alguien que recoge o deja pasajeros brevemente",
+            "Una persona con discapacidad con placa o permiso especial",
+            "Cualquier persona que estacione menos de 15 minutos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde azul está reservado exclusivamente para personas con discapacidad que cuenten con placa o permiso especial de estacionamiento.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "¿Qué debe hacer cuando un autobús escolar que está adelante activa las luces de advertencia amarillas?",
+          "options": [
+            "Reducir la velocidad y prepararse para detenerse",
+            "Pasar con cuidado por la izquierda",
+            "Detenerse inmediatamente y quedarse parado"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las luces amarillas intermitentes del bus escolar advierten que el bus está a punto de detenerse. Debe reducir la velocidad y prepararse para parar.",
+          "category": "School Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "¿Cuál refleja la ley de velocidad básica de California?",
+          "options": [
+            "Siempre manejar al límite publicado sin importar las condiciones",
+            "Igualar la velocidad del tráfico que le rodea",
+            "Nunca manejar más rápido de lo que es seguro para las condiciones actuales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La ley de velocidad básica establece que nunca debe manejar más rápido de lo seguro para las condiciones del camino, aunque esté por debajo del límite.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "Debe notificar al DMV en un plazo de 5 días si:",
+          "options": [
+            "Recibe una citación de tráfico",
+            "Vende o transfiere la propiedad de su vehículo",
+            "Pinta su vehículo de un color diferente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Está obligado a notificar al DMV dentro de 5 días si vende o transfiere la propiedad de su vehículo, para liberar su responsabilidad legal.",
+          "category": "DMV Rules",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "¿Cuál es un hábito seguro de manejo?",
+          "options": [
+            "Usar las luces altas en la niebla para ver mejor",
+            "Mantener los ojos en movimiento para observar el entorno",
+            "Mirar fijamente solo el centro de la carretera"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mantener los ojos en movimiento le permite detectar peligros a tiempo. Fijar la vista en un solo punto aumenta el riesgo de accidentes.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "¿Cuál es el límite de velocidad en callejones (alleys) en California?",
+          "options": [
+            "15 mph",
+            "20 mph",
+            "25 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El límite de velocidad en callejones en California es de 15 mph, a menos que haya una señal que indique otra velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "Al llegar al mismo tiempo que otro vehículo a una intersección de cuatro vías, ¿quién tiene el derecho de paso?",
+          "options": [
+            "El vehículo que llegó primero",
+            "El vehículo que está a su derecha",
+            "El vehículo más grande"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si dos vehículos llegan al mismo tiempo a una intersección de cuatro vías, el vehículo que está a la derecha tiene el derecho de paso.",
+          "category": "Right of Way",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "¿Cuál es el nivel máximo de alcohol en la sangre (BAC) permitido para conductores de 21 años o mayores?",
+          "options": [
+            "0.06%",
+            "0.08%",
+            "0.10%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California, el límite legal de alcohol en la sangre para conductores de 21 años o más es de 0.08%. Para menores de 21, el límite es 0.01%.",
+          "category": "DUI Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "¿A qué distancia mínima debe señalizar antes de realizar un giro en California?",
+          "options": [
+            "Al menos 100 pies antes del giro",
+            "Al menos 200 pies antes del giro",
+            "Al menos 50 pies antes del giro"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En California debe señalizar al menos 100 pies antes de realizar un giro para advertir a otros conductores de su intención.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 15,
+          "question": "¿Qué significa un borde de acera amarillo?",
+          "options": [
+            "Solo pueden estacionar personas con discapacidades",
+            "Estacionamiento limitado para cargar o descargar pasajeros o mercancías",
+            "No está permitido parar ni estacionar en ningún momento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde amarillo indica zona de carga y descarga. Puede parar el tiempo necesario para cargar o descargar, pero no puede dejar el vehículo estacionado sin el conductor.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "¿Cuántos pies antes del carril de ferrocarril más cercano debe detenerse al cruzar las vías?",
+          "options": [
+            "Entre 15 y 50 pies",
+            "Entre 5 y 10 pies",
+            "Entre 50 y 100 pies"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe detenerse entre 15 y 50 pies del carril de ferrocarril más cercano cuando sea necesario parar antes de cruzar las vías.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "Si el semáforo está en verde pero hay peatones cruzando la intersección, ¿qué debe hacer?",
+          "options": [
+            "Tocar la bocina para que los peatones se aparten",
+            "Ceder el paso a los peatones y esperar a que terminen de cruzar",
+            "Continuar manejando despacio porque tiene luz verde"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los peatones tienen el derecho de paso en los cruces peatonales. Aunque tenga luz verde, debe esperar a que los peatones terminen de cruzar.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "¿Para qué se usa el carril del centro de doble sentido (marcado con líneas amarillas continuas y discontinuas)?",
+          "options": [
+            "Para rebasar vehículos a alta velocidad",
+            "Para girar a la izquierda o prepararse para girar",
+            "Para estacionar brevemente en zonas comerciales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril del centro de doble sentido solo se usa para girar a la izquierda o prepararse para girar. No se puede usar para rebasar.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "¿Cuál es la distancia mínima de seguimiento segura que debe mantener detrás del vehículo de adelante?",
+          "options": [
+            "1 segundo",
+            "2 segundos",
+            "3 segundos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe mantener al menos 3 segundos de distancia con el vehículo de adelante. En condiciones adversas, esta distancia debe aumentarse.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "¿Cuándo puede girar a la derecha en un semáforo en rojo en California?",
+          "options": [
+            "Nunca está permitido girar a la derecha con rojo",
+            "Después de detenerse completamente y ceder el paso a peatones y vehículos",
+            "Siempre que no haya vehículos en la intersección"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Puede girar a la derecha con luz roja después de detenerse completamente, a menos que haya una señal que lo prohíba. Siempre ceda el paso a peatones y vehículos.",
+          "category": "Traffic Signals",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "examen-dmv-espanol-4",
+      "title": "Examen de Práctica del DMV #4 en Español",
+      "description": "Cuarto examen de práctica del DMV de California en español. 20 preguntas sobre leyes de tráfico, situaciones de emergencia y reglas de manejo seguro.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "examen-dmv-espanol-4",
+      "language": "es",
+      "passingScore": 83,
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "¿Cuál de los siguientes es contra la ley hacer mientras maneja?",
+          "options": [
+            "Usar audífonos que cubran ambos oídos",
+            "Usar un auricular solo en un oído para llamadas",
+            "Escuchar la radio del vehículo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En California es ilegal usar audífonos o auriculares que cubran ambos oídos mientras conduce. Puede usar un solo auricular en un oído.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "Hay congestionamiento de tráfico y necesita cruzar las vías del ferrocarril. ¿Qué debe hacer?",
+          "options": [
+            "Cruzar rápido antes de que llegue el tren",
+            "Esperar hasta poder cruzar completamente sin quedar detenido encima de las vías",
+            "Cruzar a velocidad reducida para evaluar el riesgo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Nunca cruce las vías si puede quedar atrapado encima de ellas. Espere hasta que haya espacio suficiente para cruzar por completo.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "¿Qué debe hacer si alguien lo sigue demasiado cerca?",
+          "options": [
+            "Frenar de golpe para advertirle",
+            "Aumentar gradualmente la distancia con el vehículo de adelante y dejar que lo rebase",
+            "Acelerar para alejarse de él"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si alguien lo presiona, aumente la distancia con el vehículo de adelante y permita que el conductor que lo sigue lo rebase de manera segura.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "Cuando maneja al límite de velocidad, le pueden poner una multa si:",
+          "options": [
+            "Hay señales de construcción en la carretera",
+            "Las condiciones del camino hacen que esa velocidad sea peligrosa",
+            "Hay otro vehículo que va más despacio adelante"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ley de velocidad básica permite multar a un conductor aunque vaya al límite si las condiciones del camino hacen esa velocidad insegura.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "¿Qué luces debe usar si tiene dificultad para ver otros vehículos por polvo, humo o niebla?",
+          "options": [
+            "Luces altas para iluminar más",
+            "Luces bajas y reducir la velocidad",
+            "Luces de emergencia y mantener la velocidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las luces altas rebotan en la niebla y reducen la visibilidad. Use luces bajas y reduzca la velocidad para ver y ser visto correctamente.",
+          "category": "Lighting",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "¿Qué debe hacer un conductor que está detenido en una intersección y quiere girar a la izquierda?",
+          "options": [
+            "Tomar el turno antes del tráfico que se aproxima",
+            "Girar inmediatamente si no hay peatones",
+            "Ceder el paso a los vehículos que se aproximan lo suficientemente cerca"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Al girar a la izquierda debe ceder el paso a todos los vehículos que vienen en sentido contrario y a los peatones en el cruce.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "¿Qué debe hacer un conductor cuando el semáforo está en amarillo intermitente?",
+          "options": [
+            "Detenerse completamente antes de la intersección",
+            "Reducir la velocidad y pasar con precaución",
+            "Acelerar para cruzar la intersección antes de que cambie"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una luz amarilla intermitente indica que debe reducir la velocidad y pasar la intersección con precaución, sin detenerse completamente.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "¿Qué debe hacer si un peatón aún está en el cruce peatonal después de que el semáforo cambia a verde?",
+          "options": [
+            "Tocar la bocina para advertirle",
+            "Esperar a que el peatón termine de cruzar",
+            "Avanzar despacio con mucho cuidado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los peatones tienen prioridad en los cruces. Aunque el semáforo cambie a verde, espere hasta que el peatón haya terminado de cruzar completamente.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "¿Cuándo es legal transportar un contenedor abierto de bebida alcohólica en su vehículo?",
+          "options": [
+            "Si el conductor no ha bebido nada",
+            "Si el contenedor está en la cajuela o en un área inaccesible para el conductor y los pasajeros",
+            "Si el contenedor está en el asiento trasero bien cerrado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los contenedores abiertos de alcohol deben guardarse en la cajuela o en un área donde el conductor y los pasajeros no tengan acceso mientras el vehículo está en movimiento.",
+          "category": "DUI Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "¿A qué distancia de una boca de incendios (hidrante) no puede estacionar?",
+          "options": [
+            "10 pies",
+            "15 pies",
+            "20 pies"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No puede estacionar a menos de 15 pies de una boca de incendios para que los bomberos puedan acceder a ella en caso de emergencia.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11,
+          "question": "¿Cuál es la edad mínima para obtener una licencia de conducir regular sin restricciones en California?",
+          "options": [
+            "16 años",
+            "17 años",
+            "18 años"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En California, la licencia de conducir regular sin restricciones se puede obtener a partir de los 18 años. Los menores de 18 reciben una licencia provisional con restricciones.",
+          "category": "DMV Rules",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "Si ve un vehículo de emergencia con luces y sirenas acercándose desde atrás, ¿qué debe hacer?",
+          "options": [
+            "Acelerar para despejarse del camino rápidamente",
+            "Jalar hacia la derecha y detenerse lo más pronto posible de manera segura",
+            "Continuar manejando en la misma dirección y velocidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cuando un vehículo de emergencia se aproxima, jale hacia la derecha del camino y deténgase hasta que pase. Aplica en cualquier tipo de vía.",
+          "category": "Emergency Vehicles",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "¿Hasta qué edad deben los niños viajar en un asiento de seguridad para niños en California?",
+          "options": [
+            "Hasta los 6 años",
+            "Hasta los 8 años",
+            "Hasta los 10 años o 80 libras"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California, los niños menores de 8 años deben viajar en un asiento de seguridad apropiado para su edad y tamaño, en el asiento trasero del vehículo.",
+          "category": "Passenger Safety",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "Si su vehículo comienza a patinar (deslizarse), ¿qué debe hacer?",
+          "options": [
+            "Aplicar los frenos con fuerza",
+            "Girar el volante hacia el mismo lado al que se desliza y soltar el acelerador",
+            "Girar el volante al lado contrario al deslizamiento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si el vehículo patina, suelte el acelerador y gire el volante hacia el mismo lado del derrape para recuperar el control. No frene bruscamente.",
+          "category": "Safe Driving",
+          "difficulty": "hard"
+        },
+        {
+          "id": 15,
+          "question": "El límite de velocidad en zonas residenciales en California generalmente es:",
+          "options": [
+            "20 mph",
+            "25 mph",
+            "30 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El límite de velocidad en zonas residenciales y áreas comerciales con poco tráfico en California es de 25 mph, a menos que haya señales que indiquen otra velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "¿Cuándo puede usar el carril de vehículos de alta ocupación (HOV/Carpool)?",
+          "options": [
+            "Cuando el tráfico regular esté muy congestionado",
+            "Cuando lleva el número mínimo de ocupantes indicado en la señal",
+            "Solo durante las horas pico de la mañana"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril HOV está reservado para vehículos con el número mínimo de ocupantes indicado. Los vehículos eléctricos con calcomanía especial pueden usarlo con un solo ocupante.",
+          "category": "Lane Markings",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "Bajo la ley Move Over de California, ¿qué debe hacer al pasar un vehículo de emergencia parado con luces encendidas?",
+          "options": [
+            "Solo reducir velocidad si está en el carril derecho",
+            "Cambiar al carril del lado o reducir la velocidad si no puede cambiar de carril",
+            "Esta ley solo aplica en autopistas, no en calles de la ciudad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ley exige cambiar al carril adyacente o reducir la velocidad si no puede cambiar. Aplica para vehículos de emergencia, mantenimiento y remolque en el hombro.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "¿Qué debe hacer si sus frenos fallan mientras maneja?",
+          "options": [
+            "Aplicar el freno de estacionamiento suavemente y bajar velocidades si tiene transmisión manual",
+            "Apagar el motor inmediatamente",
+            "Girar el volante bruscamente hacia la banqueta"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Si los frenos fallan, baje las velocidades para usar el freno del motor y aplique el freno de estacionamiento gradualmente. Busque una salida segura.",
+          "category": "Emergency Procedures",
+          "difficulty": "hard"
+        },
+        {
+          "id": 19,
+          "question": "¿Cuándo es legal hacer un giro en U en California?",
+          "options": [
+            "En cualquier calle donde no haya señal que lo prohíba",
+            "Donde pueda ver claramente al menos 200 pies en ambas direcciones y no haya señal que lo prohíba",
+            "Solo en intersecciones con semáforo verde"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California puede hacer un giro en U donde tenga visibilidad de al menos 200 pies en ambas direcciones y no haya señal que lo prohíba expresamente.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "¿Cuándo debe encender las luces del vehículo durante el día?",
+          "options": [
+            "Solo si hay niebla muy densa",
+            "Cuando la visibilidad sea menor a 1,000 pies, incluyendo en lluvia y niebla",
+            "Solo después de las 6 de la tarde"
+          ],
+          "correctAnswer": 1,
+          "explanation": "California requiere encender las luces cuando la visibilidad sea menor a 1,000 pies, incluyendo durante la lluvia, niebla, polvo o nieve.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "dmv-spanish-practice-test-2",
+      "title": "Simulador del Examen DMV en Español — Prueba Completa",
+      "description": "Simulador completo del examen escrito del DMV de California en español. 36 preguntas que cubren señales, leyes de tráfico, manejo seguro y situaciones de emergencia. Formato idéntico al examen real.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "dmv-spanish-practice-test-2",
+      "language": "es",
+      "passingScore": 83,
+      "timeLimit": 50,
+      "questions": [
+        {
+          "id": 1,
+          "question": "¿De qué color es el borde de acera que no permite que los vehículos se paren o estacionen en ningún momento?",
+          "options": [
+            "Amarillo",
+            "Rojo",
+            "Blanco"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde rojo significa que no puede parar ni estacionar en ese lugar en ningún momento.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "¿Cuándo es legal salirse del camino pavimentado para rebasar a otro vehículo?",
+          "options": [
+            "Si el vehículo de adelante gira a la izquierda",
+            "Nunca es legal bajo ninguna circunstancia",
+            "Si hay visibilidad suficiente por delante"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Salirse del camino pavimentado para rebasar nunca es legal en California.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "¿Cuál es una de las causas más comunes de los accidentes de tráfico?",
+          "options": [
+            "Mejor flujo de tráfico en las carreteras",
+            "Poner atención al entorno mientras maneja",
+            "Distracciones del conductor"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las distracciones del conductor, como usar el teléfono celular, son una de las causas más comunes de accidentes de tráfico.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "¿A qué velocidad debe incorporarse a una autopista?",
+          "options": [
+            "A la misma velocidad del tráfico o cerca de ella",
+            "Más despacio que el tráfico",
+            "Más rápido que el tráfico"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Al incorporarse a una autopista debe igualar la velocidad del tráfico para integrarse de manera segura.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "¿Qué se indica mediante dos juegos de líneas amarillas dobles separadas por 2 pies o más?",
+          "options": [
+            "Un carril HOV para vehículos con 2 o más ocupantes",
+            "Barrera que no debe cruzarse",
+            "Carriles de tráfico que van en el mismo sentido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dos juegos de líneas amarillas dobles con 2 pies o más de separación indican una barrera. No debe cruzar ni manejar sobre estas líneas.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "El límite de velocidad indicado es 65 mph. ¿Qué significa eso?",
+          "options": [
+            "Siempre debe manejar a exactamente 65 mph",
+            "Puede manejar más rápido solo si no hay otros vehículos",
+            "Debe manejar a 65 mph solo si las condiciones del camino son seguras"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los límites de velocidad son máximos bajo condiciones ideales. Si las condiciones son malas, debe reducir la velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "¿Cuándo debe notificar al DMV usando el formulario SR-1?",
+          "options": [
+            "Cuando su vehículo no pasa la revisión de emisiones",
+            "Cuando se ve involucrado en un accidente con heridos o daños mayores a $1,000",
+            "Cuando cambia de compañía de seguro"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe presentar el formulario SR-1 dentro de 10 días si el accidente causó lesiones, muertes o daños a la propiedad de más de $1,000.",
+          "category": "Accidents",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "¿Quién puede estacionar legalmente junto a un borde de acera azul?",
+          "options": [
+            "Alguien que recoge o deja pasajeros",
+            "Una persona con discapacidad con placa o permiso especial",
+            "Cualquier persona por menos de 15 minutos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde azul está reservado exclusivamente para personas con discapacidad que tengan placa o permiso especial vigente.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "¿A qué distancia debe cambiar de luces altas a luces bajas cuando se aproxima un vehículo en sentido contrario?",
+          "options": [
+            "900 pies",
+            "700 pies",
+            "500 pies"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe cambiar a luces bajas cuando un vehículo que viene de frente esté a 500 pies o menos para no encandilarlo.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "¿Qué debe hacer cuando un autobús escolar adelante activa las luces de advertencia amarillas?",
+          "options": [
+            "Reducir la velocidad y prepararse para detenerse",
+            "Pasar con cuidado por la izquierda",
+            "Detenerse inmediatamente"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las luces amarillas del bus escolar advierten que va a detenerse. Debe reducir la velocidad y prepararse para parar.",
+          "category": "School Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "Usted tiene menos de 18 años y lleva 8 meses con su licencia. ¿Cuándo puede conducir?",
+          "options": [
+            "Entre las 7 a.m. y las 8 p.m.",
+            "Entre las 5 a.m. y las 11 p.m.",
+            "En cualquier momento sin restricción"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los conductores menores de 18 años con licencia provisional no pueden manejar entre las 11 p.m. y las 5 a.m. durante los primeros 12 meses, salvo con supervisión de un adulto.",
+          "category": "Teen Drivers",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "¿Cuál de los siguientes es contra la ley hacer mientras maneja?",
+          "options": [
+            "Usar audífonos que cubran ambos oídos",
+            "Usar un auricular solo en un oído",
+            "Escuchar la radio del vehículo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Es ilegal usar audífonos o auriculares que cubran ambos oídos mientras conduce. Solo puede usar un auricular en un oído.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "¿Qué debe hacer si alguien lo sigue demasiado cerca?",
+          "options": [
+            "Frenar de golpe para advertirle",
+            "Aumentar gradualmente la distancia con el vehículo de adelante y dejar que lo rebase",
+            "Acelerar para alejarse"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si alguien lo sigue muy cerca, aumente la distancia con el vehículo de adelante y permita que lo rebase de manera segura.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 14,
+          "question": "¿Cuándo son más resbaladizas las carreteras durante la lluvia en un día caluroso?",
+          "options": [
+            "Cuando ha llovido varias horas",
+            "Durante los primeros minutos de lluvia",
+            "Inmediatamente después de que deja de llover"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Durante los primeros minutos de lluvia, el agua mezcla el aceite y la suciedad acumulados en el pavimento, creando una superficie muy resbaladiza.",
+          "category": "Weather Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "¿Cuál es el límite de velocidad en callejones en California?",
+          "options": [
+            "15 mph",
+            "20 mph",
+            "25 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El límite de velocidad en callejones es de 15 mph en California.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "Al llegar al mismo tiempo que otro vehículo a una intersección de cuatro vías, ¿quién tiene el derecho de paso?",
+          "options": [
+            "El vehículo que va más rápido",
+            "El vehículo que está a su derecha",
+            "El vehículo más grande"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En una intersección de cuatro vías donde dos vehículos llegan al mismo tiempo, el vehículo que está a su derecha tiene el derecho de paso.",
+          "category": "Right of Way",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "¿Cuál es el BAC máximo legal para conductores de 21 años o más?",
+          "options": [
+            "0.06%",
+            "0.08%",
+            "0.10%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El límite legal de alcohol en sangre para conductores de 21 años o más es 0.08%. Para menores de 21 años es 0.01%.",
+          "category": "DUI Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "¿A qué distancia mínima debe señalizar antes de girar?",
+          "options": [
+            "Al menos 100 pies",
+            "Al menos 200 pies",
+            "Al menos 50 pies"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe señalizar al menos 100 pies antes de girar para advertir a los demás conductores de su intención.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 19,
+          "question": "¿Qué significa un semáforo con luz roja intermitente?",
+          "options": [
+            "Reduzca la velocidad y pase con precaución",
+            "Deténgase completamente y proceda cuando sea seguro, como en señal de ALTO",
+            "El semáforo está averiado, puede continuar sin detenerse"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una luz roja intermitente tiene el mismo significado que una señal de ALTO. Deténgase completamente y avance solo cuando sea seguro.",
+          "category": "Traffic Signals",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "¿Cuándo puede girar a la derecha con semáforo en rojo?",
+          "options": [
+            "Nunca está permitido",
+            "Después de detenerse completamente y ceder el paso a peatones y vehículos",
+            "Siempre que no haya peatones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Puede girar a la derecha con rojo después de detenerse completamente, a menos que haya señal que lo prohíba. Ceda el paso a peatones y vehículos con el verde.",
+          "category": "Traffic Signals",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "¿Cuántos pies antes del carril de ferrocarril más cercano debe detenerse?",
+          "options": [
+            "Entre 15 y 50 pies",
+            "Entre 5 y 10 pies",
+            "Entre 50 y 100 pies"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe detenerse entre 15 y 50 pies del carril más cercano al cruzar vías de ferrocarril.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 22,
+          "question": "¿Qué significa un borde de acera amarillo?",
+          "options": [
+            "Solo personas con discapacidades pueden estacionar ahí",
+            "Estacionamiento limitado para cargar y descargar pasajeros o mercancías",
+            "No puede parar ni estacionar en ningún momento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde amarillo permite parar el tiempo necesario para cargar o descargar. No puede dejar el vehículo estacionado sin el conductor.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 23,
+          "question": "¿Para qué se usa el carril del centro de doble sentido?",
+          "options": [
+            "Para rebasar vehículos más lentos",
+            "Para girar a la izquierda o prepararse para girar",
+            "Para estacionarse brevemente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril del centro de doble sentido solo puede usarse para prepararse y ejecutar un giro a la izquierda. No es un carril de circulación ni de rebase.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "¿Cuál es la distancia mínima de seguimiento segura detrás de otro vehículo?",
+          "options": [
+            "1 segundo",
+            "2 segundos",
+            "3 segundos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe mantener al menos 3 segundos de distancia. En condiciones de lluvia o baja visibilidad, aumente esta distancia.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "¿A qué distancia de una boca de incendios no puede estacionar?",
+          "options": [
+            "10 pies",
+            "15 pies",
+            "20 pies"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No puede estacionar a menos de 15 pies de una boca de incendios para asegurar el acceso de los bomberos.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "Si ve un vehículo de emergencia con luces y sirenas encendidas acercándose, debe:",
+          "options": [
+            "Acelerar para despejarse del camino",
+            "Jalar hacia la derecha y detenerse de manera segura",
+            "Mantener la velocidad y el carril"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe jalar a la derecha del camino y detenerse hasta que el vehículo de emergencia pase. Aplica en cualquier tipo de vía.",
+          "category": "Emergency Vehicles",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "¿Hasta qué edad deben los niños viajar en asiento de seguridad en California?",
+          "options": [
+            "Hasta los 6 años",
+            "Hasta los 8 años",
+            "Hasta los 10 años"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California, los niños menores de 8 años deben ir en un asiento de seguridad aprobado en el asiento trasero del vehículo.",
+          "category": "Passenger Safety",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "¿Cuándo es legal hacer un giro en U?",
+          "options": [
+            "En cualquier calle sin señal de prohibición",
+            "Donde tenga visibilidad de al menos 200 pies y no haya señal que lo prohíba",
+            "Solo en intersecciones con semáforo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Puede hacer un giro en U donde tenga visibilidad de al menos 200 pies en ambas direcciones y no haya señal que lo prohíba.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "Debe notificar al DMV en 5 días si:",
+          "options": [
+            "Recibe una citación de tráfico",
+            "Vende o transfiere la propiedad de su vehículo",
+            "Pinta su vehículo de un color diferente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe notificar al DMV dentro de 5 días si vende o transfiere la propiedad de su vehículo para liberar su responsabilidad.",
+          "category": "DMV Rules",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "¿Qué debe hacer si sus frenos fallan mientras maneja?",
+          "options": [
+            "Aplicar el freno de estacionamiento suavemente y bajar velocidades",
+            "Apagar el motor de inmediato",
+            "Girar el volante bruscamente"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Si los frenos fallan, baje las marchas para usar el freno del motor y aplique el freno de estacionamiento gradualmente. Busque una salida segura.",
+          "category": "Emergency Procedures",
+          "difficulty": "hard"
+        },
+        {
+          "id": 31,
+          "question": "¿Cuál es el límite de velocidad en zonas residenciales en California?",
+          "options": [
+            "20 mph",
+            "25 mph",
+            "30 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El límite de velocidad en zonas residenciales es de 25 mph, a menos que haya señales que indiquen otra velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 32,
+          "question": "¿Cuándo debe encender las luces del vehículo durante el día?",
+          "options": [
+            "Solo en la noche",
+            "Cuando la visibilidad sea menor a 1,000 pies, incluyendo en lluvia y niebla",
+            "Solo en túneles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe encender las luces cuando la visibilidad sea menor a 1,000 pies: en lluvia, niebla, polvo o nieve.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        },
+        {
+          "id": 33,
+          "question": "¿Cuándo puede conducir en el carril HOV (carpool)?",
+          "options": [
+            "Cuando el tráfico esté muy congestionado",
+            "Cuando lleva el número mínimo de ocupantes indicado en la señal",
+            "Solo en horarios de pico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril HOV está reservado para vehículos con el número mínimo de ocupantes indicado. Los vehículos eléctricos con calcomanía especial pueden usarlo solos.",
+          "category": "Lane Markings",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "Bajo la ley Slow Down, Move Over de California, ¿qué debe hacer al pasar un vehículo de emergencia parado con luces encendidas?",
+          "options": [
+            "Solo reducir velocidad si está en el carril derecho",
+            "Cambiar al carril del lado o reducir la velocidad si no puede cambiar",
+            "Esta ley solo aplica en autopistas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ley exige cambiar al carril adyacente o reducir la velocidad si no puede cambiar. Aplica para vehículos de emergencia, mantenimiento y remolque en el hombro.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "¿Cuál es la edad mínima para obtener una licencia de conducir regular sin restricciones en California?",
+          "options": [
+            "16 años",
+            "17 años",
+            "18 años"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La licencia de conducir regular sin restricciones se puede obtener a partir de los 18 años. Los menores de 18 reciben licencia provisional con restricciones.",
+          "category": "DMV Rules",
+          "difficulty": "easy"
+        },
+        {
+          "id": 36,
+          "question": "¿Cuál refleja la ley de velocidad básica de California?",
+          "options": [
+            "Siempre manejar al límite publicado sin importar las condiciones",
+            "Igualar la velocidad del tráfico que le rodea",
+            "Nunca manejar más rápido de lo que es seguro para las condiciones actuales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La ley de velocidad básica establece que nunca debe manejar más rápido de lo seguro para las condiciones del camino, tráfico y clima.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        }
+      ]
     }
   ]
 }

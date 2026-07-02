@@ -1043,7 +1043,10 @@ export const HUBS: Record<string, KeywordHub> = {
         cards: [
           { href: '/practice-test/examen-dmv-espanol-1', label: 'Examen DMV Español 1', questions: 20 },
           { href: '/practice-test/examen-dmv-espanol-2', label: 'Examen DMV Español 2', questions: 20 },
-          { href: '/practice-test/dmv-spanish-practice-test-1', label: 'Examen de Práctica Completo', questions: 40 },
+          { href: '/practice-test/examen-dmv-espanol-3', label: 'Examen DMV Español 3', questions: 20 },
+          { href: '/practice-test/examen-dmv-espanol-4', label: 'Examen DMV Español 4', questions: 20 },
+          { href: '/practice-test/dmv-spanish-practice-test-1', label: 'Examen de Práctica Completo 1', questions: 40 },
+          { href: '/practice-test/dmv-spanish-practice-test-2', label: 'Simulador Completo 2', questions: 36 },
         ],
       },
       {
