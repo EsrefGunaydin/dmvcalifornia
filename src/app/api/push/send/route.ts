@@ -2,13 +2,18 @@ import { NextRequest, NextResponse } from 'next/server';
 import webpush from 'web-push';
 import { getMongoClient } from '@/lib/mongodb';
 
-webpush.setVapidDetails(
-  process.env.VAPID_SUBJECT!,
-  process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!,
-  process.env.VAPID_PRIVATE_KEY!
-);
-
 export async function POST(request: NextRequest) {
+  // VAPID details set here (inside handler) so they are read at request time,
+  // not at build time when env vars are unavailable.
+  if (!process.env.VAPID_SUBJECT || !process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || !process.env.VAPID_PRIVATE_KEY) {
+    return NextResponse.json({ error: 'VAPID env vars not configured' }, { status: 500 });
+  }
+  webpush.setVapidDetails(
+    process.env.VAPID_SUBJECT,
+    process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY,
+    process.env.VAPID_PRIVATE_KEY
+  );
+
   // Simple auth check — only allow requests with the correct admin token
   const auth = request.headers.get('authorization');
   if (!auth || auth !== `Bearer ${process.env.PUSH_ADMIN_TOKEN}`) {
