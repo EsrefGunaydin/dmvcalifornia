@@ -1058,6 +1058,7 @@ export const HUBS: Record<string, KeywordHub> = {
           { href: '/muestra-del-examen-escrito-para-licencia-de-manejar/examen-de-senales', label: 'Examen de Señales', description: 'Señales de tráfico con imágenes reales.' },
           { href: '/muestra-del-examen-escrito-para-licencia-de-manejar', label: 'Examen Completo en Español', description: 'Examen de manejo del DMV en español.' },
           { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Números clave y reglas en una sola página.' },
+          { href: '/cita-dmv-california', label: 'Cómo Hacer su Cita en el DMV', description: 'Guía completa para programar, cancelar o reprogramar.' },
         ],
       },
     ],
