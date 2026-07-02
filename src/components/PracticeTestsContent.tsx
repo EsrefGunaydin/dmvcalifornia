@@ -54,6 +54,23 @@ const LANGUAGE_OPTIONS: { value: 'all' | QuizLanguage; label: string }[] = [
   { value: 'hi', label: 'Hindi - हिन्दी' },
 ];
 
+const LANGUAGE_PILLS: { value: 'all' | QuizLanguage; flag: string; short: string }[] = [
+  { value: 'all',  flag: '🌐', short: 'All' },
+  { value: 'en',   flag: '🇺🇸', short: 'EN' },
+  { value: 'es',   flag: '🇲🇽', short: 'ES' },
+  { value: 'tr',   flag: '🇹🇷', short: 'TR' },
+  { value: 'zh',   flag: '🇨🇳', short: 'ZH' },
+  { value: 'ar',   flag: '🇸🇦', short: 'AR' },
+  { value: 'hy',   flag: '🇦🇲', short: 'HY' },
+  { value: 'fa',   flag: '🇮🇷', short: 'FA' },
+  { value: 'pa',   flag: '🇮🇳', short: 'PA' },
+  { value: 'ru',   flag: '🇷🇺', short: 'RU' },
+  { value: 'tl',   flag: '🇵🇭', short: 'TL' },
+  { value: 'vi',   flag: '🇻🇳', short: 'VI' },
+  { value: 'ko',   flag: '🇰🇷', short: 'KO' },
+  { value: 'hi',   flag: '🇮🇳', short: 'HI' },
+];
+
 
 export default function PracticeTestsContent({ quizzes }: PracticeTestsContentProps) {
   const [searchQuery, setSearchQuery] = useState('');
@@ -105,92 +122,92 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
   return (
     <>
       <div id="language-filter-anchor" className="scroll-mt-24" />
-      {/* Filter and Search Controls */}
-      <div className="mb-8 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
-        {/* Left side: Sort, Filter, View Mode */}
-        <div className="flex flex-wrap gap-3 items-center">
-          {/* Sort Dropdown */}
-          <div className="relative">
-            <select
-              value={sortBy}
-              onChange={(e) => setSortBy(e.target.value)}
-              className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2.5 pr-10 text-sm font-medium text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer"
-            >
-              <option value="default">Default Order</option>
-              <option value="title">Sort by Title</option>
-              <option value="questions">Sort by Questions</option>
-              <option value="category">Sort by Category</option>
-            </select>
-            <SlidersHorizontal className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
-          </div>
 
-          {/* Language Filter */}
-          <div className="relative">
-            <select
-              value={filterLanguage}
-              onChange={(e) => setFilterLanguage(e.target.value as 'all' | QuizLanguage)}
-              className="appearance-none bg-white border border-gray-300 rounded-lg pl-9 pr-8 py-2.5 text-sm font-medium text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer"
-              aria-label="Filter by language"
-            >
-              {LANGUAGE_OPTIONS.map(opt => (
-                <option key={opt.value} value={opt.value}>
-                  {opt.label}
-                </option>
-              ))}
-            </select>
-            <Globe className="absolute left-2.5 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
-          </div>
-
-          {/* Category Filter */}
-          <select
-            value={filterCategory}
-            onChange={(e) => setFilterCategory(e.target.value)}
-            className="bg-white border border-gray-300 rounded-lg px-4 py-2.5 text-sm font-medium text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer"
+      {/* Language flag pills */}
+      <div className="mb-4 flex flex-wrap gap-2">
+        {LANGUAGE_PILLS.map(pill => (
+          <button
+            key={pill.value}
+            onClick={() => setFilterLanguage(pill.value)}
+            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium border transition-colors ${
+              filterLanguage === pill.value
+                ? 'bg-primary text-white border-primary'
+                : 'bg-white text-gray-700 border-gray-300 hover:border-primary/60 hover:bg-primary/5'
+            }`}
+            aria-pressed={filterLanguage === pill.value}
           >
-            {categories.map(cat => (
-              <option key={cat} value={cat}>
-                {cat === 'all' ? 'All Categories' : cat}
-              </option>
-            ))}
-          </select>
+            <span className="text-base leading-none">{pill.flag}</span>
+            <span>{pill.short}</span>
+          </button>
+        ))}
+      </div>
 
-          {/* View Mode Toggle */}
-          <div className="flex items-center gap-1 bg-white border border-gray-300 rounded-lg p-1">
-            <button
-              onClick={() => setViewMode('grid')}
-              className={`p-2 rounded transition-colors ${
-                viewMode === 'grid'
-                  ? 'bg-primary text-white'
-                  : 'text-gray-600 hover:bg-gray-100'
-              }`}
-              title="Grid view"
-            >
-              <LayoutGrid className="w-4 h-4" />
-            </button>
-            <button
-              onClick={() => setViewMode('list')}
-              className={`p-2 rounded transition-colors ${
-                viewMode === 'list'
-                  ? 'bg-primary text-white'
-                  : 'text-gray-600 hover:bg-gray-100'
-              }`}
-              title="List view"
-            >
-              <List className="w-4 h-4" />
-            </button>
-          </div>
+      {/* Filter and Search Controls — all on one row */}
+      <div className="mb-8 flex flex-wrap gap-3 items-center">
+        {/* Sort Dropdown */}
+        <div className="relative">
+          <select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value)}
+            className="appearance-none bg-white border border-gray-300 rounded-lg px-4 py-2.5 pr-10 text-sm font-medium text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer"
+          >
+            <option value="default">Default Order</option>
+            <option value="title">Sort by Title</option>
+            <option value="questions">Sort by Questions</option>
+            <option value="category">Sort by Category</option>
+          </select>
+          <SlidersHorizontal className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
         </div>
 
-        {/* Right side: Search */}
-        <div className="relative w-full sm:w-auto sm:min-w-[300px]">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+        {/* Category Filter */}
+        <select
+          value={filterCategory}
+          onChange={(e) => setFilterCategory(e.target.value)}
+          className="bg-white border border-gray-300 rounded-lg px-4 py-2.5 text-sm font-medium text-gray-700 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer"
+        >
+          {categories.map(cat => (
+            <option key={cat} value={cat}>
+              {cat === 'all' ? 'All Categories' : cat}
+            </option>
+          ))}
+        </select>
+
+        {/* Search — grows to fill remaining space */}
+        <div className="relative flex-1 min-w-[200px]">
+          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
           <input
             type="text"
             placeholder="Search tests..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-white border border-gray-300 rounded-lg pl-10 pr-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+            className="w-full bg-white border border-gray-300 rounded-lg pl-9 pr-4 py-2.5 text-sm text-gray-700 placeholder-gray-400 hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
           />
+        </div>
+
+        {/* View Mode Toggle */}
+        <div className="flex items-center gap-1 bg-white border border-gray-300 rounded-lg p-1">
+          <button
+            onClick={() => setViewMode('grid')}
+            className={`p-2 rounded transition-colors ${
+              viewMode === 'grid'
+                ? 'bg-primary text-white'
+                : 'text-gray-600 hover:bg-gray-100'
+            }`}
+            title="Grid view"
+          >
+            <LayoutGrid className="w-4 h-4" />
+          </button>
+          <button
+            onClick={() => setViewMode('list')}
+            className={`p-2 rounded transition-colors ${
+              viewMode === 'list'
+                ? 'bg-primary text-white'
+                : 'text-gray-600 hover:bg-gray-100'
+            }`}
+            title="List view"
+          >
+            <List className="w-4 h-4" />
+          </button>
         </div>
       </div>
 
