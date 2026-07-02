@@ -96,6 +96,16 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
     }
   }, [categories, filterCategory]);
 
+  // Quiz count per language for the pills
+  const langCounts = useMemo(() => {
+    const counts: Record<string, number> = { all: quizzes.length };
+    for (const q of quizzes) {
+      const lang = q.language ?? 'en';
+      counts[lang] = (counts[lang] ?? 0) + 1;
+    }
+    return counts;
+  }, [quizzes]);
+
   // Filter and sort quizzes
   const filteredQuizzes = useMemo(() => {
     let filtered = quizzes.filter(quiz => {
@@ -125,7 +135,7 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
 
       {/* Language flag pills */}
       <div className="mb-4 flex flex-wrap gap-2">
-        {LANGUAGE_PILLS.map(pill => (
+        {LANGUAGE_PILLS.filter(pill => langCounts[pill.value] !== undefined).map(pill => (
           <button
             key={pill.value}
             onClick={() => setFilterLanguage(pill.value)}
@@ -138,6 +148,9 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
           >
             <span className="text-base leading-none">{pill.flag}</span>
             <span>{pill.short}</span>
+            <span className={`text-xs font-normal ${filterLanguage === pill.value ? 'text-white/80' : 'text-gray-400'}`}>
+              {langCounts[pill.value]}
+            </span>
           </button>
         ))}
       </div>
