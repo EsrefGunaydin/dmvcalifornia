@@ -8,6 +8,7 @@ import {
   Flame, BookOpen, CreditCard, Layers, Navigation, Globe,
 } from 'lucide-react';
 import quizzesData from '@/data/quizzes.json';
+import DailyChallengeBanner from '@/components/DailyChallengeBanner';
 import chineseQuizzesData from '@/data/chinese-quizzes.json';
 import turkishQuizzesData from '@/data/turkish-quizzes.json';
 import turkishSignTestData from '@/data/turkish-sign-test.json';
@@ -71,8 +72,13 @@ export default function PracticeTestsPage() {
           </div>
         </section>
 
+        {/* Daily challenge */}
+        <div className="container mx-auto px-4 pt-6 max-w-6xl">
+          <DailyChallengeBanner />
+        </div>
+
         {/* Featured: 20 Hardest Questions */}
-        <div className="container mx-auto px-4 pt-6">
+        <div className="container mx-auto px-4 pt-4">
           <Link
             href="/20-hardest-dmv-written-test-questions"
             className="block rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 md:p-7 shadow-lg hover:shadow-xl transition-shadow group max-w-6xl mx-auto"

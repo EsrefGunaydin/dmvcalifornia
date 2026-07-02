@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
+import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -10,6 +11,7 @@ const GA_MEASUREMENT_ID = "G-5EWVD54H21";
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://dmvcalifornia.us'),
+  manifest: '/manifest.json',
   title: {
     default: "DMV California Blog | Your Simplified California DMV Guide",
     template: "%s | DMV California"
@@ -132,6 +134,7 @@ export default function RootLayout({
 
         {children}
         <ExitIntentPopup />
+        <ServiceWorkerRegistrar />
       </body>
     </html>
   );

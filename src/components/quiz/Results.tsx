@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { PartyPopper, FileText, Smartphone, Flame } from 'lucide-react';
 import { useStreak } from '@/hooks/useStreak';
+import PushPermissionPrompt from '@/components/PushPermissionPrompt';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/dmv-california/id6754900213';
 
@@ -106,6 +107,7 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
 
   return (
     <div className="max-w-3xl mx-auto">
+      {showStreak && <PushPermissionPrompt streak={streak} />}
       {/* Streak banner */}
       {showStreak && streak > 0 && (
         <div className={`mb-6 flex items-center gap-3 rounded-xl px-5 py-4 ${

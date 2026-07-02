@@ -1,0 +1,25 @@
+{
+  "name": "DMV California Practice Tests",
+  "short_name": "DMV CA",
+  "description": "Free California DMV practice tests in 14 languages. Prepare for your permit test.",
+  "start_url": "/practice-test",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4e80c4",
+  "icons": [
+    {
+      "src": "/images/dmv-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/dmv-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education"],
+  "lang": "en-US"
+}

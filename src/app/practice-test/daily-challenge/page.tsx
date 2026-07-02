@@ -1,0 +1,52 @@
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import CookieBanner from '@/components/CookieBanner';
+import DailyChallengeContent from './DailyChallengeContent';
+import { pickDailyQuestions, seedFromDate, todayUTC } from '@/lib/dailyChallenge';
+import type { Question, Quiz } from '@/types/quiz';
+
+import quizzesData from '@/data/quizzes.json';
+
+export const revalidate = 3600; // revalidate hourly so the question set refreshes at most once per hour
+
+export function generateMetadata() {
+  const date = todayUTC();
+  return {
+    title: `Daily Challenge ${date} | DMV California`,
+    description: '10 fresh DMV practice questions today, same set for every user. How well do you know the California rules?',
+  };
+}
+
+export default function DailyChallengePage() {
+  const date = todayUTC();
+  const seed = seedFromDate(date);
+
+  // Only use English questions without images for clean mobile display
+  const pool: Question[] = (quizzesData.quizzes as Quiz[])
+    .flatMap((q) => q.questions)
+    .filter((q) => !q.image);
+
+  const questions = pickDailyQuestions(pool, 10, seed);
+
+  return (
+    <>
+      <Header />
+      <main className="min-h-screen bg-gray-50">
+        <div className="container mx-auto px-4 py-12">
+          <div className="max-w-3xl mx-auto mb-10">
+            <div className="inline-block bg-primary/10 text-primary text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-3">
+              Daily Challenge
+            </div>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">10 questions for today</h1>
+            <p className="text-gray-600">
+              Same questions for every user on {date}. New set at midnight UTC.
+            </p>
+          </div>
+          <DailyChallengeContent questions={questions} date={date} />
+        </div>
+      </main>
+      <Footer />
+      <CookieBanner />
+    </>
+  );
+}
