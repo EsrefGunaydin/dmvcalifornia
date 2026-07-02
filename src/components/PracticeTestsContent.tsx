@@ -81,20 +81,11 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
 
   // Get unique categories, narrowed to the selected language so categories from
   // hidden languages don't clutter the dropdown
+  // Always show all categories regardless of the active language pill
   const categories = useMemo(() => {
-    const visible = filterLanguage === 'all'
-      ? quizzes
-      : quizzes.filter(q => (q.language ?? 'en') === filterLanguage);
-    const cats = new Set(visible.map(q => q.category));
+    const cats = new Set(quizzes.map(q => q.category));
     return ['all', ...Array.from(cats)];
-  }, [quizzes, filterLanguage]);
-
-  // Reset category when it's no longer valid for the chosen language
-  useEffect(() => {
-    if (filterCategory !== 'all' && !categories.includes(filterCategory)) {
-      setFilterCategory('all');
-    }
-  }, [categories, filterCategory]);
+  }, [quizzes]);
 
   // Quiz count per language for the pills
   const langCounts = useMemo(() => {
