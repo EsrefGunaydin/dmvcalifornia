@@ -5,7 +5,7 @@ import CookieBanner from '@/components/CookieBanner';
 import PracticeTestsContent from '@/components/PracticeTestsContent';
 import {
   TriangleAlert, ClipboardList, Wine, SquareParking, Gauge,
-  Flame, BookOpen, CreditCard, Layers, Navigation, Globe,
+  Flame, BookOpen, CreditCard, Layers, Navigation, Globe, Zap,
 } from 'lucide-react';
 import quizzesData from '@/data/quizzes.json';
 import DailyChallengeBanner from '@/components/DailyChallengeBanner';
@@ -112,6 +112,7 @@ export default function PracticeTestsPage() {
               { href: '/california-dmv-parking-test', Icon: SquareParking, title: 'Parking Test', desc: 'Curb colors and parking on hills, made simple.' },
               { href: '/california-dmv-speed-limit-test', Icon: Gauge, title: 'Speed Limits Test', desc: 'Every California limit and the Basic Speed Law.' },
               { href: '/california-dmv-marathon-test', Icon: Flame, title: 'Marathon Test', desc: 'Every question in one run until you master them all.' },
+              { href: '/california-dmv-blitz-test', Icon: Zap, title: 'Blitz Test', desc: '20 questions, 15 seconds each. Answer fast for bonus points.' },
               { href: '/california-dmv-test-study-guide', Icon: BookOpen, title: 'Study Guide', desc: 'A 7-step plan from handbook to full marathon.' },
               { href: '/california-dmv-fees', Icon: CreditCard, title: 'DMV Fees', desc: 'License, REAL ID, and registration costs for 2026.' },
             ].map(({ href, Icon: CardIcon, title, desc }) => (
