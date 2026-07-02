@@ -14,7 +14,7 @@ interface ArticleSchemaProps {
   lang?: string;
 }
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 /**
  * Injects Article + Breadcrumb (+ optional FAQPage) JSON-LD into the page.

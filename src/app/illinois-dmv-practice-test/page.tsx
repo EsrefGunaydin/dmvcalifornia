@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: hub.metaTitle,
   description: hub.metaDescription,
   keywords: hub.keywords,
-  alternates: { canonical: `https://www.dmvcalifornia.us/${hub.slug}` },
+  alternates: { canonical: `https://dmvcalifornia.us/${hub.slug}` },
   openGraph: { title: hub.metaTitle, description: hub.metaDescription, type: 'website' },
 };
 export default function IllinoisDmvPracticeTestHub() {

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'residential speed limit california',
     'dmv speed limit practice test',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-speed-limit-test' },
+  alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-speed-limit-test' },
   openGraph: { title: 'California DMV Speed Limits Test 2026 (Free Practice)', type: 'website' },
 };
 

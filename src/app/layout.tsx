@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const GA_MEASUREMENT_ID = "G-5EWVD54H21";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.dmvcalifornia.us'),
+  metadataBase: new URL('https://dmvcalifornia.us'),
   title: {
     default: "DMV California Blog | Your Simplified California DMV Guide",
     template: "%s | DMV California"
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.dmvcalifornia.us/",
+    url: "https://dmvcalifornia.us/",
     siteName: "DMV California Blog",
     title: "DMV California Blog | Your Simplified California DMV Guide",
     description: "DMV California Blog is your ultimate destination to learn about Driver License, Real ID, Driving Test, California DMV Quizzes, DMV Offices, Behind The Wheel Test",
@@ -61,8 +61,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "DMV California",
-    "url": "https://www.dmvcalifornia.us",
-    "logo": "https://www.dmvcalifornia.us/images/dmv-california-logo.png",
+    "url": "https://dmvcalifornia.us",
+    "logo": "https://dmvcalifornia.us/images/dmv-california-logo.png",
     "description": "DMV California Blog is your ultimate destination to learn about Driver License, Real ID, Driving Test, California DMV Quizzes, DMV Offices, Behind The Wheel Test",
     "sameAs": []
   };
@@ -71,11 +71,11 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "DMV California Blog",
-    "url": "https://www.dmvcalifornia.us",
+    "url": "https://dmvcalifornia.us",
     "description": "Your Simplified California DMV Guide",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.dmvcalifornia.us/search?q={search_term_string}",
+      "target": "https://dmvcalifornia.us/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   };

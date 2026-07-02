@@ -19,7 +19,7 @@ interface BlogPostLike {
   hero_image?: string | null;
 }
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 /**
  * Convert a tag like "Driver License" → "driver-license" for URL slug.

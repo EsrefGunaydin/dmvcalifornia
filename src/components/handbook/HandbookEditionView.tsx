@@ -6,7 +6,7 @@ import MultiplexAd from '@/components/MultiplexAd';
 import { Check } from 'lucide-react';
 import type { HandbookEdition } from '@/data/handbook-editions';
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 export default function HandbookEditionView({ edition: e }: { edition: HandbookEdition }) {
   const url = `${SITE_URL}/california-driver-handbook/${e.editionSlug}`;

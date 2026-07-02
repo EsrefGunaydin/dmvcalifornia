@@ -10,7 +10,7 @@
  *   alternates: languageAlternates('es')   // for the Spanish hub
  */
 
-export const SITE_URL = 'https://www.dmvcalifornia.us';
+export const SITE_URL = 'https://dmvcalifornia.us';
 
 // hreflang code -> absolute URL of that language's practice-test hub
 export const PRACTICE_TEST_HUBS: Record<string, string> = {

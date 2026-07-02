@@ -60,7 +60,7 @@ export async function generateStaticParams() {
   }));
 }
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

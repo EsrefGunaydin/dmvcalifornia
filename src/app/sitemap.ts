@@ -24,7 +24,7 @@ import { HUB_SLUGS } from '@/data/seo-hubs';
 import { HANDBOOK_EDITION_SLUGS } from '@/data/handbook-editions';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.dmvcalifornia.us';
+  const baseUrl = 'https://dmvcalifornia.us';
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [

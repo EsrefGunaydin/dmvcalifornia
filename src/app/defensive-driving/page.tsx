@@ -8,7 +8,7 @@ import CookieBanner from '@/components/CookieBanner';
 import MultiplexAd from '@/components/MultiplexAd';
 import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 export const metadata: Metadata = {
   title: 'Defensive Driving: 5 Rules Every Driver Should Know (2026)',

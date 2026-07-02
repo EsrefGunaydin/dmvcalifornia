@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'california real id cost',
     'california dmv registration fees',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-fees' },
+  alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-fees' },
   openGraph: { title: 'California DMV Fees 2026', type: 'article' },
 };
 

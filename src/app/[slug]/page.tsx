@@ -47,7 +47,7 @@ type BlogPost = {
   youtubeId?: string;
 };
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 // JSON imports infer a heterogeneous union once posts carry optional fields
 // (lang/translations) on only some entries. Cast once to the canonical type.

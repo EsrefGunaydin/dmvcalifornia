@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'pass california dmv written test',
     'california permit test study guide',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-test-study-guide' },
+  alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-test-study-guide' },
   openGraph: { title: 'How to Study for the California DMV Test 2026', type: 'article' },
 };
 

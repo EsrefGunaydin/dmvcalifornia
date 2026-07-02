@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'bac limit california',
     'dmv drug and alcohol questions',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-drug-and-alcohol-test' },
+  alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-drug-and-alcohol-test' },
   openGraph: { title: 'California DMV Drug & Alcohol Test 2026 (Free Practice)', type: 'website' },
 };
 

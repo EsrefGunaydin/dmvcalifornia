@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'california dmv test questions and answers',
     'unlimited dmv practice test',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-marathon-test' },
+  alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-marathon-test' },
   openGraph: { title: 'California DMV Marathon Test 2026', type: 'website' },
 };
 

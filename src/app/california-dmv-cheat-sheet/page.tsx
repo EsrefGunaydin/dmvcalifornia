@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'dmv written test answers',
     'dmv study guide california',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-cheat-sheet' },
+  alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-cheat-sheet' },
   openGraph: {
     title: 'California DMV Cheat Sheet 2026 (Free Quick-Reference)',
     description: 'Every fact the California DMV written test loves to ask, on one page.',

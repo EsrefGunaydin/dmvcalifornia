@@ -20,7 +20,7 @@ export async function generateMetadata({
   return {
     title: e.metaTitle,
     description: e.metaDescription,
-    alternates: { canonical: `https://www.dmvcalifornia.us/california-driver-handbook/${e.editionSlug}` },
+    alternates: { canonical: `https://dmvcalifornia.us/california-driver-handbook/${e.editionSlug}` },
     openGraph: { title: e.metaTitle, description: e.metaDescription, type: 'article' },
   };
 }

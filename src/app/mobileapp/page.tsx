@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'DMV Practice Exams - iOS Mobile App',
     description: 'Download the DMV Practice Exams iOS app. Master your California DMV written test 2025 with practice tests, flashcards, and study guides.',
     type: 'website',
-    url: 'https://www.dmvcalifornia.us/mobileapp',
+    url: 'https://dmvcalifornia.us/mobileapp',
   },
 };
 

@@ -52,4 +52,4 @@ export const AFFILIATES: Record<string, Affiliate> = {
   },
 };
 
-export const AFFILIATE_FALLBACK_URL = 'https://www.dmvcalifornia.us/';
+export const AFFILIATE_FALLBACK_URL = 'https://dmvcalifornia.us/';

@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 
-const SITE = 'https://www.dmvcalifornia.us';
+const SITE = 'https://dmvcalifornia.us';
 
 export const metadata: Metadata = {
   title: 'California Regulatory Signs Test 2026 — Free Practice with Images',

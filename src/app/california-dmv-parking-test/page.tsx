@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'dmv parking rules practice test',
     'california parking laws',
   ],
-  alternates: { canonical: 'https://www.dmvcalifornia.us/california-dmv-parking-test' },
+  alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-parking-test' },
   openGraph: { title: 'California DMV Parking Test 2026 (Free Practice)', type: 'website' },
 };
 

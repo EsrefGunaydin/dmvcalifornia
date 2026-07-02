@@ -10,7 +10,7 @@ import HazardGame from '@/components/games/HazardGame';
 import scenesData from '@/data/hazard-scenes.json';
 import { HazardScene } from '@/types/hazard';
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 const scenes = scenesData.scenes as unknown as HazardScene[];
 
 export function generateStaticParams() {

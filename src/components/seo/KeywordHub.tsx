@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import type { KeywordHub as Hub, HubCard, HubSection } from '@/data/seo-hubs';
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 function ClockIcon() {
   return (

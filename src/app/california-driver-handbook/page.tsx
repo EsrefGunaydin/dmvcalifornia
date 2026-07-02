@@ -6,7 +6,7 @@ import CookieBanner from '@/components/CookieBanner';
 import MultiplexAd from '@/components/MultiplexAd';
 import { HANDBOOK_EDITIONS } from '@/data/handbook-editions';
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 export const metadata: Metadata = {
   title: 'California Driver Handbook 2026 — Free PDF in Multiple Languages',

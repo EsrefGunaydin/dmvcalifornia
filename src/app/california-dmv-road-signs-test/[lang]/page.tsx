@@ -13,7 +13,7 @@ import {
   type RoadSignLang,
 } from '@/data/road-signs-i18n';
 
-const SITE = 'https://www.dmvcalifornia.us';
+const SITE = 'https://dmvcalifornia.us';
 const BASE_PATH = '/california-dmv-road-signs-test';
 
 export const dynamicParams = false;

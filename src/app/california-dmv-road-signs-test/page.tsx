@@ -10,7 +10,7 @@ import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
 
 const questions = signData.questions as SignQuestion[];
 
-const SITE = 'https://www.dmvcalifornia.us';
+const SITE = 'https://dmvcalifornia.us';
 const BASE_PATH = '/california-dmv-road-signs-test';
 const hreflang: Record<string, string> = {
   en: `${SITE}${BASE_PATH}`,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     'road signs and meanings',
   ],
   alternates: {
-    canonical: 'https://www.dmvcalifornia.us/california-dmv-road-signs-test',
+    canonical: 'https://dmvcalifornia.us/california-dmv-road-signs-test',
     languages: hreflang,
   },
   openGraph: {

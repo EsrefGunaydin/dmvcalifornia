@@ -27,7 +27,7 @@ interface Author {
   expertise: string[];
 }
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 function findAuthorBySlug(slug: string): Author | null {
   return (authorsData.authors as Author[]).find((a) => a.slug === slug) || null;

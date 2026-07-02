@@ -10,7 +10,7 @@ import IntersectionGame from '@/components/games/IntersectionGame';
 import levelsData from '@/data/intersection-levels.json';
 import { IntersectionLevel } from '@/types/intersection';
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 const levels = levelsData.levels as unknown as IntersectionLevel[];
 
 export function generateStaticParams() {

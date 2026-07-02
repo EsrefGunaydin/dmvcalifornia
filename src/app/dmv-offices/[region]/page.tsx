@@ -7,7 +7,7 @@ import Footer from '../../../components/Footer';
 import CookieBanner from '../../../components/CookieBanner';
 import { REGIONS, getRegion, officesInRegion } from '../../../data/dmv-regions';
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 const DMV_PHONE = '1-800-777-0133';
 const APPOINTMENTS_URL = 'https://www.dmv.ca.gov/portal/appointments/';
 

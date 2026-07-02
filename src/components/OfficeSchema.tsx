@@ -8,7 +8,7 @@ type Office = {
   status?: string;
 };
 
-const SITE_URL = 'https://www.dmvcalifornia.us';
+const SITE_URL = 'https://dmvcalifornia.us';
 
 const DAY_MAP: Record<string, string> = {
   Monday: 'Monday',
