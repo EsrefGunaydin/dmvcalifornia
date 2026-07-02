@@ -11,37 +11,41 @@ declare global {
 interface StickyVerticalAdProps {
   position: 'left' | 'right';
   currentIndex?: number;
+  // Questions between refreshes (default 5). Time gate (30s) always applies.
+  refreshEvery?: number;
 }
 
-export default function StickyVerticalAd({ position, currentIndex }: StickyVerticalAdProps) {
-  // Use key to force remount of ad element on navigation
+const MIN_SECONDS = 30;
+
+export default function StickyVerticalAd({ position, currentIndex, refreshEvery = 5 }: StickyVerticalAdProps) {
   const [adKey, setAdKey] = useState(0);
   const adContainerRef = useRef<HTMLDivElement>(null);
-  const previousIndex = useRef<number | undefined>(currentIndex);
+  const lastRefreshIndex = useRef<number>(currentIndex ?? 0);
+  const lastRefreshTime = useRef<number>(Date.now());
 
-  // Detect navigation and refresh ad
   useEffect(() => {
-    // Skip on initial mount, only refresh on navigation
-    if (previousIndex.current !== undefined &&
-        previousIndex.current !== currentIndex) {
-      // Increment key to force remount of ad element
-      setAdKey(prev => prev + 1);
-    }
-    previousIndex.current = currentIndex;
-  }, [currentIndex]);
+    if (currentIndex === undefined) return;
 
-  // Initialize ad when component mounts or remounts (key changes)
+    const questionsDelta = currentIndex - lastRefreshIndex.current;
+    const secondsDelta = (Date.now() - lastRefreshTime.current) / 1000;
+
+    if (questionsDelta >= refreshEvery && secondsDelta >= MIN_SECONDS) {
+      setAdKey(prev => prev + 1);
+      lastRefreshIndex.current = currentIndex;
+      lastRefreshTime.current = Date.now();
+    }
+  }, [currentIndex, refreshEvery]);
+
   useEffect(() => {
     try {
       if (typeof window !== 'undefined' && adContainerRef.current) {
-        const insElement = adContainerRef.current.querySelector('.adsbygoogle');
-        // Check if ad needs initialization
-        if (insElement && !insElement.getAttribute('data-ad-status')) {
+        const ins = adContainerRef.current.querySelector('.adsbygoogle');
+        if (ins && !ins.getAttribute('data-ad-status')) {
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         }
       }
-    } catch (error) {
-      console.error('AdSense error:', error);
+    } catch (e) {
+      console.error('AdSense error:', e);
     }
   }, [adKey]);
 

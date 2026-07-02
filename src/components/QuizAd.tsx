@@ -10,37 +10,41 @@ declare global {
 
 interface QuizAdProps {
   currentQuestionIndex?: number;
+  // Questions between refreshes (default 5). Time gate (30s) always applies.
+  refreshEvery?: number;
 }
 
-export default function QuizAd({ currentQuestionIndex }: QuizAdProps) {
-  // Use key to force remount of ad element on question change
+const MIN_SECONDS = 30;
+
+export default function QuizAd({ currentQuestionIndex, refreshEvery = 5 }: QuizAdProps) {
   const [adKey, setAdKey] = useState(0);
   const adContainerRef = useRef<HTMLDivElement>(null);
-  const previousQuestionIndex = useRef<number | undefined>(currentQuestionIndex);
+  const lastRefreshQuestion = useRef<number>(currentQuestionIndex ?? 0);
+  const lastRefreshTime = useRef<number>(Date.now());
 
-  // Detect question navigation and refresh ad
   useEffect(() => {
-    // Skip on initial mount, only refresh on navigation
-    if (previousQuestionIndex.current !== undefined &&
-        previousQuestionIndex.current !== currentQuestionIndex) {
-      // Increment key to force remount of ad element
-      setAdKey(prev => prev + 1);
-    }
-    previousQuestionIndex.current = currentQuestionIndex;
-  }, [currentQuestionIndex]);
+    if (currentQuestionIndex === undefined) return;
 
-  // Initialize ad when component mounts or remounts (key changes)
+    const questionsDelta = currentQuestionIndex - lastRefreshQuestion.current;
+    const secondsDelta = (Date.now() - lastRefreshTime.current) / 1000;
+
+    if (questionsDelta >= refreshEvery && secondsDelta >= MIN_SECONDS) {
+      setAdKey(prev => prev + 1);
+      lastRefreshQuestion.current = currentQuestionIndex;
+      lastRefreshTime.current = Date.now();
+    }
+  }, [currentQuestionIndex, refreshEvery]);
+
   useEffect(() => {
     try {
       if (typeof window !== 'undefined' && adContainerRef.current) {
-        const insElement = adContainerRef.current.querySelector('.adsbygoogle');
-        // Check if ad needs initialization
-        if (insElement && !insElement.getAttribute('data-ad-status')) {
+        const ins = adContainerRef.current.querySelector('.adsbygoogle');
+        if (ins && !ins.getAttribute('data-ad-status')) {
           (window.adsbygoogle = window.adsbygoogle || []).push({});
         }
       }
-    } catch (error) {
-      console.error('AdSense error:', error);
+    } catch (e) {
+      console.error('AdSense error:', e);
     }
   }, [adKey]);
 
