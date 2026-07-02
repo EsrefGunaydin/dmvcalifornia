@@ -8,10 +8,11 @@ declare global {
 
 // Lazy initialization - creates connection only when actually called
 export async function getMongoClient(): Promise<MongoClient> {
-  const uri = process.env.MONGODB_URI;
+  // Support both the manual MONGODB_URI and the Vercel-managed DMVCALI_MONGODB_URI
+  const uri = process.env.MONGODB_URI || process.env.DMVCALI_MONGODB_URI;
 
   if (!uri) {
-    throw new Error('MONGODB_URI environment variable is not set');
+    throw new Error('No MongoDB URI found. Set MONGODB_URI or DMVCALI_MONGODB_URI.');
   }
 
   if (process.env.NODE_ENV === 'development') {
