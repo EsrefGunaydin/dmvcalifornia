@@ -320,6 +320,25 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
             All Practice Tests
           </Link>
         </div>
+
+        {result.incorrectAnswers > 0 && quiz.id !== 'wrong-answers' && (
+          <Link
+            href="/practice-test/wrong-answers"
+            className="mt-4 flex items-center justify-between gap-4 rounded-lg border-2 border-amber-200 bg-amber-50 px-5 py-4 hover:bg-amber-100 transition-colors group"
+          >
+            <span className="min-w-0">
+              <span className="block text-xs font-semibold uppercase tracking-wide text-amber-700">
+                Targeted review
+              </span>
+              <span className="block font-bold text-gray-900">
+                Retry your {result.incorrectAnswers} wrong {result.incorrectAnswers === 1 ? 'answer' : 'answers'}
+              </span>
+            </span>
+            <span className="text-amber-700 font-bold whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
+              Start →
+            </span>
+          </Link>
+        )}
       </div>
 
       {/* Weak-topics review nudge (drives a focused retake) */}

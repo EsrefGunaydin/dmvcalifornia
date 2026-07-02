@@ -102,7 +102,7 @@ export default function SpanishMarathonPage() {
 
         <section className="py-12">
           <div className="container mx-auto px-4">
-            <MarathonQuiz questions={pool} />
+            <MarathonQuiz questions={pool} marathonId="es-marathon" />
           </div>
         </section>
 

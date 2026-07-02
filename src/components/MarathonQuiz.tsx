@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Trophy, Check, X } from 'lucide-react';
 import QuizAd from '@/components/QuizAd';
+import { useStreak } from '@/hooks/useStreak';
 
 export interface MarathonQuestion {
   id: number | string;
@@ -31,21 +32,58 @@ function formatTime(secs: number): string {
   return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 }
 
-export default function MarathonQuiz({ questions }: { questions: MarathonQuestion[] }) {
+interface MarathonQuizProps {
+  questions: MarathonQuestion[];
+  /** Used to key localStorage — pass the quiz slug or id. */
+  marathonId?: string;
+}
+
+export default function MarathonQuiz({ questions, marathonId }: MarathonQuizProps) {
   const total = questions.length;
-  // The whole point of marathon mode: keep going until every question is
-  // answered correctly once. Wrong answers go to the back of the queue.
-  const [queue, setQueue] = useState<MarathonQuestion[]>(() => shuffle(questions));
-  const [mastered, setMastered] = useState(0);
-  const [picked, setPicked] = useState<number | null>(null);
-  const [step, setStep] = useState(0); // drives the per-question ad refresh
-  const [elapsed, setElapsed] = useState(0);
-  const startRef = useRef<number>(Date.now());
+  const queueKey   = marathonId ? `marathon-queue-${marathonId}`   : null;
+  const stateKey   = marathonId ? `marathon-state-${marathonId}`   : null;
+  const { recordStudy } = useStreak();
+
+  // Build an id→question lookup for restoring saved queue order
+  const byId = Object.fromEntries(questions.map(q => [String(q.id), q]));
+
+  function loadSaved(): { queue: MarathonQuestion[]; mastered: number; elapsed: number } | null {
+    if (!queueKey || !stateKey) return null;
+    try {
+      const ids   = JSON.parse(localStorage.getItem(queueKey) ?? 'null') as string[] | null;
+      const state = JSON.parse(localStorage.getItem(stateKey) ?? 'null') as { mastered: number; elapsed: number } | null;
+      if (!ids || !state) return null;
+      const restored = ids.map(id => byId[id]).filter(Boolean);
+      if (restored.length === 0) return null;
+      return { queue: restored, mastered: state.mastered, elapsed: state.elapsed };
+    } catch { return null; }
+  }
+
+  const saved = loadSaved();
+
+  const [queue, setQueue]     = useState<MarathonQuestion[]>(saved?.queue   ?? shuffle(questions));
+  const [mastered, setMastered] = useState(saved?.mastered ?? 0);
+  const [picked, setPicked]   = useState<number | null>(null);
+  const [step, setStep]       = useState(0);
+  const [elapsed, setElapsed] = useState(saved?.elapsed ?? 0);
+  const startRef    = useRef<number>(Date.now() - (saved?.elapsed ?? 0) * 1000);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const current = queue[0];
+  const current  = queue[0];
   const revealed = picked !== null;
-  const done = queue.length === 0;
+  const done     = queue.length === 0;
+
+  // Persist queue + state on every advance
+  useEffect(() => {
+    if (!queueKey || !stateKey) return;
+    if (done) {
+      localStorage.removeItem(queueKey);
+      localStorage.removeItem(stateKey);
+      return;
+    }
+    localStorage.setItem(queueKey, JSON.stringify(queue.map(q => String(q.id))));
+    localStorage.setItem(stateKey, JSON.stringify({ mastered, elapsed }));
+  }, [queue, mastered, done]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     intervalRef.current = setInterval(() => {
@@ -55,11 +93,11 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
   }, []);
 
   useEffect(() => {
-    if (done && intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
+    if (done) {
+      if (intervalRef.current) { clearInterval(intervalRef.current); intervalRef.current = null; }
+      recordStudy();
     }
-  }, [done]);
+  }, [done]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const next = () => {
     if (picked === null) return;
@@ -74,12 +112,15 @@ export default function MarathonQuiz({ questions }: { questions: MarathonQuestio
   };
 
   const restart = () => {
-    setQueue(shuffle(questions));
+    const fresh = shuffle(questions);
+    setQueue(fresh);
     setMastered(0);
     setPicked(null);
     setStep(0);
     setElapsed(0);
     startRef.current = Date.now();
+    if (queueKey) localStorage.removeItem(queueKey);
+    if (stateKey) localStorage.removeItem(stateKey);
     if (!intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setElapsed(Math.floor((Date.now() - startRef.current) / 1000));
