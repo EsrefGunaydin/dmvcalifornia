@@ -26,6 +26,16 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/california-dmv-sample-questions',
+        destination: '/practice-test/california-dmv-sample-questions',
+        permanent: true,
+      },
+      {
+        source: '/nuevas-leyes-de-transito-california-2025',
+        destination: '/nuevas-leyes-de-transito-california-2026',
+        permanent: true,
+      },
+      {
         source: '/drivers-licenses-design-by-state/',
         destination: '/drivers-license-by-state',
         permanent: true,
