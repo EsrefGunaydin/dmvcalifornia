@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['www.dmvcalifornia.us'], // Add your WordPress domain for image optimization
+    domains: ['dmvcalifornia.us'],
   },
   // Ensure trailing slashes match WordPress URLs if needed
   trailingSlash: false,
@@ -13,6 +13,13 @@ const nextConfig = {
   // engine authority lands in one place instead of being split.
   async redirects() {
     return [
+      // Canonical domain: redirect www to non-www
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.dmvcalifornia.us' }],
+        destination: 'https://dmvcalifornia.us/:path*',
+        permanent: true,
+      },
       {
         source: '/drivers-licenses-design-by-state',
         destination: '/drivers-license-by-state',
