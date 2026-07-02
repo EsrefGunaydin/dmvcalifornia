@@ -772,7 +772,8 @@
           "explanation": "",
           "category": "추월"
         }
-      ]
+      ],
+      "language": "ko"
     },
     {
       "id": "korean-practice-test-2",
@@ -1144,7 +1145,8 @@
           "explanation": "",
           "category": "음주 운전"
         }
-      ]
+      ],
+      "language": "ko"
     }
   ]
 }

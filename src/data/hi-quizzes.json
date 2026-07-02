@@ -772,7 +772,8 @@
           "explanation": "",
           "category": "साइकिल"
         }
-      ]
+      ],
+      "language": "hi"
     },
     {
       "id": "hindi-practice-test-2",
@@ -1144,7 +1145,8 @@
           "explanation": "",
           "category": "लाइसेंस"
         }
-      ]
+      ],
+      "language": "hi"
     }
   ]
 }
