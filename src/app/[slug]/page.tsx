@@ -808,13 +808,17 @@ function renderBlogPost(postIn: BlogPost) {
           }>
             <BlogPostContent
               content={processedContent}
-              adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 3 : 2}
+              adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 5 : 4}
             />
           </Suspense>
 
           {/* Post Views Counter - Dynamic */}
           <BlogViewTracker slug={post.slug} initialViews={post.views || 0} />
         </div>
+
+        {/* Multiplex Ad — placed right after article body so readers who
+            finish the content see it before scrolling to FAQ/related */}
+        <MultiplexAd />
 
         {/* Practice-test funnel CTA (blog → tests): turns informational
             readers into engaged, returning users. Opt-in per post. */}
@@ -870,9 +874,6 @@ function renderBlogPost(postIn: BlogPost) {
             </div>
           </section>
         )}
-
-        {/* Multiplex Ad above Related Stories */}
-        <MultiplexAd />
 
         {/* Related Stories */}
         {relatedPosts.length > 0 && (
