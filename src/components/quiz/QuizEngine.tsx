@@ -8,6 +8,7 @@ import Results from './Results';
 import AdRefreshManager from '@/components/ads/AdRefreshManager';
 import QuizAd from '@/components/QuizAd';
 import StickyVerticalAd from '@/components/ads/StickyVerticalAd';
+import { useStreak } from '@/hooks/useStreak';
 
 interface QuizEngineProps {
   quiz: Quiz;
@@ -73,6 +74,7 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [quizResult, setQuizResult] = useState<QuizResult | null>(null);
   const [startTime] = useState(new Date().toISOString());
+  const { recordStudy } = useStreak();
 
   // Initialize shuffled questions
   useEffect(() => {
@@ -174,6 +176,9 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
     results.push(result);
     localStorage.setItem('quiz-results', JSON.stringify(results));
 
+    // Record streak
+    recordStudy();
+
     // Clear progress
     localStorage.removeItem(`quiz-progress-${quiz.id}`);
   };
@@ -194,7 +199,7 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
   };
 
   if (quizCompleted && quizResult) {
-    return <Results result={quizResult} quiz={quiz} quizId={quizId} onRestart={handleRestart} nextQuiz={nextQuiz} />;
+    return <Results result={quizResult} quiz={quiz} quizId={quizId} onRestart={handleRestart} nextQuiz={nextQuiz} showStreak />;
   }
 
   // Show loading state while shuffling

@@ -2,8 +2,9 @@
 
 import { useState, useMemo, useEffect, Fragment } from 'react';
 import Link from 'next/link';
-import { Search, LayoutGrid, List, SlidersHorizontal, Globe } from 'lucide-react';
+import { Search, LayoutGrid, List, SlidersHorizontal, Globe, Flame } from 'lucide-react';
 import MultiplexAd from './MultiplexAd';
+import { useStreak } from '@/hooks/useStreak';
 
 type QuizLanguage =
   | 'en'
@@ -87,6 +88,8 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
     return ['all', ...Array.from(cats)];
   }, [quizzes]);
 
+  const { streak, studiedToday } = useStreak();
+
   // Quiz count per language for the pills
   const langCounts = useMemo(() => {
     const counts: Record<string, number> = { all: quizzes.length };
@@ -123,6 +126,19 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
   return (
     <>
       <div id="language-filter-anchor" className="scroll-mt-24" />
+
+      {/* Streak badge */}
+      {streak > 0 && (
+        <div className={`mb-4 inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold ${
+          studiedToday
+            ? 'bg-orange-100 text-orange-700 border border-orange-200'
+            : 'bg-amber-50 text-amber-700 border border-amber-200'
+        }`}>
+          <Flame className="w-4 h-4" />
+          <span>{streak}-day streak</span>
+          {studiedToday && <span className="text-xs font-normal opacity-70">Done for today</span>}
+        </div>
+      )}
 
       {/* Language flag pills */}
       <div className="mb-4 flex flex-wrap gap-2">

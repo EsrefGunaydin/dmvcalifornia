@@ -5,7 +5,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { PartyPopper, FileText, Smartphone } from 'lucide-react';
+import { PartyPopper, FileText, Smartphone, Flame } from 'lucide-react';
+import { useStreak } from '@/hooks/useStreak';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/dmv-california/id6754900213';
 
@@ -16,11 +17,14 @@ interface ResultsProps {
   onRestart: () => void;
   /** A suggested next quiz to take (drives pageviews-per-session). */
   nextQuiz?: { slug: string; title: string };
+  /** When true, show the streak banner below the score card. */
+  showStreak?: boolean;
 }
 
-export default function Results({ result, quiz, quizId, onRestart, nextQuiz }: ResultsProps) {
+export default function Results({ result, quiz, quizId, onRestart, nextQuiz, showStreak }: ResultsProps) {
   const { passed, percentage, correctAnswers, totalQuestions } = result;
   const router = useRouter();
+  const { streak } = useStreak();
 
   // Per-category performance → personalized "what to review" nudge that makes
   // a retake feel worthwhile (uses the category already on each question).
@@ -102,6 +106,29 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz }: R
 
   return (
     <div className="max-w-3xl mx-auto">
+      {/* Streak banner */}
+      {showStreak && streak > 0 && (
+        <div className={`mb-6 flex items-center gap-3 rounded-xl px-5 py-4 ${
+          streak >= 7
+            ? 'bg-orange-50 border border-orange-200'
+            : 'bg-amber-50 border border-amber-200'
+        }`}>
+          <Flame className={`w-6 h-6 flex-shrink-0 ${streak >= 7 ? 'text-orange-500' : 'text-amber-500'}`} />
+          <div>
+            <p className={`font-bold text-sm ${streak >= 7 ? 'text-orange-700' : 'text-amber-700'}`}>
+              {streak === 1
+                ? 'Day 1 streak started!'
+                : `${streak}-day streak!`}
+            </p>
+            <p className={`text-xs ${streak >= 7 ? 'text-orange-600' : 'text-amber-600'}`}>
+              {streak >= 7
+                ? 'Incredible consistency. Come back tomorrow to keep it going.'
+                : 'Come back tomorrow to keep your streak alive.'}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Leaderboard Submission Modal */}
       {showLeaderboardModal && !submitted && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
