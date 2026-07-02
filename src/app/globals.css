@@ -236,4 +236,56 @@ article p > img {
   .dmv-table tbody td:first-child {
     @apply font-semibold text-gray-900;
   }
+
+  /* Do's / Don'ts two-column grid. Used in blog content via class names so
+     prose styles can't clobber the layout the way inline display:grid can. */
+  .dmv-dos-donts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 1.75rem 0;
+  }
+  @media (max-width: 640px) {
+    .dmv-dos-donts {
+      grid-template-columns: 1fr;
+    }
+  }
+  .dmv-dos-donts-do,
+  .dmv-dos-donts-dont {
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .dmv-dos-donts-do {
+    background: #f0fdf4;
+    border: 1.5px solid #86efac;
+  }
+  .dmv-dos-donts-dont {
+    background: #fef2f2;
+    border: 1.5px solid #fca5a5;
+  }
+  .dmv-dos-donts-do strong,
+  .dmv-dos-donts-dont strong {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .dmv-dos-donts-do strong {
+    color: #166534;
+  }
+  .dmv-dos-donts-dont strong {
+    color: #991b1b;
+  }
+  .dmv-dos-donts-do ul,
+  .dmv-dos-donts-dont ul {
+    margin: 0 !important;
+    padding-left: 18px !important;
+  }
+  .dmv-dos-donts-do li {
+    color: #15803d;
+  }
+  .dmv-dos-donts-dont li {
+    color: #b91c1c;
+  }
 }

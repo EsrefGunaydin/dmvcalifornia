@@ -2,6 +2,8 @@
 
 ## Writing content
 
+Before writing any blog post or long-form page, load and follow `~/.claude/skills/blog-post-standards/SKILL.md`. It defines the full content checklist (stat box, TOC, graphics, callouts, do/don't grid, internal links, official DMV links, FAQ, meta fields).
+
 Apply humanizer patterns (from `~/.claude/skills/humanizer/SKILL.md`) to ALL written content before finalizing: blog posts, page copy, meta descriptions, CTAs, headings, etc.
 
 Key rules:
