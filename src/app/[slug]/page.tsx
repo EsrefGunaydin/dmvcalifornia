@@ -18,6 +18,7 @@ import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 import ArticleSchema from '@/components/blog/ArticleSchema';
 import PracticeTestCTA from '@/components/blog/PracticeTestCTA';
+import InlineQuiz, { type InlineQuizConfig } from '@/components/blog/InlineQuiz';
 import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
 import { countWords, readingTimeMinutes } from '@/lib/strip-html';
 
@@ -45,6 +46,8 @@ type BlogPost = {
   testCta?: import('@/components/blog/PracticeTestCTA').PracticeTestCtaConfig;
   // Optional YouTube video embed shown after article body, before FAQ.
   youtubeId?: string;
+  // Optional 3-question inline quiz shown before the testCta.
+  inlineQuiz?: InlineQuizConfig;
 };
 
 const SITE_URL = 'https://dmvcalifornia.us';
@@ -52,6 +55,57 @@ const SITE_URL = 'https://dmvcalifornia.us';
 // JSON imports infer a heterogeneous union once posts carry optional fields
 // (lang/translations) on only some entries. Cast once to the canonical type.
 const blogPosts = blogPostsData.posts as unknown as BlogPost[];
+
+// Default quiz used for posts that have the <!-- inline-quiz --> marker but
+// no custom inlineQuiz field. Questions are chosen to trip up even experienced
+// drivers — the "only 1% pass all 3" challenge angle.
+const DEFAULT_INLINE_QUIZ: InlineQuizConfig = {
+  header: 'Only 1% of California drivers answer all 3 correctly',
+  subheader: 'Think you know the rules? Most licensed drivers miss at least one.',
+  questions: [
+    {
+      question: 'At 60 mph on a dry California freeway, what is the recommended minimum following distance?',
+      options: ['3 seconds', '4 seconds', '6 seconds'],
+      correctAnswer: 2,
+      explanation: 'At 60 mph you need at least 6 seconds: 4 seconds baseline, plus 1 extra second per 10 mph above 40. Most drivers use 2-3 seconds — less than half what is safe.',
+    },
+    {
+      question: 'At what speed can hydroplaning begin on tires with worn tread?',
+      options: ['35 mph', '50 mph', '65 mph'],
+      correctAnswer: 0,
+      explanation: 'Worn tires can lose road contact at 35 mph. Most drivers assume hydroplaning only happens at highway speeds. Worn tires lose grip at speeds most people consider completely normal.',
+    },
+    {
+      question: 'How often should a defensive driver check mirrors while cruising at highway speed?',
+      options: ['Only before changing lanes', 'Every 5-8 seconds', 'Every 15-20 seconds'],
+      correctAnswer: 1,
+      explanation: 'Mirror checks every 5-8 seconds mean you always know what is around you before you need to move. Waiting until a lane change means you are already reacting — defensive driving is about anticipating.',
+    },
+  ],
+  ctaCards: [
+    {
+      href: '/defensive-driving',
+      title: 'Defensive driving guide',
+      description: 'The 5 habits that prevent accidents. Most licensed drivers skip all of them.',
+      label: 'Read the guide',
+      icon: 'shield',
+    },
+    {
+      href: '/practice-test/practice-test-safe-driving-and-defensive-techniques',
+      title: 'Good driver test',
+      description: '22 questions on defensive driving and hazard awareness. Can you pass?',
+      label: 'Take the challenge',
+      icon: 'trophy',
+    },
+    {
+      href: '/practice-test/california-dmv-practice-test-2026',
+      title: 'Full practice test',
+      description: '46 questions covering all California DMV topics. Same format as the real exam.',
+      label: 'Start free',
+      icon: 'clipboard',
+    },
+  ],
+};
 
 // High-intent posts that get a contextual IMPROV affiliate banner after the
 // article body. Keep this small and topical — random placement doesn't convert.
@@ -683,6 +737,20 @@ function renderBlogPost(postIn: BlogPost) {
     }
   }
 
+  // Split content at inline-quiz marker. The marker is present in every
+  // English post (injected after the 2nd paragraph). Posts with a custom
+  // inlineQuiz field use their own questions; all others use DEFAULT_INLINE_QUIZ.
+  const INLINE_QUIZ_MARKER = '<!-- inline-quiz -->';
+  const quizMarkerIndex = processedContent.indexOf(INLINE_QUIZ_MARKER);
+  const hasMidContentQuiz = quizMarkerIndex !== -1;
+  const activeQuiz = post.inlineQuiz ?? DEFAULT_INLINE_QUIZ;
+  const contentPartOne = hasMidContentQuiz
+    ? processedContent.slice(0, quizMarkerIndex)
+    : processedContent;
+  const contentPartTwo = hasMidContentQuiz
+    ? processedContent.slice(quizMarkerIndex + INLINE_QUIZ_MARKER.length)
+    : '';
+
   // Get all posts sorted by date for prev/next navigation
   const sortedPosts = [...blogPosts].sort((a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
@@ -803,14 +871,32 @@ function renderBlogPost(postIn: BlogPost) {
                 prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:my-6
                 prose-strong:text-gray-900 prose-strong:font-semibold
                 [&_img]:!max-w-full [&_img]:!w-full [&_img]:!h-auto [&_img]:object-contain"
-              dangerouslySetInnerHTML={{ __html: processedContent }}
+              dangerouslySetInnerHTML={{ __html: contentPartOne }}
             />
           }>
             <BlogPostContent
-              content={processedContent}
+              content={contentPartOne}
               adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 5 : 4}
             />
           </Suspense>
+
+          {/* Mid-content quiz — injected at marker position */}
+          {hasMidContentQuiz && (
+            <InlineQuiz
+              questions={activeQuiz.questions}
+              ctaCards={activeQuiz.ctaCards}
+              header={activeQuiz.header}
+              subheader={activeQuiz.subheader}
+            />
+          )}
+
+          {/* Second half of article content (after quiz marker) */}
+          {contentPartTwo && (
+            <BlogPostContent
+              content={contentPartTwo}
+              adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 5 : 4}
+            />
+          )}
 
           {/* Post Views Counter - Dynamic */}
           <BlogViewTracker slug={post.slug} initialViews={post.views || 0} />
@@ -819,6 +905,7 @@ function renderBlogPost(postIn: BlogPost) {
         {/* Multiplex Ad — placed right after article body so readers who
             finish the content see it before scrolling to FAQ/related */}
         <MultiplexAd />
+
 
         {/* Practice-test funnel CTA (blog → tests): turns informational
             readers into engaged, returning users. Opt-in per post. */}

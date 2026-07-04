@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import MultiplexAd from '@/components/MultiplexAd';
 import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
+import InlineQuiz, { type InlineQuizConfig } from '@/components/blog/InlineQuiz';
 
 const SITE_URL = 'https://dmvcalifornia.us';
 
@@ -31,6 +32,61 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/defensive-driving`,
   },
 };
+
+const CHALLENGE_QUIZ: InlineQuizConfig = {
+  header: 'Only 1% of California drivers answer all 3 correctly',
+  subheader: '79% of drivers rate themselves as above average. Prove you actually are.',
+  questions: [
+    {
+      question: 'At 60 mph on a dry California freeway, what is the recommended minimum following distance?',
+      options: ['3 seconds', '4 seconds', '6 seconds'],
+      correctAnswer: 2,
+      explanation: 'At 60 mph you need at least 6 seconds: 4 seconds baseline, plus 1 extra second per 10 mph above 40. Most drivers use 2-3 seconds — less than half what is safe. On wet roads, double it.',
+    },
+    {
+      question: 'At what speed can hydroplaning begin on tires with worn tread?',
+      options: ['35 mph', '50 mph', '65 mph'],
+      correctAnswer: 0,
+      explanation: 'Worn tires can lose road contact at 35 mph. Most drivers assume hydroplaning only happens at highway speeds. New tires resist it much longer — worn tires lose grip at speeds most people consider completely normal.',
+    },
+    {
+      question: 'How often should a defensive driver check mirrors while cruising at highway speed?',
+      options: ['Only before changing lanes', 'Every 5-8 seconds', 'Every 15-20 seconds'],
+      correctAnswer: 1,
+      explanation: 'Mirror checks every 5-8 seconds mean you always know what is around you before you need to move. Checking only before lane changes means you are already reacting — defensive driving is about anticipating, not reacting.',
+    },
+  ],
+  ctaCards: [
+    {
+      href: '/practice-test/practice-test-safe-driving-and-defensive-techniques',
+      title: 'Defensive driver test',
+      description: '22 questions on following distance, hazard awareness, and road safety. Most licensed drivers fail at least 5.',
+      label: 'Take the challenge',
+      icon: 'shield',
+    },
+    {
+      href: '/practice-test/practice-test-safe-driving-and-defensive-techniques',
+      title: 'Good driver test',
+      description: 'Think your driving habits are above average? These scenario questions will tell you the truth.',
+      label: 'Find out now',
+      icon: 'trophy',
+    },
+    {
+      href: '/practice-test/california-dmv-practice-test-2026',
+      title: 'Full practice test',
+      description: '46 questions covering all California DMV topics — the same format as the real written exam.',
+      label: 'Start free',
+      icon: 'clipboard',
+    },
+  ],
+};
+
+const STATS = [
+  { value: '94%', label: 'of crashes involve human error (NHTSA)' },
+  { value: '79%', label: 'of drivers rate themselves as above average' },
+  { value: '35 mph', label: 'speed at which hydroplaning starts on worn tires' },
+  { value: '6 sec', label: 'recommended following distance at 60 mph' },
+];
 
 const RULES = [
   {
@@ -256,9 +312,10 @@ export default function DefensiveDrivingPage() {
             </p>
             <Link
               href="/practice-test/practice-test-safe-driving-and-defensive-techniques"
-              className="inline-block bg-white text-dmv-700 font-bold px-6 py-3 rounded-lg shadow hover:bg-dmv-50 transition-colors"
+              className="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all"
             >
-              Take the free defensive driving test →
+              <span>Only 1 in 5 drivers passes this test. Are you one of them?</span>
+              <span className="text-2xl leading-none">→</span>
             </Link>
           </div>
         </section>
@@ -266,7 +323,7 @@ export default function DefensiveDrivingPage() {
         <div className="container mx-auto px-4 py-12 max-w-4xl">
 
           {/* Intro */}
-          <section className="mb-12 prose prose-lg max-w-none prose-p:text-gray-700 prose-h2:text-gray-900">
+          <section className="mb-8 prose prose-lg max-w-none prose-p:text-gray-700 prose-h2:text-gray-900">
             <h2>What is defensive driving?</h2>
             <p>
               Most drivers think they&apos;re driving defensively. In reality, most people are just following along — reacting to what&apos;s immediately in front of them and hoping nothing unexpected happens. Defensive driving is something different: it&apos;s an active mindset where you&apos;re constantly reading the road ahead, managing the space around your car, and making sure you&apos;re never in a position where another driver&apos;s mistake becomes your emergency.
@@ -274,6 +331,26 @@ export default function DefensiveDrivingPage() {
             <p>
               California roads have some of the highest traffic density in the country. A defensive driver thinks ahead, stays calm, and always has somewhere to go — whether it&apos;s rush hour on the 405 or an empty two-lane highway in the Central Valley. The five rules below are the framework that professional drivers, driving instructors, and the California DMV all use.
             </p>
+          </section>
+
+          {/* Stat box */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+            {STATS.map((s) => (
+              <div key={s.value} className="bg-white rounded-2xl border border-gray-100 p-4 text-center shadow-sm">
+                <p className="text-2xl font-extrabold text-dmv-600 mb-1">{s.value}</p>
+                <p className="text-xs text-gray-500 leading-snug">{s.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Challenge quiz */}
+          <section className="mb-12">
+            <InlineQuiz
+              questions={CHALLENGE_QUIZ.questions}
+              ctaCards={CHALLENGE_QUIZ.ctaCards}
+              header={CHALLENGE_QUIZ.header}
+              subheader={CHALLENGE_QUIZ.subheader}
+            />
           </section>
 
           {/* 5 Rules */}
@@ -354,6 +431,60 @@ export default function DefensiveDrivingPage() {
             <p>
               California Vehicle Code §22406 requires vehicles towing trailers to stay in the right-hand lane or as close to the right curb as possible on multi-lane roads. Even for regular vehicles, the right lane is where slower traffic belongs — the left lane is for passing, not cruising.
             </p>
+          </section>
+
+          {/* Do / Don't */}
+          <section className="mb-12">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Defensive driving: do this, not that</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="bg-green-50 border border-green-200 rounded-2xl p-5">
+                <p className="text-sm font-bold text-green-700 uppercase tracking-wide mb-4">Do this</p>
+                <ul className="space-y-3 text-sm text-gray-700">
+                  <li className="flex gap-2"><span className="text-green-500 font-bold flex-shrink-0">✓</span> Check mirrors every 5-8 seconds so you always know what is around you</li>
+                  <li className="flex gap-2"><span className="text-green-500 font-bold flex-shrink-0">✓</span> Keep at least 4 seconds of following distance — 6 seconds at 60 mph</li>
+                  <li className="flex gap-2"><span className="text-green-500 font-bold flex-shrink-0">✓</span> Signal at least 100 feet before turns and lane changes</li>
+                  <li className="flex gap-2"><span className="text-green-500 font-bold flex-shrink-0">✓</span> Use headlights in rain, fog, or any low-visibility condition — even during the day</li>
+                  <li className="flex gap-2"><span className="text-green-500 font-bold flex-shrink-0">✓</span> Scan intersections before entering even when you have a green light</li>
+                  <li className="flex gap-2"><span className="text-green-500 font-bold flex-shrink-0">✓</span> Double your following distance on wet or slick roads</li>
+                </ul>
+              </div>
+              <div className="bg-red-50 border border-red-200 rounded-2xl p-5">
+                <p className="text-sm font-bold text-red-600 uppercase tracking-wide mb-4">Not this</p>
+                <ul className="space-y-3 text-sm text-gray-700">
+                  <li className="flex gap-2"><span className="text-red-500 font-bold flex-shrink-0">✗</span> Tailgate — it cuts your reaction time to near zero and is a point on your record</li>
+                  <li className="flex gap-2"><span className="text-red-500 font-bold flex-shrink-0">✗</span> Fix your gaze on one spot for more than 2 seconds (highway hypnosis starts fast)</li>
+                  <li className="flex gap-2"><span className="text-red-500 font-bold flex-shrink-0">✗</span> Trust another driver&apos;s signal or headlamp flash without seeing the actual movement</li>
+                  <li className="flex gap-2"><span className="text-red-500 font-bold flex-shrink-0">✗</span> Cruise in another vehicle&apos;s blind spot — either pass or drop back</li>
+                  <li className="flex gap-2"><span className="text-red-500 font-bold flex-shrink-0">✗</span> Drive while drowsy — fatigue impairs reaction time as much as alcohol does</li>
+                  <li className="flex gap-2"><span className="text-red-500 font-bold flex-shrink-0">✗</span> Use a handheld phone while driving — $162+ fine in California, and it goes on your record</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* Callout */}
+          <div className="mb-12 bg-amber-50 border-l-4 border-amber-400 rounded-r-xl p-5">
+            <p className="text-sm font-bold text-amber-700 uppercase tracking-wide mb-1">California law</p>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              Tailgating is illegal under <strong>California Vehicle Code §21703</strong>. A first offense can carry a fine of $100-$250 and adds 1 point to your driving record. Three points in 12 months triggers a negligent operator warning from the DMV; four points can result in a suspended license.
+            </p>
+          </div>
+
+          {/* Internal links to related blog posts */}
+          <section className="mb-12">
+            <h2 className="text-xl font-bold text-gray-900 mb-4">Related guides</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/top-28-defensive-driving-tips" className="group bg-white rounded-xl border border-gray-200 hover:border-dmv-300 hover:shadow-md transition-all p-5 flex flex-col">
+                <p className="font-bold text-gray-900 group-hover:text-dmv-700 transition-colors mb-1 text-sm">28 defensive driving tips that could save your life</p>
+                <p className="text-xs text-gray-500 leading-snug flex-1">Practical techniques for California roads — from scanning habits to handling freeway merges safely.</p>
+                <span className="text-dmv-600 text-xs font-semibold mt-3">Read more →</span>
+              </Link>
+              <Link href="/real-defensive-driving" className="group bg-white rounded-xl border border-gray-200 hover:border-dmv-300 hover:shadow-md transition-all p-5 flex flex-col">
+                <p className="font-bold text-gray-900 group-hover:text-dmv-700 transition-colors mb-1 text-sm">Are you really a defensive driver?</p>
+                <p className="text-xs text-gray-500 leading-snug flex-1">A self-assessment covering the habits most drivers think they have — but don&apos;t.</p>
+                <span className="text-dmv-600 text-xs font-semibold mt-3">Take the assessment →</span>
+              </Link>
+            </div>
           </section>
 
           <MultiplexAd />
