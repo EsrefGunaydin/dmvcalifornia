@@ -83,6 +83,22 @@ const nextConfig = {
         destination: '/pdfs/SOLICITUD-DE-LICENCIA-DE-MANEJAR-O-TARJETA-DE-IDENTIDAD.pdf',
         permanent: true,
       },
+      // Recover 7 DMV location pages that have third-party backlinks but no
+      // matching blog post or app route. Send them to the office finder so
+      // visitors and link equity land somewhere useful instead of a 404.
+      { source: '/dmv-sacramento', destination: '/dmv-offices', permanent: true },
+      { source: '/santa-ana-dmv', destination: '/dmv-offices', permanent: true },
+      { source: '/los-gatos-dmv', destination: '/dmv-offices', permanent: true },
+      { source: '/petaluma-dmv', destination: '/dmv-offices', permanent: true },
+      { source: '/san-mateo-dmv', destination: '/dmv-offices', permanent: true },
+      { source: '/santa-teresa-dmv', destination: '/dmv-offices', permanent: true },
+      { source: '/dmv-bell-gardens', destination: '/dmv-offices', permanent: true },
+      // Consolidate duplicate-intent driving tips pages: oboe.com's 17 backlinks
+      // all point to the longer slug, so that becomes the canonical.
+      { source: '/driving-test-tips', destination: '/california-driving-test-tips', permanent: true },
+      // Fix content mismatch: backlinks searching santa-ana driving test route
+      // should land on laguna hills (the closest match we have).
+      { source: '/santa-ana-dmv-driving-test', destination: '/laguna-hills-dmv-driving-test', permanent: true },
     ];
   },
 };
