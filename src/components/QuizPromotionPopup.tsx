@@ -55,6 +55,19 @@ export default function QuizPromotionPopup() {
     }
   }, [hasTimePassed, hasScrolled, dismissed]);
 
+  // Advertise visibility so other floating UI (e.g. UpNextBar) can yield to
+  // this popup instead of stacking on top of it.
+  useEffect(() => {
+    if (isVisible) {
+      document.documentElement.dataset.quizPopupOpen = '1';
+    } else {
+      delete document.documentElement.dataset.quizPopupOpen;
+    }
+    return () => {
+      delete document.documentElement.dataset.quizPopupOpen;
+    };
+  }, [isVisible]);
+
   const handleDismiss = (e?: React.MouseEvent) => {
     e?.preventDefault();
     e?.stopPropagation();

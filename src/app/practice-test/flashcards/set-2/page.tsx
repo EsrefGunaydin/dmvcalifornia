@@ -63,6 +63,8 @@ export default function FlashcardsSet2Page() {
             <FlashcardDeck
               cards={flashcards.cards}
               title={flashcards.title}
+              deckId="set-2"
+              nextSet={{ href: '/practice-test/flashcards/set-3', title: 'Set 3 — Lane changes & U-turns' }}
             />
           </div>
         </section>

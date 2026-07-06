@@ -17,10 +17,12 @@ import BlogImageLightbox from '@/components/BlogImageLightbox';
 import MultiplexAd from '@/components/MultiplexAd';
 import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
 import ArticleSchema from '@/components/blog/ArticleSchema';
+import UpNextBar from '@/components/blog/UpNextBar';
 import PracticeTestCTA from '@/components/blog/PracticeTestCTA';
 import InlineQuiz, { type InlineQuizConfig } from '@/components/blog/InlineQuiz';
 import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
 import { countWords, readingTimeMinutes } from '@/lib/strip-html';
+import { tagToSlug } from '@/lib/blogTags';
 
 // Type for blog post
 type BlogPost = {
@@ -802,6 +804,7 @@ function renderBlogPost(postIn: BlogPost) {
         wordCount={totalWords}
         faq={post.faq}
         lang={post.lang}
+        category={post.tags?.[0]}
       />
 
       {/* Article */}
@@ -821,6 +824,16 @@ function renderBlogPost(postIn: BlogPost) {
                   </Link>
                 </li>
                 <li>/</li>
+                {post.tags && post.tags.length > 0 && (
+                  <>
+                    <li>
+                      <Link href={`/blog/category/${tagToSlug(post.tags[0])}`} className="hover:text-primary">
+                        {post.tags[0]}
+                      </Link>
+                    </li>
+                    <li>/</li>
+                  </>
+                )}
                 <li className="text-gray-900 font-medium">{post.title}</li>
               </ol>
             </nav>
@@ -877,6 +890,7 @@ function renderBlogPost(postIn: BlogPost) {
             <BlogPostContent
               content={contentPartOne}
               adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 5 : 4}
+              relatedPost={!contentPartTwo && relatedPosts[1] ? { slug: relatedPosts[1].slug, title: relatedPosts[1].title } : undefined}
             />
           </Suspense>
 
@@ -895,12 +909,19 @@ function renderBlogPost(postIn: BlogPost) {
             <BlogPostContent
               content={contentPartTwo}
               adInterval={AFFILIATE_BANNER_BY_SLUG[post.slug] ? 5 : 4}
+              relatedPost={relatedPosts[1] ? { slug: relatedPosts[1].slug, title: relatedPosts[1].title } : undefined}
             />
           )}
 
           {/* Post Views Counter - Dynamic */}
           <BlogViewTracker slug={post.slug} initialViews={post.views || 0} />
         </div>
+
+        {/* Sentinel for UpNextBar: once this scrolls into view the reader has
+            reached the end-of-article zone (multiplex ad, related stories,
+            prev/next, footer) and the bar hides itself to avoid covering ads
+            and duplicating the links below. */}
+        <div id="article-end-sentinel" aria-hidden="true" />
 
         {/* Multiplex Ad — placed right after article body so readers who
             finish the content see it before scrolling to FAQ/related */}
@@ -1104,6 +1125,9 @@ function renderBlogPost(postIn: BlogPost) {
       <Footer />
       <CookieBanner />
       <QuizPromotionPopup />
+      {relatedPosts.length > 0 && (
+        <UpNextBar post={{ slug: relatedPosts[0].slug, title: relatedPosts[0].title }} />
+      )}
       <BlogImageLightbox />
     </div>
   );

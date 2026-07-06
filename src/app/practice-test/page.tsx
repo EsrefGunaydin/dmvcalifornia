@@ -5,7 +5,7 @@ import CookieBanner from '@/components/CookieBanner';
 import PracticeTestsContent from '@/components/PracticeTestsContent';
 import {
   TriangleAlert, ClipboardList, Wine, SquareParking, Gauge,
-  Flame, BookOpen, CreditCard, Layers, Navigation, Globe, Zap,
+  Flame, BookOpen, CreditCard, Layers, Navigation, Globe, Zap, RotateCcw,
 } from 'lucide-react';
 import quizzesData from '@/data/quizzes.json';
 import DailyChallengeBanner from '@/components/DailyChallengeBanner';
@@ -115,6 +115,7 @@ export default function PracticeTestsPage() {
               { href: '/california-dmv-blitz-test', Icon: Zap, title: 'Blitz Test', desc: '20 questions, 15 seconds each. Answer fast for bonus points.' },
               { href: '/california-dmv-test-study-guide', Icon: BookOpen, title: 'Study Guide', desc: 'A 7-step plan from handbook to full marathon.' },
               { href: '/california-dmv-fees', Icon: CreditCard, title: 'DMV Fees', desc: 'License, REAL ID, and registration costs for 2026.' },
+              { href: '/practice-test/wrong-answers', Icon: RotateCcw, title: 'Review Your Mistakes', desc: 'Retry every question you got wrong across all tests.' },
             ].map(({ href, Icon: CardIcon, title, desc }) => (
               <Link key={href} href={href} className="flex items-center gap-4 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 group-hover:bg-primary/10 transition-colors flex items-center justify-center">

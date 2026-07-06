@@ -21,11 +21,14 @@ h2[id] {
   scroll-margin-top: 100px;
 }
 
-/* Ensure all images are responsive and fit within mobile viewport */
-.prose img,
-article img,
-.blog-content img,
-img {
+/* Ensure all images are responsive and fit within mobile viewport.
+   Next.js <Image fill> ([data-nimg="fill"]) is excluded: it needs its inline
+   height:100% inside an aspect-ratio container, and height:auto !important
+   makes it overflow (e.g. quiz sign images covering the answers). */
+.prose img:not([data-nimg="fill"]),
+article img:not([data-nimg="fill"]),
+.blog-content img:not([data-nimg="fill"]),
+img:not([data-nimg="fill"]) {
   max-width: 100% !important;
   height: auto !important;
   display: block;
@@ -55,9 +58,9 @@ article p > img {
 
 /* Mobile-specific image adjustments */
 @media (max-width: 768px) {
-  .prose img,
-  article img,
-  img {
+  .prose img:not([data-nimg="fill"]),
+  article img:not([data-nimg="fill"]),
+  img:not([data-nimg="fill"]) {
     max-width: 100vw !important;
     width: 100% !important;
     height: auto !important;

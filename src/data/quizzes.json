@@ -984,7 +984,7 @@
           "difficulty": "hard"
         },
         {
-          "id": 20,
+          "id": 47,
           "question": "A triangular orange sign on the back of a slow-moving vehicle indicates that the vehicle is traveling at:",
           "options": [
             "Less than 25 mph",
@@ -1101,7 +1101,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 11,
+          "id": 48,
           "question": "This sign means:",
           "options": [
             "Drive to the right",
@@ -1180,7 +1180,7 @@
           "difficulty": "easy",
           "hasImage": true,
           "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
-          "id": 12
+          "id": 49
         },
         {
           "id": 42,
@@ -1428,7 +1428,7 @@
           "explanation": "The legal BAC limit for drivers 21 and over is 0.08%.",
           "category": "DUI Laws",
           "difficulty": "easy",
-          "id": 13
+          "id": 47
         },
         {
           "id": 14,
@@ -1481,7 +1481,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 14,
+          "id": 48,
           "image": "/images/traffic-signs/wrong-way-sign.webp"
         },
         {
@@ -2368,7 +2368,7 @@
           "explanation": "Large trucks have much larger blind spots than passenger vehicles.",
           "category": "Sharing the Road",
           "difficulty": "easy",
-          "id": 15
+          "id": 21
         },
         {
           "id": 16,
@@ -2655,7 +2655,7 @@
           "explanation": "Cool off before driving to avoid emotional driving.",
           "category": "Safe Driving",
           "difficulty": "easy",
-          "id": 16
+          "id": 19
         },
         {
           "question": "California's 'Basic Speed Law' says:",
@@ -3146,7 +3146,7 @@
           "image": "/images/traffic-signs/right-curve-sign.webp"
         },
         {
-          "id": 19,
+          "id": 21,
           "question": "You must make a full stop before you cross railroad tracks when:",
           "options": [
             "You don't have room to completely cross the tracks",
@@ -5631,7 +5631,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 20,
+          "id": 64,
           "question": "Backing your vehicle is:",
           "options": [
             "Always dangerous to do",

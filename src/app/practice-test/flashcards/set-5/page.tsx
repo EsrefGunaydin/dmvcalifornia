@@ -63,6 +63,7 @@ export default function FlashcardsSet5Page() {
             <FlashcardDeck
               cards={flashcards.cards}
               title={flashcards.title}
+              deckId="set-5"
             />
           </div>
         </section>

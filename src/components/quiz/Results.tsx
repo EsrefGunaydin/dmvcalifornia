@@ -3,7 +3,7 @@
 import { Quiz, QuizResult } from '@/types/quiz';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { PartyPopper, FileText, Smartphone, Flame } from 'lucide-react';
 import { useStreak } from '@/hooks/useStreak';
@@ -48,6 +48,35 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
     : { heading: 'Topics to review', sub: 'Focus on these topics before your retake:' };
 
   const [showLeaderboardModal, setShowLeaderboardModal] = useState(true);
+
+  // Auto-advance to the next quiz after a pass. Waits for the leaderboard
+  // modal to close so the countdown never runs behind it. Failed attempts
+  // keep the static card: the wrong-answers review is the better CTA there.
+  const AUTO_ADVANCE_SECONDS = 10;
+  const [autoAdvance, setAutoAdvance] = useState(true);
+  const [countdown, setCountdown] = useState(AUTO_ADVANCE_SECONDS);
+  const countingDown = Boolean(nextQuiz && passed && !showLeaderboardModal && autoAdvance);
+
+  useEffect(() => {
+    if (!countingDown || !nextQuiz) return;
+    if (countdown <= 0) {
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'next_quiz_autoadvance', { next_quiz: nextQuiz.slug });
+      }
+      router.push(`/practice-test/${nextQuiz.slug}`);
+      return;
+    }
+    const timer = setTimeout(() => setCountdown((c) => c - 1), 1000);
+    return () => clearTimeout(timer);
+  }, [countingDown, countdown, nextQuiz, router]);
+
+  const cancelAutoAdvance = () => {
+    setAutoAdvance(false);
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'next_quiz_cancelled', { next_quiz: nextQuiz?.slug });
+    }
+  };
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [submitting, setSubmitting] = useState(false);
@@ -292,20 +321,35 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
 
         {/* Highest-intent moment: send them straight into another test */}
         {nextQuiz && (
-          <Link
-            href={`/practice-test/${nextQuiz.slug}`}
-            className="mb-4 flex items-center justify-between gap-4 rounded-lg border-2 border-primary/30 bg-primary/5 px-5 py-4 hover:bg-primary/10 transition-colors group"
-          >
-            <span className="min-w-0">
-              <span className="block text-xs font-semibold uppercase tracking-wide text-primary">
-                Try another test
+          <div className="mb-4 rounded-lg border-2 border-primary/30 bg-primary/5 px-5 py-4">
+            <Link
+              href={`/practice-test/${nextQuiz.slug}`}
+              className="flex items-center justify-between gap-4 hover:opacity-90 transition-opacity group"
+            >
+              <span className="min-w-0">
+                <span className="block text-xs font-semibold uppercase tracking-wide text-primary">
+                  {countingDown ? 'Up next' : 'Try another test'}
+                </span>
+                <span className="block font-bold text-gray-900 truncate">{nextQuiz.title}</span>
               </span>
-              <span className="block font-bold text-gray-900 truncate">{nextQuiz.title}</span>
-            </span>
-            <span className="text-primary font-bold whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
-              Start →
-            </span>
-          </Link>
+              <span className="text-primary font-bold whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
+                Start →
+              </span>
+            </Link>
+            {countingDown && (
+              <div className="mt-3 flex items-center justify-between gap-3 border-t border-primary/20 pt-3">
+                <span className="text-sm text-gray-600">
+                  Starting automatically in <span className="font-bold text-primary">{countdown}s</span>
+                </span>
+                <button
+                  onClick={cancelAutoAdvance}
+                  className="text-sm font-medium text-gray-500 hover:text-gray-700 underline"
+                >
+                  Cancel
+                </button>
+              </div>
+            )}
+          </div>
         )}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -450,7 +494,7 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
             const selectedAnswer = answer?.selectedAnswer ?? -1;
 
             return (
-              <div key={question.id} className={`border-l-4 pl-4 ${
+              <div key={`${question.id}-${index}`} className={`border-l-4 pl-4 ${
                 isCorrect ? 'border-green-500' : 'border-red-500'
               }`}>
                 <div className="flex items-start gap-3 mb-3">

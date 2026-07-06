@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import AppPromotion from '@/components/AppPromotion';
 import blogPostsData from '@/data/blog_posts.json';
+import { tagToSlug } from '@/lib/blogTags';
 
 interface BlogPostLike {
   id: number;
@@ -20,18 +21,6 @@ interface BlogPostLike {
 }
 
 const SITE_URL = 'https://dmvcalifornia.us';
-
-/**
- * Convert a tag like "Driver License" → "driver-license" for URL slug.
- */
-function tagToSlug(tag: string): string {
-  return tag
-    .toLowerCase()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .trim();
-}
 
 function getUniqueTags(): string[] {
   const all = new Set<string>();

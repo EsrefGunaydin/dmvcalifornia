@@ -2,6 +2,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import DailyChallengeContent from './DailyChallengeContent';
+import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
 import { pickDailyQuestions, seedFromDate, todayUTC } from '@/lib/dailyChallenge';
 import type { Question, Quiz } from '@/types/quiz';
 
@@ -28,6 +29,18 @@ export default function DailyChallengePage() {
 
   const questions = pickDailyQuestions(pool, 10, seed);
 
+  // Cross-links so the daily challenge isn't a dead end (lifts pageviews-per-session)
+  const relatedQuizzes = (quizzesData.quizzes as Quiz[])
+    .filter((q) => ((q as { language?: string }).language || 'en') === 'en')
+    .slice(0, 6)
+    .map((q) => ({
+      slug: q.slug,
+      title: q.title,
+      category: q.category,
+      questionCount: q.questions.length,
+      language: 'en',
+    }));
+
   return (
     <>
       <Header />
@@ -44,6 +57,7 @@ export default function DailyChallengePage() {
           </div>
           <DailyChallengeContent questions={questions} date={date} />
         </div>
+        <RelatedQuizzes quizzes={relatedQuizzes} />
       </main>
       <Footer />
       <CookieBanner />

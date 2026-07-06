@@ -63,6 +63,8 @@ export default function FlashcardsSet4Page() {
             <FlashcardDeck
               cards={flashcards.cards}
               title={flashcards.title}
+              deckId="set-4"
+              nextSet={{ href: '/practice-test/flashcards/set-5', title: 'Set 5 — Intersections & crosswalks' }}
             />
           </div>
         </section>

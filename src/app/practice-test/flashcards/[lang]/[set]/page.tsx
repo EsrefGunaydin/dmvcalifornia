@@ -53,6 +53,16 @@ export default async function FlashcardDeckPage({
     .map((s, i) => ({ s, slug: `set-${i + 1}` }))
     .filter(({ slug }) => slug !== set);
 
+  // Next set in sequence for the finished-screen CTA
+  const setIndex = parseInt(set.replace('set-', ''), 10) - 1;
+  const nextSetData = config.sets[setIndex + 1];
+  const nextSet = nextSetData
+    ? {
+        href: `/practice-test/flashcards/${code}/set-${setIndex + 2}`,
+        title: nextSetData.flashcards.title,
+      }
+    : undefined;
+
   return (
     <>
       <Header />
@@ -90,7 +100,14 @@ export default async function FlashcardDeckPage({
         {/* Flashcard Section */}
         <section className="py-12">
           <div className="container mx-auto px-4">
-            <FlashcardDeck cards={data.cards} title={data.title} dir={dir} labels={labels} />
+            <FlashcardDeck
+              cards={data.cards}
+              title={data.title}
+              dir={dir}
+              labels={labels}
+              deckId={`${code}-${set}`}
+              nextSet={nextSet}
+            />
           </div>
         </section>
 

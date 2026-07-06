@@ -53,11 +53,13 @@ interface FlashcardDeckProps {
   dir?: 'ltr' | 'rtl';
   /** Localized UI strings. Falls back to English. */
   labels?: Partial<FlashcardLabels>;
+  /** Next set to study, shown as the primary CTA on the finished screen. */
+  nextSet?: { href: string; title: string };
 }
 
 type CardStatus = 'review' | 'done';
 
-export default function FlashcardDeck({ cards, title, deckId, dir = 'ltr', labels }: FlashcardDeckProps) {
+export default function FlashcardDeck({ cards, title, deckId, dir = 'ltr', labels, nextSet }: FlashcardDeckProps) {
   const t: FlashcardLabels = { ...DEFAULT_LABELS, ...labels };
   const storageKey = deckId ? `flashcard-progress-${deckId}` : null;
 
@@ -158,9 +160,21 @@ export default function FlashcardDeck({ cards, title, deckId, dir = 'ltr', label
           >
             Start over
           </button>
+          {nextSet && (
+            <a
+              href={nextSet.href}
+              className="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            >
+              Next: {nextSet.title} →
+            </a>
+          )}
           <a
             href="/practice-test/california-dmv-practice-test-2026"
-            className="px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors"
+            className={
+              nextSet
+                ? 'px-6 py-3 bg-white border border-gray-300 rounded-lg font-medium text-gray-700 hover:bg-gray-50 transition-colors'
+                : 'px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary/90 transition-colors'
+            }
           >
             Take the full practice test
           </a>

@@ -1,19 +1,34 @@
 'use client';
 
 import InArticleAd from './InArticleAd';
+import AlsoReadCard from './blog/AlsoReadCard';
 
 type BlogPostContentProps = {
   content: string;
   /** Insert an InArticleAd after every N paragraphs. Default: 2. */
   adInterval?: number;
+  /** When set (and the content is long enough), a compact "Also read" card
+   *  is injected at the midpoint of the content. */
+  relatedPost?: { slug: string; title: string };
 };
 
-// Insert an ad placeholder after every `adInterval` paragraphs.
-// The placeholder is later replaced with an <InArticleAd> React component
-// at render time so AdSense actually mounts (you can't put React components
-// inside dangerouslySetInnerHTML directly).
-function injectAdPlaceholders(html: string, adInterval: number): string {
+// Minimum paragraphs before a mid-content related card is worth the
+// interruption.
+const RELATED_MIN_PARAGRAPHS = 6;
+
+// Insert an ad placeholder after every `adInterval` paragraphs, plus an
+// optional related-post placeholder at the paragraph midpoint.
+// Placeholders are later replaced with React components at render time so
+// AdSense actually mounts (you can't put React components inside
+// dangerouslySetInnerHTML directly).
+function injectPlaceholders(html: string, adInterval: number, withRelated: boolean): string {
   const paragraphRegex = /<p[^>]*>.*?<\/p>/gis;
+  const totalParagraphs = (html.match(paragraphRegex) || []).length;
+  const relatedAfter =
+    withRelated && totalParagraphs >= RELATED_MIN_PARAGRAPHS
+      ? Math.ceil(totalParagraphs / 2)
+      : 0;
+
   let result = '';
   let lastIndex = 0;
   let paragraphCount = 0;
@@ -25,6 +40,9 @@ function injectAdPlaceholders(html: string, adInterval: number): string {
     result += html.substring(lastIndex, match.index + match[0].length);
     lastIndex = match.index + match[0].length;
 
+    if (paragraphCount === relatedAfter) {
+      result += '<div class="related-placeholder"></div>';
+    }
     if (paragraphCount % adInterval === 0) {
       result += `<div class="ad-placeholder" data-ad-index="${adIndex}"></div>`;
       adIndex++;
@@ -47,27 +65,38 @@ const PROSE_CLASS =
   'prose-strong:text-gray-900 prose-strong:font-semibold ' +
   '[&_img]:!max-w-full [&_img]:!w-full [&_img]:!h-auto [&_img]:object-contain';
 
-export default function BlogPostContent({ content, adInterval = 2 }: BlogPostContentProps) {
+export default function BlogPostContent({ content, adInterval = 2, relatedPost }: BlogPostContentProps) {
   // Always render the full article with in-article ads every `adInterval`
   // paragraphs. Previously the Read More button gated ad inventory behind a
   // click — only ~25% of readers expanded, so 75% of pageviews rendered just
   // one ad instead of N. Removing the gate restores full ad inventory for
   // every visitor.
-  const processedContent = injectAdPlaceholders(content, adInterval);
-  const sections = processedContent.split(/<div class="ad-placeholder" data-ad-index="\d+"><\/div>/);
-  const adCount = sections.length - 1; // ads sit between sections
+  const processedContent = injectPlaceholders(content, adInterval, Boolean(relatedPost));
+
+  // Split keeping the placeholder tokens so each can be swapped for its
+  // component without disturbing the others' positions.
+  const tokens = processedContent.split(
+    /(<div class="(?:ad|related)-placeholder"[^>]*><\/div>)/
+  );
 
   return (
     <>
-      {sections.map((section, index) => (
-        <div key={`section-${index}`}>
+      {tokens.map((token, index) => {
+        if (token.startsWith('<div class="ad-placeholder"')) {
+          return <InArticleAd key={`ad-${index}`} />;
+        }
+        if (token.startsWith('<div class="related-placeholder"')) {
+          return relatedPost ? <AlsoReadCard key={`related-${index}`} post={relatedPost} /> : null;
+        }
+        if (!token) return null;
+        return (
           <div
+            key={`section-${index}`}
             className={PROSE_CLASS}
-            dangerouslySetInnerHTML={{ __html: section }}
+            dangerouslySetInnerHTML={{ __html: token }}
           />
-          {index < adCount && <InArticleAd key={`ad-${index}`} />}
-        </div>
-      ))}
+        );
+      })}
     </>
   );
 }

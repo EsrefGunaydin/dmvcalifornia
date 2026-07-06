@@ -1,4 +1,5 @@
 import { stripHtml } from '@/lib/strip-html';
+import { tagToSlug } from '@/lib/blogTags';
 
 interface ArticleSchemaProps {
   title: string;
@@ -12,6 +13,8 @@ interface ArticleSchemaProps {
   wordCount?: number;
   faq?: { question: string; answer: string }[];
   lang?: string;
+  /** Category (first tag) inserted between Blog and the post in the breadcrumb. */
+  category?: string;
 }
 
 const SITE_URL = 'https://dmvcalifornia.us';
@@ -35,6 +38,7 @@ export default function ArticleSchema({
   wordCount,
   faq,
   lang,
+  category,
 }: ArticleSchemaProps) {
   const url = `${SITE_URL}/${slug}`;
   const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
@@ -71,14 +75,21 @@ export default function ArticleSchema({
     inLanguage: lang === 'es' ? 'es' : 'en-US',
   };
 
+  const breadcrumbItems = [
+    { name: 'Home', item: SITE_URL },
+    { name: 'Blog', item: `${SITE_URL}/blog` },
+    ...(category ? [{ name: category, item: `${SITE_URL}/blog/category/${tagToSlug(category)}` }] : []),
+    { name: title, item: url },
+  ];
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Blog', item: `${SITE_URL}/blog` },
-      { '@type': 'ListItem', position: 3, name: title, item: url },
-    ],
+    itemListElement: breadcrumbItems.map((entry, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      ...entry,
+    })),
   };
 
   const faqSchema = faq && faq.length > 0
