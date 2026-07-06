@@ -365,7 +365,7 @@
       "target_length": 1500,
       "tier": 2,
       "priority": 3,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Driver License",
         "Written Test"
@@ -378,7 +378,8 @@
       "outbound_links": [
         "https://www.dmv.ca.gov/portal/driver-education-and-safety/educational-materials/sample-driver-license-dl-knowledge-tests/"
       ],
-      "notes": "LA's Tehrangeles + Bay Area Iranian community."
+      "notes": "LA's Tehrangeles + Bay Area Iranian community.",
+      "drafted_at": "2026-07-06"
     },
     {
       "slug": "free-california-dmv-practice-test-punjabi",
