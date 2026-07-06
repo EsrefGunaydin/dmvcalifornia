@@ -97,16 +97,17 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
 
-        {/* Google Analytics — gtag.js doesn't need to fire before paint.
-            `lazyOnload` lets it run after the page is interactive without
-            adding to TBT or main-thread work. */}
+        {/* Google Analytics — afterInteractive ensures gtag is defined before
+            the GoogleAnalytics component's useEffect fires its first pageview.
+            lazyOnload (the prior setting) caused a race condition where the
+            manual pageview check ran before gtag loaded, dropping most hits. */}
         <Script
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         />
         <Script
           id="google-analytics"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];

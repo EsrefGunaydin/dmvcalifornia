@@ -19,11 +19,15 @@ function GoogleAnalyticsTracker({ GA_MEASUREMENT_ID }: { GA_MEASUREMENT_ID: stri
 
     const url = pathname + (searchParams?.toString() ? `?${searchParams.toString()}` : '');
 
-    // Send pageview with current URL
-    if (typeof window.gtag !== 'undefined') {
-      window.gtag('config', GA_MEASUREMENT_ID, {
-        page_path: url,
-      });
+    // gtag() is just dataLayer.push(arguments). With afterInteractive, the
+    // inline script defines window.gtag before this effect runs. The dataLayer
+    // fallback handles the rare case where script order is unexpected — gtag.js
+    // will process the queued event when it loads.
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', GA_MEASUREMENT_ID, { page_path: url });
+    } else {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(['config', GA_MEASUREMENT_ID, { page_path: url }]);
     }
   }, [pathname, searchParams, GA_MEASUREMENT_ID]);
 

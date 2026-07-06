@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef } from 'react';
 import Image from 'next/image';
 import { Check, X as XIcon } from 'lucide-react';
 import { Quiz, Question, QuizResult, ShuffledQuestion } from '@/types/quiz';
@@ -95,6 +95,32 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
       localStorage.setItem(`quiz-shuffle-${quiz.id}`, JSON.stringify(shuffled));
     }
   }, [quiz.id, quiz.questions]);
+
+  // Fire a virtual GA4 page_view for each question after the first one.
+  // Question 1 is covered by the base page view from GoogleAnalytics.
+  const quizPageViewReady = useRef(false);
+  useEffect(() => {
+    if (shuffledQuestions.length === 0) return;
+    if (!quizPageViewReady.current) {
+      quizPageViewReady.current = true;
+      return;
+    }
+    const path = `${window.location.pathname}/q/${currentQuestionIndex + 1}`;
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_path: path,
+        page_location: window.location.origin + path,
+        page_title: `Question ${currentQuestionIndex + 1} of ${shuffledQuestions.length}`,
+      });
+    } else {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(['event', 'page_view', {
+        page_path: path,
+        page_location: window.location.origin + path,
+        page_title: `Question ${currentQuestionIndex + 1} of ${shuffledQuestions.length}`,
+      }]);
+    }
+  }, [currentQuestionIndex, shuffledQuestions.length]);
 
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === shuffledQuestions.length - 1;
