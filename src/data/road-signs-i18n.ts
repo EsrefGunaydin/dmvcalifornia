@@ -35,7 +35,7 @@ export interface RoadSignLangConfig {
   badge: string;
   keepStudying: string;
   allTestsLabel: string;
-  labels: { answered: string; correct: string; pickPrompt: string; correctWord: string; answerWord: string };
+  labels: { answered: string; correct: string; pickPrompt: string; correctWord: string; answerWord: string; nextLabel: string; seeResultsLabel: string; restartLabel: string; yourScoreLabel: string };
   faq: { q: string; a: string }[];
   questions: TranslatedQuestion[];
 }
@@ -51,7 +51,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'Mira cada señal de tránsito real de California, elige lo que significa y obtén la respuesta con una breve explicación al instante.',
     badge: '38 señales reales · gratis',
     keepStudying: 'Sigue estudiando', allTestsLabel: 'Todos los exámenes de práctica',
-    labels: { answered: 'Respondidas', correct: 'correctas', pickPrompt: 'Elige una respuesta para ver el significado.', correctWord: '¡Correcto!', answerWord: 'Respuesta:' },
+    labels: { answered: 'Respondidas', correct: 'correctas', pickPrompt: 'Elige una respuesta para ver el significado.', correctWord: '¡Correcto!', answerWord: 'Respuesta:', nextLabel: 'Siguiente', seeResultsLabel: 'Ver resultados', restartLabel: 'Intentar de nuevo', yourScoreLabel: 'Tu puntuación' },
     faq: [
       { q: '¿Cuántas preguntas de señales hay en el examen del DMV de California?', a: 'Las señales y los semáforos representan aproximadamente una cuarta parte del examen escrito de 46 preguntas del DMV de California. Reconocer las señales de un vistazo es una de las formas más rápidas de subir tu puntaje.' },
       { q: '¿Cuáles son los tres tipos principales de señales de tránsito?', a: 'Señales reglamentarias (lo que debe o no debe hacer, como alto y límites de velocidad), señales de advertencia (rombos amarillos que alertan de peligros más adelante) y señales informativas (direcciones, distancias y servicios).' },
@@ -67,7 +67,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'Her gerçek Kaliforniya trafik tabelasına bakın, ne anlama geldiğini seçin ve anında cevabı ile kısa bir açıklamayı alın.',
     badge: '38 gerçek tabela görseli · ücretsiz',
     keepStudying: 'Çalışmaya devam edin', allTestsLabel: 'Tüm pratik testler',
-    labels: { answered: 'Yanıtlanan', correct: 'doğru', pickPrompt: 'Anlamı görmek için bir cevap seçin.', correctWord: 'Doğru!', answerWord: 'Cevap:' },
+    labels: { answered: 'Yanıtlanan', correct: 'doğru', pickPrompt: 'Anlamı görmek için bir cevap seçin.', correctWord: 'Doğru!', answerWord: 'Cevap:', nextLabel: 'İleri', seeResultsLabel: 'Sonuçları gör', restartLabel: 'Tekrar dene', yourScoreLabel: 'Puanın' },
     faq: [
       { q: 'Kaliforniya DMV testinde kaç tabela sorusu var?', a: 'Tabelalar ve sinyaller, 46 soruluk Kaliforniya DMV yazılı testinin yaklaşık dörtte birini oluşturur. Tabelaları görerek tanımak, puanınızı yükseltmenin en hızlı yollarından biridir.' },
       { q: 'Üç ana trafik tabelası türü nedir?', a: 'Düzenleyici tabelalar (dur ve hız sınırları gibi ne yapmanız veya yapmamanız gerektiği), uyarı tabelaları (ileride tehlikeleri bildiren sarı baklavalar) ve bilgi tabelaları (yönler, mesafeler ve hizmetler).' },
@@ -83,7 +83,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: '查看每个真实的加州交通标志，选择它的含义，立即获得答案和简短解释。',
     badge: '38 张真实标志图片 · 免费',
     keepStudying: '继续学习', allTestsLabel: '所有练习测试',
-    labels: { answered: '已答', correct: '正确', pickPrompt: '选择一个答案以查看含义。', correctWord: '正确！', answerWord: '答案：' },
+    labels: { answered: '已答', correct: '正确', pickPrompt: '选择一个答案以查看含义。', correctWord: '正确！', answerWord: '答案：', nextLabel: '下一题', seeResultsLabel: '查看结果', restartLabel: '再试一次', yourScoreLabel: '你的得分' },
     faq: [
       { q: '加州 DMV 考试有多少道路标题目？', a: '标志和信号约占加州 DMV 46 题笔试的四分之一。一眼认出标志是提高分数最快的方法之一。' },
       { q: '交通标志的三大类型是什么？', a: '管制标志（您必须或不得做什么，如停车和限速）、警告标志（提醒前方危险的黄色菱形）和指路标志（方向、距离和服务）。' },
@@ -99,7 +99,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'انظر إلى كل لافتة مرور حقيقية في كاليفورنيا، واختر معناها، واحصل على الإجابة مع شرح موجز فوراً.',
     badge: '38 صورة لافتة حقيقية · مجاني',
     keepStudying: 'واصل الدراسة', allTestsLabel: 'كل اختبارات التدريب',
-    labels: { answered: 'تمت الإجابة', correct: 'صحيحة', pickPrompt: 'اختر إجابة لرؤية المعنى.', correctWord: 'صحيح!', answerWord: 'الإجابة:' },
+    labels: { answered: 'تمت الإجابة', correct: 'صحيحة', pickPrompt: 'اختر إجابة لرؤية المعنى.', correctWord: 'صحيح!', answerWord: 'الإجابة:', nextLabel: 'التالي', seeResultsLabel: 'عرض النتائج', restartLabel: 'حاول مجدداً', yourScoreLabel: 'نتيجتك' },
     faq: [
       { q: 'كم عدد أسئلة اللافتات في اختبار DMV كاليفورنيا؟', a: 'تشكّل اللافتات والإشارات نحو ربع اختبار DMV كاليفورنيا الكتابي المكوّن من 46 سؤالاً. التعرّف على اللافتات بنظرة واحدة من أسرع الطرق لرفع درجتك.' },
       { q: 'ما هي الأنواع الثلاثة الرئيسية للافتات الطرق؟', a: 'اللافتات التنظيمية (ما يجب أو لا يجب فعله، مثل قف وحدود السرعة)، ولافتات التحذير (المعيّنات الصفراء التي تنبّه إلى مخاطر أمامك)، ولافتات الإرشاد (الاتجاهات والمسافات والخدمات).' },
@@ -115,7 +115,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'Նայեք Կալիֆոռնիայի յուրաքանչյուր իրական ճանապարհային նշանին, ընտրեք դրա նշանակությունը և անմիջապես ստացեք պատասխանը՝ կարճ բացատրությամբ։',
     badge: '38 իրական նշանի պատկեր · անվճար',
     keepStudying: 'Շարունակեք սովորել', allTestsLabel: 'Բոլոր պրակտիկ թեստերը',
-    labels: { answered: 'Պատասխանված', correct: 'ճիշտ', pickPrompt: 'Ընտրեք պատասխան՝ նշանակությունը տեսնելու համար։', correctWord: 'Ճիշտ է:', answerWord: 'Պատասխան․' },
+    labels: { answered: 'Պատասխանված', correct: 'ճիշտ', pickPrompt: 'Ընտրեք պատասխան՝ նշանակությունը տեսնելու համար։', correctWord: 'Ճիշտ է:', answerWord: 'Պատասխան․', nextLabel: 'Հաջորդ', seeResultsLabel: 'Տեսնել արդյունքները', restartLabel: 'Նորից փորձել', yourScoreLabel: 'Ձեր արդյունքը' },
     faq: [
       { q: 'Քանի՞ նշանի հարց կա Կալիֆոռնիայի DMV թեստում։', a: 'Նշաններն ու ազդանշանները կազմում են Կալիֆոռնիայի DMV-ի 46 հարցանոց գրավոր թեստի մոտավորապես մեկ քառորդը։ Նշանները տեսնելով ճանաչելը ձեր միավորը բարձրացնելու ամենաարագ ձևերից մեկն է։' },
       { q: 'Որո՞նք են ճանապարհային նշանների երեք հիմնական տեսակները։', a: 'Կարգավորող նշաններ (ինչ պետք է կամ չպետք է անեք, օրինակ՝ կանգ և արագության սահմանափակումներ), զգուշացնող նշաններ (դեղին շեղանկյուններ, որ զգուշացնում են առջևի վտանգների մասին) և ուղղորդող նշաններ (ուղղություններ, հեռավորություններ և ծառայություններ)։' },
@@ -131,7 +131,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'به هر تابلوی راهنمایی واقعی کالیفرنیا نگاه کنید، معنای آن را انتخاب کنید و فوراً پاسخ را همراه با توضیح کوتاه دریافت کنید.',
     badge: '۳۸ تصویر تابلوی واقعی · رایگان',
     keepStudying: 'به مطالعه ادامه دهید', allTestsLabel: 'همه آزمون‌های تمرینی',
-    labels: { answered: 'پاسخ‌داده‌شده', correct: 'درست', pickPrompt: 'برای دیدن معنا یک پاسخ انتخاب کنید.', correctWord: 'درست!', answerWord: 'پاسخ:' },
+    labels: { answered: 'پاسخ‌داده‌شده', correct: 'درست', pickPrompt: 'برای دیدن معنا یک پاسخ انتخاب کنید.', correctWord: 'درست!', answerWord: 'پاسخ:', nextLabel: 'بعدی', seeResultsLabel: 'مشاهده نتایج', restartLabel: 'دوباره امتحان کن', yourScoreLabel: 'نمره شما' },
     faq: [
       { q: 'در آزمون DMV کالیفرنیا چند سؤال تابلو وجود دارد؟', a: 'تابلوها و علائم حدود یک‌چهارم آزمون کتبی ۴۶ سؤالی DMV کالیفرنیا را تشکیل می‌دهند. تشخیص تابلوها با یک نگاه یکی از سریع‌ترین راه‌ها برای بالا بردن نمره شماست.' },
       { q: 'سه نوع اصلی تابلوهای راهنمایی کدام‌اند؟', a: 'تابلوهای انتظامی (آنچه باید یا نباید انجام دهید، مانند توقف و محدودیت سرعت)، تابلوهای هشدار (لوزی‌های زرد که درباره خطرات پیش رو هشدار می‌دهند) و تابلوهای راهنما (جهت‌ها، فاصله‌ها و خدمات).' },
@@ -147,7 +147,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'ਕੈਲੀਫੋਰਨੀਆ ਦੇ ਹਰ ਅਸਲ ਟ੍ਰੈਫਿਕ ਚਿੰਨ੍ਹ ਨੂੰ ਦੇਖੋ, ਚੁਣੋ ਕਿ ਇਸ ਦਾ ਕੀ ਮਤਲਬ ਹੈ, ਅਤੇ ਤੁਰੰਤ ਜਵਾਬ ਅਤੇ ਇੱਕ ਛੋਟੀ ਵਿਆਖਿਆ ਪ੍ਰਾਪਤ ਕਰੋ।',
     badge: '38 ਅਸਲ ਚਿੰਨ੍ਹ ਤਸਵੀਰਾਂ · ਮੁਫ਼ਤ',
     keepStudying: 'ਪੜ੍ਹਨਾ ਜਾਰੀ ਰੱਖੋ', allTestsLabel: 'ਸਾਰੇ ਅਭਿਆਸ ਟੈਸਟ',
-    labels: { answered: 'ਜਵਾਬ ਦਿੱਤੇ', correct: 'ਸਹੀ', pickPrompt: 'ਮਤਲਬ ਦੇਖਣ ਲਈ ਇੱਕ ਜਵਾਬ ਚੁਣੋ।', correctWord: 'ਸਹੀ!', answerWord: 'ਜਵਾਬ:' },
+    labels: { answered: 'ਜਵਾਬ ਦਿੱਤੇ', correct: 'ਸਹੀ', pickPrompt: 'ਮਤਲਬ ਦੇਖਣ ਲਈ ਇੱਕ ਜਵਾਬ ਚੁਣੋ।', correctWord: 'ਸਹੀ!', answerWord: 'ਜਵਾਬ:', nextLabel: 'ਅਗਲਾ', seeResultsLabel: 'ਨਤੀਜੇ ਦੇਖੋ', restartLabel: 'ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ', yourScoreLabel: 'ਤੁਹਾਡਾ ਸਕੋਰ' },
     faq: [
       { q: 'ਕੈਲੀਫੋਰਨੀਆ DMV ਟੈਸਟ ਵਿੱਚ ਕਿੰਨੇ ਚਿੰਨ੍ਹ ਸਵਾਲ ਹੁੰਦੇ ਹਨ?', a: 'ਚਿੰਨ੍ਹ ਅਤੇ ਸਿਗਨਲ ਕੈਲੀਫੋਰਨੀਆ DMV ਦੇ 46-ਸਵਾਲ ਲਿਖਤੀ ਟੈਸਟ ਦਾ ਲਗਭਗ ਚੌਥਾ ਹਿੱਸਾ ਹੁੰਦੇ ਹਨ। ਚਿੰਨ੍ਹਾਂ ਨੂੰ ਇੱਕ ਨਜ਼ਰ ਵਿੱਚ ਪਛਾਣਨਾ ਤੁਹਾਡਾ ਸਕੋਰ ਵਧਾਉਣ ਦੇ ਸਭ ਤੋਂ ਤੇਜ਼ ਤਰੀਕਿਆਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ।' },
       { q: 'ਸੜਕ ਚਿੰਨ੍ਹਾਂ ਦੀਆਂ ਤਿੰਨ ਮੁੱਖ ਕਿਸਮਾਂ ਕਿਹੜੀਆਂ ਹਨ?', a: 'ਨਿਯਮਕ ਚਿੰਨ੍ਹ (ਜੋ ਤੁਹਾਨੂੰ ਕਰਨਾ ਜਾਂ ਨਹੀਂ ਕਰਨਾ ਚਾਹੀਦਾ, ਜਿਵੇਂ ਰੁਕੋ ਅਤੇ ਰਫ਼ਤਾਰ ਸੀਮਾਵਾਂ), ਚੇਤਾਵਨੀ ਚਿੰਨ੍ਹ (ਪੀਲੇ ਹੀਰੇ ਜੋ ਅੱਗੇ ਖ਼ਤਰਿਆਂ ਦੀ ਚੇਤਾਵਨੀ ਦਿੰਦੇ ਹਨ), ਅਤੇ ਮਾਰਗਦਰਸ਼ਨ ਚਿੰਨ੍ਹ (ਦਿਸ਼ਾਵਾਂ, ਦੂਰੀਆਂ ਅਤੇ ਸੇਵਾਵਾਂ)।' },
@@ -163,7 +163,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'Смотрите на каждый реальный дорожный знак Калифорнии, выбирайте его значение и сразу получайте ответ с кратким пояснением.',
     badge: '38 реальных изображений знаков · бесплатно',
     keepStudying: 'Продолжайте учиться', allTestsLabel: 'Все пробные тесты',
-    labels: { answered: 'Отвечено', correct: 'верно', pickPrompt: 'Выберите ответ, чтобы увидеть значение.', correctWord: 'Верно!', answerWord: 'Ответ:' },
+    labels: { answered: 'Отвечено', correct: 'верно', pickPrompt: 'Выберите ответ, чтобы увидеть значение.', correctWord: 'Верно!', answerWord: 'Ответ:', nextLabel: 'Далее', seeResultsLabel: 'Посмотреть результат', restartLabel: 'Попробовать снова', yourScoreLabel: 'Ваш результат' },
     faq: [
       { q: 'Сколько вопросов о знаках в тесте DMV Калифорнии?', a: 'Знаки и сигналы составляют примерно четверть письменного теста DMV Калифорнии из 46 вопросов. Узнавать знаки с первого взгляда — один из самых быстрых способов поднять балл.' },
       { q: 'Какие три основных типа дорожных знаков?', a: 'Предписывающие знаки (что нужно или нельзя делать, например стоп и ограничения скорости), предупреждающие знаки (жёлтые ромбы, предупреждающие об опасности впереди) и информационные знаки (направления, расстояния и услуги).' },
@@ -179,7 +179,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'Tingnan ang bawat totoong tanda ng trapiko sa California, piliin ang ibig sabihin nito, at makakuha ng sagot at maikling paliwanag agad.',
     badge: '38 totoong larawan ng tanda · libre',
     keepStudying: 'Magpatuloy sa pag-aaral', allTestsLabel: 'Lahat ng practice test',
-    labels: { answered: 'Nasagot', correct: 'tama', pickPrompt: 'Pumili ng sagot para makita ang kahulugan.', correctWord: 'Tama!', answerWord: 'Sagot:' },
+    labels: { answered: 'Nasagot', correct: 'tama', pickPrompt: 'Pumili ng sagot para makita ang kahulugan.', correctWord: 'Tama!', answerWord: 'Sagot:', nextLabel: 'Susunod', seeResultsLabel: 'Tingnan ang mga resulta', restartLabel: 'Subukan ulit', yourScoreLabel: 'Iyong puntos' },
     faq: [
       { q: 'Ilang tanong tungkol sa tanda ang nasa California DMV test?', a: 'Ang mga tanda at signal ay humigit-kumulang isang-kapat ng 46-tanong na nakasulat na pagsusulit ng California DMV. Ang pagkilala sa mga tanda sa isang sulyap ay isa sa pinakamabilis na paraan para itaas ang iyong score.' },
       { q: 'Ano ang tatlong pangunahing uri ng tanda sa trapiko?', a: 'Regulatory signs (kung ano ang dapat o hindi dapat gawin, tulad ng stop at speed limit), warning signs (dilaw na diyamante na nagbababala ng panganib sa unahan), at guide signs (mga direksyon, distansya, at serbisyo).' },
@@ -195,7 +195,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'Nhìn từng biển báo giao thông thật của California, chọn ý nghĩa của nó và nhận đáp án cùng lời giải thích ngắn ngay lập tức.',
     badge: '38 hình ảnh biển báo thật · miễn phí',
     keepStudying: 'Tiếp tục học', allTestsLabel: 'Tất cả bài thi thử',
-    labels: { answered: 'Đã trả lời', correct: 'đúng', pickPrompt: 'Chọn một đáp án để xem ý nghĩa.', correctWord: 'Chính xác!', answerWord: 'Đáp án:' },
+    labels: { answered: 'Đã trả lời', correct: 'đúng', pickPrompt: 'Chọn một đáp án để xem ý nghĩa.', correctWord: 'Chính xác!', answerWord: 'Đáp án:', nextLabel: 'Tiếp theo', seeResultsLabel: 'Xem kết quả', restartLabel: 'Thử lại', yourScoreLabel: 'Điểm của bạn' },
     faq: [
       { q: 'Có bao nhiêu câu hỏi biển báo trong bài thi DMV California?', a: 'Biển báo và tín hiệu chiếm khoảng một phần tư bài thi viết 46 câu của DMV California. Nhận ra biển báo bằng mắt là một trong những cách nhanh nhất để nâng điểm.' },
       { q: 'Ba loại biển báo giao thông chính là gì?', a: 'Biển báo điều lệ (điều bạn phải hoặc không được làm, như dừng và giới hạn tốc độ), biển báo cảnh báo (hình thoi vàng báo nguy hiểm phía trước) và biển chỉ dẫn (hướng, khoảng cách và dịch vụ).' },
@@ -211,7 +211,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: '캘리포니아의 모든 실제 교통 표지판을 보고, 그 의미를 선택하고, 즉시 답과 간단한 설명을 받으세요.',
     badge: '실제 표지판 이미지 38개 · 무료',
     keepStudying: '계속 공부하기', allTestsLabel: '모든 연습 시험',
-    labels: { answered: '답변함', correct: '정답', pickPrompt: '의미를 보려면 답을 선택하세요.', correctWord: '정답입니다!', answerWord: '답:' },
+    labels: { answered: '답변함', correct: '정답', pickPrompt: '의미를 보려면 답을 선택하세요.', correctWord: '정답입니다!', answerWord: '답:', nextLabel: '다음', seeResultsLabel: '결과 보기', restartLabel: '다시 시도', yourScoreLabel: '내 점수' },
     faq: [
       { q: '캘리포니아 DMV 시험에는 표지판 문제가 몇 개 있나요?', a: '표지판과 신호는 캘리포니아 DMV의 46문항 필기 시험의 약 4분의 1을 차지합니다. 표지판을 한눈에 알아보는 것은 점수를 올리는 가장 빠른 방법 중 하나입니다.' },
       { q: '교통 표지판의 세 가지 주요 유형은 무엇인가요?', a: '규제 표지판(정지나 속도 제한처럼 해야 하거나 하지 말아야 할 것), 경고 표지판(앞의 위험을 알리는 노란 마름모), 안내 표지판(방향, 거리, 서비스)입니다.' },
@@ -227,7 +227,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
     intro: 'कैलिफोर्निया के हर असली ट्रैफिक चिह्न को देखें, उसका अर्थ चुनें, और तुरंत उत्तर तथा एक संक्षिप्त स्पष्टीकरण पाएं।',
     badge: '38 असली चिह्न तस्वीरें · मुफ़्त',
     keepStudying: 'पढ़ाई जारी रखें', allTestsLabel: 'सभी अभ्यास टेस्ट',
-    labels: { answered: 'उत्तर दिए', correct: 'सही', pickPrompt: 'अर्थ देखने के लिए एक उत्तर चुनें।', correctWord: 'सही!', answerWord: 'उत्तर:' },
+    labels: { answered: 'उत्तर दिए', correct: 'सही', pickPrompt: 'अर्थ देखने के लिए एक उत्तर चुनें।', correctWord: 'सही!', answerWord: 'उत्तर:', nextLabel: 'अगला', seeResultsLabel: 'परिणाम देखें', restartLabel: 'फिर कोशिश करें', yourScoreLabel: 'आपका स्कोर' },
     faq: [
       { q: 'कैलिफोर्निया DMV टेस्ट में चिह्न के कितने प्रश्न होते हैं?', a: 'चिह्न और सिग्नल कैलिफोर्निया DMV की 46-प्रश्नों वाली लिखित परीक्षा का लगभग एक-चौथाई हिस्सा होते हैं। चिह्नों को एक नज़र में पहचानना आपका स्कोर बढ़ाने के सबसे तेज़ तरीकों में से एक है।' },
       { q: 'ट्रैफिक चिह्नों के तीन मुख्य प्रकार कौन से हैं?', a: 'नियामक चिह्न (क्या करना या न करना चाहिए, जैसे रुकें और गति सीमा), चेतावनी चिह्न (पीले हीरे जो आगे के खतरों की चेतावनी देते हैं), और मार्गदर्शक चिह्न (दिशाएं, दूरियां और सेवाएं)।' },

@@ -114,7 +114,12 @@ export default function RoadSignsTestPage() {
         {/* Interactive sign quiz */}
         <section className="pb-12">
           <div className="container mx-auto px-4">
-            <SignQuiz questions={questions} />
+            <SignQuiz
+              questions={questions}
+              quizId="road-signs-en"
+              quizTitle="California DMV Road Signs Test"
+              nextQuiz={{ href: '/practice-test/california-dmv-practice-test-2026', title: 'Full Practice Test' }}
+            />
           </div>
         </section>
 

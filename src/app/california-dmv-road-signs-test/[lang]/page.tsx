@@ -94,7 +94,14 @@ export default async function LocalizedRoadSignsPage({
 
         <section className="py-12">
           <div className="container mx-auto px-4">
-            <SignQuiz questions={questions} labels={cfg.labels} dir={cfg.dir} />
+            <SignQuiz
+                questions={questions}
+                labels={cfg.labels}
+                dir={cfg.dir}
+                quizId={`road-signs-${lang}`}
+                quizTitle={cfg.h1}
+                nextQuiz={{ href: '/practice-test', title: cfg.allTestsLabel }}
+              />
           </div>
         </section>
 
