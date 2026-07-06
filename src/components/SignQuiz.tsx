@@ -1,11 +1,9 @@
 'use client';
 
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { Check, X, ChevronRight, RotateCcw, Clock, Trophy } from 'lucide-react';
+import { Check, X, Clock, RotateCcw } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import QuizAd from '@/components/QuizAd';
-import Leaderboard from '@/components/quiz/Leaderboard';
-import type { LeaderboardEntry } from '@/types/quiz';
 
 export interface SignQuestion {
   id: number;
@@ -34,13 +32,12 @@ const DEFAULT_LABELS: SignQuizLabels = {
   pickPrompt: 'Pick an answer to reveal the meaning.',
   correctWord: 'Correct!',
   answerWord: 'Answer:',
-  nextLabel: 'Next',
-  seeResultsLabel: 'See results',
+  nextLabel: 'Next Question',
+  seeResultsLabel: 'Finish Quiz',
   restartLabel: 'Try again',
   yourScoreLabel: 'Your score',
 };
 
-const LETTERS = ['A', 'B', 'C', 'D'];
 const PASSING_PCT = 83;
 const AUTO_ADVANCE_SECONDS = 10;
 
@@ -55,37 +52,33 @@ export default function SignQuiz({
   labels,
   dir = 'ltr',
   quizId = 'road-signs-en',
-  quizTitle = 'California DMV Road Signs Test',
   nextQuiz,
 }: {
   questions: SignQuestion[];
   labels?: Partial<SignQuizLabels>;
   dir?: 'ltr' | 'rtl';
   quizId?: string;
-  quizTitle?: string;
   nextQuiz?: { href: string; title: string };
 }) {
   const t: SignQuizLabels = { ...DEFAULT_LABELS, ...labels };
   const router = useRouter();
 
+  // Quiz state
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [picks, setPicks] = useState<Record<number, number>>({});
+  const [picks, setPicks] = useState<Record<number, number>>({});   // final submitted picks
+  const [pending, setPending] = useState<number | undefined>();     // selected but not yet submitted
+  const [showExplanation, setShowExplanation] = useState(false);
   const [done, setDone] = useState(false);
 
-  // Live elapsed timer
+  // Timer
   const [elapsed, setElapsed] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const startTimer = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     timerRef.current = setInterval(() => setElapsed((e) => e + 1), 1000);
   }, []);
-  useEffect(() => {
-    startTimer();
-    return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [startTimer]);
-  useEffect(() => {
-    if (done && timerRef.current) clearInterval(timerRef.current);
-  }, [done]);
+  useEffect(() => { startTimer(); return () => { if (timerRef.current) clearInterval(timerRef.current); }; }, [startTimer]);
+  useEffect(() => { if (done && timerRef.current) clearInterval(timerRef.current); }, [done]);
 
   // GA virtual pageview per question
   const firstMount = useRef(true);
@@ -93,11 +86,7 @@ export default function SignQuiz({
     if (firstMount.current) { firstMount.current = false; return; }
     const path = `${window.location.pathname}/q/${currentIndex + 1}`;
     if (typeof window.gtag === 'function') {
-      window.gtag('event', 'page_view', {
-        page_path: path,
-        page_location: window.location.origin + path,
-        page_title: `Sign ${currentIndex + 1} of ${questions.length}`,
-      });
+      window.gtag('event', 'page_view', { page_path: path, page_location: window.location.origin + path, page_title: `Sign ${currentIndex + 1} of ${questions.length}` });
     } else {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push(['event', 'page_view', { page_path: path }]);
@@ -108,7 +97,7 @@ export default function SignQuiz({
   const pct = done ? Math.round((correctCount / questions.length) * 100) : 0;
   const passed = done && pct >= PASSING_PCT;
 
-  // Leaderboard modal state
+  // Leaderboard submission modal
   const [showModal, setShowModal] = useState(false);
   const [lbName, setLbName] = useState('');
   const [lbEmail, setLbEmail] = useState('');
@@ -116,25 +105,7 @@ export default function SignQuiz({
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
-  // Live leaderboard entries (fetched client-side on results screen)
-  const [lbEntries, setLbEntries] = useState<LeaderboardEntry[]>([]);
-  const fetchLeaderboard = useCallback(async () => {
-    try {
-      const res = await fetch(`/api/leaderboard?quizId=${encodeURIComponent(quizId)}`, { cache: 'no-store' });
-      if (!res.ok) return;
-      const data = await res.json();
-      if (Array.isArray(data.leaderboard)) setLbEntries(data.leaderboard);
-    } catch { /* ignore */ }
-  }, [quizId]);
-  useEffect(() => {
-    if (!done) return;
-    fetchLeaderboard();
-    const onUpdate = () => fetchLeaderboard();
-    window.addEventListener('leaderboard:updated', onUpdate);
-    return () => window.removeEventListener('leaderboard:updated', onUpdate);
-  }, [done, fetchLeaderboard]);
-
-  // Auto-advance countdown after pass + modal close
+  // Auto-advance countdown
   const [autoAdvance, setAutoAdvance] = useState(true);
   const [countdown, setCountdown] = useState(AUTO_ADVANCE_SECONDS);
   const countingDown = Boolean(nextQuiz && passed && !showModal && autoAdvance);
@@ -149,11 +120,6 @@ export default function SignQuiz({
     return () => clearTimeout(id);
   }, [countingDown, countdown, nextQuiz, router]);
 
-  const handleDone = () => {
-    setDone(true);
-    setShowModal(true);
-  };
-
   const handleSubmitLeaderboard = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!lbName.trim()) { setSubmitError('Please enter your name'); return; }
@@ -163,14 +129,7 @@ export default function SignQuiz({
       const res = await fetch('/api/leaderboard', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          quizId,
-          name: lbName.trim(),
-          email: lbEmail.trim() || '',
-          percentage: pct,
-          points: correctCount * 10,
-          completedAt: new Date().toISOString(),
-        }),
+        body: JSON.stringify({ quizId, name: lbName.trim(), email: lbEmail.trim() || '', percentage: pct, points: correctCount * 10, completedAt: new Date().toISOString() }),
       });
       if (!res.ok) throw new Error('Failed');
       setSubmitted(true);
@@ -185,9 +144,11 @@ export default function SignQuiz({
 
   const handleRestart = () => {
     setPicks({});
+    setPending(undefined);
     setCurrentIndex(0);
     setDone(false);
     setElapsed(0);
+    setShowExplanation(false);
     setShowModal(false);
     setSubmitted(false);
     setLbName('');
@@ -199,23 +160,18 @@ export default function SignQuiz({
     startTimer();
   };
 
-  // ── Results screen ────────────────────────────────────────────────────────
+  // ── Results screen ──────────────────────────────────────────────────────
   if (done) {
     return (
       <div className="max-w-3xl mx-auto">
-        {/* Leaderboard submission modal */}
+        {/* Leaderboard modal */}
         {showModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
             <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-md">
               <div className="text-center mb-6">
-                <div className={`text-5xl font-extrabold mb-1 ${passed ? 'text-green-600' : 'text-red-500'}`}>
-                  {pct}%
-                </div>
-                <p className="text-gray-600 text-sm">
-                  {correctCount}/{questions.length} correct · {formatTime(elapsed)}
-                </p>
+                <div className={`text-5xl font-extrabold mb-1 ${passed ? 'text-green-600' : 'text-red-500'}`}>{pct}%</div>
+                <p className="text-gray-600 text-sm">{correctCount}/{questions.length} correct · {formatTime(elapsed)}</p>
               </div>
-
               {submitted ? (
                 <div className="text-center py-4">
                   <Check className="w-10 h-10 text-green-500 mx-auto mb-2" />
@@ -223,39 +179,16 @@ export default function SignQuiz({
                 </div>
               ) : (
                 <>
-                  <p className="text-center text-sm font-medium text-gray-700 mb-4">
-                    Add your score to the leaderboard
-                  </p>
+                  <p className="text-center text-sm font-medium text-gray-700 mb-4">Add your score to the leaderboard</p>
                   <form onSubmit={handleSubmitLeaderboard} className="space-y-3">
-                    <input
-                      type="text"
-                      placeholder="Your name *"
-                      value={lbName}
-                      onChange={(e) => setLbName(e.target.value)}
-                      maxLength={50}
-                      className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none"
-                    />
-                    <input
-                      type="email"
-                      placeholder="Email (optional)"
-                      value={lbEmail}
-                      onChange={(e) => setLbEmail(e.target.value)}
-                      className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none"
-                    />
+                    <input type="text" placeholder="Your name *" value={lbName} onChange={(e) => setLbName(e.target.value)} maxLength={50} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+                    <input type="email" placeholder="Email (optional)" value={lbEmail} onChange={(e) => setLbEmail(e.target.value)} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
                     {submitError && <p className="text-red-500 text-xs">{submitError}</p>}
                     <div className="flex gap-3 pt-1">
-                      <button
-                        type="submit"
-                        disabled={submitting}
-                        className="flex-1 bg-primary text-white py-2.5 rounded-lg font-semibold text-sm hover:bg-primary-600 transition-colors disabled:opacity-60"
-                      >
+                      <button type="submit" disabled={submitting} className="flex-1 bg-primary text-white py-2.5 rounded-lg font-semibold text-sm hover:bg-primary-600 transition-colors disabled:opacity-60">
                         {submitting ? 'Saving...' : 'Save score'}
                       </button>
-                      <button
-                        type="button"
-                        onClick={() => setShowModal(false)}
-                        className="flex-1 bg-gray-100 text-gray-700 py-2.5 rounded-lg font-semibold text-sm hover:bg-gray-200 transition-colors"
-                      >
+                      <button type="button" onClick={() => setShowModal(false)} className="flex-1 bg-gray-100 text-gray-700 py-2.5 rounded-lg font-semibold text-sm hover:bg-gray-200 transition-colors">
                         Skip
                       </button>
                     </div>
@@ -267,178 +200,225 @@ export default function SignQuiz({
         )}
 
         {/* Score card */}
-        <div className={`rounded-2xl p-8 text-center mb-8 ${passed ? 'bg-green-50 border-2 border-green-200' : 'bg-red-50 border-2 border-red-200'}`}>
-          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-1">
-            {t.yourScoreLabel}
-          </p>
-          <div className={`text-7xl font-extrabold mb-3 ${passed ? 'text-green-600' : 'text-red-500'}`}>
-            {pct}%
-          </div>
-          <p className="text-lg text-gray-600 mb-2">
-            {correctCount} / {questions.length} {t.correct}
-          </p>
-          <p className="text-sm text-gray-400 flex items-center justify-center gap-1">
-            <Clock className="w-3.5 h-3.5" /> {formatTime(elapsed)}
-          </p>
+        <div className={`bg-white rounded-lg shadow-lg p-8 text-center mb-6 ${passed ? 'border-t-4 border-green-500' : 'border-t-4 border-red-500'}`}>
+          <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-1">{t.yourScoreLabel}</p>
+          <div className={`text-7xl font-extrabold mb-3 ${passed ? 'text-green-600' : 'text-red-500'}`}>{pct}%</div>
+          <p className="text-lg text-gray-600 mb-2">{correctCount} / {questions.length} {t.correct}</p>
+          <p className="text-sm text-gray-400 flex items-center justify-center gap-1"><Clock className="w-3.5 h-3.5" /> {formatTime(elapsed)}</p>
         </div>
 
-        {/* Auto-advance banner (pass only) */}
+        {/* Auto-advance */}
         {countingDown && nextQuiz && (
           <div className="mb-6 bg-primary/5 border border-primary/20 rounded-xl px-5 py-4 flex items-center justify-between gap-4">
-            <p className="text-sm text-gray-700">
-              Next: <span className="font-semibold">{nextQuiz.title}</span> in {countdown}s
-            </p>
-            <button
-              onClick={() => setAutoAdvance(false)}
-              className="text-xs text-gray-500 hover:text-gray-700 underline flex-shrink-0"
-            >
-              Cancel
-            </button>
+            <p className="text-sm text-gray-700">Next: <span className="font-semibold">{nextQuiz.title}</span> in {countdown}s</p>
+            <button onClick={() => setAutoAdvance(false)} className="text-xs text-gray-500 hover:text-gray-700 underline flex-shrink-0">Cancel</button>
           </div>
         )}
 
         {/* Actions */}
-        <div className="flex flex-wrap gap-3 justify-center mb-10">
-          <button
-            onClick={handleRestart}
-            className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-600 transition-colors"
-          >
-            <RotateCcw className="w-4 h-4" />
-            {t.restartLabel}
+        <div className="flex flex-wrap gap-3 justify-center">
+          <button onClick={handleRestart} className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-600 transition-colors">
+            <RotateCcw className="w-4 h-4" /> {t.restartLabel}
           </button>
           {nextQuiz && (
-            <button
-              onClick={() => router.push(nextQuiz.href)}
-              className="inline-flex items-center gap-2 bg-gray-100 text-gray-800 px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition-colors"
-            >
-              {nextQuiz.title} <ChevronRight className="w-4 h-4" />
+            <button onClick={() => router.push(nextQuiz.href)} className="inline-flex items-center gap-2 bg-gray-100 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+              {nextQuiz.title} →
             </button>
           )}
-        </div>
-
-        {/* Leaderboard */}
-        <div>
-          <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2 mb-4">
-            <Trophy className="w-5 h-5 text-yellow-500" /> Leaderboard
-          </h2>
-          <Leaderboard entries={lbEntries} quizTitle={quizTitle} quizId={quizId} />
         </div>
       </div>
     );
   }
 
-  // ── Quiz card ─────────────────────────────────────────────────────────────
+  // ── Quiz card ───────────────────────────────────────────────────────────
   const q = questions[currentIndex];
-  const picked = picks[q.id];
-  const revealed = picked !== undefined;
+  const submittedPick = picks[q.id];
+  const hasSubmitted = submittedPick !== undefined;
+  const isCorrect = hasSubmitted && submittedPick === q.correctAnswer;
   const isLast = currentIndex === questions.length - 1;
+  const pctComplete = Math.round(((currentIndex + 1) / questions.length) * 100);
 
-  const handlePick = (oi: number) => {
-    if (revealed) return;
-    setPicks((p) => ({ ...p, [q.id]: oi }));
+  const handleSelect = (oi: number) => {
+    if (hasSubmitted) return;
+    setPending(oi);
+  };
+
+  const handleCheckAnswer = () => {
+    if (pending === undefined) return;
+    setPicks((p) => ({ ...p, [q.id]: pending }));
+    setPending(undefined);
+    setShowExplanation(true);
   };
 
   const handleNext = () => {
     if (isLast) {
-      handleDone();
+      setDone(true);
+      setShowModal(true);
     } else {
       setCurrentIndex((i) => i + 1);
+      setShowExplanation(false);
+      setPending(undefined);
     }
   };
 
+  const handlePrevious = () => {
+    if (currentIndex === 0) return;
+    setCurrentIndex((i) => i - 1);
+    setShowExplanation(picks[questions[currentIndex - 1].id] !== undefined);
+    setPending(undefined);
+  };
+
+  const jumpTo = (idx: number) => {
+    setCurrentIndex(idx);
+    setShowExplanation(picks[questions[idx].id] !== undefined);
+    setPending(undefined);
+  };
+
   return (
-    <div className="max-w-xl mx-auto">
-      {/* Progress + timer */}
-      <div className="mb-6 flex items-center gap-3">
-        <span className="text-sm font-medium text-gray-500 tabular-nums">
-          {currentIndex + 1}/{questions.length}
-        </span>
-        <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
-          <div
-            className="h-full bg-primary transition-all duration-300"
-            style={{ width: `${(currentIndex / questions.length) * 100}%` }}
-          />
+    <div className="max-w-3xl mx-auto">
+      {/* Progress bar */}
+      <div className="mb-6">
+        <div className="flex justify-between text-sm text-gray-600 mb-2">
+          <span>Question {currentIndex + 1} of {questions.length}</span>
+          <span className="flex items-center gap-2">
+            <Clock className="w-4 h-4" /> {formatTime(elapsed)}
+            <span className="ml-2">{pctComplete}% Complete</span>
+          </span>
         </div>
-        <span className="text-sm font-medium text-gray-400 tabular-nums flex items-center gap-1">
-          <Clock className="w-3.5 h-3.5" /> {formatTime(elapsed)}
-        </span>
+        <div className="w-full bg-gray-200 rounded-full h-2">
+          <div className="bg-primary h-2 rounded-full transition-all duration-300" style={{ width: `${pctComplete}%` }} />
+        </div>
       </div>
 
-      {/* Card */}
-      <div className="bg-white rounded-2xl border-2 border-gray-200 shadow-sm overflow-hidden">
-        <div className="flex items-center gap-3 px-6 pt-6">
-          <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white font-extrabold flex-shrink-0">
-            {currentIndex + 1}
-          </span>
-          <h2 className="text-lg md:text-xl font-bold text-gray-900">
-            {q.question || 'What does this sign mean?'}
-          </h2>
+      {/* Question card */}
+      <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 mb-6">
+        {/* Sign image */}
+        <div className="flex justify-center mb-6">
+          <img src={q.image} alt={`Road sign — question ${currentIndex + 1}`} className="max-h-48 w-auto object-contain" />
         </div>
 
-        <div className="flex justify-center py-6">
-          <img
-            src={q.image}
-            alt={`California DMV road sign — question ${currentIndex + 1}`}
-            className="max-h-48 w-auto object-contain"
-          />
-        </div>
+        {/* Question text */}
+        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6" dir={dir}>
+          {q.question || 'What does this sign mean?'}
+        </h2>
 
-        <div className="px-6 pb-4 space-y-3">
+        {/* Answer options */}
+        <div className="space-y-3 mb-6">
           {q.options.map((opt, oi) => {
-            const isCorrect = oi === q.correctAnswer;
-            const isPicked = picked === oi;
-            let cls = 'border-gray-200 bg-white hover:border-primary/50 hover:bg-primary/5 cursor-pointer';
-            if (revealed) {
-              if (isCorrect) cls = 'border-green-500 bg-green-50 cursor-default';
-              else if (isPicked) cls = 'border-red-400 bg-red-50 cursor-default';
-              else cls = 'border-gray-200 bg-white opacity-60 cursor-default';
+            const isSubmittedCorrect = hasSubmitted && oi === q.correctAnswer;
+            const isSubmittedWrong = hasSubmitted && oi === submittedPick && oi !== q.correctAnswer;
+            const isSubmittedOther = hasSubmitted && oi !== q.correctAnswer && oi !== submittedPick;
+            const isPending = !hasSubmitted && oi === pending;
+
+            let borderCls = 'border-gray-200 hover:border-primary/50 hover:bg-gray-50';
+            let circleCls = 'border-gray-300';
+            if (hasSubmitted) {
+              if (isSubmittedCorrect) { borderCls = 'border-green-500 bg-green-50'; circleCls = 'border-green-500 bg-green-500'; }
+              else if (isSubmittedWrong) { borderCls = 'border-red-500 bg-red-50'; circleCls = 'border-red-500 bg-red-500'; }
+              else if (isSubmittedOther) { borderCls = 'border-gray-200 bg-gray-50'; circleCls = 'border-gray-300'; }
+            } else if (isPending) {
+              borderCls = 'border-primary bg-primary/5';
+              circleCls = 'border-primary bg-primary';
             }
+
             return (
               <button
                 key={oi}
                 type="button"
-                onClick={() => handlePick(oi)}
-                disabled={revealed}
-                className={`w-full text-left flex items-start gap-3 rounded-xl border-2 px-4 py-3 transition-all ${cls}`}
+                onClick={() => handleSelect(oi)}
+                disabled={hasSubmitted}
+                className={`w-full text-left p-4 rounded-lg border-2 transition-all ${borderCls} ${hasSubmitted ? 'cursor-not-allowed' : 'cursor-pointer'}`}
               >
-                <span className="font-bold text-gray-500 mt-0.5">{LETTERS[oi]}.</span>
-                <span className="flex-1 text-gray-900" dir={dir}>{opt}</span>
-                {revealed && isCorrect && <Check className="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />}
-                {revealed && isPicked && !isCorrect && <X className="w-4 h-4 text-red-500 flex-shrink-0 mt-0.5" />}
+                <div className="flex items-start gap-3">
+                  <div className={`flex-shrink-0 w-6 h-6 rounded-full border-2 flex items-center justify-center ${circleCls}`}>
+                    {hasSubmitted && (isSubmittedCorrect || isSubmittedWrong) && (
+                      <span className="text-white">
+                        {isSubmittedCorrect ? <Check className="w-3.5 h-3.5" /> : <X className="w-3.5 h-3.5" />}
+                      </span>
+                    )}
+                    {!hasSubmitted && isPending && <Check className="w-3.5 h-3.5 text-white" />}
+                  </div>
+                  <span className="text-gray-900" dir={dir}>{opt}</span>
+                </div>
               </button>
             );
           })}
         </div>
 
-        {!revealed ? (
-          <p className="px-6 pb-6 -mt-1 text-sm text-gray-400">{t.pickPrompt}</p>
-        ) : (
-          <>
-            <div className="mx-6 mb-4 rounded-xl bg-gray-50 border border-gray-200 p-4" dir={dir}>
-              <span className="font-bold text-gray-900">
-                {picked === q.correctAnswer ? `${t.correctWord} ` : `${t.answerWord} `}
-                <span className="text-green-700">{q.options[q.correctAnswer]}</span>
+        {/* Explanation */}
+        {showExplanation && (
+          <div className={`p-4 rounded-lg mb-6 ${isCorrect ? 'bg-green-50 border border-green-200' : 'bg-red-50 border border-red-200'}`} dir={dir}>
+            <div className="flex items-start gap-3">
+              <span className={isCorrect ? 'text-green-600' : 'text-red-600'}>
+                {isCorrect ? <Check className="w-5 h-5" /> : <X className="w-5 h-5" />}
               </span>
-              {q.explanation && (
-                <p className="text-gray-700 mt-1 leading-relaxed">{q.explanation}</p>
-              )}
+              <div>
+                <p className={`font-bold mb-1 ${isCorrect ? 'text-green-900' : 'text-red-900'}`}>
+                  {isCorrect ? t.correctWord : `${t.answerWord} ${q.options[q.correctAnswer]}`}
+                </p>
+                {q.explanation && <p className="text-gray-700 text-sm">{q.explanation}</p>}
+              </div>
             </div>
-
-            <div className="mx-6">
-              <QuizAd currentQuestionIndex={currentIndex} refreshEvery={3} />
-            </div>
-
-            <div className="px-6 pb-6">
-              <button
-                onClick={handleNext}
-                className="w-full bg-primary text-white py-3 rounded-xl font-bold text-lg hover:bg-primary-600 transition-colors flex items-center justify-center gap-2"
-              >
-                {isLast ? t.seeResultsLabel : t.nextLabel}
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
-          </>
+          </div>
         )}
+
+        {/* Action buttons */}
+        <div className="flex flex-col sm:flex-row gap-3">
+          <button
+            onClick={handlePrevious}
+            disabled={currentIndex === 0}
+            className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Previous
+          </button>
+
+          {!hasSubmitted && pending !== undefined && (
+            <button onClick={handleCheckAnswer} className="flex-1 px-6 py-3 bg-gray-600 text-white rounded-lg font-medium hover:bg-gray-700 transition-colors">
+              Check Answer
+            </button>
+          )}
+
+          {showExplanation && (
+            <button onClick={handleNext} className="flex-1 px-6 py-3 bg-primary text-white rounded-lg font-medium hover:bg-primary-600 transition-colors">
+              {isLast ? t.seeResultsLabel : t.nextLabel}
+            </button>
+          )}
+
+          {!hasSubmitted && pending === undefined && (
+            <button disabled className="flex-1 px-6 py-3 bg-gray-300 text-gray-500 rounded-lg font-medium cursor-not-allowed">
+              Select an answer
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* Ad below card */}
+      <QuizAd currentQuestionIndex={currentIndex} refreshEvery={3} />
+
+      {/* Question navigation grid */}
+      <div className="bg-white rounded-lg shadow p-4 mt-4">
+        <h3 className="text-sm font-semibold text-gray-700 mb-3">Questions</h3>
+        <div className="flex flex-wrap gap-2">
+          {questions.map((sq, idx) => {
+            const isAnswered = picks[sq.id] !== undefined;
+            const isCurrent = idx === currentIndex;
+            return (
+              <button
+                key={`qn-${idx}`}
+                onClick={() => jumpTo(idx)}
+                className={`w-10 h-10 rounded-lg font-medium transition-colors ${
+                  isCurrent
+                    ? 'bg-primary text-white'
+                    : isAnswered
+                    ? 'bg-primary/20 text-primary hover:bg-primary/30'
+                    : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                }`}
+              >
+                {idx + 1}
+              </button>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -6,12 +6,16 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import SignQuiz from '@/components/SignQuiz';
 import LanguagePills from '@/components/LanguagePills';
+import Leaderboard from '@/components/quiz/Leaderboard';
+import AppPromotion from '@/components/AppPromotion';
 import {
   ROAD_SIGN_LANG_CODES,
   getRoadSignLang,
   getSignQuestions,
   type RoadSignLang,
 } from '@/data/road-signs-i18n';
+import { getMongoClient } from '@/lib/mongodb';
+import type { LeaderboardEntry } from '@/types/quiz';
 
 const SITE = 'https://dmvcalifornia.us';
 const BASE_PATH = '/california-dmv-road-signs-test';
@@ -47,6 +51,30 @@ export async function generateMetadata({
   };
 }
 
+async function fetchLeaderboard(quizId: string): Promise<LeaderboardEntry[]> {
+  try {
+    if (!process.env.MONGODB_URI) return [];
+    const client = await getMongoClient();
+    const db = client.db('dmvcalifornia');
+    const entries = await db.collection('leaderboard')
+      .find({ quizId })
+      .sort({ percentage: -1, completedAt: 1 })
+      .toArray();
+    return entries.map((e: any) => ({
+      id: e._id.toString(),
+      quizId: e.quizId,
+      date: e.date,
+      name: e.name,
+      email: e.email || '',
+      points: e.points,
+      percentage: e.percentage,
+      completedAt: e.completedAt,
+    }));
+  } catch {
+    return [];
+  }
+}
+
 export default async function LocalizedRoadSignsPage({
   params,
 }: {
@@ -58,6 +86,8 @@ export default async function LocalizedRoadSignsPage({
 
   const questions = getSignQuestions(lang as RoadSignLang);
   const allTestsLabel = cfg.allTestsLabel;
+  const quizId = `road-signs-${lang}`;
+  const leaderboard = await fetchLeaderboard(quizId);
 
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -92,16 +122,30 @@ export default async function LocalizedRoadSignsPage({
           </div>
         </section>
 
-        <section className="py-12">
+        <section className="py-10">
           <div className="container mx-auto px-4">
-            <SignQuiz
-                questions={questions}
-                labels={cfg.labels}
-                dir={cfg.dir}
-                quizId={`road-signs-${lang}`}
-                quizTitle={cfg.h1}
-                nextQuiz={{ href: '/practice-test', title: cfg.allTestsLabel }}
-              />
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6">
+                {/* Quiz */}
+                <div>
+                  <SignQuiz
+                    questions={questions}
+                    labels={cfg.labels}
+                    dir={cfg.dir}
+                    quizId={quizId}
+                    nextQuiz={{ href: '/practice-test', title: allTestsLabel }}
+                  />
+                </div>
+
+                {/* Sidebar */}
+                <div className="lg:col-span-1">
+                  <div className="sticky top-24 space-y-4">
+                    <Leaderboard entries={leaderboard} quizTitle={cfg.h1} quizId={quizId} limit={10} />
+                    <AppPromotion variant="sidebar" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

@@ -5,10 +5,16 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import SignQuiz, { type SignQuestion } from '@/components/SignQuiz';
 import LanguagePills from '@/components/LanguagePills';
+import Leaderboard from '@/components/quiz/Leaderboard';
+import AppPromotion from '@/components/AppPromotion';
 import signData from '@/data/road-signs-test.json';
 import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
+import { getMongoClient } from '@/lib/mongodb';
+import type { LeaderboardEntry } from '@/types/quiz';
 
 const questions = signData.questions as SignQuestion[];
+const QUIZ_ID = 'road-signs-en';
+const QUIZ_TITLE = 'California DMV Road Signs Test';
 
 const SITE = 'https://dmvcalifornia.us';
 const BASE_PATH = '/california-dmv-road-signs-test';
@@ -61,7 +67,33 @@ const FAQ = [
   },
 ];
 
-export default function RoadSignsTestPage() {
+async function fetchLeaderboard(): Promise<LeaderboardEntry[]> {
+  try {
+    if (!process.env.MONGODB_URI) return [];
+    const client = await getMongoClient();
+    const db = client.db('dmvcalifornia');
+    const entries = await db.collection('leaderboard')
+      .find({ quizId: QUIZ_ID })
+      .sort({ percentage: -1, completedAt: 1 })
+      .toArray();
+    return entries.map((e: any) => ({
+      id: e._id.toString(),
+      quizId: e.quizId,
+      date: e.date,
+      name: e.name,
+      email: e.email || '',
+      points: e.points,
+      percentage: e.percentage,
+      completedAt: e.completedAt,
+    }));
+  } catch {
+    return [];
+  }
+}
+
+export default async function RoadSignsTestPage() {
+  const leaderboard = await fetchLeaderboard();
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -97,29 +129,29 @@ export default function RoadSignsTestPage() {
           </div>
         </section>
 
-        {/* Intro */}
+        {/* Quiz + sidebar */}
         <section className="py-10">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto prose prose-lg">
-              <p className="text-gray-700 leading-relaxed">
-                Road signs and signals are about <strong>a quarter of the California DMV written
-                test</strong> — and they&apos;re the easiest points to lock in, because you either
-                recognize the sign or you don&apos;t. This test shows you the <strong>actual signs</strong>{' '}
-                (regulatory, warning, and guide) so you learn them by sight.
-              </p>
-            </div>
-          </div>
-        </section>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-6">
+                {/* Quiz */}
+                <div>
+                  <SignQuiz
+                    questions={questions}
+                    quizId={QUIZ_ID}
+                    nextQuiz={{ href: '/practice-test/california-dmv-practice-test-2026', title: 'Full Practice Test' }}
+                  />
+                </div>
 
-        {/* Interactive sign quiz */}
-        <section className="pb-12">
-          <div className="container mx-auto px-4">
-            <SignQuiz
-              questions={questions}
-              quizId="road-signs-en"
-              quizTitle="California DMV Road Signs Test"
-              nextQuiz={{ href: '/practice-test/california-dmv-practice-test-2026', title: 'Full Practice Test' }}
-            />
+                {/* Sidebar */}
+                <div className="lg:col-span-1">
+                  <div className="sticky top-24 space-y-4">
+                    <Leaderboard entries={leaderboard} quizTitle={QUIZ_TITLE} quizId={QUIZ_ID} limit={10} />
+                    <AppPromotion variant="sidebar" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
