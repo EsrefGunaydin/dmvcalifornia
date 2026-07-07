@@ -6,7 +6,9 @@ import CookieBanner from '@/components/CookieBanner';
 import SignQuiz, { type SignQuestion } from '@/components/SignQuiz';
 import LanguagePills from '@/components/LanguagePills';
 import Leaderboard from '@/components/quiz/Leaderboard';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import AppPromotion from '@/components/AppPromotion';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import signData from '@/data/road-signs-test.json';
 import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
 import { getMongoClient } from '@/lib/mongodb';
@@ -148,6 +150,7 @@ export default async function RoadSignsTestPage() {
                   <div className="sticky top-24 space-y-4">
                     <Leaderboard entries={leaderboard} quizTitle={QUIZ_TITLE} quizId={QUIZ_ID} limit={10} />
                     <AppPromotion variant="sidebar" />
+                    <QuizViewTracker quizId={QUIZ_ID} baseViews={getBaseViews(QUIZ_ID)} />
                   </div>
                 </div>
               </div>

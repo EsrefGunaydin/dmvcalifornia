@@ -7,7 +7,9 @@ import CookieBanner from '@/components/CookieBanner';
 import SignQuiz from '@/components/SignQuiz';
 import LanguagePills from '@/components/LanguagePills';
 import Leaderboard from '@/components/quiz/Leaderboard';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import AppPromotion from '@/components/AppPromotion';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import {
   ROAD_SIGN_LANG_CODES,
   getRoadSignLang,
@@ -142,6 +144,7 @@ export default async function LocalizedRoadSignsPage({
                   <div className="sticky top-24 space-y-4">
                     <Leaderboard entries={leaderboard} quizTitle={cfg.h1} quizId={quizId} limit={10} />
                     <AppPromotion variant="sidebar" />
+                    <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
                   </div>
                 </div>
               </div>
