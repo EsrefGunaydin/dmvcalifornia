@@ -54,7 +54,7 @@ export default function DMVordleScoreboard({ quizId, dayIndex, gameState, attemp
 
   const fetchScores = async () => {
     try {
-      const res = await fetch(`/api/leaderboard?quizId=${encodeURIComponent(quizId)}`);
+      const res = await fetch(`/api/leaderboard?quizId=${encodeURIComponent(quizId)}`, { cache: 'no-store' });
       if (!res.ok) return;
       const data = await res.json();
       const entries: ScoreEntry[] = (data.entries ?? []).map((e: { name: string; points: number }) => ({
@@ -93,8 +93,15 @@ export default function DMVordleScoreboard({ quizId, dayIndex, gameState, attemp
         }),
       });
       localStorage.setItem(`dmvordle-submitted-${quizId}`, '1');
+      // Optimistic insert so the entry shows immediately
+      setScores((prev) => {
+        const entry: ScoreEntry = { name: name.trim(), points: attempts };
+        const next = [...prev, entry].sort((a, b) => a.points - b.points);
+        return next;
+      });
       setSubmitState('done');
-      fetchScores();
+      // Refetch after a short delay to get the authoritative server order
+      setTimeout(fetchScores, 800);
     } catch {
       setSubmitState('idle');
     }
