@@ -43,11 +43,12 @@ export async function POST(request: NextRequest) {
     .project({ email: 1 })
     .toArray();
 
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const seen = new Set<string>();
   const allEmails: string[] = [];
   for (const e of entries) {
     const lower = (e.email as string).toLowerCase().trim();
-    if (lower && !seen.has(lower)) {
+    if (lower && !seen.has(lower) && EMAIL_RE.test(lower)) {
       seen.add(lower);
       allEmails.push(e.email as string);
     }
@@ -90,8 +91,14 @@ export async function POST(request: NextRequest) {
 
     try {
       const result = await resend.batch.send(messages);
-      const data = result.data as { id: string }[] | null;
-      sent += data?.length ?? chunk.length;
+      if (result.error) {
+        failed += chunk.length;
+        errors.push(`chunk ${i}-${i + chunk.length}: ${result.error.message}`);
+        console.error('Newsletter batch error:', result.error);
+      } else {
+        const data = (result.data as unknown as { id: string }[] | null);
+        sent += data?.length ?? chunk.length;
+      }
     } catch (err: any) {
       failed += chunk.length;
       errors.push(`chunk ${i}-${i + chunk.length}: ${err?.message}`);
