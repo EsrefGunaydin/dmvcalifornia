@@ -18,14 +18,18 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'NEWSLETTER_SECRET not configured' }, { status: 500 });
   }
 
-  let body: NewsletterOptions & { batchSize?: number; offset?: number; dryRun?: boolean };
+  let body: NewsletterOptions & { batchSize?: number; offset?: number; dryRun?: boolean; [k: string]: unknown };
   try {
     body = await request.json();
   } catch {
     return NextResponse.json({ error: 'Invalid JSON body' }, { status: 400 });
   }
 
-  const { subject, previewText, posts, updates, batchSize = 90, offset = 0, dryRun = false } = body;
+  const {
+    subject, previewText, posts, updates,
+    youtubeId, youtubeTitle, quizQuestions, quizAnswerUrl,
+    batchSize = 90, offset = 0, dryRun = false,
+  } = body;
 
   if (!subject || !posts?.length) {
     return NextResponse.json({ error: 'subject and posts are required' }, { status: 400 });
@@ -69,7 +73,10 @@ export async function POST(request: NextRequest) {
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const opts: NewsletterOptions = { subject, previewText: previewText || subject, posts, updates: updates || [] };
+  const opts: NewsletterOptions = {
+    subject, previewText: previewText || subject, posts, updates: updates || [],
+    youtubeId, youtubeTitle, quizQuestions, quizAnswerUrl,
+  };
 
   let sent = 0;
   let failed = 0;
