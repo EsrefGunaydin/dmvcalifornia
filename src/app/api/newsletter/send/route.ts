@@ -4,8 +4,9 @@ import { getMongoClient } from '@/lib/mongodb';
 import { FROM_ADDRESS } from '@/lib/newsletter';
 import { buildNewsletterHtml, type NewsletterOptions } from '@/lib/newsletterTemplate';
 
+const RESEND_BATCH_LIMIT = 100;
+
 export async function POST(request: NextRequest) {
-  // Admin-only — reuse the existing push admin token
   const auth = request.headers.get('authorization');
   if (!auth || auth !== `Bearer ${process.env.PUSH_ADMIN_TOKEN}`) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
@@ -18,7 +19,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'NEWSLETTER_SECRET not configured' }, { status: 500 });
   }
 
-  let body: NewsletterOptions & { batchSize?: number; offset?: number; dryRun?: boolean; [k: string]: unknown };
+  let body: NewsletterOptions & { offset?: number; dryRun?: boolean; [k: string]: unknown };
   try {
     body = await request.json();
   } catch {
@@ -28,14 +29,13 @@ export async function POST(request: NextRequest) {
   const {
     subject, previewText, posts, updates,
     youtubeId, youtubeTitle, quizQuestions, quizAnswerUrl,
-    batchSize = 90, offset = 0, dryRun = false,
+    offset = 0, dryRun = false,
   } = body;
 
   if (!subject || !posts?.length) {
     return NextResponse.json({ error: 'subject and posts are required' }, { status: 400 });
   }
 
-  // Fetch opted-in emails from MongoDB
   const client = await getMongoClient();
   const col = client.db('dmvcalifornia').collection('leaderboard');
   const entries = await col
@@ -43,33 +43,29 @@ export async function POST(request: NextRequest) {
     .project({ email: 1 })
     .toArray();
 
-  // Deduplicate by email (case-insensitive)
   const seen = new Set<string>();
-  const emails: string[] = [];
+  const allEmails: string[] = [];
   for (const e of entries) {
     const lower = (e.email as string).toLowerCase().trim();
     if (lower && !seen.has(lower)) {
       seen.add(lower);
-      emails.push(e.email as string);
+      allEmails.push(e.email as string);
     }
   }
 
-  const batch = emails.slice(offset, offset + batchSize);
-  const remaining = emails.length - offset - batch.length;
+  const emails = allEmails.slice(offset);
 
   if (dryRun) {
     return NextResponse.json({
       dryRun: true,
-      totalOptedIn: emails.length,
-      batchStart: offset,
-      batchSize: batch.length,
-      remaining,
-      sample: batch.slice(0, 3),
+      totalOptedIn: allEmails.length,
+      willSend: emails.length,
+      sample: emails.slice(0, 3),
     });
   }
 
-  if (batch.length === 0) {
-    return NextResponse.json({ sent: 0, remaining: 0, message: 'No emails in this batch' });
+  if (emails.length === 0) {
+    return NextResponse.json({ sent: 0, message: 'No emails to send' });
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
@@ -82,30 +78,31 @@ export async function POST(request: NextRequest) {
   let failed = 0;
   const errors: string[] = [];
 
-  // Send individually so each gets a personalised unsubscribe token
-  for (const email of batch) {
+  // Chunk into groups of 100 and use Resend batch API
+  for (let i = 0; i < emails.length; i += RESEND_BATCH_LIMIT) {
+    const chunk = emails.slice(i, i + RESEND_BATCH_LIMIT);
+    const messages = chunk.map((email) => ({
+      from: FROM_ADDRESS,
+      to: email,
+      subject,
+      html: buildNewsletterHtml(opts, email),
+    }));
+
     try {
-      await resend.emails.send({
-        from: FROM_ADDRESS,
-        to: email,
-        subject,
-        html: buildNewsletterHtml(opts, email),
-      });
-      sent++;
+      const result = await resend.batch.send(messages);
+      const data = result.data as { id: string }[] | null;
+      sent += data?.length ?? chunk.length;
     } catch (err: any) {
-      failed++;
-      errors.push(`${email}: ${err?.message}`);
-      console.error('Newsletter send error:', email, err?.message);
+      failed += chunk.length;
+      errors.push(`chunk ${i}-${i + chunk.length}: ${err?.message}`);
+      console.error('Newsletter batch error:', err?.message);
     }
   }
 
   return NextResponse.json({
     sent,
     failed,
-    totalOptedIn: emails.length,
-    batchStart: offset,
-    remaining,
-    nextOffset: offset + batch.length,
+    totalOptedIn: allEmails.length,
     ...(errors.length ? { errors } : {}),
   });
 }
