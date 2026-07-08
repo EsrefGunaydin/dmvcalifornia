@@ -72,7 +72,6 @@ export type LeaderboardEntry = {
   quizId: string | number;
   date: string;
   name: string;
-  email: string;
   points: number;
   percentage: number;
   completedAt: string;

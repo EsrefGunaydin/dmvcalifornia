@@ -3,12 +3,6 @@ import { getMongoClient } from '@/lib/mongodb';
 
 export async function POST(request: NextRequest) {
   try {
-    // Check if MongoDB URI is configured
-    console.log('Environment check:', {
-      hasMongoUri: !!process.env.MONGODB_URI,
-      nodeEnv: process.env.NODE_ENV
-    });
-
     if (!process.env.MONGODB_URI) {
       console.error('MONGODB_URI environment variable is not set');
       return NextResponse.json(
@@ -116,13 +110,14 @@ export async function GET(request: NextRequest) {
       .sort({ percentage: -1, completedAt: 1 })
       .toArray();
 
-    // Convert MongoDB documents to plain objects
+    // Convert MongoDB documents to plain objects.
+    // Email is intentionally omitted — it is PII and callers only need the
+    // public fields (name, score, date) to render the leaderboard.
     const leaderboard = entries.map((entry: any) => ({
       id: entry._id.toString(),
       quizId: entry.quizId,
       date: entry.date,
       name: entry.name,
-      email: entry.email || '',
       points: entry.points,
       percentage: entry.percentage,
       completedAt: entry.completedAt,
@@ -133,13 +128,9 @@ export async function GET(request: NextRequest) {
       { status: 200 }
     );
   } catch (error: any) {
-    console.error('Leaderboard API error:', error);
+    console.error('Leaderboard GET error:', error?.message);
     return NextResponse.json(
-      {
-        error: 'Failed to fetch leaderboard',
-        details: error?.message || 'Unknown error',
-        hasMongoUri: !!process.env.MONGODB_URI
-      },
+      { error: 'Failed to fetch leaderboard' },
       { status: 500 }
     );
   }

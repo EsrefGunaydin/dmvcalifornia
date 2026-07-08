@@ -54,13 +54,19 @@ export async function POST(request: NextRequest) {
       )
     );
 
+    let staleRemoved = 0;
     if (staleIds.length > 0) {
-      await col.deleteMany({ _id: { $in: staleIds as any } });
+      try {
+        const del = await col.deleteMany({ _id: { $in: staleIds as any } });
+        staleRemoved = del.deletedCount;
+      } catch (delErr) {
+        console.error('push/send: failed to delete stale subscriptions:', delErr);
+      }
     }
 
     const sent = results.filter((r) => r.status === 'fulfilled').length;
     const failed = results.filter((r) => r.status === 'rejected').length;
-    return NextResponse.json({ sent, failed, staleRemoved: staleIds.length });
+    return NextResponse.json({ sent, failed, staleRemoved });
   } catch (err) {
     console.error('push/send error:', err);
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
