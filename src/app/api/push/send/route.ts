@@ -27,10 +27,15 @@ export async function POST(request: NextRequest) {
   let payload: { title?: string; body?: string; url?: string } = {};
   try { payload = await request.json(); } catch { /* use defaults */ }
 
+  // Only allow relative paths or explicitly allowlisted origin to prevent
+  // push notifications being used as a phishing vector.
+  const rawUrl = typeof payload.url === 'string' ? payload.url : '';
+  const safeUrl = rawUrl.startsWith('/') ? rawUrl : '/practice-test';
+
   const notification = JSON.stringify({
-    title: payload.title || 'DMV California',
-    body: payload.body || 'Practice today to keep your streak alive.',
-    url: payload.url || '/practice-test',
+    title: typeof payload.title === 'string' ? payload.title.slice(0, 100) : 'DMV California',
+    body: typeof payload.body === 'string' ? payload.body.slice(0, 200) : 'Practice today to keep your streak alive.',
+    url: safeUrl,
     tag: 'streak-reminder',
   });
 

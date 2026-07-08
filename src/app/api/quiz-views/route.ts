@@ -12,14 +12,14 @@ export async function GET(request: NextRequest) {
     }
 
     const { searchParams } = new URL(request.url);
-    const quizId = searchParams.get('quizId');
+    const quizId = String(searchParams.get('quizId') || '');
     if (!quizId) {
       return NextResponse.json({ error: 'quizId is required' }, { status: 400 });
     }
 
     const client = await getMongoClient();
     const collection = client.db('dmvcalifornia').collection('quiz_views');
-    const record = await collection.findOne({ quizId });
+    const record = await collection.findOne({ quizId: { $eq: quizId } });
 
     return NextResponse.json({ quizId, views: record?.views || 0 }, { status: 200 });
   } catch (error) {
@@ -35,7 +35,8 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Database configuration error' }, { status: 500 });
     }
 
-    const { quizId } = await request.json();
+    const body = await request.json();
+    const quizId = typeof body?.quizId === 'string' ? body.quizId : '';
     if (!quizId) {
       return NextResponse.json({ error: 'quizId is required' }, { status: 400 });
     }
@@ -44,7 +45,7 @@ export async function POST(request: NextRequest) {
     const collection = client.db('dmvcalifornia').collection('quiz_views');
 
     const result = await collection.findOneAndUpdate(
-      { quizId },
+      { quizId: { $eq: quizId } },
       {
         $inc: { views: 1 },
         $set: { lastViewed: new Date() },

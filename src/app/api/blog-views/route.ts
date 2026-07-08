@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     }
 
     const { searchParams } = new URL(request.url);
-    const slug = searchParams.get('slug');
+    const slug = String(searchParams.get('slug') || '');
 
     if (!slug) {
       return NextResponse.json(
@@ -26,8 +26,8 @@ export async function GET(request: NextRequest) {
     const db = client.db('dmvcalifornia');
     const collection = db.collection('blog_views');
 
-    // Find the view count for this slug
-    const viewRecord = await collection.findOne({ slug });
+    // $eq prevents NoSQL operator injection via crafted slug values
+    const viewRecord = await collection.findOne({ slug: { $eq: slug } });
 
     return NextResponse.json(
       {
@@ -57,7 +57,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { slug } = body;
+    const slug = typeof body?.slug === 'string' ? body.slug : '';
 
     if (!slug) {
       return NextResponse.json(
@@ -70,11 +70,8 @@ export async function POST(request: NextRequest) {
     const db = client.db('dmvcalifornia');
     const collection = db.collection('blog_views');
 
-    // Increment view count using upsert
-    // If document doesn't exist, create it with views: 1
-    // If it exists, increment views by 1
     const result = await collection.findOneAndUpdate(
-      { slug },
+      { slug: { $eq: slug } },
       {
         $inc: { views: 1 },
         $set: { lastViewed: new Date() },
