@@ -57,7 +57,7 @@ export default function DMVordleScoreboard({ quizId, dayIndex, gameState, attemp
       const res = await fetch(`/api/leaderboard?quizId=${encodeURIComponent(quizId)}`, { cache: 'no-store' });
       if (!res.ok) return;
       const data = await res.json();
-      const entries: ScoreEntry[] = (data.entries ?? []).map((e: { name: string; points: number }) => ({
+      const entries: ScoreEntry[] = (data.leaderboard ?? data.entries ?? []).map((e: { name: string; points: number }) => ({
         name: e.name,
         points: e.points,
       }));
