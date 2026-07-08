@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Navigation } from 'lucide-react';
+import { Gamepad2 } from 'lucide-react';
 
 const STUDY_TOOLS: { href: string; label: string }[] = [
   { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
@@ -68,8 +68,9 @@ export default function Header() {
               </div>
             </div>
 
-            <Link href="/intersection" className="text-gray-700 hover:text-primary font-medium transition-colors">
-              Intersection <Navigation className="w-4 h-4 inline ml-1" />
+            <Link href="/games" className="flex items-center gap-1.5 text-gray-700 hover:text-primary font-medium transition-colors">
+              Games <Gamepad2 className="w-4 h-4" />
+              <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Blog
@@ -153,11 +154,12 @@ export default function Header() {
               </div>
 
               <Link
-                href="/intersection"
-                className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                href="/games"
+                className="flex items-center gap-1.5 text-gray-700 hover:text-primary font-medium transition-colors py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Intersection <Navigation className="w-4 h-4 inline ml-1" />
+                Games <Gamepad2 className="w-4 h-4" />
+                <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
               </Link>
               <Link
                 href="/blog"

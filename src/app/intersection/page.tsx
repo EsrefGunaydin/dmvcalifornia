@@ -1,10 +1,8 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { Navigation } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
-import AppPromotion from '@/components/AppPromotion';
 import IntersectionLevelGrid from '@/components/games/IntersectionLevelGrid';
 import levelsData from '@/data/intersection-levels.json';
 import { IntersectionLevel } from '@/types/intersection';
@@ -38,33 +36,23 @@ export default function IntersectionLandingPage() {
       <Header />
 
       {/* Hero */}
-      <section className="bg-gradient-to-r from-primary to-primary-600 text-white py-14">
+      <section className="bg-gradient-to-r from-primary to-primary-600 text-white py-7">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
-              <Navigation className="w-10 h-10 text-white" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Intersection — The Right-of-Way Puzzle
+          <div className="max-w-2xl mx-auto text-center">
+            <h1 className="text-2xl md:text-3xl font-bold mb-2">
+              Right-of-Way Puzzle
             </h1>
-            <p className="text-xl text-white/90 mb-6">
-              Right-of-way is the topic drivers miss most on the DMV test. Stop memorizing rules —
-              start <em>solving</em> intersections. Tap each road user in the order they may legally
-              proceed. Get it wrong and you'll see exactly which rule caused the crash.
+            <p className="text-white/85 text-sm mb-4">
+              Tap each road user in the order they may legally proceed. Get it wrong and you&apos;ll see exactly which California rule caused the crash.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center text-sm">
-              <span className="bg-white/20 px-4 py-2 rounded-full">10 levels</span>
-              <span className="bg-white/20 px-4 py-2 rounded-full">Real California rules</span>
-              <span className="bg-white/20 px-4 py-2 rounded-full">Free · no signup</span>
+            <div className="flex flex-wrap gap-2 justify-center text-xs">
+              <span className="bg-white/20 px-3 py-1.5 rounded-full">10 levels</span>
+              <span className="bg-white/20 px-3 py-1.5 rounded-full">Real California rules</span>
+              <span className="bg-white/20 px-3 py-1.5 rounded-full">Free · no signup</span>
             </div>
           </div>
         </div>
       </section>
-
-      {/* App promo banner */}
-      <div className="container mx-auto px-4 pt-6">
-        <AppPromotion variant="banner" />
-      </div>
 
       {/* Level grid */}
       <section className="container mx-auto px-4 py-10">
