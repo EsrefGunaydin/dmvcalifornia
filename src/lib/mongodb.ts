@@ -1,12 +1,19 @@
 import { MongoClient } from 'mongodb';
 
-const options = {};
+const options = {
+  serverSelectionTimeoutMS: 5000,
+  connectTimeoutMS: 5000,
+  socketTimeoutMS: 10000,
+  maxPoolSize: 10,
+};
 
 declare global {
   var _mongoClientPromise: Promise<MongoClient> | undefined;
 }
 
-// Lazy initialization - creates connection only when actually called
+// Lazy initialization - creates connection only when actually called.
+// Uses a module-level global so the connection is reused across invocations
+// within the same Vercel container (warm starts), and across HMR reloads in dev.
 export async function getMongoClient(): Promise<MongoClient> {
   // Support both the manual MONGODB_URI and the Vercel-managed DMVCALI_MONGODB_URI
   const uri = process.env.MONGODB_URI || process.env.DMVCALI_MONGODB_URI;
@@ -15,20 +22,11 @@ export async function getMongoClient(): Promise<MongoClient> {
     throw new Error('No MongoDB URI found. Set MONGODB_URI or DMVCALI_MONGODB_URI.');
   }
 
-  if (process.env.NODE_ENV === 'development') {
-    // In development mode, use a global variable so that the value
-    // is preserved across module reloads caused by HMR (Hot Module Replacement).
-    if (!global._mongoClientPromise) {
-      const client = new MongoClient(uri, options);
-      global._mongoClientPromise = client.connect();
-    }
-    return global._mongoClientPromise;
-  } else {
-    // In production mode, create a new client for each invocation
-    // Vercel serverless functions are stateless
+  if (!global._mongoClientPromise) {
     const client = new MongoClient(uri, options);
-    return client.connect();
+    global._mongoClientPromise = client.connect();
   }
+  return global._mongoClientPromise;
 }
 
 // For backwards compatibility - but callers should migrate to getMongoClient()

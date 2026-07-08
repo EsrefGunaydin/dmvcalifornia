@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { quizId, name, email, percentage, points, completedAt } = body;
+    const { quizId, name, email, percentage, points, completedAt, idempotencyKey } = body;
 
     // Validate input
     if (!quizId || !name || percentage === undefined || points === undefined) {
@@ -35,24 +35,35 @@ export async function POST(request: NextRequest) {
 
     // Create new leaderboard entry
     const newEntry = {
-      quizId: quizId, // Store the quizId as-is (can be string or number)
-      date: new Date().toISOString().split('T')[0], // YYYY-MM-DD format
-      name: name.trim().substring(0, 50), // Limit name length
+      quizId: quizId,
+      date: new Date().toISOString().split('T')[0],
+      name: name.trim().substring(0, 50),
       email: email ? email.trim().substring(0, 100) : '',
       points: Math.round(points),
-      percentage: Math.round(percentage * 10) / 10, // Round to 1 decimal
+      percentage: Math.round(percentage * 10) / 10,
       completedAt: completedAt || new Date().toISOString(),
       createdAt: new Date(),
+      ...(idempotencyKey ? { idempotencyKey: String(idempotencyKey).substring(0, 64) } : {}),
     };
 
-    // Insert into MongoDB
-    const result = await collection.insertOne(newEntry);
+    // Use idempotency key to make retries safe: $setOnInsert is a no-op if the
+    // document already exists, so a retry with the same key won't create duplicates.
+    const filter = idempotencyKey
+      ? { idempotencyKey: String(idempotencyKey).substring(0, 64) }
+      : { quizId, name: newEntry.name, completedAt: newEntry.completedAt };
+
+    const result = await collection.updateOne(
+      filter,
+      { $setOnInsert: newEntry },
+      { upsert: true }
+    );
 
     return NextResponse.json(
       {
         success: true,
-        entry: { ...newEntry, _id: result.insertedId },
-        message: 'Score added to leaderboard successfully!',
+        message: result.upsertedCount > 0
+          ? 'Score added to leaderboard successfully!'
+          : 'Score already recorded.',
       },
       { status: 201 }
     );

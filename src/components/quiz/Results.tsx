@@ -3,7 +3,7 @@
 import { Quiz, QuizResult } from '@/types/quiz';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { PartyPopper, FileText, Smartphone, Flame } from 'lucide-react';
 import { useStreak } from '@/hooks/useStreak';
@@ -82,6 +82,9 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
+  // Generated once per submission attempt; reused on retry so the server
+  // can deduplicate with $setOnInsert and prevent double entries.
+  const idempotencyKeyRef = useRef<string | null>(null);
 
   const handleSubmitToLeaderboard = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -89,6 +92,10 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
     if (!name.trim()) {
       setError('Please enter your name');
       return;
+    }
+
+    if (!idempotencyKeyRef.current) {
+      idempotencyKeyRef.current = crypto.randomUUID();
     }
 
     setSubmitting(true);
@@ -105,8 +112,9 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
           name: name.trim(),
           email: email.trim() || '',
           percentage: percentage,
-          points: correctAnswers * 10, // 10 points per correct answer
+          points: correctAnswers * 10,
           completedAt: result.completedAt,
+          idempotencyKey: idempotencyKeyRef.current,
         }),
       });
 

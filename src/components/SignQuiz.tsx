@@ -104,6 +104,7 @@ export default function SignQuiz({
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState('');
+  const lbIdempotencyKey = useRef<string | null>(null);
 
   // Auto-advance countdown
   const [autoAdvance, setAutoAdvance] = useState(true);
@@ -123,13 +124,14 @@ export default function SignQuiz({
   const handleSubmitLeaderboard = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!lbName.trim()) { setSubmitError('Please enter your name'); return; }
+    if (!lbIdempotencyKey.current) lbIdempotencyKey.current = crypto.randomUUID();
     setSubmitting(true);
     setSubmitError('');
     try {
       const res = await fetch('/api/leaderboard', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ quizId, name: lbName.trim(), email: lbEmail.trim() || '', percentage: pct, points: correctCount * 10, completedAt: new Date().toISOString() }),
+        body: JSON.stringify({ quizId, name: lbName.trim(), email: lbEmail.trim() || '', percentage: pct, points: correctCount * 10, completedAt: new Date().toISOString(), idempotencyKey: lbIdempotencyKey.current }),
       });
       if (!res.ok) throw new Error('Failed');
       setSubmitted(true);
@@ -154,6 +156,7 @@ export default function SignQuiz({
     setLbName('');
     setLbEmail('');
     setSubmitError('');
+    lbIdempotencyKey.current = null;
     setAutoAdvance(true);
     setCountdown(AUTO_ADVANCE_SECONDS);
     firstMount.current = true;
