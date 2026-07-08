@@ -79,6 +79,7 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [marketingConsent, setMarketingConsent] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
@@ -111,6 +112,7 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
           quizId: quizId,
           name: name.trim(),
           email: email.trim() || '',
+          marketingConsent: email.trim() ? marketingConsent : false,
           percentage: percentage,
           points: correctAnswers * 10,
           completedAt: result.completedAt,
@@ -221,6 +223,20 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
                   maxLength={100}
                   disabled={submitting}
                 />
+                {email.trim() && (
+                  <label className="flex items-start gap-2 mt-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={marketingConsent}
+                      onChange={(e) => setMarketingConsent(e.target.checked)}
+                      disabled={submitting}
+                      className="mt-0.5 accent-primary"
+                    />
+                    <span className="text-xs text-gray-500">
+                      Send me DMV study tips and practice reminders
+                    </span>
+                  </label>
+                )}
               </div>
 
               {error && (

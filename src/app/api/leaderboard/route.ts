@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { quizId, name, email, percentage, points, completedAt, idempotencyKey } = body;
+    const { quizId, name, email, marketingConsent, percentage, points, completedAt, idempotencyKey } = body;
 
     // Validate input
     if (!quizId || !name || percentage === undefined || points === undefined) {
@@ -27,12 +27,16 @@ export async function POST(request: NextRequest) {
     const db = client.db('dmvcalifornia');
     const collection = db.collection('leaderboard');
 
+    const trimmedEmail = email ? email.trim().substring(0, 100) : '';
+
     // Create new leaderboard entry
     const newEntry = {
       quizId: quizId,
       date: new Date().toISOString().split('T')[0],
       name: name.trim().substring(0, 50),
-      email: email ? email.trim().substring(0, 100) : '',
+      email: trimmedEmail,
+      // Only store consent when an email was actually provided
+      marketingConsent: trimmedEmail ? marketingConsent === true : false,
       points: Math.round(points),
       percentage: Math.round(percentage * 10) / 10,
       completedAt: completedAt || new Date().toISOString(),

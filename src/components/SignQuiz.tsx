@@ -101,6 +101,7 @@ export default function SignQuiz({
   const [showModal, setShowModal] = useState(false);
   const [lbName, setLbName] = useState('');
   const [lbEmail, setLbEmail] = useState('');
+  const [lbConsent, setLbConsent] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState('');
@@ -131,7 +132,7 @@ export default function SignQuiz({
       const res = await fetch('/api/leaderboard', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ quizId, name: lbName.trim(), email: lbEmail.trim() || '', percentage: pct, points: correctCount * 10, completedAt: new Date().toISOString(), idempotencyKey: lbIdempotencyKey.current }),
+        body: JSON.stringify({ quizId, name: lbName.trim(), email: lbEmail.trim() || '', marketingConsent: lbEmail.trim() ? lbConsent : false, percentage: pct, points: correctCount * 10, completedAt: new Date().toISOString(), idempotencyKey: lbIdempotencyKey.current }),
       });
       if (!res.ok) throw new Error('Failed');
       setSubmitted(true);
@@ -155,6 +156,7 @@ export default function SignQuiz({
     setSubmitted(false);
     setLbName('');
     setLbEmail('');
+    setLbConsent(false);
     setSubmitError('');
     lbIdempotencyKey.current = null;
     setAutoAdvance(true);
@@ -185,7 +187,15 @@ export default function SignQuiz({
                   <p className="text-center text-sm font-medium text-gray-700 mb-4">Add your score to the leaderboard</p>
                   <form onSubmit={handleSubmitLeaderboard} className="space-y-3">
                     <input type="text" placeholder="Your name *" value={lbName} onChange={(e) => setLbName(e.target.value)} maxLength={50} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
-                    <input type="email" placeholder="Email (optional)" value={lbEmail} onChange={(e) => setLbEmail(e.target.value)} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+                    <div>
+                      <input type="email" placeholder="Email (optional)" value={lbEmail} onChange={(e) => setLbEmail(e.target.value)} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+                      {lbEmail.trim() && (
+                        <label className="flex items-start gap-2 mt-2 cursor-pointer">
+                          <input type="checkbox" checked={lbConsent} onChange={(e) => setLbConsent(e.target.checked)} className="mt-0.5 accent-primary" />
+                          <span className="text-xs text-gray-500">Send me DMV study tips and practice reminders</span>
+                        </label>
+                      )}
+                    </div>
                     {submitError && <p className="text-red-500 text-xs">{submitError}</p>}
                     <div className="flex gap-3 pt-1">
                       <button type="submit" disabled={submitting} className="flex-1 bg-primary text-white py-2.5 rounded-lg font-semibold text-sm hover:bg-primary-600 transition-colors disabled:opacity-60">
