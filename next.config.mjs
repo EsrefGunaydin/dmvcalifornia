@@ -30,6 +30,19 @@ const nextConfig = {
         destination: '/practice-test/california-dmv-sample-questions',
         permanent: true,
       },
+      // Spanish practice test consolidation: exam 1 and exam 2 are literal
+      // subsets (questions 1-20 and 21-40) of the merged 40-question test,
+      // which already holds the strongest ranking signal.
+      {
+        source: '/practice-test/examen-dmv-espanol-1',
+        destination: '/practice-test/dmv-spanish-practice-test-1',
+        permanent: true,
+      },
+      {
+        source: '/practice-test/examen-dmv-espanol-2',
+        destination: '/practice-test/dmv-spanish-practice-test-1',
+        permanent: true,
+      },
       {
         source: '/nuevas-leyes-de-transito-california-2025',
         destination: '/nuevas-leyes-de-transito-california-2026',

@@ -91,7 +91,7 @@ export default function SpanishTestPage() {
 
               {/* Practice Test 1 */}
               <Link
-                href="/practice-test/examen-dmv-espanol-1"
+                href="/practice-test/dmv-spanish-practice-test-1"
                 className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group border-2 border-blue-100"
               >
                 <div className="p-6">
@@ -133,7 +133,7 @@ export default function SpanishTestPage() {
 
               {/* Practice Test 2 */}
               <Link
-                href="/practice-test/examen-dmv-espanol-2"
+                href="/practice-test/dmv-spanish-practice-test-1"
                 className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow overflow-hidden group border-2 border-blue-100"
               >
                 <div className="p-6">

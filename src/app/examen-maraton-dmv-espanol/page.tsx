@@ -130,8 +130,6 @@ export default function SpanishMarathonPage() {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-xl font-bold text-gray-900 mb-5">Más formas de practicar en español</h2>
               <div className="flex flex-wrap items-center justify-center gap-3">
-                <Link href="/practice-test/examen-dmv-espanol-1" className="bg-gray-100 text-gray-800 px-5 py-2.5 rounded-lg font-medium hover:bg-gray-200 transition-colors">Examen Español 1</Link>
-                <Link href="/practice-test/examen-dmv-espanol-2" className="bg-gray-100 text-gray-800 px-5 py-2.5 rounded-lg font-medium hover:bg-gray-200 transition-colors">Examen Español 2</Link>
                 <Link href="/practice-test/examen-dmv-espanol-3" className="bg-gray-100 text-gray-800 px-5 py-2.5 rounded-lg font-medium hover:bg-gray-200 transition-colors">Examen Español 3</Link>
                 <Link href="/practice-test/examen-dmv-espanol-4" className="bg-gray-100 text-gray-800 px-5 py-2.5 rounded-lg font-medium hover:bg-gray-200 transition-colors">Examen Español 4</Link>
                 <Link href="/practice-test/dmv-spanish-practice-test-1" className="bg-gray-100 text-gray-800 px-5 py-2.5 rounded-lg font-medium hover:bg-gray-200 transition-colors">Simulador Completo 1</Link>
