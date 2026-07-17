@@ -61,9 +61,12 @@ export default async function TurkishSignTestPage() {
             <p className="text-xl mb-2">
               California DMV Turkish Traffic Sign Test
             </p>
-            <p className="text-lg opacity-90">
+            <p className="text-lg opacity-90 mb-5">
               24 soruluk görsel trafik işareti tanıma testi • 24 image-based traffic sign questions
             </p>
+            <div className="flex justify-center">
+              <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} variant="prominent" />
+            </div>
           </div>
         </div>
       </section>
@@ -142,9 +145,6 @@ export default async function TurkishSignTestPage() {
           </div>
         </div>
       </section>
-      <div className="container mx-auto px-4 pb-10">
-          <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
-        </div>
       </main>
   );
 }

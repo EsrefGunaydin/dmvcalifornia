@@ -132,7 +132,7 @@ export default function StudyGuidePage() {
                 quizId="study-guide"
                 baseViews={getBaseViews('study-guide')}
                 variant="prominent"
-                label="have followed this study guide"
+                label="people have followed this study guide"
               />
             </div>
           </div>

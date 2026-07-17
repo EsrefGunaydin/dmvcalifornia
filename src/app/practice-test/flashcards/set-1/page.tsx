@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import FlashcardDeck from '@/components/flashcards/FlashcardDeck';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import flashcardsData from '@/data/flashcards-1.json';
 import Link from 'next/link';
 
@@ -52,6 +54,14 @@ export default function FlashcardsSet1Page() {
                 <span className="bg-white/20 px-3 py-1 rounded-full">
                   Interactive Study
                 </span>
+              </div>
+              <div className="flex justify-center mt-5">
+                <QuizViewTracker
+                  quizId="flashcards-set-1"
+                  baseViews={getBaseViews('flashcards-set-1')}
+                  variant="prominent"
+                  label="people have studied with these flashcards"
+                />
               </div>
             </div>
           </div>

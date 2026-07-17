@@ -117,9 +117,12 @@ export default async function LocalizedRoadSignsPage({
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight" dir={cfg.dir}>
                 {cfg.h1}
               </h1>
-              <p className="text-xl text-white/90" dir={cfg.dir}>
+              <p className="text-xl text-white/90 mb-5" dir={cfg.dir}>
                 {cfg.intro}
               </p>
+              <div className="flex justify-center">
+                <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} variant="prominent" />
+              </div>
             </div>
           </div>
         </section>
@@ -144,7 +147,6 @@ export default async function LocalizedRoadSignsPage({
                   <div className="sticky top-24 space-y-4">
                     <Leaderboard entries={leaderboard} quizTitle={cfg.h1} quizId={quizId} limit={10} />
                     <AppPromotion variant="sidebar" />
-                    <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
                   </div>
                 </div>
               </div>

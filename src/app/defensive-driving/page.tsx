@@ -316,7 +316,7 @@ export default function DefensiveDrivingPage() {
               quizId="defensive-driving"
               baseViews={getBaseViews('defensive-driving')}
               variant="prominent"
-              label="have read this guide"
+              label="people have read this guide"
             />
             <div className="mt-6">
               <Link

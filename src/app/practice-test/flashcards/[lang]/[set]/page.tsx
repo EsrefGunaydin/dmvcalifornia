@@ -5,6 +5,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import FlashcardDeck from '@/components/flashcards/FlashcardDeck';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import { allFlashcardSetParams, getFlashcardSet } from '@/data/flashcards-i18n';
 
 // Only the (lang, set) pairs in the registry are valid; anything else 404s.
@@ -92,6 +94,14 @@ export default async function FlashcardDeckPage({
                   {data.cards.length} {labels.cards}
                 </span>
                 <span className="bg-white/20 px-3 py-1 rounded-full">{config.nativeName} + English</span>
+              </div>
+              <div className="flex justify-center mt-5">
+                <QuizViewTracker
+                  quizId={`flashcards-${code}-${set}`}
+                  baseViews={getBaseViews(`flashcards-${code}-${set}`)}
+                  variant="prominent"
+                  label="people have studied with these flashcards"
+                />
               </div>
             </div>
           </div>

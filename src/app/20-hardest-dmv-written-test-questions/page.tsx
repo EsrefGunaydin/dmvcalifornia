@@ -52,7 +52,7 @@ export default function Hardest20Page() {
                 quizId="hardest-20-questions"
                 baseViews={getBaseViews('hardest-20-questions')}
                 variant="prominent"
-                label="have gone through these questions"
+                label="people have gone through these questions"
               />
             </div>
           </div>

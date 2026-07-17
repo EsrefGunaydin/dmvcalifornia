@@ -184,7 +184,7 @@ export default function CheatSheetPage() {
                 quizId="cheat-sheet"
                 baseViews={getBaseViews('cheat-sheet')}
                 variant="prominent"
-                label="have used this cheat sheet"
+                label="people have used this cheat sheet"
               />
             </div>
           </div>

@@ -10,8 +10,10 @@ interface QuizViewTrackerProps {
   /** 'prominent' renders a social-proof badge (for the top of the page);
    * default renders the original muted footer line. */
   variant?: 'footer' | 'prominent';
-  /** Trailing phrase for the prominent badge, e.g. "have practiced this test"
-   * or "have used this guide". */
+  /** Full trailing phrase for the prominent badge, e.g. "people have practiced
+   * this test" or "personas han practicado este examen". Must include its
+   * own subject noun ("people" / "personas") since this replaces the whole
+   * clause after the count, not just the verb, so it can be localized. */
   label?: string;
 }
 
@@ -19,7 +21,7 @@ export default function QuizViewTracker({
   quizId,
   baseViews,
   variant = 'footer',
-  label = 'have practiced this test',
+  label = 'people have practiced this test',
 }: QuizViewTrackerProps) {
   const [liveViews, setLiveViews] = useState<number | null>(null);
   const [isMounted, setIsMounted] = useState(false);
@@ -72,13 +74,13 @@ export default function QuizViewTracker({
 
   if (variant === 'prominent') {
     return (
-      <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-800 text-sm font-semibold px-3.5 py-1.5 rounded-full">
-        <span className="relative flex h-2.5 w-2.5 flex-shrink-0">
+      <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-800 text-base font-semibold px-4 py-2.5 rounded-full">
+        <span className="relative flex h-3 w-3 flex-shrink-0 items-center justify-center">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
+          <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500" />
         </span>
-        <Users className="w-4 h-4 text-green-600 flex-shrink-0" />
-        <span>{total.toLocaleString()}+ people {label}</span>
+        <Users className="w-5 h-5 text-green-600 flex-shrink-0" />
+        <span className="leading-none">{total.toLocaleString()}+ {label}</span>
       </div>
     );
   }

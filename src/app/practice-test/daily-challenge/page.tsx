@@ -3,7 +3,9 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import DailyChallengeContent from './DailyChallengeContent';
 import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
-import { pickDailyQuestions, seedFromDate, todayUTC } from '@/lib/dailyChallenge';
+import { pickDailyQuestions, seedFromDate, todayUTC, dailyQuizId } from '@/lib/dailyChallenge';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import type { Question, Quiz } from '@/types/quiz';
 
 import quizzesData from '@/data/quizzes.json';
@@ -51,9 +53,15 @@ export default function DailyChallengePage() {
               Daily Challenge
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">10 questions for today</h1>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-4">
               Same questions for every user on {date}. New set at midnight UTC.
             </p>
+            <QuizViewTracker
+              quizId={dailyQuizId(date)}
+              baseViews={getBaseViews(dailyQuizId(date))}
+              variant="prominent"
+              label="people have taken today's challenge"
+            />
           </div>
           <DailyChallengeContent questions={questions} date={date} />
         </div>

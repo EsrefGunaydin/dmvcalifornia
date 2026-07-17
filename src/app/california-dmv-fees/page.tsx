@@ -100,7 +100,7 @@ export default function FeesPage() {
                   quizId="dmv-fees"
                   baseViews={getBaseViews('dmv-fees')}
                   variant="prominent"
-                  label="have checked these fees"
+                  label="people have checked these fees"
                 />
               </div>
             </div>

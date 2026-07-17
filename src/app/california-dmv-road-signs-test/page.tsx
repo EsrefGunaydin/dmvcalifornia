@@ -123,10 +123,13 @@ export default async function RoadSignsTestPage() {
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
                 California DMV Road Signs Test
               </h1>
-              <p className="text-xl text-white/90">
+              <p className="text-xl text-white/90 mb-5">
                 Look at each real California traffic sign, pick what it means, and get the answer
                 plus a quick explanation instantly.
               </p>
+              <div className="flex justify-center">
+                <QuizViewTracker quizId={QUIZ_ID} baseViews={getBaseViews(QUIZ_ID)} variant="prominent" />
+              </div>
             </div>
           </div>
         </section>
@@ -150,7 +153,6 @@ export default async function RoadSignsTestPage() {
                   <div className="sticky top-24 space-y-4">
                     <Leaderboard entries={leaderboard} quizTitle={QUIZ_TITLE} quizId={QUIZ_ID} limit={10} />
                     <AppPromotion variant="sidebar" />
-                    <QuizViewTracker quizId={QUIZ_ID} baseViews={getBaseViews(QUIZ_ID)} />
                   </div>
                 </div>
               </div>

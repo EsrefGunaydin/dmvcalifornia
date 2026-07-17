@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import IntersectionLevelGrid from '@/components/games/IntersectionLevelGrid';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import levelsData from '@/data/intersection-levels.json';
 import { IntersectionLevel } from '@/types/intersection';
 
@@ -45,10 +47,18 @@ export default function IntersectionLandingPage() {
             <p className="text-white/85 text-sm mb-4">
               Tap each road user in the order they may legally proceed. Get it wrong and you&apos;ll see exactly which California rule caused the crash.
             </p>
-            <div className="flex flex-wrap gap-2 justify-center text-xs">
+            <div className="flex flex-wrap gap-2 justify-center text-xs mb-4">
               <span className="bg-white/20 px-3 py-1.5 rounded-full">10 levels</span>
               <span className="bg-white/20 px-3 py-1.5 rounded-full">Real California rules</span>
               <span className="bg-white/20 px-3 py-1.5 rounded-full">Free · no signup</span>
+            </div>
+            <div className="flex justify-center">
+              <QuizViewTracker
+                quizId="intersection-game"
+                baseViews={getBaseViews('intersection-game')}
+                variant="prominent"
+                label="people have played this game"
+              />
             </div>
           </div>
         </div>

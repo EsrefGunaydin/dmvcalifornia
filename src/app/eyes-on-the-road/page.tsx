@@ -6,6 +6,8 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import AppPromotion from '@/components/AppPromotion';
 import HazardSceneGrid from '@/components/games/HazardSceneGrid';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import scenesData from '@/data/hazard-scenes.json';
 import { HazardScene } from '@/types/hazard';
 
@@ -52,10 +54,18 @@ export default function EyesOnTheRoadLandingPage() {
               scene drops you into a street with hidden hazards: a ball rolling out, a door swinging
               open, a dog in the road. Tap every one before the clock runs out.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center text-sm">
+            <div className="flex flex-wrap gap-4 justify-center text-sm mb-4">
               <span className="bg-white/20 px-4 py-2 rounded-full">8 timed scenes</span>
               <span className="bg-white/20 px-4 py-2 rounded-full">Trains real hazard perception</span>
               <span className="bg-white/20 px-4 py-2 rounded-full">Free · no signup</span>
+            </div>
+            <div className="flex justify-center">
+              <QuizViewTracker
+                quizId="eyes-on-the-road-game"
+                baseViews={getBaseViews('eyes-on-the-road-game')}
+                variant="prominent"
+                label="people have played this game"
+              />
             </div>
           </div>
         </div>

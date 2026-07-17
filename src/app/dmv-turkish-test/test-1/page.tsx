@@ -76,9 +76,13 @@ export default async function TurkishTest1Page() {
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               {quiz.title}
             </h1>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 mb-4">
               {quiz.description}
             </p>
+
+            <div className="mb-6">
+              <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} variant="prominent" />
+            </div>
 
             {/* Quiz Stats */}
             <div className="flex flex-wrap gap-6 text-sm">
@@ -156,9 +160,6 @@ export default async function TurkishTest1Page() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="container mx-auto px-4 pb-10">
-          <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
         </div>
       </main>
 
