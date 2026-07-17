@@ -26,7 +26,7 @@ import roadSignsTestData from '../data/road-signs-test.json';
 import AdSense from '@/components/AdSense';
 import ADSENSE_CONFIG from '@/config/adsense';
 import {
-  TriangleAlert, ClipboardList, BookOpen, Timer, Flame, DollarSign,
+  TriangleAlert, ClipboardList, BookOpen, Timer, Flame, DollarSign, Car, Calculator,
   MapPin, GraduationCap, UserCheck, Accessibility, Shield, Gauge, Truck, Anchor, Bike,
   Navigation, ChevronRight, Globe, Layers,
 } from 'lucide-react';
@@ -291,6 +291,8 @@ export default function Home() {
               { href: '/california-dmv-marathon-test', Icon: Timer, title: 'Marathon Test', desc: 'Every question in one run — miss one and it comes back until you master it.' },
               { href: '/20-hardest-dmv-written-test-questions', Icon: Flame, title: '20 Hardest Questions', desc: "The trickiest, most-missed questions, explained so they can't surprise you." },
               { href: '/california-dmv-fees', Icon: DollarSign, title: 'DMV Fees', desc: "License, renewal, REAL ID, and registration costs — what you'll actually pay." },
+              { href: '/california-dmv-vehicle-registration', Icon: Car, title: 'Vehicle Registration', desc: 'How to register a new purchase or renew, fees, smog rules, and late penalties.' },
+              { href: '/california-dmv-fee-calculator', Icon: Calculator, title: 'Fee Calculator', desc: 'Estimate your registration renewal or new-purchase fee in seconds.' },
             ].map(({ href, Icon: ToolIcon, title, desc }) => (
               <Link
                 key={href}

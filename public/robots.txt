@@ -10,4 +10,4 @@ Disallow: /api/
 Disallow: /go/
 
 # Sitemap (single sitemap.xml covers blog posts, quizzes, offices, and authors)
-Sitemap: https://www.dmvcalifornia.us/sitemap.xml
+Sitemap: https://dmvcalifornia.us/sitemap.xml

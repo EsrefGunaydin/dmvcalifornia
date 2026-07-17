@@ -128,9 +128,13 @@ export default function FeesPage() {
 
               <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 text-sm text-amber-900">
                 <strong>Note:</strong> Fees are approximate and change periodically. Confirm current
-                amounts on the official{' '}
+                license and ID amounts on the official{' '}
                 <a href="https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/licensing-fees/" target="_blank" rel="noopener noreferrer" className="underline">
                   California DMV licensing fees page
+                </a>{' '}
+                or run an exact vehicle registration quote on the official{' '}
+                <a href="https://www.dmv.ca.gov/portal/vehicle-registration/registration-fees/vehicle-registration-fee-calculator/" target="_blank" rel="noopener noreferrer" className="underline">
+                  DMV registration fee calculator
                 </a>{' '}
                 before you pay.
               </div>
@@ -154,9 +158,15 @@ export default function FeesPage() {
                   </details>
                 ))}
               </div>
-              <div className="mt-8 text-center">
+              <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-center">
                 <Link href="/california-drivers-license-renewal-2026" className="text-primary font-semibold hover:underline">
                   → How to renew your California driver&apos;s license
+                </Link>
+                <Link href="/california-dmv-fee-calculator" className="text-primary font-semibold hover:underline">
+                  → Estimate your fee with our calculator
+                </Link>
+                <Link href="/california-dmv-vehicle-registration" className="text-primary font-semibold hover:underline">
+                  → Full vehicle registration guide
                 </Link>
               </div>
             </div>

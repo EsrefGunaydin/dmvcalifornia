@@ -172,6 +172,26 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/california-dmv-fee-calculator" className="text-gray-300 hover:text-white transition-colors">
+                  DMV Fee Calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-vehicle-registration" className="text-gray-300 hover:text-white transition-colors">
+                  Vehicle Registration
+                </Link>
+              </li>
+              <li>
+                <Link href="/mydmv-california-account-guide" className="text-gray-300 hover:text-white transition-colors">
+                  MyDMV Account Guide
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-bill-of-sale-release-of-liability" className="text-gray-300 hover:text-white transition-colors">
+                  Bill of Sale &amp; Release of Liability
+                </Link>
+              </li>
+              <li>
                 <Link href="/dmv-offices" className="text-gray-300 hover:text-white transition-colors">
                   DMV Offices
                 </Link>
