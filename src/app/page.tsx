@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
 import AppPromotion from '../components/AppPromotion';
+import SiteActivityBadge from '../components/SiteActivityBadge';
 import blogPostsData from '../data/blog_posts.json';
 import quizzesData from '../data/quizzes.json';
 import turkishQuizzesData from '../data/turkish-quizzes.json';
@@ -63,6 +64,7 @@ export default function Home() {
     singleQuizSources.length + 1;
 
   const yearsServing = new Date().getFullYear() - 2017;
+  const totalBlogPosts = blogPostsData.posts.length;
 
   // Select 6 featured items (2 simulation tests + interactive flashcards + Spanish + Turkish + Chinese)
   const simulationTests = quizzesData.quizzes.filter(q => q.category === 'Full Simulation Tests').slice(0, 2);
@@ -126,6 +128,9 @@ export default function Home() {
               >
                 Start Practice Test
               </Link>
+              <div className="mt-4">
+                <SiteActivityBadge />
+              </div>
             </div>
 
             {/* Seal of Success - Right side on desktop */}
@@ -151,7 +156,7 @@ export default function Home() {
             <div className="md:w-56 flex-shrink-0 text-center md:text-left">
               <p className="text-dmv-200 text-xs font-semibold uppercase tracking-widest mb-2">California DMV</p>
               <h2 className="text-xl font-extrabold text-white leading-snug mb-2">
-                Trusted by 150,000+ California drivers
+                Trusted by 180,000+ California drivers
               </h2>
               <p className="text-dmv-200 text-sm">{yearsServing} years helping people pass on the first try</p>
             </div>
@@ -176,7 +181,7 @@ export default function Home() {
                 <div className="text-dmv-200 text-sm mt-1">Languages</div>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-extrabold text-white">75+</div>
+                <div className="text-4xl md:text-5xl font-extrabold text-white">{totalBlogPosts}+</div>
                 <div className="text-dmv-200 text-sm mt-1">
                   <Link href="/blog" className="hover:text-white transition-colors">Blog Articles</Link>
                 </div>

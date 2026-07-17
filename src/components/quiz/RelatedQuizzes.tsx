@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Globe } from 'lucide-react';
+import { Globe, Shuffle } from 'lucide-react';
 
 export interface RelatedQuiz {
   slug: string;
@@ -9,12 +9,17 @@ export interface RelatedQuiz {
   language?: string;
 }
 
+interface RelatedQuizzesProps {
+  quizzes: RelatedQuiz[];
+  /** When set, shows a CTA to that language's Practice Test Simulator. */
+  simulatorLang?: string;
+}
 
 /**
  * "Keep practicing" cross-links shown at the end of a quiz. Encourages another
  * test in the same session, which lifts pageviews-per-session.
  */
-export default function RelatedQuizzes({ quizzes }: { quizzes: RelatedQuiz[] }) {
+export default function RelatedQuizzes({ quizzes, simulatorLang }: RelatedQuizzesProps) {
   if (!quizzes.length) return null;
 
   return (
@@ -53,6 +58,26 @@ export default function RelatedQuizzes({ quizzes }: { quizzes: RelatedQuiz[] }) 
               </Link>
             ))}
           </div>
+
+          {simulatorLang && (
+            <Link
+              href={`/practice-test/simulator/${simulatorLang}`}
+              className="mt-5 flex items-center justify-between gap-4 rounded-xl border-2 border-primary/20 bg-primary/5 p-5 hover:bg-primary/10 transition-colors group"
+            >
+              <div className="flex items-center gap-4">
+                <Shuffle className="w-6 h-6 text-gray-600 flex-shrink-0" />
+                <div>
+                  <p className="font-bold text-gray-900">Want a different set of questions?</p>
+                  <p className="text-sm text-gray-600">
+                    Try the Practice Test Simulator, a fresh random draw every attempt.
+                  </p>
+                </div>
+              </div>
+              <span className="text-primary font-semibold whitespace-nowrap group-hover:underline">
+                Try it →
+              </span>
+            </Link>
+          )}
         </div>
       </div>
     </section>

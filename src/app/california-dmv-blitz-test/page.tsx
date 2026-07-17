@@ -4,6 +4,8 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import BlitzQuiz from '@/components/BlitzQuiz';
 import type { MarathonQuestion } from '@/components/MarathonQuiz';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata: Metadata = {
@@ -55,9 +57,16 @@ export default function BlitzTestPage() {
             <p className="text-white/90 text-lg mb-2">
               20 questions. 15 seconds each. Answer faster to earn more points.
             </p>
-            <p className="text-white/70 text-sm">
+            <p className="text-white/70 text-sm mb-5">
               Answer in under 5 seconds: 20 pts. Under 10 seconds: 15 pts. Beat the clock: 10 pts. Miss the timer: 0 pts.
             </p>
+            <div className="flex justify-center">
+              <QuizViewTracker
+                quizId="blitz-test"
+                baseViews={getBaseViews('blitz-test')}
+                variant="prominent"
+              />
+            </div>
           </div>
         </section>
 

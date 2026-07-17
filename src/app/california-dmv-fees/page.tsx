@@ -4,6 +4,8 @@ import { CreditCard } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
   title: 'California DMV Fees 2026: License, ID, REAL ID & Registration | DMV California',
@@ -90,9 +92,17 @@ export default function FeesPage() {
                 <CreditCard className="w-10 h-10 text-white" />
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">California DMV Fees (2026)</h1>
-              <p className="text-xl text-white/90">
+              <p className="text-xl text-white/90 mb-5">
                 What it costs to get a license, renew, upgrade to a REAL ID, or register a vehicle.
               </p>
+              <div className="flex justify-center">
+                <QuizViewTracker
+                  quizId="dmv-fees"
+                  baseViews={getBaseViews('dmv-fees')}
+                  variant="prominent"
+                  label="have checked these fees"
+                />
+              </div>
             </div>
           </div>
         </section>

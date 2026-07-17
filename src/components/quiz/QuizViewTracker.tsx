@@ -1,14 +1,26 @@
 'use client';
 
 import { useEffect, useState, useRef } from 'react';
+import { Users } from 'lucide-react';
 
 interface QuizViewTrackerProps {
   quizId: string | number;
   /** Base estimate; live views are added on top. */
   baseViews: number;
+  /** 'prominent' renders a social-proof badge (for the top of the page);
+   * default renders the original muted footer line. */
+  variant?: 'footer' | 'prominent';
+  /** Trailing phrase for the prominent badge, e.g. "have practiced this test"
+   * or "have used this guide". */
+  label?: string;
 }
 
-export default function QuizViewTracker({ quizId, baseViews }: QuizViewTrackerProps) {
+export default function QuizViewTracker({
+  quizId,
+  baseViews,
+  variant = 'footer',
+  label = 'have practiced this test',
+}: QuizViewTrackerProps) {
   const [liveViews, setLiveViews] = useState<number | null>(null);
   const [isMounted, setIsMounted] = useState(false);
   const hasTracked = useRef(false);
@@ -57,6 +69,19 @@ export default function QuizViewTracker({ quizId, baseViews }: QuizViewTrackerPr
   // Avoid hydration mismatch: render the base count on the server/first paint,
   // then add the live count once it loads.
   const total = baseViews + (isMounted && liveViews !== null ? liveViews : 0);
+
+  if (variant === 'prominent') {
+    return (
+      <div className="inline-flex items-center gap-2 bg-green-50 border border-green-200 text-green-800 text-sm font-semibold px-3.5 py-1.5 rounded-full">
+        <span className="relative flex h-2.5 w-2.5 flex-shrink-0">
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-green-500" />
+        </span>
+        <Users className="w-4 h-4 text-green-600 flex-shrink-0" />
+        <span>{total.toLocaleString()}+ people {label}</span>
+      </div>
+    );
+  }
 
   return (
     <div className="mt-8 flex items-center justify-center gap-2 text-sm text-gray-500">

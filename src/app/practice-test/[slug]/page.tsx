@@ -8,46 +8,12 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
 import { getBaseViews } from '@/lib/quiz-base-views';
 import AppPromotion from '@/components/AppPromotion';
-import quizzesData from '@/data/quizzes.json';
-import chineseQuizzesData from '@/data/chinese-quizzes.json';
-import turkishQuizzesData from '@/data/turkish-quizzes.json';
-import turkishSignTestData from '@/data/turkish-sign-test.json';
-import spanishSignTestData from '@/data/spanish-sign-test.json';
-import arabicQuizzesData from '@/data/arabic-quizzes.json';
-import armenianQuizzesData from '@/data/armenian-quizzes.json';
-import farsiQuizzesData from '@/data/farsi-quizzes.json';
-import punjabiQuizzesData from '@/data/punjabi-quizzes.json';
-import russianQuizzesData from '@/data/russian-quizzes.json';
-import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
-import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
-import koreanQuizzesData from '@/data/ko-quizzes.json';
-import hindiQuizzesData from '@/data/hi-quizzes.json';
-import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
-import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getMongoClient } from '@/lib/mongodb';
-import type { Quiz } from '@/types/quiz';
+import { getAllFixedQuizzes } from '@/lib/allQuizzes';
+import { fetchLeaderboard } from '@/lib/leaderboard';
 
-// Combine all quizzes across languages
-const allQuizzes = [
-  ...quizzesData.quizzes,
-  ...chineseQuizzesData.quizzes,
-  ...turkishQuizzesData.quizzes,
-  turkishSignTestData.quiz,
-  spanishSignTestData.quiz,
-  ...arabicQuizzesData.quizzes,
-  ...armenianQuizzesData.quizzes,
-  ...farsiQuizzesData.quizzes,
-  ...punjabiQuizzesData.quizzes,
-  ...russianQuizzesData.quizzes,
-  ...tagalogQuizzesData.quizzes,
-  ...vietnameseQuizzesData.quizzes,
-  ...koreanQuizzesData.quizzes,
-  ...hindiQuizzesData.quizzes,
-  ...motorcycleQuizzesData.quizzes,
-  ...commercialQuizzesData.quizzes,
-] as Quiz[];
+const allQuizzes = getAllFixedQuizzes();
 
 // Regenerate the static page periodically so the server-rendered leaderboard
 // snapshot (used for first paint + crawlers) doesn't stay frozen at build time.
@@ -95,49 +61,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: quiz.description,
     },
   };
-}
-
-async function fetchLeaderboard(quizId: string | number) {
-  try {
-    if (!process.env.MONGODB_URI) {
-      console.error('MONGODB_URI not configured');
-      return [];
-    }
-
-    const client = await getMongoClient();
-    const db = client.db('dmvcalifornia');
-    const collection = db.collection('leaderboard');
-
-    // Build query
-    let query: any = {};
-    if (quizId) {
-      const numericQuizId = typeof quizId === 'string' ? parseInt(quizId) : quizId;
-      if (!isNaN(numericQuizId)) {
-        query = { $or: [{ quizId: numericQuizId }, { quizId: String(quizId) }] };
-      } else {
-        query = { quizId: quizId };
-      }
-    }
-
-    const entries = await collection
-      .find(query)
-      .sort({ percentage: -1, completedAt: 1 })
-      .toArray();
-
-    return entries.map((entry: any) => ({
-      id: entry._id.toString(),
-      quizId: entry.quizId,
-      date: entry.date,
-      name: entry.name,
-      email: entry.email || '',
-      points: entry.points,
-      percentage: entry.percentage,
-      completedAt: entry.completedAt,
-    }));
-  } catch (error) {
-    console.error('Error fetching leaderboard:', error);
-    return [];
-  }
 }
 
 export default async function QuizPage({ params }: { params: Promise<{ slug: string }> }) {
@@ -233,9 +156,13 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               {quiz.title}
             </h1>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 mb-4">
               {quiz.description}
             </p>
+
+            <div className="mb-6">
+              <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} variant="prominent" />
+            </div>
 
             {/* Quiz Stats */}
             <div className="flex flex-wrap gap-6 text-sm">
@@ -328,11 +255,7 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
             </div>
           </div>
         </div>
-        <RelatedQuizzes quizzes={relatedQuizzes} />
-
-        <div className="container mx-auto px-4 pb-10">
-          <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
-        </div>
+        <RelatedQuizzes quizzes={relatedQuizzes} simulatorLang={lang} />
       </main>
 
       <Footer />

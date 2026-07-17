@@ -2,24 +2,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import WrongAnswersContent from './WrongAnswersContent';
-import type { Quiz } from '@/types/quiz';
-
-import quizzesData from '@/data/quizzes.json';
-import chineseQuizzesData from '@/data/chinese-quizzes.json';
-import turkishQuizzesData from '@/data/turkish-quizzes.json';
-import turkishSignTestData from '@/data/turkish-sign-test.json';
-import spanishSignTestData from '@/data/spanish-sign-test.json';
-import arabicQuizzesData from '@/data/arabic-quizzes.json';
-import armenianQuizzesData from '@/data/armenian-quizzes.json';
-import farsiQuizzesData from '@/data/farsi-quizzes.json';
-import punjabiQuizzesData from '@/data/punjabi-quizzes.json';
-import russianQuizzesData from '@/data/russian-quizzes.json';
-import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
-import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
-import koreanQuizzesData from '@/data/ko-quizzes.json';
-import hindiQuizzesData from '@/data/hi-quizzes.json';
-import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
-import commercialQuizzesData from '@/data/commercial-quizzes.json';
+import { getAllFixedQuizzes } from '@/lib/allQuizzes';
+import { getSimulatorPoolQuiz } from '@/lib/quizPool';
+import { PRACTICE_TEST_HUBS } from '@/lib/language-alternates';
+import type { QuizLanguage } from '@/types/quiz';
 
 export const metadata = {
   title: 'Review wrong answers | DMV California',
@@ -27,24 +13,13 @@ export const metadata = {
 };
 
 export default function WrongAnswersPage() {
+  // Register each language's full simulator pool (not just a drawn subset)
+  // so a missed question from a simulator attempt stays resolvable here.
+  const simulatorLanguages = Object.keys(PRACTICE_TEST_HUBS) as QuizLanguage[];
   const allQuizzes = [
-    ...quizzesData.quizzes,
-    ...chineseQuizzesData.quizzes,
-    ...turkishQuizzesData.quizzes,
-    turkishSignTestData.quiz,
-    spanishSignTestData.quiz,
-    ...arabicQuizzesData.quizzes,
-    ...armenianQuizzesData.quizzes,
-    ...farsiQuizzesData.quizzes,
-    ...punjabiQuizzesData.quizzes,
-    ...russianQuizzesData.quizzes,
-    ...tagalogQuizzesData.quizzes,
-    ...vietnameseQuizzesData.quizzes,
-    ...koreanQuizzesData.quizzes,
-    ...hindiQuizzesData.quizzes,
-    ...motorcycleQuizzesData.quizzes,
-    ...commercialQuizzesData.quizzes,
-  ] as Quiz[];
+    ...getAllFixedQuizzes(),
+    ...simulatorLanguages.map((lang) => getSimulatorPoolQuiz(lang)),
+  ];
 
   return (
     <>

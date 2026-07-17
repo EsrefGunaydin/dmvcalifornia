@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect, Fragment } from 'react';
 import Link from 'next/link';
-import { Search, LayoutGrid, List, SlidersHorizontal, Globe, Flame } from 'lucide-react';
+import { Search, LayoutGrid, List, SlidersHorizontal, Globe, Flame, Shuffle } from 'lucide-react';
 import MultiplexAd from './MultiplexAd';
 import { useStreak } from '@/hooks/useStreak';
 
@@ -235,6 +235,31 @@ export default function PracticeTestsContent({ quizzes }: PracticeTestsContentPr
       <div className="mb-4 text-sm text-gray-600">
         Showing {filteredQuizzes.length} of {quizzes.length} tests
       </div>
+
+      {/* Simulator callout — a fresh random question set every attempt,
+          instead of the same fixed test. Shown when a single language is
+          selected so it's always adjacent to that language's tests. */}
+      {filterLanguage !== 'all' && (
+        <Link
+          href={`/practice-test/simulator/${filterLanguage}`}
+          className="mb-4 flex items-center justify-between gap-4 rounded-xl border-2 border-primary/20 bg-primary/5 p-5 hover:bg-primary/10 transition-colors group"
+        >
+          <div className="flex items-center gap-4">
+            <Shuffle className="w-7 h-7 text-gray-600" />
+            <div>
+              <p className="font-bold text-gray-900">
+                {LANGUAGE_OPTIONS.find(o => o.value === filterLanguage)?.label} — Practice Test Simulator
+              </p>
+              <p className="text-sm text-gray-600">
+                A new random question set every time, drawn from the full question pool.
+              </p>
+            </div>
+          </div>
+          <span className="text-primary font-semibold whitespace-nowrap group-hover:underline">
+            Try it →
+          </span>
+        </Link>
+      )}
 
       {/* Flashcards callout — shown when a single language is selected so the
           page stays useful even when that language has only a few tests */}

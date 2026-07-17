@@ -8,6 +8,8 @@ import {
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
   title: 'California DMV Cheat Sheet 2026 (Free Quick-Reference) | DMV California',
@@ -174,10 +176,16 @@ export default function CheatSheetPage() {
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
                 California DMV Cheat Sheet
               </h1>
-              <p className="text-xl text-white/90">
+              <p className="text-xl text-white/90 mb-5">
                 Every number, color, and rule the written test loves to ask — on one page. Skim it,
                 then take a practice test to lock it in.
               </p>
+              <QuizViewTracker
+                quizId="cheat-sheet"
+                baseViews={getBaseViews('cheat-sheet')}
+                variant="prominent"
+                label="have used this cheat sheet"
+              />
             </div>
           </div>
         </section>

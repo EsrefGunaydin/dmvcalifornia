@@ -1,4 +1,34 @@
 import Link from 'next/link';
+import { BookMarked, ShieldCheck, Users, LucideIcon } from 'lucide-react';
+
+const SHIELD_CLIP_PATH = 'polygon(50% 0%, 100% 20%, 100% 58%, 50% 100%, 0% 58%, 0% 20%)';
+
+function TrustBadge({
+  icon: Icon,
+  gradient,
+  caption,
+  captionColor,
+  title,
+}: {
+  icon: LucideIcon;
+  gradient: string;
+  caption: string;
+  captionColor: string;
+  title: string;
+}) {
+  return (
+    <div className="flex flex-col items-center text-center w-40 bg-gray-800/60 border border-gray-700 rounded-xl px-4 py-5">
+      <div
+        className={`w-14 h-16 bg-gradient-to-br ${gradient} flex items-center justify-center mb-2 shadow-md`}
+        style={{ clipPath: SHIELD_CLIP_PATH }}
+      >
+        <Icon className="w-6 h-6 text-white" />
+      </div>
+      <p className={`text-[10px] font-bold uppercase tracking-wider ${captionColor} mb-1`}>{caption}</p>
+      <p className="text-sm font-semibold text-white leading-tight">{title}</p>
+    </div>
+  );
+}
 
 export default function Footer() {
   return (
@@ -17,6 +47,31 @@ export default function Footer() {
               Our mission is to help California drivers navigate DMV procedures confidently.
               We provide clear, simplified guides and resources to make your DMV experience as smooth as possible.
             </p>
+
+            {/* Trust badges */}
+            <div className="flex flex-wrap gap-4 mt-6">
+              <TrustBadge
+                icon={BookMarked}
+                gradient="from-sky-400 to-primary"
+                caption="2026 Edition"
+                captionColor="text-sky-400"
+                title="CA Driver Handbook"
+              />
+              <TrustBadge
+                icon={ShieldCheck}
+                gradient="from-amber-300 to-amber-600"
+                caption="Transparency"
+                captionColor="text-amber-400"
+                title="Not DMV Affiliated"
+              />
+              <TrustBadge
+                icon={Users}
+                gradient="from-emerald-300 to-green-600"
+                caption="Trusted By"
+                captionColor="text-green-400"
+                title="180,000+ CA Drivers"
+              />
+            </div>
           </div>
 
           {/* Study Tools */}
@@ -31,6 +86,22 @@ export default function Footer() {
               <li>
                 <Link href="/practice-test" className="text-gray-300 hover:text-white transition-colors">
                   All Practice Tests
+                </Link>
+              </li>
+              <li>
+                <Link href="/practice-test/simulator/en" className="inline-flex items-center gap-2 text-gray-300 hover:text-white transition-colors">
+                  Practice Test Simulator
+                  <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
+                </Link>
+              </li>
+              <li>
+                <Link href="/practice-test/flashcards" className="text-gray-300 hover:text-white transition-colors">
+                  Flashcards
+                </Link>
+              </li>
+              <li>
+                <Link href="/practice-test/wrong-answers" className="text-gray-300 hover:text-white transition-colors">
+                  Review Your Mistakes
                 </Link>
               </li>
               <li>
@@ -56,6 +127,11 @@ export default function Footer() {
               <li>
                 <Link href="/california-dmv-marathon-test" className="text-gray-300 hover:text-white transition-colors">
                   Marathon Test
+                </Link>
+              </li>
+              <li>
+                <Link href="/california-dmv-blitz-test" className="text-gray-300 hover:text-white transition-colors">
+                  Blitz Test
                 </Link>
               </li>
               <li>
@@ -86,6 +162,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/defensive-driving" className="text-gray-300 hover:text-white transition-colors">
+                  Defensive Driving
+                </Link>
+              </li>
+              <li>
                 <Link href="/california-dmv-fees" className="text-gray-300 hover:text-white transition-colors">
                   DMV Fees
                 </Link>
@@ -93,6 +174,16 @@ export default function Footer() {
               <li>
                 <Link href="/dmv-offices" className="text-gray-300 hover:text-white transition-colors">
                   DMV Offices
+                </Link>
+              </li>
+              <li>
+                <Link href="/games" className="text-gray-300 hover:text-white transition-colors">
+                  Games
+                </Link>
+              </li>
+              <li>
+                <Link href="/videos" className="text-gray-300 hover:text-white transition-colors">
+                  Videos
                 </Link>
               </li>
               <li>
@@ -111,14 +202,9 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} DMVCalifornia.us. All rights reserved.
-            </p>
-            <p className="text-sm text-gray-500">
-              Not affiliated with the California Department of Motor Vehicles
-            </p>
-          </div>
+          <p className="text-gray-400 text-sm text-center md:text-left">
+            © {new Date().getFullYear()} DMVCalifornia.us. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

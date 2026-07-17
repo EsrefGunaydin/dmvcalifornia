@@ -22,6 +22,7 @@ import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
 import { REGIONS } from '@/data/dmv-regions';
 import { HUB_SLUGS } from '@/data/seo-hubs';
 import { HANDBOOK_EDITION_SLUGS } from '@/data/handbook-editions';
+import { PRACTICE_TEST_HUBS } from '@/lib/language-alternates';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://dmvcalifornia.us';
@@ -373,6 +374,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Practice Test Simulator — one random-draw page per supported language.
+  const simulatorPages: MetadataRoute.Sitemap = Object.keys(PRACTICE_TEST_HUBS).map((lang) => ({
+    url: `${baseUrl}/practice-test/simulator/${lang}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.8,
+  }));
+
   // DMV field office pages (e.g. /california-dmv-alturas-office). These are
   // generated from dmv_offices.json via the [slug] route but were missing from
   // the sitemap — high-intent local pages that need to be discoverable.
@@ -433,6 +442,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...newLanguagePages,
     ...intersectionPages,
     ...flashcardPages,
+    ...simulatorPages,
     ...officePages,
   ];
 }

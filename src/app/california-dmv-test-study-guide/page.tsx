@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
   title: 'How to Study for the California DMV Test 2026: Complete Study Guide | DMV California',
@@ -122,10 +124,16 @@ export default function StudyGuidePage() {
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
                 How to Study for the California DMV Test
               </h1>
-              <p className="text-xl text-white/90">
+              <p className="text-xl text-white/90 mb-5">
                 A simple 7-step plan using free tools — from the handbook to a full marathon. Follow
                 it in order and walk into the DMV ready.
               </p>
+              <QuizViewTracker
+                quizId="study-guide"
+                baseViews={getBaseViews('study-guide')}
+                variant="prominent"
+                label="have followed this study guide"
+              />
             </div>
           </div>
         </section>

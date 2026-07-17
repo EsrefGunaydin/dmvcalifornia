@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 
 export interface TopicFact {
   term: string;
@@ -63,7 +65,14 @@ export default function TopicTestLanding({
                 {icon}
               </div>
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">{h1}</h1>
-              <p className="text-xl text-white/90">{intro}</p>
+              <p className="text-xl text-white/90 mb-5">{intro}</p>
+              <div className="flex justify-center">
+                <QuizViewTracker
+                  quizId={`topic-landing-${quizSlug}`}
+                  baseViews={getBaseViews(`topic-landing-${quizSlug}`)}
+                  variant="prominent"
+                />
+              </div>
               <Link
                 href={`/practice-test/${quizSlug}`}
                 className="inline-block mt-6 bg-white text-gray-900 font-semibold px-7 py-3 rounded-lg hover:bg-gray-100 transition-colors"

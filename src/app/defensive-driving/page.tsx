@@ -8,6 +8,8 @@ import CookieBanner from '@/components/CookieBanner';
 import MultiplexAd from '@/components/MultiplexAd';
 import { AFFILIATE_CREATIVES } from '@/config/affiliate-creatives';
 import InlineQuiz, { type InlineQuizConfig } from '@/components/blog/InlineQuiz';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 
 const SITE_URL = 'https://dmvcalifornia.us';
 
@@ -307,16 +309,24 @@ export default function DefensiveDrivingPage() {
             <p className="text-lg text-white/90 max-w-2xl mb-2">
               Defensive driving means thinking ahead, managing space, and making sure other drivers can see you coming. These five rules are the foundation of every state-approved driving course — and they show up on the California DMV written test.
             </p>
-            <p className="text-sm text-white/70 mb-6">
+            <p className="text-sm text-white/70 mb-4">
               Based on California DMV guidelines · free · no signup required
             </p>
-            <Link
-              href="/practice-test/practice-test-safe-driving-and-defensive-techniques"
-              className="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all"
-            >
-              <span>Only 1 in 5 drivers passes this test. Are you one of them?</span>
-              <span className="text-2xl leading-none">→</span>
-            </Link>
+            <QuizViewTracker
+              quizId="defensive-driving"
+              baseViews={getBaseViews('defensive-driving')}
+              variant="prominent"
+              label="have read this guide"
+            />
+            <div className="mt-6">
+              <Link
+                href="/practice-test/practice-test-safe-driving-and-defensive-techniques"
+                className="inline-flex items-center gap-3 bg-orange-500 hover:bg-orange-600 text-white font-extrabold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition-all"
+              >
+                <span>Only 1 in 5 drivers passes this test. Are you one of them?</span>
+                <span className="text-2xl leading-none">→</span>
+              </Link>
+            </div>
           </div>
         </section>
 

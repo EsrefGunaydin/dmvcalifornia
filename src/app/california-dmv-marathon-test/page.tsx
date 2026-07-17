@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import MarathonQuiz, { type MarathonQuestion } from '@/components/MarathonQuiz';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata: Metadata = {
@@ -86,10 +88,15 @@ export default function MarathonPage() {
               <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight">
                 California DMV Marathon Test
               </h1>
-              <p className="text-xl text-white/90">
+              <p className="text-xl text-white/90 mb-5">
                 Answer every question in one run. Miss one? It comes back until you get it right —
                 you finish only when you&apos;ve mastered them all.
               </p>
+              <QuizViewTracker
+                quizId="en-marathon"
+                baseViews={getBaseViews('en-marathon')}
+                variant="prominent"
+              />
             </div>
           </div>
         </section>

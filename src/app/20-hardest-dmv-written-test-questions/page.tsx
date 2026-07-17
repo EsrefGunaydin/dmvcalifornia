@@ -4,6 +4,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import Hardest20Quiz, { type HardestQuestion } from '@/components/Hardest20Quiz';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import { getBaseViews } from '@/lib/quiz-base-views';
 import hardestData from '@/data/hardest-20-questions.json';
 
 const questions = hardestData.questions as HardestQuestion[];
@@ -43,9 +45,15 @@ export default function Hardest20Page() {
               <h1 className="text-4xl md:text-5xl font-extrabold mb-5 leading-tight">
                 The 20 Hardest Questions on the DMV Written Test
               </h1>
-              <p className="text-xl text-white/90">
+              <p className="text-xl text-white/90 mb-6">
                 Answers to the permit-test questions teens always miss.
               </p>
+              <QuizViewTracker
+                quizId="hardest-20-questions"
+                baseViews={getBaseViews('hardest-20-questions')}
+                variant="prominent"
+                label="have gone through these questions"
+              />
             </div>
           </div>
         </section>

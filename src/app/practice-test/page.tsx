@@ -5,26 +5,10 @@ import CookieBanner from '@/components/CookieBanner';
 import PracticeTestsContent from '@/components/PracticeTestsContent';
 import {
   TriangleAlert, ClipboardList, Wine, SquareParking, Gauge,
-  Flame, BookOpen, CreditCard, Layers, Navigation, Globe, Zap, RotateCcw,
+  Flame, BookOpen, CreditCard, Layers, Navigation, Globe, Zap, RotateCcw, Shuffle,
 } from 'lucide-react';
-import quizzesData from '@/data/quizzes.json';
 import DailyChallengeBanner from '@/components/DailyChallengeBanner';
-import chineseQuizzesData from '@/data/chinese-quizzes.json';
-import turkishQuizzesData from '@/data/turkish-quizzes.json';
-import turkishSignTestData from '@/data/turkish-sign-test.json';
-import spanishSignTestData from '@/data/spanish-sign-test.json';
-import arabicQuizzesData from '@/data/arabic-quizzes.json';
-import armenianQuizzesData from '@/data/armenian-quizzes.json';
-import farsiQuizzesData from '@/data/farsi-quizzes.json';
-import punjabiQuizzesData from '@/data/punjabi-quizzes.json';
-import russianQuizzesData from '@/data/russian-quizzes.json';
-import tagalogQuizzesData from '@/data/tagalog-quizzes.json';
-import vietnameseQuizzesData from '@/data/vietnamese-quizzes.json';
-import koreanQuizzesData from '@/data/ko-quizzes.json';
-import hindiQuizzesData from '@/data/hi-quizzes.json';
-import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
-import commercialQuizzesData from '@/data/commercial-quizzes.json';
-import type { Quiz } from '@/types/quiz';
+import { getAllFixedQuizzes } from '@/lib/allQuizzes';
 import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
@@ -34,24 +18,7 @@ export const metadata = {
 };
 
 export default function PracticeTestsPage() {
-  const quizzes = [
-    ...quizzesData.quizzes,
-    ...chineseQuizzesData.quizzes,
-    ...turkishQuizzesData.quizzes,
-    turkishSignTestData.quiz,
-    spanishSignTestData.quiz,
-    ...arabicQuizzesData.quizzes,
-    ...armenianQuizzesData.quizzes,
-    ...farsiQuizzesData.quizzes,
-    ...punjabiQuizzesData.quizzes,
-    ...russianQuizzesData.quizzes,
-    ...tagalogQuizzesData.quizzes,
-    ...vietnameseQuizzesData.quizzes,
-    ...koreanQuizzesData.quizzes,
-    ...hindiQuizzesData.quizzes,
-    ...motorcycleQuizzesData.quizzes,
-    ...commercialQuizzesData.quizzes,
-  ] as Quiz[];
+  const quizzes = getAllFixedQuizzes();
 
   return (
     <>
@@ -106,6 +73,7 @@ export default function PracticeTestsPage() {
         <div className="container mx-auto px-4 pt-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
+              { href: '/practice-test/simulator/en', Icon: Shuffle, title: 'Practice Test Simulator', desc: 'A fresh random question set every time, drawn from the full pool.', isNew: true },
               { href: '/california-dmv-road-signs-test', Icon: TriangleAlert, title: 'Road Signs Test', desc: 'Identify real California signs with instant answers.' },
               { href: '/california-dmv-cheat-sheet', Icon: ClipboardList, title: 'DMV Cheat Sheet', desc: 'Every fact the written test asks, on one page.' },
               { href: '/california-dmv-drug-and-alcohol-test', Icon: Wine, title: 'Drug & Alcohol Test', desc: 'BAC limits, implied consent, and DUI penalties.' },
@@ -116,13 +84,18 @@ export default function PracticeTestsPage() {
               { href: '/california-dmv-test-study-guide', Icon: BookOpen, title: 'Study Guide', desc: 'A 7-step plan from handbook to full marathon.' },
               { href: '/california-dmv-fees', Icon: CreditCard, title: 'DMV Fees', desc: 'License, REAL ID, and registration costs for 2026.' },
               { href: '/practice-test/wrong-answers', Icon: RotateCcw, title: 'Review Your Mistakes', desc: 'Retry every question you got wrong across all tests.' },
-            ].map(({ href, Icon: CardIcon, title, desc }) => (
+            ].map(({ href, Icon: CardIcon, title, desc, isNew }) => (
               <Link key={href} href={href} className="flex items-center gap-4 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
                   <CardIcon className="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" />
                 </div>
                 <span>
-                  <span className="block font-bold text-gray-900 group-hover:text-primary transition-colors">{title}</span>
+                  <span className="flex items-center gap-2 font-bold text-gray-900 group-hover:text-primary transition-colors">
+                    {title}
+                    {isNew && (
+                      <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
+                    )}
+                  </span>
                   <span className="block text-sm text-gray-600">{desc}</span>
                 </span>
               </Link>

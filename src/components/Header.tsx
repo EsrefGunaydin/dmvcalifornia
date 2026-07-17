@@ -4,7 +4,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Gamepad2 } from 'lucide-react';
 
-const STUDY_TOOLS: { href: string; label: string }[] = [
+const STUDY_TOOLS: { href: string; label: string; isNew?: boolean }[] = [
+  { href: '/practice-test/simulator/en', label: 'Practice Test Simulator', isNew: true },
   { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
   { href: '/california-driver-handbook', label: 'Driver Handbook' },
   { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet' },
@@ -59,9 +60,12 @@ export default function Header() {
                     <Link
                       key={t.href}
                       href={t.href}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors"
+                      className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors"
                     >
                       {t.label}
+                      {t.isNew && (
+                        <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
+                      )}
                     </Link>
                   ))}
                 </div>
@@ -143,10 +147,13 @@ export default function Header() {
                       <Link
                         key={t.href}
                         href={t.href}
-                        className="text-gray-600 hover:text-primary text-sm py-2 transition-colors"
+                        className="flex items-center gap-2 text-gray-600 hover:text-primary text-sm py-2 transition-colors"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {t.label}
+                        {t.isNew && (
+                          <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
+                        )}
                       </Link>
                     ))}
                   </div>
