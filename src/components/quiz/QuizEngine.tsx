@@ -70,7 +70,10 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
   const [shuffledQuestions, setShuffledQuestions] = useState<ShuffledQuestion[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<Map<number, number>>(new Map());
-  const [showExplanation, setShowExplanation] = useState(false);
+  // Which questions have had "Check Answer" pressed — persistent per question
+  // (unlike a single shared boolean) so navigating back to an already-checked
+  // question keeps it locked instead of re-enabling answer selection.
+  const [checkedQuestions, setCheckedQuestions] = useState<Set<number>>(new Set());
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [quizResult, setQuizResult] = useState<QuizResult | null>(null);
   const [startTime] = useState(new Date().toISOString());
@@ -88,6 +91,7 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
       setShuffledQuestions(shuffle);
       setCurrentQuestionIndex(progress.currentQuestion || 0);
       setSelectedAnswers(new Map(Object.entries(progress.answers).map(([k, v]) => [parseInt(k), v as number])));
+      setCheckedQuestions(new Set<number>(progress.checked || []));
     } else {
       // Create new shuffle
       const shuffled = shuffleQuiz(quiz.questions);
@@ -125,6 +129,9 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
   const currentQuestion = shuffledQuestions[currentQuestionIndex];
   const isLastQuestion = currentQuestionIndex === shuffledQuestions.length - 1;
   const hasSelectedAnswer = currentQuestion ? selectedAnswers.has(currentQuestion.id) : false;
+  // Derived per-question, not a shared flag — this is what keeps an
+  // already-checked question locked when navigating back to it.
+  const showExplanation = currentQuestion ? checkedQuestions.has(currentQuestion.id) : false;
 
   // Save progress to localStorage
   useEffect(() => {
@@ -133,17 +140,20 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
         quizId: quiz.id,
         currentQuestion: currentQuestionIndex,
         answers: Object.fromEntries(selectedAnswers),
+        checked: Array.from(checkedQuestions),
         startedAt: startTime,
       };
       localStorage.setItem(`quiz-progress-${quiz.id}`, JSON.stringify(progress));
     }
-  }, [currentQuestionIndex, selectedAnswers, quiz.id, quizCompleted, startTime]);
+  }, [currentQuestionIndex, selectedAnswers, checkedQuestions, quiz.id, quizCompleted, startTime]);
 
   const handleAnswerSelect = (answerIndex: number) => {
+    // Guard against changing an answer after it's been checked, in addition
+    // to the disabled attribute on the option buttons themselves.
+    if (checkedQuestions.has(currentQuestion.id)) return;
     const newAnswers = new Map(selectedAnswers);
     newAnswers.set(currentQuestion.id, answerIndex);
     setSelectedAnswers(newAnswers);
-    setShowExplanation(false);
   };
 
   const handleNext = () => {
@@ -151,19 +161,17 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
       completeQuiz();
     } else {
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setShowExplanation(false);
     }
   };
 
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(currentQuestionIndex - 1);
-      setShowExplanation(false);
     }
   };
 
   const handleShowExplanation = () => {
-    setShowExplanation(true);
+    setCheckedQuestions((prev) => new Set(prev).add(currentQuestion.id));
   };
 
   const completeQuiz = () => {
@@ -218,7 +226,7 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
     // Reset state
     setCurrentQuestionIndex(0);
     setSelectedAnswers(new Map());
-    setShowExplanation(false);
+    setCheckedQuestions(new Set());
     setQuizCompleted(false);
     setQuizResult(null);
     localStorage.removeItem(`quiz-progress-${quiz.id}`);
@@ -438,10 +446,7 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
             return (
               <button
                 key={`q-${index}-${question.id}`}
-                onClick={() => {
-                  setCurrentQuestionIndex(index);
-                  setShowExplanation(false);
-                }}
+                onClick={() => setCurrentQuestionIndex(index)}
                 className={`w-10 h-10 rounded-lg font-medium transition-colors ${
                   isCurrent
                     ? 'bg-primary text-white'
