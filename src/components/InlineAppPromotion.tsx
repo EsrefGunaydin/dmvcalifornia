@@ -1,9 +1,15 @@
+'use client';
+
 import Image from 'next/image';
 import { Smartphone } from 'lucide-react';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/dmv-california/id6754900213';
 
 export default function InlineAppPromotion() {
+  const trackClick = () => {
+    if (typeof window.gtag === 'function') window.gtag('event', 'app_promo_click', { variant: 'inline' });
+  };
+
   return (
     <div className="my-8 not-prose">
       <div className="bg-gradient-to-r from-primary-50 to-orange-50 border-2 border-primary-200 rounded-xl p-6 shadow-sm">
@@ -24,6 +30,7 @@ export default function InlineAppPromotion() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={trackClick}
               className="inline-block hover:opacity-80 transition-opacity"
             >
               <Image
@@ -61,6 +68,7 @@ export const inlineAppPromotionHtml = `
           href="https://apps.apple.com/app/dmv-california/id6754900213"
           target="_blank"
           rel="noopener noreferrer"
+          onclick="if(window.gtag)window.gtag('event','app_promo_click',{variant:'inline_html'})"
           class="inline-block hover:opacity-80 transition-opacity"
         >
           <img

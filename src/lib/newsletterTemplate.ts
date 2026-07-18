@@ -22,22 +22,29 @@ export interface NewsletterOptions {
   youtubeTitle?: string;
   quizQuestions?: QuizQuestion[];
   quizAnswerUrl?: string;
+  campaignId?: string;
 }
 
 const DMV_BLUE = '#4e80c4';
 const DMV_DARK = '#345488';
 const ORANGE = '#e07b39';
 
-function postCard(post: NewsletterPost): string {
+function withUtm(url: string, campaignId: string): string {
+  const params = `utm_source=newsletter&utm_medium=email&utm_campaign=${encodeURIComponent(campaignId)}`;
+  return `${url}${url.includes('?') ? '&' : '?'}${params}`;
+}
+
+function postCard(post: NewsletterPost, campaignId: string): string {
+  const url = withUtm(`${SITE_URL}/${post.slug}`, campaignId);
   return `
   <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin-bottom:16px;">
     <tr>
       <td style="padding:20px 24px;">
         <p style="margin:0 0 6px 0;font-size:17px;font-weight:700;color:#111827;line-height:1.4;">
-          <a href="${SITE_URL}/${post.slug}" style="color:#111827;text-decoration:none;">${post.title}</a>
+          <a href="${url}" style="color:#111827;text-decoration:none;">${post.title}</a>
         </p>
         <p style="margin:0 0 14px 0;font-size:14px;color:#6b7280;line-height:1.6;">${post.excerpt}</p>
-        <a href="${SITE_URL}/${post.slug}"
+        <a href="${url}"
            style="display:inline-block;background:${DMV_BLUE};color:#ffffff;font-size:13px;font-weight:600;padding:8px 18px;border-radius:6px;text-decoration:none;">
           Read the article →
         </a>
@@ -77,7 +84,8 @@ function youtubeSection(youtubeId: string, title: string): string {
   </table>`;
 }
 
-function miniQuiz(questions: QuizQuestion[], answerUrl: string): string {
+function miniQuiz(questions: QuizQuestion[], answerUrl: string, campaignId: string): string {
+  const url = withUtm(answerUrl, campaignId);
   const letters = ['A', 'B', 'C', 'D'];
 
   const questionRows = questions.map((q, i) => {
@@ -124,7 +132,7 @@ function miniQuiz(questions: QuizQuestion[], answerUrl: string): string {
           ${questionRows}
           <tr>
             <td style="padding-top:16px;" align="center">
-              <a href="${answerUrl}"
+              <a href="${url}"
                  style="display:inline-block;background:${ORANGE};color:#ffffff;font-size:13px;font-weight:700;padding:10px 24px;border-radius:6px;text-decoration:none;">
                 Read the full article &#8594;
               </a>
@@ -136,7 +144,9 @@ function miniQuiz(questions: QuizQuestion[], answerUrl: string): string {
   </table>`;
 }
 
-function ctaGrid(practiceTestUrl: string, signsTestUrl: string): string {
+function ctaGrid(practiceTestUrl: string, signsTestUrl: string, campaignId: string): string {
+  const practiceUrl = withUtm(practiceTestUrl, campaignId);
+  const signsUrl = withUtm(signsTestUrl, campaignId);
   return `
   <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
     <tr>
@@ -144,7 +154,7 @@ function ctaGrid(practiceTestUrl: string, signsTestUrl: string): string {
         <p style="margin:0 0 4px 0;font-size:22px;">📝</p>
         <p style="margin:0 0 8px 0;font-size:13px;font-weight:700;color:#111827;">Practice Test</p>
         <p style="margin:0 0 12px 0;font-size:12px;color:#6b7280;">46 real DMV questions</p>
-        <a href="${practiceTestUrl}"
+        <a href="${practiceUrl}"
            style="display:inline-block;background:${DMV_BLUE};color:#fff;font-size:12px;font-weight:700;padding:8px 16px;border-radius:6px;text-decoration:none;">
           Start test →
         </a>
@@ -154,7 +164,7 @@ function ctaGrid(practiceTestUrl: string, signsTestUrl: string): string {
         <p style="margin:0 0 4px 0;font-size:22px;">🚦</p>
         <p style="margin:0 0 8px 0;font-size:13px;font-weight:700;color:#111827;">Road Signs Test</p>
         <p style="margin:0 0 12px 0;font-size:12px;color:#6b7280;">All California signs</p>
-        <a href="${signsTestUrl}"
+        <a href="${signsUrl}"
            style="display:inline-block;background:${ORANGE};color:#fff;font-size:12px;font-weight:700;padding:8px 16px;border-radius:6px;text-decoration:none;">
           Test yourself →
         </a>
@@ -163,11 +173,68 @@ function ctaGrid(practiceTestUrl: string, signsTestUrl: string): string {
   </table>`;
 }
 
+/** Lightweight recurring re-engagement email — one CTA, not the full
+ * blog-digest layout. Points at the Daily Challenge (same for everyone that
+ * day, the strongest return-visit hook in the app). */
+export function buildReEngagementHtml(email: string): string {
+  const token = generateUnsubscribeToken(email);
+  const unsubscribeUrl = `${SITE_URL}/unsubscribe?email=${encodeURIComponent(email)}&token=${token}`;
+  const url = withUtm(`${SITE_URL}/practice-test/daily-challenge`, 're_engagement');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>Today's Daily Challenge is ready</title>
+</head>
+<body style="margin:0;padding:0;background:#f3f4f6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#f3f4f6;padding:32px 16px;">
+    <tr>
+      <td align="center">
+        <table width="480" cellpadding="0" cellspacing="0" style="max-width:480px;width:100%;">
+          <tr>
+            <td style="background:${DMV_DARK};border-radius:10px 10px 0 0;padding:24px 32px;text-align:center;">
+              <p style="margin:0;font-size:20px;font-weight:800;color:#ffffff;">DMV California</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="background:#ffffff;padding:32px;text-align:center;">
+              <p style="margin:0 0 8px 0;font-size:18px;font-weight:700;color:#111827;">Today's Daily Challenge is ready</p>
+              <p style="margin:0 0 24px 0;font-size:14px;color:#6b7280;line-height:1.6;">
+                10 fresh questions, same for everyone today. A couple minutes now keeps your knowledge sharp for test day.
+              </p>
+              <a href="${url}"
+                 style="display:inline-block;background:${DMV_BLUE};color:#ffffff;font-size:14px;font-weight:700;padding:12px 28px;border-radius:6px;text-decoration:none;">
+                Take today's challenge →
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td style="background:#f9fafb;border-top:1px solid #e5e7eb;border-radius:0 0 10px 10px;padding:16px 32px;text-align:center;">
+              <p style="margin:0 0 6px 0;font-size:12px;color:#9ca3af;">
+                You received this because you submitted your score to the leaderboard at DMV California.
+              </p>
+              <p style="margin:0;font-size:12px;color:#9ca3af;">
+                <a href="${unsubscribeUrl}" style="color:#6b7280;text-decoration:underline;">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
 export function buildNewsletterHtml(opts: NewsletterOptions, email: string): string {
   const token = generateUnsubscribeToken(email);
   const unsubscribeUrl = `${SITE_URL}/unsubscribe?email=${encodeURIComponent(email)}&token=${token}`;
+  const campaignId = opts.campaignId || new Date().toISOString().slice(0, 10);
 
-  const postCards = opts.posts.map(postCard).join('');
+  const postCards = opts.posts.map(post => postCard(post, campaignId)).join('');
   const updateItems = opts.updates
     .map(u => `<li style="margin:0 0 8px 0;font-size:14px;color:#374151;line-height:1.6;">${u}</li>`)
     .join('');
@@ -214,7 +281,7 @@ export function buildNewsletterHtml(opts: NewsletterOptions, email: string): str
               ${opts.youtubeId ? youtubeSection(opts.youtubeId, opts.youtubeTitle || 'Watch on YouTube') : ''}
 
               <!-- Mini quiz -->
-              ${opts.quizQuestions?.length ? miniQuiz(opts.quizQuestions, opts.quizAnswerUrl || SITE_URL) : ''}
+              ${opts.quizQuestions?.length ? miniQuiz(opts.quizQuestions, opts.quizAnswerUrl || SITE_URL, campaignId) : ''}
 
               <!-- What's new -->
               ${updateItems ? `
@@ -224,7 +291,7 @@ export function buildNewsletterHtml(opts: NewsletterOptions, email: string): str
               </ul>` : ''}
 
               <!-- CTA grid -->
-              ${ctaGrid(`${SITE_URL}/practice-test/california-dmv-practice-test-2026`, `${SITE_URL}/california-dmv-road-signs-test`)}
+              ${ctaGrid(`${SITE_URL}/practice-test/california-dmv-practice-test-2026`, `${SITE_URL}/california-dmv-road-signs-test`, campaignId)}
 
             </td>
           </tr>
@@ -238,7 +305,7 @@ export function buildNewsletterHtml(opts: NewsletterOptions, email: string): str
               <p style="margin:0;font-size:12px;color:#9ca3af;">
                 <a href="${unsubscribeUrl}" style="color:#6b7280;text-decoration:underline;">Unsubscribe</a>
                 &nbsp;·&nbsp;
-                <a href="${SITE_URL}" style="color:#6b7280;text-decoration:underline;">dmvcalifornia.us</a>
+                <a href="${withUtm(SITE_URL, campaignId)}" style="color:#6b7280;text-decoration:underline;">dmvcalifornia.us</a>
               </p>
             </td>
           </tr>

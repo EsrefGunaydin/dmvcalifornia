@@ -47,6 +47,21 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
     ? { heading: 'Áreas para repasar', sub: 'Concéntrate en estos temas antes de volver a intentarlo:' }
     : { heading: 'Topics to review', sub: 'Focus on these topics before your retake:' };
 
+  // Fire once per completed attempt, on mount, since Results only renders
+  // when a quiz has actually finished.
+  useEffect(() => {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', 'quiz_complete', {
+      quiz_id: String(quizId),
+      passed,
+      percentage,
+    });
+    if (String(quizId).startsWith('daily-challenge-')) {
+      window.gtag('event', 'daily_challenge_complete', { quiz_id: String(quizId), passed });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const [showLeaderboardModal, setShowLeaderboardModal] = useState(true);
 
   // Auto-advance to the next quiz after a pass. Waits for the leaderboard
@@ -163,8 +178,12 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
             </p>
             <p className={`text-xs ${streak >= 7 ? 'text-orange-600' : 'text-amber-600'}`}>
               {streak >= 7
-                ? 'Incredible consistency. Come back tomorrow to keep it going.'
-                : 'Come back tomorrow to keep your streak alive.'}
+                ? 'Incredible consistency. '
+                : 'Come back tomorrow to keep your streak alive. '}
+              <Link href="/practice-test/daily-challenge" className="underline font-semibold">
+                Try the Daily Challenge
+              </Link>
+              .
             </p>
           </div>
         </div>

@@ -1,12 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
 import { getMongoClient } from '@/lib/mongodb';
-import { FROM_ADDRESS } from '@/lib/newsletter';
-import { buildNewsletterHtml, type NewsletterOptions } from '@/lib/newsletterTemplate';
+import { FROM_ADDRESS, getMarketingSubscriberEmails } from '@/lib/newsletter';
+import { buildNewsletterHtml, buildReEngagementHtml, type NewsletterOptions } from '@/lib/newsletterTemplate';
 
 const BATCH_SIZE = 90; // stay under Resend free tier 100/day limit
 const RESEND_CHUNK = 100;
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export async function GET(request: NextRequest) {
   // Vercel cron sends Authorization: Bearer CRON_SECRET
@@ -22,41 +21,52 @@ export async function GET(request: NextRequest) {
   const client = await getMongoClient();
   const db = client.db('dmvcalifornia');
 
-  // Find the active campaign
-  const campaign = await db.collection('newsletter_campaigns').findOne({ status: 'active' });
+  // Priority 1: a manually-created one-off announcement campaign. Untouched
+  // behavior from before — completes and stops once it reaches the end.
+  let campaign = await db.collection('newsletter_campaigns').findOne({ status: 'active', kind: { $ne: 're_engagement' } });
+  const isReEngagement = !campaign;
+
+  // Priority 2: no one-off campaign running, so use the daily quota on the
+  // persistent re-engagement drip instead (growth-plan step 4). This is a
+  // singleton document that never "completes" — it wraps back to offset 0
+  // once it reaches the end, so every subscriber gets touched roughly once
+  // per full pass through the list (~853 people / 90 per day ≈ every 9-10
+  // days), not "2-3x/week" as originally sketched, since Resend's free-tier
+  // 100/day cap is shared with any one-off campaign and can't be exceeded.
+  if (isReEngagement) {
+    campaign = await db.collection('newsletter_campaigns').findOneAndUpdate(
+      { kind: 're_engagement' },
+      { $setOnInsert: { kind: 're_engagement', offset: 0, status: 'active', createdAt: new Date() } },
+      { upsert: true, returnDocument: 'after' }
+    );
+  }
+
   if (!campaign) {
     return NextResponse.json({ message: 'No active campaign' });
   }
 
-  // Fetch opted-in emails
-  const entries = await db.collection('leaderboard')
-    .find({ marketingConsent: true, email: { $exists: true, $ne: '' } })
-    .project({ email: 1 })
-    .toArray();
-
-  const seen = new Set<string>();
-  const allEmails: string[] = [];
-  for (const e of entries) {
-    const lower = (e.email as string).toLowerCase().trim();
-    if (lower && !seen.has(lower) && EMAIL_RE.test(lower)) {
-      seen.add(lower);
-      allEmails.push(e.email as string);
-    }
-  }
+  // Fetch opted-in emails, filtered to deliverable-looking addresses
+  const allEmails = await getMarketingSubscriberEmails(db);
 
   const offset = campaign.offset as number;
   const batch = allEmails.slice(offset, offset + BATCH_SIZE);
 
   if (batch.length === 0) {
+    if (isReEngagement) {
+      return NextResponse.json({ kind: 're_engagement', message: 'No subscribers to re-engage' });
+    }
     await db.collection('newsletter_campaigns').updateOne(
       { _id: campaign._id },
       { $set: { status: 'complete', completedAt: new Date() } }
     );
-    return NextResponse.json({ message: 'Campaign complete', totalSent: offset });
+    return NextResponse.json({ kind: 'announcement', message: 'Campaign complete', totalSent: offset });
   }
 
   const resend = new Resend(process.env.RESEND_API_KEY);
-  const opts = campaign.content as NewsletterOptions;
+  const opts: NewsletterOptions | null = isReEngagement ? null : {
+    ...(campaign.content as NewsletterOptions),
+    campaignId: campaign._id.toString(),
+  };
 
   let sent = 0;
   let failed = 0;
@@ -67,8 +77,8 @@ export async function GET(request: NextRequest) {
     const messages = chunk.map((email) => ({
       from: FROM_ADDRESS,
       to: email,
-      subject: opts.subject,
-      html: buildNewsletterHtml(opts, email),
+      subject: opts ? opts.subject : "Today's Daily Challenge is ready",
+      html: opts ? buildNewsletterHtml(opts, email) : buildReEngagementHtml(email),
     }));
 
     try {
@@ -86,20 +96,30 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  const newOffset = offset + batch.length;
-  const remaining = allEmails.length - newOffset;
-  const isComplete = remaining <= 0;
+  const reachedEnd = offset + batch.length >= allEmails.length;
+  const newOffset = isReEngagement && reachedEnd ? 0 : offset + batch.length;
+  const remaining = allEmails.length - (offset + batch.length);
+  const isComplete = !isReEngagement && remaining <= 0;
 
   await db.collection('newsletter_campaigns').updateOne(
     { _id: campaign._id },
     {
       $set: {
         offset: newOffset,
+        lastSentAt: new Date(),
         ...(isComplete ? { status: 'complete', completedAt: new Date() } : {}),
       },
       $push: { log: { date: new Date(), sent, failed, offset, newOffset } } as any,
     }
   );
 
-  return NextResponse.json({ sent, failed, offset, newOffset, remaining, ...(errors.length ? { errors } : {}) });
+  return NextResponse.json({
+    kind: isReEngagement ? 're_engagement' : 'announcement',
+    sent,
+    failed,
+    offset,
+    newOffset,
+    remaining: Math.max(0, remaining),
+    ...(errors.length ? { errors } : {}),
+  });
 }

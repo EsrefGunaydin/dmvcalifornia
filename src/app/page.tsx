@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import CookieBanner from '../components/CookieBanner';
 import AppPromotion from '../components/AppPromotion';
 import SiteActivityBadge from '../components/SiteActivityBadge';
+import DailyChallengeBanner from '../components/DailyChallengeBanner';
 import blogPostsData from '../data/blog_posts.json';
 import quizzesData from '../data/quizzes.json';
 import turkishQuizzesData from '../data/turkish-quizzes.json';
@@ -122,12 +123,15 @@ export default function Home() {
               <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
                 Master your California driving knowledge with interactive quizzes, practice tests, and comprehensive study guides.
               </p>
-              <Link
-                href="/practice-test"
-                className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
-              >
-                Start Practice Test
-              </Link>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link
+                  href="/practice-test"
+                  className="inline-block bg-primary hover:bg-primary-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
+                >
+                  Start Practice Test
+                </Link>
+                <DailyChallengeBanner variant="hero" />
+              </div>
               <div className="mt-4">
                 <SiteActivityBadge />
               </div>

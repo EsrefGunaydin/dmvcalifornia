@@ -24,8 +24,11 @@ export default function DailyChallengePage() {
   const date = todayUTC();
   const seed = seedFromDate(date);
 
-  // Only use English questions without images for clean mobile display
+  // Only use English questions without images for clean mobile display.
+  // quizzes.json holds both English and Spanish quiz entries, so the
+  // language check is required here, not just a filter on images.
   const pool: Question[] = (quizzesData.quizzes as Quiz[])
+    .filter((q) => ((q as { language?: string }).language || 'en') === 'en')
     .flatMap((q) => q.questions)
     .filter((q) => !q.image);
 

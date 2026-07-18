@@ -29,7 +29,7 @@ export async function POST(request: NextRequest) {
   const {
     subject, previewText, posts, updates,
     youtubeId, youtubeTitle, quizQuestions, quizAnswerUrl,
-    offset = 0, dryRun = false,
+    campaignId, offset = 0, dryRun = false,
   } = body;
 
   if (!subject || !posts?.length) {
@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   const opts: NewsletterOptions = {
     subject, previewText: previewText || subject, posts, updates: updates || [],
-    youtubeId, youtubeTitle, quizQuestions, quizAnswerUrl,
+    youtubeId, youtubeTitle, quizQuestions, quizAnswerUrl, campaignId,
   };
 
   let sent = 0;

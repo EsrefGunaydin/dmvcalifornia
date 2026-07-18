@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Gamepad2 } from 'lucide-react';
+import { Gamepad2, Flame } from 'lucide-react';
+import { useStreak } from '@/hooks/useStreak';
 
 const STUDY_TOOLS: { href: string; label: string; isNew?: boolean }[] = [
   { href: '/practice-test/simulator/en', label: 'Practice Test Simulator', isNew: true },
@@ -22,6 +23,7 @@ const STUDY_TOOLS: { href: string; label: string; isNew?: boolean }[] = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
+  const { streak } = useStreak();
 
   return (
     <header className="bg-gradient-to-r from-white via-orange-100 via-50% to-white shadow-sm border-b-4 border-primary sticky top-0 z-40">
@@ -85,6 +87,15 @@ export default function Header() {
             <Link href="/dmv-offices" className="text-gray-700 hover:text-primary font-medium transition-colors">
               DMV Offices
             </Link>
+            {streak >= 1 && (
+              <Link
+                href="/practice-test/daily-challenge"
+                className="flex items-center gap-1.5 bg-orange-50 text-orange-700 border border-orange-200 px-3 py-1.5 rounded-full text-sm font-bold hover:bg-orange-100 transition-colors"
+                title="Keep your streak alive"
+              >
+                <Flame className="w-4 h-4" /> {streak}
+              </Link>
+            )}
             <a
               href="https://apps.apple.com/app/dmv-california/id6754900213"
               target="_blank"
@@ -189,6 +200,15 @@ export default function Header() {
               >
                 DMV Offices
               </Link>
+              {streak >= 1 && (
+                <Link
+                  href="/practice-test/daily-challenge"
+                  className="flex items-center gap-1.5 text-orange-700 font-bold transition-colors py-2"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  <Flame className="w-4 h-4" /> {streak}-day streak
+                </Link>
+              )}
               <Link
                 href="/privacy-policy"
                 className="text-gray-700 hover:text-primary font-medium transition-colors py-2"

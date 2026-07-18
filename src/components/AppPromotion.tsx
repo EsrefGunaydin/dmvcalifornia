@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Smartphone } from 'lucide-react';
@@ -9,6 +11,10 @@ interface AppPromotionProps {
 
 export default function AppPromotion({ variant = 'sidebar', className = '' }: AppPromotionProps) {
   const appStoreUrl = 'https://apps.apple.com/app/dmv-practice-exams/id6754900213';
+
+  const trackClick = () => {
+    if (typeof window.gtag === 'function') window.gtag('event', 'app_promo_click', { variant });
+  };
 
   // Banner variant - Full width promotional banner
   if (variant === 'banner') {
@@ -38,6 +44,7 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
             href={appStoreUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackClick}
             className="flex-shrink-0 hover:opacity-80 transition-opacity"
           >
             <Image
@@ -70,6 +77,7 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
           href={appStoreUrl}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={trackClick}
           className="block hover:opacity-80 transition-opacity"
         >
           <Image
@@ -147,6 +155,7 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
             href={appStoreUrl}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackClick}
             className="block hover:opacity-80 transition-opacity"
           >
             <Image
