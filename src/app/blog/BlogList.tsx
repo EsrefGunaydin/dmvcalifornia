@@ -1,10 +1,10 @@
 'use client';
 
-import { Fragment, useState, useMemo } from 'react';
+import { Fragment, useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import MultiplexAd from '@/components/MultiplexAd';
 
-type FilterSection = 'sort' | 'tags' | null;
+type FilterSection = 'sort' | 'tags' | 'lang' | null;
 
 type BlogPost = {
   id: number;
@@ -16,7 +16,39 @@ type BlogPost = {
   author: string;
   tags?: string[];
   hero_image?: string | null;
+  lang?: string;
+  views?: number;
 };
+
+type SortOption = 'popular' | 'unpopular' | 'newest' | 'oldest';
+
+const SORT_LABELS: Record<SortOption, string> = {
+  popular: 'Most Viewed',
+  unpopular: 'Least Viewed',
+  newest: 'Newest',
+  oldest: 'Oldest',
+};
+
+// Flag and label per language code. Posts with no `lang` set are English.
+const LANGUAGE_META: Record<string, { flag: string; label: string }> = {
+  en: { flag: '🇺🇸', label: 'English' },
+  es: { flag: '🇪🇸', label: 'Español' },
+  tr: { flag: '🇹🇷', label: 'Türkçe' },
+  zh: { flag: '🇨🇳', label: '中文' },
+  ar: { flag: '🇸🇦', label: 'العربية' },
+  hy: { flag: '🇦🇲', label: 'Հայերեն' },
+  fa: { flag: '🇮🇷', label: 'فارسی' },
+  pa: { flag: '🇮🇳', label: 'ਪੰਜਾਬੀ' },
+  ru: { flag: '🇷🇺', label: 'Русский' },
+  tl: { flag: '🇵🇭', label: 'Tagalog' },
+  vi: { flag: '🇻🇳', label: 'Tiếng Việt' },
+  ko: { flag: '🇰🇷', label: '한국어' },
+  hi: { flag: '🇮🇳', label: 'हिन्दी' },
+};
+
+function getPostLang(post: BlogPost): string {
+  return post.lang || 'en';
+}
 
 // Helper to extract first image from HTML content
 function extractFirstImage(htmlContent: string): string | null {
@@ -33,9 +65,24 @@ function resolveCardImage(post: BlogPost): string | null {
 
 export default function BlogList({ posts }: { posts: BlogPost[] }) {
   const [selectedTag, setSelectedTag] = useState<string>('all');
-  const [sortBy, setSortBy] = useState<'newest' | 'oldest'>('newest');
+  const [selectedLang, setSelectedLang] = useState<string>('all');
+  const [sortBy, setSortBy] = useState<SortOption>('popular');
   const [expandedSection, setExpandedSection] = useState<FilterSection>(null);
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [liveViews, setLiveViews] = useState<Record<string, number>>({});
+
+  // Live view counts (MongoDB) are more current than the static snapshot
+  // baked into blog_posts.json at build time, so prefer them once loaded.
+  useEffect(() => {
+    fetch('/api/blog-views')
+      .then(res => (res.ok ? res.json() : null))
+      .then(data => {
+        if (data?.views) setLiveViews(data.views);
+      })
+      .catch(() => {});
+  }, []);
+
+  const getViews = (post: BlogPost): number => liveViews[post.slug] ?? post.views ?? 0;
 
   // Get all unique tags
   const allTags = useMemo(() => {
@@ -44,6 +91,17 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
       post.tags?.forEach(tag => tags.add(tag));
     });
     return Array.from(tags).sort();
+  }, [posts]);
+
+  // Get all unique languages present in the post set
+  const allLangs = useMemo(() => {
+    const langs = new Set<string>();
+    posts.forEach(post => langs.add(getPostLang(post)));
+    return Array.from(langs).sort((a, b) => {
+      if (a === 'en') return -1;
+      if (b === 'en') return 1;
+      return (LANGUAGE_META[a]?.label || a).localeCompare(LANGUAGE_META[b]?.label || b);
+    });
   }, [posts]);
 
   // Filter and sort posts
@@ -64,15 +122,25 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
       filtered = filtered.filter(post => post.tags?.includes(selectedTag));
     }
 
-    // Sort by date
+    // Filter by language
+    if (selectedLang !== 'all') {
+      filtered = filtered.filter(post => getPostLang(post) === selectedLang);
+    }
+
+    // Sort
     filtered = [...filtered].sort((a, b) => {
+      if (sortBy === 'popular' || sortBy === 'unpopular') {
+        const viewsA = getViews(a);
+        const viewsB = getViews(b);
+        return sortBy === 'popular' ? viewsB - viewsA : viewsA - viewsB;
+      }
       const dateA = new Date(a.publishedAt).getTime();
       const dateB = new Date(b.publishedAt).getTime();
       return sortBy === 'newest' ? dateB - dateA : dateA - dateB;
     });
 
     return filtered;
-  }, [posts, selectedTag, sortBy, searchQuery]);
+  }, [posts, selectedTag, selectedLang, sortBy, searchQuery, liveViews]);
 
   return (
     <>
@@ -96,7 +164,7 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12" />
               </svg>
-              Sort: {sortBy === 'newest' ? 'Newest' : 'Oldest'}
+              Sort: {SORT_LABELS[sortBy]}
               <svg className={`w-4 h-4 transition-transform ${expandedSection === 'sort' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
@@ -120,11 +188,34 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
               </svg>
             </button>
 
+            {/* Language Filter Toggle */}
+            <button
+              onClick={() => setExpandedSection(expandedSection === 'lang' ? null : 'lang')}
+              className={`flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                selectedLang !== 'all'
+                  ? 'bg-primary text-white'
+                  : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+              }`}
+            >
+              {selectedLang === 'all' ? (
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                </svg>
+              ) : (
+                <span>{LANGUAGE_META[selectedLang]?.flag}</span>
+              )}
+              {selectedLang === 'all' ? 'All Languages' : LANGUAGE_META[selectedLang]?.label || selectedLang}
+              <svg className={`w-4 h-4 transition-transform ${expandedSection === 'lang' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
             {/* Clear filters if any active */}
-            {(selectedTag !== 'all' || searchQuery) && (
+            {(selectedTag !== 'all' || selectedLang !== 'all' || searchQuery) && (
               <button
                 onClick={() => {
                   setSelectedTag('all');
+                  setSelectedLang('all');
                   setSearchQuery('');
                 }}
                 className="text-sm text-gray-500 hover:text-gray-700 underline"
@@ -172,33 +263,23 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
           {/* Expandable Sort Options */}
           {expandedSection === 'sort' && (
             <div className="mt-3 pt-3 border-t animate-in fade-in slide-in-from-top-2 duration-200">
-              <div className="flex gap-2">
-                <button
-                  onClick={() => {
-                    setSortBy('newest');
-                    setExpandedSection(null);
-                  }}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    sortBy === 'newest'
-                      ? 'bg-primary text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  Newest First
-                </button>
-                <button
-                  onClick={() => {
-                    setSortBy('oldest');
-                    setExpandedSection(null);
-                  }}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    sortBy === 'oldest'
-                      ? 'bg-primary text-white'
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  Oldest First
-                </button>
+              <div className="flex flex-wrap gap-2">
+                {(['popular', 'unpopular', 'newest', 'oldest'] as SortOption[]).map(option => (
+                  <button
+                    key={option}
+                    onClick={() => {
+                      setSortBy(option);
+                      setExpandedSection(null);
+                    }}
+                    className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
+                      sortBy === option
+                        ? 'bg-primary text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    }`}
+                  >
+                    {SORT_LABELS[option]}
+                  </button>
+                ))}
               </div>
             </div>
           )}
@@ -236,6 +317,48 @@ export default function BlogList({ posts }: { posts: BlogPost[] }) {
                       }`}
                     >
                       {tag} ({count})
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Expandable Language Filter */}
+          {expandedSection === 'lang' && (
+            <div className="mt-3 pt-3 border-t animate-in fade-in slide-in-from-top-2 duration-200">
+              <div className="flex flex-wrap gap-2">
+                <button
+                  onClick={() => {
+                    setSelectedLang('all');
+                    setExpandedSection(null);
+                  }}
+                  className={`px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                    selectedLang === 'all'
+                      ? 'bg-primary text-white'
+                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
+                >
+                  All ({posts.length})
+                </button>
+                {allLangs.map(lang => {
+                  const count = posts.filter(p => getPostLang(p) === lang).length;
+                  const meta = LANGUAGE_META[lang];
+                  return (
+                    <button
+                      key={lang}
+                      onClick={() => {
+                        setSelectedLang(lang);
+                        setExpandedSection(null);
+                      }}
+                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-colors ${
+                        selectedLang === lang
+                          ? 'bg-primary text-white'
+                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                      }`}
+                    >
+                      <span>{meta?.flag}</span>
+                      {meta?.label || lang} ({count})
                     </button>
                   );
                 })}

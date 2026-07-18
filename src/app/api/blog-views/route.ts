@@ -1,7 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getMongoClient } from '@/lib/mongodb';
 
-// GET: Retrieve view count for a specific blog post
+// GET: Retrieve the view count for a specific blog post (?slug=...),
+// or, with no slug, every tracked post's live view count in one round trip
+// (used by the blog list to sort by real-time views instead of the static
+// snapshot baked into blog_posts.json).
 export async function GET(request: NextRequest) {
   try {
     if (!process.env.MONGODB_URI) {
@@ -15,16 +18,19 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const slug = String(searchParams.get('slug') || '');
 
-    if (!slug) {
-      return NextResponse.json(
-        { error: 'Blog slug is required' },
-        { status: 400 }
-      );
-    }
-
     const client = await getMongoClient();
     const db = client.db('dmvcalifornia');
     const collection = db.collection('blog_views');
+
+    if (!slug) {
+      const records = await collection
+        .find({}, { projection: { _id: 0, slug: 1, views: 1 } })
+        .toArray();
+      const views = Object.fromEntries(
+        records.map(r => [r.slug, r.views || 0])
+      );
+      return NextResponse.json({ views }, { status: 200 });
+    }
 
     // $eq prevents NoSQL operator injection via crafted slug values
     const viewRecord = await collection.findOne({ slug: { $eq: slug } });
