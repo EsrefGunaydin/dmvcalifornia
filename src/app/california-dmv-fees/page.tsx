@@ -29,20 +29,21 @@ const GROUPS: Group[] = [
   {
     title: 'Driver license & ID',
     rows: [
-      { item: 'Original driver license (Class C)', fee: '$45' },
-      { item: 'Driver license renewal (Class C)', fee: '$45' },
-      { item: 'Original or renewal ID card', fee: '$39' },
+      { item: 'Original driver license (Class C)', fee: '$46' },
+      { item: 'Driver license renewal (Class C)', fee: '$46' },
+      { item: 'Original or renewal ID card', fee: '$40' },
       { item: 'REAL ID (driver license or ID)', fee: 'No extra cost — same as standard' },
-      { item: 'Duplicate / replacement license', fee: '$40' },
+      { item: 'Duplicate / replacement license', fee: '$37' },
       { item: 'Behind-the-wheel drive test retake', fee: '$8' },
     ],
   },
   {
     title: 'Motorcycle & commercial',
     rows: [
-      { item: 'Original motorcycle license (Class M)', fee: '$45' },
-      { item: 'Original commercial license (Class A/B)', fee: '$90' },
-      { item: 'Commercial renewal', fee: '$45' },
+      { item: 'Original motorcycle license (Class M)', fee: '$46' },
+      { item: 'Original commercial license (Class A/B)', fee: '$100' },
+      { item: 'Commercial renewal (Class A/B)', fee: '$59' },
+      { item: 'Commercial Class C (original or renewal)', fee: '$59' },
     ],
   },
   {
@@ -60,7 +61,7 @@ const GROUPS: Group[] = [
 const FAQ = [
   {
     q: 'How much does it cost to renew a California driver’s license?',
-    a: 'The standard Class C renewal fee is about $45. Upgrading to a REAL ID at renewal costs nothing extra — you just need to apply in person with the required documents.',
+    a: 'The standard Class C renewal fee is $46. Upgrading to a REAL ID at renewal costs nothing extra — you just need to apply in person with the required documents.',
   },
   {
     q: 'Does a REAL ID cost more than a regular license?',

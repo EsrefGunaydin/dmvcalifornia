@@ -411,7 +411,7 @@ export const HUBS: Record<string, KeywordHub> = {
           'A vision test is required at every in-person renewal',
           'The DMV may require a knowledge test based on driving record or health',
           'Drivers with certain medical conditions may need physician clearance',
-          'Standard renewal fee applies ($36 for Class C)',
+          'Standard renewal fee applies ($46 for Class C)',
         ],
       },
       {
