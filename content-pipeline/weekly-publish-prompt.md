@@ -12,7 +12,9 @@ You are the DMV California weekly content publisher. Your job is to draft one ne
 
 2. **Read the style guide.** Open `content-pipeline/style-guide.md`. Apply every rule when drafting.
 
-3. **Read the article template.** Open `content-pipeline/article-template.md` for the JSON + HTML scaffold.
+3. **Read the article template.** Check the topic's `lang` field first:
+   - If `lang` is missing or `"en"`: open `content-pipeline/article-template.md` for the JSON + HTML scaffold.
+   - If `lang` is anything else (`es`, `tr`, `ar`, `zh`, `vi`, `ko`, `ru`, `hy`, `fa`, `pa`, `tl`, `hi`): open `content-pipeline/multilingual-article-template.md` instead and follow it. Write the article natively in that language — never draft in English and translate. If the topic has a `translations_target` field, wire the reciprocal `translations` maps exactly as that template describes (both directions, full cluster, same PR).
 
 4. **Read the SEO checklist.** Open `content-pipeline/seo-checklist.md` — you must satisfy every item.
 

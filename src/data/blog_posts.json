@@ -320,7 +320,7 @@
       "updatedAt": "2026-07-01T10:00:00Z",
       "lang": "es",
       "translations": {
-        "en": "california-dmv-appointment"
+        "en": "dmv-appointment"
       },
       "metaTitle": "Cómo hacer una cita en el DMV de California 2026 | Guía en",
       "metaDescription": "Paso a paso para hacer su cita en el DMV de California en línea o por teléfono. Qué documentos necesita, tiempos de espera y cómo cancelar su cita.",
@@ -2496,7 +2496,11 @@
           "answer": "Online at dmv.ca.gov, up to 24 hours before the appointment, free of charge. Log in with your appointment ID or email, find the appointment, and click \"Cancel\" or \"Reschedule.\" Always cancel rather than no-show: repeat no-shows can result in a temporary booking block."
         }
       ],
-      "updatedAt": "2026-05-28T17:00:00Z"
+      "updatedAt": "2026-05-28T17:00:00Z",
+      "translations": {
+        "es": "cita-dmv-california"
+      },
+      "lang": "en"
     },
     {
       "id": 456,

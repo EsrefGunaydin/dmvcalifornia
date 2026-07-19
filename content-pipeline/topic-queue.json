@@ -8,9 +8,959 @@
       "blocked": "On hold — see notes",
       "archive": "Deprecated; skip"
     },
-    "priority_scale": "1 (highest) → 5 (lowest). Tied priorities ordered by array position."
+    "priority_scale": "1 (highest) → 5 (lowest). Tied priorities ordered by array position.",
+    "multilingual": "Topics may carry a 'lang' field (ISO code: es, tr, ar, zh, vi, ko, ru, hy, fa, pa, tl, hi). When lang is present and not 'en', the weekly agent must use content-pipeline/multilingual-article-template.md instead of article-template.md and write natively in that language. Optional 'translations_target' names an existing blog_posts.json slug that is the same article in another language; the agent must wire reciprocal 'translations' maps across the whole cluster in the same PR.",
+    "keyword_gap_batch": "Priority 1-2 topics prepended 2026-07-18 from the native-language keyword-gap research (Keyword Gap Atlas). They intentionally outrank the pre-existing p3-p5 backlog."
   },
   "topics": [
+    {
+      "slug": "korean-dmv-written-test-translation-issues",
+      "title": "Korean DMV written test translation problems (news piece)",
+      "target_keyword": "캘리포니아 운전면허 필기시험 한국어",
+      "secondary_keywords": [
+        "dmv 필기시험 오역",
+        "한국어 운전면허 시험 불합격",
+        "korean dmv test translation"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "DMV office",
+        "Written Test",
+        "Korean"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-korean-test",
+        "/california-drivers-license-guide-korean"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "TIMELY NEWS PIECE, publish first before it goes stale. Korean-American media (Korea Times, Radio Seoul) have reported since 2022, with a fresh article July 13 2026, that the official Korean-language DMV written test contains poor machine-style translations; reported pass rates fell from 79% to 56%. Example cited: \"curb\" mistranslated confusingly. Angle: news-style explainer for fluent Korean speakers on why the official Korean test trips them up and how to prepare anyway (read the English handbook glossary terms, practice with curated Korean questions, option to request the English test). This is NOT a how-to license guide, do not use the step-flow SVGs. Funnel to /dmv-korean-test as the reliable-translation alternative. WebSearch for the latest coverage before drafting; cite outlets by name, never fabricate quotes.",
+      "lang": "ko",
+      "author": "DMV California"
+    },
+    {
+      "slug": "licencia-de-conducir-para-menores-california",
+      "title": "Licencia de conducir para menores de edad en California (2026)",
+      "target_keyword": "licencia de conducir para menores california",
+      "secondary_keywords": [
+        "permiso de manejar adolescentes california",
+        "licencia provisional california requisitos",
+        "cuantas horas de practica necesita mi hijo"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "Teen Driver",
+        "Driver License",
+        "Spanish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/muestra-del-examen-escrito-para-licencia-de-manejar",
+        "/como-obtener-licencia-de-conducir-california",
+        "/california-dmv-fees"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/",
+        "https://www.dmv.ca.gov/portal/file/california-driver-handbook-pdf/"
+      ],
+      "notes": "Spanish-speaking PARENTS search this on behalf of their teens, even when the teen tests in English, so address the parent as the reader: what your child needs, what you must sign (you assume legal liability on the DL 44), the 15½ minimum age, 6-month permit period, 50 supervised hours (10 at night), provisional restrictions in the first 12 months, driver ed requirements, and the $46 fee. Competitors: Univision, DMV.org en español, El Tiempo (do not link any of them). Verified fees July 2026: Class C $46.",
+      "lang": "es",
+      "author": "DMV California",
+      "translations_target": "california-teen-driver-complete-guide-2026"
+    },
+    {
+      "slug": "ab-60-ehliyet-kaliforniya",
+      "title": "AB 60: Kaliforniya'da kimlik durumundan bağımsız ehliyet (2026)",
+      "target_keyword": "ssn olmadan ehliyet california",
+      "secondary_keywords": [
+        "ab 60 ehliyet",
+        "kacak gocmen ehliyet california",
+        "amerikada kimliksiz ehliyet"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "AB 60",
+        "Turkish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-turkish-test",
+        "/kaliforniyada-ehliyet-nasil-alinir",
+        "/cita-dmv-california"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/assembly-bill-ab-60-driver-licenses/"
+      ],
+      "notes": "AB 60 for Turkish speakers who cannot prove lawful presence (no SSN, no valid visa), a DIFFERENT audience than the visa-holder flagship guide at /kaliforniyada-ehliyet-nasil-alinir. Competitor evidence: callutku.com and akbulutlaw.com run dedicated Turkish AB 60 posts (do not link them). LEAD with confidentiality: Vehicle Code §1808.4, DMV does not share applicant data with immigration enforcement. Source facts from the official DMV AB 60 page plus the site's own vetted ab-60-california-driver-license and licencia-de-conducir-para-indocumentados-california posts: $46 fee, Federal Limits Apply marking, identity via foreign passport/national ID, two CA residency proofs, 5-year validity, standard AB 60 licenses are NOT being revoked (only the separate CDL federal dispute). Reassuring, factual, compliant tone; never speculate about enforcement. Wire the full AB 60 translations cluster reciprocally (en + es exist today; add every member present at draft time).",
+      "lang": "tr",
+      "author": "DMV California",
+      "translations_target": "ab-60-california-driver-license"
+    },
+    {
+      "slug": "california-cdl-guide-punjabi",
+      "title": "California CDL guide in Punjabi (Class A trucking)",
+      "target_keyword": "ਸੀਡੀਐਲ ਲਾਇਸੈਂਸ ਕੈਲੀਫੋਰਨੀਆ",
+      "secondary_keywords": [
+        "cdl license california punjabi",
+        "ਟਰੱਕ ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ",
+        "class a license punjabi"
+      ],
+      "search_intent": "informational",
+      "target_length": 2000,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "truck driver",
+        "CDL",
+        "Punjabi"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-punjabi-test",
+        "/california-drivers-license-guide-punjabi",
+        "/california-truck-driver-cdl-guide-2026"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/commercial-driver-licenses-cdl/",
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/licensing-fees/"
+      ],
+      "notes": "Largest unserved niche found in the July 2026 keyword research: the Central Valley Punjabi trucking community (Yuba City, Fresno, Bakersfield). Cover the Class A path: CDL permit, ELDT training requirement, skills test, medical certificate, and verified fees (commercial A/B original $100, renewal $59). Sensitive context to handle carefully and factually: news coverage of ~17,000 Punjabi truckers whose CDLs face revocation over the federal work-authorization dispute (Sikh Coalition / Asian Law Caucus lawsuit); explain who is affected (AB 60-issued CDLs) and who is not (standard-status CDL holders), without speculating about enforcement. Punjabi-language CDL schools rank here (Punjab Truck Driving School etc.); do not link competitors. Note which Central Valley DMV offices offer Punjabi audio tests.",
+      "lang": "pa",
+      "author": "DMV California",
+      "translations_target": "california-truck-driver-cdl-guide-2026"
+    },
+    {
+      "slug": "california-real-id-guide-farsi",
+      "title": "California REAL ID guide in Farsi",
+      "target_keyword": "REAL ID چیست کالیفرنیا",
+      "secondary_keywords": [
+        "ریل آیدی کالیفرنیا مدارک",
+        "real id farsi california"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "Real ID",
+        "Farsi"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-farsi-test",
+        "/california-drivers-license-guide-farsi",
+        "/california-dmv-fees"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/"
+      ],
+      "notes": "CHEAPEST WIN in the July 2026 research: Farsi REAL ID queries already surface this site's ENGLISH REAL ID pages organically, with no Farsi-language competitor. Localize the substance of california-real-id-checklist for Farsi speakers (documents by category, foreign passport + visa + I-94 path for identity, two CA residency proofs, SSN or SSA ineligibility letter, $46 fee, gold star meaning, TSA ConfirmID $45 per-trip fee since Feb 1 2026 if you fly without one). Do not translate word-for-word; adapt for the Iranian-American audience (Tehrangeles / West LA), including the limited-term license note for visa holders. Wire into the REAL ID checklist translations cluster (en + es exist).",
+      "lang": "fa",
+      "author": "DMV California",
+      "translations_target": "california-real-id-checklist"
+    },
+    {
+      "slug": "sistema-de-puntos-dmv-california",
+      "title": "Sistema de puntos del DMV de California: multas y suspensión (2026)",
+      "target_keyword": "puntos de multa california",
+      "secondary_keywords": [
+        "como saber si tengo multas de transito",
+        "suspension de licencia por puntos california",
+        "sistema de puntos dmv"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "Traffic Laws",
+        "Spanish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/nuevas-leyes-de-transito-california-2026",
+        "/muestra-del-examen-escrito-para-licencia-de-manejar",
+        "/como-obtener-licencia-de-conducir-california"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-education-and-safety/dmv-safety-guidelines-actions/negligent-operator-treatment-system-nots/",
+        "https://selfhelp.courts.ca.gov/es/multas-de-transito"
+      ],
+      "notes": "Spanish speakers get official Spanish traffic content from the CA courts (selfhelp.courts.ca.gov has a full Spanish section, fine to cite/link, it is official) but no good DMV-points explainer. Cover: 1-point vs 2-point violations, negligent-operator thresholds (4 points/12mo, 6/24mo, 8/36mo), how long points stay, traffic school to mask a point, checking your record, and what triggers suspension. Cross-link the 2026 traffic-laws Spanish post. No translations_target yet: the English points article is queued separately (california-dmv-point-system-suspension); whichever publishes second must wire the reciprocal translations maps between the two.",
+      "lang": "es",
+      "author": "DMV California"
+    },
+    {
+      "slug": "russian-drivers-license-conversion-california",
+      "title": "Converting a Russian license in California (Russian language)",
+      "target_keyword": "обмен водительских прав в калифорнии",
+      "secondary_keywords": [
+        "перевод российских прав в америке",
+        "российские права в сша",
+        "международные права калифорния"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "Russian"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-russian-test",
+        "/california-drivers-license-guide-russian"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/",
+        "https://www.dmv.ca.gov/portal/file/california-driver-handbook-pdf/"
+      ],
+      "notes": "Most-searched Russian topic found: can Russian (and post-Soviet: Ukrainian, Kazakh, etc.) licenses be exchanged for a California license. Answer is NO, no reciprocity, full retest, and the article should be the single clear authoritative version of that answer (competitors ruscali.com, visasam.ru, usadvice.ru are fragmented and inconsistent on IDP rules; do not link them). Include a dedicated IDP section: an IDP is a translation document, not a license; new CA residents must apply for a CA license (10-day rule); grace-window myths debunked. Then the from-scratch steps, condensed, linking the Russian flagship guide for the full process. Audience includes recent arrivals from the whole former USSR.",
+      "lang": "ru",
+      "author": "DMV California"
+    },
+    {
+      "slug": "ab-60-lisensya-sa-california-tnt",
+      "title": "AB 60 license para sa mga TNT sa California (2026)",
+      "target_keyword": "ab 60 license para sa tnt",
+      "secondary_keywords": [
+        "lisensya para sa walang papeles california",
+        "tnt driver license california",
+        "paano kumuha ng lisensya kahit tnt"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "AB 60",
+        "Tagalog"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-tagalog-test",
+        "/paano-kumuha-ng-lisensya-sa-pagmamaneho-sa-california"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/assembly-bill-ab-60-driver-licenses/"
+      ],
+      "notes": "\"TNT\" (tago ng tago) is the Filipino community's own term for undocumented status, and Tagalog AB 60 content is an uncontested gap (existing coverage is English-only: ACLU, Nolo, documentedny; do not link competitors). Use the term respectfully as the community uses it. LEAD with confidentiality (Vehicle Code §1808.4, DMV does not share data with immigration enforcement). Same vetted facts as the AB 60 cluster: $46 fee, Federal Limits Apply, foreign passport or national ID for identity, two CA residency proofs, 5-year validity, standard licenses not affected by the CDL revocation news. Careful, factual, reassuring tone; no enforcement speculation, and note this is not legal advice. Wire the full AB 60 translations cluster reciprocally (check which languages exist at draft time).",
+      "lang": "tl",
+      "author": "DMV California",
+      "translations_target": "ab-60-california-driver-license"
+    },
+    {
+      "slug": "bay-area-driving-guide-hindi",
+      "title": "Bay Area driving guide in Hindi (for new arrivals from India)",
+      "target_keyword": "अमेरिका में ड्राइविंग कैसे सीखें",
+      "secondary_keywords": [
+        "bay area driving tips hindi",
+        "भारत से अमेरिका ड्राइविंग अंतर",
+        "freeway driving india vs usa"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "Defensive Driving",
+        "Hindi"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-hindi-test",
+        "/california-drivers-license-guide-hindi",
+        "/top-28-defensive-driving-tips"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/file/california-driver-handbook-pdf/"
+      ],
+      "notes": "A driving-CULTURE guide, not a license guide: nobody has written this angle. Audience: newly arrived Indian tech workers and students in the Bay Area (H-1B, F-1, L-1) adjusting from Indian driving norms to California ones. Cover: left-hand-drive adjustment, freeway on-ramp/merge technique, 4-way stops and right-of-way, roundabouts, unprotected lefts, right-turn-on-red rules, pedestrian/cyclist right-of-way, school buses, carpool lanes, defensive-driving expectations vs horn culture, and rain driving. Evidence: Bay Area schools market \"international relocate\" courses to this exact audience (do not link them). Link the Hindi flagship guide for the license process itself. No SVG step-flow needed; a do/don't grid fits well.",
+      "lang": "hi",
+      "author": "DMV California"
+    },
+    {
+      "slug": "iranian-license-conversion-california",
+      "title": "Converting an Iranian license in California (Farsi language)",
+      "target_keyword": "تبدیل گواهینامه ایرانی به آمریکایی",
+      "secondary_keywords": [
+        "گواهینامه ایرانی در آمریکا",
+        "گواهینامه رانندگی کالیفرنیا ایرانیان"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "Farsi"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-farsi-test",
+        "/california-drivers-license-guide-farsi"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "Very active Farsi query with one consistent answer across competitors (hamimohajer.com, go2tr.com, karimzabet.com; do not link them): Iranian licenses are NOT convertible in California, you start from zero. Be the clearest, most reassuring version of that \"no\": what the rules actually are, the 10-day new-resident rule, why an IDP does not substitute, then a condensed from-scratch path linking the Farsi flagship guide. Include the F-1/J-1 student no-SSN detail (SSA ineligibility letter) since Iranian students are a large share of this audience.",
+      "lang": "fa",
+      "author": "DMV California"
+    },
+    {
+      "slug": "california-dmv-fees-guide-arabic",
+      "title": "California DMV fees guide in Arabic",
+      "target_keyword": "رسوم رخصة القيادة في كاليفورنيا",
+      "secondary_keywords": [
+        "تكلفة استخراج رخصة القيادة كاليفورنيا",
+        "رسوم dmv"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 1,
+      "priority": 1,
+      "status": "ready",
+      "tags": [
+        "DMV Services",
+        "Arabic"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-arabic-test",
+        "/california-drivers-license-guide-arabic",
+        "/california-dmv-fees"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/licensing-fees/"
+      ],
+      "notes": "arabdmv.com runs a dedicated freshly-dated fees page ranking for this (do not link it); we have no Arabic equivalent. Semi-transactional intent: give the full verified 2026 schedule up front in a table (Class C original/renewal $46, ID card $40, replacement $37, motorcycle $46, commercial A/B original $100 / renewal $59, drive-test retake $8, REAL ID no extra cost), then what each fee covers (3 knowledge-test attempts, 3 drive-test attempts), payment methods, and fee-waiver/reduced-fee ID options. Verify every figure against the official fees page at draft time; fees have drifted stale on this site before.",
+      "lang": "ar",
+      "author": "DMV California"
+    },
+    {
+      "slug": "california-dmv-point-system-suspension",
+      "title": "California DMV Point System: How Many Points Suspend Your License",
+      "target_keyword": "california dmv point system",
+      "secondary_keywords": [
+        "how many points to suspend license california",
+        "negligent operator california",
+        "dmv points check california"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Traffic Laws",
+        "Driver License"
+      ],
+      "author_slug": "michael-anderson",
+      "internal_links": [
+        "/california-online-traffic-school",
+        "/how-to-drive-safely-and-avoid-fines",
+        "/practice-test"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-education-and-safety/dmv-safety-guidelines-actions/negligent-operator-treatment-system-nots/"
+      ],
+      "notes": "No English page on-site explains the negligent-operator thresholds (4 points/12mo, 6/24mo, 8/36mo) even though the traffic-school post references points. High-urgency intent (\"will I lose my license\"). Cover: 1 vs 2-point violations, how long points last, traffic school masking, NOTS warning-letter/probation/suspension sequence, checking your record, DUI 2-point note (no legal advice; refer to attorney). The Spanish sibling sistema-de-puntos-dmv-california is queued at p1; whichever publishes second must wire reciprocal translations maps between the two. A related suspension/reinstatement topic exists later in this queue (california-driver-license-suspension-reasons-reinstatement): keep this one focused on the POINT SYSTEM and cross-link rather than duplicating reinstatement steps."
+    },
+    {
+      "slug": "trial-by-written-declaration-california",
+      "title": "Fight a California Traffic Ticket by Mail: Trial by Written Declaration",
+      "target_keyword": "trial by written declaration california",
+      "secondary_keywords": [
+        "fight traffic ticket california",
+        "contest ticket by mail california",
+        "tr-205 form"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Traffic Laws"
+      ],
+      "author_slug": "michael-anderson",
+      "internal_links": [
+        "/california-online-traffic-school",
+        "/how-to-drive-safely-and-avoid-fines"
+      ],
+      "outbound_links": [
+        "https://selfhelp.courts.ca.gov/traffic-tickets",
+        "https://www.courts.ca.gov/documents/tr205.pdf"
+      ],
+      "notes": "The traffic-school post only covers paying to dismiss; this is the OTHER path, contesting by mail via Trial by Written Declaration (CVC §40902): who qualifies, the TR-205 form, bail deposit, officer non-response dismissals, trial de novo if you lose. Different intent than traffic school, no cannibalization. Court self-help pages are official sources, fine to link. No legal advice framing."
+    },
+    {
+      "slug": "driving-in-california-foreign-license",
+      "title": "Driving in California With a Foreign License: Visitor Rules and the IDP",
+      "target_keyword": "foreign license california",
+      "secondary_keywords": [
+        "international drivers permit california",
+        "can tourists drive in california",
+        "10 day rule california license"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Driver License"
+      ],
+      "author_slug": "david-chen",
+      "internal_links": [
+        "/international-student-driver-license",
+        "/drivers-license",
+        "/practice-test"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "The VISITOR angle, distinct from the international-student post (which is about becoming a resident): tourists and short-term visitors may drive on a valid foreign license; an IDP is a translation aid, not a license, and California does not require one; the moment you become a resident the 10-day rule applies and you need a CA license (full tests, no reciprocity). Clear table: visitor vs new resident vs student vs work visa. Law-firm sites rank here but no practice-test competitor covers it well."
+    },
+    {
+      "slug": "dmv-title-transfer-deceased-owner",
+      "title": "California DMV Title Transfer for a Deceased Owner or Gifted Car",
+      "target_keyword": "title transfer deceased owner california",
+      "secondary_keywords": [
+        "reg 5 form california",
+        "transfer car title after death california",
+        "gift a car california dmv"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Vehicle Registration"
+      ],
+      "author_slug": "lisa-thompson",
+      "internal_links": [
+        "/car-registration",
+        "/used-cars",
+        "/california-dmv-fees"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/vehicle-registration/titles/title-transfers-and-changes/"
+      ],
+      "notes": "Confirmed absent from both the registration and used-car posts. Often urgent estate-settling searches. Cover: REG 5 (affidavit for small estates without probate), REG 227, when probate is required, gifted-vehicle transfers (family transfer smog exemption, use-tax exemption), fees, and the 10-day/5-day notification rules. Practical forms-checklist angle that law-firm competitors do not serve."
+    },
+    {
+      "slug": "renovacion-licencia-mayores-70-california",
+      "title": "Renovación de licencia para mayores de 70 años en California (2026)",
+      "target_keyword": "renovar licencia mayores de 70 california",
+      "secondary_keywords": [
+        "adultos mayores renovacion licencia california",
+        "examen de la vista dmv mayores"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Senior Driver",
+        "Spanish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/muestra-del-examen-escrito-para-licencia-de-manejar",
+        "/puedo-renovar-mi-licencia-en-un-kiosco-del-dmv",
+        "/cita-dmv-california"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "2025 senior-renewal rule changes generated a Spanish news wave (Cronista, Infobae, DMV's own Spanish release; do not link news competitors). Cover current 70+ rules: in-person renewal requirement and its recent changes, vision test, when a knowledge test is required, medical review triggers, the free senior ID at 62+, and the $46 renewal fee. WebSearch current 2026 state of the rules before drafting; this area changed recently, verify against dmv.ca.gov.",
+      "lang": "es",
+      "author": "DMV California",
+      "translations_target": "california-senior-driver-license-guide-2026"
+    },
+    {
+      "slug": "california-dmv-written-test-retake-arabic",
+      "title": "Failed the DMV written test: retake rules in Arabic",
+      "target_keyword": "الرسوب في اختبار DMV النظري",
+      "secondary_keywords": [
+        "اذا رسبت في امتحان القيادة",
+        "اعادة اختبار dmv كاليفورنيا"
+      ],
+      "search_intent": "informational",
+      "target_length": 1400,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Written Test",
+        "Arabic"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-arabic-test",
+        "/california-drivers-license-guide-arabic",
+        "/california-dmv-fees-guide-arabic"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "High-intent moment, searched right after failing. arabdmv.com and taasin.us both have dedicated pages (do not link them). Cover: 3 attempts included in the $46 application fee, wait period before retaking (most offices next business day, not same day), what happens after 3 failures (reapply, pay again), the 46/38 vs 36/30 question thresholds, Arabic-language test availability at DMV offices, and a study plan funneling to /dmv-arabic-test. Encouraging tone: failing once is common and recoverable.",
+      "lang": "ar",
+      "author": "DMV California"
+    },
+    {
+      "slug": "ab-60-license-guide-russian",
+      "title": "AB 60 license guide in Russian",
+      "target_keyword": "права в калифорнии без ssn",
+      "secondary_keywords": [
+        "права для нелегалов калифорния",
+        "ab 60 права"
+      ],
+      "search_intent": "informational",
+      "target_length": 1700,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "AB 60",
+        "Russian"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-russian-test",
+        "/california-drivers-license-guide-russian"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/assembly-bill-ab-60-driver-licenses/"
+      ],
+      "notes": "Active Russian-language ecosystem around no-SSN licenses (flagma.com, rudmv.com, forumdaily.com; do not link them). Audience: long-settled undocumented Russian speakers, a different group than the visa-holder flagship. Same vetted AB 60 cluster facts and confidentiality-first structure as the other AB 60 language versions ($46, §1808.4, Federal Limits Apply, 5 years, CDL-dispute clarification). Wire the full AB 60 translations cluster reciprocally (check which languages exist at draft time).",
+      "lang": "ru",
+      "author": "DMV California",
+      "translations_target": "ab-60-california-driver-license"
+    },
+    {
+      "slug": "ab-60-license-guide-punjabi",
+      "title": "AB 60 license guide in Punjabi",
+      "target_keyword": "ਬਿਨਾਂ ਸਟੇਟਸ ਲਾਇਸੈਂਸ ਕੈਲੀਫੋਰਨੀਆ",
+      "secondary_keywords": [
+        "ab 60 ਲਾਇਸੈਂਸ",
+        "ssn ਤੋਂ ਬਿਨਾਂ ਲਾਇਸੈਂਸ"
+      ],
+      "search_intent": "informational",
+      "target_length": 1700,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "AB 60",
+        "Punjabi"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-punjabi-test",
+        "/california-drivers-license-guide-punjabi",
+        "/california-cdl-guide-punjabi"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/assembly-bill-ab-60-driver-licenses/"
+      ],
+      "notes": "Given the Central Valley community's immigration-status turmoil (CDL revocation news), handle with extra care: confidentiality first (§1808.4), clear distinction between standard AB 60 licenses (not affected, not revoked) and AB 60-issued CDLs (the federal dispute), then the standard vetted cluster facts ($46, documents, 5-year validity). Cross-link the Punjabi CDL guide for the commercial side. Wire the full AB 60 translations cluster reciprocally. Factual, reassuring, no enforcement speculation, not legal advice.",
+      "lang": "pa",
+      "author": "DMV California",
+      "translations_target": "ab-60-california-driver-license"
+    },
+    {
+      "slug": "chinese-drivers-license-conversion-california",
+      "title": "Converting a Chinese license in California (Simplified Chinese)",
+      "target_keyword": "中国驾照换加州驾照",
+      "secondary_keywords": [
+        "中国驾照在美国能用吗",
+        "加州换驾照流程"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "Chinese"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-chinese-test",
+        "/california-drivers-license-guide-chinese"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "Zhihu essays and 1point3acres threads show real confusion that a direct swap exists (do not link them). Truth: no reciprocity, full retest, Chinese license only usable briefly as a visitor, 10-day rule once resident, IDP is not a substitute. Verify and include the written-test language-availability detail: research flagged that the in-person test may offer Traditional Chinese only, not Simplified. Confirm against dmv.ca.gov before stating; if true it is a valuable callout for mainland readers. Target length is an approximate character-equivalent (Chinese has no whitespace words).",
+      "lang": "zh",
+      "author": "DMV California"
+    },
+    {
+      "slug": "doi-bang-lai-xe-viet-nam-sang-california",
+      "title": "Đổi bằng lái xe Việt Nam sang California (2026)",
+      "target_keyword": "đổi bằng lái xe việt nam sang mỹ",
+      "secondary_keywords": [
+        "bằng lái việt nam ở mỹ",
+        "thi lại bằng lái california"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "Vietnamese"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-vietnamese-test",
+        "/cach-lay-bang-lai-xe-california"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "A law firm (wowlawgroup.com) has a dedicated article on this exact query, confirming demand (do not link them). Same universal answer: no reciprocity, full retest, 10-day new-resident rule, IDP not a substitute, AB 60 option exists for undocumented residents (link the AB 60 cluster if a Vietnamese version exists by then, otherwise mention briefly). Condensed from-scratch path linking the Vietnamese flagship guide.",
+      "lang": "vi",
+      "author": "DMV California"
+    },
+    {
+      "slug": "korean-drivers-license-conversion-california",
+      "title": "Converting a Korean license in California (Korean language)",
+      "target_keyword": "한국 면허 미국 변환",
+      "secondary_keywords": [
+        "한국 운전면허 캘리포니아",
+        "국제운전면허증 캘리포니아"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "drivers license",
+        "Korean"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-korean-test",
+        "/california-drivers-license-guide-korean",
+        "/korean-dmv-written-test-translation-issues"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "koreaninamerica.com runs a strong personal-narrative series here (do not link); differentiate with a practical documents-first structure, not narrative. No reciprocity, full retest, 10-day rule, IDP clarification. Include the J-2 dependent-spouse no-SSN sub-case that surfaced repeatedly in forums (SSA ineligibility letter path). Cross-link the Korean translation-issues article for written-test prep context.",
+      "lang": "ko",
+      "author": "DMV California"
+    },
+    {
+      "slug": "dmv-appointment-guide-farsi",
+      "title": "DMV appointment guide in Farsi",
+      "target_keyword": "نوبت دی ام وی کالیفرنیا",
+      "secondary_keywords": [
+        "وقت dmv گرفتن",
+        "نوبت آنلاین dmv"
+      ],
+      "search_intent": "informational",
+      "target_length": 1400,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "DMV Services",
+        "Farsi"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-farsi-test",
+        "/california-real-id-guide-farsi",
+        "/dmv-offices"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/appointments/"
+      ],
+      "notes": "Second cheap Farsi win: Farsi appointment queries already surface this site's English appointment page organically. Localize the appointment-booking walkthrough: online booking steps, appointment types (first license vs REAL ID vs behind-the-wheel), walk-in reality, rescheduling/cancellation, what to bring. Wire into the appointment translations cluster: dmv-appointment (en) ↔ cita-dmv-california (es) exist; add fa reciprocally to both.",
+      "lang": "fa",
+      "author": "DMV California",
+      "translations_target": "dmv-appointment"
+    },
+    {
+      "slug": "licencia-cdl-california-espanol",
+      "title": "Licencia CDL en California: guía en español (2026)",
+      "target_keyword": "requisitos cdl california español",
+      "secondary_keywords": [
+        "cuanto cuesta licencia cdl california",
+        "examen cdl en español"
+      ],
+      "search_intent": "informational",
+      "target_length": 1800,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "truck driver",
+        "CDL",
+        "Spanish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/muestra-del-examen-escrito-para-licencia-de-manejar",
+        "/como-obtener-licencia-de-conducir-california"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/commercial-driver-licenses-cdl/",
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/licensing-fees/"
+      ],
+      "notes": "Dedicated Spanish-only CDL competitor sites exist (spanishcdl.com, cdlhelp.com/es, chambaenusa.com; do not link them), signaling durable demand among Spanish-speaking truckers. Class A/B paths, ELDT, medical cert, verified fees ($100 original A/B, $59 renewal, $59 commercial C), Spanish-language test availability. Wire reciprocal translations with california-truck-driver-cdl-guide-2026 AND california-cdl-guide-punjabi (full cluster, all members that exist at draft time).",
+      "lang": "es",
+      "author": "DMV California",
+      "translations_target": "california-truck-driver-cdl-guide-2026"
+    },
+    {
+      "slug": "licencia-de-motocicleta-california",
+      "title": "Licencia de motocicleta en California: guía en español (2026)",
+      "target_keyword": "licencia de motocicleta california",
+      "secondary_keywords": [
+        "examen de moto dmv español",
+        "clase m1 california"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Motorcycle",
+        "Spanish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/muestra-del-examen-escrito-para-licencia-de-manejar",
+        "/motorcycle-test"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/file/motorcycle-driver-handbook-pdf/",
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/licensing-fees/"
+      ],
+      "notes": "The official motorcycle exam is offered in Spanish; existing competitors are thin exam-only practice mills (do not link). Proper guide: M1 vs M2, CHP motorcyclist training course (mandatory under 21, waives skills test), permit rules, $46 fee, and the written+skills path. Wire reciprocal translations with california-motorcycle-license-class-m-guide-2026.",
+      "lang": "es",
+      "author": "DMV California",
+      "translations_target": "california-motorcycle-license-class-m-guide-2026"
+    },
+    {
+      "slug": "transferencia-de-titulo-california",
+      "title": "Transferencia de título de auto en California (2026)",
+      "target_keyword": "transferencia de titulo california",
+      "secondary_keywords": [
+        "como llenar un titulo de carro california",
+        "traspaso de carro dmv"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Vehicle Registration",
+        "Spanish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/como-obtener-licencia-de-conducir-california",
+        "/california-dmv-fees"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/vehicle-registration/titles/title-transfers-and-changes/"
+      ],
+      "notes": "Dedicated Spanish competitor guides exist around filling out a CA title (creditosenusa.com etc.; do not link). Cover: how to fill the title front/back, release of liability (5 days), buyer 10-day registration window, smog rules, family-transfer exemptions, use tax, fees. Process-specific with clear intent; pairs with the English deceased-owner topic queued separately (cross-link if published by then).",
+      "lang": "es",
+      "author": "DMV California"
+    },
+    {
+      "slug": "traffic-points-violations-guide-arabic",
+      "title": "California traffic points and violations guide in Arabic",
+      "target_keyword": "نظام النقاط والمخالفات المرورية كاليفورنيا",
+      "secondary_keywords": [
+        "مخالفات المرور كاليفورنيا",
+        "نقاط رخصة القيادة"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Traffic Laws",
+        "Arabic"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-arabic-test",
+        "/california-drivers-license-guide-arabic",
+        "/california-dmv-written-test-retake-arabic"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-education-and-safety/dmv-safety-guidelines-actions/negligent-operator-treatment-system-nots/"
+      ],
+      "notes": "arabdmv.com covers this (do not link). Retention-oriented content for Arabic speakers who already hold a license: point values, negligent-operator thresholds (4/12mo, 6/24mo, 8/36mo), traffic school, insurance impact, checking your record. Wire reciprocal translations with the English and Spanish points articles if published by then (california-dmv-point-system-suspension, sistema-de-puntos-dmv-california).",
+      "lang": "ar",
+      "author": "DMV California"
+    },
+    {
+      "slug": "tagalog-driving-schools-california",
+      "title": "Tagalog-speaking driving instructors across California",
+      "target_keyword": "tagalog driving school california",
+      "secondary_keywords": [
+        "filipino driving instructor",
+        "driving lessons tagalog"
+      ],
+      "search_intent": "informational",
+      "target_length": 1500,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Driving School",
+        "Tagalog"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-tagalog-test",
+        "/paano-kumuha-ng-lisensya-sa-pagmamaneho-sa-california",
+        "/dmv-offices"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
+      ],
+      "notes": "Directory-style piece: searchers want to FIND an instructor, not just read a guide. Real listings exist in San Diego (Aguilar, National City), SF, LA, and the Bay Area. Structure by metro; verify each listed school still operates via WebSearch at draft time and only name schools you can confirm; naming real local businesses neutrally is fine here (they are not practice-test competitors). Include how to verify a DMV-licensed instructor, typical lesson costs, and what to ask. Funnel to the Tagalog flagship guide and practice test.",
+      "lang": "tl",
+      "author": "DMV California"
+    },
+    {
+      "slug": "real-id-dmv-appointment-guide-armenian",
+      "title": "REAL ID and DMV appointments: practical guide in Armenian",
+      "target_keyword": "REAL ID հայերեն",
+      "secondary_keywords": [
+        "dmv ժամադրություն",
+        "real id փաստաթղթեր"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Real ID",
+        "Armenian"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-armenian-test",
+        "/california-drivers-license-guide-armenian",
+        "/dmv-offices"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/",
+        "https://www.dmv.ca.gov/portal/appointments/"
+      ],
+      "notes": "Research found Armenian demand thinner than other languages (established, partly US-born Glendale/LA community), so this is deliberately a COMBINED practical piece rather than two articles: REAL ID documents and the $46 fee + how to book the right appointment type, in Western Armenian register (matching the flagship guide). Note Glendale DMV's Armenian-language test/audio support. Wire fa/es/en REAL ID checklist cluster membership reciprocally (hy joins california-real-id-checklist cluster).",
+      "lang": "hy",
+      "author": "DMV California",
+      "translations_target": "california-real-id-checklist"
+    },
+    {
+      "slug": "california-real-id-guide-russian",
+      "title": "California REAL ID guide in Russian",
+      "target_keyword": "real id калифорния",
+      "secondary_keywords": [
+        "документы real id калифорния",
+        "реал айди что это"
+      ],
+      "search_intent": "informational",
+      "target_length": 1500,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Real ID",
+        "Russian"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/dmv-russian-test",
+        "/california-drivers-license-guide-russian"
+      ],
+      "outbound_links": [
+        "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/"
+      ],
+      "notes": "Same pattern as Farsi: Russian REAL ID queries return only the official bilingual PDF, no native explainer. Localize the checklist substance (documents, $46 fee, gold star, TSA ConfirmID $45 per-trip fee since Feb 2026, limited-term note for visa holders). Wire into the california-real-id-checklist translations cluster (all members present at draft time).",
+      "lang": "ru",
+      "author": "DMV California",
+      "translations_target": "california-real-id-checklist"
+    },
+    {
+      "slug": "seguro-de-auto-bajo-costo-california",
+      "title": "Seguro de auto de bajo costo en California: programa CLCA (2026)",
+      "target_keyword": "seguro de auto bajo costo california",
+      "secondary_keywords": [
+        "clca seguro barato",
+        "seguro minimo california requisitos"
+      ],
+      "search_intent": "informational",
+      "target_length": 1600,
+      "tier": 2,
+      "priority": 2,
+      "status": "ready",
+      "tags": [
+        "Auto Insurance",
+        "Spanish"
+      ],
+      "author_slug": null,
+      "internal_links": [
+        "/auto-insurance",
+        "/como-obtener-licencia-de-conducir-california"
+      ],
+      "outbound_links": [
+        "https://www.mylowcostauto.com/"
+      ],
+      "notes": "Generic \"seguro mínimo California\" is dominated by insurers (Geico, Freeway; do not link) and unwinnable; the winnable angle is the STATE-RUN California Low Cost Auto program (CLCA, mylowcostauto.com has an official Spanish FAQ, fine to link as the official program site). Cover: income eligibility, covered minimums, cost by county, how to apply, plus the standard 2026 minimum-liability requirements for context. Wire reciprocal translations with the English auto-insurance post.",
+      "lang": "es",
+      "author": "DMV California",
+      "translations_target": "auto-insurance"
+    },
     {
       "slug": "california-real-id-complete-guide-2026",
       "title": "California REAL ID: The Complete Guide for 2026",
