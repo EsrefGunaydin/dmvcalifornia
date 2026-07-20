@@ -8,11 +8,11 @@ const SITE_URL = 'https://dmvcalifornia.us';
 
 export const metadata: Metadata = {
   title: 'DMV Games — Learn California Traffic Rules by Playing',
-  description: 'Free games that teach California DMV rules. Play the Right-of-Way Puzzle and DMVordle — the daily DMV word game.',
+  description: 'Free games that teach California DMV rules: Right-of-Way Puzzle, DMVordle, Road Sign Memory Match, and a Brake Reaction Test.',
   alternates: { canonical: `${SITE_URL}/games` },
   openGraph: {
     title: 'DMV Games — Learn California Traffic Rules by Playing',
-    description: 'Free games that teach California DMV rules. Right-of-Way Puzzle, DMVordle, and more.',
+    description: 'Free games that teach California DMV rules: Right-of-Way Puzzle, DMVordle, Road Sign Memory Match, and a Brake Reaction Test.',
     url: `${SITE_URL}/games`,
     type: 'website',
     siteName: 'DMV California',
@@ -54,6 +54,35 @@ const GAMES = [
     ),
     color: 'from-orange-500 to-orange-600',
     cta: 'Play today\'s word',
+  },
+  {
+    href: '/games/sign-match',
+    title: 'Road Sign Memory Match',
+    description: 'Flip cards to match each California road sign with its meaning. Same 8 signs for everyone today, pulled straight from the real DMV sign test. New board daily.',
+    badge: 'Daily',
+    icon: (
+      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <rect x="3" y="3" width="7" height="7" rx="1" />
+        <rect x="14" y="3" width="7" height="7" rx="1" />
+        <rect x="3" y="14" width="7" height="7" rx="1" />
+        <rect x="14" y="14" width="7" height="7" rx="1" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+    color: 'from-blue-500 to-blue-600',
+    cta: "Play today's board",
+  },
+  {
+    href: '/games/reaction-test',
+    title: 'Brake Reaction Test',
+    description: 'Five rounds. Tap the instant it turns green, and see what your reaction time actually costs you in stopping distance at real driving speeds.',
+    badge: 'Daily',
+    icon: (
+      <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.8}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13 2 4 14h6l-1 8 9-12h-6l1-8z" fill="currentColor" stroke="none" />
+      </svg>
+    ),
+    color: 'from-green-500 to-green-600',
+    cta: 'Test your reflexes',
   },
 ];
 
