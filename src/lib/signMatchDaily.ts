@@ -22,6 +22,31 @@ function seededShuffle<T>(arr: T[], rng: () => number): T[] {
   return copy;
 }
 
+// A handful of source questions are scenario-based — the "correct answer" is
+// the right action for a hypothetical situation described in the question
+// text, not a direct description of what the pictured sign means on its
+// own. That reads as a wrong/confusing match once isolated from the
+// original question as "image X means Y", which is exactly how this game
+// presents it. Override just for this game; the shared quiz data and any
+// other page that still shows the full question text alongside the image
+// is unaffected.
+const MEANING_OVERRIDES: Record<number, string> = {
+  // Was "Stop, then proceed when safe" — the answer to a flashing-signal
+  // scenario, not what the static round yellow crossbuck sign itself means.
+  6: 'Railroad crossing ahead',
+  // Was "A convertible with an adult and two children" — an example
+  // qualifying vehicle for the quiz question, not a description of the
+  // carpool (HOV) lane sign at all.
+  7: 'Carpool (HOV) lane: minimum passengers required',
+  // Was "The road ahead is closed to traffic in your direction" — doesn't
+  // match this sign's own explanation text ("WRONG WAY sign means you're
+  // going the wrong direction"). Deliberately matches id 26's wording
+  // exactly so the dedup step below collapses these two same-concept signs
+  // into one instead of letting two differently-worded "wrong way" meanings
+  // both stay selectable.
+  4: 'You are heading the wrong direction on a one-way road',
+};
+
 // A few source signs share identical meaning text under different images
 // (e.g. two signs both meaning "Railroad crossing ahead"). Keep only the
 // first sign per unique meaning so no two cards in the pool could be
@@ -30,7 +55,7 @@ const ALL_SIGNS: SignMatchSign[] = (() => {
   const seenMeanings = new Set<string>();
   const signs: SignMatchSign[] = [];
   for (const q of roadSignsData.questions) {
-    const meaning = q.options[q.correctAnswer];
+    const meaning = MEANING_OVERRIDES[q.id] ?? q.options[q.correctAnswer];
     if (seenMeanings.has(meaning)) continue;
     seenMeanings.add(meaning);
     signs.push({ id: q.id, image: q.image, meaning });
