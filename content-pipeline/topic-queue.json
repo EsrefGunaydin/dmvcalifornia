@@ -26,7 +26,7 @@
       "target_length": 1800,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "DMV office",
         "Written Test",
@@ -42,7 +42,8 @@
       ],
       "notes": "TIMELY NEWS PIECE, publish first before it goes stale. Korean-American media (Korea Times, Radio Seoul) have reported since 2022, with a fresh article July 13 2026, that the official Korean-language DMV written test contains poor machine-style translations; reported pass rates fell from 79% to 56%. Example cited: \"curb\" mistranslated confusingly. Angle: news-style explainer for fluent Korean speakers on why the official Korean test trips them up and how to prepare anyway (read the English handbook glossary terms, practice with curated Korean questions, option to request the English test). This is NOT a how-to license guide, do not use the step-flow SVGs. Funnel to /dmv-korean-test as the reliable-translation alternative. WebSearch for the latest coverage before drafting; cite outlets by name, never fabricate quotes.",
       "lang": "ko",
-      "author": "DMV California"
+      "author": "DMV California",
+      "drafted_at": "2026-07-20"
     },
     {
       "slug": "licencia-de-conducir-para-menores-california",
