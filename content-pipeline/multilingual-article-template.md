@@ -17,7 +17,7 @@ Same base shape as `article-template.md`, plus three fields (`lang`, `translatio
   "excerpt": "<150-200 chars, native language>",
   "publishedAt": "<YYYY-MM-DDTHH:MM:SSZ>",
   "updatedAt": "<same as publishedAt for new posts>",
-  "author": "DMV California",
+  "author": "<full name matching blog_authors.json — see below, NOT 'DMV California'>",
   "tags": ["<3-6 native-language + transliterated tags>"],
   "lang": "<the topic's lang code, e.g. tr, ar, zh, vi, ko, ru, hy, fa, pa, tl, hi, es>",
   "translations": { "<sibling lang code>": "<sibling post slug>" },
@@ -33,6 +33,18 @@ Same base shape as `article-template.md`, plus three fields (`lang`, `translatio
   "faq": [{ "question": "...", "answer": "..." }]
 }
 ```
+
+### Author — use the assigned name, not "DMV California"
+
+The site's byline convention is a small roster of named personas in `src/data/blog_authors.json`
+(e.g. Sarah Mitchell, Michael Anderson, Robert Johnson), each with a topical beat — this applies
+regardless of the article's language, since the byline is about the topic's "expert," not the
+language. The topic entry's `author_slug` field names which one to use: look up that slug in
+`blog_authors.json` and set the post's `author` field to that author's exact `name` string (the
+author bio page at `/blog/author/[slug]` filters posts by an exact string match against
+`author`, so a typo or a translated/localized version of the name will silently exclude the post
+from that author's page). If a topic has no `author_slug` set, pick the closest expertise match
+yourself from the existing roster rather than defaulting to "DMV California."
 
 Do NOT include `views` or `hero_image` in your draft — the hero image step still runs exactly as in `article-template.md` (Pexels backfill script). The script builds its search query from the post title + primary tag, so keep the `tags` field's first entry as a clean English keyword (e.g. `"DMV office"`, `"driver's license"`) when the native-language title alone would make a poor Pexels search query.
 
