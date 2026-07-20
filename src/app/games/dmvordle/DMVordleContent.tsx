@@ -5,59 +5,49 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
-import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import AppPromotion from '@/components/AppPromotion';
 import MultiplexAd from '@/components/MultiplexAd';
 import GamesCrossPromo from '@/components/games/GamesCrossPromo';
-import ReactionTest, { type ReactionState } from '@/components/games/ReactionTest';
-import ReactionScoreboard from '@/components/games/ReactionScoreboard';
-import { useStreak } from '@/hooks/useStreak';
-import { todayReactionQuizId, reactionDailyIndex } from '@/lib/reactionDaily';
+import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import DMVordle, { type GameState } from '@/components/games/DMVordle';
+import DMVordleScoreboard from '@/components/games/DMVordleScoreboard';
+import { getDailyIndex } from '@/data/dmvordle-words';
 import { getBaseViews } from '@/lib/quiz-base-views';
-import type { ReactionResult } from '@/types/reaction';
 
-export default function ReactionTestContent() {
-  const [gameState, setGameState] = useState<ReactionState>('playing');
-  const [bestMs, setBestMs] = useState(0);
-  const [averageMs, setAverageMs] = useState(0);
-  const { recordStudy } = useStreak();
+function getQuizId() {
+  const now = new Date();
+  const y = now.getUTCFullYear();
+  const m = String(now.getUTCMonth() + 1).padStart(2, '0');
+  const d = String(now.getUTCDate()).padStart(2, '0');
+  return `dmvordle-${y}-${m}-${d}`;
+}
 
-  const quizId = todayReactionQuizId();
-  const dayIndex = reactionDailyIndex();
+export default function DMVordleContent() {
+  const [gameState, setGameState] = useState<GameState>('playing');
+  const [attempts, setAttempts] = useState(0);
+  const quizId = getQuizId();
+  const dayIndex = getDailyIndex();
 
-  const handleGameStateChange = (state: ReactionState, result: ReactionResult | null) => {
+  const handleGameStateChange = (state: GameState, att: number) => {
     setGameState(state);
-    if (result) {
-      setBestMs(result.bestMs);
-      setAverageMs(result.averageMs);
-      recordStudy();
-      if (typeof window.gtag === 'function') {
-        window.gtag('event', 'reaction_test_complete', {
-          quiz_id: quizId,
-          best_ms: result.bestMs,
-          average_ms: result.averageMs,
-          false_starts: result.falseStarts,
-          stars: result.stars,
-        });
-      }
-    }
+    setAttempts(att);
   };
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <Header />
 
-      <section className="bg-gradient-to-r from-primary to-primary-600 text-white py-7">
+      {/* Hero */}
+      <section className="bg-gradient-to-r from-orange-500 to-orange-600 text-white py-7">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h1 className="text-2xl md:text-3xl font-bold mb-2">Brake Reaction Test</h1>
+            <h1 className="text-2xl md:text-3xl font-bold tracking-widest mb-2">DMVordle</h1>
             <p className="text-white/85 text-sm mb-4">
-              Five rounds. Tap the instant it turns green. See what your reaction time actually
-              costs you in stopping distance.
+              Guess the 5-letter DMV word in 6 tries. All words are traffic and driving related. New word every day.
             </p>
             <div className="flex flex-wrap gap-2 justify-center text-xs">
-              <span className="bg-white/20 px-3 py-1.5 rounded-full">Daily leaderboard</span>
-              <span className="bg-white/20 px-3 py-1.5 rounded-full">Real stopping-distance math</span>
+              <span className="bg-white/20 px-3 py-1.5 rounded-full">Daily word</span>
+              <span className="bg-white/20 px-3 py-1.5 rounded-full">DMV vocabulary</span>
               <span className="bg-white/20 px-3 py-1.5 rounded-full">Free · no signup</span>
             </div>
           </div>
@@ -71,7 +61,7 @@ export default function ReactionTestContent() {
             <li aria-hidden>/</li>
             <li><Link href="/games" className="hover:text-primary">Games</Link></li>
             <li aria-hidden>/</li>
-            <li className="text-gray-900 font-medium">Brake Reaction Test</li>
+            <li className="text-gray-900 font-medium">DMVordle</li>
           </ol>
         </nav>
 
@@ -82,8 +72,8 @@ export default function ReactionTestContent() {
 
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6">
             <div>
-              <div className="flex justify-center bg-white rounded-2xl border border-gray-100 shadow-sm py-6 px-3">
-                <ReactionTest onGameStateChange={handleGameStateChange} />
+              <div className="flex justify-center bg-white rounded-2xl border border-gray-100 shadow-sm py-2">
+                <DMVordle onGameStateChange={handleGameStateChange} />
               </div>
               <div className="mt-6">
                 <MultiplexAd />
@@ -93,12 +83,11 @@ export default function ReactionTestContent() {
             <aside className="space-y-4">
               <div className="sticky top-24 space-y-4">
                 <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
-                  <ReactionScoreboard
+                  <DMVordleScoreboard
                     quizId={quizId}
                     dayIndex={dayIndex}
                     gameState={gameState}
-                    bestMs={bestMs}
-                    averageMs={averageMs}
+                    attempts={attempts}
                   />
                 </div>
 
@@ -107,18 +96,18 @@ export default function ReactionTestContent() {
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <h2 className="text-base font-bold text-gray-900 mb-2">How to play</h2>
                   <ul className="space-y-1.5 text-sm text-gray-700">
-                    <li>• Wait for the box to turn green.</li>
-                    <li>• Tap the instant it changes.</li>
-                    <li>• Tap too early and it&apos;s a false start.</li>
-                    <li>• Your best time out of 5 rounds counts.</li>
+                    <li>• Green means the right letter in the right spot.</li>
+                    <li>• Yellow means the right letter, wrong spot.</li>
+                    <li>• All words are traffic and driving related.</li>
+                    <li>• One puzzle a day, same word for everyone.</li>
                   </ul>
                 </div>
 
                 <div className="bg-white border border-gray-200 rounded-lg p-4">
                   <h2 className="text-base font-bold text-gray-900 mb-2">Keep practicing</h2>
                   <p className="text-sm text-gray-600 mb-3">
-                    Fast reflexes help on the road, but passing the written test takes real DMV
-                    knowledge. Drill it with our full practice tests.
+                    Vocabulary is only half the test. Drill real DMV questions with our full
+                    practice tests.
                   </p>
                   <Link href="/practice-test" className="text-primary font-semibold text-sm hover:underline">
                     Take a practice test →
@@ -128,10 +117,9 @@ export default function ReactionTestContent() {
             </aside>
           </div>
         </div>
-
       </main>
 
-      <GamesCrossPromo currentSlug="reaction-test" />
+      <GamesCrossPromo currentSlug="dmvordle" />
 
       <Footer />
       <CookieBanner />

@@ -51,11 +51,33 @@ export const QUIZ_BASE_VIEWS: Record<string, number> = {
   "spanish-sign-test": 2150
 };
 
+// The three daily games (sign-match, reaction-test, dmvordle) mint a new
+// quizId every day (e.g. "sign-match-2026-07-20"), so they can never get a
+// fixed entry in QUIZ_BASE_VIEWS above — a per-date key would only cover one
+// day and fall through to the generic hash fallback (800-2300) every day
+// after, which reads as an obviously fake number for a brand-new feature.
+// Matched by prefix, then hashed into a narrow, modest 99-112 floor instead —
+// same hash technique as the generic fallback below, just a tighter range.
+// Since the date is embedded in the quizId, this gives a different (but
+// stable for everyone that day) number per game per day, not one flat
+// constant that would look copy-pasted across all three. The live count
+// from /api/quiz-views is added on top and grows from here as real plays
+// happen — this floor is a modest promotional starting point, not a claim
+// about real historical traffic.
+const DAILY_GAME_PREFIXES = ['sign-match-', 'reaction-test-', 'dmvordle-'];
+
+function hash32(key: string): number {
+  let h = 0;
+  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
+  return h;
+}
+
 export function getBaseViews(quizId: string | number): number {
   const key = String(quizId);
   if (QUIZ_BASE_VIEWS[key] != null) return QUIZ_BASE_VIEWS[key];
+  if (DAILY_GAME_PREFIXES.some((prefix) => key.startsWith(prefix))) {
+    return 99 + (hash32(key) % 14); // 99-112 inclusive
+  }
   // deterministic fallback for any quiz not in the map
-  let h = 0;
-  for (let i = 0; i < key.length; i++) h = (h * 31 + key.charCodeAt(i)) >>> 0;
-  return 800 + (h % 1500);
+  return 800 + (hash32(key) % 1500);
 }

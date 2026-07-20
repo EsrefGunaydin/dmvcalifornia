@@ -1,10 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
+import AppPromotion from '@/components/AppPromotion';
+import MultiplexAd from '@/components/MultiplexAd';
+import GamesCrossPromo from '@/components/games/GamesCrossPromo';
 import SignMatchGame, { type SignMatchState } from '@/components/games/SignMatchGame';
 import SignMatchScoreboard from '@/components/games/SignMatchScoreboard';
 import { useStreak } from '@/hooks/useStreak';
@@ -56,25 +60,74 @@ export default function SignMatchContent() {
         </div>
       </section>
 
-      <main className="flex-1 flex flex-col lg:flex-row items-start justify-center gap-0 lg:gap-8 px-4 pt-6 pb-12 max-w-4xl mx-auto w-full">
-        <div className="flex-1 flex justify-center bg-white rounded-2xl border border-gray-100 shadow-sm py-6 px-3 w-full lg:w-auto">
-          <SignMatchGame onGameStateChange={handleGameStateChange} />
+      <main className="container mx-auto px-4 py-6 flex-1">
+        <nav aria-label="Breadcrumb" className="mb-6 text-sm text-gray-600 max-w-4xl mx-auto">
+          <ol className="flex items-center gap-2">
+            <li><Link href="/" className="hover:text-primary">Home</Link></li>
+            <li aria-hidden>/</li>
+            <li><Link href="/games" className="hover:text-primary">Games</Link></li>
+            <li aria-hidden>/</li>
+            <li className="text-gray-900 font-medium">Road Sign Memory Match</li>
+          </ol>
+        </nav>
+
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} variant="prominent" label="times played today" />
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_340px] gap-6">
+            <div>
+              <div className="flex justify-center bg-white rounded-2xl border border-gray-100 shadow-sm py-6 px-3">
+                <SignMatchGame onGameStateChange={handleGameStateChange} />
+              </div>
+              <div className="mt-6">
+                <MultiplexAd />
+              </div>
+            </div>
+
+            <aside className="space-y-4">
+              <div className="sticky top-24 space-y-4">
+                <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-5">
+                  <SignMatchScoreboard
+                    quizId={quizId}
+                    dayIndex={dayIndex}
+                    gameState={gameState}
+                    moves={moves}
+                    pairs={pairs}
+                  />
+                </div>
+
+                <AppPromotion variant="sidebar" />
+
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                  <h2 className="text-base font-bold text-gray-900 mb-2">How to play</h2>
+                  <ul className="space-y-1.5 text-sm text-gray-700">
+                    <li>• Flip two cards at a time.</li>
+                    <li>• Match each sign to its meaning.</li>
+                    <li>• A wrong pair just flips back, no penalty besides an extra move.</li>
+                    <li>• Fewer moves and mistakes earn more stars.</li>
+                  </ul>
+                </div>
+
+                <div className="bg-white border border-gray-200 rounded-lg p-4">
+                  <h2 className="text-base font-bold text-gray-900 mb-2">Keep practicing</h2>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Road signs are one of the most-missed categories on the DMV written test. Drill
+                    them with our full practice tests.
+                  </p>
+                  <Link href="/practice-test" className="text-primary font-semibold text-sm hover:underline">
+                    Take a practice test →
+                  </Link>
+                </div>
+              </div>
+            </aside>
+          </div>
         </div>
 
-        <div className="w-full lg:w-72 bg-white rounded-2xl border border-gray-100 shadow-sm p-5 mt-4 lg:mt-0">
-          <SignMatchScoreboard
-            quizId={quizId}
-            dayIndex={dayIndex}
-            gameState={gameState}
-            moves={moves}
-            pairs={pairs}
-          />
-        </div>
       </main>
 
-      <div className="text-center pb-6">
-        <QuizViewTracker quizId={quizId} baseViews={getBaseViews(quizId)} />
-      </div>
+      <GamesCrossPromo currentSlug="sign-match" />
 
       <Footer />
       <CookieBanner />

@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { quizId, name, email, marketingConsent, percentage, points, completedAt, idempotencyKey } = body;
+    const { quizId, name, email, marketingConsent, percentage, points, secondaryPoints, completedAt, idempotencyKey } = body;
 
     // Validate input
     if (!quizId || !name || percentage === undefined || points === undefined) {
@@ -42,6 +42,11 @@ export async function POST(request: NextRequest) {
       completedAt: completedAt || new Date().toISOString(),
       createdAt: new Date(),
       ...(idempotencyKey ? { idempotencyKey: String(idempotencyKey).substring(0, 64) } : {}),
+      // Optional secondary stat, display-only (never used for ranking/sort).
+      // Meaning is game-defined — e.g. the Reaction Test stores average ms
+      // here while `points` holds the best ms. Absent for games that don't
+      // need a second number; existing callers are unaffected.
+      ...(secondaryPoints !== undefined ? { secondaryPoints: Math.round(secondaryPoints) } : {}),
     };
 
     // Use idempotency key to make retries safe: $setOnInsert is a no-op if the
@@ -88,11 +93,58 @@ export async function GET(request: NextRequest) {
     // Get quizId from query params if provided
     const { searchParams } = new URL(request.url);
     const quizId = searchParams.get('quizId');
+    // Optional: aggregate across every daily bucket for a game instead of one
+    // day, e.g. quizIdPrefix=reaction-test- matches reaction-test-2026-07-20,
+    // reaction-test-2026-07-21, etc. Read-only — the write path is unchanged,
+    // so this is purely a different way of querying documents that already
+    // exist from ordinary daily submissions.
+    const quizIdPrefix = searchParams.get('quizIdPrefix');
 
     // Connect to MongoDB
     const client = await getMongoClient();
     const db = client.db('dmvcalifornia');
     const collection = db.collection('leaderboard');
+
+    if (quizIdPrefix) {
+      // Escape regex metacharacters — quizIdPrefix is caller-controlled input.
+      const escaped = quizIdPrefix.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const entries = await collection
+        .find({ quizId: { $regex: `^${escaped}` } })
+        .sort({ percentage: -1 })
+        .limit(2000)
+        .toArray();
+
+      // All-time board = each player's personal best across every day.
+      // Ranked by `percentage`, the same higher-is-better normalized field
+      // every game's leaderboard already sorts by (see percentageFromMoves /
+      // percentageFromReaction / percentageFromAttempts) — not raw `points`,
+      // whose "better" direction varies per game (lower ms vs. higher score).
+      // "name" is freeform (no accounts), so two different people using the
+      // same name will merge into one entry here — an accepted tradeoff for
+      // a no-signup casual leaderboard.
+      const bestByName = new Map<string, (typeof entries)[number]>();
+      for (const entry of entries) {
+        const existing = bestByName.get(entry.name);
+        if (!existing || entry.percentage > existing.percentage) {
+          bestByName.set(entry.name, entry);
+        }
+      }
+      const leaderboard = Array.from(bestByName.values())
+        .sort((a, b) => b.percentage - a.percentage)
+        .slice(0, 50)
+        .map((entry: any) => ({
+          id: entry._id.toString(),
+          quizId: entry.quizId,
+          date: entry.date,
+          name: entry.name,
+          points: entry.points,
+          percentage: entry.percentage,
+          secondaryPoints: entry.secondaryPoints,
+          completedAt: entry.completedAt,
+        }));
+
+      return NextResponse.json({ leaderboard }, { status: 200 });
+    }
 
     // Build query - try to match quizId as either string or number
     let query = {};
@@ -124,6 +176,7 @@ export async function GET(request: NextRequest) {
       name: entry.name,
       points: entry.points,
       percentage: entry.percentage,
+      secondaryPoints: entry.secondaryPoints,
       completedAt: entry.completedAt,
     }));
 

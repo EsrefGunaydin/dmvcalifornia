@@ -5,21 +5,25 @@ import { percentageFromReaction } from '@/types/reaction';
 
 interface ScoreEntry {
   name: string;
-  points: number; // average reaction ms, lower is better
+  points: number; // best reaction ms, lower is better — the ranking metric
+  secondaryPoints?: number; // average ms that day, display-only
 }
 
 interface Props {
   quizId: string; // e.g. 'reaction-test-2026-07-20'
   dayIndex: number;
   gameState: 'playing' | 'finished';
+  bestMs: number;
   averageMs: number;
 }
 
 const MEDALS = ['🥇', '🥈', '🥉'];
 
-export default function ReactionScoreboard({ quizId, dayIndex, gameState, averageMs }: Props) {
+export default function ReactionScoreboard({ quizId, dayIndex, gameState, bestMs, averageMs }: Props) {
   const [scores, setScores] = useState<ScoreEntry[]>([]);
   const [loading, setLoading] = useState(true);
+  const [allTime, setAllTime] = useState<ScoreEntry[]>([]);
+  const [allTimeLoading, setAllTimeLoading] = useState(true);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [marketingConsent, setMarketingConsent] = useState(true);
@@ -47,18 +51,37 @@ export default function ReactionScoreboard({ quizId, dayIndex, gameState, averag
       const res = await fetch(`/api/leaderboard?quizId=${encodeURIComponent(quizId)}`, { cache: 'no-store' });
       if (!res.ok) return;
       const data = await res.json();
-      const entries: ScoreEntry[] = (data.leaderboard ?? data.entries ?? []).map((e: { name: string; points: number }) => ({
+      const entries: ScoreEntry[] = (data.leaderboard ?? data.entries ?? []).map((e: { name: string; points: number; secondaryPoints?: number }) => ({
         name: e.name,
         points: e.points,
+        secondaryPoints: e.secondaryPoints,
       }));
       setScores(entries);
     } catch {}
     setLoading(false);
   };
 
+  const fetchAllTime = async () => {
+    try {
+      const res = await fetch('/api/leaderboard?quizIdPrefix=reaction-test-', { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      const entries: ScoreEntry[] = (data.leaderboard ?? []).map((e: { name: string; points: number }) => ({
+        name: e.name,
+        points: e.points,
+      }));
+      setAllTime(entries);
+    } catch {}
+    setAllTimeLoading(false);
+  };
+
   useEffect(() => {
     fetchScores();
-    const interval = setInterval(fetchScores, 30000);
+    fetchAllTime();
+    const interval = setInterval(() => {
+      fetchScores();
+      fetchAllTime();
+    }, 30000);
     return () => clearInterval(interval);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quizId]);
@@ -76,19 +99,23 @@ export default function ReactionScoreboard({ quizId, dayIndex, gameState, averag
           name: name.trim(),
           email: email.trim(),
           marketingConsent,
-          percentage: percentageFromReaction(averageMs),
-          points: averageMs,
+          percentage: percentageFromReaction(bestMs),
+          points: bestMs,
+          secondaryPoints: averageMs,
           completedAt: new Date().toISOString(),
           idempotencyKey: idempotencyKeyRef.current,
         }),
       });
       localStorage.setItem(`reaction-test-submitted-${quizId}`, '1');
       setScores((prev) => {
-        const entry: ScoreEntry = { name: name.trim(), points: averageMs };
+        const entry: ScoreEntry = { name: name.trim(), points: bestMs, secondaryPoints: averageMs };
         return [...prev, entry].sort((a, b) => a.points - b.points);
       });
       setSubmitState('done');
-      setTimeout(fetchScores, 800);
+      setTimeout(() => {
+        fetchScores();
+        fetchAllTime();
+      }, 800);
     } catch {
       setSubmitState('idle');
     }
@@ -101,22 +128,48 @@ export default function ReactionScoreboard({ quizId, dayIndex, gameState, averag
         <span className="text-xs text-gray-400">#{dayIndex}</span>
       </div>
 
-      <div className="flex flex-col gap-1 min-h-[120px]">
+      <div className="flex flex-col gap-1 min-h-[100px]">
         {loading ? (
           <p className="text-xs text-gray-400 italic">Loading...</p>
         ) : scores.length === 0 ? (
           <p className="text-xs text-gray-400 italic">No scores yet today. Be the first!</p>
         ) : (
-          scores.slice(0, 20).map((s, i) => (
-            <div key={i} className="flex items-center gap-2 py-1.5 border-b border-gray-100 last:border-0">
-              <span className="text-sm w-6 text-center">{MEDALS[i] ?? <span className="text-xs text-gray-400">{i + 1}</span>}</span>
-              <span className="text-sm text-gray-800 font-medium flex-1 truncate">{s.name}</span>
-              <span className="text-xs font-bold tabular-nums text-primary">
-                {s.points}ms
-              </span>
+          <>
+            <div className="flex items-center gap-2 pb-1 text-[10px] uppercase tracking-wide text-gray-400">
+              <span className="w-6" />
+              <span className="flex-1">Name</span>
+              <span className="w-12 text-right">Best</span>
+              <span className="w-12 text-right">Avg</span>
             </div>
-          ))
+            {scores.slice(0, 10).map((s, i) => (
+              <div key={i} className="flex items-center gap-2 py-1.5 border-b border-gray-100 last:border-0">
+                <span className="text-sm w-6 text-center">{MEDALS[i] ?? <span className="text-xs text-gray-400">{i + 1}</span>}</span>
+                <span className="text-sm text-gray-800 font-medium flex-1 truncate">{s.name}</span>
+                <span className="text-xs font-bold tabular-nums text-primary w-12 text-right">{s.points}ms</span>
+                <span className="text-xs tabular-nums text-gray-400 w-12 text-right">{s.secondaryPoints != null ? `${s.secondaryPoints}ms` : '—'}</span>
+              </div>
+            ))}
+          </>
         )}
+      </div>
+
+      <div className="border-t border-gray-100 pt-3">
+        <h2 className="text-sm font-bold text-gray-900 uppercase tracking-wide mb-2">All-Time Best</h2>
+        <div className="flex flex-col gap-1 min-h-[60px]">
+          {allTimeLoading ? (
+            <p className="text-xs text-gray-400 italic">Loading...</p>
+          ) : allTime.length === 0 ? (
+            <p className="text-xs text-gray-400 italic">No all-time scores yet.</p>
+          ) : (
+            allTime.slice(0, 5).map((s, i) => (
+              <div key={i} className="flex items-center gap-2 py-1 border-b border-gray-100 last:border-0">
+                <span className="text-sm w-6 text-center">{MEDALS[i] ?? <span className="text-xs text-gray-400">{i + 1}</span>}</span>
+                <span className="text-sm text-gray-800 font-medium flex-1 truncate">{s.name}</span>
+                <span className="text-xs font-bold tabular-nums text-primary">{s.points}ms</span>
+              </div>
+            ))
+          )}
+        </div>
       </div>
 
       {gameEnded && (
@@ -129,7 +182,7 @@ export default function ReactionScoreboard({ quizId, dayIndex, gameState, averag
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-2.5">
               <p className="text-xs font-semibold text-gray-700">
-                {averageMs}ms average! Add your name to the board.
+                {bestMs}ms best! Add your name to the board.
               </p>
               <input
                 type="text"

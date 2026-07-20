@@ -13,6 +13,15 @@ import {
 
 export type SignMatchState = 'playing' | 'won';
 
+// Sign meanings range from ~15 to 62 characters (road-signs-test.json).
+// A single static size either wastes space on short text or overflows on
+// long text, so scale down as the string gets longer.
+function meaningTextSizeClass(text: string): string {
+  if (text.length <= 25) return 'text-sm sm:text-base';
+  if (text.length <= 40) return 'text-xs sm:text-sm';
+  return 'text-[10px] sm:text-xs';
+}
+
 interface Props {
   onGameStateChange?: (state: SignMatchState, result: SignMatchResult | null) => void;
 }
@@ -86,7 +95,7 @@ export default function SignMatchGame({ onGameStateChange }: Props) {
   const seconds = Math.floor(elapsedMs / 1000);
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full max-w-3xl mx-auto">
       <div className="flex items-center justify-between mb-4 px-1">
         <div className="text-sm text-gray-500">
           <span className="font-bold text-gray-900 tabular-nums">{moves}</span> moves
@@ -106,7 +115,7 @@ export default function SignMatchGame({ onGameStateChange }: Props) {
               type="button"
               onClick={() => handleFlip(card)}
               disabled={isFlipped}
-              className={`sign-match-card aspect-square rounded-lg border-2 transition-colors ${
+              className={`sign-match-card aspect-square rounded-lg border-2 transition-colors overflow-hidden ${
                 isMatched
                   ? 'border-green-400 bg-green-50'
                   : isFlipped
@@ -121,12 +130,14 @@ export default function SignMatchGame({ onGameStateChange }: Props) {
                       src={card.image!}
                       alt="California road sign"
                       fill
-                      sizes="120px"
+                      sizes="160px"
                       className="object-contain"
                     />
                   </div>
                 ) : (
-                  <span className="flex items-center justify-center w-full h-full text-sm sm:text-base font-semibold text-gray-800 text-center px-2.5 leading-snug">
+                  <span
+                    className={`flex items-center justify-center w-full h-full font-semibold text-gray-800 text-center px-2 leading-tight ${meaningTextSizeClass(card.meaning!)}`}
+                  >
                     {card.meaning}
                   </span>
                 )

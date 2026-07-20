@@ -20,21 +20,23 @@ export interface ReactionResult {
 }
 
 /**
- * Star rating against typical simple visual-reaction-time benchmarks.
- * ~250ms is a commonly cited average for a simple visual reaction; braking
- * reaction in real driving is much slower because it includes recognition
- * and decision time, not just a known "go" signal.
+ * Star rating against the player's BEST round, not their average — the same
+ * "best attempt counts" logic as high jump: you get several tries, and your
+ * result is the best one you cleared, not the average across misses.
+ * Thresholds are tighter than a simple average would need, since the best of
+ * 5 tries is naturally faster than the average of 5 (selection effect):
+ * ~200ms is a strong single reaction, ~300ms a typical one.
  */
-export function starsForReaction(averageMs: number, falseStarts: number): 1 | 2 | 3 {
+export function starsForReaction(bestMs: number, falseStarts: number): 1 | 2 | 3 {
   if (falseStarts >= 2) return 1;
-  if (averageMs <= 250) return 3;
-  if (averageMs <= 400) return 2;
+  if (bestMs <= 200) return 3;
+  if (bestMs <= 300) return 2;
   return 1;
 }
 
-/** Leaderboard percentage: 300ms maps to 100, scaling down as it slows. */
-export function percentageFromReaction(averageMs: number): number {
-  return Math.max(0, Math.min(100, Math.round((300 / averageMs) * 100)));
+/** Leaderboard percentage from a best-round time: 300ms maps to 100, scaling down as it slows. */
+export function percentageFromReaction(bestMs: number): number {
+  return Math.max(0, Math.min(100, Math.round((300 / bestMs) * 100)));
 }
 
 /**

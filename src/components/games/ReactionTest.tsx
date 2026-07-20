@@ -63,7 +63,7 @@ export default function ReactionTest({ onGameStateChange }: Props) {
       averageMs,
       bestMs,
       falseStarts,
-      stars: starsForReaction(averageMs, falseStarts),
+      stars: starsForReaction(bestMs, falseStarts),
       completedAt: new Date().toISOString(),
     };
     setPhase('finished');
@@ -165,15 +165,13 @@ function FinishedSummary({ rounds }: { rounds: ReactionRound[] }) {
   return (
     <div className="text-center">
       <Trophy className="w-8 h-8 text-primary mx-auto mb-2" />
-      <p className="text-3xl font-black text-gray-900 tabular-nums">{averageMs}ms</p>
-      <p className="text-sm text-gray-500 mb-1">average reaction time</p>
-      {bestMs !== null && (
-        <p className="text-xs text-gray-400 mb-4">Best: {bestMs}ms{falseStarts > 0 ? ` · ${falseStarts} false start${falseStarts > 1 ? 's' : ''}` : ''}</p>
-      )}
+      <p className="text-3xl font-black text-gray-900 tabular-nums">{bestMs ?? averageMs}ms</p>
+      <p className="text-sm text-gray-500 mb-1">your best reaction (counts for the leaderboard)</p>
+      <p className="text-xs text-gray-400 mb-4">Average: {averageMs}ms{falseStarts > 0 ? ` · ${falseStarts} false start${falseStarts > 1 ? 's' : ''}` : ''}</p>
 
       <div className="mt-4 bg-gray-50 rounded-xl p-4 text-left">
         <p className="text-xs font-semibold text-gray-700 mb-2">
-          At your reaction speed, here&apos;s how far your car travels before you even touch the brake:
+          Based on your average reaction speed, here&apos;s how far your car travels before you even touch the brake:
         </p>
         <div className="flex flex-col gap-1.5">
           {SPEEDS_MPH.map((mph) => (
