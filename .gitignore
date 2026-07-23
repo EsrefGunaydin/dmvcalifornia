@@ -48,3 +48,9 @@ scripts/*.py
 # Xcode per-user UI state (machine-specific)
 *.xcuserstate
 xcuserdata/
+
+# Video pipeline generated output (audio/video binaries, not source)
+/output/
+
+# YouTube OAuth client secret + saved refresh token
+/credentials/

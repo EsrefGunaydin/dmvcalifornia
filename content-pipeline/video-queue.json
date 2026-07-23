@@ -1,0 +1,145 @@
+{
+  "_readme": "Queue for the weekly quiz-video pipeline (scripts/video-pipeline/weeklyRun.js), run by a local launchd job every Monday. Mirrors topic-queue.json's pattern for the blog pipeline. Status flow: ready -> published. weeklyRun.js always picks the lowest-index 'ready' item. Only quizzes already in src/data/quizzes.json are queued here (en + es). Expanding to the other per-language quiz files (turkish-quizzes.json, ko-quizzes.json, vietnamese-quizzes.json, etc.) requires extending generateVideo.js's quiz lookup to search across files first — not done yet.",
+  "items": [
+    {
+      "quizId": "dmv-spanish-simulation-test-1",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "published",
+      "videoId": "InU6I3Tsc8o",
+      "publishedAt": "2026-07-23T11:35:00.000Z",
+      "note": "Generated and uploaded manually in this session, outside the weekly loop."
+    },
+    {
+      "quizId": "dmv-spanish-practice-test-1",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "published",
+      "videoId": "R1YeCA2fJyE",
+      "publishedAt": "2026-07-23T18:35:41.314Z"
+    },
+    {
+      "quizId": "dmv-spanish-practice-test-2",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "examen-dmv-espanol-3",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "examen-dmv-espanol-4",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "dmv-spanish-simulator-test-1",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "dmv-simulation-test-1",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "dmv-simulation-test-2",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "dmv-simulation-test-3",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-mixed-review",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "sample-questions-test",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-1",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-2",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-3",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-4",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-5",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-6",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-7",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-8",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-9",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-10",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-11",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-12",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-13",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-14",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-15",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    },
+    {
+      "quizId": "practice-test-16",
+      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "status": "ready"
+    }
+  ]
+}
