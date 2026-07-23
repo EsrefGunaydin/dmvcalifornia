@@ -37,7 +37,14 @@ function parseArgs(argv) {
 }
 
 function findQuiz(quizId) {
-  return quizzesData.quizzes.find((q) => q.id === quizId || q.slug === quizId);
+  // Two-pass, id first: a slug can collide with another quiz's id (it has
+  // happened — e.g. one quiz's slug is literally "dmv-spanish-practice-test-2",
+  // which is also another quiz's id), so a single find() with `||` would pick
+  // whichever quiz happens to come first in the array instead of the intended one.
+  return (
+    quizzesData.quizzes.find((q) => q.id === quizId) ||
+    quizzesData.quizzes.find((q) => q.slug === quizId)
+  );
 }
 
 async function main() {

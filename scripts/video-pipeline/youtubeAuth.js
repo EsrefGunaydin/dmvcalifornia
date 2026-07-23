@@ -16,7 +16,10 @@ const { google } = require('googleapis');
 
 const PORT = 53682;
 const REDIRECT_URI = `http://127.0.0.1:${PORT}/oauth2callback`;
-const SCOPES = ['https://www.googleapis.com/auth/youtube.upload'];
+const SCOPES = [
+  'https://www.googleapis.com/auth/youtube.upload',
+  'https://www.googleapis.com/auth/youtube', // needed for videos.update (setVideoPrivacy.js)
+];
 
 const CREDENTIALS_DIR = path.join(__dirname, '..', '..', 'credentials');
 const CLIENT_SECRET_DEST = path.join(CREDENTIALS_DIR, 'youtube-client-secret.json');

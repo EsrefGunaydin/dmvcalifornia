@@ -10,7 +10,9 @@
     "video:voices": "node scripts/video-pipeline/listVoices.js",
     "video:generate": "node scripts/video-pipeline/generateVideo.js",
     "video:youtube:auth": "node scripts/video-pipeline/youtubeAuth.js",
-    "video:youtube:upload": "node scripts/video-pipeline/youtubeUpload.js"
+    "video:youtube:upload": "node scripts/video-pipeline/youtubeUpload.js",
+    "video:youtube:privacy": "node scripts/video-pipeline/setVideoPrivacy.js",
+    "video:publish": "node scripts/video-pipeline/publishToSite.js"
   },
   "keywords": [],
   "author": "",

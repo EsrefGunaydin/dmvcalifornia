@@ -245,13 +245,17 @@ export default function KeywordHub({ config }: { config: Hub }) {
               {/* YouTube embed */}
               {config.youtubeId && (
                 <section className="mb-10">
-                  <h2 className="text-2xl font-bold text-gray-900 mb-2">Watch: California DMV Practice Test 2026</h2>
-                  <p className="text-gray-600 mb-4 text-sm">46 real questions with answers and explanations — follow along or use it to study on the go.</p>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                    {config.youtubeHeading || 'Watch: California DMV Practice Test 2026'}
+                  </h2>
+                  <p className="text-gray-600 mb-4 text-sm">
+                    {config.youtubeSubtitle || '46 real questions with answers and explanations — follow along or use it to study on the go.'}
+                  </p>
                   <div className="relative w-full rounded-xl overflow-hidden shadow-lg border border-gray-200" style={{ paddingBottom: '56.25%' }}>
                     <iframe
                       className="absolute inset-0 w-full h-full"
                       src={`https://www.youtube.com/embed/${config.youtubeId}?rel=0&modestbranding=1`}
-                      title="California DMV Practice Test 2026 — 46 Questions with Answers"
+                      title={config.youtubeTitle || 'California DMV Practice Test 2026 — 46 Questions with Answers'}
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
                     />

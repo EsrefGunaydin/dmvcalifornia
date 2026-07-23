@@ -38,8 +38,10 @@ Each slide (intro, per-question number, per-question question, per-question reve
 | `generateVideo.js` | Orchestrator: `node scripts/video-pipeline/generateVideo.js <quizId> --voice <voiceId> [--limit N] [--out dir]`. Produces `<quizId>.mp4`, `youtube-metadata.json`, `thumbnail.png`. |
 | `youtubeAuth.js` | One-time OAuth authorization (loopback redirect flow). |
 | `youtubeUpload.js` | `node scripts/video-pipeline/youtubeUpload.js <outputDir> [--privacy private|unlisted|public]`. Uploads the video + sets the thumbnail. Defaults to `private` — review before flipping to public. |
-| `weeklyRun.js` | Picks the next `ready` item from `content-pipeline/video-queue.json`, runs generate + upload (private), marks it published. |
+| `weeklyRun.js` | Picks the next `ready` item from `content-pipeline/video-queue.json`, runs generate + upload (private), marks it `published`. |
 | `run-weekly.sh` | Wrapper the launchd job calls — starts a dedicated dev server on port 3799, runs `weeklyRun.js` against it, tears the server down after. |
+| `setVideoPrivacy.js` | `node scripts/video-pipeline/setVideoPrivacy.js <videoId> <private\|unlisted\|public>`. Flips an already-uploaded video's YouTube privacy. Requires the broader `youtube` OAuth scope (see one-time setup) — the upload-only scope can't do this. |
+| `publishToSite.js` | `node scripts/video-pipeline/publishToSite.js <quizId> [--privacy public\|unlisted]`. The "go live" step, run by hand after you've reviewed a private upload in YouTube Studio: flips privacy, adds the video to `/videos`, and embeds it on whichever hub/blog post the queue item names. See "Publishing a reviewed video" below. |
 
 The render route itself, `src/app/internal/video-render/[quizId]/page.tsx`, is a server component (no client JS) that reproduces the navy/gold slide design from the old manual HTML files, driven entirely by URL query params (`state=intro|number|question|reveal|outro|thumbnail`, `q=<index>`). It's disabled outside `NODE_ENV !== 'production'` so it never becomes a reachable production URL — it only needs to exist for the local `next dev` server Playwright screenshots against.
 
@@ -78,6 +80,22 @@ The project lives under `~/Desktop`, a TCC-protected folder. A launchd job spawn
 ### Expanding the queue beyond `quizzes.json`
 
 Only quizzes already inside `src/data/quizzes.json` (currently `en` + `es`) are wired up. Other languages live in separate files (`turkish-quizzes.json`, `ko-quizzes.json`, `vietnamese-quizzes.json`, etc.) — extend `generateVideo.js`'s `findQuiz()` to search across all of them before queuing non-en/es quizzes.
+
+---
+
+## Publishing a reviewed video (go live)
+
+Every upload lands as **private** by design — nothing is public or embedded on the site until you deliberately take it live. Once you've watched a video in YouTube Studio and you're happy with it:
+
+1. Open `content-pipeline/video-queue.json`, find the item (`status: "published"`), and add:
+   - `cardTitle` / `cardDescription` — short, human-written copy for its card on `/videos`. `publishToSite.js` refuses to run without these; it never invents generic copy.
+   - `embedHubSlug` (optional) — a key from `src/data/seo-hubs.ts` (e.g. `'california-dmv-practice-test-espanol'`) if this is the flagship video for that hub. The hub's video section defaults to English copy ("Watch: California DMV Practice Test 2026") — for a non-English hub also set `embedHubHeading` / `embedHubSubtitle` / `embedHubTitle` or the script will warn and leave the English default in place.
+   - `embedBlogSlug` (optional) — a slug from `src/data/blog_posts.json` if there's a blog post this video is genuinely relevant to. Pick this by hand — it's an editorial call, not something to automate blindly. Same English-default caveat as hubs: set `embedBlogHeading` / `embedBlogSubtitle` / `embedBlogTitle` for non-English posts.
+2. Run: `npm run video:publish -- <quizId>` (defaults to `--privacy public`, pass `--privacy unlisted` instead if you want it playable but not searchable/listed).
+3. This flips YouTube privacy, adds the video to `src/data/videos.json` (powers `/videos`), and patches the named hub/blog post with `youtubeId`. It's idempotent — already-applied embeds are skipped on rerun.
+4. Review the diff, then commit and push (Vercel deploys automatically).
+
+Only one hub or blog post gets the embed automatically per queue item — if a video is relevant to more than one page, add the second `youtubeId` by hand the same way the first one was added.
 
 ---
 

@@ -51,6 +51,10 @@ export interface KeywordHub {
   slug: string;
   /** YouTube video ID to embed on this hub page */
   youtubeId?: string;
+  /** Copy for the video section — defaults to the English CA test copy if omitted */
+  youtubeHeading?: string;
+  youtubeSubtitle?: string;
+  youtubeTitle?: string;
   metaTitle: string;
   metaDescription: string;
   keywords: string[];
@@ -1016,6 +1020,10 @@ export const HUBS: Record<string, KeywordHub> = {
 
   'california-dmv-practice-test-espanol': {
     slug: 'california-dmv-practice-test-espanol',
+    youtubeId: 'InU6I3Tsc8o',
+    youtubeHeading: 'Mira: Examen de práctica del DMV en español',
+    youtubeSubtitle: '40 preguntas reales con respuestas y explicaciones, sigue el video o úsalo para estudiar en cualquier momento.',
+    youtubeTitle: 'Examen de práctica del DMV de California en español — 40 preguntas',
     metaTitle: 'Examen de Práctica DMV California 2026 — Gratis en Español',
     metaDescription:
       'Practica gratis para el examen de manejo del DMV de California en español. Preguntas reales del examen de conocimientos con respuestas instantáneas. Sin registro.',

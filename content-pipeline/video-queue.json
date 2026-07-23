@@ -1,20 +1,35 @@
 {
-  "_readme": "Queue for the weekly quiz-video pipeline (scripts/video-pipeline/weeklyRun.js), run by a local launchd job every Monday. Mirrors topic-queue.json's pattern for the blog pipeline. Status flow: ready -> published. weeklyRun.js always picks the lowest-index 'ready' item. Only quizzes already in src/data/quizzes.json are queued here (en + es). Expanding to the other per-language quiz files (turkish-quizzes.json, ko-quizzes.json, vietnamese-quizzes.json, etc.) requires extending generateVideo.js's quiz lookup to search across files first — not done yet.",
+  "_readme": "Queue for the weekly quiz-video pipeline (scripts/video-pipeline/weeklyRun.js), run by a local launchd job every Monday. Mirrors topic-queue.json's pattern for the blog pipeline. Status flow: ready -> published (uploaded to YouTube as private) -> live (taken public and embedded on the site via publishToSite.js). weeklyRun.js always picks the lowest-index 'ready' item. Only quizzes already in src/data/quizzes.json are queued here (en + es). Expanding to the other per-language quiz files (turkish-quizzes.json, ko-quizzes.json, vietnamese-quizzes.json, etc.) requires extending generateVideo.js's quiz lookup to search across files first — not done yet. Once a 'published' item is reviewed on YouTube, add cardTitle/cardDescription (and optionally embedHubSlug/embedBlogSlug) by hand, then run: node scripts/video-pipeline/publishToSite.js <quizId> --privacy public",
   "items": [
     {
       "quizId": "dmv-spanish-simulation-test-1",
       "voice": "EXAVITQu4vr4xnSDxMaL",
-      "status": "published",
+      "status": "live",
       "videoId": "InU6I3Tsc8o",
       "publishedAt": "2026-07-23T11:35:00.000Z",
-      "note": "Generated and uploaded manually in this session, outside the weekly loop."
+      "cardTitle": "California DMV practice test in Spanish / Examen de práctica del DMV en español",
+      "cardDescription": "40 preguntas reales con respuestas y explicaciones completas, basado en el examen oficial del DMV de California.",
+      "embedHubSlug": "california-dmv-practice-test-espanol",
+      "embedHubHeading": "Mira: Examen de práctica del DMV en español",
+      "embedHubSubtitle": "40 preguntas reales con respuestas y explicaciones, sigue el video o úsalo para estudiar en cualquier momento.",
+      "embedHubTitle": "Examen de práctica del DMV de California en español — 40 preguntas",
+      "sitePublishedAt": "2026-07-23T18:52:00.000Z",
+      "note": "Generated and uploaded manually in this session, outside the weekly loop. Site embed also applied manually, matching what publishToSite.js would have done."
     },
     {
       "quizId": "dmv-spanish-practice-test-1",
       "voice": "EXAVITQu4vr4xnSDxMaL",
-      "status": "published",
+      "status": "live",
       "videoId": "R1YeCA2fJyE",
-      "publishedAt": "2026-07-23T18:35:41.314Z"
+      "publishedAt": "2026-07-23T18:35:41.314Z",
+      "cardTitle": "Examen de práctica del DMV #1 en español",
+      "cardDescription": "20 preguntas de práctica con respuestas explicadas para el examen escrito del DMV de California.",
+      "embedBlogSlug": "como-obtener-licencia-de-conducir-california",
+      "embedBlogHeading": "Mira: Examen de práctica del DMV #1 en español",
+      "embedBlogSubtitle": "20 preguntas reales con respuestas y explicaciones, sigue el video o úsalo para estudiar en cualquier momento.",
+      "embedBlogTitle": "Examen de práctica del DMV de California en español — 20 preguntas",
+      "sitePublishedAt": "2026-07-23T18:52:00.000Z",
+      "note": "Site embed applied manually, matching what publishToSite.js would have done."
     },
     {
       "quizId": "dmv-spanish-practice-test-2",
