@@ -5648,7 +5648,7 @@
           "options": [
             "The other side of the road is a broken line",
             "Your side of the road is a broken line",
-            "The other side of the road is a broken line"
+            "Neither side of the road has a broken line"
           ],
           "correctAnswer": 1,
           "explanation": "Can cross if the line on YOUR side is broken.",
