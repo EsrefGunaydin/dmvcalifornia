@@ -3541,15 +3541,15 @@
         },
         {
           "id": 15,
-          "question": "Following distance should increase when you:",
+          "question": "You are approaching a railroad crossing with no gates, lights, or signals, and you cannot see at least 400 feet down the tracks in either direction. What is the maximum speed you may approach at?",
           "options": [
-            "Follow a small passenger car",
-            "Are crowded by a tailgater",
-            "Drive slower than the posted speed limit"
+            "15 mph",
+            "25 mph",
+            "35 mph"
           ],
-          "correctAnswer": 1,
-          "explanation": "When being tailgated, increase following distance to the car ahead so you have more room to stop gradually.",
-          "category": "Safe Driving",
+          "correctAnswer": 0,
+          "explanation": "If you cannot see at least 400 feet down the tracks at an uncontrolled railroad crossing, do not drive faster than 15 mph as you approach.",
+          "category": "Railroad Crossings",
           "difficulty": "medium"
         }
       ],

@@ -209,12 +209,12 @@
           "id": 16,
           "question": "Bilang dagdag sa pagpepreno sa paradahan, ano ang dapat mong gawin kapag pumaparada sa isang burol?",
           "options": [
-            "Hindi bababa sa dalawang metro ang layo ng sasakyan mula sa iba pang mga sasakyan.",
-            "Ang mga gulong sa harap at likod ay nakadikit sa katabing gilid ng bangketa.",
-            "Ang mga gulong sa harap at likuran ay nasa loob ng 18 pulgada mula sa gilid ng bangketa."
+            "Ilipat ang mga gulong sa harapan pakaliwa, palayo sa gilid ng kalsada",
+            "Pumarada nang paltos, mas malapit ang likurang gulong sa gilid ng kalsada",
+            "Ilipat ang mga gulong sa harapan pakanan, patungo sa gilid ng kalsada"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Kapag pumaparada sa isang burol nang walang bangketa, ilipat ang mga gulong sa harapan patungo sa gilid ng kalsada upang hindi gumulong ang sasakyan patungo sa trapiko kung mabigo ang preno.",
           "category": "Paradahan",
           "difficulty": "medium"
         },
