@@ -58,7 +58,8 @@
       "target_length": 1800,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
+      "drafted_at": "2026-07-27",
       "tags": [
         "Teen Driver",
         "Driver License",
