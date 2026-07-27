@@ -20,7 +20,7 @@
             "May not be crossed for any reason"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Two sets of solid double yellow lines two or more feet apart should be treated like a wall — never cross them for any reason.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -33,7 +33,7 @@
             "At all times"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "You must obey a construction flagger's instructions at all times, even if they conflict with existing signs or signals.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -46,7 +46,7 @@
             "Stop before entering the intersection as long as you can do so safely"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "A flashing yellow signal means slow down and proceed through the intersection with caution; it does not require a full stop.",
           "category": "Right-of-Way & Intersections",
           "difficulty": "medium"
         },
@@ -59,7 +59,7 @@
             "Motor homes or pickup trucks towing a boat trailer"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Vehicles marked with hazardous materials placards, like tank trucks, must always stop before crossing railroad tracks.",
           "category": "Railroad Crossings",
           "difficulty": "medium"
         },
@@ -72,7 +72,7 @@
             "Loading zone for freight or passengers"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "A white curb marks a loading zone for passengers or mail only, not freight.",
           "category": "Parking",
           "difficulty": "medium"
         },
@@ -85,7 +85,7 @@
             "The first rain after a dry spell"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Roads are most slippery during the first rain after a dry spell, when oil and dust rise to the surface.",
           "category": "Adverse Conditions",
           "difficulty": "medium"
         },
@@ -98,7 +98,7 @@
             "20 mph"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Unless otherwise posted, the speed limit in a residential area is 25 mph.",
           "category": "Speed Limits",
           "difficulty": "medium"
         },
@@ -111,7 +111,7 @@
             "A 3-axle vehicle if the Gross Vehicle Weight is less than 6,000 pounds"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "A Class C license only covers a 3-axle vehicle if its Gross Vehicle Weight is under 6,000 pounds.",
           "category": "Laws & Requirements",
           "difficulty": "medium"
         },
@@ -124,7 +124,7 @@
             "Turned to the right (away from the street)"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "When parking uphill with no curb, turn your front wheels to the right, away from the street, so the car rolls away from traffic if it moves.",
           "category": "Parking",
           "difficulty": "medium"
         },
@@ -137,7 +137,7 @@
             "The lane closest to the left curb"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "To turn left from a multilane one-way street onto another one-way street, start your turn from the lane closest to the left curb.",
           "category": "Parking",
           "difficulty": "medium"
         },
@@ -150,7 +150,7 @@
             "The maximum speed limit in California is 70 mph on certain freeways"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "The Basic Speed Law requires you to never drive faster than is safe for current conditions, even below the posted limit.",
           "category": "Speed Limits",
           "difficulty": "medium"
         },
@@ -163,7 +163,7 @@
             "Stop, then proceed when you think all of the children have exited the bus"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "You must stop and remain stopped as long as a school bus's red lights are flashing.",
           "category": "Pedestrians & Sharing the Road",
           "difficulty": "medium"
         },
@@ -176,7 +176,7 @@
             "When you want to pass a driver ahead of you who is turning right"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "You may enter a bike lane within 200 feet of a corner in order to make a right turn.",
           "category": "Pedestrians & Sharing the Road",
           "difficulty": "medium"
         },
@@ -189,7 +189,7 @@
             "If the vehicle ahead of you is turning left"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Never drive off the paved roadway to pass another vehicle, no matter how wide the shoulder is.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -202,7 +202,7 @@
             "On the side of the freeway in an emergency"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "You may not park next to a red painted curb — it means no stopping, standing, or parking at any time.",
           "category": "Parking",
           "difficulty": "medium"
         },
@@ -215,7 +215,7 @@
             "No more than one car length behind the truck so the driver can see you"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Give large trucks more following distance than you would a passenger vehicle, since their size affects your visibility and their stopping ability.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -228,7 +228,7 @@
             "At or near the same speed as the traffic on the freeway"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "When merging onto a freeway, match your speed to the traffic already on the freeway for a safe merge.",
           "category": "Speed Limits",
           "difficulty": "medium"
         },
@@ -241,7 +241,7 @@
             "Assume the other driver will maintain a constant speed"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Never assume another driver will slow down or make space for you — check your mirrors and blind spot before returning to your lane.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -254,7 +254,7 @@
             "Interior lights"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Turn on your headlights, not just parking lights, in dust storms or other low-visibility conditions so other drivers can see you.",
           "category": "Adverse Conditions",
           "difficulty": "medium"
         },
@@ -267,7 +267,7 @@
             "Under no circumstances"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "You may never legally block an intersection, even if you entered on a green light.",
           "category": "Right-of-Way & Intersections",
           "difficulty": "medium"
         },
@@ -280,7 +280,7 @@
             "Keep your phone within easy reach so you won't need to take your eyes off the road"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Hands-free devices let you keep both hands on the wheel, making them the safer option when using a cell phone while driving.",
           "category": "Laws & Requirements",
           "difficulty": "medium"
         },
@@ -293,7 +293,7 @@
             "Your wheels must be within 18 inches of the curb"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "When parallel parking on a level street, your wheels must be within 18 inches of the curb.",
           "category": "Parking",
           "difficulty": "medium"
         },
@@ -306,7 +306,7 @@
             "Continue through the intersection then move to the left and stop"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "If you're in the middle of an intersection when an emergency vehicle approaches, continue through it, then pull to the right and stop.",
           "category": "Right-of-Way & Intersections",
           "difficulty": "medium"
         },
@@ -319,7 +319,7 @@
             "Signal for 100 feet before turning"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Signal for at least 100 feet before making a right turn.",
           "category": "Pedestrians & Sharing the Road",
           "difficulty": "medium"
         },
@@ -332,7 +332,7 @@
             "You don't have room on the other side to completely cross the tracks"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Never start to cross railroad tracks unless you have room on the other side to completely clear them.",
           "category": "Railroad Crossings",
           "difficulty": "medium"
         },
@@ -345,7 +345,7 @@
             "Traffic on the street moves to the right"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "A left turn onto a one-way street is legal only when traffic on that street moves to the left, matching your turn.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -358,7 +358,7 @@
             "No, you can block traffic when you drive too slowly"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Driving slower than the flow of traffic is not always safer — it can block traffic and create hazards.",
           "category": "Safe Driving",
           "difficulty": "medium"
         },
@@ -371,7 +371,7 @@
             "Merge into another lane, and try to go around the traffic"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Even with a green light, you must stay out of an intersection until traffic ahead has cleared enough for you to get through.",
           "category": "Right-of-Way & Intersections",
           "difficulty": "medium"
         },
@@ -384,7 +384,7 @@
             "Slow down as you pass him/her"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Without a marked crosswalk, you must still stop and let a pedestrian finish crossing your lane.",
           "category": "Pedestrians & Sharing the Road",
           "difficulty": "medium"
         },
@@ -397,7 +397,7 @@
             "Look to the sides of your vehicle to see what is coming"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "At intersections, crosswalks, and railroad crossings, check to the sides of your vehicle for crossing traffic before proceeding.",
           "category": "Railroad Crossings",
           "difficulty": "medium"
         },
@@ -410,7 +410,7 @@
             "20 mph"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "If you can't see 400 feet down the tracks at an uncontrolled railroad crossing, do not drive faster than 15 mph as you approach.",
           "category": "Railroad Crossings",
           "difficulty": "medium"
         },
@@ -423,7 +423,7 @@
             "High beams"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Use low-beam headlights in fog — high beams reflect off the fog and reduce your visibility further.",
           "category": "Adverse Conditions",
           "difficulty": "medium"
         },
@@ -436,7 +436,7 @@
             "Transporting an unrestrained animal inside the vehicle"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Wearing headphones that cover both ears while driving is illegal in California, since it can block traffic and emergency sounds.",
           "category": "Laws & Requirements",
           "difficulty": "medium"
         },
@@ -449,7 +449,7 @@
             "Signal and turn immediately"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Slow down or stop if necessary before completing a right turn safely.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -462,7 +462,7 @@
             "Get you to your destination much faster and safer"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Continually passing other cars and weaving between lanes increases your chances of a collision.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -475,7 +475,7 @@
             "At all times"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "You must obey instructions from school crossing guards at all times.",
           "category": "Pedestrians & Sharing the Road",
           "difficulty": "medium"
         },
@@ -488,7 +488,7 @@
             "Both of the above"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "If you hit a parked vehicle and can't find the owner, you must both leave a note and report the accident to police or the CHP.",
           "category": "Laws & Requirements",
           "difficulty": "medium"
         },
@@ -501,7 +501,7 @@
             "If there is property damage in excess of $1,000 or if there are any injuries"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "You must file an SR-1 report with the DMV if a collision causes more than $1,000 in property damage or any injury.",
           "category": "Laws & Requirements",
           "difficulty": "medium"
         },
@@ -514,7 +514,7 @@
             "Get a new prescription for lenses or contacts"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle.",
           "category": "Laws & Requirements",
           "difficulty": "medium"
         },
@@ -527,7 +527,7 @@
             "10 to 15 seconds"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Scanning the road about 10 to 15 seconds ahead gives you time to react and avoid last-minute moves.",
           "category": "Safe Driving",
           "difficulty": "medium"
         },
@@ -540,7 +540,7 @@
             "May have to swing wide to complete the right turn"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "A large truck may need to swing wide into an adjacent lane to complete a right turn safely.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -553,7 +553,7 @@
             "You can frustrate the other drivers and make them angry"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Tailgating can frustrate other drivers, provoke road rage, and increases your risk of a rear-end collision.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -566,7 +566,7 @@
             "70 mph or faster to keep up with the speed of traffic"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "You may never legally drive faster than the posted speed limit, even if other traffic is moving faster.",
           "category": "Speed Limits",
           "difficulty": "medium"
         },
@@ -579,7 +579,7 @@
             "They are eliminated if you have one outside mirror on each side of the vehicle"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Large trucks have bigger blind spots than most passenger vehicles, making it harder for their drivers to see you.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -592,7 +592,7 @@
             "The other side of the road is a solid line"
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "You may cross a double yellow line to pass only when the line on your side of the road is broken.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -605,7 +605,7 @@
             "50 feet"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "You must signal continuously for at least 100 feet before making a turn.",
           "category": "Lanes, Turns & Passing",
           "difficulty": "medium"
         },
@@ -618,7 +618,7 @@
             "Keep your eyes moving to look for possible hazards"
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Defensive driving means constantly scanning ahead and to the sides for possible hazards, not fixating on one spot.",
           "category": "Safe Driving",
           "difficulty": "medium"
         },
@@ -631,7 +631,7 @@
             "In a bicycle lane"
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Parking in an unmarked crosswalk is illegal, just like a marked one.",
           "category": "Parking",
           "difficulty": "medium"
         }

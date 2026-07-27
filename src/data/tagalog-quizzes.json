@@ -18,8 +18,8 @@
             "Ito ay hindi ligal sa ilalim ng anumang kondisyon.",
             "Kung may dalawa o higit pang one-way lane."
           ],
-          "correctAnswer": 2,
-          "explanation": "",
+          "correctAnswer": 1,
+          "explanation": "Hindi kailanman ligal na dumaan sa labas ng kalsada (halimbawa sa balikat ng daan) para lang unahan ang ibang sasakyan, anuman ang kondisyon.",
           "category": "Pag-una",
           "difficulty": "medium"
         },
@@ -32,7 +32,7 @@
             "25 mph."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Kung hindi mo makita ang 400 talampakan sa mga riles sa isang uncontrolled crossing, huwag magmaneho ng mas mabilis sa 15 mph.",
           "category": "Bilis",
           "difficulty": "hard"
         },
@@ -45,7 +45,7 @@
             "Ang mga gulong sa harap at likuran ay nasa loob ng 18 pulgada mula sa gilid ng bangketa."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Sa tamang parallel parking, ang mga gulong sa harap at likod ay dapat nasa loob ng 18 pulgada mula sa gilid ng bangketa.",
           "category": "Paradahan",
           "difficulty": "easy"
         },
@@ -58,7 +58,7 @@
             "Mas matulin kaysa sa bilis ng trapiko."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Kapag pumapasok sa highway, dapat mong itugma ang iyong bilis sa bilis ng trapiko sa highway.",
           "category": "Bilis",
           "difficulty": "easy"
         },
@@ -71,7 +71,7 @@
             "500 feet."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Dapat mong ilipat ang high beam sa low beam sa loob ng 500 talampakan bago sumalubong sa ibang sasakyan.",
           "category": "Headlights",
           "difficulty": "medium"
         },
@@ -84,7 +84,7 @@
             "Ang isang tao ay makaparada lamang sa gilid ng bangketa sa loob ng 15 minuto."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ang gilid ng bangketang may asul na kulay ay para lamang sa mga may kapansanan na may espesyal na plakard o plaka.",
           "category": "Paradahan",
           "difficulty": "easy"
         },
@@ -97,7 +97,7 @@
             "Huminto kaagad at manatiling nakatigil."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Kapag nagsisimulang kumislap ang dilaw na ilaw ng school bus, magbagal at maging handa upang huminto.",
           "category": "School Bus",
           "difficulty": "easy"
         },
@@ -110,7 +110,7 @@
             "Huwag kailanman magmaneho ng mabilis kaysa sa naayon na kaligtasan ng kasalukuyang kondisyon."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Sinasabi ng Basic Speed Law ng California na huwag kailanman magmaneho ng mas mabilis kaysa sa ligtas para sa kasalukuyang kondisyon.",
           "category": "Bilis",
           "difficulty": "medium"
         },
@@ -123,7 +123,7 @@
             "Kulayan ang iyong sasakyan ng ibang kulay."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Kinakailangang ipaalam sa DMV sa loob ng 5 araw kung ibinenta o inilipat mo ang pagmamay-ari ng iyong sasakyan.",
           "category": "Batas DMV",
           "difficulty": "medium"
         },
@@ -136,7 +136,7 @@
             "Gamit ang iyong mga headlight ng high-beam sa fog."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ang ligtas na pagmamaneho ay nangangahulugang palaging ginagalaw ang mga mata upang suriin ang iyong palibot.",
           "category": "Kaligtasan",
           "difficulty": "easy"
         },
@@ -149,7 +149,7 @@
             "Manatiling nakahinto sa likod ng pinakamalapit na linya ng tawiran hanggang sa ang de-motor na wheelchair ay lampas sa hanay ng iyong sasakyan."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Manatiling nakahinto hanggang ganap na nakatawid ang taong gumagamit ng de-motor na wheelchair bago ka magpatuloy.",
           "category": "Naglalakad",
           "difficulty": "medium"
         },
@@ -162,7 +162,7 @@
             "Mayroon silang malalaki at malalaking mga emergency brake, na nagbibigay sa kanila ng kakayahang huminto nang mabilis."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ang malalaking trak ay may malalaking blind spot na nagpapahirap sa kanilang drayber na makita ang ibang sasakyan.",
           "category": "Mga Trak",
           "difficulty": "easy"
         },
@@ -175,7 +175,7 @@
             "Mga nakakagambala sa pagmamaneho ng drayber."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Isa sa pinakakaraniwang sanhi ng banggaan sa trapiko ay ang mga nakakagambala sa pagmamaneho ng drayber.",
           "category": "Kaligtasan",
           "difficulty": "easy"
         },
@@ -188,7 +188,7 @@
             "Pagdalo sa isang klase ng pamamahala ng galit."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Ang pagtakas mula sa isang banggaan na may seryosong pinsala ay itinuturing na felony sa California at maaaring magresulta sa pagkakulong sa isang bilangguan ng estado.",
           "category": "Mga Parusa",
           "difficulty": "medium"
         },
@@ -201,7 +201,7 @@
             "Ibigay ang right-of-way sa sinumang paparating na sasakyan na masyadong malapit at delikado."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Ang drayber na lumiliko pakaliwa ay dapat magbigay-daan sa sinumang paparating na sasakyan na masyadong malapit o delikado.",
           "category": "Pagliko",
           "difficulty": "medium"
         },
@@ -226,8 +226,8 @@
             "Sa pagitan ng alas-5 ng umaga at 11 ng gabi.",
             "Sa pagitan ng alas-7 ng umaga at 8 ng gabi."
           ],
-          "correctAnswer": 2,
-          "explanation": "",
+          "correctAnswer": 1,
+          "explanation": "Ang mga menor de edad na may provisional license ay maaaring magmaneho nang walang kasamang lisensyadong may-edad na drayber sa pagitan lamang ng alas-5 ng umaga at 11 ng gabi, sa unang 12 buwan ng kanilang lisensya.",
           "category": "Lisensya",
           "difficulty": "medium"
         },
@@ -240,7 +240,7 @@
             "Maaari mong i-liko mula sa anumang lane."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Kapag lumiliko pakaliwa mula sa isang one-way patungo sa isa pang one-way na kalye, magsimula sa pinakamalayong kaliwang lane.",
           "category": "Pagliko",
           "difficulty": "medium"
         },
@@ -253,7 +253,7 @@
             "Pinayagan mo ang isang lisensyadong drayber mula sa ibang estado upang himukin ang iyong sasakyan."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Kinakailangang magsumite ng SR-1 form sa DMV kung ang banggaan ay may pinsalang higit sa $1,000.",
           "category": "Aksidente",
           "difficulty": "medium"
         },
@@ -266,7 +266,7 @@
             "Kaagad pagkatapos na tumigil ang pag-ulan."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ang kalsada ay pinaka-madulas sa unang ilang minuto ng ulan pagkatapos ng tagtuyot, dahil sa langis at alikabok na lumulutang sa ibabaw.",
           "category": "Panahon",
           "difficulty": "medium"
         }
@@ -291,7 +291,7 @@
             "Puti."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ang pulang bangketa ay nangangahulugang bawal huminto o pumarada anumang oras.",
           "category": "Paradahan",
           "difficulty": "easy"
         },
@@ -304,7 +304,7 @@
             "Mga lane ng trapiko na papunta sa parehong direksyon."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ang dalawang dobleng dilaw na linya na magkalayo ng 2 talampakan o higit pa ay dapat ituring na hadlang — huwag itong tawirin.",
           "category": "Markahan ng Daan",
           "difficulty": "hard"
         },
@@ -317,7 +317,7 @@
             "Maghintay hanggang matapos ang lane ng bisikleta bago lumiko."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Kapag lumiliko pakanan, manatili sa iyong lane at huwag pumasok sa lane ng bisikleta hanggang handa ka nang lumiko.",
           "category": "Pagliko",
           "difficulty": "medium"
         },
@@ -330,7 +330,7 @@
             "Dapat kang magmaneho ng 65 mph lamang kung ang mga kondisyon sa pagmamaneho ay perpekto."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Ang naka-post na limitasyon sa bilis ay ang pinakamataas na pinapayagan lamang kung perpekto ang mga kondisyon sa pagmamaneho.",
           "category": "Bilis",
           "difficulty": "medium"
         },
@@ -343,7 +343,7 @@
             "Kung ang lugar ay hindi bababa sa dalawampung talampakan ang layo mula sa isang riles ng tren."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Bawal kailanman pumarada sa isang crosshatched na lugar dahil ito ay para sa access ng mga sasakyan, hindi paradahan.",
           "category": "Paradahan",
           "difficulty": "easy"
         },
@@ -356,7 +356,7 @@
             "Sagutin ang tawag kung ikaw ay nakahinto sa pulang ilaw."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Kung walang hands-free device, huwag sagutin ang tawag at hayaan itong pumunta sa voicemail.",
           "category": "Pagkagambala",
           "difficulty": "easy"
         },
@@ -369,7 +369,7 @@
             "Magmaneho sa paligid ng trapikong shoulder upang makatulong na mabawasan ang siksikan."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Kahit berde ang ilaw, maghintay sa labas ng panulukan hanggang sa may sapat na espasyo para makadaan ka.",
           "category": "Trapiko Lights",
           "difficulty": "medium"
         },
@@ -382,7 +382,7 @@
             "Ang lane na pinakamalapit sa kanang gilid ng kalsada."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Kapag lumiliko pakanan, dapat kang nasa lane na pinakamalapit sa kanang gilid ng kalsada.",
           "category": "Pagliko",
           "difficulty": "easy"
         },
@@ -395,7 +395,7 @@
             "Lamang kapag ang mga bata ay naroroon sa harap ng isang paaralan."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Kinakailangang sumunod sa mga bantay sa tawiran sa lahat ng oras.",
           "category": "Trapiko/Senyas",
           "difficulty": "easy"
         },
@@ -408,7 +408,7 @@
             "Paggamit ng cruise control sa mga kalyeng pang-residensyal."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Iligal ang pagsusuot ng headset o earplugs na sumasaklaw sa parehong tainga habang nagmamaneho.",
           "category": "Batas DMV",
           "difficulty": "easy"
         },
@@ -421,7 +421,7 @@
             "Maghintay hanggang sa ganap mong matawid ang mga riles bago magpatuloy."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Huwag magsimulang tumawid sa mga riles maliban kung sigurado kang may sapat na espasyo para lubos itong matawid.",
           "category": "Mga Riles",
           "difficulty": "medium"
         },
@@ -434,7 +434,7 @@
             "Tapakan ang mga preno bilang sensyas na ikaw ay gagalaw ng mas mabagal."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Kung may bumubuntot sa iyo, lumipat ng lane kung kaya at hayaan silang dumaan.",
           "category": "Kaligtasan",
           "difficulty": "medium"
         },
@@ -447,7 +447,7 @@
             "Sa ilalim ng walang pangyayari dahil ito ay palaging ligal."
           ],
           "correctAnswer": 0,
-          "explanation": "",
+          "explanation": "Maaari kang makatanggap ng speeding ticket kahit nasa limitasyon ng bilis kung ang kondisyon ng kalsada o panahon ay nangangailangan ng mas mabagal na takbo.",
           "category": "Bilis",
           "difficulty": "medium"
         },
@@ -460,7 +460,7 @@
             "Headlights."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Kung nahihirapan makakita ang ibang drayber dahil sa alikabok o usok, dapat mong buksan ang iyong headlights.",
           "category": "Headlights",
           "difficulty": "easy"
         },
@@ -473,7 +473,7 @@
             "Huminto at maghintay sa isang kumikislap na berdeng signal."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ang kumikislap na dilaw na ilaw ay nangangahulugang magbagal at magpatuloy nang may pag-iingat.",
           "category": "Trapiko Lights",
           "difficulty": "easy"
         },
@@ -486,7 +486,7 @@
             "Maghintay hanggang ganap na nakatawid ang mga taong naglalakad sa kalye bago umandar."
           ],
           "correctAnswer": 2,
-          "explanation": "",
+          "explanation": "Kahit kumikislap na ang 'DON'T WALK', maghintay hanggang ganap na nakatawid ang naglalakad bago ka umandar.",
           "category": "Naglalakad",
           "difficulty": "easy"
         },
@@ -499,7 +499,7 @@
             "Kung ang lalagyan ay nasa ilalim ng upuan sa harap."
           ],
           "correctAnswer": 1,
-          "explanation": "",
+          "explanation": "Ligal lamang na magdala ng bukas na lalagyan ng alak kung ito ay nasa trunk ng sasakyan.",
           "category": "Alak/DUI",
           "difficulty": "easy"
         }
