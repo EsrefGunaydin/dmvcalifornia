@@ -15,6 +15,7 @@ import hindiQuizzesData from '@/data/hi-quizzes.json';
 import turkishQuizzesData from '@/data/turkish-quizzes.json';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
+import nyQuizzesData from '@/data/ny-quizzes.json';
 import intersectionLevelsData from '@/data/intersection-levels.json';
 import officesData from '@/data/dmv_offices.json';
 import { FLASHCARD_LANG_CODES, allFlashcardSetParams } from '@/data/flashcards-i18n';
@@ -74,6 +75,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/california-dmv-cheat-sheet`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/new-york-dmv-manual-chapter-4-traffic-control`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
@@ -363,6 +370,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...turkishQuizzesData.quizzes,
     ...motorcycleQuizzesData.quizzes,
     ...commercialQuizzesData.quizzes,
+    ...nyQuizzesData.quizzes,
   ];
   const newLanguagePages: MetadataRoute.Sitemap = newLanguageQuizzes.map((quiz) => ({
     url: `${baseUrl}/practice-test/${quiz.slug}`,

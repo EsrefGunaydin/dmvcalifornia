@@ -19,8 +19,8 @@ export interface HubSection {
   title: string;
   subtitle?: string;
   cards: HubCard[];
-  /** render as the big "full test" cards (default) or compact topic chips */
-  variant?: 'cards' | 'compact';
+  /** render as the big "full test" cards (default), compact topic chips, or larger highlighted cards */
+  variant?: 'cards' | 'compact' | 'featured';
 }
 
 export interface HubLink {
@@ -63,6 +63,10 @@ export interface KeywordHub {
   heroSubtitle: string;
   /** short, honest trust line — NO fabricated ratings */
   trustLine: string;
+  /** small pill in the hero, right of the vehicle tabs — e.g. "Real NY DMV Quiz" to signal non-CA-derived content */
+  heroBadge?: string;
+  /** sidebar "License Requirements" card heading — defaults to "California License Requirements" if omitted */
+  sidebarTitle?: string;
   vehicleTabs: VehicleTab[];
   sections: HubSection[];
   sidebarRequirements: HubSidebarList[];
@@ -1224,13 +1228,14 @@ export const HUBS: Record<string, KeywordHub> = {
 
   'new-york-dmv-practice-test': {
     slug: 'new-york-dmv-practice-test',
-    metaTitle: 'New York DMV Practice Test 2026 — Free NY Written Test Questions',
-    metaDescription: 'Free New York DMV practice test 2026. 20 questions, 70% to pass — road signs and traffic rules tested in New York. No signup, instant answers.',
-    keywords: ['new york dmv practice test', 'dmv practice test new york', 'new york dmv test 2026', 'ny dmv practice test', 'free new york dmv test', 'new york permit test'],
+    metaTitle: 'New York DMV Practice Test 2026 — Real NY DMV Chapter Questions',
+    metaDescription: 'Free New York DMV practice test 2026, sourced from the official NY driver\'s manual chapter quizzes — not California questions relabeled. 20 questions, 70% to pass.',
+    keywords: ['new york dmv practice test', 'dmv practice test new york', 'new york dmv test 2026', 'ny dmv practice test', 'free new york dmv test', 'new york permit test', 'ny dmv manual chapters'],
     breadcrumbLabel: 'New York',
-    h1: 'New York DMV Practice Test 2026 — Free Written Test Questions',
-    heroSubtitle: 'New York road signs follow the same federal standard as every other state. Use these tests to get ready for the NY DMV written exam.',
-    trustLine: '100% free · No signup · Updated 2026 · Covers road signs and rules tested in New York',
+    h1: 'New York DMV Practice Test 2026 — Real NY DMV Questions',
+    heroSubtitle: 'Sourced chapter by chapter from the official New York State Driver\'s Manual — not California questions with the state name swapped. Each chapter test links to a study guide covering that chapter\'s rules.',
+    trustLine: '100% free · No signup · Updated 2026 · Verified against the official NY DMV manual',
+    heroBadge: 'Real NY DMV Quiz',
     vehicleTabs: [
       { label: 'NY', icon: 'NY', href: '/new-york-dmv-practice-test', active: true },
       { label: 'CA', icon: 'CA', href: '/california-dmv-practice-test' },
@@ -1238,32 +1243,41 @@ export const HUBS: Record<string, KeywordHub> = {
     sections: [
       {
         title: 'New York DMV practice tests',
-        subtitle: 'Road signs and traffic rules are federally standardized. These questions prepare you for the NY DMV knowledge test.',
-        variant: 'cards',
+        subtitle: 'Real questions modeled on the official NY DMV manual and its own all-chapters quiz, with answers verified against the manual text.',
+        variant: 'featured',
         cards: [
-          { href: '/practice-test/dmv-simulation-test-1', label: 'Practice Test 1', questions: 46 },
-          { href: '/practice-test/dmv-simulation-test-2', label: 'Practice Test 2', questions: 46 },
-          { href: '/practice-test/dmv-simulation-test-3', label: 'Practice Test 3', questions: 46 },
+          { href: '/practice-test/new-york-dmv-all-chapters-quiz', label: 'All Chapters — 50 Questions', questions: 50, badge: '2026 NEW' },
+          { href: '/practice-test/new-york-dmv-chapter-4-traffic-control', label: 'Chapter 4: Traffic Control', questions: 18 },
+        ],
+      },
+      {
+        title: 'Manual chapter guides',
+        subtitle: 'Study the rules before you test yourself.',
+        variant: 'compact',
+        cards: [
+          { href: '/new-york-dmv-manual-chapter-4-traffic-control', label: 'Chapter 4: Traffic Control' },
         ],
       },
       {
         title: 'More study tools',
         variant: 'cards',
         cards: [
-          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — same in every state.' },
+          { href: '/california-dmv-road-signs-test', label: 'Road signs test', description: 'All 38 road signs — federally standardized, same in every state including New York.' },
           { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet', description: 'Key numbers and rules on one page.' },
           { href: '/practice-test/dmv-marathon-test', label: 'Marathon test', description: '100-question endurance test.' },
         ],
       },
     ],
     sidebarRequirements: STATE_REQUIREMENTS,
+    sidebarTitle: 'New York License Requirements',
     helpfulResources: STATE_HELPFUL_RESOURCES,
     faq: [
-      { q: 'How many questions are on the New York DMV test?', a: 'The New York knowledge test has 20 questions. You need to answer 14 correctly (70%) to pass.' },
-      { q: 'How old do you need to be to get a New York driver license?', a: 'You can apply for a New York learner permit at age 16. A full unrestricted license is available at 17 after completing the required supervised driving hours and passing the behind-the-wheel test.' },
-      { q: 'Are the road signs on this practice test the same as New York road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on New York roads.' },
+      { q: 'How many questions are on the New York DMV test?', a: 'The New York knowledge test has 20 questions. You need to answer 14 correctly (70%) to pass, and you must also get at least 2 of the 4 road-sign questions right.' },
+      { q: 'How old do you need to be to get a New York driver license?', a: 'You can apply for a New York learner permit at age 16 (some students can take the written test as early as 15 years, 11 months through the DMV\'s OKTA program). A full Class D license is available at 17 if you complete a state-approved driver education course — otherwise the minimum age is 18.' },
+      { q: 'Are these real New York DMV questions, or California questions relabeled?', a: 'These are real New York questions. The 50-question all-chapters test is modeled on the official NY DMV\'s own all-chapters quiz, and the Chapter 4 test is sourced from its chapter quiz — every answer independently verified against the New York State Driver\'s Manual, not reused California content.' },
+      { q: 'Are the road signs on this site the same as New York road signs?', a: 'Yes. Road signs in the United States are governed by the Manual on Uniform Traffic Control Devices (MUTCD), a federal standard. Every sign on this site is identical to what you will see on New York roads.' },
       { q: 'Is this New York DMV practice test free?', a: 'Yes. All tests are 100% free, unlimited, and require no account or signup. You can retake them as many times as you like.' },
-      { q: 'What topics does the New York DMV knowledge test cover?', a: 'The test covers road signs, right-of-way rules, speed limits, traffic signals, safe following distance, parking rules, and DUI laws. These topics are largely the same across all U.S. states because they follow federal traffic standards and the Uniform Vehicle Code.' },
+      { q: 'What topics does the New York DMV knowledge test cover?', a: 'Chapters 4 through 11 of the manual, plus road signs: traffic control (signs, signals, pavement markings), intersections and turns, passing, parallel parking, defensive driving, alcohol and other drugs, special driving conditions, and sharing the road.' },
     ],
     related: [
       { href: '/california-dmv-practice-test', label: 'California practice test' },

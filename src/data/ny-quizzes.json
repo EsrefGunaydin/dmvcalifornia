@@ -1,0 +1,732 @@
+{
+  "quizzes": [
+    {
+      "id": "new-york-dmv-all-chapters-quiz",
+      "title": "New York DMV All Chapters Practice Test — 50 Questions",
+      "description": "50 real questions covering the full New York State Driver's Manual — signs and signals, expressway driving, passing, alcohol and drugs, right-of-way, school buses, and more. Modeled on the official NY DMV all-chapters quiz.",
+      "category": "New York DMV — All Chapters",
+      "slug": "new-york-dmv-all-chapters-quiz",
+      "passingScore": 70,
+      "timeLimit": 35,
+      "language": "en",
+      "badge": "50 QUESTIONS",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Before backing out of a driveway with children nearby, you should:",
+          "options": ["Race the motor to warn the children", "Sound the horn so the children hear you", "Walk to the back of the car to check the way is clear", "Tell the children to stay away"],
+          "correctAnswer": 2,
+          "explanation": "Never assume children have moved — walk to the rear of the vehicle to make sure the path is clear before backing out.",
+          "category": "Defensive Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "Why is expressway driving different from ordinary street driving?",
+          "options": ["You must think faster and handle your vehicle more effectively", "Trucks must go slower on expressways", "There is more tendency to exceed the speed limit", "There is more tendency to tailgate"],
+          "correctAnswer": 0,
+          "explanation": "Higher expressway speeds mean less time to react, so you must think and handle your vehicle more effectively than on ordinary streets.",
+          "category": "Special Driving Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "If you pass your exit on an expressway, you should:",
+          "options": ["Pull onto the shoulder and back up to the exit", "Drive to the next exit and leave the expressway there", "Make a U-turn at the nearest emergency turn area", "Make a U-turn at the next service area"],
+          "correctAnswer": 1,
+          "explanation": "Never back up or make a U-turn on an expressway — continue to the next exit.",
+          "category": "Special Driving Conditions",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "What is the effect of combining alcohol and another drug?",
+          "options": ["It increases the effects of both", "It has no effect on driving ability", "It reduces the effects of the drug or medicine", "It reduces the effects of the alcohol"],
+          "correctAnswer": 0,
+          "explanation": "Combining alcohol with another drug often multiplies the impairing effects of both.",
+          "category": "Alcohol and Other Drugs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "After leaving an expressway and starting to drive on an ordinary highway, you should:",
+          "options": ["Check your tire pressure", "Check your speedometer to keep at the lower speed limit", "Stay twice as far behind other cars", "Change your speed gradually to the lower speed limit"],
+          "correctAnswer": 1,
+          "explanation": "High expressway speeds distort your sense of speed — check your speedometer to make sure you've actually slowed to the lower limit.",
+          "category": "Special Driving Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "A stop sign means:",
+          "options": ["Slow down if cars are approaching", "Come to a full stop, then go when it is safe to do so", "Proceed carefully, you don't always have to stop", "Stop only for traffic on the intersecting road"],
+          "correctAnswer": 1,
+          "explanation": "A stop sign always requires a complete stop, then proceeding only when it's safe.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "You must pull over to the right and stop for:",
+          "options": ["Vehicles with blue, green, or amber lights", "An authorized emergency vehicle responding with lights and siren", "A hazard vehicle parked or stopped on the highway", "Stopped or standing school buses"],
+          "correctAnswer": 1,
+          "explanation": "When an authorized emergency vehicle approaches with lights and siren, you must yield, pull to the right edge of the road, and stop until it passes.",
+          "category": "Rules of the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "A \"slippery when wet\" sign means:",
+          "options": ["Don't drink if you are driving", "The road may be slippery when wet", "The road curves ahead", "You are approaching a hill"],
+          "correctAnswer": 1,
+          "explanation": "This warning sign means the road surface may be slippery when wet — slow down and increase following distance.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "What is always true about road rage?",
+          "options": ["There is nothing a driver can do to prevent it", "You must hold your position in the travel lane", "Only violent people experience it", "You should remain polite to an aggressive driver"],
+          "correctAnswer": 3,
+          "explanation": "Staying calm and polite, even toward an aggressive driver, is the safest way to avoid escalating a confrontation.",
+          "category": "Defensive Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "Seat belts can be most effective as injury-preventing devices when they are worn by:",
+          "options": ["The person driving the car", "Passengers on a long drive", "All occupants on an expressway", "Passengers and the driver whenever they are in the car"],
+          "correctAnswer": 3,
+          "explanation": "Seat belts protect best when every occupant wears one on every trip, not just on highways or long drives.",
+          "category": "Defensive Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "You want to make a left turn at a green light, but oncoming traffic is heavy. You should:",
+          "options": ["Use the next intersection instead", "Wait at the crosswalk for traffic to clear", "Wait in the center of the intersection for a safe gap", "Take the right-of-way since you have a green light"],
+          "correctAnswer": 2,
+          "explanation": "Pull into the intersection and wait for a safe gap in oncoming traffic before completing the turn.",
+          "category": "Intersections and Turns",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "A traffic light with a green arrow and a red light means:",
+          "options": ["Drive straight ahead only", "Drive only in the direction of the green arrow", "Wait for the light to turn green", "Vehicles moving in any direction must stop"],
+          "correctAnswer": 1,
+          "explanation": "A green arrow lets you go only in the direction it points, even though the main signal is red.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "Driving in heavy fog during the day requires:",
+          "options": ["Headlights off", "Parking lights on", "Headlights on low beam", "Headlights on high beam"],
+          "correctAnswer": 2,
+          "explanation": "Use low beams in fog — high beams reflect off the fog and reduce visibility further.",
+          "category": "Special Driving Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "The car behind you begins to pass. You should:",
+          "options": ["Maintain your speed for smooth traffic flow", "Pull right and stop so he can pass", "Slow down slightly but stay in your lane", "Blow your horn to allow him to pass"],
+          "correctAnswer": 0,
+          "explanation": "Hold a steady speed in your lane so the passing driver can judge distance and complete the pass safely.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "On a New York highway with no posted speed limit, the fastest legal speed is:",
+          "options": ["50 mph", "55 mph", "60 mph", "65 mph"],
+          "correctAnswer": 1,
+          "explanation": "New York's default speed limit on any road without a posted limit is 55 mph.",
+          "category": "Rules of the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "A work zone sign is:",
+          "options": ["A white rectangle with black letters", "An orange diamond with black letters", "A green rectangle with white letters", "A yellow circle with black letters"],
+          "correctAnswer": 1,
+          "explanation": "Work zone signs are orange diamonds with black letters or symbols, warning of construction or maintenance ahead.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "After you have passed a car, you should return to the right lane when you:",
+          "options": ["See the front bumper of the other car in your mirror", "Put your turn signal on", "Turn your headlights on", "See the other car's headlights come on"],
+          "correctAnswer": 0,
+          "explanation": "Wait until you can see the front bumper of the passed vehicle in your rearview mirror before signaling back into the lane.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "What are the colors of warning signs for hazards ahead, such as curves or narrow bridges?",
+          "options": ["Black letters on a white background", "Black letters on a yellow background", "White letters on a blue background", "White letters on a green background"],
+          "correctAnswer": 1,
+          "explanation": "Warning signs are yellow diamonds with black letters or symbols.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 19,
+          "question": "A flashing yellow light means:",
+          "options": ["Merging traffic", "Proceed with caution", "Pedestrian crossing", "Come to a full stop"],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means slow down and proceed carefully — a full stop is not required.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "You are waiting in an intersection to complete a left turn. You should:",
+          "options": ["Signal and keep your wheels turned toward the left", "Signal and keep your wheels pointed straight ahead", "Flash your headlights so a driver will let you through", "Drive around the rear of a car blocking you"],
+          "correctAnswer": 1,
+          "explanation": "Keep your front wheels straight while waiting — if hit from behind with wheels turned, you could be pushed into oncoming traffic.",
+          "category": "Intersections and Turns",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "If your brake pedal suddenly sinks to the floor, you should first:",
+          "options": ["Try to pump it to build up pressure", "Shift to neutral and shut the engine off", "Try to raise it by hooking your toe under it", "Apply the parking brake hard"],
+          "correctAnswer": 0,
+          "explanation": "Pump the brake pedal rapidly to try to build up hydraulic pressure before resorting to the parking brake.",
+          "category": "Special Driving Conditions",
+          "difficulty": "hard"
+        },
+        {
+          "id": 22,
+          "question": "When entering a roadway from a private road or driveway, you should:",
+          "options": ["Blow your horn to warn other cars", "Stop with part of the car on the roadway to warn traffic", "Drive out fast to merge smoothly", "Yield the right-of-way to pedestrians and traffic"],
+          "correctAnswer": 3,
+          "explanation": "Drivers entering a road from a driveway or private road must yield to pedestrians and traffic already on the roadway.",
+          "category": "Rules of the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 23,
+          "question": "The road has a solid yellow line and a broken yellow line, with the broken line on your side. You may pass:",
+          "options": ["Only in an emergency", "Only if you are on an expressway", "If traffic is clear", "Only at an intersection"],
+          "correctAnswer": 2,
+          "explanation": "On the broken-line side of a solid/broken yellow pair, you may pass when it's safe and won't interfere with traffic.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "A blind person legally has the right-of-way when crossing the street when:",
+          "options": ["Wearing light-colored clothing", "Led by a guide dog or using a white or metallic cane", "Helped by another person", "Wearing dark-colored glasses"],
+          "correctAnswer": 1,
+          "explanation": "A pedestrian using a guide dog or a white/metallic cane has the legal right-of-way when crossing.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "What are the consequences that can result from driving under the influence of alcohol or other drugs?",
+          "options": ["Possible imprisonment", "A mandatory fine", "Driver license revocation", "All of these choices"],
+          "correctAnswer": 3,
+          "explanation": "Driving under the influence can bring imprisonment, fines, and license revocation — all of the above.",
+          "category": "Alcohol and Other Drugs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "You may pass a vehicle on the right if it is waiting to:",
+          "options": ["Turn right", "Turn left", "Park at the curb", "Turn into a driveway on the right"],
+          "correctAnswer": 1,
+          "explanation": "You may pass on the right when the vehicle ahead is stopped or slowing to make a left turn.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 27,
+          "question": "A \"divided highway ends\" sign means:",
+          "options": ["Divided highway ahead", "One-way traffic ahead", "Four-lane highway ahead", "The divided highway ends"],
+          "correctAnswer": 3,
+          "explanation": "This sign warns that the physical median or divider is about to end.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 28,
+          "question": "You may park in a space reserved for people with disabilities if your vehicle displays disabled plates or a permit:",
+          "options": ["Regardless of who is in the vehicle", "Only if the driver is disabled", "Only if you are carrying the disabled person named on the registration", "If someone in your immediate family is disabled"],
+          "correctAnswer": 0,
+          "explanation": "A vehicle displaying valid disability plates or a permit may use the space regardless of who is in the vehicle at the time.",
+          "category": "Rules of the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "Two vehicles enter an uncontrolled intersection at the same time. Which vehicle has the right-of-way?",
+          "options": ["Either one", "The vehicle on the left", "The vehicle on the right", "Neither one"],
+          "correctAnswer": 2,
+          "explanation": "At an uncontrolled intersection, the driver on the left must yield the right-of-way to the driver on the right.",
+          "category": "Intersections and Turns",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "Minimum speed signs are designed to:",
+          "options": ["Keep traffic flowing smoothly", "Show current road conditions", "Test future traffic signal needs", "Assure pedestrian safety"],
+          "correctAnswer": 0,
+          "explanation": "Minimum speed limits exist to keep slow-moving vehicles from blocking the normal flow of traffic.",
+          "category": "Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 31,
+          "question": "A \"no stopping\" sign means you may stop only:",
+          "options": ["Long enough to unload packages", "To avoid conflict with other traffic", "To discharge passengers", "For less than 5 minutes"],
+          "correctAnswer": 1,
+          "explanation": "A No Stopping sign prohibits stopping for any reason except to avoid a conflict with other traffic.",
+          "category": "Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "A \"right lane ends, keep left\" sign means:",
+          "options": ["Merging traffic from the right", "Winding road ahead", "The right lane ends and you must stay left", "Divided highway ahead"],
+          "correctAnswer": 2,
+          "explanation": "This sign warns that the right lane is ending and you must merge left.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 33,
+          "question": "To overtake and pass a vehicle, you should:",
+          "options": ["Wait for a signal from the other driver", "Change lanes quickly", "Signal and pass only when it's safe", "Stay close behind to shorten passing time"],
+          "correctAnswer": 2,
+          "explanation": "Always signal your intent and pass only when you can see it's safe to do so.",
+          "category": "Passing",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "The best way to stop on a slippery road is to:",
+          "options": ["Apply the brakes quickly and firmly", "Apply the brakes slowly and steadily", "Shift to a lower gear and avoid the brakes", "Shift to neutral and avoid the brakes"],
+          "correctAnswer": 1,
+          "explanation": "Apply the brakes slowly and steadily on a slippery surface to avoid triggering a skid.",
+          "category": "Special Driving Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "What applies to all driving emergencies?",
+          "options": ["Always slow down gradually", "Your first reaction is always the best reaction", "Think before you act", "Apply the brakes immediately"],
+          "correctAnswer": 2,
+          "explanation": "Don't panic — take a moment to think through the safest response before acting in any emergency.",
+          "category": "Special Driving Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 36,
+          "question": "A school bus is stopped ahead with red lights flashing. You:",
+          "options": ["May pass if there are no children near the road", "Cannot pass while the red lights are flashing", "May pass if you are facing the front of the bus", "May pass if you are on the other side of a divided highway"],
+          "correctAnswer": 1,
+          "explanation": "You must always stop for a school bus with flashing red lights and may not proceed until the lights stop flashing.",
+          "category": "Sharing the Road",
+          "difficulty": "easy"
+        },
+        {
+          "id": 37,
+          "question": "If you drink alcohol socially, what helps ensure safe driving?",
+          "options": ["Drinking coffee before driving", "Riding home with a friend who has not been drinking", "Taking a cold shower before driving", "Stopping drinking half an hour before you drive"],
+          "correctAnswer": 1,
+          "explanation": "Coffee and cold showers don't lower blood alcohol content — the only safe option is to ride with someone who hasn't been drinking.",
+          "category": "Alcohol and Other Drugs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 38,
+          "question": "A stop sign means:",
+          "options": ["Slow down if cars are approaching", "Come to a full stop, then go when it is safe to do so", "Proceed carefully, you don't always have to stop", "Stop only for intersecting traffic"],
+          "correctAnswer": 1,
+          "explanation": "A stop sign always requires a complete stop before proceeding when it's safe.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 39,
+          "question": "A yield sign means:",
+          "options": ["Slow down only if an emergency vehicle is approaching", "Look both ways before crossing the intersection", "Always come to a full stop", "Slow down and be prepared to stop if necessary"],
+          "correctAnswer": 3,
+          "explanation": "A Yield sign means slow down and be ready to stop if needed to let other traffic go first.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 40,
+          "question": "What effect does combining alcohol with a prescription or over-the-counter medicine have?",
+          "options": ["The medicine reduces the alcohol's effect", "The alcohol helps the medicine work better", "The combination could multiply the effects of the alcohol", "There is no effect, since they are different substances"],
+          "correctAnswer": 2,
+          "explanation": "Mixing alcohol with prescription or over-the-counter medicine can multiply the impairing effects of the alcohol.",
+          "category": "Alcohol and Other Drugs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 41,
+          "question": "Alcohol affects:",
+          "options": ["Recovery from headlight glare", "Reaction time", "Judgment of distances", "All of these choices"],
+          "correctAnswer": 3,
+          "explanation": "Alcohol impairs glare recovery, reaction time, and distance judgment — all of these choices.",
+          "category": "Alcohol and Other Drugs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 42,
+          "question": "A red and white triangular sign at an intersection means:",
+          "options": ["Always come to a full stop", "Look both ways as you cross", "Slow down only if an emergency vehicle is approaching", "Slow down and be prepared to stop if necessary"],
+          "correctAnswer": 3,
+          "explanation": "A yield sign (red and white triangle) means slow down and be prepared to stop if necessary.",
+          "category": "Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 43,
+          "question": "What does a \"slow moving vehicle\" emblem look like?",
+          "options": ["A square red sign", "A round green sign", "A diamond-shaped yellow sign", "A triangular orange sign"],
+          "correctAnswer": 3,
+          "explanation": "The slow-moving-vehicle emblem is a fluorescent orange triangle with a red reflective border.",
+          "category": "Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 44,
+          "question": "Driving in a state of rage can:",
+          "options": ["Affect your ability to reason and make decisions", "Increase your chance of a traffic accident", "Lead to a revoked or suspended license", "All of these choices"],
+          "correctAnswer": 3,
+          "explanation": "Road rage clouds judgment, raises crash risk, and can lead to license suspension — all of these choices.",
+          "category": "Defensive Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 45,
+          "question": "What is the only effective way to reduce your blood alcohol content (BAC)?",
+          "options": ["Drinking coffee", "Exercising", "Allowing your body time to eliminate the alcohol", "Taking a cold shower"],
+          "correctAnswer": 2,
+          "explanation": "Coffee, exercise, and cold showers do not lower blood alcohol content — only time allows your body to eliminate the alcohol.",
+          "category": "Alcohol and Other Drugs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 46,
+          "question": "A rectangular-shaped sign is a:",
+          "options": ["Speed limit sign", "School crossing sign", "Stop sign", "Railroad crossing sign"],
+          "correctAnswer": 0,
+          "explanation": "Regulation signs, including speed limit signs, are normally rectangular.",
+          "category": "Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 47,
+          "question": "You are making a left turn from a two-way street onto a one-way street. When you complete the turn, your car should be in:",
+          "options": ["The right lane of the street", "The center of the street", "The left lane of the street", "The lane with the least traffic"],
+          "correctAnswer": 2,
+          "explanation": "When turning left onto a one-way street, you should end up in the left lane of that street.",
+          "category": "Intersections and Turns",
+          "difficulty": "medium"
+        },
+        {
+          "id": 48,
+          "question": "In which situation is passing always forbidden?",
+          "options": ["The vehicle ahead is making a left turn", "You are on a one-way street with two lanes", "The vehicle ahead is stopped for a pedestrian in a crosswalk", "The vehicle ahead is about to parallel park"],
+          "correctAnswer": 2,
+          "explanation": "Never pass a vehicle that has stopped to let a pedestrian cross in a crosswalk.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 49,
+          "question": "A \"no U-turn\" sign means:",
+          "options": ["No left turn", "No stopping", "No U-turn", "Detour ahead"],
+          "correctAnswer": 2,
+          "explanation": "This regulatory sign simply prohibits making a U-turn at that location.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 50,
+          "question": "What is the best way to prevent drowsiness on long trips?",
+          "options": ["Turn on the car radio", "Slow down for better reaction time", "Stop at regular intervals for rest", "Move your eyes side to side while driving"],
+          "correctAnswer": 2,
+          "explanation": "Plan frequent rest stops on long trips — that's the only reliable way to fight driver fatigue.",
+          "category": "Special Driving Conditions",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "new-york-dmv-chapter-4-traffic-control",
+      "title": "New York DMV Chapter 4 Practice Test — Traffic Control",
+      "description": "18 real questions from the official New York State Driver's Manual, Chapter 4: Traffic Control — signs, traffic signals, pavement markings, and traffic officers.",
+      "category": "New York DMV — Chapter 4: Traffic Control",
+      "slug": "new-york-dmv-chapter-4-traffic-control",
+      "passingScore": 70,
+      "timeLimit": 20,
+      "language": "en",
+      "badge": "2026 NEW",
+      "questions": [
+        {
+          "id": 1,
+          "question": "A traffic light which has a green arrow and a red light means that:",
+          "options": [
+            "You may only drive straight ahead",
+            "You may drive only in the direction of the green arrow",
+            "You must wait for a green light",
+            "Vehicles moving in any direction must stop"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If a green arrow is shown with a red light, you may go toward the arrow, but only if the intersection is clear.",
+          "category": "Traffic Signals",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "As you near an intersection, the traffic light changes from green to yellow. Your best action would be to:",
+          "options": [
+            "Speed up to beat the red light",
+            "Apply the brakes sharply to stop",
+            "Be prepared to stop in the center of the intersection",
+            "Be prepared to stop before the intersection"
+          ],
+          "correctAnswer": 3,
+          "explanation": "A steady yellow light means the light is about to turn red — be prepared to stop before the intersection, not speed up or slam the brakes.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 3,
+          "question": "You may not cross a single broken white (or yellow) line:",
+          "options": [
+            "When to do so would interfere with traffic",
+            "When turning left into a driveway",
+            "When the car in front is disabled",
+            "When passing to the right on a one-way street"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A single broken line allows passing or changing lanes only when it can be done safely, without interfering with traffic.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "What does this road sign (stop sign) mean?",
+          "options": [
+            "Slow down and prepare to stop only if cars are approaching you",
+            "Come to a full stop, then go when it is safe to do so",
+            "Proceed carefully through the intersection, not always stopping",
+            "Stop only for traffic on an intersecting road"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A stop sign requires a full stop, yielding the right-of-way, then proceeding only when it's safe.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "A solid white line on the right edge of the highway slants in toward your left. This shows that:",
+          "options": [
+            "There is an intersection just ahead",
+            "You are approaching a construction area",
+            "You will be required to turn left just ahead",
+            "The road will get narrower"
+          ],
+          "correctAnswer": 3,
+          "explanation": "An edge line that angles toward the center of the road warns that the road narrows ahead.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "When the road is marked with a solid yellow line and a broken yellow line on your side you may pass:",
+          "options": [
+            "Only in an emergency",
+            "If you are on an expressway",
+            "If traffic is clear",
+            "Only at an intersection"
+          ],
+          "correctAnswer": 2,
+          "explanation": "On the broken-line side of a solid/broken yellow line pair, you may pass if it's safe and won't interfere with traffic.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "What are the colors of the warning signs that indicate hazards ahead, such as curves in the road or narrow bridges?",
+          "options": [
+            "Black letters or symbols on a white background",
+            "Black letters or symbols on a yellow background",
+            "White letters or symbols on a blue background",
+            "White letters or symbols on a green background"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Warning signs are yellow and diamond-shaped, with black letters or symbols.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "You may cross a single solid white line in the highway:",
+          "options": [
+            "Whenever you want to",
+            "If traffic conditions require",
+            "Only to turn into a driveway",
+            "Only to make a u-turn"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A single solid line allows passing or changing lanes only when obstructions or traffic conditions make it necessary.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "A rectangular-shaped sign is a:",
+          "options": [
+            "Stop sign",
+            "Speed limit sign",
+            "Railroad crossing sign",
+            "School crossing sign"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Regulation signs, like speed limit signs, are normally white rectangles with black letters or symbols.",
+          "category": "Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "You come to an intersection which has a flashing red light. You should:",
+          "options": [
+            "Come to a full stop, then go when safe to do so",
+            "Stop only if cars are approaching the intersection",
+            "Stop only if cars are already in the intersection",
+            "Slow down and be prepared to stop if necessary"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A flashing red light means the same as a stop sign: stop, yield the right-of-way, and go when it's safe.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "Which of the following is used on some highways to direct drivers into the proper lanes for turning?",
+          "options": [
+            "Flashing red lights",
+            "Flashing yellow lights",
+            "White lines on the side of the road",
+            "White arrows in the middle of the lanes"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Pavement arrows show which lane you must be in before you reach the line separating lanes.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "What does a flashing yellow light mean?",
+          "options": [
+            "Merging traffic",
+            "Proceed with caution",
+            "Pedestrian crossing",
+            "Come to a full stop"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow light means drive with caution — it does not require a stop.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "What are the colors of a sign which tells you the distance to the next exit of a highway?",
+          "options": [
+            "Yellow with black letters",
+            "Black with white letters",
+            "Red with white letters",
+            "Green with white letters"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Destination signs, which show direction and distance to locations, are green with white letters.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 14,
+          "question": "You may cross a double solid yellow line:",
+          "options": [
+            "To pass a slow moving truck",
+            "To turn into a driveway",
+            "To pass a car if traffic permits",
+            "Under no conditions"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Double solid lines may only be crossed to turn left to enter or leave the highway, such as into a driveway.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "An intersection has a stop sign and a crosswalk, but no stop line. You must stop:",
+          "options": [
+            "Before the crosswalk",
+            "50 feet before the intersection",
+            "Where you think the stop line would be",
+            "With your front wheels in the crosswalk"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Without a stop line, you must stop before entering the crosswalk.",
+          "category": "Pavement Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "A diamond-shaped sign is a:",
+          "options": [
+            "Road hazard sign",
+            "Interstate route site",
+            "School crossing sign",
+            "Speed limit sign"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Diamond-shaped signs are warning signs, alerting drivers to hazards or special conditions ahead.",
+          "category": "Signs",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "A red and white triangular sign at an intersection means:",
+          "options": [
+            "Always come to a full stop at the intersection",
+            "Slow down and be prepared to stop if necessary",
+            "Look both ways as you cross the intersection",
+            "Slow down if an emergency vehicle is approaching"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A Yield sign means decrease speed, prepare to stop, and yield the right-of-way — a full stop is only required if traffic conditions call for it.",
+          "category": "Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "Which of the following must you obey over the other three?",
+          "options": [
+            "A steady red light",
+            "A police officer",
+            "A stop sign",
+            "A flashing red light"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Directions given by a traffic officer take precedence over any sign, signal, or pavement marking.",
+          "category": "Traffic Officers",
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}

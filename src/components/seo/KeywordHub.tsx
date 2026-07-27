@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import type { KeywordHub as Hub, HubCard, HubSection } from '@/data/seo-hubs';
+import HeroStampBadge from '@/components/seo/HeroStampBadge';
 
 const SITE_URL = 'https://dmvcalifornia.us';
 
@@ -58,6 +59,42 @@ function FullCard({ card }: { card: HubCard }) {
   );
 }
 
+function FeaturedCard({ card }: { card: HubCard }) {
+  return (
+    <Link
+      href={card.href}
+      className="group bg-dmv-50 rounded-2xl border-2 border-dmv-300 hover:border-dmv-500 hover:shadow-xl transition-all p-7 flex flex-col"
+    >
+      <div className="flex items-start justify-between gap-2 mb-3">
+        <h3 className="text-2xl font-extrabold text-dmv-900 group-hover:text-dmv-700 transition-colors">
+          {card.label}
+        </h3>
+        <div className="flex flex-col items-end gap-1 flex-shrink-0">
+          <FreePill />
+          {card.badge && (
+            <span className="bg-dmv-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
+              {card.badge}
+            </span>
+          )}
+        </div>
+      </div>
+      {card.description && <p className="text-base text-gray-700 mb-4">{card.description}</p>}
+      <div className="mt-auto flex items-center justify-between pt-4 border-t border-dmv-200">
+        {typeof card.questions === 'number' ? (
+          <span className="flex items-center gap-1.5 text-base font-medium text-gray-600">
+            <ClockIcon /> {card.questions} questions
+          </span>
+        ) : (
+          <span className="text-base text-gray-400">Free tool</span>
+        )}
+        <span className="text-dmv-700 font-bold text-base group-hover:translate-x-0.5 transition-transform">
+          Start →
+        </span>
+      </div>
+    </Link>
+  );
+}
+
 function CompactCard({ card }: { card: HubCard }) {
   return (
     <Link
@@ -85,6 +122,12 @@ function Section({ section }: { section: HubSection }) {
             <CompactCard key={c.href} card={c} />
           ))}
         </div>
+      ) : section.variant === 'featured' ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {section.cards.map((c) => (
+            <FeaturedCard key={c.href} card={c} />
+          ))}
+        </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {section.cards.map((c) => (
@@ -98,7 +141,7 @@ function Section({ section }: { section: HubSection }) {
 
 export default function KeywordHub({ config }: { config: Hub }) {
   const url = `${SITE_URL}/${config.slug}`;
-  const fullTests = config.sections.find((s) => s.variant === 'cards')?.cards ?? [];
+  const fullTests = config.sections.find((s) => s.variant === 'cards' || s.variant === 'featured')?.cards ?? [];
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -156,7 +199,7 @@ export default function KeywordHub({ config }: { config: Hub }) {
       <main className="min-h-screen bg-gray-50">
         {/* Blue hero band */}
         <section className="bg-gradient-to-br from-dmv-600 via-dmv-500 to-dmv-700 text-white">
-          <div className="container mx-auto px-4 py-10">
+          <div className="relative container mx-auto px-4 py-10">
             <nav className="text-sm text-white/80 mb-5">
               <Link href="/" className="hover:underline">Home</Link>
               <span className="mx-1.5">›</span>
@@ -178,16 +221,22 @@ export default function KeywordHub({ config }: { config: Hub }) {
               ))}
             </div>
 
+            {config.heroBadge && (
+              <div className="absolute top-1/2 right-0 -translate-y-1/2">
+                <HeroStampBadge text={config.heroBadge} />
+              </div>
+            )}
+
             <div className="max-w-3xl">
               <h1 className="text-3xl md:text-4xl font-extrabold leading-tight mb-3">{config.h1}</h1>
               <p className="text-lg text-white/90 mb-4">{config.heroSubtitle}</p>
               <p className="text-sm text-white/80 font-medium">{config.trustLine}</p>
-              <a
-                href="#tests"
+              <Link
+                href={fullTests[0]?.href ?? '#tests'}
                 className="inline-block mt-6 bg-white text-dmv-700 font-bold px-6 py-3 rounded-lg shadow hover:bg-dmv-50 transition-colors"
               >
                 Start a free practice test →
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -198,7 +247,7 @@ export default function KeywordHub({ config }: { config: Hub }) {
             {/* Sidebar */}
             <aside className="space-y-6">
               <div className="bg-white rounded-xl border-2 border-dmv-100 p-5">
-                <h2 className="text-lg font-bold text-dmv-800 mb-4">California License Requirements</h2>
+                <h2 className="text-lg font-bold text-dmv-800 mb-4">{config.sidebarTitle || 'California License Requirements'}</h2>
                 {config.sidebarRequirements.map((block) => (
                   <div key={block.title} className="mb-4 last:mb-0">
                     <h3 className="font-semibold text-gray-900 mb-2">{block.title}</h3>

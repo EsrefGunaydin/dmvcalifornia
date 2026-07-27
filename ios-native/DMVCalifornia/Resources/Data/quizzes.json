@@ -1,6 +1,643 @@
 {
   "quizzes": [
     {
+      "id": "california-dmv-practice-test-2026",
+      "title": "California DMV Practice Test 2026",
+      "description": "Brand-new 2026 California DMV practice test with 48 fresh questions covering road signs, right-of-way, parking, speed limits, railroad crossings, and safe driving. Pass with 83% to get ready for the official DMV written test. Questions and answers reshuffle every attempt.",
+      "category": "Full Simulation Tests",
+      "slug": "california-dmv-practice-test-2026",
+      "passingScore": 83,
+      "timeLimit": 60,
+      "language": "en",
+      "badge": "2026 NEW",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Two sets of solid, double, yellow lines that are two or more feet apart:",
+          "options": [
+            "May be crossed to enter or exit a private driveway",
+            "Should be treated as a separate traffic lane",
+            "May not be crossed for any reason"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Two sets of solid double yellow lines two or more feet apart should be treated like a wall — never cross them for any reason.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "You see a signal person at a road construction site ahead. You should obey his or her instructions:",
+          "options": [
+            "Unless they conflict with existing signs, signals, or laws",
+            "Only if you see orange cones on the road ahead",
+            "At all times"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must obey a construction flagger's instructions at all times, even if they conflict with existing signs or signals.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "You see a flashing yellow traffic signal at an upcoming intersection. The flashing yellow light means:",
+          "options": [
+            "Stop. Yield to all cross traffic before crossing the intersection",
+            "Slow down and cross the intersection carefully",
+            "Stop before entering the intersection as long as you can do so safely"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A flashing yellow signal means slow down and proceed through the intersection with caution; it does not require a full stop.",
+          "category": "Right-of-Way & Intersections",
+          "difficulty": "medium"
+        },
+        {
+          "id": 4,
+          "question": "Which of these vehicles must always stop before crossing railroad tracks?",
+          "options": [
+            "Any vehicle with 3 or more axles or weighing more than 4,000 pounds",
+            "Tank trucks marked with hazardous materials placards",
+            "Motor homes or pickup trucks towing a boat trailer"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Vehicles marked with hazardous materials placards, like tank trucks, must always stop before crossing railroad tracks.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "A white painted curb means:",
+          "options": [
+            "Loading zone for passengers or mail only",
+            "Loading zone for freight only",
+            "Loading zone for freight or passengers"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A white curb marks a loading zone for passengers or mail only, not freight.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "Roadways are the most slippery:",
+          "options": [
+            "After it has been raining for awhile",
+            "During a heavy downpour",
+            "The first rain after a dry spell"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Roads are most slippery during the first rain after a dry spell, when oil and dust rise to the surface.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "Unless otherwise posted the speed limit in a residential area is ___",
+          "options": [
+            "25 mph",
+            "30 mph",
+            "20 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Unless otherwise posted, the speed limit in a residential area is 25 mph.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "With a Class C drivers license a person may drive:",
+          "options": [
+            "A vehicle pulling two trailers",
+            "Any 3-axle vehicle regardless of the weight",
+            "A 3-axle vehicle if the Gross Vehicle Weight is less than 6,000 pounds"
+          ],
+          "correctAnswer": 2,
+          "explanation": "A Class C license only covers a 3-axle vehicle if its Gross Vehicle Weight is under 6,000 pounds.",
+          "category": "Laws & Requirements",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "When parking uphill on a two-way street with no curb, your front wheels should be:",
+          "options": [
+            "Turned to the left (toward the street)",
+            "Parallel with the pavement",
+            "Turned to the right (away from the street)"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When parking uphill with no curb, turn your front wheels to the right, away from the street, so the car rolls away from traffic if it moves.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "To turn left from a multilane one-way street onto a one-way street, you should start your turn from:",
+          "options": [
+            "The lane in the center of the road",
+            "Any lane (as long as it is safe)",
+            "The lane closest to the left curb"
+          ],
+          "correctAnswer": 2,
+          "explanation": "To turn left from a multilane one-way street onto another one-way street, start your turn from the lane closest to the left curb.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11,
+          "question": "California's \"Basic Speed Law\" says:",
+          "options": [
+            "You should never drive faster than posted speed limits",
+            "You should never drive faster than is safe for current conditions",
+            "The maximum speed limit in California is 70 mph on certain freeways"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The Basic Speed Law requires you to never drive faster than is safe for current conditions, even below the posted limit.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "A school bus ahead of you in your lane is stopped with red lights flashing. You should:",
+          "options": [
+            "Slow to 25 MPH and pass cautiously",
+            "Stop as long as the red lights are flashing",
+            "Stop, then proceed when you think all of the children have exited the bus"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You must stop and remain stopped as long as a school bus's red lights are flashing.",
+          "category": "Pedestrians & Sharing the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "When can you drive in a bike lane?",
+          "options": [
+            "During rush hour traffic if there are no bicyclists in the bike lane",
+            "When you are within 200 feet of a cross street where you plan to turn right",
+            "When you want to pass a driver ahead of you who is turning right"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You may enter a bike lane within 200 feet of a corner in order to make a right turn.",
+          "category": "Pedestrians & Sharing the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "You may drive off of the paved roadway to pass another vehicle:",
+          "options": [
+            "Under no circumstances",
+            "If the shoulder is wide enough to accommodate your vehicle",
+            "If the vehicle ahead of you is turning left"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Never drive off the paved roadway to pass another vehicle, no matter how wide the shoulder is.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "You may not park your vehicle:",
+          "options": [
+            "Next to a red painted curb",
+            "Within 100 feet of an elementary school",
+            "On the side of the freeway in an emergency"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You may not park next to a red painted curb — it means no stopping, standing, or parking at any time.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 16,
+          "question": "You are driving on the freeway. The vehicle in front of you is a large truck. You should drive:",
+          "options": [
+            "Closely behind the truck in bad weather because the driver can see farther ahead",
+            "Farther behind the truck than you would for a passenger vehicle",
+            "No more than one car length behind the truck so the driver can see you"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Give large trucks more following distance than you would a passenger vehicle, since their size affects your visibility and their stopping ability.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "When you are merging onto the freeway, you should be driving:",
+          "options": [
+            "The posted speed limit for traffic on the freeway",
+            "5 to 10 MPH slower than the traffic on the freeway",
+            "At or near the same speed as the traffic on the freeway"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When merging onto a freeway, match your speed to the traffic already on the freeway for a safe merge.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "If you plan to pass another vehicle, you should:",
+          "options": [
+            "Assume the other driver will let you pass if you use your turn signal",
+            "Not assume the other driver will make space for you to return to your lane",
+            "Assume the other driver will maintain a constant speed"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Never assume another driver will slow down or make space for you — check your mirrors and blind spot before returning to your lane.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "It is a very windy day. You are driving and a dust storm blows across the freeway reducing your visibility. You should drive slower and turn on your:",
+          "options": [
+            "Headlights",
+            "Parking lights",
+            "Interior lights"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Turn on your headlights, not just parking lights, in dust storms or other low-visibility conditions so other drivers can see you.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "You may legally block an intersection:",
+          "options": [
+            "During rush hour traffic",
+            "When you entered the intersection on the green light",
+            "Under no circumstances"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You may never legally block an intersection, even if you entered on a green light.",
+          "category": "Right-of-Way & Intersections",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "The safest precaution that you can take regarding the use of cellular phones and driving is:",
+          "options": [
+            "Use hands-free devices so you can keep both hands on the steering wheel",
+            "Review the number before answering a call",
+            "Keep your phone within easy reach so you won't need to take your eyes off the road"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Hands-free devices let you keep both hands on the wheel, making them the safer option when using a cell phone while driving.",
+          "category": "Laws & Requirements",
+          "difficulty": "medium"
+        },
+        {
+          "id": 22,
+          "question": "When parking your vehicle parallel to the curb on a level street:",
+          "options": [
+            "Your front wheels must be turned toward the street",
+            "One of your rear wheels must touch the curb",
+            "Your wheels must be within 18 inches of the curb"
+          ],
+          "correctAnswer": 2,
+          "explanation": "When parallel parking on a level street, your wheels must be within 18 inches of the curb.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 23,
+          "question": "If you are in the middle of an intersection when you hear the siren of an emergency vehicle, you should:",
+          "options": [
+            "Continue through the intersection then move to the right and stop",
+            "Move to the right and stop at the intersection",
+            "Continue through the intersection then move to the left and stop"
+          ],
+          "correctAnswer": 0,
+          "explanation": "If you're in the middle of an intersection when an emergency vehicle approaches, continue through it, then pull to the right and stop.",
+          "category": "Right-of-Way & Intersections",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "You want to make a right turn at an upcoming intersection. You should slow down and:",
+          "options": [
+            "Move toward the left side of your lane",
+            "Avoid driving in the bicycle lane",
+            "Signal for 100 feet before turning"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Signal for at least 100 feet before making a right turn.",
+          "category": "Pedestrians & Sharing the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 25,
+          "question": "Always stop before you cross railroad tracks when:",
+          "options": [
+            "The railroad crossing is located in a city or town that has frequent train traffic",
+            "You transport two or more young children in a passenger vehicle",
+            "You don't have room on the other side to completely cross the tracks"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Never start to cross railroad tracks unless you have room on the other side to completely clear them.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "You are driving on a one-way street. You may turn left onto another one-way street only if:",
+          "options": [
+            "Traffic on the street moves to the left",
+            "A sign permits the turn",
+            "Traffic on the street moves to the right"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A left turn onto a one-way street is legal only when traffic on that street moves to the left, matching your turn.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 27,
+          "question": "Should you always drive slower than other traffic?",
+          "options": [
+            "Yes, it is always safer than driving faster than other traffic",
+            "Yes, it is a good defensive driving technique",
+            "No, you can block traffic when you drive too slowly"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Driving slower than the flow of traffic is not always safer — it can block traffic and create hazards.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "If you have a green light, but traffic is blocking the intersection, you should:",
+          "options": [
+            "Enter the intersection and wait until traffic clears",
+            "Stay out of the intersection until traffic clears",
+            "Merge into another lane, and try to go around the traffic"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Even with a green light, you must stay out of an intersection until traffic ahead has cleared enough for you to get through.",
+          "category": "Right-of-Way & Intersections",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "There is no crosswalk and you see a pedestrian crossing your lane ahead. You should:",
+          "options": [
+            "Stop and let him/her finish crossing the street",
+            "Make eye contact and then pass him/her",
+            "Slow down as you pass him/her"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Without a marked crosswalk, you must still stop and let a pedestrian finish crossing your lane.",
+          "category": "Pedestrians & Sharing the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "At intersections, crosswalks, and railroad crossings, you should always:",
+          "options": [
+            "Stop, listen, and proceed cautiously",
+            "Slowly pass vehicles that seem to be stopped for no reason",
+            "Look to the sides of your vehicle to see what is coming"
+          ],
+          "correctAnswer": 2,
+          "explanation": "At intersections, crosswalks, and railroad crossings, check to the sides of your vehicle for crossing traffic before proceeding.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 31,
+          "question": "You are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks in one direction. The speed limit is:",
+          "options": [
+            "25 mph",
+            "15 mph",
+            "20 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "If you can't see 400 feet down the tracks at an uncontrolled railroad crossing, do not drive faster than 15 mph as you approach.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "When driving in fog, you should use your:",
+          "options": [
+            "Fog lights only",
+            "Low beams",
+            "High beams"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Use low-beam headlights in fog — high beams reflect off the fog and reduce your visibility further.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 33,
+          "question": "All of the following practices are dangerous to do while driving. Which of these is also illegal?",
+          "options": [
+            "Adjusting your outside mirrors",
+            "Listening to music through headphones that cover both ears",
+            "Transporting an unrestrained animal inside the vehicle"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Wearing headphones that cover both ears while driving is illegal in California, since it can block traffic and emergency sounds.",
+          "category": "Laws & Requirements",
+          "difficulty": "medium"
+        },
+        {
+          "id": 34,
+          "question": "You are getting ready to make a right turn. You should:",
+          "options": [
+            "Slow down or stop, if necessary, and then make the turn",
+            "Stop before entering the right lane and let all other traffic go first",
+            "Signal and turn immediately"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Slow down or stop if necessary before completing a right turn safely.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "If you drive faster than other vehicles on a road with one lane in each direction and continually pass the other cars, you will:",
+          "options": [
+            "Increase your chances of an accident",
+            "Help prevent traffic congestion",
+            "Get you to your destination much faster and safer"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Continually passing other cars and weaving between lanes increases your chances of a collision.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 36,
+          "question": "You must obey instructions from school crossing guards:",
+          "options": [
+            "Unless you do not see any children present",
+            "Only during school hours",
+            "At all times"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must obey instructions from school crossing guards at all times.",
+          "category": "Pedestrians & Sharing the Road",
+          "difficulty": "medium"
+        },
+        {
+          "id": 37,
+          "question": "You have been involved in a minor traffic collision with a parked vehicle and you can't find the owner. You must:",
+          "options": [
+            "Leave a note on the vehicle",
+            "Report the accident without delay to the city police or, in unincorporated areas, to the CHP",
+            "Both of the above"
+          ],
+          "correctAnswer": 2,
+          "explanation": "If you hit a parked vehicle and can't find the owner, you must both leave a note and report the accident to police or the CHP.",
+          "category": "Laws & Requirements",
+          "difficulty": "medium"
+        },
+        {
+          "id": 38,
+          "question": "If you are involved in a traffic collision, you are required to complete and submit a written report (SR1) to the DMV:",
+          "options": [
+            "Only if you are at fault",
+            "Only if you or the other driver is injured",
+            "If there is property damage in excess of $1,000 or if there are any injuries"
+          ],
+          "correctAnswer": 2,
+          "explanation": "You must file an SR-1 report with the DMV if a collision causes more than $1,000 in property damage or any injury.",
+          "category": "Laws & Requirements",
+          "difficulty": "medium"
+        },
+        {
+          "id": 39,
+          "question": "You must notify the DMV within 5 days if you:",
+          "options": [
+            "Fail a smog test for your vehicle",
+            "Sell or transfer your vehicle",
+            "Get a new prescription for lenses or contacts"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle.",
+          "category": "Laws & Requirements",
+          "difficulty": "medium"
+        },
+        {
+          "id": 40,
+          "question": "To avoid last minute moves, you should be looking down the road to where your vehicle will be in about ___.",
+          "options": [
+            "15 to 20 seconds",
+            "5 to 10 seconds",
+            "10 to 15 seconds"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Scanning the road about 10 to 15 seconds ahead gives you time to react and avoid last-minute moves.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 41,
+          "question": "A large truck is ahead of you and is turning right onto a street with two lanes in each direction. The truck:",
+          "options": [
+            "May complete its turn in either of the two lanes",
+            "Must stay in the right lane at all times while turning",
+            "May have to swing wide to complete the right turn"
+          ],
+          "correctAnswer": 2,
+          "explanation": "A large truck may need to swing wide into an adjacent lane to complete a right turn safely.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 42,
+          "question": "When you tailgate other drivers (drive close to their rear bumper):",
+          "options": [
+            "You help reduce traffic congestion",
+            "Your actions cannot result in a traffic citation",
+            "You can frustrate the other drivers and make them angry"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tailgating can frustrate other drivers, provoke road rage, and increases your risk of a rear-end collision.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 43,
+          "question": "You are driving on a freeway posted for 65 MPH. The traffic is traveling at 70 MPH. You may legally drive:",
+          "options": [
+            "Between 65 mph and 70 mph",
+            "No faster than 65 mph",
+            "70 mph or faster to keep up with the speed of traffic"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You may never legally drive faster than the posted speed limit, even if other traffic is moving faster.",
+          "category": "Speed Limits",
+          "difficulty": "medium"
+        },
+        {
+          "id": 44,
+          "question": "Which of the following statements about blind spots is true?",
+          "options": [
+            "Large trucks have bigger blind spots than most passenger vehicles",
+            "Blind spots can be checked by looking in your rear view mirrors",
+            "They are eliminated if you have one outside mirror on each side of the vehicle"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Large trucks have bigger blind spots than most passenger vehicles, making it harder for their drivers to see you.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 45,
+          "question": "You may cross a double yellow line to pass another vehicle, if the yellow line next to:",
+          "options": [
+            "Your side of the road is a broken line",
+            "The other side of the road is a broken line",
+            "The other side of the road is a solid line"
+          ],
+          "correctAnswer": 0,
+          "explanation": "You may cross a double yellow line to pass only when the line on your side of the road is broken.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 46,
+          "question": "You are about to make a left turn. You must signal continuously for how many feet before making the turn?",
+          "options": [
+            "75 feet",
+            "100 feet",
+            "50 feet"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You must signal continuously for at least 100 feet before making a turn.",
+          "category": "Lanes, Turns & Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 47,
+          "question": "You drive defensively when you:",
+          "options": [
+            "Look only at the car in front of you while driving",
+            "Always put one car length between you and the car ahead",
+            "Keep your eyes moving to look for possible hazards"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Defensive driving means constantly scanning ahead and to the sides for possible hazards, not fixating on one spot.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 48,
+          "question": "It is illegal to park your vehicle:",
+          "options": [
+            "Within three feet of a private driveway",
+            "In an unmarked crosswalk",
+            "In a bicycle lane"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Parking in an unmarked crosswalk is illegal, just like a marked one.",
+          "category": "Parking",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
       "id": "dmv-simulation-test-1",
       "title": "California DMV Simulation Test #1",
       "description": "Full-length California DMV practice test 2025 with 46 questions. This simulation mimics the real DMV written test online California format. Pass with 83% (38/46 correct) to prepare for your official DMV Class C practice test.",
@@ -347,7 +984,7 @@
           "difficulty": "hard"
         },
         {
-          "id": 20,
+          "id": 47,
           "question": "A triangular orange sign on the back of a slow-moving vehicle indicates that the vehicle is traveling at:",
           "options": [
             "Less than 25 mph",
@@ -464,7 +1101,7 @@
           "difficulty": "medium"
         },
         {
-          "id": 11,
+          "id": 48,
           "question": "This sign means:",
           "options": [
             "Drive to the right",
@@ -543,7 +1180,7 @@
           "difficulty": "easy",
           "hasImage": true,
           "image": "/images/traffic-signs/left-turn-yield-on-green.webp",
-          "id": 12
+          "id": 49
         },
         {
           "id": 42,
@@ -610,7 +1247,8 @@
           "difficulty": "easy",
           "id": 46
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "dmv-simulation-test-2",
@@ -790,7 +1428,7 @@
           "explanation": "The legal BAC limit for drivers 21 and over is 0.08%.",
           "category": "DUI Laws",
           "difficulty": "easy",
-          "id": 13
+          "id": 47
         },
         {
           "id": 14,
@@ -843,7 +1481,7 @@
           "category": "Traffic Signs",
           "difficulty": "easy",
           "hasImage": true,
-          "id": 14,
+          "id": 48,
           "image": "/images/traffic-signs/wrong-way-sign.webp"
         },
         {
@@ -1223,7 +1861,8 @@
           "difficulty": "medium",
           "id": 46
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-1",
@@ -1232,7 +1871,7 @@
       "category": "Practice Tests",
       "slug": "practice-test-traffic-signs-and-signals",
       "passingScore": 80,
-      "timeLimit": 30.0,
+      "timeLimit": 30,
       "questions": [
         {
           "id": 1,
@@ -1286,7 +1925,8 @@
           "correctAnswer": 0,
           "explanation": "When railroad crossing signals are flashing, you must stop at least 15 feet from the tracks. Proceed only when signals stop and it's safe.",
           "category": "Railroad Crossings",
-          "difficulty": "easy"
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/railroad-crossing.webp"
         },
         {
           "id": 5,
@@ -1521,7 +2161,8 @@
           "category": "Traffic Signs",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-2",
@@ -1530,7 +2171,7 @@
       "category": "Practice Tests",
       "slug": "practice-test-right-of-way-and-intersections",
       "passingScore": 80,
-      "timeLimit": 30.0,
+      "timeLimit": 30,
       "questions": [
         {
           "id": 1,
@@ -1727,7 +2368,7 @@
           "explanation": "Large trucks have much larger blind spots than passenger vehicles.",
           "category": "Sharing the Road",
           "difficulty": "easy",
-          "id": 15
+          "id": 21
         },
         {
           "id": 16,
@@ -1794,7 +2435,8 @@
           "category": "Safe Driving",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-3",
@@ -1803,7 +2445,7 @@
       "category": "Practice Tests",
       "slug": "practice-test-parking-and-vehicle-control",
       "passingScore": 80,
-      "timeLimit": 30.0,
+      "timeLimit": 30,
       "questions": [
         {
           "question": "When driving near a road construction zone, you should:",
@@ -2013,7 +2655,7 @@
           "explanation": "Cool off before driving to avoid emotional driving.",
           "category": "Safe Driving",
           "difficulty": "easy",
-          "id": 16
+          "id": 19
         },
         {
           "question": "California's 'Basic Speed Law' says:",
@@ -2041,7 +2683,8 @@
           "category": "Turning",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-4",
@@ -2250,7 +2893,8 @@
           "category": "Speed Limits",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-5",
@@ -2259,7 +2903,7 @@
       "category": "Practice Tests",
       "slug": "practice-test-safe-driving-and-defensive-techniques",
       "passingScore": 80,
-      "timeLimit": 30.0,
+      "timeLimit": 30,
       "questions": [
         {
           "id": 1,
@@ -2502,7 +3146,7 @@
           "image": "/images/traffic-signs/right-curve-sign.webp"
         },
         {
-          "id": 19,
+          "id": 21,
           "question": "You must make a full stop before you cross railroad tracks when:",
           "options": [
             "You don't have room to completely cross the tracks",
@@ -2514,7 +3158,8 @@
           "category": "Railroad Crossings",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-6",
@@ -2698,7 +3343,8 @@
           "category": "Parking",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-7",
@@ -2895,18 +3541,19 @@
         },
         {
           "id": 15,
-          "question": "Following distance should increase when you:",
+          "question": "You are approaching a railroad crossing with no gates, lights, or signals, and you cannot see at least 400 feet down the tracks in either direction. What is the maximum speed you may approach at?",
           "options": [
-            "Follow a small passenger car",
-            "Are crowded by a tailgater",
-            "Drive slower than the posted speed limit"
+            "15 mph",
+            "25 mph",
+            "35 mph"
           ],
-          "correctAnswer": 1,
-          "explanation": "When being tailgated, increase following distance to the car ahead so you have more room to stop gradually.",
-          "category": "Safe Driving",
+          "correctAnswer": 0,
+          "explanation": "If you cannot see at least 400 feet down the tracks at an uncontrolled railroad crossing, do not drive faster than 15 mph as you approach.",
+          "category": "Railroad Crossings",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-8",
@@ -3075,7 +3722,8 @@
           "category": "Speed Limits",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-9",
@@ -3270,7 +3918,8 @@
           "difficulty": "easy",
           "id": 14
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-10",
@@ -3463,7 +4112,8 @@
           "category": "Turning",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-11",
@@ -3619,7 +4269,8 @@
           "category": "Freeway Driving",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-12",
@@ -3812,7 +4463,8 @@
           "category": "Traffic Signals",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-13",
@@ -4020,7 +4672,8 @@
           "category": "Traffic Signs",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-14",
@@ -4095,7 +4748,7 @@
           "explanation": "'Do Not Enter' means you cannot enter from your direction.",
           "category": "Traffic Signs",
           "difficulty": "easy",
-          "image": "/images/traffic-signs/sign-22.webp",
+          "image": "/images/traffic-signs-2/do-not-enter.jpeg",
           "hasImage": true
         },
         {
@@ -4217,7 +4870,8 @@
           "id": 14,
           "image": "/images/traffic-signs/no-right-turn-sign.webp"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-15",
@@ -4429,7 +5083,8 @@
           "category": "Speed Laws",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-16",
@@ -4438,269 +5093,284 @@
       "category": "Practice Tests",
       "slug": "practice-test-road-signs-and-markings",
       "passingScore": 80,
-      "timeLimit": 30.0,
+      "timeLimit": 30,
       "questions": [
         {
           "id": 1,
-          "question": "Which of these statements is true about driving and taking drugs?",
+          "question": "What does this sign mean?",
           "options": [
-            "Most drugs taken for headaches or colds can make a person drowsy",
-            "Drugs and alcohol can be used at the same time",
-            "Prescription drugs are safe at any time"
+            "Stop only if there is cross traffic",
+            "Come to a complete stop, then proceed when safe",
+            "Slow down and yield to other traffic"
           ],
-          "correctAnswer": 0,
-          "explanation": "Many common medications can cause drowsiness and impair driving.",
-          "category": "DUI Laws",
-          "difficulty": "easy"
+          "correctAnswer": 1,
+          "explanation": "A red octagonal stop sign means you must come to a complete stop at the limit line and proceed only when it is safe.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/stop.jpeg"
         },
         {
           "id": 2,
-          "question": "You reach an intersection with stop signs on all four corners at the same time as the driver on your left. Who has the right-of-way?",
+          "question": "What does this sign mean?",
           "options": [
-            "The driver on your left has the right-of-way",
-            "You have the right-of-way",
-            "Whoever is signaling to make a turn has the right-of-way"
+            "Stop only if there is cross traffic",
+            "Slow down and prepare to yield right of way",
+            "Merge into the right lane"
           ],
           "correctAnswer": 1,
-          "explanation": "At a four-way stop, when two vehicles arrive at the same time, the vehicle on the right has the right-of-way. Since the other driver is on your left, you have the right-of-way.",
-          "category": "Right-of-Way",
-          "difficulty": "medium"
+          "explanation": "A red and white inverted triangle yield sign means you must slow down and give the right of way to oncoming or cross traffic.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/yield.jpeg"
         },
         {
-          "question": "You must not cross a solid double line in the center of the roadway to",
+          "id": 3,
+          "question": "What does this sign mean?",
           "options": [
-            "Overtake and pass another vehicle",
-            "Make a left turn",
-            "Enter a private driveway"
+            "Do not enter the road from your direction",
+            "No vehicles in either direction",
+            "Slow zone ahead"
           ],
           "correctAnswer": 0,
-          "explanation": "Never cross double solid yellow lines to pass another vehicle.",
-          "category": "Lane Markings",
+          "explanation": "The Do Not Enter sign indicates you may not enter the road from your direction. It is typically posted at one-way street exits and freeway off-ramps.",
+          "category": "Regulatory Signs",
           "difficulty": "easy",
-          "id": 3
+          "image": "/images/traffic-signs-2/do-not-enter.jpeg"
         },
         {
           "id": 4,
-          "question": "When can you merge into a bike lane for a right turn?",
+          "question": "What does this sign mean?",
           "options": [
-            "Under no circumstances",
-            "No more than 100 feet before turning",
-            "No more than 200 feet before turning"
+            "You are heading the wrong direction on a one-way road",
+            "No U-turn allowed",
+            "Do not enter unless authorized"
           ],
-          "correctAnswer": 2,
-          "explanation": "You may enter a bike lane no more than 200 feet before turning right.",
-          "category": "Bike Lanes",
-          "difficulty": "medium"
+          "correctAnswer": 0,
+          "explanation": "The Wrong Way sign means you are heading the wrong direction on a one-way road. Stop safely, find a way to turn around, and reverse direction.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/wrong-way.jpeg"
         },
         {
           "id": 5,
-          "question": "If you sell your vehicle, you must notify ___ within 5 days.",
+          "question": "A solid yellow line on your side of the centerline means:",
           "options": [
-            "Your insurance company",
-            "Your bank or credit union",
-            "The DMV"
+            "You may pass when safe",
+            "Passing is not allowed on your side",
+            "There is a school zone ahead"
           ],
-          "correctAnswer": 2,
-          "explanation": "When you sell your vehicle, you must notify the DMV within 5 days to protect yourself from liability for any tickets or accidents involving the vehicle after the sale.",
-          "category": "Vehicle Registration",
+          "correctAnswer": 1,
+          "explanation": "A solid yellow line on your side of the centerline means passing is prohibited from your direction. A broken yellow line means passing is allowed when safe.",
+          "category": "Pavement Markings",
           "difficulty": "easy"
         },
         {
           "id": 6,
-          "question": "Which of the following statement is true about light rail vehicles?",
+          "question": "A broken white line between two lanes traveling in the same direction means:",
           "options": [
-            "Light rail vehicles can interrupt traffic signals",
-            "You must always pass a light rail vehicle on the right",
-            "Light rail vehicles do not have the same responsibilities as other vehicles on public roadways"
+            "You may change lanes when safe",
+            "Passing is prohibited",
+            "The lane ends ahead"
           ],
           "correctAnswer": 0,
-          "explanation": "Light rail vehicles can preempt traffic signals and have priority at intersections.",
-          "category": "Sharing the Road",
-          "difficulty": "medium"
+          "explanation": "A broken white line separates two lanes traveling in the same direction. You may cross it to change lanes when safe.",
+          "category": "Pavement Markings",
+          "difficulty": "easy"
         },
         {
           "id": 7,
-          "question": "Which of the following is true about lap-only seat belts?",
+          "question": "What does this sign mean?",
           "options": [
-            "They are safer for young children than using shoulder-belts",
-            "They are safest when used in combination with a shoulder belt",
-            "Pregnant women should not wear them unless combined with a shoulder belt"
+            "School zone ahead",
+            "Pedestrian crossing",
+            "Children playing area"
           ],
-          "correctAnswer": 1,
-          "explanation": "Lap belts are safest when used in combination with shoulder belts. California law requires all available seat belts to be used.",
-          "category": "Safety Equipment",
-          "difficulty": "easy"
+          "correctAnswer": 0,
+          "explanation": "A pentagon-shaped fluorescent yellow-green sign with children figures means a school zone is ahead. Reduce speed to 25 mph (CVC §22352) when school is in session.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/school-zone.jpeg"
         },
         {
           "id": 8,
-          "question": "Which of these statements is true about slippery road surfaces?",
+          "question": "What does this sign mean?",
           "options": [
-            "Bridges and overpasses tend to freeze after open roads",
-            "On cold, wet days, shade from buildings or trees can hide spots of ice",
-            "The pavement is slippery for the first few minutes after it starts to rain on a hot day afterward"
+            "Road work ahead",
+            "Railroad crossing ahead",
+            "Hospital ahead"
           ],
           "correctAnswer": 1,
-          "explanation": "Shaded areas can hide ice patches on cold days. Also, the pavement is most slippery during the first few minutes of rain as oil and water mix.",
-          "category": "Weather Conditions",
-          "difficulty": "medium"
+          "explanation": "A round yellow sign with a black X and \"RR\" letters is the advance warning for a railroad crossing. Slow down and be prepared to stop if signals activate.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/railroad-crossing.jpeg"
         },
         {
           "id": 9,
-          "question": "Which of these statements is true about blind spots?",
+          "question": "In a construction zone, traffic warning signs are which color?",
           "options": [
-            "You only need to turn and look over your right shoulder for lane changes",
-            "Look over your right shoulder for a right lane change and your left shoulder for a left lane change",
-            "Vehicles with two outside mirrors do not have blind spots"
+            "Yellow",
+            "Orange",
+            "White"
           ],
           "correctAnswer": 1,
-          "explanation": "Look over the appropriate shoulder to check blind spots before lane changes.",
-          "category": "Safe Driving",
+          "explanation": "Orange diamond-shaped signs indicate construction zones. Fines for moving violations in construction zones are doubled in California.",
+          "category": "Sign Colors",
           "difficulty": "easy"
         },
         {
-          "question": "Where a left turn at an intersection can be started from either of two lanes, a U-turn can be started from",
+          "id": 10,
+          "question": "What does this sign mean?",
           "options": [
-            "Either of the two lanes",
-            "Only the left lane",
-            "Any lane that is open"
+            "Slippery when wet",
+            "Winding road ahead",
+            "Loose gravel"
           ],
-          "correctAnswer": 1,
-          "explanation": "U-turns must be started from the left lane only.",
-          "category": "Turning",
-          "difficulty": "medium",
-          "id": 10
+          "correctAnswer": 0,
+          "explanation": "The slippery-when-wet sign warns of a road surface that can become hazardous when wet. Reduce speed and avoid sudden braking or sharp turns.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/slippery-when-wet.jpeg"
         },
         {
           "id": 11,
           "question": "A curb painted red means:",
           "options": [
-            "Not allowed (except buses may stop)",
-            "Allowed for a disabled vehicle only",
-            "For emergency vehicles only"
+            "No stopping, parking, or standing at any time",
+            "Loading and unloading only",
+            "Disabled parking only"
           ],
-          "correctAnswer": 2,
-          "explanation": "A red curb means no stopping, standing, or parking. Buses may stop at red zones marked for bus stops.",
-          "category": "Parking",
+          "correctAnswer": 0,
+          "explanation": "A red curb prohibits stopping, parking, or standing at any time. Exception: a marked bus stop where buses may load passengers.",
+          "category": "Pavement Markings",
           "difficulty": "easy"
         },
         {
           "id": 12,
-          "question": "Where should you stop your vehicle when there is no limit line?",
+          "question": "A curb painted white means:",
           "options": [
-            "Out far enough to see cross traffic",
-            "At the corner",
-            "After the crosswalk"
+            "No parking at any time",
+            "Loading or unloading passengers or mail; usually 3 minutes maximum",
+            "Disabled parking only"
           ],
-          "correctAnswer": 0,
-          "explanation": "Stop where you have a clear view of cross traffic before entering the intersection.",
-          "category": "Intersections",
-          "difficulty": "medium"
+          "correctAnswer": 1,
+          "explanation": "A white curb is for loading or unloading passengers or mail only, usually limited to 3 minutes maximum.",
+          "category": "Pavement Markings",
+          "difficulty": "easy"
         },
         {
           "id": 13,
-          "question": "It is illegal for a person 21 years of age or older to drive with a blood alcohol concentration (BAC) that is ___ or higher.",
+          "question": "What does this sign mean?",
           "options": [
-            "0.08% - Eight hundredths of one percent",
-            "0.10% - One tenth of one percent",
-            "0.05% - Five hundredths of one percent"
+            "Hospital ahead",
+            "Rest area ahead",
+            "Hotel services ahead"
           ],
           "correctAnswer": 0,
-          "explanation": "The legal BAC limit for drivers 21 and over in California is 0.08%. Driving at or above this level is illegal.",
-          "category": "DUI Laws",
-          "difficulty": "easy"
+          "explanation": "A blue square sign with a white \"H\" indicates a hospital ahead. Blue service signs guide drivers to nearby services.",
+          "category": "Guide Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/hospital-ahead.jpeg"
         },
         {
           "id": 14,
-          "question": "When can you drive using only your parking lights?",
+          "question": "What does this sign mean?",
           "options": [
-            "30 minutes after sunset or 30 minutes before sunrise",
-            "Not under any circumstances",
-            "On foggy days"
+            "No U-turn allowed",
+            "No left turn",
+            "Roundabout ahead"
           ],
-          "correctAnswer": 1,
-          "explanation": "Parking lights are never sufficient for driving. Use headlights from sunset to sunrise.",
-          "category": "Night Driving",
-          "difficulty": "easy"
+          "correctAnswer": 0,
+          "explanation": "A circular sign with a U-turn arrow crossed out by a red diagonal line means U-turns are prohibited at this intersection.",
+          "category": "Regulatory Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/no-uturn.jpeg"
         },
         {
-          "question": "A white painted curb means:",
+          "id": 15,
+          "question": "What does this sign mean?",
           "options": [
-            "Loading zone for freight or passengers",
-            "Loading zone for passengers or mail only",
-            "Loading zone for freight only"
+            "No left turn",
+            "Left turn yield on green",
+            "One way only — no left turn"
           ],
-          "correctAnswer": 1,
-          "explanation": "White curbs are for passenger and mail loading only.",
-          "category": "Parking",
+          "correctAnswer": 0,
+          "explanation": "A circular sign with a left-turn arrow crossed out by a red diagonal line means left turns are prohibited at this intersection.",
+          "category": "Regulatory Signs",
           "difficulty": "easy",
-          "id": 15
+          "image": "/images/traffic-signs-2/no-left-turn.jpeg"
         },
         {
           "id": 16,
-          "question": "The 'implied consent law' means you have given your consent:",
+          "question": "What does this sign mean?",
           "options": [
-            "To inspection of your vehicle for alcohol",
-            "To be tested for alcohol in your blood",
-            "For a field sobriety test"
+            "School zone",
+            "Pedestrian crossing ahead",
+            "Bicycle crossing"
           ],
           "correctAnswer": 1,
-          "explanation": "By driving in California, you consent to BAC testing if suspected of DUI.",
-          "category": "DUI Laws",
-          "difficulty": "medium"
+          "explanation": "A yellow or fluorescent yellow-green diamond with a pedestrian symbol warns of a pedestrian crossing ahead. Drivers must yield to pedestrians at every crosswalk (CVC §21950).",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/pedestrian-crossing.jpeg"
         },
         {
-          "question": "It is against the law to have an open alcoholic beverage container in your vehicle, except",
+          "id": 17,
+          "question": "What does this sign mean?",
           "options": [
-            "On the back seat",
-            "In the trunk",
-            "In the glove compartment"
+            "Steep hill ahead",
+            "Bumpy road ahead",
+            "Rough road surface"
           ],
-          "correctAnswer": 1,
-          "explanation": "Open containers must be in the trunk.",
-          "category": "DUI Laws",
+          "correctAnswer": 0,
+          "explanation": "A diamond sign with a vehicle on an incline warns of a steep hill ahead. Reduce speed and consider downshifting before descending.",
+          "category": "Warning Signs",
           "difficulty": "easy",
-          "id": 17
+          "image": "/images/traffic-signs-2/steep-hill-ahead.jpeg"
         },
         {
           "id": 18,
-          "question": "Flash your brake lights or turn on your emergency flashers if you:",
+          "question": "A flashing red traffic signal means:",
           "options": [
-            "Need to warn other drivers of an accident ahead",
-            "Are driving much slower than other traffic",
-            "Are backing out of a parking space"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Use your flashers or flash brake lights to warn drivers behind you of hazards or accidents ahead.",
-          "category": "Safe Driving",
-          "difficulty": "medium"
-        },
-        {
-          "id": 19,
-          "question": "You are almost through an intersection when you realize you want to turn left instead of going straight. What should you do now?",
-          "options": [
-            "Stop in the intersection until it is safe to make the left turn",
-            "Continue to the next intersection and find a route to work your way back",
-            "Back up, check for other vehicles, and make the left turn"
+            "Slow down and proceed with caution",
+            "Stop completely, then proceed when safe — same as a stop sign",
+            "Stop only if cross traffic is present"
           ],
           "correctAnswer": 1,
-          "explanation": "If you miss your turn, continue to the next intersection. Never stop or back up in an intersection.",
-          "category": "Intersections",
+          "explanation": "A flashing red signal must be treated as a stop sign. Come to a complete stop and proceed only when safe to do so.",
+          "category": "Traffic Signals",
           "difficulty": "easy"
         },
         {
-          "id": 20,
-          "question": "You want to park uphill on a two-way road and there is no curb. Which way do you turn your wheels?",
+          "id": 19,
+          "question": "What does this sign mean?",
           "options": [
-            "So they face straight ahead",
-            "Right - towards side of the road",
-            "Left - towards the center of the road"
+            "Winding road ahead",
+            "Slippery when wet",
+            "Sharp curve ahead"
+          ],
+          "correctAnswer": 0,
+          "explanation": "A diamond sign with a curving arrow indicates a winding road ahead — a series of curves in opposite directions. Reduce speed and stay in your lane.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs/winding-road.webp"
+        },
+        {
+          "id": 20,
+          "question": "What does this sign mean?",
+          "options": [
+            "Police checkpoint ahead",
+            "Flagger (worker directing traffic) ahead",
+            "Pedestrian crossing"
           ],
           "correctAnswer": 1,
-          "explanation": "When parking uphill with no curb, turn wheels to the right. If the vehicle rolls, it will go off the road rather than into traffic.",
-          "category": "Parking",
-          "difficulty": "medium"
+          "explanation": "An orange diamond sign with a person holding a flag warns of a flagger (worker directing traffic) ahead. Slow down and follow the flagger's directions.",
+          "category": "Warning Signs",
+          "difficulty": "easy",
+          "image": "/images/traffic-signs-2/flagger-ahead.jpeg"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "practice-test-mixed-review",
@@ -4709,7 +5379,7 @@
       "category": "Practice Tests",
       "slug": "practice-test-mixed-review",
       "passingScore": 80,
-      "timeLimit": 102.0,
+      "timeLimit": 102,
       "questions": [
         {
           "question": "When you enter a freeway from an on ramp and merge with traffic, you should be driving at",
@@ -4961,7 +5631,7 @@
           "difficulty": "easy"
         },
         {
-          "id": 20,
+          "id": 64,
           "question": "Backing your vehicle is:",
           "options": [
             "Always dangerous to do",
@@ -4978,7 +5648,7 @@
           "options": [
             "The other side of the road is a broken line",
             "Your side of the road is a broken line",
-            "The other side of the road is a broken line"
+            "Neither side of the road has a broken line"
           ],
           "correctAnswer": 1,
           "explanation": "Can cross if the line on YOUR side is broken.",
@@ -5510,7 +6180,7 @@
           "difficulty": "easy"
         },
         {
-          "question": "You must make a financial responsibility report after an accident when damage to one of the vehicles is over $750",
+          "question": "You must make a financial responsibility report after an accident when damage to one of the vehicles is over $1,000",
           "options": [
             "Only if you are not insured",
             "Only if it was your fault",
@@ -5535,7 +6205,8 @@
           "difficulty": "easy",
           "id": 63
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "dmv-simulation-test-3",
@@ -6024,16 +6695,15 @@
         },
         {
           "id": 35,
-          "question": "When driving in fog, you should use your:",
+          "question": "Unless otherwise posted, what is the speed limit near a school when children are present?",
           "options": [
-            "High-beam headlights",
-            "Low-beam headlights",
-            "Parking lights",
-            "Hazard lights"
+            "15 mph",
+            "25 mph",
+            "35 mph"
           ],
           "correctAnswer": 1,
-          "explanation": "Use low-beam headlights in fog. High beams reflect off fog and reduce visibility.",
-          "category": "Adverse Conditions",
+          "explanation": "The speed limit near a school is generally 25 mph when children are present, unless a different posted limit applies.",
+          "category": "School Zones",
           "difficulty": "easy"
         },
         {
@@ -6052,145 +6722,136 @@
         },
         {
           "id": 37,
-          "question": "What should you do if you approach a traffic signal with a flashing yellow light?",
+          "question": "When entering a roundabout, who has the right of way?",
           "options": [
-            "Stop before proceeding",
-            "Slow down and proceed with caution",
-            "Speed up to clear the intersection quickly",
-            "Stop and wait for the light to change"
+            "The vehicle entering the roundabout",
+            "Traffic already circulating in the roundabout",
+            "Whichever vehicle signals first"
           ],
           "correctAnswer": 1,
-          "explanation": "A flashing yellow light means slow down and proceed with caution.",
-          "category": "Traffic Signals",
-          "difficulty": "easy"
+          "explanation": "Yield to traffic already circulating in the roundabout before entering, and proceed only when there is a safe gap.",
+          "category": "Right of Way",
+          "difficulty": "medium"
         },
         {
           "id": 38,
-          "question": "You must notify the DMV within how many days if you sell your vehicle?",
+          "question": "What does a fluorescent orange-red triangle displayed on the back of a vehicle mean?",
           "options": [
-            "5 days",
-            "10 days",
-            "15 days",
-            "20 days"
+            "The vehicle is a slow-moving vehicle that normally travels 25 mph or less",
+            "The vehicle is carrying hazardous materials",
+            "The vehicle is a student driver"
           ],
           "correctAnswer": 0,
-          "explanation": "You must notify the DMV within 5 days of selling or transferring your vehicle.",
-          "category": "Vehicle Registration",
-          "difficulty": "easy"
+          "explanation": "This is the slow-moving vehicle (SMV) emblem, warning other drivers that the vehicle normally travels at 25 mph or slower.",
+          "category": "Warning Signs",
+          "difficulty": "medium"
         },
         {
           "id": 39,
-          "question": "When parking uphill on a two-way street with no curb, your front wheels should be:",
+          "question": "During your first 12 months with a provisional license, when are you generally prohibited from driving without a licensed adult 25 or older?",
           "options": [
-            "Turned to the left (toward the street)",
-            "Turned to the right (away from the street)",
-            "Parallel with the pavement",
-            "Facing straight ahead"
+            "Between 11 p.m. and 5 a.m.",
+            "Between 9 p.m. and 6 a.m.",
+            "Only on weekends"
           ],
-          "correctAnswer": 1,
-          "explanation": "Turn wheels to the right so if the vehicle rolls, it will go off the road.",
-          "category": "Parking",
+          "correctAnswer": 0,
+          "explanation": "Provisional license holders may not drive unsupervised between 11 p.m. and 5 a.m. during their first 12 months, with limited exceptions.",
+          "category": "License Requirements",
           "difficulty": "medium"
         },
         {
           "id": 40,
-          "question": "When parallel parking, you should park within how many inches of the curb?",
+          "question": "When must you dim your headlights from high beams to low beams?",
           "options": [
-            "6 inches",
-            "12 inches",
-            "18 inches",
-            "24 inches"
-          ],
-          "correctAnswer": 2,
-          "explanation": "When parallel parking, your vehicle must be within 18 inches of the curb.",
-          "category": "Parking",
-          "difficulty": "easy"
-        },
-        {
-          "id": 41,
-          "question": "When driving in the far right lane of a freeway, you:",
-          "options": [
-            "Should expect merging vehicles at on-ramps",
-            "Must give the right-of-way to merging traffic",
-            "Must drive faster than other traffic",
-            "Should use your hazard lights"
+            "Within 500 feet of an oncoming vehicle, or 300 feet when following another vehicle",
+            "Only in fog or heavy rain",
+            "Within 1,000 feet of any parked vehicle"
           ],
           "correctAnswer": 0,
-          "explanation": "Be prepared for merging traffic when driving in the right lane near on-ramps.",
-          "category": "Freeway Driving",
-          "difficulty": "easy"
-        },
-        {
-          "id": 42,
-          "question": "Which of the following increases your chances of having a collision?",
-          "options": [
-            "Continuously changing lanes to pass other vehicles",
-            "Driving at a constant speed",
-            "Adjusting your rearview mirror before you start driving",
-            "Scanning the road ahead"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Frequent lane changes increase collision risk.",
-          "category": "Defensive Driving",
+          "explanation": "Switch to low beams within 500 feet of an oncoming vehicle and within 300 feet when following another vehicle.",
+          "category": "Night Driving",
           "difficulty": "medium"
         },
         {
-          "id": 43,
-          "question": "Which of the following is true about large trucks?",
+          "id": 41,
+          "question": "Roads are often most slippery:",
           "options": [
-            "They have smaller blind spots than most passenger vehicles",
-            "They take longer to stop than a car traveling at the same speed",
-            "They have shorter stopping distances than most passenger vehicles",
-            "They require less turning space"
+            "During a heavy, continuous downpour",
+            "During the first rain after a dry spell, when oil and dust rise to the surface",
+            "Only in freezing temperatures"
           ],
           "correctAnswer": 1,
-          "explanation": "Large trucks require much longer stopping distances due to their weight.",
-          "category": "Sharing the Road",
+          "explanation": "The first rain after a dry period mixes with oil and dust on the road, making it especially slippery.",
+          "category": "Adverse Conditions",
+          "difficulty": "medium"
+        },
+        {
+          "id": 42,
+          "question": "What is the minimum following distance you should keep behind the vehicle ahead of you in normal conditions?",
+          "options": [
+            "1 second",
+            "3 seconds",
+            "10 seconds"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Keep at least a 3-second following distance in normal conditions, and increase it in poor weather or heavy traffic.",
+          "category": "Traffic Laws",
           "difficulty": "easy"
         },
         {
-          "id": 44,
-          "question": "To turn left from a multilane one-way street onto a one-way street, you should start your turn from:",
+          "id": 43,
+          "question": "Under California law, until what age or height must a child generally be secured in a car seat or booster seat?",
           "options": [
-            "The lane closest to the left curb",
-            "Any lane as long as it is safe",
-            "The lane in the center of the road",
-            "The lane closest to the right curb"
+            "Age 5, regardless of height",
+            "Age 8, or until they are 4 feet 9 inches tall",
+            "Age 12, regardless of height"
           ],
-          "correctAnswer": 0,
-          "explanation": "Start left turns from the far left lane on a one-way street.",
-          "category": "Turning",
+          "correctAnswer": 1,
+          "explanation": "Children must ride in a car seat or booster seat in the back seat until they are 8 years old or reach 4 feet 9 inches in height, whichever comes first.",
+          "category": "Child Safety",
+          "difficulty": "medium"
+        },
+        {
+          "id": 44,
+          "question": "You see a police car, fire truck, or tow truck stopped on the shoulder with its lights flashing. What should you do?",
+          "options": [
+            "Maintain your current speed and lane position",
+            "Slow down and, if safe, move over one lane away from the stopped vehicle",
+            "Speed up to pass it quickly"
+          ],
+          "correctAnswer": 1,
+          "explanation": "California's Move Over law requires you to slow down and change lanes away from a stopped emergency or roadside assistance vehicle when it is safe to do so.",
+          "category": "Emergency Vehicles",
           "difficulty": "medium"
         },
         {
           "id": 45,
-          "question": "When driving on a multilane street with two-way traffic:",
+          "question": "You plan to turn right at an intersection and must cross a bike lane. What should you do?",
           "options": [
-            "You should drive ahead of or behind the other vehicles",
-            "It is safest to drive in the lane next to the center line",
-            "You should drive in the lane with the least traffic",
-            "It is safest to drive in the right lane"
+            "Turn from your current lane without entering the bike lane",
+            "Merge into the bike lane and signal before turning, yielding to any bicyclists",
+            "Wait until the entire block's bike lane is empty"
           ],
-          "correctAnswer": 3,
-          "explanation": "The right lane is generally the safest on multilane streets with two-way traffic.",
-          "category": "Lane Usage",
+          "correctAnswer": 1,
+          "explanation": "Before turning right, signal and merge into the bike lane within about 200 feet of the turn, yielding to bicyclists already in the lane.",
+          "category": "Bike Lanes",
           "difficulty": "medium"
         },
         {
           "id": 46,
-          "question": "You may cross double yellow lines to pass another vehicle if the:",
+          "question": "What is the safest way to merge onto a freeway?",
           "options": [
-            "Yellow line next to your side of the road is broken",
-            "Yellow line next to the other side of the road is broken",
-            "The lines are solid and there is no oncoming traffic",
-            "There is no sign prohibiting passing"
+            "Stop on the on-ramp and wait for a large gap in traffic",
+            "Match the speed of freeway traffic and merge into a gap",
+            "Enter slowly and let freeway traffic adjust to you"
           ],
-          "correctAnswer": 0,
-          "explanation": "You may pass when the broken yellow line is on your side of the road.",
-          "category": "Lane Markings",
+          "correctAnswer": 1,
+          "explanation": "Use the on-ramp to accelerate to the speed of freeway traffic, then merge smoothly into an available gap.",
+          "category": "Freeway Driving",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "sample-questions-test",
@@ -6441,327 +7102,305 @@
         },
         {
           "id": 18,
-          "question": "What should you do if you are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks?",
+          "question": "What is the legal blood alcohol concentration (BAC) limit for drivers 21 and older in California?",
           "options": [
-            "Drive faster to cross the tracks quickly",
-            "Stop before crossing and proceed when safe",
-            "Proceed without stopping if you don't see a train",
-            "Honk to alert any nearby trains"
+            "0.05%",
+            "0.08%",
+            "0.10%"
           ],
           "correctAnswer": 1,
-          "explanation": "If you cannot see 400 feet down the tracks, you must stop and proceed only when safe.",
-          "category": "Railroad Crossings",
-          "difficulty": "medium"
+          "explanation": "Drivers 21 and older are legally impaired at a BAC of 0.08% or higher. Drivers under 21 face a zero-tolerance limit of 0.01%.",
+          "category": "DUI Laws",
+          "difficulty": "easy"
         },
         {
           "id": 19,
-          "question": "You may not park within how many feet of a fire hydrant?",
+          "question": "You are approaching a school bus that has stopped with its red lights flashing and stop arm extended. What must you do?",
           "options": [
-            "5 feet",
-            "10 feet",
-            "15 feet",
-            "20 feet"
+            "Stop at least 25 feet away and wait until the lights stop flashing",
+            "Slow down and pass carefully if no children are visible",
+            "Stop only if you are directly behind the bus, not if you are approaching from the front"
           ],
-          "correctAnswer": 2,
-          "explanation": "You must not park within 15 feet of a fire hydrant.",
-          "category": "Parking",
-          "difficulty": "easy"
-        },
-        {
-          "id": 20,
-          "question": "When you see a \"Roadwork Ahead\" sign you should:",
-          "options": [
-            "Speed up to avoid traffic",
-            "Slow down and be prepared to stop",
-            "Maintain your speed",
-            "Merge into another lane"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Always slow down and be prepared to stop when you see roadwork ahead signs.",
-          "category": "Work Zones",
-          "difficulty": "easy"
-        },
-        {
-          "id": 21,
-          "question": "What is the first thing you should do if your car starts to skid?",
-          "options": [
-            "Brake hard",
-            "Take your foot off the accelerator",
-            "Steer in the opposite direction of the skid",
-            "Turn off the ignition"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Take your foot off the accelerator and steer in the direction you want to go.",
-          "category": "Adverse Conditions",
+          "correctAnswer": 0,
+          "explanation": "You must stop at least 25 feet from a school bus with flashing red lights, from both directions, unless the roadway is divided by a physical barrier.",
+          "category": "School Zones",
           "difficulty": "medium"
         },
         {
-          "id": 22,
-          "question": "When driving in fog, you should use your:",
+          "id": 20,
+          "question": "You come to an intersection with no stop signs, yield signs, or traffic signals. Who has the right of way?",
           "options": [
-            "High-beam headlights",
-            "Low-beam headlights",
-            "Parking lights",
-            "Hazard lights"
+            "The vehicle traveling faster",
+            "The vehicle that arrives first, or the vehicle to the right if you arrive at the same time",
+            "The vehicle turning left"
           ],
           "correctAnswer": 1,
-          "explanation": "Use low-beam headlights in fog.",
-          "category": "Adverse Conditions",
+          "explanation": "At an uncontrolled intersection, the vehicle that arrives first goes first. If two vehicles arrive at the same time, the driver on the left must yield to the driver on the right.",
+          "category": "Right of Way",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "Unless otherwise posted, what is the speed limit in a business or residential district in California?",
+          "options": [
+            "15 mph",
+            "25 mph",
+            "35 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "California's default speed limit for business and residential districts is 25 mph unless a different limit is posted.",
+          "category": "Speed Limits",
+          "difficulty": "easy"
+        },
+        {
+          "id": 22,
+          "question": "When must you yield to a pedestrian in a crosswalk?",
+          "options": [
+            "Only if the crosswalk is marked with painted lines",
+            "Whenever a pedestrian is in a marked or unmarked crosswalk",
+            "Only during school hours"
+          ],
+          "correctAnswer": 1,
+          "explanation": "You must yield to pedestrians in any crosswalk, marked or unmarked, including the extension of a sidewalk across an intersection.",
+          "category": "Pedestrians",
           "difficulty": "easy"
         },
         {
           "id": 23,
-          "question": "What is the purpose of a diamond-shaped traffic sign?",
+          "question": "You see a police car, fire truck, or tow truck stopped on the shoulder with its lights flashing. What should you do?",
           "options": [
-            "To provide directional guidance",
-            "To indicate a school zone",
-            "To warn of potential hazards",
-            "To provide information about speed limits"
+            "Maintain your current speed and lane position",
+            "Slow down and, if safe, move over one lane away from the stopped vehicle",
+            "Speed up to pass it quickly"
           ],
-          "correctAnswer": 2,
-          "explanation": "Diamond-shaped signs are warning signs that alert you to potential hazards ahead.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
+          "correctAnswer": 1,
+          "explanation": "California's Move Over law requires you to slow down and change lanes away from a stopped emergency or roadside assistance vehicle when it is safe to do so.",
+          "category": "Emergency Vehicles",
+          "difficulty": "medium"
         },
         {
           "id": 24,
-          "question": "When can you drive in a center left turn lane?",
+          "question": "Is it legal to hold a cell phone in your hand while driving in California?",
           "options": [
-            "To pass other vehicles",
-            "For making left turns",
-            "As a regular driving lane",
-            "Only during rush hour"
+            "Yes, as long as you are stopped at a red light",
+            "No, drivers must use a hands-free device to talk or text",
+            "Yes, but only for making calls, not texting"
           ],
           "correctAnswer": 1,
-          "explanation": "Center left turn lanes are only for making left turns.",
-          "category": "Lane Usage",
+          "explanation": "California law prohibits holding a cell phone while driving. You may only use a phone in a hands-free mode, such as through voice commands or a mounted device.",
+          "category": "Distracted Driving",
           "difficulty": "easy"
         },
         {
           "id": 25,
-          "question": "What should you do if you approach a traffic signal with a flashing yellow light?",
+          "question": "You want to pass another vehicle, but you are approaching the crest of a hill and cannot see oncoming traffic. What should you do?",
           "options": [
-            "Stop before proceeding",
-            "Slow down and proceed with caution",
-            "Speed up to clear the intersection quickly",
-            "Stop and wait for the light to change"
+            "Pass quickly before you reach the top of the hill",
+            "Do not pass until you can see the road ahead is clear",
+            "Sound your horn and pass on the right"
           ],
           "correctAnswer": 1,
-          "explanation": "A flashing yellow light means slow down and proceed with caution.",
-          "category": "Traffic Signals",
-          "difficulty": "easy"
+          "explanation": "Never pass when you cannot see far enough ahead to complete the pass safely, such as near hill crests or curves. A solid yellow line on your side also means no passing.",
+          "category": "Passing",
+          "difficulty": "medium"
         },
         {
           "id": 26,
-          "question": "You must notify the DMV within how many days if you sell your vehicle?",
+          "question": "When must you dim your headlights from high beams to low beams?",
           "options": [
-            "5 days",
-            "10 days",
-            "15 days",
-            "20 days"
+            "Within 500 feet of an oncoming vehicle, or 300 feet when following another vehicle",
+            "Only when another driver flashes their lights at you",
+            "Within 1,000 feet of any vehicle, moving or parked"
           ],
           "correctAnswer": 0,
-          "explanation": "You must notify the DMV within 5 days of selling your vehicle.",
-          "category": "Vehicle Registration",
-          "difficulty": "easy"
+          "explanation": "Switch to low beams within 500 feet of an oncoming vehicle and within 300 feet when following another vehicle, so you do not blind the other driver.",
+          "category": "Night Driving",
+          "difficulty": "medium"
         },
         {
           "id": 27,
-          "question": "When parking uphill on a two-way street with no curb, your front wheels should be:",
+          "question": "Under California law, until what age or height must a child generally be secured in a car seat or booster seat?",
           "options": [
-            "Turned to the left (toward the street)",
-            "Turned to the right (away from the street)",
-            "Parallel with the pavement",
-            "Facing straight ahead"
+            "Age 5, regardless of height",
+            "Age 8, or until they are 4 feet 9 inches tall",
+            "Age 12, regardless of height"
           ],
           "correctAnswer": 1,
-          "explanation": "Turn wheels to the right so if the vehicle rolls, it will go off the road.",
-          "category": "Parking",
+          "explanation": "Children must ride in a car seat or booster seat in the back seat until they are 8 years old or reach 4 feet 9 inches in height, whichever comes first.",
+          "category": "Child Safety",
           "difficulty": "medium"
         },
         {
           "id": 28,
-          "question": "When parallel parking, you should park within how many inches of the curb?",
+          "question": "When entering a roundabout, who has the right of way?",
           "options": [
-            "6 inches",
-            "12 inches",
-            "18 inches",
-            "24 inches"
+            "The vehicle entering the roundabout",
+            "Traffic already circulating in the roundabout",
+            "Whichever vehicle is largest"
           ],
-          "correctAnswer": 2,
-          "explanation": "When parallel parking, your vehicle must be within 18 inches of the curb.",
-          "category": "Parking",
-          "difficulty": "easy"
+          "correctAnswer": 1,
+          "explanation": "Vehicles already in the roundabout have the right of way. Yield before entering and proceed only when there is a safe gap in traffic.",
+          "category": "Right of Way",
+          "difficulty": "medium"
         },
         {
           "id": 29,
-          "question": "When driving in the far right lane of a freeway, you:",
+          "question": "What do yellow traffic signs generally indicate?",
           "options": [
-            "Should expect merging vehicles at on-ramps",
-            "Must give the right-of-way to merging traffic",
-            "Must drive faster than other traffic",
-            "Should use your hazard lights"
+            "A warning about upcoming road conditions or hazards",
+            "A regulation you must obey, such as a speed limit",
+            "Directions to a nearby freeway or attraction"
           ],
           "correctAnswer": 0,
-          "explanation": "Be prepared for merging traffic when driving in the right lane near on-ramps.",
-          "category": "Freeway Driving",
+          "explanation": "Yellow signs are warning signs that alert you to hazards or changing road conditions ahead, such as curves, merges, or crossings.",
+          "category": "Sign Colors",
           "difficulty": "easy"
         },
         {
           "id": 30,
-          "question": "Which of the following increases your chances of having a collision?",
+          "question": "A red circle with a diagonal red slash over a symbol on a sign means:",
           "options": [
-            "Continuously changing lanes to pass other vehicles",
-            "Driving at a constant speed",
-            "Adjusting your rearview mirror before you start driving",
-            "Scanning the road ahead"
-          ],
-          "correctAnswer": 0,
-          "explanation": "Frequent lane changes increase collision risk.",
-          "category": "Defensive Driving",
-          "difficulty": "medium"
-        },
-        {
-          "id": 31,
-          "question": "Which of the following is true about large trucks?",
-          "options": [
-            "They have smaller blind spots than most passenger vehicles",
-            "They take longer to stop than a car traveling at the same speed",
-            "They have shorter stopping distances than most passenger vehicles",
-            "They require less turning space"
+            "The action shown in the symbol is required",
+            "The action shown in the symbol is prohibited",
+            "The symbol is for informational purposes only"
           ],
           "correctAnswer": 1,
-          "explanation": "Large trucks require much longer stopping distances due to their weight.",
-          "category": "Sharing the Road",
+          "explanation": "A red circle with a diagonal slash through a symbol is a regulatory sign meaning that action, such as a U-turn or left turn, is prohibited.",
+          "category": "Regulatory Signs",
           "difficulty": "easy"
         },
         {
-          "id": 32,
-          "question": "To turn left from a multilane one-way street onto a one-way street, you should start your turn from:",
+          "id": 31,
+          "question": "What does a slow-moving vehicle (SMV) emblem look like, and what does it mean?",
           "options": [
-            "The lane closest to the left curb",
-            "Any lane as long as it is safe",
-            "The lane in the center of the road",
-            "The lane closest to the right curb"
+            "A blue square, meaning the vehicle is exempt from speed limits",
+            "A fluorescent orange-red triangle, meaning the vehicle normally travels 25 mph or less",
+            "A yellow diamond, meaning the vehicle is oversized"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The SMV emblem is a fluorescent orange-red triangle displayed on vehicles, like farm equipment, that normally travel 25 mph or slower.",
+          "category": "Warning Signs",
+          "difficulty": "medium"
+        },
+        {
+          "id": 32,
+          "question": "During your first 12 months with a provisional license, when are you generally prohibited from driving without a licensed adult 25 or older in the vehicle?",
+          "options": [
+            "Between 11 p.m. and 5 a.m.",
+            "Between 8 p.m. and 6 a.m.",
+            "At any time on weekends"
           ],
           "correctAnswer": 0,
-          "explanation": "Start left turns from the far left lane on a one-way street.",
-          "category": "Turning",
+          "explanation": "Provisional license holders may not drive between 11 p.m. and 5 a.m. during their first 12 months unless accompanied by a licensed parent, guardian, or driver 25 or older.",
+          "category": "License Requirements",
           "difficulty": "medium"
         },
         {
           "id": 33,
-          "question": "When driving on a multilane street with two-way traffic:",
+          "question": "After a minor collision with another vehicle and no injuries, what must you do before leaving the scene?",
           "options": [
-            "You should drive ahead of or behind the other vehicles",
-            "It is safest to drive in the lane next to the center line",
-            "You should drive in the lane with the least traffic",
-            "It is safest to drive in the right lane"
+            "Nothing, as long as no one appears hurt",
+            "Exchange name, address, vehicle registration, and insurance information with the other driver",
+            "Wait for police to arrive, even for very minor damage"
           ],
-          "correctAnswer": 3,
-          "explanation": "The right lane is generally the safest on multilane streets with two-way traffic.",
-          "category": "Lane Usage",
-          "difficulty": "medium"
+          "correctAnswer": 1,
+          "explanation": "Even in a minor collision, you must stop and exchange your name, address, vehicle registration, and insurance information with the other driver involved.",
+          "category": "Accidents",
+          "difficulty": "easy"
         },
         {
           "id": 34,
-          "question": "You may cross double yellow lines to pass another vehicle if the:",
+          "question": "You plan to turn right at an intersection and must cross a bike lane. What should you do?",
           "options": [
-            "Yellow line next to your side of the road is broken",
-            "Yellow line next to the other side of the road is broken",
-            "The lines are solid and there is no oncoming traffic",
-            "There is no sign prohibiting passing"
+            "Turn from your current lane without entering the bike lane",
+            "Merge into the bike lane and signal before turning, yielding to any bicyclists",
+            "Wait for the bike lane to be completely clear for the rest of the block"
           ],
-          "correctAnswer": 0,
-          "explanation": "You may pass when the broken yellow line is on your side of the road.",
-          "category": "Lane Markings",
+          "correctAnswer": 1,
+          "explanation": "Before turning right, signal and merge into the bike lane within about 200 feet of the turn, yielding to bicyclists already in the lane.",
+          "category": "Bike Lanes",
           "difficulty": "medium"
         },
         {
           "id": 35,
-          "question": "What should you do if you are approaching a railroad crossing with no warning devices and are unable to see 400 feet down the tracks?",
+          "question": "Roads are often most slippery:",
           "options": [
-            "Drive faster to cross the tracks quickly",
-            "Stop before crossing and proceed when safe",
-            "Proceed without stopping if you don't see a train",
-            "Honk to alert any nearby trains"
+            "During a heavy, continuous downpour",
+            "During the first rain after a dry spell, when oil and dust rise to the surface",
+            "Only when temperatures are below freezing"
           ],
           "correctAnswer": 1,
-          "explanation": "If you cannot see 400 feet down the tracks, you must stop and proceed only when safe.",
-          "category": "Railroad Crossings",
+          "explanation": "The first rain after a dry period mixes with oil and dust on the road, making it especially slippery until heavier rain washes it away.",
+          "category": "Weather Conditions",
           "difficulty": "medium"
         },
         {
           "id": 36,
-          "question": "You may not park within how many feet of a fire hydrant?",
+          "question": "What is the minimum following distance you should keep behind the vehicle ahead of you in normal conditions?",
           "options": [
-            "5 feet",
-            "10 feet",
-            "15 feet",
-            "20 feet"
+            "1 second",
+            "3 seconds",
+            "10 seconds"
           ],
-          "correctAnswer": 2,
-          "explanation": "You must not park within 15 feet of a fire hydrant.",
-          "category": "Parking",
+          "correctAnswer": 1,
+          "explanation": "Keep at least a 3-second following distance in normal conditions, and increase it in poor weather, heavy traffic, or when following large vehicles.",
+          "category": "Traffic Laws",
           "difficulty": "easy"
         },
         {
           "id": 37,
-          "question": "When you see a \"Roadwork Ahead\" sign you should:",
+          "question": "If your vehicle begins to hydroplane on a wet road, what should you do?",
           "options": [
-            "Speed up to avoid traffic",
-            "Slow down and be prepared to stop",
-            "Maintain your speed",
-            "Merge into another lane"
+            "Brake hard immediately to slow down",
+            "Ease off the gas pedal and keep the steering wheel straight until you regain traction",
+            "Turn the steering wheel sharply to regain control"
           ],
           "correctAnswer": 1,
-          "explanation": "Always slow down and be prepared to stop when you see roadwork ahead signs.",
-          "category": "Work Zones",
-          "difficulty": "easy"
-        },
-        {
-          "id": 38,
-          "question": "What is the first thing you should do if your car starts to skid?",
-          "options": [
-            "Brake hard",
-            "Take your foot off the accelerator",
-            "Steer in the opposite direction of the skid",
-            "Turn off the ignition"
-          ],
-          "correctAnswer": 1,
-          "explanation": "Take your foot off the accelerator and steer in the direction you want to go.",
-          "category": "Adverse Conditions",
+          "explanation": "If you hydroplane, ease off the accelerator and keep steering straight. Braking hard or turning sharply can cause you to lose control.",
+          "category": "Safe Driving",
           "difficulty": "medium"
         },
         {
-          "id": 39,
-          "question": "When driving in fog, you should use your:",
+          "id": 38,
+          "question": "How far before a turn should you signal?",
           "options": [
-            "High-beam headlights",
-            "Low-beam headlights",
-            "Parking lights",
-            "Hazard lights"
+            "At least 100 feet before the turn",
+            "Only after you begin turning the wheel",
+            "At least 500 feet before the turn, regardless of road type"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Signal continuously for at least 100 feet before turning so other drivers have time to react.",
+          "category": "Vehicle Equipment",
+          "difficulty": "easy"
+        },
+        {
+          "id": 39,
+          "question": "What do green traffic signs generally indicate?",
+          "options": [
+            "A warning about a hazard ahead",
+            "Guide information, such as directions, exits, or distances",
+            "A construction zone"
           ],
           "correctAnswer": 1,
-          "explanation": "Use low-beam headlights in fog.",
-          "category": "Adverse Conditions",
+          "explanation": "Green signs provide guide information like directions, freeway exits, and mileage to help you navigate.",
+          "category": "Guide Signs",
           "difficulty": "easy"
         },
         {
           "id": 40,
-          "question": "What is the purpose of a diamond-shaped traffic sign?",
+          "question": "What is the safest way to merge onto a freeway?",
           "options": [
-            "To provide directional guidance",
-            "To indicate a school zone",
-            "To warn of potential hazards",
-            "To provide information about speed limits"
+            "Stop on the on-ramp and wait for a large gap in traffic",
+            "Match the speed of freeway traffic and merge into a gap",
+            "Enter slowly and let freeway traffic adjust to you"
           ],
-          "correctAnswer": 2,
-          "explanation": "Diamond-shaped signs are warning signs that alert you to potential hazards ahead.",
-          "category": "Traffic Signs",
-          "difficulty": "easy"
+          "correctAnswer": 1,
+          "explanation": "Use the on-ramp to accelerate to the speed of freeway traffic, then merge smoothly into an available gap.",
+          "category": "Freeway Driving",
+          "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "en"
     },
     {
       "id": "dmv-spanish-practice-test-1",
@@ -7032,7 +7671,8 @@
           "category": "Safe Driving",
           "difficulty": "easy"
         }
-      ]
+      ],
+      "language": "es"
     },
     {
       "id": "dmv-spanish-practice-test-2",
@@ -7303,7 +7943,8 @@
           "category": "Adverse Conditions",
           "difficulty": "medium"
         }
-      ]
+      ],
+      "language": "es"
     },
     {
       "id": "dmv-spanish-simulation-test-1",
@@ -7832,6 +8473,1031 @@
           "correctAnswer": 1,
           "explanation": "Las carreteras son más resbaladizas durante los primeros minutos de lluvia cuando el aceite y la suciedad suben a la superficie.",
           "category": "Adverse Conditions",
+          "difficulty": "medium"
+        }
+      ],
+      "language": "es"
+    },
+    {
+      "id": "examen-dmv-espanol-3",
+      "title": "Examen de Práctica del DMV #3 en Español",
+      "description": "Tercer examen de práctica del DMV de California en español con 20 preguntas sobre reglas de tráfico, señales y leyes de manejo. Basado en preguntas oficiales del DMV.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "examen-dmv-espanol-3",
+      "language": "es",
+      "passingScore": 83,
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "¿Cuándo es legal salirse del camino para rebasar a otro vehículo?",
+          "options": [
+            "Si el vehículo de adelante gira a la izquierda",
+            "Nunca es legal bajo ninguna circunstancia",
+            "Si hay dos o más carriles en un sentido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Salirse del camino pavimentado para rebasar nunca es legal en California. Debe rebasar solo por la izquierda dentro de los carriles de tráfico.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "Usted está a 100 pies de un cruce de ferrocarril sin señales de advertencia y no puede ver 400 pies en ambas direcciones. ¿Cuál es el límite de velocidad?",
+          "options": [
+            "15 mph",
+            "25 mph",
+            "10 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En un cruce de ferrocarril sin señales donde no puede ver 400 pies en ambas direcciones, el límite de velocidad es de 15 mph.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "¿Cuál describe el estacionamiento paralelo correcto en una calle?",
+          "options": [
+            "El vehículo está al menos a dos pies de otros vehículos",
+            "Las ruedas delanteras y traseras tocan el borde de la acera",
+            "Las ruedas delanteras y traseras están a menos de 18 pulgadas del borde de la acera"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Al estacionar en paralelo, las ruedas deben quedar a menos de 18 pulgadas del borde de la acera.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "¿A qué velocidad debe incorporarse a una autopista?",
+          "options": [
+            "A la misma velocidad del tráfico o cerca de ella",
+            "Más despacio que el tráfico",
+            "Más rápido que el tráfico para integrarse con seguridad"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Al incorporarse a una autopista debe igualar la velocidad del tráfico para integrarse de forma segura y sin causar peligro.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "¿A qué distancia debe cambiar de luces altas a luces bajas cuando se aproxima un vehículo en sentido contrario?",
+          "options": [
+            "900 pies",
+            "700 pies",
+            "500 pies"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe cambiar a luces bajas cuando un vehículo que viene en sentido contrario se encuentre a 500 pies o menos de distancia.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "¿Quién puede estacionar legalmente junto a un borde de acera azul?",
+          "options": [
+            "Alguien que recoge o deja pasajeros brevemente",
+            "Una persona con discapacidad con placa o permiso especial",
+            "Cualquier persona que estacione menos de 15 minutos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde azul está reservado exclusivamente para personas con discapacidad que cuenten con placa o permiso especial de estacionamiento.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "¿Qué debe hacer cuando un autobús escolar que está adelante activa las luces de advertencia amarillas?",
+          "options": [
+            "Reducir la velocidad y prepararse para detenerse",
+            "Pasar con cuidado por la izquierda",
+            "Detenerse inmediatamente y quedarse parado"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las luces amarillas intermitentes del bus escolar advierten que el bus está a punto de detenerse. Debe reducir la velocidad y prepararse para parar.",
+          "category": "School Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "¿Cuál refleja la ley de velocidad básica de California?",
+          "options": [
+            "Siempre manejar al límite publicado sin importar las condiciones",
+            "Igualar la velocidad del tráfico que le rodea",
+            "Nunca manejar más rápido de lo que es seguro para las condiciones actuales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La ley de velocidad básica establece que nunca debe manejar más rápido de lo seguro para las condiciones del camino, aunque esté por debajo del límite.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 9,
+          "question": "Debe notificar al DMV en un plazo de 5 días si:",
+          "options": [
+            "Recibe una citación de tráfico",
+            "Vende o transfiere la propiedad de su vehículo",
+            "Pinta su vehículo de un color diferente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Está obligado a notificar al DMV dentro de 5 días si vende o transfiere la propiedad de su vehículo, para liberar su responsabilidad legal.",
+          "category": "DMV Rules",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "¿Cuál es un hábito seguro de manejo?",
+          "options": [
+            "Usar las luces altas en la niebla para ver mejor",
+            "Mantener los ojos en movimiento para observar el entorno",
+            "Mirar fijamente solo el centro de la carretera"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mantener los ojos en movimiento le permite detectar peligros a tiempo. Fijar la vista en un solo punto aumenta el riesgo de accidentes.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "¿Cuál es el límite de velocidad en callejones (alleys) en California?",
+          "options": [
+            "15 mph",
+            "20 mph",
+            "25 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El límite de velocidad en callejones en California es de 15 mph, a menos que haya una señal que indique otra velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "Al llegar al mismo tiempo que otro vehículo a una intersección de cuatro vías, ¿quién tiene el derecho de paso?",
+          "options": [
+            "El vehículo que llegó primero",
+            "El vehículo que está a su derecha",
+            "El vehículo más grande"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si dos vehículos llegan al mismo tiempo a una intersección de cuatro vías, el vehículo que está a la derecha tiene el derecho de paso.",
+          "category": "Right of Way",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "¿Cuál es el nivel máximo de alcohol en la sangre (BAC) permitido para conductores de 21 años o mayores?",
+          "options": [
+            "0.06%",
+            "0.08%",
+            "0.10%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California, el límite legal de alcohol en la sangre para conductores de 21 años o más es de 0.08%. Para menores de 21, el límite es 0.01%.",
+          "category": "DUI Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "¿A qué distancia mínima debe señalizar antes de realizar un giro en California?",
+          "options": [
+            "Al menos 100 pies antes del giro",
+            "Al menos 200 pies antes del giro",
+            "Al menos 50 pies antes del giro"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En California debe señalizar al menos 100 pies antes de realizar un giro para advertir a otros conductores de su intención.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 15,
+          "question": "¿Qué significa un borde de acera amarillo?",
+          "options": [
+            "Solo pueden estacionar personas con discapacidades",
+            "Estacionamiento limitado para cargar o descargar pasajeros o mercancías",
+            "No está permitido parar ni estacionar en ningún momento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde amarillo indica zona de carga y descarga. Puede parar el tiempo necesario para cargar o descargar, pero no puede dejar el vehículo estacionado sin el conductor.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "¿Cuántos pies antes del carril de ferrocarril más cercano debe detenerse al cruzar las vías?",
+          "options": [
+            "Entre 15 y 50 pies",
+            "Entre 5 y 10 pies",
+            "Entre 50 y 100 pies"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe detenerse entre 15 y 50 pies del carril de ferrocarril más cercano cuando sea necesario parar antes de cruzar las vías.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "Si el semáforo está en verde pero hay peatones cruzando la intersección, ¿qué debe hacer?",
+          "options": [
+            "Tocar la bocina para que los peatones se aparten",
+            "Ceder el paso a los peatones y esperar a que terminen de cruzar",
+            "Continuar manejando despacio porque tiene luz verde"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los peatones tienen el derecho de paso en los cruces peatonales. Aunque tenga luz verde, debe esperar a que los peatones terminen de cruzar.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 18,
+          "question": "¿Para qué se usa el carril del centro de doble sentido (marcado con líneas amarillas continuas y discontinuas)?",
+          "options": [
+            "Para rebasar vehículos a alta velocidad",
+            "Para girar a la izquierda o prepararse para girar",
+            "Para estacionar brevemente en zonas comerciales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril del centro de doble sentido solo se usa para girar a la izquierda o prepararse para girar. No se puede usar para rebasar.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 19,
+          "question": "¿Cuál es la distancia mínima de seguimiento segura que debe mantener detrás del vehículo de adelante?",
+          "options": [
+            "1 segundo",
+            "2 segundos",
+            "3 segundos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe mantener al menos 3 segundos de distancia con el vehículo de adelante. En condiciones adversas, esta distancia debe aumentarse.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 20,
+          "question": "¿Cuándo puede girar a la derecha en un semáforo en rojo en California?",
+          "options": [
+            "Nunca está permitido girar a la derecha con rojo",
+            "Después de detenerse completamente y ceder el paso a peatones y vehículos",
+            "Siempre que no haya vehículos en la intersección"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Puede girar a la derecha con luz roja después de detenerse completamente, a menos que haya una señal que lo prohíba. Siempre ceda el paso a peatones y vehículos.",
+          "category": "Traffic Signals",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "examen-dmv-espanol-4",
+      "title": "Examen de Práctica del DMV #4 en Español",
+      "description": "Cuarto examen de práctica del DMV de California en español. 20 preguntas sobre leyes de tráfico, situaciones de emergencia y reglas de manejo seguro.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "examen-dmv-espanol-4",
+      "language": "es",
+      "passingScore": 83,
+      "timeLimit": 30,
+      "questions": [
+        {
+          "id": 1,
+          "question": "¿Cuál de los siguientes es contra la ley hacer mientras maneja?",
+          "options": [
+            "Usar audífonos que cubran ambos oídos",
+            "Usar un auricular solo en un oído para llamadas",
+            "Escuchar la radio del vehículo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En California es ilegal usar audífonos o auriculares que cubran ambos oídos mientras conduce. Puede usar un solo auricular en un oído.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 2,
+          "question": "Hay congestionamiento de tráfico y necesita cruzar las vías del ferrocarril. ¿Qué debe hacer?",
+          "options": [
+            "Cruzar rápido antes de que llegue el tren",
+            "Esperar hasta poder cruzar completamente sin quedar detenido encima de las vías",
+            "Cruzar a velocidad reducida para evaluar el riesgo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Nunca cruce las vías si puede quedar atrapado encima de ellas. Espere hasta que haya espacio suficiente para cruzar por completo.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "¿Qué debe hacer si alguien lo sigue demasiado cerca?",
+          "options": [
+            "Frenar de golpe para advertirle",
+            "Aumentar gradualmente la distancia con el vehículo de adelante y dejar que lo rebase",
+            "Acelerar para alejarse de él"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si alguien lo presiona, aumente la distancia con el vehículo de adelante y permita que el conductor que lo sigue lo rebase de manera segura.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "Cuando maneja al límite de velocidad, le pueden poner una multa si:",
+          "options": [
+            "Hay señales de construcción en la carretera",
+            "Las condiciones del camino hacen que esa velocidad sea peligrosa",
+            "Hay otro vehículo que va más despacio adelante"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ley de velocidad básica permite multar a un conductor aunque vaya al límite si las condiciones del camino hacen esa velocidad insegura.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 5,
+          "question": "¿Qué luces debe usar si tiene dificultad para ver otros vehículos por polvo, humo o niebla?",
+          "options": [
+            "Luces altas para iluminar más",
+            "Luces bajas y reducir la velocidad",
+            "Luces de emergencia y mantener la velocidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las luces altas rebotan en la niebla y reducen la visibilidad. Use luces bajas y reduzca la velocidad para ver y ser visto correctamente.",
+          "category": "Lighting",
+          "difficulty": "easy"
+        },
+        {
+          "id": 6,
+          "question": "¿Qué debe hacer un conductor que está detenido en una intersección y quiere girar a la izquierda?",
+          "options": [
+            "Tomar el turno antes del tráfico que se aproxima",
+            "Girar inmediatamente si no hay peatones",
+            "Ceder el paso a los vehículos que se aproximan lo suficientemente cerca"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Al girar a la izquierda debe ceder el paso a todos los vehículos que vienen en sentido contrario y a los peatones en el cruce.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 7,
+          "question": "¿Qué debe hacer un conductor cuando el semáforo está en amarillo intermitente?",
+          "options": [
+            "Detenerse completamente antes de la intersección",
+            "Reducir la velocidad y pasar con precaución",
+            "Acelerar para cruzar la intersección antes de que cambie"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una luz amarilla intermitente indica que debe reducir la velocidad y pasar la intersección con precaución, sin detenerse completamente.",
+          "category": "Traffic Signals",
+          "difficulty": "easy"
+        },
+        {
+          "id": 8,
+          "question": "¿Qué debe hacer si un peatón aún está en el cruce peatonal después de que el semáforo cambia a verde?",
+          "options": [
+            "Tocar la bocina para advertirle",
+            "Esperar a que el peatón termine de cruzar",
+            "Avanzar despacio con mucho cuidado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los peatones tienen prioridad en los cruces. Aunque el semáforo cambie a verde, espere hasta que el peatón haya terminado de cruzar completamente.",
+          "category": "Pedestrians",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "¿Cuándo es legal transportar un contenedor abierto de bebida alcohólica en su vehículo?",
+          "options": [
+            "Si el conductor no ha bebido nada",
+            "Si el contenedor está en la cajuela o en un área inaccesible para el conductor y los pasajeros",
+            "Si el contenedor está en el asiento trasero bien cerrado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los contenedores abiertos de alcohol deben guardarse en la cajuela o en un área donde el conductor y los pasajeros no tengan acceso mientras el vehículo está en movimiento.",
+          "category": "DUI Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "¿A qué distancia de una boca de incendios (hidrante) no puede estacionar?",
+          "options": [
+            "10 pies",
+            "15 pies",
+            "20 pies"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No puede estacionar a menos de 15 pies de una boca de incendios para que los bomberos puedan acceder a ella en caso de emergencia.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 11,
+          "question": "¿Cuál es la edad mínima para obtener una licencia de conducir regular sin restricciones en California?",
+          "options": [
+            "16 años",
+            "17 años",
+            "18 años"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En California, la licencia de conducir regular sin restricciones se puede obtener a partir de los 18 años. Los menores de 18 reciben una licencia provisional con restricciones.",
+          "category": "DMV Rules",
+          "difficulty": "easy"
+        },
+        {
+          "id": 12,
+          "question": "Si ve un vehículo de emergencia con luces y sirenas acercándose desde atrás, ¿qué debe hacer?",
+          "options": [
+            "Acelerar para despejarse del camino rápidamente",
+            "Jalar hacia la derecha y detenerse lo más pronto posible de manera segura",
+            "Continuar manejando en la misma dirección y velocidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cuando un vehículo de emergencia se aproxima, jale hacia la derecha del camino y deténgase hasta que pase. Aplica en cualquier tipo de vía.",
+          "category": "Emergency Vehicles",
+          "difficulty": "easy"
+        },
+        {
+          "id": 13,
+          "question": "¿Hasta qué edad deben los niños viajar en un asiento de seguridad para niños en California?",
+          "options": [
+            "Hasta los 6 años",
+            "Hasta los 8 años",
+            "Hasta los 10 años o 80 libras"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California, los niños menores de 8 años deben viajar en un asiento de seguridad apropiado para su edad y tamaño, en el asiento trasero del vehículo.",
+          "category": "Passenger Safety",
+          "difficulty": "medium"
+        },
+        {
+          "id": 14,
+          "question": "Si su vehículo comienza a patinar (deslizarse), ¿qué debe hacer?",
+          "options": [
+            "Aplicar los frenos con fuerza",
+            "Girar el volante hacia el mismo lado al que se desliza y soltar el acelerador",
+            "Girar el volante al lado contrario al deslizamiento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si el vehículo patina, suelte el acelerador y gire el volante hacia el mismo lado del derrape para recuperar el control. No frene bruscamente.",
+          "category": "Safe Driving",
+          "difficulty": "hard"
+        },
+        {
+          "id": 15,
+          "question": "El límite de velocidad en zonas residenciales en California generalmente es:",
+          "options": [
+            "20 mph",
+            "25 mph",
+            "30 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El límite de velocidad en zonas residenciales y áreas comerciales con poco tráfico en California es de 25 mph, a menos que haya señales que indiquen otra velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "¿Cuándo puede usar el carril de vehículos de alta ocupación (HOV/Carpool)?",
+          "options": [
+            "Cuando el tráfico regular esté muy congestionado",
+            "Cuando lleva el número mínimo de ocupantes indicado en la señal",
+            "Solo durante las horas pico de la mañana"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril HOV está reservado para vehículos con el número mínimo de ocupantes indicado. Los vehículos eléctricos con calcomanía especial pueden usarlo con un solo ocupante.",
+          "category": "Lane Markings",
+          "difficulty": "easy"
+        },
+        {
+          "id": 17,
+          "question": "Bajo la ley Move Over de California, ¿qué debe hacer al pasar un vehículo de emergencia parado con luces encendidas?",
+          "options": [
+            "Solo reducir velocidad si está en el carril derecho",
+            "Cambiar al carril del lado o reducir la velocidad si no puede cambiar de carril",
+            "Esta ley solo aplica en autopistas, no en calles de la ciudad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ley exige cambiar al carril adyacente o reducir la velocidad si no puede cambiar. Aplica para vehículos de emergencia, mantenimiento y remolque en el hombro.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "¿Qué debe hacer si sus frenos fallan mientras maneja?",
+          "options": [
+            "Aplicar el freno de estacionamiento suavemente y bajar velocidades si tiene transmisión manual",
+            "Apagar el motor inmediatamente",
+            "Girar el volante bruscamente hacia la banqueta"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Si los frenos fallan, baje las velocidades para usar el freno del motor y aplique el freno de estacionamiento gradualmente. Busque una salida segura.",
+          "category": "Emergency Procedures",
+          "difficulty": "hard"
+        },
+        {
+          "id": 19,
+          "question": "¿Cuándo es legal hacer un giro en U en California?",
+          "options": [
+            "En cualquier calle donde no haya señal que lo prohíba",
+            "Donde pueda ver claramente al menos 200 pies en ambas direcciones y no haya señal que lo prohíba",
+            "Solo en intersecciones con semáforo verde"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California puede hacer un giro en U donde tenga visibilidad de al menos 200 pies en ambas direcciones y no haya señal que lo prohíba expresamente.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "¿Cuándo debe encender las luces del vehículo durante el día?",
+          "options": [
+            "Solo si hay niebla muy densa",
+            "Cuando la visibilidad sea menor a 1,000 pies, incluyendo en lluvia y niebla",
+            "Solo después de las 6 de la tarde"
+          ],
+          "correctAnswer": 1,
+          "explanation": "California requiere encender las luces cuando la visibilidad sea menor a 1,000 pies, incluyendo durante la lluvia, niebla, polvo o nieve.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "dmv-spanish-simulator-test-1",
+      "title": "Simulador del Examen DMV en Español — Prueba Completa",
+      "description": "Simulador completo del examen escrito del DMV de California en español. 36 preguntas que cubren señales, leyes de tráfico, manejo seguro y situaciones de emergencia. Formato idéntico al examen real.",
+      "category": "Spanish Tests / Pruebas en Español",
+      "slug": "dmv-spanish-practice-test-2",
+      "language": "es",
+      "passingScore": 83,
+      "timeLimit": 50,
+      "questions": [
+        {
+          "id": 1,
+          "question": "¿De qué color es el borde de acera que no permite que los vehículos se paren o estacionen en ningún momento?",
+          "options": [
+            "Amarillo",
+            "Rojo",
+            "Blanco"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde rojo significa que no puede parar ni estacionar en ese lugar en ningún momento.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 2,
+          "question": "¿Cuándo es legal salirse del camino pavimentado para rebasar a otro vehículo?",
+          "options": [
+            "Si el vehículo de adelante gira a la izquierda",
+            "Nunca es legal bajo ninguna circunstancia",
+            "Si hay visibilidad suficiente por delante"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Salirse del camino pavimentado para rebasar nunca es legal en California.",
+          "category": "Passing",
+          "difficulty": "medium"
+        },
+        {
+          "id": 3,
+          "question": "¿Cuál es una de las causas más comunes de los accidentes de tráfico?",
+          "options": [
+            "Mejor flujo de tráfico en las carreteras",
+            "Poner atención al entorno mientras maneja",
+            "Distracciones del conductor"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las distracciones del conductor, como usar el teléfono celular, son una de las causas más comunes de accidentes de tráfico.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 4,
+          "question": "¿A qué velocidad debe incorporarse a una autopista?",
+          "options": [
+            "A la misma velocidad del tráfico o cerca de ella",
+            "Más despacio que el tráfico",
+            "Más rápido que el tráfico"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Al incorporarse a una autopista debe igualar la velocidad del tráfico para integrarse de manera segura.",
+          "category": "Freeway Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 5,
+          "question": "¿Qué se indica mediante dos juegos de líneas amarillas dobles separadas por 2 pies o más?",
+          "options": [
+            "Un carril HOV para vehículos con 2 o más ocupantes",
+            "Barrera que no debe cruzarse",
+            "Carriles de tráfico que van en el mismo sentido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dos juegos de líneas amarillas dobles con 2 pies o más de separación indican una barrera. No debe cruzar ni manejar sobre estas líneas.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 6,
+          "question": "El límite de velocidad indicado es 65 mph. ¿Qué significa eso?",
+          "options": [
+            "Siempre debe manejar a exactamente 65 mph",
+            "Puede manejar más rápido solo si no hay otros vehículos",
+            "Debe manejar a 65 mph solo si las condiciones del camino son seguras"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los límites de velocidad son máximos bajo condiciones ideales. Si las condiciones son malas, debe reducir la velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 7,
+          "question": "¿Cuándo debe notificar al DMV usando el formulario SR-1?",
+          "options": [
+            "Cuando su vehículo no pasa la revisión de emisiones",
+            "Cuando se ve involucrado en un accidente con heridos o daños mayores a $1,000",
+            "Cuando cambia de compañía de seguro"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe presentar el formulario SR-1 dentro de 10 días si el accidente causó lesiones, muertes o daños a la propiedad de más de $1,000.",
+          "category": "Accidents",
+          "difficulty": "medium"
+        },
+        {
+          "id": 8,
+          "question": "¿Quién puede estacionar legalmente junto a un borde de acera azul?",
+          "options": [
+            "Alguien que recoge o deja pasajeros",
+            "Una persona con discapacidad con placa o permiso especial",
+            "Cualquier persona por menos de 15 minutos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde azul está reservado exclusivamente para personas con discapacidad que tengan placa o permiso especial vigente.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 9,
+          "question": "¿A qué distancia debe cambiar de luces altas a luces bajas cuando se aproxima un vehículo en sentido contrario?",
+          "options": [
+            "900 pies",
+            "700 pies",
+            "500 pies"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe cambiar a luces bajas cuando un vehículo que viene de frente esté a 500 pies o menos para no encandilarlo.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        },
+        {
+          "id": 10,
+          "question": "¿Qué debe hacer cuando un autobús escolar adelante activa las luces de advertencia amarillas?",
+          "options": [
+            "Reducir la velocidad y prepararse para detenerse",
+            "Pasar con cuidado por la izquierda",
+            "Detenerse inmediatamente"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las luces amarillas del bus escolar advierten que va a detenerse. Debe reducir la velocidad y prepararse para parar.",
+          "category": "School Zones",
+          "difficulty": "easy"
+        },
+        {
+          "id": 11,
+          "question": "Usted tiene menos de 18 años y lleva 8 meses con su licencia. ¿Cuándo puede conducir?",
+          "options": [
+            "Entre las 7 a.m. y las 8 p.m.",
+            "Entre las 5 a.m. y las 11 p.m.",
+            "En cualquier momento sin restricción"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los conductores menores de 18 años con licencia provisional no pueden manejar entre las 11 p.m. y las 5 a.m. durante los primeros 12 meses, salvo con supervisión de un adulto.",
+          "category": "Teen Drivers",
+          "difficulty": "medium"
+        },
+        {
+          "id": 12,
+          "question": "¿Cuál de los siguientes es contra la ley hacer mientras maneja?",
+          "options": [
+            "Usar audífonos que cubran ambos oídos",
+            "Usar un auricular solo en un oído",
+            "Escuchar la radio del vehículo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Es ilegal usar audífonos o auriculares que cubran ambos oídos mientras conduce. Solo puede usar un auricular en un oído.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 13,
+          "question": "¿Qué debe hacer si alguien lo sigue demasiado cerca?",
+          "options": [
+            "Frenar de golpe para advertirle",
+            "Aumentar gradualmente la distancia con el vehículo de adelante y dejar que lo rebase",
+            "Acelerar para alejarse"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si alguien lo sigue muy cerca, aumente la distancia con el vehículo de adelante y permita que lo rebase de manera segura.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 14,
+          "question": "¿Cuándo son más resbaladizas las carreteras durante la lluvia en un día caluroso?",
+          "options": [
+            "Cuando ha llovido varias horas",
+            "Durante los primeros minutos de lluvia",
+            "Inmediatamente después de que deja de llover"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Durante los primeros minutos de lluvia, el agua mezcla el aceite y la suciedad acumulados en el pavimento, creando una superficie muy resbaladiza.",
+          "category": "Weather Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 15,
+          "question": "¿Cuál es el límite de velocidad en callejones en California?",
+          "options": [
+            "15 mph",
+            "20 mph",
+            "25 mph"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El límite de velocidad en callejones es de 15 mph en California.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 16,
+          "question": "Al llegar al mismo tiempo que otro vehículo a una intersección de cuatro vías, ¿quién tiene el derecho de paso?",
+          "options": [
+            "El vehículo que va más rápido",
+            "El vehículo que está a su derecha",
+            "El vehículo más grande"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En una intersección de cuatro vías donde dos vehículos llegan al mismo tiempo, el vehículo que está a su derecha tiene el derecho de paso.",
+          "category": "Right of Way",
+          "difficulty": "medium"
+        },
+        {
+          "id": 17,
+          "question": "¿Cuál es el BAC máximo legal para conductores de 21 años o más?",
+          "options": [
+            "0.06%",
+            "0.08%",
+            "0.10%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El límite legal de alcohol en sangre para conductores de 21 años o más es 0.08%. Para menores de 21 años es 0.01%.",
+          "category": "DUI Laws",
+          "difficulty": "medium"
+        },
+        {
+          "id": 18,
+          "question": "¿A qué distancia mínima debe señalizar antes de girar?",
+          "options": [
+            "Al menos 100 pies",
+            "Al menos 200 pies",
+            "Al menos 50 pies"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe señalizar al menos 100 pies antes de girar para advertir a los demás conductores de su intención.",
+          "category": "Turning",
+          "difficulty": "easy"
+        },
+        {
+          "id": 19,
+          "question": "¿Qué significa un semáforo con luz roja intermitente?",
+          "options": [
+            "Reduzca la velocidad y pase con precaución",
+            "Deténgase completamente y proceda cuando sea seguro, como en señal de ALTO",
+            "El semáforo está averiado, puede continuar sin detenerse"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una luz roja intermitente tiene el mismo significado que una señal de ALTO. Deténgase completamente y avance solo cuando sea seguro.",
+          "category": "Traffic Signals",
+          "difficulty": "medium"
+        },
+        {
+          "id": 20,
+          "question": "¿Cuándo puede girar a la derecha con semáforo en rojo?",
+          "options": [
+            "Nunca está permitido",
+            "Después de detenerse completamente y ceder el paso a peatones y vehículos",
+            "Siempre que no haya peatones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Puede girar a la derecha con rojo después de detenerse completamente, a menos que haya señal que lo prohíba. Ceda el paso a peatones y vehículos con el verde.",
+          "category": "Traffic Signals",
+          "difficulty": "medium"
+        },
+        {
+          "id": 21,
+          "question": "¿Cuántos pies antes del carril de ferrocarril más cercano debe detenerse?",
+          "options": [
+            "Entre 15 y 50 pies",
+            "Entre 5 y 10 pies",
+            "Entre 50 y 100 pies"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Debe detenerse entre 15 y 50 pies del carril más cercano al cruzar vías de ferrocarril.",
+          "category": "Railroad Crossings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 22,
+          "question": "¿Qué significa un borde de acera amarillo?",
+          "options": [
+            "Solo personas con discapacidades pueden estacionar ahí",
+            "Estacionamiento limitado para cargar y descargar pasajeros o mercancías",
+            "No puede parar ni estacionar en ningún momento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El borde amarillo permite parar el tiempo necesario para cargar o descargar. No puede dejar el vehículo estacionado sin el conductor.",
+          "category": "Parking",
+          "difficulty": "easy"
+        },
+        {
+          "id": 23,
+          "question": "¿Para qué se usa el carril del centro de doble sentido?",
+          "options": [
+            "Para rebasar vehículos más lentos",
+            "Para girar a la izquierda o prepararse para girar",
+            "Para estacionarse brevemente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril del centro de doble sentido solo puede usarse para prepararse y ejecutar un giro a la izquierda. No es un carril de circulación ni de rebase.",
+          "category": "Lane Markings",
+          "difficulty": "medium"
+        },
+        {
+          "id": 24,
+          "question": "¿Cuál es la distancia mínima de seguimiento segura detrás de otro vehículo?",
+          "options": [
+            "1 segundo",
+            "2 segundos",
+            "3 segundos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Debe mantener al menos 3 segundos de distancia. En condiciones de lluvia o baja visibilidad, aumente esta distancia.",
+          "category": "Safe Driving",
+          "difficulty": "easy"
+        },
+        {
+          "id": 25,
+          "question": "¿A qué distancia de una boca de incendios no puede estacionar?",
+          "options": [
+            "10 pies",
+            "15 pies",
+            "20 pies"
+          ],
+          "correctAnswer": 1,
+          "explanation": "No puede estacionar a menos de 15 pies de una boca de incendios para asegurar el acceso de los bomberos.",
+          "category": "Parking",
+          "difficulty": "medium"
+        },
+        {
+          "id": 26,
+          "question": "Si ve un vehículo de emergencia con luces y sirenas encendidas acercándose, debe:",
+          "options": [
+            "Acelerar para despejarse del camino",
+            "Jalar hacia la derecha y detenerse de manera segura",
+            "Mantener la velocidad y el carril"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe jalar a la derecha del camino y detenerse hasta que el vehículo de emergencia pase. Aplica en cualquier tipo de vía.",
+          "category": "Emergency Vehicles",
+          "difficulty": "easy"
+        },
+        {
+          "id": 27,
+          "question": "¿Hasta qué edad deben los niños viajar en asiento de seguridad en California?",
+          "options": [
+            "Hasta los 6 años",
+            "Hasta los 8 años",
+            "Hasta los 10 años"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En California, los niños menores de 8 años deben ir en un asiento de seguridad aprobado en el asiento trasero del vehículo.",
+          "category": "Passenger Safety",
+          "difficulty": "medium"
+        },
+        {
+          "id": 28,
+          "question": "¿Cuándo es legal hacer un giro en U?",
+          "options": [
+            "En cualquier calle sin señal de prohibición",
+            "Donde tenga visibilidad de al menos 200 pies y no haya señal que lo prohíba",
+            "Solo en intersecciones con semáforo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Puede hacer un giro en U donde tenga visibilidad de al menos 200 pies en ambas direcciones y no haya señal que lo prohíba.",
+          "category": "Turning",
+          "difficulty": "medium"
+        },
+        {
+          "id": 29,
+          "question": "Debe notificar al DMV en 5 días si:",
+          "options": [
+            "Recibe una citación de tráfico",
+            "Vende o transfiere la propiedad de su vehículo",
+            "Pinta su vehículo de un color diferente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe notificar al DMV dentro de 5 días si vende o transfiere la propiedad de su vehículo para liberar su responsabilidad.",
+          "category": "DMV Rules",
+          "difficulty": "medium"
+        },
+        {
+          "id": 30,
+          "question": "¿Qué debe hacer si sus frenos fallan mientras maneja?",
+          "options": [
+            "Aplicar el freno de estacionamiento suavemente y bajar velocidades",
+            "Apagar el motor de inmediato",
+            "Girar el volante bruscamente"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Si los frenos fallan, baje las marchas para usar el freno del motor y aplique el freno de estacionamiento gradualmente. Busque una salida segura.",
+          "category": "Emergency Procedures",
+          "difficulty": "hard"
+        },
+        {
+          "id": 31,
+          "question": "¿Cuál es el límite de velocidad en zonas residenciales en California?",
+          "options": [
+            "20 mph",
+            "25 mph",
+            "30 mph"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El límite de velocidad en zonas residenciales es de 25 mph, a menos que haya señales que indiquen otra velocidad.",
+          "category": "Speed Laws",
+          "difficulty": "easy"
+        },
+        {
+          "id": 32,
+          "question": "¿Cuándo debe encender las luces del vehículo durante el día?",
+          "options": [
+            "Solo en la noche",
+            "Cuando la visibilidad sea menor a 1,000 pies, incluyendo en lluvia y niebla",
+            "Solo en túneles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe encender las luces cuando la visibilidad sea menor a 1,000 pies: en lluvia, niebla, polvo o nieve.",
+          "category": "Lighting",
+          "difficulty": "medium"
+        },
+        {
+          "id": 33,
+          "question": "¿Cuándo puede conducir en el carril HOV (carpool)?",
+          "options": [
+            "Cuando el tráfico esté muy congestionado",
+            "Cuando lleva el número mínimo de ocupantes indicado en la señal",
+            "Solo en horarios de pico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carril HOV está reservado para vehículos con el número mínimo de ocupantes indicado. Los vehículos eléctricos con calcomanía especial pueden usarlo solos.",
+          "category": "Lane Markings",
+          "difficulty": "easy"
+        },
+        {
+          "id": 34,
+          "question": "Bajo la ley Slow Down, Move Over de California, ¿qué debe hacer al pasar un vehículo de emergencia parado con luces encendidas?",
+          "options": [
+            "Solo reducir velocidad si está en el carril derecho",
+            "Cambiar al carril del lado o reducir la velocidad si no puede cambiar",
+            "Esta ley solo aplica en autopistas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ley exige cambiar al carril adyacente o reducir la velocidad si no puede cambiar. Aplica para vehículos de emergencia, mantenimiento y remolque en el hombro.",
+          "category": "Safe Driving",
+          "difficulty": "medium"
+        },
+        {
+          "id": 35,
+          "question": "¿Cuál es la edad mínima para obtener una licencia de conducir regular sin restricciones en California?",
+          "options": [
+            "16 años",
+            "17 años",
+            "18 años"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La licencia de conducir regular sin restricciones se puede obtener a partir de los 18 años. Los menores de 18 reciben licencia provisional con restricciones.",
+          "category": "DMV Rules",
+          "difficulty": "easy"
+        },
+        {
+          "id": 36,
+          "question": "¿Cuál refleja la ley de velocidad básica de California?",
+          "options": [
+            "Siempre manejar al límite publicado sin importar las condiciones",
+            "Igualar la velocidad del tráfico que le rodea",
+            "Nunca manejar más rápido de lo que es seguro para las condiciones actuales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La ley de velocidad básica establece que nunca debe manejar más rápido de lo seguro para las condiciones del camino, tráfico y clima.",
+          "category": "Speed Laws",
           "difficulty": "medium"
         }
       ]

@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!quiz) {
     return {
-      title: 'Quiz Not Found | DMV California',
+      title: 'Quiz Not Found',
     };
   }
 
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const lang = quiz.language || 'en';
 
   return {
-    title: `${quiz.title} | DMV California`,
+    title: quiz.title,
     description: quiz.description,
     alternates: {
       canonical: url,

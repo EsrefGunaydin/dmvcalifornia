@@ -6,6 +6,15 @@ import { getAllFixedQuizzes } from './allQuizzes';
 // don't belong in a general car-permit simulator pool.
 const EXCLUDED_QUIZ_CATEGORIES = new Set(['Motorcycle (Class M)', 'Commercial (Class A/B)']);
 
+// New York DMV quizzes share language 'en' but test New York-specific rules —
+// they don't belong in the California simulator's pool. Categories are
+// prefixed "New York DMV — ..." so new NY chapters are excluded automatically.
+const EXCLUDED_CATEGORY_PREFIXES = ['New York DMV'];
+
+function isExcludedCategory(category: string): boolean {
+  return EXCLUDED_QUIZ_CATEGORIES.has(category) || EXCLUDED_CATEGORY_PREFIXES.some((p) => category.startsWith(p));
+}
+
 // The only two sign-only quizzes present in getAllFixedQuizzes(); excluded
 // from the general pool unless the caller opts in.
 const SIGN_ONLY_SLUGS = new Set([
@@ -32,7 +41,7 @@ export function buildLanguagePool(lang: QuizLanguage, options: PoolOptions = {})
   const quizzes = getAllFixedQuizzes().filter(
     (q) =>
       q.language === lang &&
-      !EXCLUDED_QUIZ_CATEGORIES.has(q.category) &&
+      !isExcludedCategory(q.category) &&
       (includeSigns || !SIGN_ONLY_SLUGS.has(q.slug))
   );
 

@@ -1,9 +1,12 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
-import { Gamepad2, Flame } from 'lucide-react';
+import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
+import { Gamepad2, Flame, Search } from 'lucide-react';
 import { useStreak } from '@/hooks/useStreak';
+
+const SearchModal = dynamic(() => import('@/components/search/SearchModal'), { ssr: false });
 
 const STUDY_TOOLS: { href: string; label: string; isNew?: boolean }[] = [
   { href: '/practice-test/simulator/en', label: 'Practice Test Simulator', isNew: true },
@@ -23,7 +26,19 @@ const STUDY_TOOLS: { href: string; label: string; isNew?: boolean }[] = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const { streak } = useStreak();
+
+  useEffect(() => {
+    const handleShortcut = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setSearchOpen(true);
+      }
+    };
+    document.addEventListener('keydown', handleShortcut);
+    return () => document.removeEventListener('keydown', handleShortcut);
+  }, []);
 
   return (
     <header className="bg-gradient-to-r from-white via-orange-100 via-50% to-white shadow-sm border-b-4 border-primary sticky top-0 z-40">
@@ -39,6 +54,16 @@ export default function Header() {
 
           {/* Navigation Links - Desktop */}
           <nav className="hidden md:flex items-center gap-6">
+            <button
+              type="button"
+              onClick={() => setSearchOpen(true)}
+              className="flex items-center gap-1.5 text-gray-500 hover:text-primary transition-colors"
+              aria-label="Search the site"
+              title="Search (⌘K)"
+            >
+              <Search className="w-[18px] h-[18px]" />
+            </button>
+
             <Link href="/practice-test" className="text-gray-700 hover:text-primary font-medium transition-colors">
               Practice Tests
             </Link>
@@ -131,6 +156,17 @@ export default function Header() {
         {mobileMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t border-gray-200 pt-4">
             <div className="flex flex-col gap-4">
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setSearchOpen(true);
+                }}
+                className="flex items-center gap-2 text-gray-700 hover:text-primary font-medium transition-colors py-2"
+              >
+                <Search className="w-[18px] h-[18px]" /> Search
+              </button>
+
               <Link
                 href="/practice-test"
                 className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
@@ -232,6 +268,8 @@ export default function Header() {
           </nav>
         )}
       </div>
+
+      {searchOpen && <SearchModal onClose={() => setSearchOpen(false)} />}
     </header>
   );
 }

@@ -18,7 +18,9 @@ export const metadata = {
 };
 
 export default function PracticeTestsPage() {
-  const quizzes = getAllFixedQuizzes();
+  // New York (and any future non-California state) quizzes live in the same
+  // pool but don't belong under this California-branded index/category list.
+  const quizzes = getAllFixedQuizzes().filter((q) => !q.category.startsWith('New York DMV'));
 
   return (
     <>
