@@ -2788,7 +2788,7 @@
       "slug": "dmv-paradise-ca",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "5921 Clark Rd, Paradise, CA 95967",
       "services": [
         "Driver License",
         "Vehicle Registration",
@@ -3832,7 +3832,10 @@
         "Vehicle Registration",
         "REAL ID"
       ],
-      "has_kiosk": false
+      "has_kiosk": false,
+      "status": "CLOSED",
+      "closed_date": "2023-09-29",
+      "closure_reason": "Driver License Processing Center permanently closed"
     },
     {
       "id": 127,
@@ -3882,7 +3885,7 @@
       "slug": "san-marcos-rancheros-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "590 Rancheros Dr, San Marcos, CA 92069",
       "services": [
         "Driver License",
         "Vehicle Registration",
@@ -4657,7 +4660,7 @@
       "slug": "tulelake-dmv",
       "phone": "(800) 777-0133",
       "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
-      "address": "",
+      "address": "399 Main Street, Tulelake, CA 96134",
       "services": [
         "Driver License",
         "Vehicle Registration",
@@ -4938,7 +4941,13 @@
         "Vehicle Registration",
         "REAL ID"
       ],
-      "has_kiosk": false
+      "has_kiosk": false,
+      "status": "CLOSED",
+      "closed_date": "2020-11-13",
+      "closure_reason": "Field office permanently closed; lease not renewed",
+      "nearby_offices": [
+        "Pleasanton — 2621 Stoneridge Mall Road, Unit G225B"
+      ]
     },
     {
       "id": 166,
