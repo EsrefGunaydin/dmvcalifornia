@@ -15,7 +15,7 @@ import BlogViewTracker from '@/components/BlogViewTracker';
 import BlogPostContent from '@/components/BlogPostContent';
 import BlogImageLightbox from '@/components/BlogImageLightbox';
 import MultiplexAd from '@/components/MultiplexAd';
-import { inlineAppPromotionHtml } from '@/components/InlineAppPromotion';
+import { inlineAppPromotionHtml } from '@/lib/inlineAppPromotionHtml';
 import ArticleSchema from '@/components/blog/ArticleSchema';
 import UpNextBar from '@/components/blog/UpNextBar';
 import PracticeTestCTA from '@/components/blog/PracticeTestCTA';
