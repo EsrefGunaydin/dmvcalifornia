@@ -29,6 +29,7 @@ require('dotenv').config({ path: '.env.local', override: true });
 const fs = require('fs');
 const path = require('path');
 const { google } = require('googleapis');
+const { fetchVideoMeta } = require('./fetchVideoMeta');
 
 const REPO_ROOT = path.join(__dirname, '..', '..');
 const QUEUE_PATH = path.join(REPO_ROOT, 'content-pipeline', 'video-queue.json');
@@ -56,13 +57,23 @@ function getAuthedYoutube() {
   return google.youtube({ version: 'v3', auth: oauth2Client });
 }
 
-function addToVideosPage(videoId, cardTitle, cardDescription) {
+async function addToVideosPage(videoId, cardTitle, cardDescription) {
   const data = JSON.parse(fs.readFileSync(VIDEOS_JSON_PATH, 'utf8'));
   if (data.ourVideos.some((v) => v.id === videoId)) {
     console.log(`[publishToSite] ${videoId} already in videos.json, skipping.`);
     return;
   }
-  data.ourVideos.push({ id: videoId, title: cardTitle, description: cardDescription });
+  const entry = { id: videoId, title: cardTitle, description: cardDescription };
+  try {
+    const meta = (await fetchVideoMeta([videoId]))[videoId];
+    if (meta) {
+      entry.durationSeconds = meta.durationSeconds;
+      entry.publishedAt = meta.publishedAt;
+    }
+  } catch (err) {
+    console.warn(`[publishToSite] Could not fetch duration/publish date for ${videoId} (video-sitemap.xml will skip it until backfilled): ${err.message}`);
+  }
+  data.ourVideos.push(entry);
   fs.writeFileSync(VIDEOS_JSON_PATH, JSON.stringify(data, null, 2) + '\n');
   console.log(`[publishToSite] Added ${videoId} to src/data/videos.json.`);
 }
@@ -161,7 +172,7 @@ async function main() {
     requestBody: { id: item.videoId, status: { privacyStatus: opts.privacy, selfDeclaredMadeForKids: false } },
   });
 
-  addToVideosPage(item.videoId, item.cardTitle, item.cardDescription);
+  await addToVideosPage(item.videoId, item.cardTitle, item.cardDescription);
   if (item.embedHubSlug) embedOnHub(item.embedHubSlug, item.videoId, item);
   if (item.embedBlogSlug) embedOnBlogPost(item.embedBlogSlug, item.videoId, item);
 

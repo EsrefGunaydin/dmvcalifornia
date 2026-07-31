@@ -9,5 +9,6 @@ Disallow: /api/
 # Cloaked affiliate redirects (not for indexing)
 Disallow: /go/
 
-# Sitemap (single sitemap.xml covers blog posts, quizzes, offices, and authors)
+# Sitemaps
 Sitemap: https://dmvcalifornia.us/sitemap.xml
+Sitemap: https://dmvcalifornia.us/video-sitemap.xml
