@@ -34,7 +34,13 @@
     {
       "quizId": "dmv-spanish-practice-test-2",
       "voice": "EXAVITQu4vr4xnSDxMaL",
-      "status": "ready"
+      "status": "live",
+      "videoId": "aDVUvjT-7QM",
+      "publishedAt": "2026-07-30T17:46:00.000Z",
+      "cardTitle": "Examen de práctica del DMV #2 en español",
+      "cardDescription": "20 preguntas de práctica con respuestas explicadas para el examen escrito del DMV de California.",
+      "note": "Privacy already set to public manually by the user in YouTube Studio before publishToSite.js ran.",
+      "sitePublishedAt": "2026-07-31T00:54:37.279Z"
     },
     {
       "quizId": "examen-dmv-espanol-3",
