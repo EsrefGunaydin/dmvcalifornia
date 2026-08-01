@@ -20,7 +20,7 @@ export default function SidebarAd() {
   }, []);
 
   return (
-    <div className="sticky top-24">
+    <div className="sticky top-24 min-h-[250px]">
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}

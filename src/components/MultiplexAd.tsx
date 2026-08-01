@@ -26,7 +26,7 @@ export default function MultiplexAd() {
   }, []);
 
   return (
-    <div className="my-8">
+    <div className="my-8 min-h-[300px]">
       <ins
         ref={insRef}
         className="adsbygoogle"

@@ -343,7 +343,7 @@ export default function QuizEngine({ quiz, quizId, nextQuiz }: QuizEngineProps) 
                       : 'border-gray-200 bg-gray-50'
                     : isSelected
                     ? 'border-primary bg-primary/5'
-                    : 'border-gray-200 hover:border-primary/50 hover:bg-gray-50'
+                    : 'border-gray-200 [@media(hover:hover)]:hover:border-primary/50 [@media(hover:hover)]:hover:bg-gray-50'
                 } ${showExplanation ? 'cursor-not-allowed' : 'cursor-pointer'}`}
               >
                 <div className="flex items-start gap-3">

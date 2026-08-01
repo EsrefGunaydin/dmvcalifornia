@@ -20,7 +20,7 @@ export default function InArticleAd() {
   }, []);
 
   return (
-    <div className="my-8">
+    <div className="my-8 min-h-[280px]">
       <ins
         className="adsbygoogle"
         style={{ display: 'block', textAlign: 'center' }}

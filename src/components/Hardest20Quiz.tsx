@@ -145,7 +145,7 @@ export default function Hardest20Quiz({ questions }: { questions: HardestQuestio
                   const isPicked = picked === o.label;
 
                   let cls =
-                    'border-gray-200 bg-white hover:border-primary/50 hover:bg-primary/5';
+                    'border-gray-200 bg-white [@media(hover:hover)]:hover:border-primary/50 [@media(hover:hover)]:hover:bg-primary/5';
                   if (revealed) {
                     if (isCorrect) cls = 'border-green-500 bg-green-50';
                     else if (isPicked) cls = 'border-red-400 bg-red-50';

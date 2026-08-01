@@ -122,8 +122,9 @@ export default function ReactionTest({ onGameStateChange }: Props) {
           <p className="text-center text-xs text-gray-400 mb-3">Round {round} of {ROUNDS_PER_GAME}</p>
           <button
             type="button"
+            onPointerDown={handleTap}
             onClick={handleTap}
-            className={`w-full aspect-video rounded-2xl flex items-center justify-center text-white font-bold text-xl transition-colors select-none ${
+            className={`w-full aspect-video rounded-2xl flex items-center justify-center text-white font-bold text-xl transition-colors select-none touch-manipulation [-webkit-tap-highlight-color:transparent] ${
               phase === 'go' ? 'bg-green-500 hover:bg-green-600' : 'bg-red-500'
             }`}
           >

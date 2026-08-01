@@ -186,9 +186,9 @@ export default function SignQuiz({
                 <>
                   <p className="text-center text-sm font-medium text-gray-700 mb-4">Add your score to the leaderboard</p>
                   <form onSubmit={handleSubmitLeaderboard} className="space-y-3">
-                    <input type="text" placeholder="Your name *" value={lbName} onChange={(e) => setLbName(e.target.value)} maxLength={50} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+                    <input type="text" placeholder="Your name *" value={lbName} onChange={(e) => setLbName(e.target.value)} maxLength={50} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-base sm:text-sm focus:border-primary focus:outline-none" />
                     <div>
-                      <input type="email" placeholder="Email (optional)" value={lbEmail} onChange={(e) => setLbEmail(e.target.value)} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-sm focus:border-primary focus:outline-none" />
+                      <input type="email" placeholder="Email (optional)" value={lbEmail} onChange={(e) => setLbEmail(e.target.value)} className="w-full border-2 border-gray-200 rounded-lg px-4 py-2.5 text-base sm:text-sm focus:border-primary focus:outline-none" />
                       {lbEmail.trim() && (
                         <label className="flex items-start gap-2 mt-2 cursor-pointer">
                           <input type="checkbox" checked={lbConsent} onChange={(e) => setLbConsent(e.target.checked)} className="mt-0.5 accent-primary" />
@@ -323,7 +323,7 @@ export default function SignQuiz({
             const isSubmittedOther = hasSubmitted && oi !== q.correctAnswer && oi !== submittedPick;
             const isPending = !hasSubmitted && oi === pending;
 
-            let borderCls = 'border-gray-200 hover:border-primary/50 hover:bg-gray-50';
+            let borderCls = 'border-gray-200 [@media(hover:hover)]:hover:border-primary/50 [@media(hover:hover)]:hover:bg-gray-50';
             let circleCls = 'border-gray-300';
             if (hasSubmitted) {
               if (isSubmittedCorrect) { borderCls = 'border-green-500 bg-green-50'; circleCls = 'border-green-500 bg-green-500'; }

@@ -37,22 +37,46 @@ export default function ExitIntentPopup() {
       }
     };
 
-    // For mobile, we can detect back button or page visibility change
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'hidden' && !hasTriggered) {
-        // User is leaving - we can't show popup when hidden, but we track intent
-        setHasTriggered(true);
-      }
+    // Mobile has no mouse, so approximate exit intent with a scroll gesture:
+    // a real user scrolling back up toward the top after reading a decent
+    // amount of the page (a common "I'm about to leave" motion), rather than
+    // the small back-and-forth scrolls people make while reading.
+    const SCROLL_DEPTH_THRESHOLD = 400;
+    const SCROLL_UP_THRESHOLD = 80;
+    let maxScrollY = 0;
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const currentY = window.scrollY;
+        maxScrollY = Math.max(maxScrollY, currentY);
+        const scrolledUpBy = lastScrollY - currentY;
+
+        if (
+          !hasTriggered &&
+          maxScrollY > SCROLL_DEPTH_THRESHOLD &&
+          scrolledUpBy > SCROLL_UP_THRESHOLD
+        ) {
+          setHasTriggered(true);
+          setIsVisible(true);
+        }
+
+        lastScrollY = currentY;
+        ticking = false;
+      });
     };
 
     // Add event listeners
     document.addEventListener('mouseleave', handleMouseLeave);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     // Cleanup
     return () => {
       document.removeEventListener('mouseleave', handleMouseLeave);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [hasTriggered]);
 
