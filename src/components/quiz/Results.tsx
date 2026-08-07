@@ -8,6 +8,8 @@ import { useRouter } from 'next/navigation';
 import { PartyPopper, FileText, Smartphone, Flame } from 'lucide-react';
 import { useStreak } from '@/hooks/useStreak';
 import PushPermissionPrompt from '@/components/PushPermissionPrompt';
+import YouTubeCTA from '@/components/YouTubeCTA';
+import { pickVideoForCategory, FALLBACK_VIDEO_EN, FALLBACK_VIDEO_ES } from '@/data/youtube-topic-map';
 
 const APP_STORE_URL = 'https://apps.apple.com/app/dmv-california/id6754900213';
 
@@ -46,6 +48,9 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
   const reviewCopy = isSpanish
     ? { heading: 'Áreas para repasar', sub: 'Concéntrate en estos temas antes de volver a intentarlo:' }
     : { heading: 'Topics to review', sub: 'Focus on these topics before your retake:' };
+  const topVideoId = weakCategories.length > 0
+    ? pickVideoForCategory(weakCategories[0].cat, quiz.language)
+    : (quiz.language === 'es' ? FALLBACK_VIDEO_ES : FALLBACK_VIDEO_EN);
 
   // Fire once per completed attempt, on mount, since Results only renders
   // when a quiz has actually finished.
@@ -461,6 +466,23 @@ export default function Results({ result, quiz, quizId, onRestart, nextQuiz, sho
           </button>
         </div>
       )}
+
+      <YouTubeCTA
+        variant="watch-embed"
+        videoId={topVideoId}
+        heading={
+          result.incorrectAnswers > 0
+            ? (isSpanish
+              ? `¿Fallaste ${result.incorrectAnswers}? Mira la explicación`
+              : `Missed ${result.incorrectAnswers}? Watch the explainer`)
+            : (isSpanish ? 'Sigue practicando con este video' : 'Keep sharp with this video')
+        }
+        subtitle={isSpanish ? 'Repasa las respuestas antes de volver a intentarlo.' : 'See the answers explained before you retake the test.'}
+        source="results_screen"
+        topic={weakCategories[0]?.cat}
+        quizId={quizId}
+        className="mb-6"
+      />
 
       {/* App Promotion */}
       <div className="bg-gradient-to-r from-primary to-primary-600 rounded-lg shadow-lg p-6 mb-6 text-white">

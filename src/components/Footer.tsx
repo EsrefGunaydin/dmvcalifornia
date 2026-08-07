@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { BookMarked, ShieldCheck, Users, LucideIcon } from 'lucide-react';
+import YouTubeCTA from './YouTubeCTA';
+import { YOUTUBE_CHANNEL_URL } from '@/lib/constants';
 
 const SHIELD_CLIP_PATH = 'polygon(50% 0%, 100% 20%, 100% 58%, 50% 100%, 0% 58%, 0% 20%)';
 
@@ -71,6 +73,10 @@ export default function Footer() {
                 captionColor="text-green-400"
                 title="180,000+ CA Drivers"
               />
+            </div>
+
+            <div className="mt-6">
+              <YouTubeCTA variant="subscribe" source="footer" className="max-w-xs" />
             </div>
           </div>
 
@@ -205,6 +211,16 @@ export default function Footer() {
                 <Link href="/videos" className="text-gray-300 hover:text-white transition-colors">
                   Videos
                 </Link>
+              </li>
+              <li>
+                <a
+                  href={YOUTUBE_CHANNEL_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  YouTube Channel
+                </a>
               </li>
               <li>
                 <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">

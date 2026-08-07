@@ -1,6 +1,8 @@
 'use client';
 
 import { useState } from 'react';
+import { Youtube } from 'lucide-react';
+import { YOUTUBE_CHANNEL_URL } from '@/lib/constants';
 
 export default function ShareButtons({ postSlug, postTitle }: { postSlug: string; postTitle: string }) {
   const [copied, setCopied] = useState(false);
@@ -13,8 +15,14 @@ export default function ShareButtons({ postSlug, postTitle }: { postSlug: string
     setTimeout(() => setCopied(false), 2000);
   };
 
+  const trackSubscribeClick = () => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'youtube_cta_click', { variant: 'subscribe', source: 'blog_share_row' });
+    }
+  };
+
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-wrap items-center gap-y-2 gap-x-2">
       <span className="text-sm text-gray-500 mr-2">Share:</span>
 
       {/* Facebook */}
@@ -22,7 +30,7 @@ export default function ShareButtons({ postSlug, postTitle }: { postSlug: string
         href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 rounded-full bg-gray-100 hover:bg-blue-600 hover:text-white transition-colors"
+        className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-600 hover:text-white transition-colors"
         aria-label="Share on Facebook"
       >
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -35,7 +43,7 @@ export default function ShareButtons({ postSlug, postTitle }: { postSlug: string
         href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(postTitle)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 rounded-full bg-gray-100 hover:bg-black hover:text-white transition-colors"
+        className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-black hover:text-white transition-colors"
         aria-label="Share on Twitter"
       >
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -48,7 +56,7 @@ export default function ShareButtons({ postSlug, postTitle }: { postSlug: string
         href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(postTitle)}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="p-2 rounded-full bg-gray-100 hover:bg-blue-700 hover:text-white transition-colors"
+        className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-blue-700 hover:text-white transition-colors"
         aria-label="Share on LinkedIn"
       >
         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -59,7 +67,7 @@ export default function ShareButtons({ postSlug, postTitle }: { postSlug: string
       {/* Copy Link */}
       <button
         onClick={handleCopyLink}
-        className="p-2 rounded-full bg-gray-100 hover:bg-gray-600 hover:text-white transition-colors relative"
+        className="flex-shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-600 hover:text-white transition-colors relative"
         aria-label="Copy link"
       >
         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -71,6 +79,21 @@ export default function ShareButtons({ postSlug, postTitle }: { postSlug: string
           </span>
         )}
       </button>
+
+      <span className="flex-shrink-0 w-px h-8 bg-gray-200 mx-1" />
+
+      <span className="flex-shrink-0 text-sm text-gray-500 mr-1">YouTube:</span>
+      <a
+        href={YOUTUBE_CHANNEL_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={trackSubscribeClick}
+        className="flex-shrink-0 inline-flex items-center justify-center gap-1.5 h-8 min-w-[110px] px-3 rounded-full border border-red-600 text-red-600 hover:bg-red-600 hover:text-white text-sm font-semibold whitespace-nowrap transition-colors"
+        aria-label="Subscribe on YouTube"
+      >
+        <Youtube className="w-4 h-4 flex-shrink-0" />
+        Subscribe
+      </a>
     </div>
   );
 }

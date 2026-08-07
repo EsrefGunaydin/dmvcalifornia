@@ -244,6 +244,7 @@ export const HUBS: Record<string, KeywordHub> = {
 
   'california-permit-test': {
     slug: 'california-permit-test',
+    youtubeId: 'AAYjx6l9X5g',
     metaTitle: 'California DMV Permit Test 2026 — Free Practice (Real Knowledge Test Questions)',
     metaDescription:
       'Free California DMV permit practice test for 2026. Real knowledge test questions for your learner\'s permit — 46 questions, instant answers, no signup required.',
@@ -352,6 +353,7 @@ export const HUBS: Record<string, KeywordHub> = {
 
   'california-dmv-practice-test-for-seniors': {
     slug: 'california-dmv-practice-test-for-seniors',
+    youtubeId: 'AAYjx6l9X5g',
     metaTitle: 'California DMV Practice Test for Seniors 2026 — Free Knowledge Test',
     metaDescription:
       'Free California DMV practice test for seniors — same real questions as the knowledge test required for senior license renewal. No signup, instant results.',

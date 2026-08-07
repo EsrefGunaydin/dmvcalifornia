@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import CookieBanner from '../../components/CookieBanner';
+import YouTubeCTA from '../../components/YouTubeCTA';
 import { Play } from 'lucide-react';
 import videosData from '../../data/videos.json';
 
@@ -96,11 +97,16 @@ export default function VideosPage() {
       <Header />
 
       <section className="bg-gradient-to-r from-primary to-primary-600 text-white py-10">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-3">DMV California videos</h1>
-          <p className="text-base text-white/90 max-w-xl mx-auto">
-            Practice test walkthroughs, driving test tips, license guides, and more — all free on our YouTube channel.
-          </p>
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-center md:text-left">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-bold mb-3">DMV California videos</h1>
+              <p className="text-base text-white/90 max-w-xl">
+                Practice test walkthroughs, driving test tips, license guides, and more — all free on our YouTube channel.
+              </p>
+            </div>
+            <YouTubeCTA variant="subscribe" compact source="videos_page_header" className="mx-auto md:mx-0" />
+          </div>
         </div>
       </section>
 

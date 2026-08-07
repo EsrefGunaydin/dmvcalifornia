@@ -4,6 +4,7 @@ import Script from "next/script";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import ServiceWorkerRegistrar from "@/components/ServiceWorkerRegistrar";
+import { YOUTUBE_CHANNEL_URL } from "@/lib/constants";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -66,7 +67,7 @@ export default function RootLayout({
     "url": "https://dmvcalifornia.us",
     "logo": "https://dmvcalifornia.us/images/dmv-california-logo.png",
     "description": "DMV California Blog is your ultimate destination to learn about Driver License, Real ID, Driving Test, California DMV Quizzes, DMV Offices, Behind The Wheel Test",
-    "sameAs": []
+    "sameAs": [YOUTUBE_CHANNEL_URL]
   };
 
   const websiteSchema = {
