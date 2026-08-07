@@ -44,18 +44,18 @@ export default function DailyChallengeBanner({ variant = 'card' }: DailyChalleng
       return (
         <Link
           href="/practice-test/daily-challenge"
-          className="inline-flex items-center gap-2 bg-dmv-600 hover:bg-dmv-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
+          className="inline-flex items-center gap-2 bg-dmv-600 hover:bg-dmv-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg whitespace-nowrap"
         >
-          <CheckCircle className="w-5 h-5" /> Challenge complete — {score}%
+          <CheckCircle className="w-5 h-5 flex-shrink-0" /> Challenge complete — {score}%
         </Link>
       );
     }
     return (
       <Link
         href="/practice-test/daily-challenge"
-        className="inline-flex items-center gap-2 bg-dmv-600 hover:bg-dmv-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg"
+        className="inline-flex items-center gap-2 bg-dmv-600 hover:bg-dmv-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-colors shadow-lg whitespace-nowrap"
       >
-        <Calendar className="w-5 h-5" /> Daily Challenge
+        <Calendar className="w-5 h-5 flex-shrink-0" /> Daily Challenge
       </Link>
     );
   }
