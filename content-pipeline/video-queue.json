@@ -45,7 +45,9 @@
     {
       "quizId": "examen-dmv-espanol-3",
       "voice": "EXAVITQu4vr4xnSDxMaL",
-      "status": "ready"
+      "status": "published",
+      "videoId": "9p1XdqEaaH0",
+      "publishedAt": "2026-08-07T17:16:41.646Z"
     },
     {
       "quizId": "examen-dmv-espanol-4",
