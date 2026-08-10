@@ -127,7 +127,7 @@
       "target_length": 2000,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "truck driver",
         "CDL",
@@ -146,7 +146,8 @@
       "notes": "Largest unserved niche found in the July 2026 keyword research: the Central Valley Punjabi trucking community (Yuba City, Fresno, Bakersfield). Cover the Class A path: CDL permit, ELDT training requirement, skills test, medical certificate, and verified fees (commercial A/B original $100, renewal $59). Sensitive context to handle carefully and factually: news coverage of ~17,000 Punjabi truckers whose CDLs face revocation over the federal work-authorization dispute (Sikh Coalition / Asian Law Caucus lawsuit); explain who is affected (AB 60-issued CDLs) and who is not (standard-status CDL holders), without speculating about enforcement. Punjabi-language CDL schools rank here (Punjab Truck Driving School etc.); do not link competitors. Note which Central Valley DMV offices offer Punjabi audio tests.",
       "lang": "pa",
       "author": "DMV California",
-      "translations_target": "california-truck-driver-cdl-guide-2026"
+      "translations_target": "california-truck-driver-cdl-guide-2026",
+      "drafted_at": "2026-08-10"
     },
     {
       "slug": "california-real-id-guide-farsi",
