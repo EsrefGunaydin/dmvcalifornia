@@ -2,10 +2,19 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
-import type { KeywordHub as Hub, HubCard, HubSection } from '@/data/seo-hubs';
+import type { KeywordHub as Hub, HubCard, HubSection, HubRoadmap } from '@/data/seo-hubs';
 import HeroStampBadge from '@/components/seo/HeroStampBadge';
+import {
+  GraduationCap, FileCheck, Users, ClipboardCheck, BadgeCheck, ShieldAlert,
+  Cake, BookOpen, Car, Calendar, Building2, type LucideIcon,
+} from 'lucide-react';
 
 const SITE_URL = 'https://dmvcalifornia.us';
+
+const ROADMAP_ICONS: Record<string, LucideIcon> = {
+  GraduationCap, FileCheck, Users, ClipboardCheck, BadgeCheck, ShieldAlert,
+  Cake, BookOpen, Car, Calendar, Building2,
+};
 
 function ClockIcon() {
   return (
@@ -108,6 +117,51 @@ function CompactCard({ card }: { card: HubCard }) {
         <span className="text-xs text-gray-400 flex-shrink-0">{card.questions} Q</span>
       )}
     </Link>
+  );
+}
+
+function Roadmap({ roadmap }: { roadmap: HubRoadmap }) {
+  return (
+    <section className="mb-10">
+      <h2 className="text-2xl font-bold text-gray-900 mb-1">{roadmap.title}</h2>
+      {roadmap.subtitle && <p className="text-gray-600 mb-2">{roadmap.subtitle}</p>}
+      {roadmap.sourceLink && (
+        <a
+          href={roadmap.sourceLink.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-sm font-medium text-dmv-600 hover:text-dmv-800 hover:underline mb-5"
+        >
+          {roadmap.sourceLink.label} ↗
+        </a>
+      )}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {roadmap.steps.map((step, i) => {
+          const StepIcon = ROADMAP_ICONS[step.icon];
+          return (
+            <div key={step.title} className="relative bg-gray-50 rounded-xl border border-gray-200 p-5 pt-6">
+              <div className="flex items-start justify-between mb-3">
+                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-dmv-600 text-white font-bold flex items-center justify-center text-sm">
+                  {i + 1}
+                </span>
+                {StepIcon && (
+                  <span className="flex-shrink-0 w-12 h-12 rounded-full bg-dmv-50 flex items-center justify-center">
+                    <StepIcon className="w-7 h-7 text-dmv-600" />
+                  </span>
+                )}
+              </div>
+              <h3 className="font-bold text-gray-900 mb-1.5">{step.title}</h3>
+              <p className="text-sm text-gray-600 leading-relaxed">{step.description}</p>
+              {step.link && (
+                <Link href={step.link.href} className="inline-block mt-3 text-sm font-semibold text-dmv-600 hover:text-dmv-800">
+                  {step.link.label} →
+                </Link>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }
 
@@ -290,6 +344,8 @@ export default function KeywordHub({ config }: { config: Hub }) {
               {config.sections.map((s) => (
                 <Section key={s.title} section={s} />
               ))}
+
+              {config.roadmap && <Roadmap roadmap={config.roadmap} />}
 
               {/* YouTube embed */}
               {config.youtubeId && (

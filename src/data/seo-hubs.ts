@@ -46,6 +46,22 @@ export interface VehicleTab {
   active?: boolean;
 }
 
+export interface RoadmapStep {
+  title: string;
+  /** Lucide icon name, must be one registered in ROADMAP_ICONS in KeywordHub.tsx */
+  icon: string;
+  description: string;
+  link?: { href: string; label: string };
+}
+
+export interface HubRoadmap {
+  title: string;
+  subtitle?: string;
+  steps: RoadmapStep[];
+  /** Optional external reference link, e.g. the official DMV page this roadmap is based on. */
+  sourceLink?: { href: string; label: string };
+}
+
 export interface KeywordHub {
   /** URL: /<slug> */
   slug: string;
@@ -68,6 +84,8 @@ export interface KeywordHub {
   /** sidebar "License Requirements" card heading — defaults to "California License Requirements" if omitted */
   sidebarTitle?: string;
   vehicleTabs: VehicleTab[];
+  /** Optional numbered step-by-step visual roadmap, rendered full-width above the sidebar/content split. */
+  roadmap?: HubRoadmap;
   sections: HubSection[];
   sidebarRequirements: HubSidebarList[];
   helpfulResources: HubLink[];
@@ -365,6 +383,7 @@ export const HUBS: Record<string, KeywordHub> = {
       'senior knowledge test california dmv',
     ],
     breadcrumbLabel: 'Senior Practice Test',
+    sidebarTitle: 'Senior License Requirements',
     h1: 'Free California DMV Practice Test for Seniors (2026)',
     heroSubtitle:
       'Practice for the California DMV knowledge test — the same real questions seniors may be asked during in-person license renewal. Free, no signup, instant answers.',
@@ -376,40 +395,13 @@ export const HUBS: Record<string, KeywordHub> = {
     ],
     sections: [
       {
-        title: 'Full Practice Tests',
-        subtitle: 'Each test mirrors the real 36-question California DMV knowledge test (18+ version).',
+        title: 'Senior-Specific Practice Tests',
+        subtitle: 'Real questions on renewal rules, vision requirements, and re-examination — not the general written test.',
         variant: 'cards',
         cards: [
-          { href: '/practice-test/california-dmv-practice-test-2026', label: 'CA DMV Practice Test 2026', questions: 48, badge: '2026 NEW' },
-          { href: '/practice-test/dmv-simulation-test-1', label: 'DMV Knowledge Test 1', questions: 46 },
-          { href: '/practice-test/dmv-simulation-test-2', label: 'DMV Knowledge Test 2', questions: 46 },
-          { href: '/practice-test/dmv-simulation-test-3', label: 'DMV Knowledge Test 3', questions: 46 },
-          { href: '/practice-test/california-dmv-sample-questions', label: 'Sample DMV Questions', questions: 40 },
-          { href: '/practice-test/practice-test-mixed-review', label: 'Mixed Review Test', questions: 63 },
-        ],
-      },
-      {
-        title: 'Practice by Topic',
-        subtitle: 'Focus on the areas most commonly reviewed for senior renewal.',
-        variant: 'compact',
-        cards: [
-          { href: '/practice-test/practice-test-road-signs-and-markings', label: 'Road Signs & Markings', questions: 20 },
-          { href: '/practice-test/practice-test-traffic-signs-and-signals', label: 'Traffic Signs & Signals', questions: 20 },
-          { href: '/practice-test/practice-test-right-of-way-and-intersections', label: 'Right-of-Way & Intersections', questions: 20 },
-          { href: '/practice-test/practice-test-speed-limits-and-traffic-laws', label: 'Speed Limits & Traffic Laws', questions: 15 },
-          { href: '/practice-test/practice-test-safe-driving-and-defensive-techniques', label: 'Safe & Defensive Driving', questions: 19 },
-          { href: '/practice-test/practice-test-sharing-the-road', label: 'Sharing the Road', questions: 15 },
-          { href: '/practice-test/practice-test-parking-and-vehicle-control', label: 'Parking & Vehicle Control', questions: 18 },
-          { href: '/practice-test/practice-test-weather-and-night-driving', label: 'Weather & Night Driving', questions: 14 },
-        ],
-      },
-      {
-        title: 'More Study Tools',
-        variant: 'cards',
-        cards: [
-          { href: '/california-dmv-road-signs-test', label: 'Road Signs Test', description: 'All 38 California signs with real images.' },
-          { href: '/california-dmv-cheat-sheet', label: 'DMV Cheat Sheet', description: 'Every key number and rule on one page.' },
-          { href: '/20-hardest-dmv-written-test-questions', label: '20 Hardest Questions', description: 'The trickiest, most-missed questions.' },
+          { href: '/practice-test/senior-driver-renewal-test-1', label: 'Senior Driver Renewal Test #1', questions: 20 },
+          { href: '/practice-test/senior-driver-renewal-test-2', label: 'Senior Driver Renewal Test #2', questions: 20 },
+          { href: '/practice-test/senior-driver-renewal-test-3', label: 'Senior Driver Renewal Test #3', questions: 20 },
         ],
       },
     ],
@@ -419,9 +411,9 @@ export const HUBS: Record<string, KeywordHub> = {
         items: [
           'Drivers 70+ must renew in person — online/mail renewal not available',
           'A vision test is required at every in-person renewal',
-          'The DMV may require a knowledge test based on driving record or health',
+          'AB 2687 waives the written knowledge test for most renewing drivers with a clean recent record',
+          'An expired-over-a-year license, or at-fault collisions/violations, can still trigger a required written test',
           'Drivers with certain medical conditions may need physician clearance',
-          'Standard renewal fee applies ($46 for Class C)',
         ],
       },
       {
@@ -435,24 +427,23 @@ export const HUBS: Record<string, KeywordHub> = {
       },
     ],
     helpfulResources: [
-      { href: 'https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/', label: 'Official CA Driver Handbook', external: true },
+      { href: 'https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/senior-drivers/', label: 'Official DMV Senior Drivers Guide', external: true },
       { href: '/california-senior-driver-license-guide-2026', label: 'Senior Driver License Guide' },
       { href: '/dmv-appointment', label: 'Book a DMV Appointment' },
-      { href: '/california-dmv-fees', label: 'DMV Fees' },
       { href: '/dmv-offices', label: 'Find a DMV Office' },
     ],
     faq: [
       {
         q: 'Do seniors have to take a knowledge test in California?',
-        a: 'Not automatically — but California DMV can require a knowledge test for senior drivers who have violations on their record, fail the vision test, or show signs of unsafe driving. The DMV can also require a test after a medical report. Practicing now removes any uncertainty.',
+        a: 'Not automatically. Since AB 2687 took effect in October 2024, most renewing drivers with a clean recent record skip the written test entirely. It can still be required if the license lapsed for over a year or the record shows at-fault collisions or violations.',
       },
       {
         q: 'At what age does California require in-person DMV renewal?',
         a: 'Starting at age 70, California requires all renewals to be done in person at a DMV office. Online, mail, and kiosk renewals are not available for drivers 70 and older.',
       },
       {
-        q: 'What score do seniors need to pass the California DMV knowledge test?',
-        a: 'Applicants 18 and older take a 36-question version of the knowledge test and need 30 correct (83%) to pass. The questions cover road signs, traffic laws, right-of-way, and safe driving.',
+        q: 'Is the written test really waived for seniors now?',
+        a: 'For most renewing drivers 70+ with a clean recent driving record, yes, under AB 2687. The in-person visit and vision screening are still required either way.',
       },
       {
         q: 'How long is a California driver license valid for seniors?',
@@ -464,11 +455,10 @@ export const HUBS: Record<string, KeywordHub> = {
       },
     ],
     related: [
-      { href: '/california-dmv-practice-test', label: 'CA DMV Practice Test' },
       { href: '/california-senior-driver-license-guide-2026', label: 'Senior Driver Guide' },
       { href: '/dmv-appointment', label: 'Book a DMV Appointment' },
-      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
       { href: '/dmv-offices', label: 'Find a DMV Office' },
+      { href: '/california-dmv-practice-test', label: 'General CA DMV Practice Test' },
     ],
   },
 
@@ -2153,6 +2143,536 @@ export const HUBS: Record<string, KeywordHub> = {
       { href: '/california-dmv-road-signs-test', label: 'Road signs test' },
       { href: '/practice-test', label: 'All practice tests' },
       { href: '/california-dmv-cheat-sheet', label: 'DMV cheat sheet' },
+    ],
+  },
+
+  'new-to-california-dmv-guide': {
+    slug: 'new-to-california-dmv-guide',
+    sidebarTitle: 'New Resident Requirements',
+    metaTitle: 'New to California DMV Guide 2026 — License Transfer & Registration Tests',
+    metaDescription:
+      'Just moved to California? Free practice tests on the 10-day license transfer rule, 20-day vehicle registration deadline, insurance minimums, and smog rules for new residents.',
+    keywords: [
+      'new california resident dmv',
+      'california dmv new resident guide',
+      'transfer out of state license to california',
+      'california 10 day rule license',
+      'california 20 day vehicle registration',
+    ],
+    breadcrumbLabel: 'New to California',
+    h1: 'New to California: DMV Rules for New Residents (2026)',
+    heroSubtitle:
+      'Free practice tests on the rules that trip up new California residents most: the 10-day license window, the 20-day registration deadline, insurance minimums, and smog requirements.',
+    trustLine: 'Free · No signup · Sourced from dmv.ca.gov and the California Vehicle Code',
+    vehicleTabs: [],
+    sections: [
+      {
+        title: 'New Resident Practice Tests',
+        subtitle: 'Real questions on license transfer, vehicle registration, and residency exceptions.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/new-to-california-license-transfer-test-1', label: 'License Transfer Test #1', questions: 18 },
+          { href: '/practice-test/new-to-california-vehicle-registration-test-2', label: 'Vehicle Registration Test #2', questions: 18 },
+          { href: '/practice-test/new-to-california-residency-exceptions-test-3', label: 'Residency Exceptions Test #3', questions: 20 },
+        ],
+      },
+    ],
+    sidebarRequirements: [
+      {
+        title: 'Key Deadlines',
+        items: [
+          '10 days to report/transfer an out-of-state driver license after becoming a CA resident',
+          '20 days to register an out-of-state vehicle with DMV',
+          'New residents generally do not have to retake the written or driving test to transfer a valid license',
+          'California minimum liability insurance: 30/60/15 (effective Jan 1, 2025)',
+        ],
+      },
+      {
+        title: 'Also Check',
+        items: [
+          'Newly-registered out-of-state vehicles are typically subject to a smog check',
+          'Active-duty military and their dependents have separate residency rules',
+          'REAL ID requires proof of identity, SSN, and CA residency documents',
+        ],
+      },
+    ],
+    helpfulResources: [
+      { href: 'https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/new-to-california/', label: 'Official DMV New to California Guide', external: true },
+      { href: '/new-to-california-driver-guide-2026', label: 'New to California Driver Guide' },
+      { href: '/dmv-appointment', label: 'Book a DMV Appointment' },
+      { href: '/california-dmv-fees', label: 'DMV Fees' },
+    ],
+    faq: [
+      {
+        q: 'How long do I have to get a California driver license after moving here?',
+        a: 'You have 10 days to report or transfer an out-of-state license once you become a California resident.',
+      },
+      {
+        q: 'How long do I have to register my car in California?',
+        a: 'You have 20 days from establishing residency to register an out-of-state vehicle with the California DMV.',
+      },
+      {
+        q: 'Do I have to retake the written or driving test as a new resident?',
+        a: 'Generally no, if your out-of-state license is valid, you can transfer it without retesting. Certain circumstances (an expired license, or license from a country without reciprocity) may still require testing.',
+      },
+      {
+        q: 'Is this new-resident practice test free?',
+        a: 'Yes, every test on this page is 100% free, unlimited, and needs no signup.',
+      },
+    ],
+    related: [
+      { href: '/new-to-california-driver-guide-2026', label: 'New to California Guide' },
+      { href: '/california-dmv-practice-test', label: 'General CA DMV Practice Test' },
+      { href: '/california-dmv-fees', label: 'DMV Fees' },
+      { href: '/dmv-offices', label: 'Find a DMV Office' },
+    ],
+  },
+
+  'california-teen-driver-test': {
+    slug: 'california-teen-driver-test',
+    sidebarTitle: 'Teen Driver Requirements',
+    metaTitle: 'California Teen Driver Practice Test 2026 — Provisional License Rules',
+    metaDescription:
+      'Free practice tests on California provisional license rules for teens: passenger and nighttime restrictions, permit hour requirements, and the zero-tolerance DUI law.',
+    keywords: [
+      'california teen driver test',
+      'california provisional license rules',
+      'california learner permit requirements',
+      'teen driver practice test california',
+      'california provisional license restrictions',
+    ],
+    breadcrumbLabel: 'Teen Drivers',
+    h1: 'California Teen Driver & Provisional License Test (2026)',
+    heroSubtitle:
+      'Free practice tests built around the real provisional-license rules: permit hours, passenger and nighttime restrictions, phone and DUI law for drivers under 18.',
+    trustLine: 'Free · No signup · Sourced from dmv.ca.gov and the California Vehicle Code',
+    vehicleTabs: [],
+    roadmap: {
+      title: 'Teen driver roadmap',
+      subtitle: 'The path from learner’s permit to full license, step by step.',
+      sourceLink: { href: 'https://www.dmv.ca.gov/portal/teen-drivers/', label: 'See the official DMV Teen Driver Roadmap' },
+      steps: [
+        {
+          title: 'Complete driver’s education',
+          icon: 'GraduationCap',
+          description: '30 hours of classroom (or approved online) driver education, required before applying for a permit.',
+        },
+        {
+          title: 'Apply for your permit',
+          icon: 'FileCheck',
+          description: 'Apply at 15½ years old and pass the written knowledge test at a DMV office.',
+          link: { href: '#tests', label: 'Practice the written test' },
+        },
+        {
+          title: 'Practice with a licensed adult',
+          icon: 'Users',
+          description: '6 hours of professional behind-the-wheel training, plus 50 hours of supervised practice, including 10 hours at night.',
+        },
+        {
+          title: 'Take the driving test',
+          icon: 'ClipboardCheck',
+          description: 'Pass the behind-the-wheel driving test at a DMV office to get your provisional license.',
+        },
+        {
+          title: 'Get your provisional license',
+          icon: 'BadgeCheck',
+          description: 'You can now drive on your own, with passenger and nighttime restrictions in place for the first year.',
+        },
+        {
+          title: 'Follow the restrictions',
+          icon: 'ShieldAlert',
+          description: 'No passengers under 20 unsupervised, no driving 11 PM–5 AM, no phone use, zero-tolerance DUI, until age 18 or 12 months, whichever comes first.',
+        },
+      ],
+    },
+    sections: [
+      {
+        title: 'Teen Driver Practice Tests',
+        subtitle: 'Real questions on permit requirements, passenger/nighttime restrictions, and teen DUI law.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/teen-driver-provisional-license-test-1', label: 'Provisional License Test #1', questions: 20 },
+          { href: '/practice-test/teen-driver-provisional-license-test-2', label: 'Provisional License Test #2', questions: 20 },
+          { href: '/practice-test/teen-driver-provisional-license-test-3', label: 'Provisional License Test #3', questions: 20 },
+        ],
+      },
+    ],
+    sidebarRequirements: [
+      {
+        title: 'Permit & License Path',
+        items: [
+          'Instruction permit available at 15½',
+          '30 hours of classroom driver education',
+          '6 hours of professional behind-the-wheel training',
+          '50 hours of practice with a parent/guardian, including 10 hours at night',
+        ],
+      },
+      {
+        title: 'Provisional License Restrictions',
+        items: [
+          'No passengers under 20 unless supervised by a licensed driver 25 or older',
+          'No driving 11 PM to 5 AM without a supervising adult (with limited exceptions)',
+          'All cell phone use is banned while driving, even hands-free, under age 18',
+          'Zero-tolerance DUI law: any measurable BAC (0.01%+) is a violation under 21',
+          'Restrictions end at age 18 or 12 months after issuance, whichever comes first',
+        ],
+      },
+    ],
+    helpfulResources: [
+      { href: 'https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/teens/', label: 'Official DMV Teen Drivers Guide', external: true },
+      { href: '/california-teen-driver-complete-guide-2026', label: 'Teen Driver Complete Guide' },
+      { href: '/california-dmv-drug-and-alcohol-test', label: 'Drug & Alcohol Test' },
+    ],
+    faq: [
+      {
+        q: 'How old do you have to be to get a learner permit in California?',
+        a: 'You can apply for an instruction permit at 15½ years old, after completing driver education.',
+      },
+      {
+        q: 'When do provisional license restrictions end?',
+        a: 'They end at age 18, or 12 months after the provisional license was issued, whichever comes first.',
+      },
+      {
+        q: 'Can a teen driver use a hands-free phone while driving?',
+        a: 'No. California bans all cell phone use, including hands-free, for drivers under 18.',
+      },
+      {
+        q: 'Who can ride as a passenger with a new teen driver?',
+        a: 'For the first 12 months, passengers under 20 are not allowed unless a licensed driver 25 or older is also in the car (with a few specific exceptions).',
+      },
+      {
+        q: 'Is this teen driver practice test free?',
+        a: 'Yes, every test on this page is 100% free, unlimited, and needs no signup.',
+      },
+    ],
+    related: [
+      { href: '/california-teen-driver-complete-guide-2026', label: 'Teen Driver Guide' },
+      { href: '/california-dmv-practice-test', label: 'General CA DMV Practice Test' },
+      { href: '/california-dmv-drug-and-alcohol-test', label: 'Drug & Alcohol Test' },
+      { href: '/practice-test/flashcards', label: 'Flashcards' },
+    ],
+  },
+
+  'california-disabled-driver-guide': {
+    slug: 'california-disabled-driver-guide',
+    sidebarTitle: 'Disability & Placard Info',
+    metaTitle: 'California Disabled Placard & Adaptive Driving Test 2026',
+    metaDescription:
+      'Free practice tests on California DP placards, DP/DV plates, adaptive equipment, and driving evaluations for people with disabilities.',
+    keywords: [
+      'california disabled placard test',
+      'california dp placard rules',
+      'disabled parking placard california',
+      'adaptive driving california dmv',
+      'disabled veteran plates california',
+    ],
+    breadcrumbLabel: 'People With Disabilities',
+    h1: 'California Disabled Placard & Adaptive Driving Test (2026)',
+    heroSubtitle:
+      'Free practice tests on DP placard and plate rules, where they can be used, adaptive equipment requirements, and the DMV driving evaluation process.',
+    trustLine: 'Free · No signup · Sourced from dmv.ca.gov',
+    vehicleTabs: [],
+    sections: [
+      {
+        title: 'Disability & Placard Practice Tests',
+        subtitle: 'Real questions on DP placards/plates, adaptive equipment, and driving evaluations.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/disabled-parking-placard-test-1', label: 'DP Placards & Plates Test #1', questions: 20 },
+          { href: '/practice-test/disabled-parking-placard-test-2', label: 'Placard Use & Penalties Test #2', questions: 20 },
+          { href: '/practice-test/disabled-parking-placard-test-3', label: 'Adaptive Equipment Test #3', questions: 20 },
+        ],
+      },
+    ],
+    sidebarRequirements: [
+      {
+        title: 'DP Placards & Plates',
+        items: [
+          'Application requires physician certification on a DMV form',
+          'Permanent and temporary placard options are available',
+          'Placards allow free parking at metered spaces, with limits',
+          'Misusing a placard (e.g. using someone else’s) carries real penalties',
+        ],
+      },
+      {
+        title: 'Adaptive Driving',
+        items: [
+          'DMV can issue a restricted license requiring specific vehicle modifications',
+          'A driving evaluation may be required before or after a medical condition changes',
+          'Restriction codes on the license note required equipment, like hand controls',
+        ],
+      },
+    ],
+    helpfulResources: [
+      { href: 'https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/people-with-disabilities/', label: 'Official DMV Guide for People With Disabilities', external: true },
+      { href: '/california-disabled-driver-license-guide-2026', label: 'Disabled Driver License Guide' },
+      { href: '/dmv-appointment', label: 'Book a DMV Appointment' },
+    ],
+    faq: [
+      {
+        q: 'How do I get a DP placard in California?',
+        a: 'A licensed physician or other qualifying medical professional must certify your eligibility on the DMV application form, which you then submit to DMV.',
+      },
+      {
+        q: 'Can I park for free at a meter with a DP placard?',
+        a: 'Yes, vehicles displaying a valid DP placard or plate can park at metered spaces without paying, subject to posted local rules.',
+      },
+      {
+        q: 'What happens if I misuse someone else’s DP placard?',
+        a: 'Misusing a placard, including using one issued to someone else, is a citable offense with real fines.',
+      },
+      {
+        q: 'Is this practice test free?',
+        a: 'Yes, every test on this page is 100% free, unlimited, and needs no signup.',
+      },
+    ],
+    related: [
+      { href: '/california-disabled-driver-license-guide-2026', label: 'Disabled Driver Guide' },
+      { href: '/california-dmv-practice-test', label: 'General CA DMV Practice Test' },
+      { href: '/dmv-offices', label: 'Find a DMV Office' },
+    ],
+  },
+
+  'california-veterans-military-dmv-guide': {
+    slug: 'california-veterans-military-dmv-guide',
+    sidebarTitle: 'Veterans & Military Info',
+    metaTitle: 'California Veterans & Military DMV Practice Test 2026',
+    metaDescription:
+      'Free practice tests on the VETERAN license designation, SCRA registration extensions for active duty, and disabled veteran (DV) plates in California.',
+    keywords: [
+      'california veteran dmv test',
+      'california veteran designation license',
+      'scra california vehicle registration',
+      'california dv plates',
+      'military dmv california',
+    ],
+    breadcrumbLabel: 'Veterans & Active Military',
+    h1: 'California Veterans & Active Military DMV Test (2026)',
+    heroSubtitle:
+      'Free practice tests on the VETERAN designation, SCRA extensions for active-duty members, and veteran and disabled veteran (DV) license plates.',
+    trustLine: 'Free · No signup · Sourced from dmv.ca.gov and CalVet',
+    vehicleTabs: [],
+    sections: [
+      {
+        title: 'Veterans & Military Practice Tests',
+        subtitle: 'Real questions on veteran designation, SCRA extensions, and military/DV plates.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/veteran-designation-license-test-1', label: 'Veteran Designation Test #1', questions: 18 },
+          { href: '/practice-test/scra-military-registration-test-2', label: 'SCRA & Registration Test #2', questions: 18 },
+          { href: '/practice-test/veteran-dv-plates-test-3', label: 'Veteran & DV Plates Test #3', questions: 20 },
+        ],
+      },
+    ],
+    sidebarRequirements: [
+      {
+        title: 'Veteran Designation',
+        items: [
+          'Adds "VETERAN" to a CA driver license or ID card',
+          'Requires proof of service, typically a DD-214',
+          'Can be applied for through DMV or a County Veterans Service Officer',
+        ],
+      },
+      {
+        title: 'Active Duty Rules',
+        items: [
+          'SCRA can extend license/registration renewal deadlines for deployed or out-of-state active duty members',
+          'Active-duty members stationed in CA from another state are generally exempt from getting a CA license',
+          'Disabled veteran (DV) plates are limited to one vehicle per qualifying veteran',
+        ],
+      },
+    ],
+    helpfulResources: [
+      { href: 'https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/veterans-and-active-duty-military/', label: 'Official DMV Veterans & Military Guide', external: true },
+      { href: '/california-veterans-active-military-dmv-guide-2026', label: 'Veterans & Military DMV Guide' },
+      { href: 'https://www.calvet.ca.gov/VetServices/Pages/Veteran-Designation-on-California-Driver-License-and-ID-Card.aspx', label: 'CalVet Veteran Designation', external: true },
+    ],
+    faq: [
+      {
+        q: 'How do I add "VETERAN" to my California license?',
+        a: 'Apply through DMV or a County Veterans Service Officer and provide proof of service, typically your DD-214.',
+      },
+      {
+        q: 'Do active-duty military stationed in California need a CA license?',
+        a: 'Generally no. Active-duty members stationed in California on orders from another state are typically exempt from getting a California license while on active duty.',
+      },
+      {
+        q: 'Does deployment extend my California license or registration renewal?',
+        a: 'The Servicemembers Civil Relief Act (SCRA) can extend renewal deadlines for active-duty members who are deployed or stationed out of state.',
+      },
+      {
+        q: 'Is this veterans & military practice test free?',
+        a: 'Yes, every test on this page is 100% free, unlimited, and needs no signup.',
+      },
+    ],
+    related: [
+      { href: '/california-veterans-active-military-dmv-guide-2026', label: 'Veterans & Military Guide' },
+      { href: '/california-dmv-practice-test', label: 'General CA DMV Practice Test' },
+      { href: '/dmv-offices', label: 'Find a DMV Office' },
+    ],
+  },
+
+  'california-boater-card-test': {
+    slug: 'california-boater-card-test',
+    sidebarTitle: 'Boater Card Requirements',
+    metaTitle: 'California Boater Card Practice Test 2026 — Free Boating Safety Quiz',
+    metaDescription:
+      'Free practice tests for the California Boater Card: boating law, BUI penalties, required safety equipment, and life jacket rules.',
+    keywords: [
+      'california boater card practice test',
+      'california boater card test',
+      'california boating safety course',
+      'california bui law',
+      'boat registration california',
+    ],
+    breadcrumbLabel: 'Boat & Vessel Owners',
+    h1: 'California Boater Card Practice Test (2026)',
+    heroSubtitle:
+      'Free practice tests on California Boater Card requirements, vessel registration, BUI law, and required safety equipment.',
+    trustLine: 'Free · No signup · Sourced from the CA Division of Boating and Waterways and dmv.ca.gov',
+    vehicleTabs: [],
+    sections: [
+      {
+        title: 'Boater Card Practice Tests',
+        subtitle: 'Real questions on the Boater Card, registration, safety gear, and BUI law.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/california-boater-card-test-1', label: 'California Boater Card Test #1', questions: 20 },
+          { href: '/practice-test/california-boater-card-test-2', label: 'California Boater Card Test #2', questions: 20 },
+          { href: '/practice-test/california-boater-card-test-3', label: 'California Boater Card Test #3', questions: 20 },
+        ],
+      },
+    ],
+    sidebarRequirements: [
+      {
+        title: 'Boater Card',
+        items: [
+          'Required for all ages to operate a motorized vessel in California as of Jan 1, 2025',
+          'Earned by passing a DMV-approved, NASBLA-certified boater safety course/exam',
+          'Card is valid for life once earned',
+        ],
+      },
+      {
+        title: 'Registration & Safety',
+        items: [
+          'Most motorized vessels need a CF number and registration',
+          'Non-motorized vessels are generally exempt from registration',
+          'BUI (Boating Under the Influence) carries real penalties, similar to driving DUI',
+          'Life jackets (PFDs) are required for specific ages and vessel types',
+        ],
+      },
+    ],
+    helpfulResources: [
+      { href: 'https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/boat-vessel-owners/', label: 'Official DMV Boat & Vessel Owners Guide', external: true },
+      { href: '/california-boat-vessel-owner-guide-2026', label: 'Boat & Vessel Owner Guide' },
+      { href: 'https://californiaboatercard.com/about-the-card/', label: 'California Boater Card Program', external: true },
+    ],
+    faq: [
+      {
+        q: 'Who needs a California Boater Card?',
+        a: 'As of January 1, 2025, anyone operating a motorized vessel in California needs a Boater Card, regardless of age.',
+      },
+      {
+        q: 'How do I get a California Boater Card?',
+        a: 'Pass a DMV-approved, NASBLA-certified boating safety course or exam. The card is valid for life once earned.',
+      },
+      {
+        q: 'Do I need to register my boat in California?',
+        a: 'Most motorized vessels need a CF number and registration through DMV. Non-motorized vessels like canoes and kayaks are generally exempt.',
+      },
+      {
+        q: 'Is this boater card practice test free?',
+        a: 'Yes, every test on this page is 100% free, unlimited, and needs no signup.',
+      },
+    ],
+    related: [
+      { href: '/california-boat-vessel-owner-guide-2026', label: 'Boat & Vessel Owner Guide' },
+      { href: '/california-dmv-practice-test', label: 'General CA DMV Practice Test' },
+      { href: '/dmv-offices', label: 'Find a DMV Office' },
+    ],
+  },
+
+  'california-bicyclist-pedestrian-guide': {
+    slug: 'california-bicyclist-pedestrian-guide',
+    sidebarTitle: 'Bicyclist & Pedestrian Info',
+    metaTitle: 'California Bicyclist & Pedestrian Law Practice Test 2026',
+    metaDescription:
+      'Free practice tests on California e-bike classes, the Daylighting Law, three-foot passing law, and pedestrian crosswalk rights.',
+    keywords: [
+      'california bicyclist law test',
+      'california e-bike class rules',
+      'california daylighting law',
+      'california pedestrian right of way',
+      'california bike lane law',
+    ],
+    breadcrumbLabel: 'Bicyclists & Pedestrians',
+    h1: 'California Bicyclist & Pedestrian Safety Test (2026)',
+    heroSubtitle:
+      'Free practice tests on e-bike classes, bike lane rules, the Daylighting Law, the three-foot passing law, and pedestrian right-of-way.',
+    trustLine: 'Free · No signup · Sourced from the California Vehicle Code and local traffic-safety agencies',
+    vehicleTabs: [],
+    sections: [
+      {
+        title: 'Bicyclist & Pedestrian Practice Tests',
+        subtitle: 'Real questions on e-bikes, bike lanes, the Daylighting Law, and pedestrian rules.',
+        variant: 'cards',
+        cards: [
+          { href: '/practice-test/california-bike-lane-ebike-law-test-1', label: 'E-Bike & Bike Lane Law Test #1', questions: 20 },
+          { href: '/practice-test/california-daylighting-crosswalk-law-test-2', label: 'Daylighting & Crosswalk Law Test #2', questions: 20 },
+          { href: '/practice-test/california-pedestrian-bicycle-equipment-test-3', label: 'Pedestrian & Equipment Test #3', questions: 18 },
+        ],
+      },
+    ],
+    sidebarRequirements: [
+      {
+        title: 'E-Bike Classes',
+        items: [
+          'Class 1 & 2: pedal-assist or throttle up to 20 mph, no minimum age',
+          'Class 3: pedal-assist up to 28 mph, minimum age 16, helmet required',
+          'Riders under 18 must wear a helmet on any class of bicycle or e-bike',
+        ],
+      },
+      {
+        title: 'Key Laws',
+        items: [
+          'Daylighting Law restricts parking near crosswalks/intersections (20 ft standard, 15 ft with a curb extension)',
+          'Drivers must give bicyclists at least 3 feet when passing',
+          'Freedom to Walk Act decriminalized safely crossing outside a crosswalk when no vehicle is an immediate hazard',
+          'Bikes need a front lamp and rear reflector for night riding',
+        ],
+      },
+    ],
+    helpfulResources: [
+      { href: 'https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/bicyclists-and-pedestrians/', label: 'Official DMV Bicyclist & Pedestrian Guide', external: true },
+      { href: '/california-bicyclist-pedestrian-safety-guide-2026', label: 'Bicyclist & Pedestrian Safety Guide' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
+    ],
+    faq: [
+      {
+        q: 'What is California’s Daylighting Law?',
+        a: 'It restricts parking within a set distance of crosswalks and intersections (20 feet, or 15 feet where there is a curb extension) so drivers and pedestrians can see each other better.',
+      },
+      {
+        q: 'Do e-bike riders need a helmet in California?',
+        a: 'Riders under 18 need a helmet on any e-bike. Class 3 e-bike riders need a helmet regardless of age.',
+      },
+      {
+        q: 'How much room must a driver give a bicyclist when passing?',
+        a: 'California’s three-foot law requires drivers to leave at least three feet of space when passing a bicyclist.',
+      },
+      {
+        q: 'Is jaywalking illegal in California?',
+        a: 'Under the Freedom to Walk Act, pedestrians can cross outside a crosswalk if it is safe to do so and no vehicle is an immediate hazard. Crossing unsafely is still citable.',
+      },
+      {
+        q: 'Is this bicyclist & pedestrian practice test free?',
+        a: 'Yes, every test on this page is 100% free, unlimited, and needs no signup.',
+      },
+    ],
+    related: [
+      { href: '/california-bicyclist-pedestrian-safety-guide-2026', label: 'Bicyclist & Pedestrian Guide' },
+      { href: '/california-dmv-practice-test', label: 'General CA DMV Practice Test' },
+      { href: '/california-dmv-road-signs-test', label: 'Road Signs Test' },
     ],
   },
 };

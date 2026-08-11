@@ -6,6 +6,7 @@ import PracticeTestsContent from '@/components/PracticeTestsContent';
 import {
   TriangleAlert, ClipboardList, Wine, SquareParking, Gauge,
   Flame, BookOpen, CreditCard, Layers, Navigation, Globe, Zap, RotateCcw, Shuffle,
+  UserCheck, MapPin, GraduationCap, Accessibility, Shield, Anchor, Bike,
 } from 'lucide-react';
 import DailyChallengeBanner from '@/components/DailyChallengeBanner';
 import { getAllFixedQuizzes } from '@/lib/allQuizzes';
@@ -86,6 +87,7 @@ export default function PracticeTestsPage() {
               { href: '/california-dmv-test-study-guide', Icon: BookOpen, title: 'Study Guide', desc: 'A 7-step plan from handbook to full marathon.' },
               { href: '/california-dmv-fees', Icon: CreditCard, title: 'DMV Fees', desc: 'License, REAL ID, and registration costs for 2026.' },
               { href: '/practice-test/wrong-answers', Icon: RotateCcw, title: 'Review Your Mistakes', desc: 'Retry every question you got wrong across all tests.' },
+              { href: '/california-dmv-practice-test-for-seniors', Icon: UserCheck, title: 'Senior Drivers', desc: 'Renewal rules, vision tests, and re-examination for drivers 70+.' },
             ].map(({ href, Icon: CardIcon, title, desc, isNew }) => (
               <Link key={href} href={href} className="flex items-center gap-4 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
                 <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
@@ -102,6 +104,34 @@ export default function PracticeTestsPage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </div>
+
+        {/* Special Interest Driver Guides */}
+        <div className="container mx-auto px-4 pt-12">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">Special interest driver guides</h2>
+            <p className="text-gray-600 mb-6">Practice tests and DMV rules for specific situations and drivers.</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                { href: '/new-to-california-dmv-guide', Icon: MapPin, title: 'New to California', desc: '10-day license transfer and 20-day registration rules.' },
+                { href: '/california-teen-driver-test', Icon: GraduationCap, title: 'Teen Drivers', desc: 'Provisional license rules, from permit to full license.' },
+                { href: '/california-disabled-driver-guide', Icon: Accessibility, title: 'People With Disabilities', desc: 'DP placards, plates, and adaptive driving rules.' },
+                { href: '/california-veterans-military-dmv-guide', Icon: Shield, title: 'Veterans & Active Military', desc: 'Veteran designation, SCRA extensions, and DV plates.' },
+                { href: '/california-boater-card-test', Icon: Anchor, title: 'Boat & Vessel Owners', desc: 'California Boater Card, registration, and BUI law.' },
+                { href: '/california-bicyclist-pedestrian-guide', Icon: Bike, title: 'Bicyclists & Pedestrians', desc: 'E-bike classes, the Daylighting Law, and right-of-way.' },
+              ].map(({ href, Icon: CardIcon, title, desc }) => (
+                <Link key={href} href={href} className="flex items-center gap-4 bg-white rounded-xl border-2 border-gray-200 p-5 hover:border-primary/40 hover:shadow-md transition-all group">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-gray-100 group-hover:bg-primary/10 transition-colors flex items-center justify-center">
+                    <CardIcon className="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" />
+                  </div>
+                  <span>
+                    <span className="font-bold text-gray-900 group-hover:text-primary transition-colors">{title}</span>
+                    <span className="block text-sm text-gray-600">{desc}</span>
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
 

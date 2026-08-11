@@ -17,6 +17,7 @@ import hindiQuizzesData from '@/data/hi-quizzes.json';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
 import nyQuizzesData from '@/data/ny-quizzes.json';
+import audienceQuizzesData from '@/data/audience-quizzes.json';
 
 /** Every fixed, pre-authored quiz across all languages, used by the practice-test
  * hub, individual quiz pages, and wrong-answers review. */
@@ -39,5 +40,6 @@ export function getAllFixedQuizzes(): Quiz[] {
     ...motorcycleQuizzesData.quizzes,
     ...commercialQuizzesData.quizzes,
     ...nyQuizzesData.quizzes,
+    ...audienceQuizzesData.quizzes,
   ] as Quiz[];
 }

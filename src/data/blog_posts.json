@@ -1061,7 +1061,13 @@
         "photo_url": "https://www.pexels.com/photo/smiling-woman-sitting-in-a-new-car-at-the-car-salon-and-showing-car-keys-7144209/"
       },
       "metaTitle": "New to California",
-      "metaDescription": "Just moved to California? How to get your CA driver license and register your vehicle: deadlines, costs, documents, and what to do first."
+      "metaDescription": "Just moved to California? How to get your CA driver license and register your vehicle: deadlines, costs, documents, and what to do first.",
+      "testCta": {
+        "heading": "Practice the new-resident rules",
+        "blurb": "Test yourself on the 10-day license transfer rule, the 20-day vehicle registration deadline, and insurance minimums for new California residents.",
+        "href": "/new-to-california-dmv-guide",
+        "label": "Take the new resident practice test"
+      }
     },
     {
       "id": 9030,
@@ -1088,7 +1094,13 @@
         "photo_url": "https://www.pexels.com/photo/photo-of-man-driving-a-car-2537603/"
       },
       "metaTitle": "California Bicyclist & Pedestrian Safety Laws 2026",
-      "metaDescription": "California traffic laws for sharing the road with cyclists and pedestrians: rights of way, minimum passing distance, crosswalk rules, and fines."
+      "metaDescription": "California traffic laws for sharing the road with cyclists and pedestrians: rights of way, minimum passing distance, crosswalk rules, and fines.",
+      "testCta": {
+        "heading": "Practice California bike & pedestrian law",
+        "blurb": "Test yourself on e-bike classes, the Daylighting Law, the three-foot passing law, and pedestrian right-of-way.",
+        "href": "/california-bicyclist-pedestrian-guide",
+        "label": "Take the bicyclist & pedestrian practice test"
+      }
     },
     {
       "id": 9029,
@@ -1115,7 +1127,13 @@
         "photo_url": "https://www.pexels.com/photo/peron-writing-on-a-report-of-adoption-document-8301233/"
       },
       "metaTitle": "California Boat & Vessel Owner Guide 2026",
-      "metaDescription": "Everything California boat owners need in 2026: boater card requirements, vessel registration, title transfers, fees, and renewal deadlines."
+      "metaDescription": "Everything California boat owners need in 2026: boater card requirements, vessel registration, title transfers, fees, and renewal deadlines.",
+      "testCta": {
+        "heading": "Practice for the California Boater Card",
+        "blurb": "Test yourself on Boater Card requirements, vessel registration, BUI law, and required safety equipment.",
+        "href": "/california-boater-card-test",
+        "label": "Take the boater card practice test"
+      }
     },
     {
       "id": 9028,
@@ -1172,7 +1190,13 @@
         "photo_url": "https://www.pexels.com/photo/open-desert-highway-leading-to-mountain-range-31325150/"
       },
       "metaTitle": "California DMV Guide for Veterans & Active Military 2026",
-      "metaDescription": "DMV benefits for California veterans and military: free license plates, fee waivers, expedited service, and out-of-state license transfer rules."
+      "metaDescription": "DMV benefits for California veterans and military: free license plates, fee waivers, expedited service, and out-of-state license transfer rules.",
+      "testCta": {
+        "heading": "Practice the veteran & military DMV rules",
+        "blurb": "Test yourself on the VETERAN license designation, SCRA registration extensions, and disabled veteran (DV) plates.",
+        "href": "/california-veterans-military-dmv-guide",
+        "label": "Take the veterans & military practice test"
+      }
     },
     {
       "id": 9026,
@@ -1199,7 +1223,13 @@
         "photo_url": "https://www.pexels.com/photo/woman-hands-holding-steering-wheel-12932833/"
       },
       "metaTitle": "California Disabled Driver Guide 2026",
-      "metaDescription": "How to get a California disabled parking placard or license plate, adaptive vehicle modifications, and DMV accommodations for disabled drivers."
+      "metaDescription": "How to get a California disabled parking placard or license plate, adaptive vehicle modifications, and DMV accommodations for disabled drivers.",
+      "testCta": {
+        "heading": "Practice the DP placard rules",
+        "blurb": "Test yourself on DP placard and plate eligibility, where they can be used, and adaptive driving requirements.",
+        "href": "/california-disabled-driver-guide",
+        "label": "Take the disabled placard practice test"
+      }
     },
     {
       "id": 9025,
@@ -1253,7 +1283,13 @@
         "photo_url": "https://www.pexels.com/photo/man-in-brown-jacket-driving-car-7476883/"
       },
       "metaTitle": "California Senior Driver License Guide 2026",
-      "metaDescription": "California DMV rules for drivers 70 and older: in-person renewal requirements, vision test, knowledge test, and senior driver resources."
+      "metaDescription": "California DMV rules for drivers 70 and older: in-person renewal requirements, vision test, knowledge test, and senior driver resources.",
+      "testCta": {
+        "heading": "Practice the senior renewal rules",
+        "blurb": "Test yourself on in-person renewal, vision screening, and the AB 2687 written-test waiver for drivers 70 and older.",
+        "href": "/california-dmv-practice-test-for-seniors",
+        "label": "Take the senior driver practice test"
+      }
     },
     {
       "id": 9023,
@@ -1283,6 +1319,12 @@
       "metaDescription": "Complete guide for California teen drivers in 2026: learner's permit at 15½, provisional license at 16, driving restrictions, and how to get a full license.",
       "translations": {
         "es": "licencia-de-conducir-para-menores-california"
+      },
+      "testCta": {
+        "heading": "Practice the provisional license rules",
+        "blurb": "Test yourself on permit hour requirements, passenger and nighttime restrictions, and the zero-tolerance DUI law for drivers under 18.",
+        "href": "/california-teen-driver-test",
+        "label": "Take the teen driver practice test"
       }
     },
     {

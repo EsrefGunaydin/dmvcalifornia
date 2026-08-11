@@ -23,9 +23,20 @@ const STUDY_TOOLS: { href: string; label: string; isNew?: boolean }[] = [
   { href: '/defensive-driving', label: 'Defensive Driving' },
 ];
 
+const DRIVER_GUIDES: { href: string; label: string }[] = [
+  { href: '/new-to-california-dmv-guide', label: 'New to California' },
+  { href: '/california-teen-driver-test', label: 'Teen Drivers' },
+  { href: '/california-dmv-practice-test-for-seniors', label: 'Senior Drivers' },
+  { href: '/california-disabled-driver-guide', label: 'People With Disabilities' },
+  { href: '/california-veterans-military-dmv-guide', label: 'Veterans & Active Military' },
+  { href: '/california-boater-card-test', label: 'Boat & Vessel Owners' },
+  { href: '/california-bicyclist-pedestrian-guide', label: 'Bicyclists & Pedestrians' },
+];
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [toolsOpen, setToolsOpen] = useState(false);
+  const [guidesOpen, setGuidesOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const { streak } = useStreak();
 
@@ -93,6 +104,33 @@ export default function Header() {
                       {t.isNew && (
                         <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
                       )}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Driver Guides dropdown (hover) */}
+            <div className="relative group">
+              <button
+                type="button"
+                className="flex items-center gap-1 text-gray-700 hover:text-primary font-medium transition-colors"
+                aria-haspopup="true"
+              >
+                Driver Guides
+                <svg className="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div className="absolute left-1/2 -translate-x-1/2 top-full pt-3 hidden group-hover:block z-50">
+                <div className="w-64 bg-white rounded-xl shadow-xl border border-gray-100 py-2">
+                  {DRIVER_GUIDES.map((g) => (
+                    <Link
+                      key={g.href}
+                      href={g.href}
+                      className="flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors"
+                    >
+                      {g.label}
                     </Link>
                   ))}
                 </div>
@@ -201,6 +239,35 @@ export default function Header() {
                         {t.isNew && (
                           <span className="bg-orange-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full leading-none">NEW</span>
                         )}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Driver Guides accordion */}
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setGuidesOpen(!guidesOpen)}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-primary font-medium transition-colors py-2"
+                  aria-expanded={guidesOpen}
+                >
+                  Driver Guides
+                  <svg className={`w-5 h-5 transition-transform ${guidesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {guidesOpen && (
+                  <div className="flex flex-col gap-1 pl-4 mt-1 border-l-2 border-orange-200">
+                    {DRIVER_GUIDES.map((g) => (
+                      <Link
+                        key={g.href}
+                        href={g.href}
+                        className="flex items-center gap-2 text-gray-600 hover:text-primary text-sm py-2 transition-colors"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {g.label}
                       </Link>
                     ))}
                   </div>
