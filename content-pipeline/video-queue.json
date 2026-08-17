@@ -52,7 +52,9 @@
     {
       "quizId": "examen-dmv-espanol-4",
       "voice": "EXAVITQu4vr4xnSDxMaL",
-      "status": "ready"
+      "status": "published",
+      "videoId": "kOYUsaczrCQ",
+      "publishedAt": "2026-08-13T21:03:11.976Z"
     },
     {
       "quizId": "dmv-spanish-simulator-test-1",
