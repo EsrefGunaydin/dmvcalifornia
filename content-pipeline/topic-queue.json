@@ -161,7 +161,8 @@
       "target_length": 1600,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
+      "drafted_at": "2026-08-17",
       "tags": [
         "Real ID",
         "Farsi"
