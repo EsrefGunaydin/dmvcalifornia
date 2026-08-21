@@ -1,6 +1,6 @@
 {
   "extracted_at": "2025-11-02T19:05:19.229925",
-  "total_posts": 143,
+  "total_posts": 144,
   "featured_images": {
     "158": 2317,
     "337": 2319,
@@ -9162,6 +9162,50 @@
       "lang": "en",
       "metaTitle": "DL 44 form: California DMV driver's license application explained",
       "metaDescription": "What the DL 44 form is for, when you need it for a California driver's license or ID card, what to bring, and where to find the official PDF."
+    },
+    {
+      "id": 9118,
+      "title": "California driver's license lookup: what you can and can't check",
+      "slug": "california-driver-license-lookup",
+      "content": "<p><strong>TL;DR:</strong> There is no public website where anyone can type in a name and pull up a California driver's license. Your own record is available to you through myDMV or by requesting your official driving record (form INF 1125). If someone else wants to check your license, they need a permitted reason under state and federal privacy law: employers of commercial or company-vehicle drivers can enroll in the DMV's Employer Pull Notice program, and insurers pull records through licensed data providers, not a lookup tool. This guide covers how to check your own license, what shows up on it, and what businesses can and cannot legally see.</p> <div class=\"dmv-stats\"><div class=\"dmv-stat\"><span class=\"dmv-stat-value\">No</span><span class=\"dmv-stat-label\">public lookup tool exists</span></div><div class=\"dmv-stat\"><span class=\"dmv-stat-value\">H6</span><span class=\"dmv-stat-label\">personal driving record request</span></div><div class=\"dmv-stat\"><span class=\"dmv-stat-value\">INF 1125</span><span class=\"dmv-stat-label\">mail-in record request form</span></div><div class=\"dmv-stat\"><span class=\"dmv-stat-value\">EPN</span><span class=\"dmv-stat-label\">employer monitoring program</span></div></div> <h2>What \"driver license lookup\" actually covers</h2> <p>People searching for a California driver's license lookup are usually after one of three different things, and each one works differently:</p> <div class=\"dmv-table-wrap\"><table class=\"dmv-table\"><thead><tr><th>What you want</th><th>Who can do it</th><th>How</th></tr></thead><tbody><tr><td>Check your own license status, points, or record</td><td>You, the license holder</td><td>myDMV account or an official driving record request</td></tr><tr><td>Monitor an employee's license (delivery driver, CDL holder, company vehicle)</td><td>The employer, with the employee's consent on file</td><td>Employer Pull Notice (EPN) program</td></tr><tr><td>Verify someone else's license before renting, hiring, or insuring them</td><td>Licensed businesses with a permissible use under the DPPA</td><td>Authorized data provider (insurer's MVR pull), not a DMV website</td></tr></tbody></table></div> <p>What does not exist: a free public search where you type a name or license number and get back someone else's driving history. California driver records are protected under the federal Driver's Privacy Protection Act and the state's own Information Practices Act. A landlord, ex-partner, or curious stranger cannot legally look up your license without your consent or a court order.</p> <h2>How to look up your own California driver's license</h2> <p>Three ways to see your own record, from fastest to slowest:</p> <div class=\"dmv-table-wrap\"><table class=\"dmv-table\"><thead><tr><th>Method</th><th>What you get</th><th>Turnaround</th></tr></thead><tbody><tr><td>myDMV account (dmv.ca.gov)</td><td>License status, expiration date, REAL ID status, basic account info</td><td>Instant</td></tr><tr><td>Personal driving record request (H6)</td><td>Full record: violations, points, suspensions, restrictions</td><td>A few minutes online, or by mail with INF 1125</td></tr><tr><td>In person at a field office</td><td>Same full record as above</td><td>Same day, subject to office wait times</td></tr></tbody></table></div> <p>If you have not set up a myDMV account yet, the <a href=\"/mydmv-california-account-guide\">myDMV account guide</a> walks through registration. For the official fee to request a full driving record, see the <a href=\"/california-dmv-fees\">California DMV fees guide</a> rather than relying on an old number floating around online: DMV fees change, and this is one applicants frequently get wrong by quoting an outdated figure.</p> <div class=\"dmv-callout dmv-callout-info\"><div class=\"dmv-callout-header\"><span class=\"dmv-callout-icon\">ℹ️</span><span class=\"dmv-callout-title\">Looking for your original issue date, not your full record?</span></div><div class=\"dmv-callout-body\"><p>The ISS date printed on your card only shows when your <em>current</em> plastic was issued, not the day you were first licensed. If that is what you actually need, the <a href=\"/california-drivers-license-issue-date\">driver's license issue date guide</a> covers exactly how to recover your original first-licensed date from your full driving record.</p></div></div> <h2>What shows up on a full driving record</h2> <p>A complete California driving record (the H6) includes your license class and status, moving violations, accident reports filed with the DMV, points on your record, any suspensions or restrictions, and your original issue history. It does not include arrest records unrelated to driving, and it is not the same as a criminal background check.</p> <h2>Can an employer or business look up your license?</h2> <p>Only through a specific, permitted channel, and only with a legitimate business reason on file.</p> <h3>Employer Pull Notice (EPN) program</h3> <p>California businesses that employ drivers of commercial vehicles, or that require employees to drive as part of their job, can enroll in the DMV's Employer Pull Notice program. Once an employee signs a consent form, the employer is automatically notified if that employee's license status changes: a suspension, a new conviction, or a revocation. This is how delivery companies, trucking firms, and school districts keep tabs on driver eligibility without repeatedly requesting full records.</p> <h3>Insurance and background check companies</h3> <p>Auto insurers do not use a public lookup tool either. They pull your motor vehicle record through licensed data providers as part of underwriting, which is a permissible use under the DPPA and typically something you agreed to when you applied for a policy or a job that requires driving.</p> <h3>Verifying a commercial driver's license (CDL)</h3> <p>Commercial licenses are the one exception with a public verification option. The Federal Motor Carrier Safety Administration runs the Commercial Driver's License Information System, and its <a href=\"https://li-public.fmcsa.dot.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">License and Insurance search tool</a> lets anyone confirm whether a CDL is currently valid. If you are hiring or working with a CDL holder, see the <a href=\"/california-truck-driver-cdl-guide-2026\">California CDL guide</a> for how the class and endorsement system works.</p> <div class=\"dmv-dos-donts\"> <div class=\"dmv-do\"> <h3>Do</h3> <ul> <li>Set up a myDMV account so you can check your own status anytime</li> <li>Request your full H6 record if you need proof of a clean history for insurance, a job, or a legal matter</li> <li>Use the FMCSA tool if you specifically need to confirm a CDL is valid</li> <li>Enroll in Employer Pull Notice if your business is legally required to monitor employee licenses</li> </ul> </div> <div class=\"dmv-dont\"> <h3>Don't</h3> <ul> <li>Pay a third-party \"license lookup\" website: California driving records are not sold through public search sites, and most of these charge for information you can get free or cheap directly from the DMV</li> <li>Assume you can look up someone else's record without their consent or a qualifying business reason</li> <li>Confuse a driver's license lookup with a license plate or vehicle registration lookup: those are separate systems</li> <li>Rely on an old quoted fee for a record request: confirm the current amount before you request one</li> </ul> </div> </div>",
+      "excerpt": "There is no public tool to look up someone else's California driver's license. Here is how to check your own record, and the specific, legal ways employers and insurers verify a license.",
+      "publishedAt": "2026-08-21 00:00:00",
+      "author": "Michael Rodriguez",
+      "tags": [
+        "Driver License",
+        "DMV Services",
+        "DMV Forms"
+      ],
+      "views": 0,
+      "published_date": "2026-08-21 00:00:00",
+      "created_at": "2026-08-21 00:00:00",
+      "updated_at": "2026-08-21 00:00:00",
+      "updatedAt": "2026-08-21T00:00:00Z",
+      "faq": [
+        {
+          "question": "Can I look up someone else's California driver's license online?",
+          "answer": "<p>No. There is no public website where you can search another person's driver's license by name or number. California driving records are protected under the federal Driver's Privacy Protection Act, and accessing someone else's record requires their consent or a permitted business reason.</p>"
+        },
+        {
+          "question": "How do I look up my own driver's license record in California?",
+          "answer": "<p>Check your basic status instantly through a myDMV account, or request your full official driving record (form H6, also available by mail as INF 1125) to see violations, points, and any restrictions or suspensions.</p>"
+        },
+        {
+          "question": "Can an employer check my driver's license status?",
+          "answer": "<p>Yes, if you have signed a consent form and your employer is enrolled in the DMV's Employer Pull Notice (EPN) program. This is common for delivery drivers, commercial drivers, and other jobs that require driving. Your employer is then automatically notified of changes to your license status.</p>"
+        },
+        {
+          "question": "Is there a way to verify a CDL is valid?",
+          "answer": "<p>Yes. Commercial driver's licenses can be verified through the FMCSA's public Commercial Driver's License Information System search tool, which is a federal system separate from California's own driver records.</p>"
+        },
+        {
+          "question": "How much does it cost to request my California driving record?",
+          "answer": "<p>The DMV charges a fee for a personal driving record request. Fees change over time, so check the current amount on the California DMV fees guide rather than an old quoted number.</p>"
+        }
+      ],
+      "lang": "en",
+      "metaTitle": "California driver's license lookup: what's actually possible",
+      "metaDescription": "There is no public California driver's license lookup tool. Here is how to check your own record, and how employers and insurers legally verify a license."
     }
   ]
 }
