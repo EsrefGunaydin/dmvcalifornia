@@ -24,6 +24,7 @@ export default function ReactionScoreboard({ quizId, dayIndex, gameState, bestMs
   const [loading, setLoading] = useState(true);
   const [allTime, setAllTime] = useState<ScoreEntry[]>([]);
   const [allTimeLoading, setAllTimeLoading] = useState(true);
+  const [allTimeExpanded, setAllTimeExpanded] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [marketingConsent, setMarketingConsent] = useState(true);
@@ -161,13 +162,24 @@ export default function ReactionScoreboard({ quizId, dayIndex, gameState, bestMs
           ) : allTime.length === 0 ? (
             <p className="text-xs text-gray-400 italic">No all-time scores yet.</p>
           ) : (
-            allTime.slice(0, 5).map((s, i) => (
-              <div key={i} className="flex items-center gap-2 py-1 border-b border-gray-100 last:border-0">
-                <span className="text-sm w-6 text-center">{MEDALS[i] ?? <span className="text-xs text-gray-400">{i + 1}</span>}</span>
-                <span className="text-sm text-gray-800 font-medium flex-1 truncate">{s.name}</span>
-                <span className="text-xs font-bold tabular-nums text-primary">{s.points}ms</span>
-              </div>
-            ))
+            <>
+              {allTime.slice(0, allTimeExpanded ? 100 : 10).map((s, i) => (
+                <div key={i} className="flex items-center gap-2 py-1 border-b border-gray-100 last:border-0">
+                  <span className="text-sm w-6 text-center">{MEDALS[i] ?? <span className="text-xs text-gray-400">{i + 1}</span>}</span>
+                  <span className="text-sm text-gray-800 font-medium flex-1 truncate">{s.name}</span>
+                  <span className="text-xs font-bold tabular-nums text-primary">{s.points}ms</span>
+                </div>
+              ))}
+              {allTime.length > 10 && (
+                <button
+                  type="button"
+                  onClick={() => setAllTimeExpanded((v) => !v)}
+                  className="text-xs font-semibold text-primary hover:text-primary-600 mt-2 self-start"
+                >
+                  {allTimeExpanded ? 'Show less' : `Show more (top ${Math.min(allTime.length, 100)})`}
+                </button>
+              )}
+            </>
           )}
         </div>
       </div>

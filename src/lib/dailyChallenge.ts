@@ -10,7 +10,7 @@ function mulberry32(seed: number) {
 }
 
 export function seedFromDate(dateStr: string): number {
-  // dateStr: 'YYYY-MM-DD' in UTC
+  // dateStr: 'YYYY-MM-DD', as returned by todayPacific()
   return parseInt(dateStr.replace(/-/g, ''), 10);
 }
 
@@ -26,8 +26,34 @@ export function pickDailyQuestions(pool: Question[], n: number, seed: number): Q
   return result;
 }
 
-export function todayUTC(): string {
-  return new Date().toISOString().slice(0, 10);
+// All daily games/leaderboards reset on this single fixed timezone instead
+// of the server's UTC clock (which flipped the "day" at 4-5pm Pacific,
+// hours before local midnight) or each visitor's own device timezone
+// (which would break the "same puzzle for everyone" premise a shared daily
+// leaderboard depends on). Pacific matches this site's primary audience.
+// Intl handles PST/PDT automatically, no manual DST offset math.
+const RESET_TIMEZONE = 'America/Los_Angeles';
+
+export function todayPacific(): string {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: RESET_TIMEZONE,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(new Date());
+}
+
+/**
+ * Whole calendar days between two YYYY-MM-DD dates (both already resolved
+ * in RESET_TIMEZONE via todayPacific()). Parsing as UTC here is just a trick to
+ * diff two Y-M-D triples in whole days without DST arithmetic creeping in.
+ */
+export function daysSinceEpoch(dateStr: string, epochDateStr: string): number {
+  const toUTCms = (s: string) => {
+    const [y, m, d] = s.split('-').map(Number);
+    return Date.UTC(y, m - 1, d);
+  };
+  return Math.floor((toUTCms(dateStr) - toUTCms(epochDateStr)) / 86400000);
 }
 
 export function dailyQuizId(date: string): string {

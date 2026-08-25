@@ -7,7 +7,14 @@ const KEY_STREAK  = 'currentStreak';
 const KEY_BEST    = 'bestStreak';
 
 function toDateStr(d = new Date()) {
-  return d.toISOString().slice(0, 10); // 'YYYY-MM-DD'
+  // The streak is personal and device-local (localStorage, no shared
+  // board), so it should reset at the visitor's own local midnight, not
+  // UTC — d.toISOString() converts to UTC first, which flipped the
+  // "day" hours before local midnight for anyone west of Greenwich.
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
 }
 
 function yesterdayStr() {

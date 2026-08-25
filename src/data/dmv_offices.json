@@ -1,6 +1,6 @@
 {
   "generated_at": "2025-01-01T00:00:00Z",
-  "total_offices": 177,
+  "total_offices": 182,
   "offices": [
     {
       "id": 1,
@@ -5597,6 +5597,101 @@
       "local_notes": [
         "This office cannot accommodate commercial vehicles over 40 feet long for the CDL drive test due to space limitations. Check with the office before scheduling a CDL test here.",
         "A DMV kiosk inside the FoodMaxx at 1231 Colusa Ave. is open 6 AM to midnight daily for quick transactions."
+      ]
+    },
+    {
+      "id": 178,
+      "name": "Carlsbad",
+      "slug": "dmv-carlsbad",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ],
+      "has_kiosk": false,
+      "status": "CLOSED",
+      "closure_reason": "This DMV field office is no longer in operation.",
+      "nearby_offices": [
+        "Oceanside: 4005 Plaza Drive, Oceanside, CA 92056"
+      ]
+    },
+    {
+      "id": 179,
+      "name": "Cathedral City",
+      "slug": "dmv-cathedral-city",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ],
+      "has_kiosk": false,
+      "status": "CLOSED",
+      "closure_reason": "This DMV field office is no longer in operation.",
+      "nearby_offices": [
+        "Palm Springs: 950 N Farrell Drive, Palm Springs, CA 92262"
+      ]
+    },
+    {
+      "id": 180,
+      "name": "Desert Hot Springs",
+      "slug": "dmv-desert-hot-springs",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ],
+      "has_kiosk": false,
+      "status": "CLOSED",
+      "closure_reason": "This DMV field office is no longer in operation.",
+      "nearby_offices": [
+        "Palm Springs: 950 N Farrell Drive, Palm Springs, CA 92262"
+      ]
+    },
+    {
+      "id": 181,
+      "name": "La Mesa",
+      "slug": "dmv-la-mesa",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ],
+      "has_kiosk": false,
+      "status": "CLOSED",
+      "closure_reason": "This DMV field office is no longer in operation.",
+      "nearby_offices": [
+        "El Cajon: 1450 Graves Avenue, El Cajon, CA 92021"
+      ]
+    },
+    {
+      "id": 182,
+      "name": "Upland",
+      "slug": "dmv-upland",
+      "phone": "(800) 777-0133",
+      "hours": "Monday-Friday: 8:00 AM - 5:00 PM",
+      "address": "",
+      "services": [
+        "Driver License",
+        "Vehicle Registration",
+        "REAL ID"
+      ],
+      "has_kiosk": false,
+      "status": "CLOSED",
+      "closure_reason": "This DMV field office is no longer in operation.",
+      "nearby_offices": [
+        "Rancho Cucamonga: 8629 Hellman Avenue, Rancho Cucamonga, CA 91730"
       ]
     }
   ]

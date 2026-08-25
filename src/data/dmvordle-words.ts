@@ -1,3 +1,5 @@
+import { todayPacific, daysSinceEpoch } from '@/lib/dailyChallenge';
+
 // Daily answer words — all 5-letter DMV/traffic terms
 // Rotates by day index from the epoch date in getDailyWord()
 export const WORDS = [
@@ -13,19 +15,13 @@ export const WORDS = [
 ];
 
 // Epoch: first word was played on this date
-const EPOCH = new Date('2026-07-08T00:00:00Z');
+const EPOCH = '2026-07-08';
 
 export function getDailyWord(): string {
-  const now = new Date();
-  const utcNow = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-  const utcEpoch = Date.UTC(EPOCH.getUTCFullYear(), EPOCH.getUTCMonth(), EPOCH.getUTCDate());
-  const dayIndex = Math.floor((utcNow - utcEpoch) / 86400000);
+  const dayIndex = daysSinceEpoch(todayPacific(), EPOCH);
   return WORDS[((dayIndex % WORDS.length) + WORDS.length) % WORDS.length];
 }
 
 export function getDailyIndex(): number {
-  const now = new Date();
-  const utcNow = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-  const utcEpoch = Date.UTC(EPOCH.getUTCFullYear(), EPOCH.getUTCMonth(), EPOCH.getUTCDate());
-  return Math.floor((utcNow - utcEpoch) / 86400000) + 1;
+  return daysSinceEpoch(todayPacific(), EPOCH) + 1;
 }
