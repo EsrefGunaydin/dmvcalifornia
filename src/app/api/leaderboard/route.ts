@@ -131,7 +131,7 @@ export async function GET(request: NextRequest) {
       }
       const leaderboard = Array.from(bestByName.values())
         .sort((a, b) => b.percentage - a.percentage)
-        .slice(0, 50)
+        .slice(0, 100)
         .map((entry: any) => ({
           id: entry._id.toString(),
           quizId: entry.quizId,
