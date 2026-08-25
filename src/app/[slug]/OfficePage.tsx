@@ -26,10 +26,46 @@ type Office = {
     distance: string;
     slug: string;
   }[];
+  local_notes?: string[];
 };
 
 const APPOINTMENT_URL = 'https://www.dmv.ca.gov/portal/make-an-appointment/';
 const ONLINE_SERVICES_URL = 'https://www.dmv.ca.gov/portal/dmv-online/';
+
+const DAY_ORDER = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+// Many field offices are open fewer than 5 days a week, so the "hours"
+// summary field can't be trusted — build the FAQ answer from the actual
+// per-day schedule instead of repeating a generic "Monday-Friday" claim.
+function summarizeHours(hoursDetailed: Office['hours_detailed'], fallback: string): string {
+  if (!hoursDetailed) return fallback;
+
+  const segments: { days: string[]; time: string }[] = [];
+  for (const day of DAY_ORDER) {
+    const time = hoursDetailed[day];
+    if (!time || time.toLowerCase() === 'closed') continue;
+    const last = segments[segments.length - 1];
+    const prevDay = last?.days[last.days.length - 1];
+    const isConsecutive = prevDay && DAY_ORDER.indexOf(day) === DAY_ORDER.indexOf(prevDay) + 1;
+    if (last && last.time === time && isConsecutive) {
+      last.days.push(day);
+    } else {
+      segments.push({ days: [day], time });
+    }
+  }
+
+  if (segments.length === 0) return 'Closed (call ahead to confirm before visiting)';
+
+  return segments
+    .map((seg) => {
+      const dayLabel =
+        seg.days.length > 2
+          ? `${seg.days[0]}-${seg.days[seg.days.length - 1]}`
+          : seg.days.join(' and ');
+      return `${dayLabel}: ${seg.time}`;
+    })
+    .join('; ');
+}
 
 const WHAT_TO_BRING = [
   'Your appointment confirmation (book online to skip the line)',
@@ -55,7 +91,7 @@ export default function OfficePage({ office }: { office: Office }) {
     ? [
         {
           q: `What are the hours of the ${office.name} DMV office?`,
-          a: `${office.hours}. Hours can change on state holidays, so confirm before you go. See the full daily schedule above.`,
+          a: `${summarizeHours(office.hours_detailed, office.hours)}. Hours can change on state holidays, so confirm before you go. See the full daily schedule above.`,
         },
         {
           q: `How do I make an appointment at the ${office.name} DMV?`,
@@ -172,6 +208,23 @@ export default function OfficePage({ office }: { office: Office }) {
             }
           </p>
         </header>
+
+        {/* Local notes — real, office-specific facts (wrong-location traps, */}
+        {/* restricted schedules, nearby kiosk alternatives) surfaced above the fold. */}
+        {isOpen && office.local_notes && office.local_notes.length > 0 && (
+          <div className="mb-8 bg-amber-50 border-l-4 border-amber-400 p-5 rounded-lg">
+            <h2 className="text-sm font-semibold text-amber-900 uppercase tracking-wide mb-2">
+              Good to know
+            </h2>
+            <ul className="space-y-2">
+              {office.local_notes.map((note, i) => (
+                <li key={i} className="text-amber-900 text-sm leading-relaxed">
+                  {note}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Appointment CTA — highest-intent action for "[city] dmv appointment" */}
         {isOpen && (
