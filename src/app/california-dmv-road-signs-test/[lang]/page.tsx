@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import SignQuiz from '@/components/SignQuiz';
+import SignQuizAllQuestions from '@/components/quiz/SignQuizAllQuestions';
 import LanguagePills from '@/components/LanguagePills';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
@@ -140,6 +141,7 @@ export default async function LocalizedRoadSignsPage({
                     quizId={quizId}
                     nextQuiz={{ href: '/practice-test', title: allTestsLabel }}
                   />
+                  <SignQuizAllQuestions questions={questions} label={cfg.reviewAllLabel} dir={cfg.dir} />
                 </div>
 
                 {/* Sidebar */}

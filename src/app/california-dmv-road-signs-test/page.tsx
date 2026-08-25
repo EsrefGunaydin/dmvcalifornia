@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import SignQuiz, { type SignQuestion } from '@/components/SignQuiz';
+import SignQuizAllQuestions from '@/components/quiz/SignQuizAllQuestions';
 import LanguagePills from '@/components/LanguagePills';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
@@ -146,6 +147,7 @@ export default async function RoadSignsTestPage() {
                     quizId={QUIZ_ID}
                     nextQuiz={{ href: '/practice-test/california-dmv-practice-test-2026', title: 'Full Practice Test' }}
                   />
+                  <SignQuizAllQuestions questions={questions} label="Review all 38 signs and answers" dir="ltr" />
                 </div>
 
                 {/* Sidebar */}
