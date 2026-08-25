@@ -3,6 +3,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import { Lightbulb } from 'lucide-react';
 import QuizEngine from '@/components/quiz/QuizEngine';
+import QuizAllQuestions from '@/components/quiz/QuizAllQuestions';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
@@ -203,6 +204,7 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
                       : undefined
                   }
                 />
+                <QuizAllQuestions questions={quiz.questions} />
               </div>
 
               {/* Compact Sidebar */}
