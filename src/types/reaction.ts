@@ -34,9 +34,16 @@ export function starsForReaction(bestMs: number, falseStarts: number): 1 | 2 | 3
   return 1;
 }
 
-/** Leaderboard percentage from a best-round time: 300ms maps to 100, scaling down as it slows. */
+/**
+ * Leaderboard percentage from a best-round time. Asymptotic curve (never
+ * saturates except in the limit as bestMs approaches 0) instead of a flat
+ * ratio: a straight `(300 / bestMs) * 100` clamp made every sub-300ms score
+ * tie at 100, which is most real players, so the leaderboard couldn't rank
+ * anyone against each other once they beat 300ms.
+ */
 export function percentageFromReaction(bestMs: number): number {
-  return Math.max(0, Math.min(100, Math.round((300 / bestMs) * 100)));
+  const REFERENCE_MS = 150;
+  return Math.max(0, Math.min(100, Math.round((REFERENCE_MS / (bestMs + REFERENCE_MS)) * 100)));
 }
 
 /**

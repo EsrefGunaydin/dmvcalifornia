@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import DailyChallengeContent from './DailyChallengeContent';
 import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
-import { pickDailyQuestions, seedFromDate, todayUTC, dailyQuizId } from '@/lib/dailyChallenge';
+import { pickDailyQuestions, seedFromDate, todayPacific, dailyQuizId } from '@/lib/dailyChallenge';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 import type { Question, Quiz } from '@/types/quiz';
@@ -13,7 +13,7 @@ import quizzesData from '@/data/quizzes.json';
 export const revalidate = 3600; // revalidate hourly so the question set refreshes at most once per hour
 
 export function generateMetadata() {
-  const date = todayUTC();
+  const date = todayPacific();
   return {
     title: `Daily Challenge ${date} | DMV California`,
     description: '10 fresh DMV practice questions today, same set for every user. How well do you know the California rules?',
@@ -21,7 +21,7 @@ export function generateMetadata() {
 }
 
 export default function DailyChallengePage() {
-  const date = todayUTC();
+  const date = todayPacific();
   const seed = seedFromDate(date);
 
   // Only use English questions without images for clean mobile display.
@@ -57,7 +57,7 @@ export default function DailyChallengePage() {
             </div>
             <h1 className="text-3xl font-bold text-gray-900 mb-2">10 questions for today</h1>
             <p className="text-gray-600 mb-4">
-              Same questions for every user on {date}. New set at midnight UTC.
+              Same questions for every user on {date}. New set at midnight Pacific time.
             </p>
             <QuizViewTracker
               quizId={dailyQuizId(date)}
