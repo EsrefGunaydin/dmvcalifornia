@@ -13,13 +13,10 @@ import DMVordle, { type GameState } from '@/components/games/DMVordle';
 import DMVordleScoreboard from '@/components/games/DMVordleScoreboard';
 import { getDailyIndex } from '@/data/dmvordle-words';
 import { getBaseViews } from '@/lib/quiz-base-views';
+import { todayPacific } from '@/lib/dailyChallenge';
 
 function getQuizId() {
-  const now = new Date();
-  const y = now.getUTCFullYear();
-  const m = String(now.getUTCMonth() + 1).padStart(2, '0');
-  const d = String(now.getUTCDate()).padStart(2, '0');
-  return `dmvordle-${y}-${m}-${d}`;
+  return `dmvordle-${todayPacific()}`;
 }
 
 export default function DMVordleContent() {

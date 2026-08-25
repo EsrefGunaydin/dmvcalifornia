@@ -1,5 +1,5 @@
 import roadSignsData from '@/data/road-signs-test.json';
-import { seedFromDate, todayUTC } from '@/lib/dailyChallenge';
+import { seedFromDate, todayPacific, daysSinceEpoch } from '@/lib/dailyChallenge';
 import type { SignMatchCard, SignMatchSign } from '@/types/signMatch';
 
 const PAIRS_PER_ROUND = 8;
@@ -67,17 +67,14 @@ export function signMatchQuizId(date: string): string {
   return `sign-match-${date}`;
 }
 
-const EPOCH = new Date(Date.UTC(2026, 6, 20)); // launch day, board #1
+const EPOCH = '2026-07-20'; // launch day, board #1
 
 export function signMatchDailyIndex(): number {
-  const now = new Date();
-  const utcNow = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
-  const utcEpoch = Date.UTC(EPOCH.getUTCFullYear(), EPOCH.getUTCMonth(), EPOCH.getUTCDate());
-  return Math.floor((utcNow - utcEpoch) / 86400000) + 1;
+  return daysSinceEpoch(todayPacific(), EPOCH) + 1;
 }
 
 export function todaySignMatch(): { quizId: string; cards: SignMatchCard[]; pairs: number } {
-  const date = todayUTC();
+  const date = todayPacific();
   const seed = seedFromDate(date);
   const rng = mulberry32(seed);
 

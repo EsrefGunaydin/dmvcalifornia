@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Calendar, CheckCircle, ChevronRight, Bell, BellRing } from 'lucide-react';
-import { dailyQuizId, todayUTC } from '@/lib/dailyChallenge';
+import { dailyQuizId, todayPacific } from '@/lib/dailyChallenge';
 import { usePushSubscribe } from '@/hooks/usePushSubscribe';
 import type { QuizResult } from '@/types/quiz';
 
@@ -20,7 +20,7 @@ export default function DailyChallengeBanner({ variant = 'card' }: DailyChalleng
   const { status, subscribe } = usePushSubscribe();
 
   useEffect(() => {
-    const qid = dailyQuizId(todayUTC());
+    const qid = dailyQuizId(todayPacific());
     try {
       const raw = localStorage.getItem('quiz-results');
       if (!raw) { setDoneToday(false); return; }
