@@ -13,7 +13,8 @@
     "video:youtube:upload": "node scripts/video-pipeline/youtubeUpload.js",
     "video:youtube:privacy": "node scripts/video-pipeline/setVideoPrivacy.js",
     "video:publish": "node scripts/video-pipeline/publishToSite.js",
-    "video:backfill-meta": "node scripts/video-pipeline/backfillVideoMeta.js"
+    "video:backfill-meta": "node scripts/video-pipeline/backfillVideoMeta.js",
+    "db:backfill-reaction-percentage": "node scripts/backfill-reaction-percentage.js"
   },
   "keywords": [],
   "author": "",
