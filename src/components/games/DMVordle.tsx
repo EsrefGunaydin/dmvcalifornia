@@ -231,13 +231,17 @@ export default function DMVordle({ onGameStateChange }: DMVordleProps = {}) {
 
   const keyStyle = (k: string): string => {
     const base = 'flex items-center justify-center rounded font-bold text-sm uppercase cursor-pointer select-none active:scale-95 transition-all';
-    const wide = k === 'ENTER' || k === '⌫' ? 'px-2 h-14 min-w-[3rem] text-xs' : 'w-9 h-14';
+    const isAction = k === 'ENTER' || k === '⌫';
+    const size = isAction
+      ? `px-2 h-14 min-w-[3rem] ${k === '⌫' ? 'text-xl' : 'text-xs'}`
+      : 'w-9 h-14';
     const state = keyStates[k];
-    const color = state === 'correct' ? 'bg-green-500 text-white' :
+    const color = isAction ? 'bg-green-500 hover:bg-green-600 text-white' :
+                  state === 'correct' ? 'bg-green-500 text-white' :
                   state === 'present' ? 'bg-yellow-400 text-white' :
                   state === 'absent' ? 'bg-gray-400 text-white' :
                   'bg-gray-200 text-gray-900';
-    return `${base} ${wide} ${color}`;
+    return `${base} ${size} ${color}`;
   };
 
   const shareText = buildShareText(guesses, answer, dayIndex);
