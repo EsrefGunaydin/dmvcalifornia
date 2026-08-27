@@ -6,7 +6,7 @@ import { Play } from 'lucide-react';
 import videosData from '../../data/videos.json';
 
 export const metadata = {
-  title: 'Videos — DMV California',
+  title: 'Videos',
   description: 'Watch our California DMV videos: practice test walkthroughs, driving tips, license guides, and more.',
 };
 

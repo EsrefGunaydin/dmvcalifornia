@@ -51,14 +51,14 @@ export async function generateMetadata({
   const author = findAuthorBySlug(slug);
 
   if (!author) {
-    return { title: 'Author Not Found - DMV California' };
+    return { title: 'Author Not Found' };
   }
 
   const canonical = `${SITE_URL}/blog/author/${slug}`;
   const description = `${author.name} — ${author.role}. ${author.bio.slice(0, 130)}`;
 
   return {
-    title: `${author.name} - DMV California Author`,
+    title: `${author.name}, Author`,
     description,
     alternates: { canonical },
     openGraph: {

@@ -27,7 +27,7 @@ export async function generateMetadata({
 
   const data = found.set.flashcards;
   return {
-    title: `${data.title} | DMV California`,
+    title: data.title,
     description: data.description,
     openGraph: {
       title: data.title,

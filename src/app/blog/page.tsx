@@ -7,7 +7,7 @@ import CookieBanner from '../../components/CookieBanner';
 import blogPostsData from '../../data/blog_posts.json';
 
 export const metadata = {
-  title: 'Blog - DMV California',
+  title: 'Blog',
   description: 'Read our latest articles about California DMV, driving tests, traffic laws, and driving tips.',
 };
 

@@ -54,14 +54,14 @@ export async function generateMetadata({
   const tag = findTagBySlug(category);
 
   if (!tag) {
-    return { title: 'Category Not Found - DMV California' };
+    return { title: 'Category Not Found' };
   }
 
   const description = `Browse all ${tag} articles on DMV California — expert guides, tips, and advice for California drivers.`;
   const canonical = `${SITE_URL}/blog/category/${category}`;
 
   return {
-    title: `${tag} Articles - DMV California Blog`,
+    title: `${tag} Articles`,
     description,
     alternates: { canonical },
     openGraph: {

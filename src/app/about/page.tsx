@@ -6,7 +6,7 @@ import blogPostsData from '@/data/blog_posts.json';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata = {
-  title: 'About Us - DMV California',
+  title: 'About Us',
   description: 'Learn about DMV California, your trusted resource for DMV practice tests, study guides, and helpful articles. We help California drivers pass their DMV tests with confidence.',
 };
 

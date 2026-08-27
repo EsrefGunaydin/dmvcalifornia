@@ -15,7 +15,7 @@ export const revalidate = 3600; // revalidate hourly so the question set refresh
 export function generateMetadata() {
   const date = todayPacific();
   return {
-    title: `Daily Challenge ${date} | DMV California`,
+    title: `Daily Challenge ${date}`,
     description: '10 fresh DMV practice questions today, same set for every user. How well do you know the California rules?',
   };
 }

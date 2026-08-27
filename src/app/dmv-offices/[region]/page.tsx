@@ -29,7 +29,7 @@ export async function generateMetadata({
   const title = `${cfg.name} DMV Offices: Locations, Hours & Phone Numbers`;
   const description = `All ${count} DMV offices in ${cfg.name}. Find addresses, hours, phone numbers, services, and how to make a DMV appointment near you.`;
   return {
-    title: `${title} | DMV California`,
+    title,
     description,
     alternates: { canonical: `${SITE_URL}/dmv-offices/${cfg.slug}` },
     openGraph: { title, description, url: `${SITE_URL}/dmv-offices/${cfg.slug}`, type: 'website' },
