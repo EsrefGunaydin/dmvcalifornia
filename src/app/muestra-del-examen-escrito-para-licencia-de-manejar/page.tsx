@@ -8,7 +8,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
   alternates: languageAlternates('es'),
-  title: 'Examen del DMV de California en Español | DMV California',
+  title: 'Examen del DMV de California en Español',
   description: 'Examen del DMV de California en español. Pruebas de práctica gratuitas en español para prepararse para su examen de licencia de conducir.',
 };
 

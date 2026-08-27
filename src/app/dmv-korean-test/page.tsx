@@ -9,7 +9,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('ko'),
-  title: 'DMV California 한국어 시험 | DMV California',
+  title: 'DMV California 한국어 시험',
   description:
     '무료 캘리포니아 DMV 한국어 연습 시험. 운전면허 준비를 위한 실제 문제. California DMV practice test in Korean.',
   keywords: [

@@ -8,7 +8,7 @@ import { PRACTICE_TEST_HUBS } from '@/lib/language-alternates';
 import type { QuizLanguage } from '@/types/quiz';
 
 export const metadata = {
-  title: 'Review wrong answers | DMV California',
+  title: 'Review wrong answers',
   description: 'Revisit the questions you got wrong in previous DMV practice tests. Targeted review of your weak spots helps you pass faster.',
 };
 

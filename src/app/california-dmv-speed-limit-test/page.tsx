@@ -6,7 +6,7 @@ import TopicTestLanding from '@/components/TopicTestLanding';
 import { Timer } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'California DMV Speed Limits Test 2026 (Free Practice) | DMV California',
+  title: 'California DMV Speed Limits Test 2026 (Free Practice)',
   description:
     'Free California DMV speed limits practice test. Residential, school zone, blind intersection, and freeway limits plus the Basic Speed Law — the speed questions on the written test.',
   keywords: [

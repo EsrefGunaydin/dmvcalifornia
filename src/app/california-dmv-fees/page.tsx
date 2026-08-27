@@ -8,7 +8,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
-  title: 'California DMV Fees 2026: License, ID, REAL ID & Registration | DMV California',
+  title: 'California DMV Fees 2026: License, ID, REAL ID & Registration',
   description:
     'Current California DMV fees for 2026 — driver license, renewal, REAL ID, ID card, motorcycle, commercial license, and vehicle registration, with a link to the official fee schedule.',
   keywords: [

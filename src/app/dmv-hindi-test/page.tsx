@@ -9,7 +9,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('hi'),
-  title: 'DMV California हिन्दी टेस्ट | DMV California',
+  title: 'DMV California हिन्दी टेस्ट',
   description:
     'मुफ़्त कैलिफोर्निया DMV हिन्दी अभ्यास परीक्षा। ड्राइविंग लाइसेंस की तैयारी के लिए असली प्रश्न। California DMV practice test in Hindi.',
   keywords: [

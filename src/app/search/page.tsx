@@ -6,7 +6,7 @@ import CookieBanner from '@/components/CookieBanner';
 import { searchEntries, categoryLabel } from '@/lib/searchIndex';
 
 export const metadata: Metadata = {
-  title: 'Search | DMV California',
+  title: 'Search',
   robots: { index: false, follow: true },
 };
 

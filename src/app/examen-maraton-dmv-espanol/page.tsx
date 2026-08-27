@@ -9,7 +9,7 @@ import { getBaseViews } from '@/lib/quiz-base-views';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata: Metadata = {
-  title: 'Examen Maratón del DMV en Español 2026: Todas las Preguntas | DMV California',
+  title: 'Examen Maratón del DMV en Español 2026: Todas las Preguntas',
   description:
     'Practica todas las preguntas del examen del DMV de California en español en una sola sesión. Si fallas una, regresa hasta que la domines. Gratis, sin registro.',
   keywords: [

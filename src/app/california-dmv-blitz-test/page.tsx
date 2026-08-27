@@ -9,7 +9,7 @@ import { getBaseViews } from '@/lib/quiz-base-views';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata: Metadata = {
-  title: 'California DMV Blitz Test 2026: 15 Seconds Per Question | DMV California',
+  title: 'California DMV Blitz Test 2026: 15 Seconds Per Question',
   description:
     '20 DMV questions, 15 seconds each. Answer fast to earn speed-bonus points. Miss the timer and it counts wrong. The fastest way to sharpen your reflexes before the real test.',
   alternates: { canonical: 'https://dmvcalifornia.us/california-dmv-blitz-test' },

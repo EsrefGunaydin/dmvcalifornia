@@ -9,7 +9,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
-  title: 'NY DMV Manual Chapter 4: Traffic Control (2026 Guide) | DMV California',
+  title: 'NY DMV Manual Chapter 4: Traffic Control (2026 Guide)',
   description:
     'New York DMV driver\'s manual Chapter 4 guide: signs, traffic signals, pavement markings, and traffic officers — summarized from the official NY DMV manual, with a free practice quiz.',
   keywords: [

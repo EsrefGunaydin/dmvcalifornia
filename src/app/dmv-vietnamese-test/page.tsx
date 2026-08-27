@@ -10,7 +10,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('vi'),
-  title: 'DMV California Bài Thi Tiếng Việt | DMV California',
+  title: 'DMV California Bài Thi Tiếng Việt',
   description:
     'Bài thi thử DMV California miễn phí bằng tiếng Việt. Câu hỏi thực tế từ kỳ thi chính thức để chuẩn bị cho bằng lái xe. California DMV practice test in Vietnamese.',
   keywords: [

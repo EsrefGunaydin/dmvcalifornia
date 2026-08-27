@@ -10,7 +10,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('ru'),
-  title: 'DMV California Тест на русском | DMV California',
+  title: 'DMV California Тест на русском',
   description:
     'Бесплатный пробный тест DMV Калифорнии на русском языке. Реальные вопросы из официального экзамена для подготовки к водительским правам. California DMV practice test in Russian with real questions.',
   keywords: [

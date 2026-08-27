@@ -10,7 +10,7 @@ import flashcardsData from '@/data/flashcards-5.json';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'DMV California Practice Flashcards - Set 5 | DMV California',
+  title: 'DMV California Practice Flashcards - Set 5',
   description: '15 essential DMV questions covering intersections, pedestrians, emergency situations, and safe driving practices for California driving test preparation.',
   keywords: ['DMV flashcards', 'California driving test', 'DMV practice', 'study flashcards', 'intersections', 'pedestrians', 'emergency vehicles'],
   openGraph: {

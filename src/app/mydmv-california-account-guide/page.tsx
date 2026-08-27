@@ -8,7 +8,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
-  title: 'MyDMV California: What It Is & How to Use It (2026) | DMV California',
+  title: 'MyDMV California: What It Is & How to Use It (2026)',
   description:
     'MyDMV is the California DMV\'s online account portal. What you can do with it, how to sign up, and what to try if you cannot log in.',
   keywords: [

@@ -9,7 +9,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
   alternates: languageAlternates('zh'),
-  title: 'California DMV 中文考試 | DMV California',
+  title: 'California DMV 中文考試',
   description: '加州 DMV 駕駛考試中文版。免費的中文練習測試，幫助您準備加州駕駛執照考試。',
 };
 

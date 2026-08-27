@@ -6,7 +6,7 @@ import TopicTestLanding from '@/components/TopicTestLanding';
 import { Wine } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'California DMV Drug & Alcohol Test 2026 (Free Practice) | DMV California',
+  title: 'California DMV Drug & Alcohol Test 2026 (Free Practice)',
   description:
     'Free California DMV drug & alcohol practice test. BAC limits, zero tolerance, implied consent, and DUI penalties — the alcohol-and-drug questions the written test always asks.',
   keywords: [

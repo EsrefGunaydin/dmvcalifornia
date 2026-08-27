@@ -12,7 +12,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
-  title: 'California DMV Cheat Sheet 2026 (Free Quick-Reference) | DMV California',
+  title: 'California DMV Cheat Sheet 2026 (Free Quick-Reference)',
   description:
     'The free 2026 California DMV cheat sheet: BAC limits, curb colors, speed limits, signal distances, right-of-way, parking on hills, points & fines — every fact the written test loves to ask.',
   keywords: [

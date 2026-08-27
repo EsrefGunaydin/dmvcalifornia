@@ -9,7 +9,7 @@ import { getBaseViews } from '@/lib/quiz-base-views';
 import FeeCalculator from '@/components/tools/FeeCalculator';
 
 export const metadata: Metadata = {
-  title: 'California DMV Fee Calculator 2026 (Free Estimate) | DMV California',
+  title: 'California DMV Fee Calculator 2026 (Free Estimate)',
   description:
     'Estimate your California DMV registration renewal or new-purchase fees: base fee, CHP fee, Vehicle License Fee, and use tax, in one free calculator.',
   keywords: [

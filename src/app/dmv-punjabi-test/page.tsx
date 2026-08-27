@@ -10,7 +10,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('pa'),
-  title: 'DMV California ਪੰਜਾਬੀ ਟੈਸਟ | DMV California',
+  title: 'DMV California ਪੰਜਾਬੀ ਟੈਸਟ',
   description:
     'ਮੁਫ਼ਤ ਕੈਲੀਫੋਰਨੀਆ DMV ਅਭਿਆਸ ਟੈਸਟ ਪੰਜਾਬੀ ਵਿੱਚ। ਡਰਾਈਵਿੰਗ ਲਾਇਸੈਂਸ ਦੀ ਤਿਆਰੀ ਲਈ ਅਸਲ ਪ੍ਰਸ਼ਨ। California DMV practice test in Punjabi.',
   keywords: [

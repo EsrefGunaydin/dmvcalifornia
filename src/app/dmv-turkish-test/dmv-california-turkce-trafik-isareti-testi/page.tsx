@@ -8,7 +8,7 @@ import turkishSignTestData from '@/data/turkish-sign-test.json';
 import type { Quiz } from '@/types/quiz';
 
 export const metadata: Metadata = {
-  title: 'DMV Türkçe Trafik İşareti Testi | DMV California',
+  title: 'DMV Türkçe Trafik İşareti Testi',
   description: 'California DMV Türkçe trafik işareti testi - 24 soruluk görsel işaret tanıma testi. California DMV Turkish traffic sign identification test with 24 image-based questions.',
   keywords: ['DMV türkçe test', 'türkçe trafik işareti', 'California DMV Turkish test', 'traffic signs Turkish', 'DMV işaret testi'],
   openGraph: {

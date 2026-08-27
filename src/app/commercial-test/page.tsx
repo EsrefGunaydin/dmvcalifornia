@@ -7,7 +7,7 @@ import CookieBanner from '@/components/CookieBanner';
 import commercialQuizzesData from '@/data/commercial-quizzes.json';
 
 export const metadata: Metadata = {
-  title: 'California Commercial Driver (Class A/B) Practice Test | DMV California',
+  title: 'California Commercial Driver (Class A/B) Practice Test',
   description:
     'Free California Commercial Driver License (CDL) Class A/B practice test. Real DMV questions covering general knowledge, air brakes, combination vehicles, pre-trip inspection, hazmat, and tank vehicles.',
   keywords: [

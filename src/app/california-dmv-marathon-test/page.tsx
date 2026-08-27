@@ -9,7 +9,7 @@ import { getBaseViews } from '@/lib/quiz-base-views';
 import quizzesData from '@/data/quizzes.json';
 
 export const metadata: Metadata = {
-  title: 'California DMV Marathon Test 2026: Every Question Until You Pass | DMV California',
+  title: 'California DMV Marathon Test 2026: Every Question Until You Pass',
   description:
     'The California DMV marathon test — answer every practice question in one run, and any you miss come back until you get them all right. Free, unlimited, no signup.',
   keywords: [

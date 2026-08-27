@@ -7,7 +7,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
-  title: 'How to Study for the California DMV Test 2026: Complete Study Guide | DMV California',
+  title: 'How to Study for the California DMV Test 2026: Complete Study Guide',
   description:
     'A step-by-step study plan for the California DMV written test: handbook, cheat sheet, road signs, topic tests, full simulators, and a marathon — everything free, in one place.',
   keywords: [

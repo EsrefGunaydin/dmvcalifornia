@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 
 export const metadata = {
-  title: 'DMV Türkçe Sorular #3 | DMV California',
+  title: 'DMV Türkçe Sorular #3',
   description: 'California DMV Türkçe Test #3. Kapsamlı pratik testi - Park etme, kavşaklar ve özel durumlar.',
 };
 

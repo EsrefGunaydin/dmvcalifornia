@@ -11,7 +11,7 @@ import Link from 'next/link';
 import type { Quiz } from '@/types/quiz';
 
 export const metadata = {
-  title: 'DMV Turkish Test #1 / DMV Türkçe Test #1 | DMV California',
+  title: 'DMV Turkish Test #1 / DMV Türkçe Test #1',
   description: 'California DMV Türkçe Test #1. Temel trafik kuralları ve işaretler için 36 soru.',
 };
 

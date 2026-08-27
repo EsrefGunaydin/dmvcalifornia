@@ -6,7 +6,7 @@ import TopicTestLanding from '@/components/TopicTestLanding';
 import { MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'California DMV Parking Test 2026 (Free Practice) | DMV California',
+  title: 'California DMV Parking Test 2026 (Free Practice)',
   description:
     'Free California DMV parking practice test. Curb colors, parking on hills, no-parking zones, and disabled parking — the parking rules the written test loves to ask.',
   keywords: [

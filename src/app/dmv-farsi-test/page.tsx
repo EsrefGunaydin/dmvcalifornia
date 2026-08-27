@@ -10,7 +10,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('fa'),
-  title: 'DMV California آزمون فارسی | DMV California',
+  title: 'DMV California آزمون فارسی',
   description:
     'آزمون شبیه‌ساز کالیفرنیا DMV به زبان فارسی. سوالات تمرینی رسمی برای آمادگی برای امتحان گواهینامه رانندگی کالیفرنیا. California DMV practice test in Farsi/Persian with real questions.',
   keywords: [

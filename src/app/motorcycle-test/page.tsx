@@ -7,7 +7,7 @@ import CookieBanner from '@/components/CookieBanner';
 import motorcycleQuizzesData from '@/data/motorcycle-quizzes.json';
 
 export const metadata: Metadata = {
-  title: 'California Motorcycle (Class M) Practice Test | DMV California',
+  title: 'California Motorcycle (Class M) Practice Test',
   description:
     'Free California Motorcycle Class M license practice test. Real DMV questions covering helmets, lane position, braking, cornering, and group riding to prepare for the official motorcycle written test.',
   keywords: [

@@ -8,7 +8,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
-  title: 'California Vehicle Registration Guide 2026: New, Renew, Replace | DMV California',
+  title: 'California Vehicle Registration Guide 2026: New, Renew, Replace',
   description:
     'Registering a new purchase, renewing online or by mail, replacing a lost registration card, fees, smog rules, and late penalties, all in one California DMV registration guide.',
   keywords: [

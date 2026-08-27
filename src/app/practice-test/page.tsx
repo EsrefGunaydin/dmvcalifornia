@@ -14,7 +14,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
   alternates: languageAlternates('en'),
-  title: 'California DMV Practice Tests | DMV California',
+  title: 'California DMV Practice Tests',
   description: 'Free California DMV practice tests in English, Spanish, Turkish and Chinese. Test your knowledge with real DMV questions and prepare for your permit test.',
 };
 

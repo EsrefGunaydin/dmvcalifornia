@@ -49,20 +49,20 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
   if (!isSupportedLanguage(lang)) {
-    return { title: 'Simulator Not Found | DMV California' };
+    return { title: 'Simulator Not Found' };
   }
 
   const name = LANGUAGE_NAMES[lang];
   const url = `${SITE_URL}/practice-test/simulator/${lang}`;
-  const title = `DMV Practice Test Simulator (${name}) | DMV California`;
+  const title = `DMV Practice Test Simulator (${name})`;
   const description = `A random set of California DMV practice questions in ${name}, drawn fresh from the full question pool every time you take it. Free, unlimited retakes.`;
 
   return {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: 'website', siteName: 'DMV California' },
-    twitter: { card: 'summary_large_image', title, description },
+    openGraph: { title: `${title} | DMV California`, description, url, type: 'website', siteName: 'DMV California' },
+    twitter: { card: 'summary_large_image', title: `${title} | DMV California`, description },
   };
 }
 

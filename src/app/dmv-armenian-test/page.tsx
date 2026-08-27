@@ -10,7 +10,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('hy'),
-  title: 'DMV California Հայերեն Թեստ | DMV California',
+  title: 'DMV California Հայերեն Թեստ',
   description:
     'Անվճար Կալիֆորնիայի DMV փորձնական թեստ հայերենով։ Իրական հարցեր պաշտոնական քննությունից վարորդական իրավունքի համար նախապատրաստվելու համար։ California DMV practice test in Armenian.',
   keywords: [

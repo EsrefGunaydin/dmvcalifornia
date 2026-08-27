@@ -8,7 +8,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import { getBaseViews } from '@/lib/quiz-base-views';
 
 export const metadata: Metadata = {
-  title: 'CA DMV Bill of Sale & Release of Liability Guide 2026 | DMV California',
+  title: 'CA DMV Bill of Sale & Release of Liability Guide 2026',
   description:
     'What a California bill of sale needs to include, why the Release of Liability protects both buyer and seller, and how to file each one with the DMV.',
   keywords: [

@@ -8,7 +8,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata = {
   alternates: languageAlternates('tr'),
-  title: 'California DMV Türkçe Test | DMV California',
+  title: 'California DMV Türkçe Test',
   description: 'California DMV sınav soruları Türkçe. Kaliforniya ehliyet sınavına hazırlanmak için ücretsiz Türkçe pratik testleri.',
 };
 

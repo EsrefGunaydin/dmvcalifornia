@@ -10,7 +10,7 @@ import { languageAlternates } from '@/lib/language-alternates';
 
 export const metadata: Metadata = {
   alternates: languageAlternates('tl'),
-  title: 'DMV California Tagalog Test | DMV California',
+  title: 'DMV California Tagalog Test',
   description:
     'Libreng California DMV practice test sa Tagalog. Mga totoong tanong mula sa opisyal na pagsusulit upang ihanda ka para sa lisensya sa pagmamaneho. California DMV practice test in Tagalog/Filipino.',
   keywords: [

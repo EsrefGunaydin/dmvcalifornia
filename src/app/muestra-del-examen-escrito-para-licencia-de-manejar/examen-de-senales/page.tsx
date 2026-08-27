@@ -12,7 +12,7 @@ import Link from 'next/link';
 import type { Quiz } from '@/types/quiz';
 
 export const metadata: Metadata = {
-  title: 'Examen de Señales de Tráfico en Español | DMV California',
+  title: 'Examen de Señales de Tráfico en Español',
   description: 'Examen de señales de tráfico del DMV de California en español - 32 preguntas con imágenes de señales reales. Spanish traffic signs test with 32 image-based questions.',
   keywords: ['DMV español', 'señales de tráfico español', 'California DMV Spanish test', 'traffic signs Spanish', 'examen señales'],
   openGraph: {
