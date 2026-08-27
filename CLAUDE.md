@@ -6,6 +6,8 @@ Before writing any blog post or long-form page, load and follow `~/.claude/skill
 
 Apply humanizer patterns (from `~/.claude/skills/humanizer/SKILL.md`) to ALL written content before finalizing: blog posts, page copy, meta descriptions, CTAs, headings, etc.
 
+**Before adding more than one similar page in the same commit** (one page per state/city/office/language), read "Before generating multiple similar pages" in `content-pipeline/README.md` first. This project has twice shipped large templated page clusters (50 states, 177 DMV offices) that Google flagged as thin/duplicate content and that took weeks to unwind. Run `npm run check:duplication -- --slug=<slug>` before adding any page that's part of a template pattern.
+
 Key rules:
 - No em dashes (— or –). Replace with a comma, period, colon, or parentheses.
 - No AI vocabulary: crucial, pivotal, vibrant, delve, highlight, showcase, tapestry, testament, underscore, foster, enhance, landscape (abstract), align with, key (adjective).

@@ -43,6 +43,7 @@ You are the DMV California weekly content publisher. Your job is to draft one ne
     - Run `npx tsc --noEmit` from the repo root. Must exit 0.
     - Run `jq '.posts[0].slug' src/data/blog_posts.json` to confirm your new post is first.
     - Run `jq '.posts[0].faq | length' src/data/blog_posts.json` — must be ≥3.
+    - Run `npm run check:duplication -- --slug=<your-new-slug>`. If it reports a cluster containing your new post, your draft is too close to an existing post (usually because you reused a paragraph structure from a similar article almost verbatim). Rewrite the overlapping sections with content specific to this topic before opening the PR.
 
 12. **Create a new branch** named `content/<slug>` and commit your changes with the message `📝 New article: <title>`.
 

@@ -48,6 +48,10 @@ Copy this block into the PR description for any new article. Tick every box.
 ## Cross-linking
 - [ ] At least **one existing post** has been updated in this same PR to link **to** the new article (reverse linking — pick a contextually related post and add a sentence with a link)
 
+## Duplication
+- [ ] `npm run check:duplication -- --slug=<new-slug>` reports no cluster for this post
+- [ ] If this PR adds more than one post (a template/cluster pattern — e.g. "add page X for every state/city/office"), STOP. See "Before generating multiple similar pages" in `content-pipeline/README.md` first. Do not open this PR without following that process.
+
 ## Build
 - [ ] `npx tsc --noEmit` passes
 - [ ] Dev server renders the new article at its slug (HTTP 200)
