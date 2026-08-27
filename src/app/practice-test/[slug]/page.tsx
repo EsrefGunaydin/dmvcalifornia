@@ -111,10 +111,35 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
     hasPart: quiz.questions.slice(0, 10).map((q) => ({
       '@type': 'Question',
       eduQuestionType: 'Multiple choice',
+      name: q.question,
       text: q.question,
+      encodingFormat: 'text/plain',
+      learningResourceType: 'Practice problem',
+      assesses: q.category,
+      comment: { '@type': 'Comment', text: `Category: ${q.category}` },
+      educationalAlignment: {
+        '@type': 'AlignmentObject',
+        alignmentType: 'educationalSubject',
+        targetName: q.category,
+      },
+      typicalAgeRange: '16-99',
+      suggestedAnswer: q.options.map((option, index) => ({
+        '@type': 'Answer',
+        text: option,
+        position: index,
+        encodingFormat: 'text/plain',
+      })),
       acceptedAnswer: {
         '@type': 'Answer',
         text: q.options[q.correctAnswer],
+        position: q.correctAnswer,
+        encodingFormat: 'text/plain',
+        ...(q.explanation
+          ? {
+              comment: { '@type': 'Comment', text: q.explanation },
+              answerExplanation: { '@type': 'Comment', text: q.explanation },
+            }
+          : {}),
       },
     })),
     provider: {
