@@ -68,6 +68,12 @@ export const videoMetadata: Record<
     durationSeconds: 86,
     uploadDate: '2024-03-21T15:29:02-07:00',
   },
+  InU6I3Tsc8o: {
+    title: 'California DMV practice test in Spanish / Examen de práctica del DMV en español',
+    description: '40 preguntas reales con respuestas y explicaciones completas, basado en el examen oficial del DMV de California.',
+    durationSeconds: 1374,
+    uploadDate: '2026-07-23T18:29:36Z',
+  },
 };
 
 /** Converts whole seconds to an ISO 8601 duration string, e.g. 754 -> "PT12M34S". */

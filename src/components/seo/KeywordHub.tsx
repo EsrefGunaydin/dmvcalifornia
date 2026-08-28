@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import type { KeywordHub as Hub, HubCard, HubSection, HubRoadmap } from '@/data/seo-hubs';
+import { videoMetadata, secondsToIso8601Duration } from '@/data/video-metadata';
 import HeroStampBadge from '@/components/seo/HeroStampBadge';
 import {
   GraduationCap, FileCheck, Users, ClipboardCheck, BadgeCheck, ShieldAlert,
@@ -242,12 +243,32 @@ export default function KeywordHub({ config }: { config: Hub }) {
     })),
   };
 
+  const video = config.youtubeId ? videoMetadata[config.youtubeId] : undefined;
+  const videoSchema = config.youtubeId && video
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: video.title,
+        description: video.description,
+        thumbnailUrl: [
+          `https://i.ytimg.com/vi/${config.youtubeId}/maxresdefault.jpg`,
+          `https://i.ytimg.com/vi/${config.youtubeId}/hqdefault.jpg`,
+        ],
+        uploadDate: video.uploadDate,
+        duration: secondsToIso8601Duration(video.durationSeconds),
+        embedUrl: `https://www.youtube.com/embed/${config.youtubeId}`,
+      }
+    : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {videoSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }} />
+      )}
       <Header />
 
       <main className="min-h-screen bg-gray-50">
