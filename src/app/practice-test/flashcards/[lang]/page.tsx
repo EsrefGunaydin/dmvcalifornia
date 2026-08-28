@@ -28,12 +28,12 @@ export async function generateMetadata({
   const config = getFlashcardLang(lang);
   if (!config) return {};
 
-  const title = `${config.nativeName} DMV Flashcards (${config.englishName}) | DMV California`;
+  const title = `${config.nativeName} DMV Flashcards (${config.englishName})`;
   return {
     title,
     description: config.labels.ctaSubtext,
     openGraph: {
-      title,
+      title: `${title} | DMV California`,
       description: config.labels.ctaSubtext,
       type: 'website',
     },

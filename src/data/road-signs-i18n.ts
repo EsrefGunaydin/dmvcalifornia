@@ -46,7 +46,7 @@ const baseQuestions = base.questions as { id: number; image: string; correctAnsw
 export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   es: {
     code: 'es', nativeName: 'Español', englishName: 'Spanish', flag: '🇪🇸', dir: 'ltr',
-    metaTitle: 'Examen de Señales de Tránsito del DMV de California 2026 (Gratis) | DMV California',
+    metaTitle: 'Examen de Señales de Tránsito del DMV de California 2026 (Gratis)',
     metaDescription: 'Examen gratuito de señales de tránsito del DMV de California en español, con imágenes reales. Identifica cada señal y obtén la respuesta y una explicación al instante.',
     h1: 'Examen de Señales de Tránsito del DMV de California',
     intro: 'Mira cada señal de tránsito real de California, elige lo que significa y obtén la respuesta con una breve explicación al instante.',
@@ -63,7 +63,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   tr: {
     code: 'tr', nativeName: 'Türkçe', englishName: 'Turkish', flag: '🇹🇷', dir: 'ltr',
-    metaTitle: 'Kaliforniya DMV Trafik Tabelaları Testi 2026 (Ücretsiz) | DMV California',
+    metaTitle: 'Kaliforniya DMV Trafik Tabelaları Testi 2026 (Ücretsiz)',
     metaDescription: 'Gerçek tabela görselleriyle ücretsiz Kaliforniya DMV trafik tabelaları testi (Türkçe). Her tabelayı tanıyın, anında cevabı ve açıklamayı alın.',
     h1: 'Kaliforniya DMV Trafik Tabelaları Testi',
     intro: 'Her gerçek Kaliforniya trafik tabelasına bakın, ne anlama geldiğini seçin ve anında cevabı ile kısa bir açıklamayı alın.',
@@ -80,7 +80,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   zh: {
     code: 'zh', nativeName: '中文', englishName: 'Chinese', flag: '🇨🇳', dir: 'ltr',
-    metaTitle: '加州 DMV 路标测试 2026（免费）| DMV California',
+    metaTitle: '加州 DMV 路标测试 2026（免费）',
     metaDescription: '免费的加州 DMV 路标测试（中文），使用真实标志图片。识别每个标志，立即获得答案和解释。',
     h1: '加州 DMV 路标测试',
     intro: '查看每个真实的加州交通标志，选择它的含义，立即获得答案和简短解释。',
@@ -97,7 +97,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   ar: {
     code: 'ar', nativeName: 'العربية', englishName: 'Arabic', flag: '🇸🇦', dir: 'rtl',
-    metaTitle: 'اختبار لافتات الطرق في DMV كاليفورنيا 2026 (مجاني) | DMV California',
+    metaTitle: 'اختبار لافتات الطرق في DMV كاليفورنيا 2026 (مجاني)',
     metaDescription: 'اختبار مجاني للافتات الطرق في DMV كاليفورنيا بالعربية مع صور لافتات حقيقية. تعرّف على كل لافتة واحصل على الإجابة والشرح فوراً.',
     h1: 'اختبار لافتات الطرق في DMV كاليفورنيا',
     intro: 'انظر إلى كل لافتة مرور حقيقية في كاليفورنيا، واختر معناها، واحصل على الإجابة مع شرح موجز فوراً.',
@@ -114,7 +114,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   hy: {
     code: 'hy', nativeName: 'Հայերեն', englishName: 'Armenian', flag: '🇦🇲', dir: 'ltr',
-    metaTitle: 'Կալիֆոռնիայի DMV ճանապարհային նշանների թեստ 2026 (անվճար) | DMV California',
+    metaTitle: 'Կալիֆոռնիայի DMV ճանապարհային նշանների թեստ 2026 (անվճար)',
     metaDescription: 'Կալիֆոռնիայի DMV ճանապարհային նշանների անվճար թեստ հայերենով՝ իրական նշանների պատկերներով։ Ճանաչեք յուրաքանչյուր նշան և անմիջապես ստացեք պատասխանն ու բացատրությունը։',
     h1: 'Կալիֆոռնիայի DMV ճանապարհային նշանների թեստ',
     intro: 'Նայեք Կալիֆոռնիայի յուրաքանչյուր իրական ճանապարհային նշանին, ընտրեք դրա նշանակությունը և անմիջապես ստացեք պատասխանը՝ կարճ բացատրությամբ։',
@@ -131,7 +131,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   fa: {
     code: 'fa', nativeName: 'فارسی', englishName: 'Farsi', flag: '🇮🇷', dir: 'rtl',
-    metaTitle: 'آزمون تابلوهای راهنمایی DMV کالیفرنیا ۲۰۲۶ (رایگان) | DMV California',
+    metaTitle: 'آزمون تابلوهای راهنمایی DMV کالیفرنیا ۲۰۲۶ (رایگان)',
     metaDescription: 'آزمون رایگان تابلوهای راهنمایی DMV کالیفرنیا به فارسی با تصاویر واقعی تابلوها. هر تابلو را تشخیص دهید و فوراً پاسخ و توضیح را دریافت کنید.',
     h1: 'آزمون تابلوهای راهنمایی DMV کالیفرنیا',
     intro: 'به هر تابلوی راهنمایی واقعی کالیفرنیا نگاه کنید، معنای آن را انتخاب کنید و فوراً پاسخ را همراه با توضیح کوتاه دریافت کنید.',
@@ -148,7 +148,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   pa: {
     code: 'pa', nativeName: 'ਪੰਜਾਬੀ', englishName: 'Punjabi', flag: '🇮🇳', dir: 'ltr',
-    metaTitle: 'ਕੈਲੀਫੋਰਨੀਆ DMV ਸੜਕ ਚਿੰਨ੍ਹ ਟੈਸਟ 2026 (ਮੁਫ਼ਤ) | DMV California',
+    metaTitle: 'ਕੈਲੀਫੋਰਨੀਆ DMV ਸੜਕ ਚਿੰਨ੍ਹ ਟੈਸਟ 2026 (ਮੁਫ਼ਤ)',
     metaDescription: 'ਅਸਲ ਚਿੰਨ੍ਹ ਤਸਵੀਰਾਂ ਨਾਲ ਪੰਜਾਬੀ ਵਿੱਚ ਮੁਫ਼ਤ ਕੈਲੀਫੋਰਨੀਆ DMV ਸੜਕ ਚਿੰਨ੍ਹ ਟੈਸਟ। ਹਰ ਚਿੰਨ੍ਹ ਪਛਾਣੋ ਅਤੇ ਤੁਰੰਤ ਜਵਾਬ ਅਤੇ ਵਿਆਖਿਆ ਪ੍ਰਾਪਤ ਕਰੋ।',
     h1: 'ਕੈਲੀਫੋਰਨੀਆ DMV ਸੜਕ ਚਿੰਨ੍ਹ ਟੈਸਟ',
     intro: 'ਕੈਲੀਫੋਰਨੀਆ ਦੇ ਹਰ ਅਸਲ ਟ੍ਰੈਫਿਕ ਚਿੰਨ੍ਹ ਨੂੰ ਦੇਖੋ, ਚੁਣੋ ਕਿ ਇਸ ਦਾ ਕੀ ਮਤਲਬ ਹੈ, ਅਤੇ ਤੁਰੰਤ ਜਵਾਬ ਅਤੇ ਇੱਕ ਛੋਟੀ ਵਿਆਖਿਆ ਪ੍ਰਾਪਤ ਕਰੋ।',
@@ -165,7 +165,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   ru: {
     code: 'ru', nativeName: 'Русский', englishName: 'Russian', flag: '🇷🇺', dir: 'ltr',
-    metaTitle: 'Тест на дорожные знаки DMV Калифорнии 2026 (бесплатно) | DMV California',
+    metaTitle: 'Тест на дорожные знаки DMV Калифорнии 2026 (бесплатно)',
     metaDescription: 'Бесплатный тест на дорожные знаки DMV Калифорнии на русском с реальными изображениями знаков. Распознавайте каждый знак и сразу получайте ответ и пояснение.',
     h1: 'Тест на дорожные знаки DMV Калифорнии',
     intro: 'Смотрите на каждый реальный дорожный знак Калифорнии, выбирайте его значение и сразу получайте ответ с кратким пояснением.',
@@ -182,7 +182,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   tl: {
     code: 'tl', nativeName: 'Tagalog', englishName: 'Tagalog', flag: '🇵🇭', dir: 'ltr',
-    metaTitle: 'California DMV Road Signs Test 2026 (Libre) | DMV California',
+    metaTitle: 'California DMV Road Signs Test 2026 (Libre)',
     metaDescription: 'Libreng California DMV road signs test sa Tagalog na may totoong larawan ng tanda. Kilalanin ang bawat tanda at makakuha ng sagot at paliwanag agad.',
     h1: 'California DMV Road Signs Test',
     intro: 'Tingnan ang bawat totoong tanda ng trapiko sa California, piliin ang ibig sabihin nito, at makakuha ng sagot at maikling paliwanag agad.',
@@ -199,7 +199,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   vi: {
     code: 'vi', nativeName: 'Tiếng Việt', englishName: 'Vietnamese', flag: '🇻🇳', dir: 'ltr',
-    metaTitle: 'Bài Thi Biển Báo Giao Thông DMV California 2026 (Miễn Phí) | DMV California',
+    metaTitle: 'Bài Thi Biển Báo Giao Thông DMV California 2026 (Miễn Phí)',
     metaDescription: 'Bài thi biển báo giao thông DMV California miễn phí bằng tiếng Việt với hình ảnh biển báo thật. Nhận biết từng biển báo, nhận đáp án và giải thích ngay lập tức.',
     h1: 'Bài Thi Biển Báo Giao Thông DMV California',
     intro: 'Nhìn từng biển báo giao thông thật của California, chọn ý nghĩa của nó và nhận đáp án cùng lời giải thích ngắn ngay lập tức.',
@@ -216,7 +216,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   ko: {
     code: 'ko', nativeName: '한국어', englishName: 'Korean', flag: '🇰🇷', dir: 'ltr',
-    metaTitle: '캘리포니아 DMV 도로 표지판 시험 2026 (무료) | DMV California',
+    metaTitle: '캘리포니아 DMV 도로 표지판 시험 2026 (무료)',
     metaDescription: '실제 표지판 이미지가 있는 무료 캘리포니아 DMV 도로 표지판 시험 (한국어). 각 표지판을 알아보고 즉시 답과 설명을 받으세요.',
     h1: '캘리포니아 DMV 도로 표지판 시험',
     intro: '캘리포니아의 모든 실제 교통 표지판을 보고, 그 의미를 선택하고, 즉시 답과 간단한 설명을 받으세요.',
@@ -233,7 +233,7 @@ export const ROAD_SIGN_LANGUAGES: Record<RoadSignLang, RoadSignLangConfig> = {
   },
   hi: {
     code: 'hi', nativeName: 'हिन्दी', englishName: 'Hindi', flag: '🇮🇳', dir: 'ltr',
-    metaTitle: 'कैलिफोर्निया DMV रोड साइन टेस्ट 2026 (मुफ़्त) | DMV California',
+    metaTitle: 'कैलिफोर्निया DMV रोड साइन टेस्ट 2026 (मुफ़्त)',
     metaDescription: 'असली चिह्न तस्वीरों के साथ मुफ़्त कैलिफोर्निया DMV रोड साइन टेस्ट (हिन्दी)। हर चिह्न को पहचानें और तुरंत उत्तर तथा स्पष्टीकरण पाएं।',
     h1: 'कैलिफोर्निया DMV रोड साइन टेस्ट',
     intro: 'कैलिफोर्निया के हर असली ट्रैफिक चिह्न को देखें, उसका अर्थ चुनें, और तुरंत उत्तर तथा एक संक्षिप्त स्पष्टीकरण पाएं।',

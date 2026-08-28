@@ -162,7 +162,7 @@ export const HUBS: Record<string, KeywordHub> = {
   'california-dmv-practice-test': {
     slug: 'california-dmv-practice-test',
     youtubeId: 'AAYjx6l9X5g',
-    metaTitle: 'Free California DMV Practice Test 2026 — Class C Knowledge Test | DMV California',
+    metaTitle: 'Free California DMV Practice Test 2026 — Class C Knowledge Test',
     metaDescription:
       'Free California DMV practice test (Class C knowledge test), updated for 2026. Real exam-style questions with instant answers — full tests, permit test, topic tests, road signs, and a marathon. No signup.',
     keywords: [
