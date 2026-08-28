@@ -236,7 +236,8 @@ export default function DMVordle({ onGameStateChange }: DMVordleProps = {}) {
       ? `px-2 h-14 min-w-[3rem] ${k === '⌫' ? 'text-xl' : 'text-xs'}`
       : 'w-9 h-14';
     const state = keyStates[k];
-    const color = isAction ? 'bg-green-500 hover:bg-green-600 text-white' :
+    const color = k === '⌫' ? 'bg-primary hover:bg-primary-600 text-white' :
+                  isAction ? 'bg-green-500 hover:bg-green-600 text-white' :
                   state === 'correct' ? 'bg-green-500 text-white' :
                   state === 'present' ? 'bg-yellow-400 text-white' :
                   state === 'absent' ? 'bg-gray-400 text-white' :
