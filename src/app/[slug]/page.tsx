@@ -809,6 +809,7 @@ function renderBlogPost(postIn: BlogPost) {
         faq={post.faq}
         lang={post.lang}
         category={post.tags?.[0]}
+        youtubeId={post.youtubeId}
       />
 
       {/* Article */}

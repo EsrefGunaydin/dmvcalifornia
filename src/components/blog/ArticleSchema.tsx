@@ -1,5 +1,6 @@
 import { stripHtml } from '@/lib/strip-html';
 import { tagToSlug } from '@/lib/blogTags';
+import { videoMetadata, secondsToIso8601Duration } from '@/data/video-metadata';
 
 interface ArticleSchemaProps {
   title: string;
@@ -15,6 +16,10 @@ interface ArticleSchemaProps {
   lang?: string;
   /** Category (first tag) inserted between Blog and the post in the breadcrumb. */
   category?: string;
+  /** YouTube video ID embedded on this post, if any — emits VideoObject schema so
+   *  Google recognizes the page as a "watch page" for the video. Needs a matching
+   *  entry in video-metadata.ts to actually render. */
+  youtubeId?: string;
 }
 
 const SITE_URL = 'https://dmvcalifornia.us';
@@ -39,9 +44,11 @@ export default function ArticleSchema({
   faq,
   lang,
   category,
+  youtubeId,
 }: ArticleSchemaProps) {
   const url = `${SITE_URL}/${slug}`;
   const absoluteImage = image.startsWith('http') ? image : `${SITE_URL}${image}`;
+  const video = youtubeId ? videoMetadata[youtubeId] : undefined;
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -107,6 +114,22 @@ export default function ArticleSchema({
       }
     : null;
 
+  const videoSchema = youtubeId && video
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'VideoObject',
+        name: video.title,
+        description: video.description,
+        thumbnailUrl: [
+          `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`,
+          `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
+        ],
+        uploadDate: video.uploadDate,
+        duration: secondsToIso8601Duration(video.durationSeconds),
+        embedUrl: `https://www.youtube.com/embed/${youtubeId}`,
+      }
+    : null;
+
   return (
     <>
       <script
@@ -117,6 +140,12 @@ export default function ArticleSchema({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {videoSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(videoSchema) }}
+        />
+      )}
       {faqSchema && (
         <script
           type="application/ld+json"
