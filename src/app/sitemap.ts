@@ -26,224 +26,263 @@ import { HANDBOOK_EDITION_SLUGS } from '@/data/handbook-editions';
 import { EVENT_SLUGS } from '@/data/events';
 import { PRACTICE_TEST_HUBS } from '@/lib/language-alternates';
 
+// --- <lastmod> anchors -------------------------------------------------------
+// Sitemap <lastmod> must stay STABLE across deploys. Using `new Date()` (build
+// time) rewrites every URL's lastmod on every deploy, so Google learns our
+// lastmod is noise and stops using it as a recrawl signal. Instead, anchor each
+// group of template/hub pages to the date its underlying data/content last
+// changed, and bump the matching constant here when you change that content.
+// (Blog posts and blog-category pages derive their own date from post data.)
+const LASTMOD = {
+  // static tool/nav pages + keyword hubs — src/data/seo-hubs.ts
+  static: new Date('2026-08-28'),
+  // src/data/dmv_offices.json
+  offices: new Date('2026-08-25'),
+  // src/data/dmv-regions.ts
+  regions: new Date('2026-06-23'),
+  // quiz JSON data files (all languages + license classes)
+  quizzes: new Date('2026-07-26'),
+  // src/data/flashcards-i18n.ts
+  flashcards: new Date('2026-06-06'),
+  // src/data/road-signs-i18n.ts
+  roadSigns: new Date('2026-08-28'),
+  // src/data/handbook-editions.ts
+  handbook: new Date('2026-06-23'),
+  // src/data/events.ts
+  events: new Date('2026-07-19'),
+  // src/data/intersection-levels.json
+  intersection: new Date('2026-05-14'),
+  // src/data/blog_authors.json
+  authors: new Date('2026-05-13'),
+} as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://dmvcalifornia.us';
+
+  // Newest blog post date — used as the "freshness" date for the home page and
+  // /blog index, which change whenever a post ships.
+  const postDate = (post: any) => new Date(post.updatedAt || post.publishedAt).getTime();
+  const newestPost = blogPostsData.posts.reduce(
+    (max: number, post: any) => Math.max(max, postDate(post)),
+    LASTMOD.static.getTime()
+  );
+  const newestContent = new Date(newestPost);
 
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: newestContent,
       changeFrequency: 'daily',
       priority: 1.0,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: newestContent,
       changeFrequency: 'daily',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/videos`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/intersection`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.intersection,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/practice-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/20-hardest-dmv-written-test-questions`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/california-dmv-road-signs-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.roadSigns,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/california-dmv-cheat-sheet`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/new-york-dmv-manual-chapter-4-traffic-control`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/california-dmv-drug-and-alcohol-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/defensive-driving`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/california-dmv-parking-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/california-dmv-speed-limit-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/california-dmv-fees`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/california-dmv-fee-calculator`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/california-dmv-vehicle-registration`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/mydmv-california-account-guide`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/california-dmv-bill-of-sale-release-of-liability`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/california-dmv-marathon-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/examen-maraton-dmv-espanol`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/california-dmv-test-study-guide`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-offices`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.offices,
       changeFrequency: 'monthly',
       priority: 0.7,
     },
     {
       url: `${baseUrl}/dmv-turkish-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-chinese-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-arabic-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-armenian-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-farsi-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-punjabi-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-russian-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-tagalog-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-vietnamese-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-korean-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-hindi-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/motorcycle-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/commercial-test`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/privacy-policy`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.static,
       changeFrequency: 'yearly',
       priority: 0.3,
     },
@@ -282,7 +321,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  // Blog category landing pages — one per unique tag
+  // Blog category landing pages — one per unique tag. Each listing's lastmod is
+  // the newest post carrying that tag (i.e. when the listing last changed).
   const allTags = new Set<string>();
   for (const post of blogPostsData.posts) {
     for (const tag of (post.tags as string[] | undefined) || []) {
@@ -296,9 +336,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .replace(/\s+/g, '-')
       .replace(/-+/g, '-')
       .trim();
+    const newestTagged = blogPostsData.posts
+      .filter((p: any) => ((p.tags as string[] | undefined) || []).includes(tag))
+      .reduce((max: number, p: any) => Math.max(max, postDate(p)), LASTMOD.static.getTime());
     return {
       url: `${baseUrl}/blog/category/${slug}`,
-      lastModified: new Date(),
+      lastModified: new Date(newestTagged),
       changeFrequency: 'weekly' as const,
       priority: 0.7,
     };
@@ -307,7 +350,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Author bio pages
   const authorPages: MetadataRoute.Sitemap = authorsData.authors.map((author) => ({
     url: `${baseUrl}/blog/author/${author.slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.authors,
     changeFrequency: 'monthly' as const,
     priority: 0.5,
   }));
@@ -315,7 +358,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Quiz pages (English)
   const quizPages: MetadataRoute.Sitemap = quizzesData.quizzes.map((quiz) => ({
     url: `${baseUrl}/practice-test/${quiz.slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.quizzes,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
@@ -324,25 +367,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const turkishPages: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}/dmv-turkish-test/test-1`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-turkish-test/test-2`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-turkish-test/test-3`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.8,
     },
     {
       url: `${baseUrl}/dmv-turkish-test/dmv-california-turkce-trafik-isareti-testi`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.quizzes,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
@@ -351,7 +394,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Chinese quiz pages (dynamically generated from data)
   const chinesePages: MetadataRoute.Sitemap = chineseQuizzesData.quizzes.map((quiz) => ({
     url: `${baseUrl}/practice-test/${quiz.slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.quizzes,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
@@ -374,7 +417,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   const newLanguagePages: MetadataRoute.Sitemap = newLanguageQuizzes.map((quiz) => ({
     url: `${baseUrl}/practice-test/${quiz.slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.quizzes,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
@@ -382,7 +425,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Intersection puzzle game levels
   const intersectionPages: MetadataRoute.Sitemap = intersectionLevelsData.levels.map((lvl) => ({
     url: `${baseUrl}/intersection/${lvl.id}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.intersection,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
@@ -402,7 +445,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
   ].map((url) => ({
     url,
-    lastModified: new Date(),
+    lastModified: LASTMOD.flashcards,
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }));
@@ -410,7 +453,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Practice Test Simulator — one random-draw page per supported language.
   const simulatorPages: MetadataRoute.Sitemap = Object.keys(PRACTICE_TEST_HUBS).map((lang) => ({
     url: `${baseUrl}/practice-test/simulator/${lang}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.quizzes,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }));
@@ -420,7 +463,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // the sitemap — high-intent local pages that need to be discoverable.
   const officePages: MetadataRoute.Sitemap = officesData.offices.map((office: { slug: string }) => ({
     url: `${baseUrl}/${office.slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.offices,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
@@ -428,7 +471,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Localized road-signs test pages (e.g. /california-dmv-road-signs-test/es)
   const roadSignLangPages: MetadataRoute.Sitemap = ROAD_SIGN_LANG_CODES.map((code) => ({
     url: `${baseUrl}/california-dmv-road-signs-test/${code}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.roadSigns,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -436,7 +479,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Regional DMV office hub pages (e.g. /dmv-offices/los-angeles)
   const regionPages: MetadataRoute.Sitemap = REGIONS.map((r) => ({
     url: `${baseUrl}/dmv-offices/${r.slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.regions,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }));
@@ -444,17 +487,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Keyword SEO hub pages (e.g. /california-dmv-practice-test)
   const hubPages: MetadataRoute.Sitemap = HUB_SLUGS.map((slug) => ({
     url: `${baseUrl}/${slug}`,
-    lastModified: new Date(),
+    lastModified: LASTMOD.static,
     changeFrequency: 'weekly' as const,
     priority: 0.9,
   }));
 
   // California Driver Handbook hub + per-language pages
   const handbookPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/california-driver-handbook`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
+    { url: `${baseUrl}/california-driver-handbook`, lastModified: LASTMOD.handbook, changeFrequency: 'monthly' as const, priority: 0.8 },
     ...HANDBOOK_EDITION_SLUGS.map((slug) => ({
       url: `${baseUrl}/california-driver-handbook/${slug}`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.handbook,
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
@@ -462,10 +505,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Traffic safety events hub + event pages
   const eventPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/events`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${baseUrl}/events`, lastModified: LASTMOD.events, changeFrequency: 'monthly' as const, priority: 0.7 },
     ...EVENT_SLUGS.map((slug) => ({
       url: `${baseUrl}/events/${slug}`,
-      lastModified: new Date(),
+      lastModified: LASTMOD.events,
       changeFrequency: 'monthly' as const,
       priority: 0.6,
     })),
