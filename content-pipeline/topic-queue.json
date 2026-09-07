@@ -259,7 +259,7 @@
       "target_length": 1800,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "drivers license",
         "AB 60",
@@ -276,7 +276,8 @@
       "notes": "\"TNT\" (tago ng tago) is the Filipino community's own term for undocumented status, and Tagalog AB 60 content is an uncontested gap (existing coverage is English-only: ACLU, Nolo, documentedny; do not link competitors). Use the term respectfully as the community uses it. LEAD with confidentiality (Vehicle Code §1808.4, DMV does not share data with immigration enforcement). Same vetted facts as the AB 60 cluster: $46 fee, Federal Limits Apply, foreign passport or national ID for identity, two CA residency proofs, 5-year validity, standard licenses not affected by the CDL revocation news. Careful, factual, reassuring tone; no enforcement speculation, and note this is not legal advice. Wire the full AB 60 translations cluster reciprocally (check which languages exist at draft time).",
       "lang": "tl",
       "author": "DMV California",
-      "translations_target": "ab-60-california-driver-license"
+      "translations_target": "ab-60-california-driver-license",
+      "drafted_at": "2026-09-07"
     },
     {
       "slug": "bay-area-driving-guide-hindi",
