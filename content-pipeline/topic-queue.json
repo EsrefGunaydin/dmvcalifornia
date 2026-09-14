@@ -292,7 +292,8 @@
       "target_length": 1800,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
+      "drafted_at": "2026-09-14",
       "tags": [
         "Defensive Driving",
         "Hindi"
