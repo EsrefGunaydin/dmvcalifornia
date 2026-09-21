@@ -323,7 +323,7 @@
       "target_length": 1600,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "drivers license",
         "Farsi"
@@ -338,7 +338,8 @@
       ],
       "notes": "Very active Farsi query with one consistent answer across competitors (hamimohajer.com, go2tr.com, karimzabet.com; do not link them): Iranian licenses are NOT convertible in California, you start from zero. Be the clearest, most reassuring version of that \"no\": what the rules actually are, the 10-day new-resident rule, why an IDP does not substitute, then a condensed from-scratch path linking the Farsi flagship guide. Include the F-1/J-1 student no-SSN detail (SSA ineligibility letter) since Iranian students are a large share of this audience.",
       "lang": "fa",
-      "author": "DMV California"
+      "author": "DMV California",
+      "drafted_at": "2026-09-21"
     },
     {
       "slug": "california-dmv-fees-guide-arabic",
