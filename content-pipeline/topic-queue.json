@@ -353,7 +353,8 @@
       "target_length": 1600,
       "tier": 1,
       "priority": 1,
-      "status": "ready",
+      "status": "drafted",
+      "drafted_at": "2026-09-28",
       "tags": [
         "DMV Services",
         "Arabic"
