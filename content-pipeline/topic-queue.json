@@ -385,7 +385,7 @@
       "target_length": 1800,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Traffic Laws",
         "Driver License"
@@ -399,7 +399,8 @@
       "outbound_links": [
         "https://www.dmv.ca.gov/portal/driver-education-and-safety/dmv-safety-guidelines-actions/negligent-operator-treatment-system-nots/"
       ],
-      "notes": "No English page on-site explains the negligent-operator thresholds (4 points/12mo, 6/24mo, 8/36mo) even though the traffic-school post references points. High-urgency intent (\"will I lose my license\"). Cover: 1 vs 2-point violations, how long points last, traffic school masking, NOTS warning-letter/probation/suspension sequence, checking your record, DUI 2-point note (no legal advice; refer to attorney). The Spanish sibling sistema-de-puntos-dmv-california is queued at p1; whichever publishes second must wire reciprocal translations maps between the two. A related suspension/reinstatement topic exists later in this queue (california-driver-license-suspension-reasons-reinstatement): keep this one focused on the POINT SYSTEM and cross-link rather than duplicating reinstatement steps."
+      "notes": "No English page on-site explains the negligent-operator thresholds (4 points/12mo, 6/24mo, 8/36mo) even though the traffic-school post references points. High-urgency intent (\"will I lose my license\"). Cover: 1 vs 2-point violations, how long points last, traffic school masking, NOTS warning-letter/probation/suspension sequence, checking your record, DUI 2-point note (no legal advice; refer to attorney). The Spanish sibling sistema-de-puntos-dmv-california is queued at p1; whichever publishes second must wire reciprocal translations maps between the two. A related suspension/reinstatement topic exists later in this queue (california-driver-license-suspension-reasons-reinstatement): keep this one focused on the POINT SYSTEM and cross-link rather than duplicating reinstatement steps.",
+      "drafted_at": "2026-10-05"
     },
     {
       "slug": "trial-by-written-declaration-california",
