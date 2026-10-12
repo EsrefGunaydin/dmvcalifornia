@@ -415,7 +415,8 @@
       "target_length": 1800,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
+      "drafted_at": "2026-10-12",
       "tags": [
         "Traffic Laws"
       ],
