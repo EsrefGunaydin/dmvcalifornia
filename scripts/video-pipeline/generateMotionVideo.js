@@ -291,6 +291,7 @@ async function main() {
     const out = path.join(outDir, `${videoId}.mp4`);
     await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-i', videoOnly, '-i', narr, '-c:v', 'copy', '-c:a', 'aac', '-movflags', '+faststart', '-shortest', out]);
     console.log(`Audio rebuilt and remuxed onto the existing frames: ${out} (narration ${acc.toFixed(2)}s${vLen ? `, video ${vLen.toFixed(2)}s` : ''})`);
+    fs.writeFileSync(path.join(outDir, 'youtube-metadata.json'), JSON.stringify(buildInfoVideoMetadata(video, frames), null, 2));
     return;
   }
 

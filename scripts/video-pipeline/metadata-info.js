@@ -21,12 +21,15 @@ function titleCaseFromKey(key) {
     .join(' ');
 }
 
+// No emojis: plain section headers, so the description reads cleanly in
+// search results and in YouTube's collapsed view.
 function buildInfoVideoMetadata(video, frames) {
   const timestampLines = frames.map(
-    ({ beat, startSec }) => `${formatTimestamp(startSec)}  ${beat.onScreen.title || titleCaseFromKey(beat.key)}`
+    ({ beat, startSec }) => `${formatTimestamp(startSec)} ${beat.chapter || beat.onScreen.title || titleCaseFromKey(beat.key)}`
   );
 
-  const links = (video.links || []).map((l) => `🔗 ${l.label} → ${SITE}${l.path}`);
+  const siteLinks = (video.links || []).map((l) => `${l.label}: ${SITE}${l.path}`);
+  const officialLinks = (video.officialLinks || []).map((l) => `${l.label}: ${l.url}`);
 
   const credits = [];
   const seen = new Set();
@@ -40,27 +43,23 @@ function buildInfoVideoMetadata(video, frames) {
     }
   }
 
+  const section = (title, lines) => (lines.length ? ['', title.toUpperCase(), ...lines] : []);
   const description = [
     video.description || video.title,
     '',
-    ...links,
-    `📱 iOS APP → ${APP_URL}`,
-    '',
-    DIVIDER,
-    '📌 JUMP TO ANY SECTION',
-    DIVIDER,
-    ...timestampLines,
-    '',
-    DIVIDER,
-    '📚 MORE FROM DMV CALIFORNIA',
-    DIVIDER,
-    `🚗 Free Practice Tests → ${SITE}`,
-    `📋 California Driver Handbook → ${SITE}/california-driver-handbook`,
-    ...(credits.length ? ['', DIVIDER, '📷 PHOTOS', DIVIDER, `Stock photos and clips from Pexels by ${credits.join(', ')}.`] : []),
-    '',
-    DIVIDER,
+    `Full guide and free practice tests: ${SITE}`,
+    ...section('Chapters', timestampLines),
+    ...section('Official California DMV pages', officialLinks),
+    ...section('Guides on dmvcalifornia.us', [
+      ...siteLinks,
+      `California Driver Handbook: ${SITE}/california-driver-handbook`,
+      `Free DMV practice tests: ${SITE}`,
+    ]),
+    ...section('Free iOS app', [`DMV California for iPhone: ${APP_URL}`]),
+    ...section('Credits', credits.length ? [`Stock photos and clips from Pexels by ${credits.join(', ')}.`] : []),
     '',
     video.closing || `Based on the official California DMV requirements, updated for ${new Date().getFullYear()}.`,
+    'dmvcalifornia.us is an independent study site and is not affiliated with the California DMV.',
   ].join('\n');
 
   const tags = [...new Set([...(video.tags || ['California DMV']), video.title])];

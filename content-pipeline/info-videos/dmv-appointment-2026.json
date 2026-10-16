@@ -8,11 +8,11 @@
   "sourceSlug": "dmv-appointment",
   "status": "published",
   "youtubeVideoIdV1": "xpAAKLeGSNE",
-  "_status_readme": "v1 (Vanesa, static slides) was uploaded private as xpAAKLeGSNE on 2026-10-16 and superseded by this version. To take a version live: set privacy public (node scripts/video-pipeline/setVideoPrivacy.js <id> public), add it to src/data/videos.json, and add youtubeId to the dmv-appointment post in blog_posts.json.",
+  "_status_readme": "Current version uploaded private as fYZuHq0Zz8M on 2026-10-16. v1 (Vanesa, static slides) was xpAAKLeGSNE, superseded. To take it live: node scripts/video-pipeline/setVideoPrivacy.js fYZuHq0Zz8M public, add it to src/data/videos.json, and add youtubeId to the dmv-appointment post in blog_posts.json.",
   "description": "Most California DMV services are online now, and office visits work differently than they used to. This video shows which services still need a visit, the three ways to get one (start online, get in line today, or book a date), what the real wait times are, what to bring, and what to do instead for renewals and replacements.",
   "links": [
     {
-      "label": "Full guide: California DMV appointment",
+      "label": "California DMV appointment guide",
       "path": "/dmv-appointment"
     },
     {
@@ -20,12 +20,20 @@
       "path": "/california-real-id-checklist"
     },
     {
-      "label": "Renew at a DMV kiosk",
+      "label": "Renew your license at a DMV kiosk",
       "path": "/can-i-renew-my-license-at-a-dmv-kiosk"
     },
     {
-      "label": "Free DMV practice tests",
-      "path": "/"
+      "label": "California DMV office finder",
+      "path": "/dmv-offices"
+    },
+    {
+      "label": "California DMV fees",
+      "path": "/california-dmv-fees"
+    },
+    {
+      "label": "California DMV practice test 2026",
+      "path": "/practice-test/california-dmv-practice-test-2026"
     }
   ],
   "tags": [
@@ -112,7 +120,8 @@
         "start online",
         "get in line today",
         "book a date"
-      ]
+      ],
+      "chapter": "Three ways into the DMV"
     },
     {
       "key": "no-counter",
@@ -142,7 +151,8 @@
         "driver license or ID renewals",
         "driver and vehicle records",
         "replacement licenses"
-      ]
+      ],
+      "chapter": "What the counter no longer handles"
     },
     {
       "key": "when-needed",
@@ -178,7 +188,8 @@
         "replacement or renewal",
         "commercial licenses",
         "drive tests"
-      ]
+      ],
+      "chapter": "Services that still need a visit"
     },
     {
       "key": "three-options",
@@ -207,7 +218,8 @@
         "One,",
         "Two,",
         "Three,"
-      ]
+      ],
+      "chapter": "The three options"
     },
     {
       "key": "start-online",
@@ -249,7 +261,8 @@
         "confirmation code",
         "valid for a year",
         "Bring the original"
-      ]
+      ],
+      "chapter": "Option 1: start online"
     },
     {
       "key": "book",
@@ -280,7 +293,8 @@
         "pick a day",
         "mid October",
         "try a neighboring"
-      ]
+      ],
+      "chapter": "Option 3: book a date"
     },
     {
       "key": "wait-times",
@@ -311,7 +325,8 @@
       "cues": [
         "ten minutes",
         "thirty three minutes"
-      ]
+      ],
+      "chapter": "Wait times with and without an appointment"
     },
     {
       "key": "phone",
@@ -337,7 +352,8 @@
         "photographerUrl": "https://www.pexels.com/@kampus",
         "pexelsUrl": "https://www.pexels.com/video/man-looking-at-a-monitor-while-talking-on-the-phone-8347696/",
         "query": "man talking on the phone"
-      }
+      },
+      "chapter": "Booking by phone"
     },
     {
       "key": "bring",
@@ -409,7 +425,8 @@
         "government photo ID",
         "original documents",
         "a way to pay"
-      ]
+      ],
+      "chapter": "What to bring to your appointment"
     },
     {
       "key": "kiosk",
@@ -439,7 +456,8 @@
         "Renew a registration",
         "Renew or replace a license",
         "pull a driver"
-      ]
+      ],
+      "chapter": "DMV Now kiosks"
     },
     {
       "key": "kiosk-how",
@@ -470,7 +488,8 @@
         "license or ID card",
         "cards"
       ],
-      "narration": "What to bring. For a registration renewal, the renewal notice with the identification number at the top, or your current registration card. For a replacement sticker, your plate number and the last five digits of the VIN. For a record, your license or ID card. Every kiosk takes cards, with a one point nine five percent fee, and the ones in DMV offices and some stores take cash."
+      "narration": "What to bring. For a registration renewal, the renewal notice with the identification number at the top, or your current registration card. For a replacement sticker, your plate number and the last five digits of the VIN. For a record, your license or ID card. Every kiosk takes cards, with a one point nine five percent fee, and the ones in DMV offices and some stores take cash.",
+      "chapter": "What to bring to a kiosk"
     },
     {
       "key": "kiosk-limits",
@@ -536,7 +555,8 @@
         "boats",
         "change of address"
       ],
-      "narration": "Good to know. The touchscreen works in nine languages, including Spanish, Chinese, Armenian, Farsi, Punjabi, Russian, Tagalog and Vietnamese. Cars, pickups, motorcycles and most trailers can be renewed. Boats and heavy commercial trucks cannot, and a kiosk cannot take a change of address. If a kiosk gives you trouble, the kiosk line is 1 833 947 1670."
+      "narration": "Good to know. The touchscreen works in nine languages, including Spanish, Chinese, Armenian, Farsi, Punjabi, Russian, Tagalog and Vietnamese. Cars, pickups, motorcycles and most trailers can be renewed. Boats and heavy commercial trucks cannot, and a kiosk cannot take a change of address. If a kiosk gives you trouble, the kiosk line is 1 833 947 1670.",
+      "chapter": "What a kiosk can and cannot do"
     },
     {
       "key": "manage",
@@ -575,7 +595,8 @@
         "review or cancel",
         "book a new slot",
         "arrive early"
-      ]
+      ],
+      "chapter": "Cancel or change an appointment"
     },
     {
       "key": "cta",
@@ -602,9 +623,42 @@
         "photographerUrl": "https://www.pexels.com/@athena",
         "pexelsUrl": "https://www.pexels.com/video/traveling-a-road-on-a-clear-day-3002400/",
         "query": "palm trees seen from a moving vehicle"
-      }
+      },
+      "chapter": "Full guide"
     }
   ],
   "sentencePause": 0.5,
-  "beatTail": 0.4
+  "beatTail": 0.4,
+  "officialLinks": [
+    {
+      "label": "Make or check a DMV appointment",
+      "url": "https://www.dmv.ca.gov/portal/appointments/select-appointment-type/"
+    },
+    {
+      "label": "Driver's license and ID card online application",
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/dl-id-online-app-edl-44/"
+    },
+    {
+      "label": "Current field office wait times",
+      "url": "https://www.dmv.ca.gov/portal/current-field-office-wait-times/"
+    },
+    {
+      "label": "REAL ID document checklist",
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/real-id-checklist/"
+    },
+    {
+      "label": "DMV Now kiosk FAQs",
+      "url": "https://www.dmv.ca.gov/portal/locations/kiosks/dmv-now-kiosks-faqs/"
+    },
+    {
+      "label": "Find an office or kiosk",
+      "url": "https://www.dmv.ca.gov/portal/locations/"
+    },
+    {
+      "label": "DMV phone line",
+      "url": "1-800-777-0133 (kiosk help: 1-833-947-1670)"
+    }
+  ],
+  "youtubeVideoId": "fYZuHq0Zz8M",
+  "publishedAt": "2026-10-16"
 }
