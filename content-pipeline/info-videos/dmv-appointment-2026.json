@@ -1,6 +1,6 @@
 {
   "_readme": "Beat script for the DMV appointment video, condensed from the dmv-appointment blog post (24,946 views) and re-checked against dmv.ca.gov on 2026-10-16: the appointments page (no counter service for renewals, records, replacements; the service list; the three options after picking a service), the location and date pickers (Arleta had open times three days out), the field office wait times page (state averages 0:10 with an appointment, 0:33 without), the DL 44 online application page, the DMV kiosk page (289 kiosks, 1.95% card fee) and the senior drivers page. Claims from the post that the DMV does not state anywhere (30-minute grace period, 24-hour rescheduling rule, no-show blocks, 4 to 10 week lead times) are left out. Rendered as animated slides by scripts/video-pipeline/generateMotionVideo.js (layouts: title, bullets, steps, stat, image, cta). `screens` are captured from the live DMV site by captureScreens.js into assets/dmv-appointment-2026/; image beats with `imageQuery` get one Pexels photo each (written back into `image`). Vanesa on eleven_v3 reads about 130 words per minute here, so 650 words is about 5 minutes.",
-  "videoId": "dmv-appointment-2026",
+  "videoId": "xpAAKLeGSNE",
   "title": "How to Get a California DMV Appointment (2026)",
   "chip": "DMV APPOINTMENTS",
   "kicker": "CALIFORNIA DMV · 2026",
@@ -281,5 +281,8 @@
       },
       "narration": "The full guide, with every link from this video and the REAL ID checklist, is free at dmvcalifornia.us."
     }
-  ]
+  ],
+  "status": "published",
+  "publishedAt": "2026-10-16T22:08:00Z",
+  "_status_readme": "published = uploaded to YouTube as private for review. To take it live: set privacy public (node scripts/video-pipeline/setVideoPrivacy.js xpAAKLeGSNE public), add it to src/data/videos.json, and add youtubeId to the dmv-appointment post in blog_posts.json."
 }
