@@ -1,6 +1,10 @@
 const fs = require('fs');
 
-const DEFAULT_MODEL = 'eleven_multilingual_v2';
+// eleven_v3 since Oct 2026: it reads at the pace the ElevenLabs site
+// previews voices with (about a third slower than multilingual_v2, with
+// natural pauses). v3 takes no `speed` setting, and its `stability` must be
+// one of 0.0 (creative), 0.5 (natural) or 1.0 (robust).
+const DEFAULT_MODEL = 'eleven_v3';
 
 async function synthesize(text, voiceId, outPath, { modelId = DEFAULT_MODEL } = {}) {
   const apiKey = process.env.ELEVENLABS_API_KEY;
@@ -19,7 +23,7 @@ async function synthesize(text, voiceId, outPath, { modelId = DEFAULT_MODEL } = 
       text,
       model_id: modelId,
       voice_settings: {
-        stability: 0.45,
+        stability: 0.5,
         similarity_boost: 0.75,
       },
     }),

@@ -10,7 +10,7 @@ First video on the automated pipeline: **California DMV Practice Test in Spanish
 
 The whole process is automated end to end via `scripts/video-pipeline/`. No more hand-built HTML slide files, no manual screen recording, no manual ffmpeg silence-detection to sync audio.
 
-**Stack:** quiz JSON → per-slide narration text → ElevenLabs TTS (audio + exact duration) → Playwright screenshot of a Next.js render route → ffmpeg assembly (image durations match their own audio clip exactly) → YouTube Data API upload (title/description/tags/thumbnail all generated).
+**Stack:** quiz JSON → per-slide narration text → ElevenLabs TTS, model `eleven_v3` (audio + exact duration) → Playwright screenshot of a Next.js render route → ffmpeg assembly (image durations match their own audio clip exactly) → YouTube Data API upload (title/description/tags/thumbnail all generated).
 
 Each slide (intro, per-question number, per-question question, per-question reveal, outro, thumbnail) gets its own short TTS clip. Because the clip's own duration is known exactly (via `ffprobe`), there's no need to detect silence or guess timestamps — the slide is just held on screen for exactly as long as its own audio lasts, then the next one starts.
 
@@ -32,7 +32,7 @@ Each slide (intro, per-question number, per-question question, per-question reve
 | File | Purpose |
 |---|---|
 | `buildCues.js` | Quiz JSON → ordered list of slide "cues" (narration text + slide state). Language-aware (`en`/`es` templates, driven by the quiz's `language` field). |
-| `tts.js` | Calls ElevenLabs TTS (`/v1/text-to-speech/{voiceId}`), writes an MP3. `listVoices()` lists available voices. |
+| `tts.js` | Calls ElevenLabs TTS (`/v1/text-to-speech/{voiceId}`) with the `eleven_v3` model (the pace the ElevenLabs site previews voices with; `multilingual_v2` read about a third faster), writes an MP3. `listVoices()` lists available voices. |
 | `ffprobeDuration.js` | Exact audio duration: decodes the clip with ffmpeg and counts samples. |
 | `ffmpegBin.js` | Resolves the ffmpeg binary (`ffmpeg-static`, falling back to PATH). |
 | `renderSlide.js` | Playwright wrapper — screenshots `/internal/video-render/[quizId]?state=...&q=...` at 1920×1080. Hides the Next.js dev badge (`<nextjs-portal>`) first; it used to be captured into every slide. |
@@ -60,7 +60,7 @@ npm run video:youtube:upload output/video-pipeline/<quizId> -- --privacy private
 
 `npm run video:voices` lists ElevenLabs voice IDs available on the account (needs a key with Voices read permission; the current key only has Text to Speech).
 
-**Voices:** Spanish videos use Ninoska (`zl1Ut8dvwcVSuQSB9XkG`, a Voice Library "Spanish teacher" voice, about 127 words per minute, so a 20-question video runs a little longer than with the old voice). English videos use Vanesa (`9BYUod15YOH2aePSd97v`, Voice Library, about 135 words per minute). The first five Spanish videos used the stock Sarah voice (`EXAVITQu4vr4xnSDxMaL`), which many other channels also use; it is no longer used. `weeklyRun.js` picks the default by the quiz's language when a queue item has no `voice`.
+**Voices:** Spanish videos use Ninoska (`zl1Ut8dvwcVSuQSB9XkG`, a Voice Library "Spanish teacher" voice, about 115 words per minute on v3). English videos use Vanesa (`9BYUod15YOH2aePSd97v`, Voice Library, about 85 words per minute on v3, with natural pauses). The first five Spanish videos used the stock Sarah voice (`EXAVITQu4vr4xnSDxMaL`), which many other channels also use; it is no longer used. `weeklyRun.js` picks the default by the quiz's language when a queue item has no `voice`.
 
 `output/` is gitignored — generated videos/audio never get committed.
 
