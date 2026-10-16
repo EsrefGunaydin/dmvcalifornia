@@ -6,9 +6,9 @@
   "kicker": "CALIFORNIA DMV · 2026",
   "voice": "qSeXEcewz7tA0Q0qk9fH",
   "sourceSlug": "dmv-appointment",
-  "status": "published",
+  "status": "live",
   "youtubeVideoIdV1": "xpAAKLeGSNE",
-  "_status_readme": "Current version uploaded private as fYZuHq0Zz8M on 2026-10-16. v1 (Vanesa, static slides) was xpAAKLeGSNE, superseded. To take it live: node scripts/video-pipeline/setVideoPrivacy.js fYZuHq0Zz8M public, add it to src/data/videos.json, and add youtubeId to the dmv-appointment post in blog_posts.json.",
+  "_status_readme": "Live: public on YouTube as fYZuHq0Zz8M, on /videos, and embedded in the dmv-appointment post (youtubeId). v1 (xpAAKLeGSNE, static slides) is private and superseded.",
   "description": "Most California DMV services are online now, and office visits work differently than they used to. This video shows which services still need a visit, the three ways to get one (start online, get in line today, or book a date), what the real wait times are, what to bring, and what to do instead for renewals and replacements.",
   "links": [
     {
@@ -660,5 +660,6 @@
     }
   ],
   "youtubeVideoId": "fYZuHq0Zz8M",
-  "publishedAt": "2026-10-16"
+  "publishedAt": "2026-10-16",
+  "sitePublishedAt": "2026-10-16"
 }
