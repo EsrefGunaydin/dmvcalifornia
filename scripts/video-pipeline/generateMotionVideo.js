@@ -24,7 +24,7 @@ const { spawn, execFile } = require('child_process');
 const { promisify } = require('util');
 const { chromium } = require('playwright');
 
-const { synthesize } = require('./tts');
+const { synthesizeWithTimestamps } = require('./tts');
 const { getAudioDuration } = require('./ffprobeDuration');
 const { ffmpegPath } = require('./ffmpegBin');
 const { buildInfoVideoMetadata } = require('./metadata-info');
@@ -57,16 +57,75 @@ function loadVideo(videoId) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
-async function narrate(beat, voice, workDir) {
-  const audioPath = path.join(workDir, `${beat.key}.mp3`);
+// Narrates one beat with word timestamps, then inserts `pause` seconds of
+// silence after every sentence (v3 ignores <break> tags) and `tail` seconds
+// at the end, so slides breathe. Returns the final audio path, its length,
+// and a function mapping a character index of the narration to the second
+// it is spoken in the final audio.
+async function narrate(beat, voice, workDir, { pause = 0.5, tail = 0.4 } = {}) {
+  const rawPath = path.join(workDir, `${beat.key}.raw.mp3`);
+  const alignPath = path.join(workDir, `${beat.key}.align.json`);
+  const outPath = path.join(workDir, `${beat.key}.wav`);
   const hashPath = path.join(workDir, `${beat.key}.hash`);
-  const hash = crypto.createHash('sha1').update(`${voice}|v3|${beat.narration}`).digest('hex');
-  const cached = fs.existsSync(audioPath) && fs.existsSync(hashPath) && fs.readFileSync(hashPath, 'utf8') === hash;
-  if (!cached) {
-    await synthesize(beat.narration, voice, audioPath);
+  const hash = crypto.createHash('sha1').update(`${voice}|v3|ts|${pause}|${tail}|${beat.narration}`).digest('hex');
+  const cached = [rawPath, alignPath, outPath, hashPath].every((f) => fs.existsSync(f)) && fs.readFileSync(hashPath, 'utf8') === hash;
+  let align;
+  if (cached) {
+    align = JSON.parse(fs.readFileSync(alignPath, 'utf8'));
+  } else {
+    align = await synthesizeWithTimestamps(beat.narration, voice, rawPath);
+    fs.writeFileSync(alignPath, JSON.stringify(align));
+    // Sentence ends: . ! ? followed by whitespace (not the final one).
+    const text = align.characters.join('');
+    const cuts = [];
+    for (let i = 0; i < text.length - 1; i++) {
+      if (/[.!?]/.test(text[i]) && /\s/.test(text[i + 1]) && text.slice(i + 1).trim().length > 0) cuts.push(align.ends[i]);
+    }
+    const rawLen = await getAudioDuration(rawPath);
+    const parts = [];
+    let from = 0;
+    const bounds = [...cuts, rawLen];
+    for (let i = 0; i < bounds.length; i++) {
+      const seg = path.join(workDir, `${beat.key}.seg${i}.wav`);
+      await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-i', rawPath, '-ss', from.toFixed(3), '-to', bounds[i].toFixed(3), '-ar', '44100', '-ac', '1', seg]);
+      parts.push(seg);
+      const gap = i < bounds.length - 1 ? pause : tail;
+      const sil = path.join(workDir, `${beat.key}.sil${i}.wav`);
+      await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-f', 'lavfi', '-i', 'anullsrc=r=44100:cl=mono', '-t', gap.toFixed(3), sil]);
+      parts.push(sil);
+      from = bounds[i];
+    }
+    const listPath = path.join(workDir, `${beat.key}.parts.txt`);
+    fs.writeFileSync(listPath, parts.map((f) => `file '${f}'`).join('\n'));
+    await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', listPath, '-c', 'copy', outPath]);
+    align.cuts = cuts;
+    align.pause = pause;
+    fs.writeFileSync(alignPath, JSON.stringify(align));
     fs.writeFileSync(hashPath, hash);
   }
-  return { audioPath, cached, duration: await getAudioDuration(audioPath) };
+  const cuts = align.cuts || [];
+  const timeOfChar = (idx) => {
+    const t = align.starts[Math.min(idx, align.starts.length - 1)];
+    return t + (align.pause || pause) * cuts.filter((c) => c <= t).length;
+  };
+  return { audioPath: outPath, cached, duration: await getAudioDuration(outPath), timeOfChar };
+}
+
+// A beat may name `cues`, one phrase per bullet (or step, tile, item): the
+// slide reveals that element when the phrase is spoken. Phrases are matched
+// in the narration, case-insensitive, in order.
+function cueTimes(beat, timeOfChar) {
+  if (!beat.cues || !beat.cues.length) return null;
+  const text = beat.narration.toLowerCase();
+  let from = 0;
+  const times = [];
+  for (const cue of beat.cues) {
+    const idx = text.indexOf(cue.toLowerCase(), from);
+    if (idx < 0) { console.warn(`  cue "${cue}" not found in ${beat.key} narration`); return null; }
+    times.push(Math.max(0.3, timeOfChar(idx) - 0.15));
+    from = idx + cue.length;
+  }
+  return times;
 }
 
 // Streams JPEG frames into ffmpeg's stdin; resolves when the encoder exits.
@@ -157,8 +216,9 @@ async function main() {
   let acc = 0;
   for (const beat of beats) {
     process.stdout.write(`  narrate ${beat.key} ... `);
-    const { audioPath, cached, duration } = await narrate(beat, voice, workDir);
-    frames.push({ beat, audioPath, duration, startSec: acc, endSec: acc + duration });
+    const { audioPath, cached, duration, timeOfChar } = await narrate(beat, voice, workDir, { pause: video.sentencePause ?? 0.5, tail: video.beatTail ?? 0.4 });
+    const reveals = cueTimes(beat, timeOfChar);
+    frames.push({ beat, audioPath, duration, reveals, startSec: acc, endSec: acc + duration });
     acc += duration;
     console.log(`${duration.toFixed(2)}s${cached ? ' (cached)' : ''}`);
   }
@@ -204,7 +264,8 @@ async function main() {
   try {
     for (const f of frames) {
       const clipQuery = f.clipFrames ? `&clipFrames=${f.clipFrames}&clipFps=${CLIP_FPS}` : '';
-      const url = `${BASE_URL}/internal/video-render-motion/${videoId}?beat=${encodeURIComponent(f.beat.key)}&d=${f.duration.toFixed(3)}${clipQuery}`;
+      const revealQuery = f.reveals ? `&reveals=${f.reveals.map((t) => t.toFixed(2)).join(',')}` : '';
+      const url = `${BASE_URL}/internal/video-render-motion/${videoId}?beat=${encodeURIComponent(f.beat.key)}&d=${f.duration.toFixed(3)}${clipQuery}${revealQuery}`;
       await page.goto(url, { waitUntil: 'networkidle' });
       await page.waitForFunction(() => window.__ready === true, null, { timeout: 30000 });
       await page.addStyleTag({ content: 'nextjs-portal { display: none !important; }' });

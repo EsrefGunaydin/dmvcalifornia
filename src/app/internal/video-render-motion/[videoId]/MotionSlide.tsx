@@ -45,6 +45,9 @@ export interface MotionBeat {
     count?: number; // map layout: dots to light up
   };
   narration: string;
+  // One phrase per item, matched in the narration so the item appears when
+  // it is spoken (resolved by the generator into reveal times).
+  cues?: string[];
   // image layout: a screenshot (`screen`, captured by captureScreens.js) or a
   // Pexels photo (`imageQuery` resolved into `image`).
   screen?: string;
@@ -117,6 +120,11 @@ function stagger(n: number, duration: number, first = 0.9) {
   const gap = n > 1 ? Math.min(1.4, Math.max(0.55, usable / (n - 1))) : 0;
   return Array.from({ length: n }, (_, i) => first + i * gap);
 }
+// Reveal times from the narration's word timestamps when the generator
+// supplied them for every item, otherwise spread evenly.
+function revealTimes(n: number, duration: number, first: number, reveals?: number[]) {
+  return reveals && reveals.length >= n ? reveals.slice(0, n) : stagger(n, duration, first);
+}
 
 // ---------- three.js ambient background ----------
 
@@ -187,7 +195,10 @@ function Chrome({ chip, t, children }: { chip: string; t: number; children: Reac
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 5, background: GOLD, transform: `scaleX(${reveal(t, 0, 0.6)})`, transformOrigin: 'left' }} />
       {children}
       <div style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: BAR, background: DMV_700, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 60px', transform: `translateY(${(1 - barIn) * BAR}px)` }}>
-        <div style={{ fontSize: 34, fontWeight: 900, letterSpacing: 1, color: WHITE }}>DMV CALIFORNIA</div>
+        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', lineHeight: 1.05 }}>
+          <div style={{ fontSize: 18, fontWeight: 900, letterSpacing: 3, color: 'rgba(255,255,255,0.75)' }}>DMV CALIFORNIA</div>
+          <div style={{ fontSize: 38, fontWeight: 900, color: WHITE }}>dmvcalifornia.us</div>
+        </div>
         <div style={{ background: GOLD, color: '#1a1f2e', borderRadius: 8, padding: '10px 24px', fontSize: 25, fontWeight: 900 }}>{chip}</div>
       </div>
     </div>
@@ -242,9 +253,9 @@ function BulletList({ items, icons, t, times, size = 44, gap = 26, badge = 46, w
 
 // ---------- layouts ----------
 
-function TitleLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function TitleLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
-  const times = stagger(s.bullets?.length ?? 0, duration, 1.6);
+  const times = revealTimes(s.bullets?.length ?? 0, duration, 1.6, reveals);
   return (
     <div style={{ position: 'absolute', top: 150, left: 120, right: 120, bottom: BAR + 60, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
       <Kicker text={s.kicker} t={t} />
@@ -268,10 +279,10 @@ function TitleLayout({ beat, t, duration }: { beat: MotionBeat; t: number; durat
   );
 }
 
-function BulletsLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function BulletsLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const items = s.bullets ?? [];
-  const times = stagger(items.length, duration);
+  const times = revealTimes(items.length, duration, 0.9, reveals);
   const dense = items.length > 5;
   return (
     <div style={{ position: 'absolute', top: 110, left: 120, right: 120, bottom: BAR + 40, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -284,10 +295,10 @@ function BulletsLayout({ beat, t, duration }: { beat: MotionBeat; t: number; dur
   );
 }
 
-function StepsLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function StepsLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const steps = s.steps ?? [];
-  const times = stagger(steps.length, duration, 1.1);
+  const times = revealTimes(steps.length, duration, 1.1, reveals);
   const n = steps.length;
   const left = 290;
   const right = W - 290;
@@ -320,7 +331,7 @@ function StepsLayout({ beat, t, duration }: { beat: MotionBeat; t: number; durat
   );
 }
 
-function StatLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function StatLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const value = s.value ?? '';
   const numeric = value.match(/^(\D*)(\d[\d,]*)(.*)$/);
@@ -333,7 +344,7 @@ function StatLayout({ beat, t, duration }: { beat: MotionBeat; t: number; durati
     const chars = Math.round(value.length * reveal(t, 0.6, 1.2));
     shown = value.slice(0, chars);
   }
-  const times = stagger(s.bullets?.length ?? 0, duration, 2.2);
+  const times = revealTimes(s.bullets?.length ?? 0, duration, 2.2, reveals);
   const Icon = s.icons?.[0] ? iconFor(s.icons[0]) : null;
   return (
     <div style={{ position: 'absolute', top: 120, left: 120, right: 120, bottom: BAR + 40, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
@@ -357,10 +368,10 @@ function StatLayout({ beat, t, duration }: { beat: MotionBeat; t: number; durati
 // Text on the left, a picture on the right (or behind everything with
 // fit: 'full'). The picture drifts and zooms slowly so a still never looks
 // frozen. Screenshots get a browser window drawn around them.
-function ImageLayout({ beat, t, duration, src, aspect }: { beat: MotionBeat; t: number; duration: number; src?: string; aspect?: number }) {
+function ImageLayout({ beat, t, duration, src, aspect, reveals }: { beat: MotionBeat; t: number; duration: number; src?: string; aspect?: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const items = s.bullets ?? [];
-  const times = stagger(items.length, duration);
+  const times = revealTimes(items.length, duration, 0.9, reveals);
   const contain = beat.fit === 'contain';
   const prog = clamp01(t / Math.max(1, duration));
   const zoom = 1 + (contain ? 0.025 : 0.12) * prog;
@@ -415,11 +426,11 @@ function ImageLayout({ beat, t, duration, src, aspect }: { beat: MotionBeat; t: 
 }
 
 // A row of photo tiles, each popping in with its label, for lists of physical things.
-function GridLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function GridLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const tiles = beat.tiles ?? [];
   const n = Math.max(1, tiles.length);
-  const times = stagger(n, duration, 1.2);
+  const times = revealTimes(n, duration, 1.2, reveals);
   const gap = 28;
   const tileW = Math.min(420, (W - 240 - gap * (n - 1)) / n);
   const tileH = Math.round(tileW * 0.72);
@@ -456,11 +467,11 @@ function GridLayout({ beat, t, duration }: { beat: MotionBeat; t: number; durati
 }
 
 // Horizontal bars that grow to their values, with the numbers counting up.
-function CompareLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function CompareLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const items = s.items ?? [];
   const max = s.max ?? Math.max(1, ...items.map((i) => i.value));
-  const times = stagger(items.length, duration, 1.0);
+  const times = revealTimes(items.length, duration, 1.0, reveals);
   const trackW = 1100;
   return (
     <div style={{ position: 'absolute', top: 110, left: 120, right: 120, bottom: BAR + 40, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -493,12 +504,12 @@ function CompareLayout({ beat, t, duration }: { beat: MotionBeat; t: number; dur
 }
 
 // A root node branching into options, drawn in sequence.
-function FlowLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function FlowLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const branches = s.steps ?? [];
   const notes = s.bullets ?? [];
   const n = Math.max(1, branches.length);
-  const times = stagger(n, duration, 1.5);
+  const times = revealTimes(n, duration, 1.5, reveals);
   const rootP = pop(t, 0.5, 0.6);
   const trunk = reveal(t, 0.9, 0.4);
   const rail = reveal(t, 1.1, 0.6);
@@ -581,10 +592,10 @@ function caDots(count: number) {
 }
 
 // A big number on the left and a California map on the right that fills with dots.
-function MapLayout({ beat, t, duration }: { beat: MotionBeat; t: number; duration: number }) {
+function MapLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: number; duration: number; reveals?: number[] }) {
   const s = beat.onScreen;
   const items = s.bullets ?? [];
-  const times = stagger(items.length, duration, 2.4);
+  const times = revealTimes(items.length, duration, 2.4, reveals);
   const path = CA_OUTLINE.map(([lon, lat], i) => { const [x, y] = projectCA(lon, lat); return `${i ? 'L' : 'M'}${x.toFixed(1)},${y.toFixed(1)}`; }).join(' ') + ' Z';
   const count = s.count ?? 100;
   const dots = caDots(count);
@@ -656,7 +667,7 @@ function waitForImages(root: HTMLElement | null, timeoutMs = 2500): Promise<void
   });
 }
 
-export default function MotionSlide({ video, beat, duration, initialT, imageSrc, imageAspect, clip }: { video: MotionVideo; beat: MotionBeat; duration: number; initialT: number; imageSrc?: string; imageAspect?: number; clip?: ClipFrames }) {
+export default function MotionSlide({ video, beat, duration, initialT, imageSrc, imageAspect, clip, reveals }: { video: MotionVideo; beat: MotionBeat; duration: number; initialT: number; imageSrc?: string; imageAspect?: number; clip?: ClipFrames; reveals?: number[] }) {
   const [frame, setFrame] = useState({ t: initialT, abs: initialT });
   const rootRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -699,17 +710,17 @@ export default function MotionSlide({ video, beat, duration, initialT, imageSrc,
   const canvasStyle: CSSProperties = { position: 'absolute', inset: 0, width: W, height: H };
   let body: React.ReactNode;
   switch (beat.layout) {
-    case 'title': body = <TitleLayout beat={beat} t={t} duration={duration} />; break;
-    case 'steps': body = <StepsLayout beat={beat} t={t} duration={duration} />; break;
-    case 'stat': body = <StatLayout beat={beat} t={t} duration={duration} />; break;
+    case 'title': body = <TitleLayout beat={beat} t={t} duration={duration} reveals={reveals} />; break;
+    case 'steps': body = <StepsLayout beat={beat} t={t} duration={duration} reveals={reveals} />; break;
+    case 'stat': body = <StatLayout beat={beat} t={t} duration={duration} reveals={reveals} />; break;
     case 'cta': body = <CtaLayout beat={beat} t={t} />; break;
-    case 'image': body = <ImageLayout beat={beat} t={t} duration={duration} src={imageSrc} aspect={imageAspect} />; break;
-    case 'grid': body = <GridLayout beat={beat} t={t} duration={duration} />; break;
-    case 'compare': body = <CompareLayout beat={beat} t={t} duration={duration} />; break;
-    case 'flow': body = <FlowLayout beat={beat} t={t} duration={duration} />; break;
-    case 'map': body = <MapLayout beat={beat} t={t} duration={duration} />; break;
+    case 'image': body = <ImageLayout beat={beat} t={t} duration={duration} src={imageSrc} aspect={imageAspect} reveals={reveals} />; break;
+    case 'grid': body = <GridLayout beat={beat} t={t} duration={duration} reveals={reveals} />; break;
+    case 'compare': body = <CompareLayout beat={beat} t={t} duration={duration} reveals={reveals} />; break;
+    case 'flow': body = <FlowLayout beat={beat} t={t} duration={duration} reveals={reveals} />; break;
+    case 'map': body = <MapLayout beat={beat} t={t} duration={duration} reveals={reveals} />; break;
     case 'thumbnail': body = <ThumbnailLayout video={video} />; break;
-    default: body = <BulletsLayout beat={beat} t={t} duration={duration} />;
+    default: body = <BulletsLayout beat={beat} t={t} duration={duration} reveals={reveals} />;
   }
 
   return (

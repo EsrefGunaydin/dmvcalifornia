@@ -39,6 +39,27 @@ async function synthesize(text, voiceId, outPath, { modelId = DEFAULT_MODEL } = 
   return outPath;
 }
 
+// Same as synthesize, but also returns ElevenLabs' character alignment
+// (start and end seconds per character of `text`), used by the info-video
+// pipeline to time slide reveals to the narration and to insert pauses.
+async function synthesizeWithTimestamps(text, voiceId, outPath, { modelId = DEFAULT_MODEL } = {}) {
+  const apiKey = process.env.ELEVENLABS_API_KEY;
+  if (!apiKey) throw new Error('ELEVENLABS_API_KEY not set (check .env.local)');
+  const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${voiceId}/with-timestamps`, {
+    method: 'POST',
+    headers: { 'xi-api-key': apiKey, 'Content-Type': 'application/json', Accept: 'application/json' },
+    body: JSON.stringify({ text, model_id: modelId, voice_settings: { stability: 0.5, similarity_boost: 0.75 } }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => '');
+    throw new Error(`ElevenLabs TTS (timestamps) failed (${res.status}) for voice ${voiceId}: ${body.slice(0, 300)}`);
+  }
+  const data = await res.json();
+  fs.writeFileSync(outPath, Buffer.from(data.audio_base64, 'base64'));
+  const a = data.alignment || data.normalized_alignment;
+  return { characters: a.characters, starts: a.character_start_times_seconds, ends: a.character_end_times_seconds };
+}
+
 async function listVoices() {
   const apiKey = process.env.ELEVENLABS_API_KEY;
   if (!apiKey) {
@@ -54,4 +75,4 @@ async function listVoices() {
   return data.voices || [];
 }
 
-module.exports = { synthesize, listVoices };
+module.exports = { synthesize, synthesizeWithTimestamps, listVoices };

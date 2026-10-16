@@ -86,14 +86,14 @@
         "title": "Three ways into the DMV in 2026",
         "subtitle": "Start online, get in line today, or book a date.",
         "bullets": [
-          "What still needs a visit",
-          "How to book",
-          "What to bring"
+          "Start online",
+          "Get in line today",
+          "Book a date"
         ],
         "icons": [
-          "Building2",
-          "CalendarCheck",
-          "ClipboardList"
+          "Laptop",
+          "Users",
+          "CalendarCheck"
         ]
       },
       "narration": "Most California DMV services are online now, and an office visit works differently than it used to. There is a short list of things that still need a visit, and for those you have three ways in: start online, get in line today, or book a date. Here is how each one works, and what to bring.",
@@ -107,7 +107,12 @@
         "photographerUrl": "https://www.pexels.com/@dudubangbang",
         "pexelsUrl": "https://www.pexels.com/video/scenic-redwood-forest-road-trip-on-highway-101-29299736/",
         "query": "scenic california highway road trip"
-      }
+      },
+      "cues": [
+        "start online",
+        "get in line today",
+        "book a date"
+      ]
     },
     {
       "key": "no-counter",
@@ -131,7 +136,13 @@
           "RefreshCw"
         ]
       },
-      "narration": "First, what you cannot book. The DMV no longer provides counter service for vehicle registration renewals, driver license or ID renewals unless your renewal notice says otherwise, driver and vehicle records, or replacement licenses. Those are done online, at a DMV kiosk, with a DMV business partner, or by mail."
+      "narration": "First, what you cannot book. The DMV no longer provides counter service for vehicle registration renewals, driver license or ID renewals unless your renewal notice says otherwise, driver and vehicle records, or replacement licenses. Those are done online, at a DMV kiosk, with a DMV business partner, or by mail.",
+      "cues": [
+        "vehicle registration renewals",
+        "driver license or ID renewals",
+        "driver and vehicle records",
+        "replacement licenses"
+      ]
     },
     {
       "key": "when-needed",
@@ -159,7 +170,15 @@
           "Car"
         ]
       },
-      "narration": "An office visit is for a first time driver license, ID card or REAL ID; a driving permit; senior renewals at seventy and older; a replacement or renewal that needs changes; commercial licenses; name changes; reinstating a driving privilege; and drive tests for cars, commercial vehicles and motorcycles."
+      "narration": "An office visit is for a first time driver license, ID card or REAL ID; a driving permit; senior renewals at seventy and older; a replacement or renewal that needs changes; commercial licenses; name changes; reinstating a driving privilege; and drive tests for cars, commercial vehicles and motorcycles.",
+      "cues": [
+        "first time driver license",
+        "driving permit",
+        "senior renewals",
+        "replacement or renewal",
+        "commercial licenses",
+        "drive tests"
+      ]
     },
     {
       "key": "three-options",
@@ -183,7 +202,12 @@
           "CalendarCheck"
         ]
       },
-      "narration": "Pick your service on the DMV appointments page and you get three options. One, start your application online so the visit is shorter. Two, Get in Line Now, a same day virtual queue for the office you choose, when you are ready to go today. Three, Get an Appointment, which books a date and time in the future."
+      "narration": "Pick your service on the DMV appointments page and you get three options. One, start your application online so the visit is shorter. Two, Get in Line Now, a same day virtual queue for the office you choose, when you are ready to go today. Three, Get an Appointment, which books a date and time in the future.",
+      "cues": [
+        "One,",
+        "Two,",
+        "Three,"
+      ]
     },
     {
       "key": "start-online",
@@ -218,7 +242,14 @@
         "photographerUrl": "https://www.pexels.com/@jack-sparrow",
         "pexelsUrl": "https://www.pexels.com/video/a-person-busy-typing-and-using-his-laptop-5977139/",
         "query": "person typing on a laptop"
-      }
+      },
+      "cues": [
+        "nine minutes",
+        "upload your REAL ID",
+        "confirmation code",
+        "valid for a year",
+        "Bring the original"
+      ]
     },
     {
       "key": "book",
@@ -243,7 +274,13 @@
           "Navigation"
         ]
       },
-      "narration": "To book a date, choose the office, then pick a day and time from the calendar. The long waits you may have heard about are not a given. In mid October 2026, Los Angeles area offices like Arleta had open times within the same week. If your office shows nothing, try a neighboring one. Any DMV office serves any California resident."
+      "narration": "To book a date, choose the office, then pick a day and time from the calendar. The long waits you may have heard about are not a given. In mid October 2026, Los Angeles area offices like Arleta had open times within the same week. If your office shows nothing, try a neighboring one. Any DMV office serves any California resident.",
+      "cues": [
+        "choose the office",
+        "pick a day",
+        "mid October",
+        "try a neighboring"
+      ]
     },
     {
       "key": "wait-times",
@@ -270,7 +307,11 @@
         ],
         "subtitle": "Live numbers for every office: dmv.ca.gov, Current field office wait times"
       },
-      "narration": "Why book at all? The DMV's wait time page shows a statewide average of about ten minutes with an appointment, against about thirty three minutes without one. It lists every office, so check yours before you go."
+      "narration": "Why book at all? The DMV's wait time page shows a statewide average of about ten minutes with an appointment, against about thirty three minutes without one. It lists every office, so check yours before you go.",
+      "cues": [
+        "ten minutes",
+        "thirty three minutes"
+      ]
     },
     {
       "key": "phone",
@@ -362,7 +403,13 @@
         ],
         "subtitle": "REAL ID: proof of identity, two proofs of residency, and your Social Security number. Written tests end at 4:30 p.m."
       },
-      "narration": "On the day, bring your confirmation code, a government photo ID, the original documents you uploaded, a way to pay, and your glasses or contacts if you wear them. For REAL ID, that means an identity document, two proofs of residency, and proof of your Social Security number. If you need a written test, go early: tests are not given after four thirty p.m."
+      "narration": "On the day, bring your confirmation code, a government photo ID, the original documents you uploaded, a way to pay, and your glasses or contacts if you wear them. For REAL ID, that means an identity document, two proofs of residency, and proof of your Social Security number. If you need a written test, go early: tests are not given after four thirty p.m.",
+      "cues": [
+        "confirmation code",
+        "government photo ID",
+        "original documents",
+        "a way to pay"
+      ]
     },
     {
       "key": "kiosk",
@@ -386,7 +433,13 @@
           "CreditCard"
         ]
       },
-      "narration": "For the things the counter no longer handles, a DMV kiosk is usually the fastest option. There are two hundred eighty nine of them, inside DMV offices and retail stores, for registration renewals with the sticker printed on the spot, license and ID renewals, replacement cards, and records. Cards are accepted at every kiosk with a one point nine five percent fee, and many take cash."
+      "narration": "For the things the counter no longer handles, a DMV kiosk is usually the fastest option. There are two hundred eighty nine of them, inside DMV offices and retail stores, for registration renewals with the sticker printed on the spot, license and ID renewals, replacement cards, and records. Cards are accepted at every kiosk with a one point nine five percent fee, and many take cash.",
+      "cues": [
+        "registration renewals",
+        "license and ID renewals",
+        "records",
+        "Cards are accepted"
+      ]
     },
     {
       "key": "manage",
@@ -419,7 +472,13 @@
         "photographerUrl": "https://www.pexels.com/@ketut-subiyanto",
         "pexelsUrl": "https://www.pexels.com/video/calendar-hanged-on-a-wall-4378032/",
         "query": "calendar hanged on a wall"
-      }
+      },
+      "cues": [
+        "View Appointment",
+        "review or cancel",
+        "book a new slot",
+        "arrive early"
+      ]
     },
     {
       "key": "cta",
@@ -448,5 +507,7 @@
         "query": "palm trees seen from a moving vehicle"
       }
     }
-  ]
+  ],
+  "sentencePause": 0.5,
+  "beatTail": 0.4
 }
