@@ -88,6 +88,26 @@ Only quizzes already inside `src/data/quizzes.json` (currently `en` + `es`) are 
 
 ---
 
+## Presentation-style info videos (`generateMotionVideo.js`)
+
+For non-quiz videos made from a blog post (first one: `dmv-appointment-2026`, from the `dmv-appointment` post). Every slide is an animation rendered frame by frame, not a held screenshot.
+
+**Stack:** beat script JSON (`content-pipeline/info-videos/<videoId>.json`) → ElevenLabs TTS per beat (cached by narration text in the output `work/` dir) → `/internal/video-render-motion/[videoId]?beat=<key>&d=<seconds>` rendered at 30 fps by stepping `window.__seek(t)` and streaming JPEG frames into ffmpeg → MP4 + thumbnail + YouTube metadata (`metadata-info.js`, which reads `description`, `links`, `tags`, `closing` from the JSON).
+
+```bash
+npm run dev                                                    # render route needs the dev server
+node scripts/video-pipeline/generateMotionVideo.js <videoId>   # [--beats a,b] for a quick preview, [--out dir], [--fps 30]
+node scripts/video-pipeline/youtubeUpload.js output/video-pipeline/<videoId> --privacy private
+```
+
+**Slide layouts** (`layout` on each beat; see `MotionSlide.tsx`): `title` (hook), `bullets` (list builds in one by one, spread across the narration), `steps` (numbered timeline), `stat` (big number counts up, or a phone number types in), `image` (text left, picture right in a card; `frame: "browser"` draws a browser window for screenshots; `fit: "full"` puts a photo behind the whole slide; `fit: "contain"` shrinks the card to a wide screenshot's shape), `cta`. A three.js scene of floating tiles drifts behind every slide, continuous across cuts.
+
+**Pictures:** `screens` in the JSON lists website screenshots to capture (`captureScreens.js`: url, optional `steps` of clicks/followLink/scrollTo, saved to `content-pipeline/info-videos/assets/<videoId>/` and committed; existing files are kept unless `--force`; `manual: true` marks one captured by hand, as the DMV's booking calendar had to be, because the DMV's A/B-tested booking app does not render in headless Chromium). An `image` beat with `imageQuery` gets one Pexels photo (`pexels.js`), written back into the beat as `image` so re-renders use the same one, and credited in the YouTube description. Use photos sparingly; screenshots and animated text are the house style.
+
+**Writing the script:** condense the post to 550 to 700 words (Vanesa on v3 reads about 130 words a minute, so that is 4 to 5 minutes), re-check every fact against the official source on the day, and note the check date in `_readme` and `closing`. Numbers that change through the day (DMV wait times) get "about".
+
+---
+
 ## Publishing a reviewed video (go live)
 
 Every upload lands as **private** by design — nothing is public or embedded on the site until you deliberately take it live. Once you've watched a video in YouTube Studio and you're happy with it:

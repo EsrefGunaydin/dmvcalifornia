@@ -1,0 +1,285 @@
+{
+  "_readme": "Beat script for the DMV appointment video, condensed from the dmv-appointment blog post (24,946 views) and re-checked against dmv.ca.gov on 2026-10-16: the appointments page (no counter service for renewals, records, replacements; the service list; the three options after picking a service), the location and date pickers (Arleta had open times three days out), the field office wait times page (state averages 0:10 with an appointment, 0:33 without), the DL 44 online application page, the DMV kiosk page (289 kiosks, 1.95% card fee) and the senior drivers page. Claims from the post that the DMV does not state anywhere (30-minute grace period, 24-hour rescheduling rule, no-show blocks, 4 to 10 week lead times) are left out. Rendered as animated slides by scripts/video-pipeline/generateMotionVideo.js (layouts: title, bullets, steps, stat, image, cta). `screens` are captured from the live DMV site by captureScreens.js into assets/dmv-appointment-2026/; image beats with `imageQuery` get one Pexels photo each (written back into `image`). Vanesa on eleven_v3 reads about 130 words per minute here, so 650 words is about 5 minutes.",
+  "videoId": "dmv-appointment-2026",
+  "title": "How to Get a California DMV Appointment (2026)",
+  "chip": "DMV APPOINTMENTS",
+  "kicker": "CALIFORNIA DMV · 2026",
+  "voice": "9BYUod15YOH2aePSd97v",
+  "sourceSlug": "dmv-appointment",
+  "description": "Most California DMV services are online now, and office visits work differently than they used to. This video shows which services still need a visit, the three ways to get one (start online, get in line today, or book a date), what the real wait times are, what to bring, and what to do instead for renewals and replacements.",
+  "links": [
+    {
+      "label": "Full guide: California DMV appointment",
+      "path": "/dmv-appointment"
+    },
+    {
+      "label": "REAL ID checklist",
+      "path": "/california-real-id-checklist"
+    },
+    {
+      "label": "Renew at a DMV kiosk",
+      "path": "/can-i-renew-my-license-at-a-dmv-kiosk"
+    },
+    {
+      "label": "Free DMV practice tests",
+      "path": "/"
+    }
+  ],
+  "tags": [
+    "DMV appointment",
+    "California DMV",
+    "DMV appointment California",
+    "how to make a DMV appointment",
+    "REAL ID appointment",
+    "DMV wait times",
+    "DMV get in line now"
+  ],
+  "closing": "Checked against dmv.ca.gov in October 2026. Availability and wait times change daily; check the DMV's own pages before you go.",
+  "screens": {
+    "know-before": {
+      "url": "https://www.dmv.ca.gov/portal/appointments/select-appointment-type/",
+      "scrollTo": "Know Before You Go"
+    },
+    "services": {
+      "url": "https://www.dmv.ca.gov/portal/appointments/select-appointment-type/",
+      "scrollTo": "MAKE AN APPOINTMENT"
+    },
+    "options": {
+      "url": "https://www.dmv.ca.gov/portal/appointments/select-appointment-type/",
+      "steps": [
+        {
+          "click": "First-time DL Application"
+        },
+        {
+          "scrollTo": "Option 1"
+        }
+      ]
+    },
+    "dl44": {
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/dl-id-online-app-edl-44/",
+      "scrollTo": "Apply for, replace, or update",
+      "scrollBy": -140
+    },
+    "calendar": {
+      "manual": true,
+      "note": "Captured from a real Chrome session on 2026-10-16 (select-date page for a REAL ID office visit at Arleta): the DMV's booking app does not render in headless Chromium. Recapture by hand if the calendar changes."
+    },
+    "wait-times": {
+      "url": "https://www.dmv.ca.gov/portal/current-field-office-wait-times/",
+      "scrollTo": "State Average"
+    },
+    "kiosk": {
+      "url": "https://www.dmv.ca.gov/portal/dmv-now-kiosks/",
+      "scrollBy": 200
+    }
+  },
+  "beats": [
+    {
+      "key": "hook",
+      "layout": "title",
+      "onScreen": {
+        "kicker": "California DMV appointments",
+        "title": "Three ways into the DMV in 2026",
+        "subtitle": "Start online, get in line today, or book a date.",
+        "bullets": [
+          "What still needs a visit",
+          "How to book",
+          "What to bring"
+        ]
+      },
+      "narration": "Most California DMV services are online now, and an office visit works differently than it used to. There is a short list of things that still need a visit, and for those you have three ways in: start online, get in line today, or book a date. Here is how each one works, and what to bring."
+    },
+    {
+      "key": "no-counter",
+      "layout": "image",
+      "screen": "know-before",
+      "frame": "browser",
+      "caption": "dmv.ca.gov/portal/appointments",
+      "onScreen": {
+        "kicker": "First, what you cannot book",
+        "title": "No counter service for",
+        "bullets": [
+          "Registration renewals",
+          "License or ID renewals, unless your notice says otherwise",
+          "Driver and vehicle records",
+          "Replacement licenses"
+        ]
+      },
+      "narration": "First, what you cannot book. The DMV no longer provides counter service for vehicle registration renewals, driver license or ID renewals unless your renewal notice says otherwise, driver and vehicle records, or replacement licenses. Those are done online, at a DMV kiosk, with a DMV business partner, or by mail."
+    },
+    {
+      "key": "when-needed",
+      "layout": "image",
+      "screen": "services",
+      "frame": "browser",
+      "caption": "dmv.ca.gov/portal/appointments/select-appointment-type",
+      "onScreen": {
+        "kicker": "What still needs a visit",
+        "title": "Office visit services",
+        "bullets": [
+          "First license, ID card or REAL ID",
+          "Driving permit",
+          "Senior renewal at 70 and older",
+          "Replacement or renewal with changes",
+          "Commercial license, name change, reinstatement",
+          "Drive tests: car, commercial, motorcycle"
+        ]
+      },
+      "narration": "An office visit is for a first time driver license, ID card or REAL ID; a driving permit; senior renewals at seventy and older; a replacement or renewal that needs changes; commercial licenses; name changes; reinstating a driving privilege; and drive tests for cars, commercial vehicles and motorcycles."
+    },
+    {
+      "key": "three-options",
+      "layout": "image",
+      "screen": "options",
+      "frame": "browser",
+      "caption": "dmv.ca.gov/portal/appointments/select-appointment-type",
+      "onScreen": {
+        "kicker": "Pick a service and you get",
+        "title": "Three options",
+        "bullets": [
+          "Start your application online",
+          "Get in Line Now: a same-day queue",
+          "Get an Appointment: book a date"
+        ]
+      },
+      "narration": "Pick your service on the DMV appointments page and you get three options. One, start your application online so the visit is shorter. Two, Get in Line Now, a same day virtual queue for the office you choose, when you are ready to go today. Three, Get an Appointment, which books a date and time in the future."
+    },
+    {
+      "key": "start-online",
+      "layout": "image",
+      "screen": "dl44",
+      "frame": "browser",
+      "caption": "dmv.ca.gov · Driver's License and ID Card Application",
+      "onScreen": {
+        "kicker": "Option 1",
+        "title": "Start online first",
+        "bullets": [
+          "About 9 minutes",
+          "Upload REAL ID documents if you need them",
+          "Confirmation code by email",
+          "Saved application valid for one year"
+        ]
+      },
+      "narration": "Start online first, whichever path you take. The driver license and ID application takes about nine minutes. You upload your REAL ID documents if you need them, and you get a confirmation code by email. A saved application stays valid for a year. Bring the original documents and the code to the office."
+    },
+    {
+      "key": "book",
+      "layout": "image",
+      "screen": "calendar",
+      "frame": "browser",
+      "caption": "dmv.ca.gov/portal/appointments/select-date",
+      "onScreen": {
+        "kicker": "Option 3",
+        "title": "Book a date",
+        "bullets": [
+          "Choose the office",
+          "Pick a day with open times",
+          "Mid-October 2026: Arleta had open days the same week",
+          "Nothing? Try a neighboring office"
+        ]
+      },
+      "narration": "To book a date, choose the office, then pick a day and time from the calendar. The long waits you may have heard about are not a given. In mid October 2026, Los Angeles area offices like Arleta had open times within the same week. If your office shows nothing, try a neighboring one. Any DMV office serves any California resident.",
+      "fit": "contain"
+    },
+    {
+      "key": "wait-times",
+      "layout": "stat",
+      "onScreen": {
+        "kicker": "Why book at all",
+        "title": "Statewide average wait",
+        "value": "~10 min",
+        "label": "with an appointment, against about 33 minutes without",
+        "bullets": [
+          "dmv.ca.gov: Current field office wait times",
+          "Updated through the day"
+        ]
+      },
+      "narration": "Why book at all? The DMV's wait time page shows a statewide average of about ten minutes with an appointment, against about thirty three minutes without one. It lists every office, so check yours before you go."
+    },
+    {
+      "key": "phone",
+      "layout": "stat",
+      "onScreen": {
+        "kicker": "Prefer the phone?",
+        "title": "DMV main line",
+        "value": "1-800-777-0133",
+        "label": "automated booking around the clock, representatives in business hours"
+      },
+      "narration": "Prefer the phone? The DMV's main line, 1 800 777 0133, has automated services around the clock, including booking an office appointment, and representatives during business hours."
+    },
+    {
+      "key": "bring",
+      "layout": "image",
+      "imageQuery": "passport documents folder on table",
+      "fit": "full",
+      "onScreen": {
+        "kicker": "Appointment day",
+        "title": "What to bring",
+        "bullets": [
+          "Your confirmation code",
+          "Government photo ID",
+          "Original documents you uploaded",
+          "A way to pay, and your glasses",
+          "REAL ID: identity, 2 residency proofs, SSN proof"
+        ]
+      },
+      "narration": "On the day, bring your confirmation code, a government photo ID, the original documents you uploaded, a way to pay, and your glasses or contacts if you wear them. For REAL ID, that means an identity document, two proofs of residency, and proof of your Social Security number. If you need a written test, go early: tests are not given after four thirty p.m.",
+      "image": {
+        "url": "https://images.pexels.com/photos/4792286/pexels-photo-4792286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "From above of briefcase for documents with papers placed on wooden table in daytime",
+        "photographer": "Anete Lusina",
+        "photographerUrl": "https://www.pexels.com/@anete-lusina",
+        "pexelsUrl": "https://www.pexels.com/photo/briefcase-for-documents-placed-on-table-4792286/",
+        "query": "passport documents folder on table"
+      }
+    },
+    {
+      "key": "kiosk",
+      "layout": "image",
+      "screen": "kiosk",
+      "frame": "browser",
+      "caption": "dmv.ca.gov/portal/dmv-now-kiosks",
+      "onScreen": {
+        "kicker": "For everything the counter dropped",
+        "title": "DMV kiosks: 289 locations",
+        "bullets": [
+          "Registration renewal and replacement stickers",
+          "License or ID renewal and replacement",
+          "Driver and vehicle records",
+          "Cards everywhere, 1.95% fee; many take cash"
+        ]
+      },
+      "narration": "For the things the counter no longer handles, a DMV kiosk is usually the fastest option. There are two hundred eighty nine of them, inside DMV offices and retail stores, for registration renewals, replacement stickers, license and ID renewals, replacement cards, and records. Cards are accepted at every kiosk with a one point nine five percent fee, and many take cash."
+    },
+    {
+      "key": "manage",
+      "layout": "bullets",
+      "onScreen": {
+        "kicker": "Plans change?",
+        "title": "Manage your appointment",
+        "bullets": [
+          "Appointments page: View Appointment",
+          "Review or cancel with your confirmation",
+          "Rebook right away, open times go fast",
+          "Arrive early; late arrivals may have to rebook"
+        ]
+      },
+      "narration": "Plans change? On the DMV appointments page, View Appointment lets you review or cancel with your confirmation details. If you cancel, book a new slot right away, since open times go fast. And arrive early on the day; a late arrival may mean booking again."
+    },
+    {
+      "key": "cta",
+      "layout": "cta",
+      "onScreen": {
+        "kicker": "Free",
+        "title": "The full guide, with every link",
+        "subtitle": "dmvcalifornia.us",
+        "bullets": [
+          "DMV appointment guide",
+          "REAL ID checklist",
+          "Practice tests"
+        ]
+      },
+      "narration": "The full guide, with every link from this video and the REAL ID checklist, is free at dmvcalifornia.us."
+    }
+  ]
+}
