@@ -62,32 +62,85 @@ function loadVideo(videoId) {
 // at the end, so slides breathe. Returns the final audio path, its length,
 // and a function mapping a character index of the narration to the second
 // it is spoken in the final audio.
+// Reads a 16-bit mono PCM wav and returns RMS in dB over [t0, t1).
+function wavRms(buf, sr, t0, t1) {
+  const data = buf.subarray(44);
+  const n = data.length / 2;
+  let sum = 0;
+  let count = 0;
+  for (let i = Math.max(0, Math.floor(t0 * sr)); i < Math.min(n, Math.floor(t1 * sr)); i++) {
+    const v = data.readInt16LE(i * 2) / 32768;
+    sum += v * v;
+    count++;
+  }
+  return count ? 20 * Math.log10(Math.sqrt(sum / count) + 1e-9) : -99;
+}
+
+// Narrates one beat with word timestamps (cached by narration text), then
+// inserts `pause` seconds of silence after every sentence (v3 ignores
+// <break> tags) and `tail` seconds at the end. Each cut goes at the quietest
+// 60 ms between the sentence's decay and the next word's onset, found from
+// the waveform: ElevenLabs' timestamp for the period can sit inside the next
+// word's onset, and cutting there left a sliver of the next word before the
+// silence (an audible "sh"). Segments get 30 ms fades at both ends.
+// Returns the final audio path, its length, and a function mapping a
+// character index of the narration to the second it is spoken.
 async function narrate(beat, voice, workDir, { pause = 0.5, tail = 0.4 } = {}) {
   const rawPath = path.join(workDir, `${beat.key}.raw.mp3`);
+  const rawWav = path.join(workDir, `${beat.key}.raw.wav`);
   const alignPath = path.join(workDir, `${beat.key}.align.json`);
   const outPath = path.join(workDir, `${beat.key}.wav`);
   const hashPath = path.join(workDir, `${beat.key}.hash`);
-  const hash = crypto.createHash('sha1').update(`${voice}|v3|ts|${pause}|${tail}|${beat.narration}`).digest('hex');
-  const cached = [rawPath, alignPath, outPath, hashPath].every((f) => fs.existsSync(f)) && fs.readFileSync(hashPath, 'utf8') === hash;
+  const editPath = path.join(workDir, `${beat.key}.edit.json`);
+  const ttsHash = crypto.createHash('sha1').update(`${voice}|v3|ts|${beat.narration}`).digest('hex');
+  const editHash = crypto.createHash('sha1').update(`${ttsHash}|energycut|${pause}|${tail}`).digest('hex');
+
   let align;
-  if (cached) {
+  let ttsCached = fs.existsSync(rawPath) && fs.existsSync(alignPath) && fs.existsSync(hashPath) && fs.readFileSync(hashPath, 'utf8') === ttsHash;
+  if (ttsCached) {
     align = JSON.parse(fs.readFileSync(alignPath, 'utf8'));
   } else {
     align = await synthesizeWithTimestamps(beat.narration, voice, rawPath);
     fs.writeFileSync(alignPath, JSON.stringify(align));
-    // Sentence ends: . ! ? followed by whitespace (not the final one).
+    fs.writeFileSync(hashPath, ttsHash);
+  }
+
+  let edit;
+  if (fs.existsSync(editPath) && fs.existsSync(outPath)) {
+    edit = JSON.parse(fs.readFileSync(editPath, 'utf8'));
+    if (edit.hash !== editHash) edit = null;
+  }
+  if (!edit) {
+    await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-i', rawPath, '-ar', '44100', '-ac', '1', rawWav]);
+    const wav = fs.readFileSync(rawWav);
+    const SR = 44100;
     const text = align.characters.join('');
     const cuts = [];
     for (let i = 0; i < text.length - 1; i++) {
-      if (/[.!?]/.test(text[i]) && /\s/.test(text[i + 1]) && text.slice(i + 1).trim().length > 0) cuts.push(align.ends[i]);
+      if (!/[.!?]/.test(text[i]) || !/\s/.test(text[i + 1]) || text.slice(i + 1).trim().length === 0) continue;
+      let j = i + 1;
+      while (j < text.length && /\s/.test(text[j])) j++;
+      const nextStart = j < text.length ? align.starts[j] : align.ends[i] + 0.3;
+      const lo = Math.max(0, align.ends[i] - 0.35);
+      const hi = nextStart + 0.1;
+      let best = (lo + hi) / 2;
+      let bestDb = Infinity;
+      for (let t = lo; t + 0.06 <= hi; t += 0.01) {
+        const db = wavRms(wav, SR, t, t + 0.06);
+        if (db < bestDb) { bestDb = db; best = t + 0.03; }
+      }
+      cuts.push(best);
     }
-    const rawLen = await getAudioDuration(rawPath);
+    const rawLen = await getAudioDuration(rawWav);
+    const bounds = [...cuts, rawLen];
     const parts = [];
     let from = 0;
-    const bounds = [...cuts, rawLen];
+    const FADE = 0.03;
     for (let i = 0; i < bounds.length; i++) {
       const seg = path.join(workDir, `${beat.key}.seg${i}.wav`);
-      await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-i', rawPath, '-ss', from.toFixed(3), '-to', bounds[i].toFixed(3), '-ar', '44100', '-ac', '1', seg]);
+      const len = bounds[i] - from;
+      const fades = `afade=t=in:st=0:d=${FADE},afade=t=out:st=${Math.max(0, len - FADE).toFixed(3)}:d=${FADE}`;
+      await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-i', rawWav, '-ss', from.toFixed(3), '-to', bounds[i].toFixed(3), '-af', fades, seg]);
       parts.push(seg);
       const gap = i < bounds.length - 1 ? pause : tail;
       const sil = path.join(workDir, `${beat.key}.sil${i}.wav`);
@@ -98,17 +151,15 @@ async function narrate(beat, voice, workDir, { pause = 0.5, tail = 0.4 } = {}) {
     const listPath = path.join(workDir, `${beat.key}.parts.txt`);
     fs.writeFileSync(listPath, parts.map((f) => `file '${f}'`).join('\n'));
     await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', listPath, '-c', 'copy', outPath]);
-    align.cuts = cuts;
-    align.pause = pause;
-    fs.writeFileSync(alignPath, JSON.stringify(align));
-    fs.writeFileSync(hashPath, hash);
+    edit = { hash: editHash, cuts, pause };
+    fs.writeFileSync(editPath, JSON.stringify(edit));
+    ttsCached = ttsCached && false;
   }
-  const cuts = align.cuts || [];
   const timeOfChar = (idx) => {
     const t = align.starts[Math.min(idx, align.starts.length - 1)];
-    return t + (align.pause || pause) * cuts.filter((c) => c <= t).length;
+    return t + edit.pause * edit.cuts.filter((c) => c <= t).length;
   };
-  return { audioPath: outPath, cached, duration: await getAudioDuration(outPath), timeOfChar };
+  return { audioPath: outPath, cached: ttsCached, duration: await getAudioDuration(outPath), timeOfChar };
 }
 
 // A beat may name `cues`, one phrase per bullet (or step, tile, item): the

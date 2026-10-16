@@ -17,6 +17,9 @@ import {
 
 export interface GridTile {
   query?: string;
+  screen?: string; // a file in the video's assets folder instead of a Pexels photo
+  src?: string; // resolved by the page from `screen`
+  position?: string; // CSS object-position for the tile's picture
   label: string;
   image?: { url: string; alt?: string; photographer?: string; photographerUrl?: string; pexelsUrl?: string };
 }
@@ -58,6 +61,7 @@ export interface MotionBeat {
   caption?: string;
   // grid layout
   tiles?: GridTile[];
+  tileAspect?: number; // height / width of each tile, default 0.72
   // Moving background: a Pexels clip (`videoQuery` resolved into `clip`),
   // sampled to frames by the generator and shown behind the slide's content.
   videoQuery?: string;
@@ -402,8 +406,11 @@ function ImageLayout({ beat, t, duration, src, aspect, reveals }: { beat: Motion
 
   const maxCardH = H - BAR - 70 - 50;
   const browserBar = browser ? 54 : 0;
+  // contain: the card takes the picture's own shape, wide or tall, centred in the right-hand area.
   const cardH = contain && aspect ? Math.min(maxCardH, Math.round(1070 / aspect) + browserBar) : maxCardH;
+  const cardW = contain && aspect ? Math.min(1070, Math.round((cardH - browserBar) * aspect)) : 1070;
   const cardTop = 70 + Math.round((maxCardH - cardH) / 2);
+  const cardLeft = 790 + Math.round((1070 - cardW) / 2);
   return (
     <div style={{ position: 'absolute', inset: 0 }}>
       <div style={{ position: 'absolute', top: 110, left: 110, width: 640, bottom: BAR + 40, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -411,7 +418,7 @@ function ImageLayout({ beat, t, duration, src, aspect, reveals }: { beat: Motion
         <Title text={s.title} t={t} size={items.length > 3 ? 54 : 60} maxWidth={640} />
         <div style={{ marginTop: 36 }}><BulletList items={items} icons={s.icons} t={t} times={times} size={30} gap={18} badge={40} /></div>
       </div>
-      <div style={{ position: 'absolute', left: 790, top: cardTop, width: 1070, height: cardH, borderRadius: 18, overflow: 'hidden', background: '#111a33', boxShadow: '0 30px 80px rgba(0,0,0,0.55)', border: '2px solid rgba(255,255,255,0.12)', opacity: picIn, transform: `translateY(${(1 - picIn) * 40}px)` }}>
+      <div style={{ position: 'absolute', left: cardLeft, top: cardTop, width: cardW, height: cardH, borderRadius: 18, overflow: 'hidden', background: '#111a33', boxShadow: '0 30px 80px rgba(0,0,0,0.55)', border: '2px solid rgba(255,255,255,0.12)', opacity: picIn, transform: `translateY(${(1 - picIn) * 40}px)` }}>
         {browser ? (
           <div style={{ height: 54, background: '#1c2440', display: 'flex', alignItems: 'center', gap: 10, padding: '0 20px' }}>
             {['#ff5f57', '#febc2e', '#28c840'].map((c) => <div key={c} style={{ width: 14, height: 14, borderRadius: 7, background: c }} />)}
@@ -420,7 +427,7 @@ function ImageLayout({ beat, t, duration, src, aspect, reveals }: { beat: Motion
         ) : null}
         <div style={{ position: 'absolute', top: browser ? 54 : 0, left: 0, right: 0, bottom: 0, overflow: 'hidden' }}>{picture}</div>
       </div>
-      {!browser && beat.caption ? <div style={{ position: 'absolute', left: 790, width: 1070, top: cardTop + cardH + 10, fontSize: 20, color: MUTED, textAlign: 'right', opacity: reveal(t, 1, 0.5) }}>{beat.caption}</div> : null}
+      {!browser && beat.caption ? <div style={{ position: 'absolute', left: cardLeft, width: cardW, top: cardTop + cardH + 10, fontSize: 20, color: MUTED, textAlign: 'right', opacity: reveal(t, 1, 0.5) }}>{beat.caption}</div> : null}
     </div>
   );
 }
@@ -433,7 +440,7 @@ function GridLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: numbe
   const times = revealTimes(n, duration, 1.2, reveals);
   const gap = 28;
   const tileW = Math.min(420, (W - 240 - gap * (n - 1)) / n);
-  const tileH = Math.round(tileW * 0.72);
+  const tileH = Math.round(tileW * (beat.tileAspect ?? 0.72));
   const prog = clamp01(t / Math.max(1, duration));
   return (
     <div style={{ position: 'absolute', inset: 0 }}>
@@ -448,9 +455,9 @@ function GridLayout({ beat, t, duration, reveals }: { beat: MotionBeat; t: numbe
           return (
             <div key={tile.label} style={{ width: tileW, opacity: clamp01(p * 1.4), transform: `translateY(${(1 - Math.min(1, p)) * 50}px) scale(${0.9 + 0.1 * Math.min(1, p)})` }}>
               <div style={{ width: tileW, height: tileH, borderRadius: 18, overflow: 'hidden', background: '#111a33', boxShadow: '0 20px 50px rgba(0,0,0,0.5)', border: '2px solid rgba(255,255,255,0.12)', position: 'relative' }}>
-                {tile.image ? (
+                {tile.src || tile.image ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={tile.image.url} alt={tile.image.alt ?? tile.label} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transform: `scale(${1 + 0.1 * prog})` }} />
+                  <img src={tile.src ?? tile.image!.url} alt={tile.image?.alt ?? tile.label} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: tile.position ?? (tile.src ? 'center top' : 'center'), display: 'block', transform: `scale(${1 + 0.1 * prog})` }} />
                 ) : null}
                 <div style={{ position: 'absolute', left: 14, top: 14 }}><Badge p={1} size={54}><Icon size={30} color="#1a1f2e" strokeWidth={2.4} /></Badge></div>
               </div>

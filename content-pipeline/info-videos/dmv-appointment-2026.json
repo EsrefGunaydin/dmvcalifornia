@@ -1,5 +1,5 @@
 {
-  "_readme": "Beat script for the DMV appointment video, condensed from the dmv-appointment blog post and re-checked against dmv.ca.gov on 2026-10-16: the appointments page (no counter service for renewals, records, replacements; the service list; the three options after picking a service), the location and date pickers (Arleta had open times three days out), the field office wait times page (state averages about 0:10 with an appointment, 0:33 without), the DL 44 online application page, the DMV kiosk page (289 kiosks, 1.95% card fee) and the senior drivers page. Claims the DMV does not state anywhere (30-minute grace period, 24-hour rescheduling rule, no-show blocks, 4 to 10 week lead times) are left out. Rendered as animated slides by scripts/video-pipeline/generateMotionVideo.js (layouts: title, bullets, steps, stat, image, grid, compare, flow, map, cta). `screens` are DMV screenshots captured by captureScreens.js into assets/dmv-appointment-2026/. `videoQuery` beats get a Pexels clip as a moving background (resolved into `clip`); `imageQuery` and grid `tiles` get Pexels photos (resolved into `image`). The voice (qSeXEcewz7tA0Q0qk9fH on eleven_v3) reads about 195 words a minute, so 640 words is about 3.5 minutes.",
+  "_readme": "Beat script for the DMV appointment video, condensed from the dmv-appointment blog post and re-checked against dmv.ca.gov on 2026-10-16: the appointments page (no counter service for renewals, records, replacements; the service list; the three options after picking a service), the location and date pickers (Arleta had open times three days out), the field office wait times page (state averages about 0:10 with an appointment, 0:33 without), the DL 44 online application page, the DMV kiosk page and the DMV Now kiosks FAQ (289 kiosks, what they can and cannot do, what to bring, 1.95% card fee, languages, the 1-833-947-1670 kiosk line) and the senior drivers page. Claims the DMV does not state anywhere (30-minute grace period, 24-hour rescheduling rule, no-show blocks, 4 to 10 week lead times) are left out. Rendered as animated slides by scripts/video-pipeline/generateMotionVideo.js (layouts: title, bullets, steps, stat, image, grid, compare, flow, map, cta). `screens` are DMV screenshots captured by captureScreens.js into assets/dmv-appointment-2026/. `videoQuery` beats get a Pexels clip as a moving background (resolved into `clip`); `imageQuery` and grid `tiles` get Pexels photos (resolved into `image`). The voice (qSeXEcewz7tA0Q0qk9fH on eleven_v3) reads about 195 words a minute, so 640 words is about 3.5 minutes.",
   "videoId": "dmv-appointment-2026",
   "title": "How to Get a California DMV Appointment (2026)",
   "chip": "DMV APPOINTMENTS",
@@ -416,30 +416,127 @@
       "layout": "map",
       "onScreen": {
         "kicker": "For everything the counter dropped",
-        "title": "DMV kiosks across California",
+        "title": "DMV Now kiosks across California",
         "value": "289",
         "label": "kiosks in DMV offices and retail stores",
         "count": 289,
         "bullets": [
+          "Open during the store's or office's hours",
           "Registration renewal, sticker printed on the spot",
           "License or ID renewal and replacement",
-          "Driver and vehicle records",
-          "Cards everywhere, 1.95% fee; many take cash"
+          "Driver and vehicle records"
         ],
         "icons": [
+          "Clock",
           "Car",
           "IdCard",
-          "FileText",
+          "FileText"
+        ]
+      },
+      "narration": "For the things the counter no longer handles, a DMV Now kiosk is usually the fastest option. There are two hundred eighty nine of them, inside DMV offices and retail stores, open whenever the store or office is. Renew a registration and the sticker prints on the spot. Renew or replace a license or ID card, or pull a driver or vehicle record.",
+      "cues": [
+        "open whenever",
+        "Renew a registration",
+        "Renew or replace a license",
+        "pull a driver"
+      ]
+    },
+    {
+      "key": "kiosk-how",
+      "layout": "image",
+      "screen": "kiosk-california",
+      "frame": "none",
+      "fit": "contain",
+      "caption": "A DMV Now kiosk in a California DMV office",
+      "onScreen": {
+        "kicker": "At the kiosk",
+        "title": "What to bring",
+        "bullets": [
+          "Renewal notice with the RIN, or your registration card",
+          "Replacement sticker: plate number and last 5 of the VIN",
+          "Records: your license or ID card",
+          "Card at every kiosk, 1.95% fee; cash at DMV offices and some stores"
+        ],
+        "icons": [
+          "Mail",
+          "Car",
+          "IdCard",
           "CreditCard"
         ]
       },
-      "narration": "For the things the counter no longer handles, a DMV kiosk is usually the fastest option. There are two hundred eighty nine of them, inside DMV offices and retail stores, for registration renewals with the sticker printed on the spot, license and ID renewals, replacement cards, and records. Cards are accepted at every kiosk with a one point nine five percent fee, and many take cash.",
       "cues": [
-        "registration renewals",
-        "license and ID renewals",
-        "records",
-        "Cards are accepted"
-      ]
+        "renewal notice",
+        "plate number",
+        "license or ID card",
+        "cards"
+      ],
+      "narration": "What to bring. For a registration renewal, the renewal notice with the identification number at the top, or your current registration card. For a replacement sticker, your plate number and the last five digits of the VIN. For a record, your license or ID card. Every kiosk takes cards, with a one point nine five percent fee, and the ones in DMV offices and some stores take cash."
+    },
+    {
+      "key": "kiosk-limits",
+      "layout": "grid",
+      "tileAspect": 0.62,
+      "tiles": [
+        {
+          "screen": "kiosk-hawaii",
+          "label": "Touchscreen, 9 languages",
+          "position": "center 42%"
+        },
+        {
+          "query": "motorcycle parked street",
+          "label": "Cars, pickups, motorcycles",
+          "image": {
+            "url": "https://images.pexels.com/photos/31046919/pexels-photo-31046919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "alt": "A tranquil urban street scene with motorcycles, lush greenery, and charming architecture at sunset.",
+            "photographer": "Nadin Romanova",
+            "photographerUrl": "https://www.pexels.com/@nanamusic",
+            "pexelsUrl": "https://www.pexels.com/photo/charming-urban-street-scene-at-sunset-31046919/",
+            "query": "motorcycle parked street"
+          }
+        },
+        {
+          "query": "boat on trailer",
+          "label": "Not boats or CVRA trucks",
+          "image": {
+            "url": "https://images.pexels.com/photos/34640521/pexels-photo-34640521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "alt": "A blue boat on a trailer with a colorful autumn forest backdrop.",
+            "photographer": "Michał Robak",
+            "photographerUrl": "https://www.pexels.com/@michalrobak",
+            "pexelsUrl": "https://www.pexels.com/photo/boat-on-a-trailer-by-scenic-forest-in-autumn-34640521/",
+            "query": "boat on trailer"
+          }
+        },
+        {
+          "query": "mailbox letters home",
+          "label": "Not address changes",
+          "image": {
+            "url": "https://images.pexels.com/photos/15578435/pexels-photo-15578435.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "alt": "Close-up of an outdoor mailbox with 'Cartas' label in a sunny setting.",
+            "photographer": "Valentin Angel Fernandez",
+            "photographerUrl": "https://www.pexels.com/@vafphotos",
+            "pexelsUrl": "https://www.pexels.com/photo/mailbox-in-front-of-a-house-15578435/",
+            "query": "mailbox letters home"
+          }
+        }
+      ],
+      "onScreen": {
+        "kicker": "Good to know",
+        "title": "What a kiosk can and cannot do",
+        "icons": [
+          "Monitor",
+          "Car",
+          "Ban",
+          "Ban"
+        ],
+        "subtitle": "Kiosk help line: 1-833-947-1670. Everything else: 1-800-777-0133"
+      },
+      "cues": [
+        "nine languages",
+        "Cars, pickups",
+        "boats",
+        "change of address"
+      ],
+      "narration": "Good to know. The touchscreen works in nine languages, including Spanish, Chinese, Armenian, Farsi, Punjabi, Russian, Tagalog and Vietnamese. Cars, pickups, motorcycles and most trailers can be renewed. Boats and heavy commercial trucks cannot, and a kiosk cannot take a change of address. If a kiosk gives you trouble, the kiosk line is 1 833 947 1670."
     },
     {
       "key": "manage",
