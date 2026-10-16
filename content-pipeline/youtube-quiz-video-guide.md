@@ -58,7 +58,9 @@ npm run video:generate <quizId> -- --voice <voiceId>
 npm run video:youtube:upload output/video-pipeline/<quizId> -- --privacy private
 ```
 
-`npm run video:voices` lists ElevenLabs voice IDs available on the account.
+`npm run video:voices` lists ElevenLabs voice IDs available on the account (needs a key with Voices read permission; the current key only has Text to Speech).
+
+**Voices:** Spanish videos use Ninoska (`zl1Ut8dvwcVSuQSB9XkG`, a Voice Library "Spanish teacher" voice, about 127 words per minute, so a 20-question video runs a little longer than with the old voice). The first five Spanish videos used the stock Sarah voice (`EXAVITQu4vr4xnSDxMaL`), which many other channels also use; English items still default to Sarah until an English voice is chosen. `weeklyRun.js` picks the default by the quiz's language when a queue item has no `voice`.
 
 `output/` is gitignored — generated videos/audio never get committed.
 

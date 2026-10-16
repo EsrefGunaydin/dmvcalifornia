@@ -58,7 +58,7 @@
     },
     {
       "quizId": "dmv-spanish-simulator-test-1",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "zl1Ut8dvwcVSuQSB9XkG",
       "status": "ready"
     },
     {
@@ -166,5 +166,9 @@
       "voice": "EXAVITQu4vr4xnSDxMaL",
       "status": "ready"
     }
-  ]
+  ],
+  "_voices": {
+    "zl1Ut8dvwcVSuQSB9XkG": "Ninoska, Spanish teacher (Voice Library). Used for every Spanish video from Oct 2026 on.",
+    "EXAVITQu4vr4xnSDxMaL": "Sarah (ElevenLabs stock voice). Used for the first five Spanish videos; still the voice on the English items until an English voice is chosen."
+  }
 }

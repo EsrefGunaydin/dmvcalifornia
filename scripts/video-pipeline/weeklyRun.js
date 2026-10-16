@@ -21,7 +21,21 @@ const { execFileSync } = require('child_process');
 
 const REPO_ROOT = path.join(__dirname, '..', '..');
 const QUEUE_PATH = path.join(REPO_ROOT, 'content-pipeline', 'video-queue.json');
-const DEFAULT_VOICE = process.env.ELEVENLABS_DEFAULT_VOICE_ID || 'EXAVITQu4vr4xnSDxMaL';
+// Default voice per quiz language, used when a queue item has no `voice`.
+// Spanish: Ninoska (Voice Library, "Spanish teacher"), chosen Oct 2026 to
+// replace the stock Sarah voice that many other channels use. English still
+// falls back to Sarah until an English voice is picked.
+const DEFAULT_VOICES = {
+  es: 'zl1Ut8dvwcVSuQSB9XkG',
+  en: process.env.ELEVENLABS_DEFAULT_VOICE_ID || 'EXAVITQu4vr4xnSDxMaL',
+};
+const quizzes = require('../../src/data/quizzes.json').quizzes;
+
+function defaultVoiceFor(quizId) {
+  const quiz = quizzes.find((q) => q.id === quizId) || quizzes.find((q) => q.slug === quizId);
+  const lang = quiz && quiz.language;
+  return DEFAULT_VOICES[lang] || DEFAULT_VOICES.en;
+}
 
 function loadQueue() {
   return JSON.parse(fs.readFileSync(QUEUE_PATH, 'utf8'));
@@ -54,7 +68,7 @@ function main() {
     return;
   }
 
-  const voice = next.voice || DEFAULT_VOICE;
+  const voice = next.voice || defaultVoiceFor(next.quizId);
   console.log(`[weeklyRun] Next up: ${next.quizId} (voice ${voice})`);
 
   const outDir = path.join(REPO_ROOT, 'output', 'video-pipeline', next.quizId);
