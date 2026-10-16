@@ -41,12 +41,13 @@ const CLIP_FPS = 15; // background clips are sampled at 15 fps; each frame is sh
 
 function parseArgs(argv) {
   const [videoId, ...rest] = argv;
-  const opts = { voice: DEFAULT_VOICE_ID, out: null, beats: null, fps: 30 };
+  const opts = { voice: DEFAULT_VOICE_ID, out: null, beats: null, fps: 30, audioOnly: false };
   for (let i = 0; i < rest.length; i++) {
     if (rest[i] === '--voice') opts.voice = rest[++i];
     if (rest[i] === '--out') opts.out = rest[++i];
     if (rest[i] === '--beats') opts.beats = rest[++i].split(',');
     if (rest[i] === '--fps') opts.fps = parseInt(rest[++i], 10);
+    if (rest[i] === '--audio-only') opts.audioOnly = true;
   }
   return { videoId, opts };
 }
@@ -93,7 +94,7 @@ async function narrate(beat, voice, workDir, { pause = 0.5, tail = 0.4 } = {}) {
   const hashPath = path.join(workDir, `${beat.key}.hash`);
   const editPath = path.join(workDir, `${beat.key}.edit.json`);
   const ttsHash = crypto.createHash('sha1').update(`${voice}|v3|ts|${beat.narration}`).digest('hex');
-  const editHash = crypto.createHash('sha1').update(`${ttsHash}|energycut|${pause}|${tail}`).digest('hex');
+  const editHash = crypto.createHash('sha1').update(`${ttsHash}|energycut2|${pause}|${tail}`).digest('hex');
 
   let align;
   let ttsCached = fs.existsSync(rawPath) && fs.existsSync(alignPath) && fs.existsSync(hashPath) && fs.readFileSync(hashPath, 'utf8') === ttsHash;
@@ -140,7 +141,9 @@ async function narrate(beat, voice, workDir, { pause = 0.5, tail = 0.4 } = {}) {
       const seg = path.join(workDir, `${beat.key}.seg${i}.wav`);
       const len = bounds[i] - from;
       const fades = `afade=t=in:st=0:d=${FADE},afade=t=out:st=${Math.max(0, len - FADE).toFixed(3)}:d=${FADE}`;
-      await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-i', rawWav, '-ss', from.toFixed(3), '-to', bounds[i].toFixed(3), '-af', fades, seg]);
+      // Seek on the input side so the piece's clock starts at 0: with output
+      // seeking the fades ran on the source clock and muted mid-piece.
+      await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-ss', from.toFixed(3), '-t', len.toFixed(3), '-i', rawWav, '-af', fades, seg]);
       parts.push(seg);
       const gap = i < bounds.length - 1 ? pause : tail;
       const sil = path.join(workDir, `${beat.key}.sil${i}.wav`);
@@ -255,7 +258,7 @@ async function main() {
   }
   if (pickedAny) fs.writeFileSync(videoPath, JSON.stringify(video, null, 2) + '\n');
 
-  try {
+  if (!opts.audioOnly) try {
     const res = await fetch(BASE_URL);
     if (!res.ok && res.status !== 404) throw new Error(`status ${res.status}`);
   } catch (err) {
@@ -274,6 +277,22 @@ async function main() {
     console.log(`${duration.toFixed(2)}s${cached ? ' (cached)' : ''}`);
   }
   console.log(`Total ${(acc / 60).toFixed(1)} min, ${Math.round(acc * opts.fps)} frames at ${opts.fps} fps.`);
+
+  // --audio-only: the slides are unchanged, so keep work/video-only.mp4 and
+  // only rebuild and remux the narration (fails if the durations moved).
+  if (opts.audioOnly) {
+    const videoOnly = path.join(workDir, 'video-only.mp4');
+    if (!fs.existsSync(videoOnly)) throw new Error('--audio-only needs an earlier full render (work/video-only.mp4).');
+    const audioList = path.join(workDir, 'audio.txt');
+    fs.writeFileSync(audioList, frames.map((f) => `file '${path.resolve(f.audioPath)}'`).join('\n'));
+    const narr = path.join(workDir, 'narration.m4a');
+    await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-f', 'concat', '-safe', '0', '-i', audioList, '-c:a', 'aac', '-b:a', '192k', narr]);
+    const vLen = await getAudioDuration(videoOnly).catch(() => null);
+    const out = path.join(outDir, `${videoId}.mp4`);
+    await execFileAsync(ffmpegPath, ['-y', '-v', 'error', '-i', videoOnly, '-i', narr, '-c:v', 'copy', '-c:a', 'aac', '-movflags', '+faststart', '-shortest', out]);
+    console.log(`Audio rebuilt and remuxed onto the existing frames: ${out} (narration ${acc.toFixed(2)}s${vLen ? `, video ${vLen.toFixed(2)}s` : ''})`);
+    return;
+  }
 
   // 1b. Background clips: download each beat's clip and sample it to JPEG
   // frames under public/video-frames (gitignored), looping if the clip is
