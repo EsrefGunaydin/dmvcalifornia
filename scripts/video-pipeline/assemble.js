@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { execFile } = require('child_process');
 const { promisify } = require('util');
+const { ffmpegPath } = require('./ffmpegBin');
 
 const execFileAsync = promisify(execFile);
 
@@ -33,27 +34,37 @@ async function assembleVideo({ frames, workDir, outPath }) {
   writeImagesList(imagesListPath, frames);
   writeAudioList(audioListPath, frames);
 
-  await execFileAsync('ffmpeg', [
+  // Constant frame rate output: the concat demuxer's per-frame `duration`
+  // only sets timestamps, not real repeated frames (a single 12s-held slide
+  // is still just 1 frame internally under -fps_mode vfr). That declared-vs-
+  // actual frame rate mismatch is fine for QuickTime/VLC but Final Cut Pro
+  // (and Premiere/Resolve) reject it on import with a "header error" — so
+  // re-sample to a real 30fps CFR stream instead, which duplicates each
+  // slide into real frames for its held duration.
+  await execFileAsync(ffmpegPath, [
     '-y',
     '-f', 'concat', '-safe', '0', '-i', imagesListPath,
-    '-fps_mode', 'vfr',
+    '-r', '30',
+    '-fps_mode', 'cfr',
+    '-c:v', 'libx264',
     '-pix_fmt', 'yuv420p',
     videoOnlyPath,
   ]);
 
-  await execFileAsync('ffmpeg', [
+  await execFileAsync(ffmpegPath, [
     '-y',
     '-f', 'concat', '-safe', '0', '-i', audioListPath,
     '-c:a', 'aac', '-b:a', '192k',
     narrationPath,
   ]);
 
-  await execFileAsync('ffmpeg', [
+  await execFileAsync(ffmpegPath, [
     '-y',
     '-i', videoOnlyPath,
     '-i', narrationPath,
     '-c:v', 'copy',
     '-c:a', 'aac',
+    '-movflags', '+faststart',
     '-shortest',
     outPath,
   ]);

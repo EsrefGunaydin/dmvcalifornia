@@ -19,7 +19,9 @@ Each slide (intro, per-question number, per-question question, per-question reve
 ## One-time setup (already done on this machine)
 
 - **ElevenLabs API key** → `.env.local` as `ELEVENLABS_API_KEY` (Text to Speech: Access, Voices: Read — no other scopes needed)
-- **Playwright + Chromium** → `npm install` already includes it (`devDependencies`)
+- **Playwright + Chromium** → `npm install` already includes it (`devDependencies`). After any Playwright version bump run `npx playwright install chromium` again, or the job fails at the first screenshot (this is what killed the Aug 27 to Sep 17, 2026 runs).
+- **ffmpeg** → the `ffmpeg-static` npm package (native arm64 build, installed by `npm install`). The pipeline no longer uses `/usr/local/bin/ffmpeg`, which is an Intel binary this Mac cannot run any more. Audio durations are measured by decoding with the same ffmpeg (`ffprobeDuration.js`), so ffprobe is not needed.
+- **Node** → `run-weekly.sh` picks the newest arm64 Node 20+ under `~/.nvm` on its own (Intel builds fail with `Bad CPU type in executable` since the Sep 24, 2026 run).
 - **YouTube OAuth** → `credentials/youtube-client-secret.json` (Google Cloud OAuth client, Desktop app type) + `credentials/youtube-token.json` (refresh token, generated once via `npm run video:youtube:auth`). Both gitignored, never committed.
 - To redo the YouTube auth from scratch: Google Cloud Console → new project → enable "YouTube Data API v3" → OAuth consent screen (External, add your Google account as a test user) → Credentials → Create OAuth client ID (Desktop app) → put `client_id`/`client_secret` in `credentials/youtube-client-secret.json` → `npm run video:youtube:auth credentials/youtube-client-secret.json` → open the printed URL, approve.
 
@@ -31,15 +33,16 @@ Each slide (intro, per-question number, per-question question, per-question reve
 |---|---|
 | `buildCues.js` | Quiz JSON → ordered list of slide "cues" (narration text + slide state). Language-aware (`en`/`es` templates, driven by the quiz's `language` field). |
 | `tts.js` | Calls ElevenLabs TTS (`/v1/text-to-speech/{voiceId}`), writes an MP3. `listVoices()` lists available voices. |
-| `ffprobeDuration.js` | Reads an audio file's exact duration via `ffprobe`. |
-| `renderSlide.js` | Playwright wrapper — screenshots `/internal/video-render/[quizId]?state=...&q=...` at 1920×1080. |
+| `ffprobeDuration.js` | Exact audio duration: decodes the clip with ffmpeg and counts samples. |
+| `ffmpegBin.js` | Resolves the ffmpeg binary (`ffmpeg-static`, falling back to PATH). |
+| `renderSlide.js` | Playwright wrapper — screenshots `/internal/video-render/[quizId]?state=...&q=...` at 1920×1080. Hides the Next.js dev badge (`<nextjs-portal>`) first; it used to be captured into every slide. |
 | `assemble.js` | ffmpeg: builds a concat-demuxer image list (each frame held for its own clip's duration) + concatenated audio track, muxes into the final MP4. |
 | `metadata.js` | Builds the YouTube title/description/tags. Language-aware (translated section headers, translated "more tests" links). Truncates the title to YouTube's 100-char limit. |
 | `generateVideo.js` | Orchestrator: `node scripts/video-pipeline/generateVideo.js <quizId> --voice <voiceId> [--limit N] [--out dir]`. Produces `<quizId>.mp4`, `youtube-metadata.json`, `thumbnail.png`. |
 | `youtubeAuth.js` | One-time OAuth authorization (loopback redirect flow). |
 | `youtubeUpload.js` | `node scripts/video-pipeline/youtubeUpload.js <outputDir> [--privacy private|unlisted|public]`. Uploads the video + sets the thumbnail. Defaults to `private` — review before flipping to public. |
 | `weeklyRun.js` | Picks the next `ready` item from `content-pipeline/video-queue.json`, runs generate + upload (private), marks it `published`. |
-| `run-weekly.sh` | Wrapper the launchd job calls — starts a dedicated dev server on port 3799, runs `weeklyRun.js` against it, tears the server down after. |
+| `run-weekly.sh` | Wrapper the launchd job calls — picks an arm64 Node, checks ffmpeg, Chromium, the YouTube token and the ElevenLabs key, starts a dedicated dev server on port 3799, runs `weeklyRun.js` against it, tears the server down after. Every failure posts a macOS notification. `run-weekly.sh --preflight` runs only the checks. |
 | `setVideoPrivacy.js` | `node scripts/video-pipeline/setVideoPrivacy.js <videoId> <private\|unlisted\|public>`. Flips an already-uploaded video's YouTube privacy. Requires the broader `youtube` OAuth scope (see one-time setup) — the upload-only scope can't do this. |
 | `publishToSite.js` | `node scripts/video-pipeline/publishToSite.js <quizId> [--privacy public\|unlisted]`. The "go live" step, run by hand after you've reviewed a private upload in YouTube Studio: flips privacy, adds the video to `/videos`, and embeds it on whichever hub/blog post the queue item names. See "Publishing a reviewed video" below. |
 
@@ -68,9 +71,9 @@ npm run video:youtube:upload output/video-pipeline/<quizId> -- --privacy private
 **This runs locally (launchd), not as a cloud RemoteTrigger routine** — unlike the blog publisher, this pipeline needs the local ElevenLabs key and YouTube OAuth token, which a cloud sandbox can't access.
 
 - launchd job: `~/Library/LaunchAgents/com.dmvcalifornia.video-pipeline.weekly.plist`
-- Schedule: **Thursday 2:00 PM Pacific Time** (weekday afternoons test best for YouTube long-form engagement; Thursday/Friday edge out other weekdays per 2026 posting-time data)
+- Schedule: **Thursday 10:00 AM local time** (the plist's `StartCalendarInterval`). The upload lands private, so the time only decides when the review notification arrives; publishing time is whenever `publishToSite.js` is run.
 - Manual trigger for testing: `launchctl kickstart gui/$(id -u)/com.dmvcalifornia.video-pipeline.weekly`
-- Logs: `/tmp/dmv-video-pipeline-weekly.log` (launchd stdout/stderr) and `output/video-pipeline/weekly-run-*.log` (pipeline output)
+- Logs: `/tmp/dmv-video-pipeline-weekly.log` (launchd stdout/stderr) and `output/video-pipeline/weekly-run-*.log` (pipeline output). A failed run also posts a "Video pipeline FAILED" notification; a 133-byte log means the dev server never started.
 - Reload after editing the plist: `launchctl bootout gui/$(id -u)/com.dmvcalifornia.video-pipeline.weekly` then `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.dmvcalifornia.video-pipeline.weekly.plist`
 
 ### Known gotcha: macOS Full Disk Access

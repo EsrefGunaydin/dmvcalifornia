@@ -26,7 +26,18 @@ class SlideRenderer {
     url.searchParams.set('state', cue.state);
     if (cue.q !== null && cue.q !== undefined) url.searchParams.set('q', String(cue.q));
 
-    await this.page.goto(url.toString(), { waitUntil: 'networkidle' });
+    return this.shootUrl(url.toString(), outPath);
+  }
+
+  // Generic version for render routes outside the quiz shape (e.g.
+  // /internal/video-render-info/[videoId] for non-quiz informational videos).
+  async shootUrl(url, outPath) {
+    await this.page.goto(url, { waitUntil: 'networkidle' });
+    // The Next.js dev server draws its "N" dev-tools badge in a <nextjs-portal>
+    // element at the bottom-left of every page. It was being captured into
+    // every slide (and thumbnail) of the published videos; hide it before
+    // the screenshot.
+    await this.page.addStyleTag({ content: 'nextjs-portal { display: none !important; }' });
     await this.page.screenshot({ path: outPath });
     return outPath;
   }
