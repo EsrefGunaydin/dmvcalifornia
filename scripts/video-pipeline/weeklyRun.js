@@ -22,12 +22,12 @@ const { execFileSync } = require('child_process');
 const REPO_ROOT = path.join(__dirname, '..', '..');
 const QUEUE_PATH = path.join(REPO_ROOT, 'content-pipeline', 'video-queue.json');
 // Default voice per quiz language, used when a queue item has no `voice`.
-// Spanish: Ninoska (Voice Library, "Spanish teacher"), chosen Oct 2026 to
-// replace the stock Sarah voice that many other channels use. English still
-// falls back to Sarah until an English voice is picked.
+// Both are Voice Library voices chosen in Oct 2026 to replace the stock
+// Sarah voice (EXAVITQu4vr4xnSDxMaL) that many other channels use:
+// Spanish: Ninoska ("Spanish teacher"); English: Vanesa.
 const DEFAULT_VOICES = {
   es: 'zl1Ut8dvwcVSuQSB9XkG',
-  en: process.env.ELEVENLABS_DEFAULT_VOICE_ID || 'EXAVITQu4vr4xnSDxMaL',
+  en: process.env.ELEVENLABS_DEFAULT_VOICE_ID || '9BYUod15YOH2aePSd97v',
 };
 const quizzes = require('../../src/data/quizzes.json').quizzes;
 

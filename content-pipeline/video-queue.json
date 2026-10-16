@@ -63,112 +63,113 @@
     },
     {
       "quizId": "dmv-simulation-test-1",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "dmv-simulation-test-2",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "dmv-simulation-test-3",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-mixed-review",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "sample-questions-test",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-1",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-2",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-3",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-4",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-5",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-6",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-7",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-8",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-9",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-10",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-11",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-12",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-13",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-14",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-15",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     },
     {
       "quizId": "practice-test-16",
-      "voice": "EXAVITQu4vr4xnSDxMaL",
+      "voice": "9BYUod15YOH2aePSd97v",
       "status": "ready"
     }
   ],
   "_voices": {
-    "zl1Ut8dvwcVSuQSB9XkG": "Ninoska, Spanish teacher (Voice Library). Used for every Spanish video from Oct 2026 on.",
-    "EXAVITQu4vr4xnSDxMaL": "Sarah (ElevenLabs stock voice). Used for the first five Spanish videos; still the voice on the English items until an English voice is chosen."
+    "zl1Ut8dvwcVSuQSB9XkG": "Ninoska, Spanish teacher (Voice Library). Every Spanish video from Oct 2026 on.",
+    "9BYUod15YOH2aePSd97v": "Vanesa (Voice Library). Every English video from Oct 2026 on.",
+    "EXAVITQu4vr4xnSDxMaL": "Sarah (ElevenLabs stock voice). The first five Spanish videos only; no longer used."
   }
 }
