@@ -31,10 +31,12 @@ function buildInfoVideoMetadata(video, frames) {
   const credits = [];
   const seen = new Set();
   for (const beat of video.beats) {
-    const img = beat.image;
-    if (img && img.photographer && !seen.has(img.photographer)) {
-      seen.add(img.photographer);
-      credits.push(`${img.photographer} (${img.pexelsUrl || img.photographerUrl || 'Pexels'})`);
+    const media = [beat.image, beat.clip, ...(beat.tiles || []).map((t) => t.image)];
+    for (const m of media) {
+      if (m && m.photographer && !seen.has(m.photographer)) {
+        seen.add(m.photographer);
+        credits.push(`${m.photographer} (${m.pexelsUrl || m.photographerUrl || 'Pexels'})`);
+      }
     }
   }
 
@@ -54,7 +56,7 @@ function buildInfoVideoMetadata(video, frames) {
     DIVIDER,
     `🚗 Free Practice Tests → ${SITE}`,
     `📋 California Driver Handbook → ${SITE}/california-driver-handbook`,
-    ...(credits.length ? ['', DIVIDER, '📷 PHOTOS', DIVIDER, `Stock photos from Pexels by ${credits.join(', ')}.`] : []),
+    ...(credits.length ? ['', DIVIDER, '📷 PHOTOS', DIVIDER, `Stock photos and clips from Pexels by ${credits.join(', ')}.`] : []),
     '',
     DIVIDER,
     '',

@@ -28,7 +28,7 @@ const { synthesize } = require('./tts');
 const { getAudioDuration } = require('./ffprobeDuration');
 const { ffmpegPath } = require('./ffmpegBin');
 const { buildInfoVideoMetadata } = require('./metadata-info');
-const { findPexelsPhoto } = require('./pexels');
+const { findPexelsPhoto, findPexelsVideo, downloadFile } = require('./pexels');
 const { captureScreens } = require('./captureScreens');
 
 const execFileAsync = promisify(execFile);
@@ -37,6 +37,7 @@ const BASE_URL = process.env.VIDEO_RENDER_BASE_URL || 'http://localhost:3000';
 const DEFAULT_VOICE_ID = process.env.ELEVENLABS_DEFAULT_VOICE_ID;
 const W = 1920;
 const H = 1080;
+const CLIP_FPS = 15; // background clips are sampled at 15 fps; each frame is shown for two video frames
 
 function parseArgs(argv) {
   const [videoId, ...rest] = argv;
@@ -122,15 +123,25 @@ async function main() {
   const videoPath = path.join(REPO_ROOT, 'content-pipeline', 'info-videos', `${videoId}.json`);
   let pickedAny = false;
   for (const beat of video.beats) {
-    if (beat.layout !== 'image' || beat.image || beat.screen || !beat.imageQuery) continue;
-    const photo = await findPexelsPhoto(beat.imageQuery);
-    if (!photo) {
-      console.warn(`  No Pexels photo for "${beat.imageQuery}" (${beat.key}).`);
-      continue;
+    // One photo for an image beat.
+    if (beat.imageQuery && !beat.image && !beat.screen) {
+      const photo = await findPexelsPhoto(beat.imageQuery);
+      if (photo) { beat.image = photo; pickedAny = true; console.log(`  ${beat.key}: photo by ${photo.photographer} for "${beat.imageQuery}"`); }
+      else console.warn(`  No Pexels photo for "${beat.imageQuery}" (${beat.key}).`);
     }
-    beat.image = photo;
-    pickedAny = true;
-    console.log(`  ${beat.key}: photo by ${photo.photographer} for "${beat.imageQuery}"`);
+    // One photo per grid tile.
+    for (const tile of beat.tiles || []) {
+      if (tile.image || !tile.query) continue;
+      const photo = await findPexelsPhoto(tile.query);
+      if (photo) { tile.image = photo; pickedAny = true; console.log(`  ${beat.key}/${tile.label}: photo by ${photo.photographer} for "${tile.query}"`); }
+      else console.warn(`  No Pexels photo for tile "${tile.query}" (${beat.key}).`);
+    }
+    // One HD clip as the beat's moving background.
+    if (beat.videoQuery && !beat.clip) {
+      const clip = await findPexelsVideo(beat.videoQuery, { minSeconds: 6, skip: beat.videoSkip || 0 });
+      if (clip) { beat.clip = clip; pickedAny = true; console.log(`  ${beat.key}: clip ${clip.id} by ${clip.photographer} for "${beat.videoQuery}" (${clip.seconds}s, ${clip.width}x${clip.height})`); }
+      else console.warn(`  No Pexels video for "${beat.videoQuery}" (${beat.key}).`);
+    }
   }
   if (pickedAny) fs.writeFileSync(videoPath, JSON.stringify(video, null, 2) + '\n');
 
@@ -153,6 +164,36 @@ async function main() {
   }
   console.log(`Total ${(acc / 60).toFixed(1)} min, ${Math.round(acc * opts.fps)} frames at ${opts.fps} fps.`);
 
+  // 1b. Background clips: download each beat's clip and sample it to JPEG
+  // frames under public/video-frames (gitignored), looping if the clip is
+  // shorter than the narration. The slide shows frame floor(t * CLIP_FPS).
+  const clipDir = path.join(outDir, 'clips');
+  for (const f of frames) {
+    const clip = f.beat.clip;
+    if (!clip) continue;
+    const framesDir = path.join(REPO_ROOT, 'public', 'video-frames', videoId, f.beat.key);
+    const needed = Math.ceil(f.duration * CLIP_FPS) + 2;
+    const have = fs.existsSync(framesDir) ? fs.readdirSync(framesDir).filter((n) => n.endsWith('.jpg')).length : 0;
+    if (have >= needed) { f.clipFrames = have; continue; }
+    fs.mkdirSync(clipDir, { recursive: true });
+    fs.mkdirSync(framesDir, { recursive: true });
+    const clipPath = path.join(clipDir, `${f.beat.key}-${clip.id}.mp4`);
+    if (!fs.existsSync(clipPath)) {
+      process.stdout.write(`  clip ${f.beat.key}: downloading ${clip.id} ... `);
+      await downloadFile(clip.url, clipPath);
+      console.log('ok');
+    }
+    process.stdout.write(`  clip ${f.beat.key}: ${needed} frames at ${CLIP_FPS} fps ... `);
+    await execFileAsync(ffmpegPath, [
+      '-y', '-v', 'error', '-stream_loop', '-1', '-i', clipPath,
+      '-t', String(f.duration + 0.5), '-an',
+      '-vf', `fps=${CLIP_FPS},scale=${W}:${H}:force_original_aspect_ratio=increase,crop=${W}:${H}`,
+      '-q:v', '4', path.join(framesDir, '%04d.jpg'),
+    ]);
+    f.clipFrames = fs.readdirSync(framesDir).filter((n) => n.endsWith('.jpg')).length;
+    console.log(`${f.clipFrames} written`);
+  }
+
   // 2. Frames: for each beat open the slide once, then step t and screenshot.
   const videoOnlyPath = path.join(workDir, 'video-only.mp4');
   const encoder = startEncoder(opts.fps, videoOnlyPath);
@@ -162,7 +203,8 @@ async function main() {
   let frameIndex = 0;
   try {
     for (const f of frames) {
-      const url = `${BASE_URL}/internal/video-render-motion/${videoId}?beat=${encodeURIComponent(f.beat.key)}&d=${f.duration.toFixed(3)}`;
+      const clipQuery = f.clipFrames ? `&clipFrames=${f.clipFrames}&clipFps=${CLIP_FPS}` : '';
+      const url = `${BASE_URL}/internal/video-render-motion/${videoId}?beat=${encodeURIComponent(f.beat.key)}&d=${f.duration.toFixed(3)}${clipQuery}`;
       await page.goto(url, { waitUntil: 'networkidle' });
       await page.waitForFunction(() => window.__ready === true, null, { timeout: 30000 });
       await page.addStyleTag({ content: 'nextjs-portal { display: none !important; }' });

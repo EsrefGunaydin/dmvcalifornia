@@ -24,7 +24,7 @@ export default async function MotionRenderPage({
   searchParams,
 }: {
   params: Promise<{ videoId: string }>;
-  searchParams: Promise<{ beat?: string; d?: string; t?: string }>;
+  searchParams: Promise<{ beat?: string; d?: string; t?: string; clipFrames?: string; clipFps?: string }>;
 }) {
   if (process.env.NODE_ENV === 'production') notFound();
 
@@ -61,5 +61,10 @@ export default async function MotionRenderPage({
     imageSrc = beat.image.url;
   }
 
-  return <MotionSlide video={video} beat={beat} duration={duration} initialT={initialT} imageSrc={imageSrc} imageAspect={imageAspect} />;
+  // Background clip frames, sampled by the generator into public/video-frames.
+  const clip = sp.clipFrames
+    ? { base: `/video-frames/${videoId}/${beat.key}/`, frames: parseInt(sp.clipFrames, 10), fps: parseFloat(sp.clipFps || '15') }
+    : undefined;
+
+  return <MotionSlide video={video} beat={beat} duration={duration} initialT={initialT} imageSrc={imageSrc} imageAspect={imageAspect} clip={clip} />;
 }

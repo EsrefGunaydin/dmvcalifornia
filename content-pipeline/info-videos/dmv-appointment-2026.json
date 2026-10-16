@@ -1,11 +1,14 @@
 {
-  "_readme": "Beat script for the DMV appointment video, condensed from the dmv-appointment blog post (24,946 views) and re-checked against dmv.ca.gov on 2026-10-16: the appointments page (no counter service for renewals, records, replacements; the service list; the three options after picking a service), the location and date pickers (Arleta had open times three days out), the field office wait times page (state averages 0:10 with an appointment, 0:33 without), the DL 44 online application page, the DMV kiosk page (289 kiosks, 1.95% card fee) and the senior drivers page. Claims from the post that the DMV does not state anywhere (30-minute grace period, 24-hour rescheduling rule, no-show blocks, 4 to 10 week lead times) are left out. Rendered as animated slides by scripts/video-pipeline/generateMotionVideo.js (layouts: title, bullets, steps, stat, image, cta). `screens` are captured from the live DMV site by captureScreens.js into assets/dmv-appointment-2026/; image beats with `imageQuery` get one Pexels photo each (written back into `image`). Vanesa on eleven_v3 reads about 130 words per minute here, so 650 words is about 5 minutes.",
-  "videoId": "xpAAKLeGSNE",
+  "_readme": "Beat script for the DMV appointment video, condensed from the dmv-appointment blog post and re-checked against dmv.ca.gov on 2026-10-16: the appointments page (no counter service for renewals, records, replacements; the service list; the three options after picking a service), the location and date pickers (Arleta had open times three days out), the field office wait times page (state averages about 0:10 with an appointment, 0:33 without), the DL 44 online application page, the DMV kiosk page (289 kiosks, 1.95% card fee) and the senior drivers page. Claims the DMV does not state anywhere (30-minute grace period, 24-hour rescheduling rule, no-show blocks, 4 to 10 week lead times) are left out. Rendered as animated slides by scripts/video-pipeline/generateMotionVideo.js (layouts: title, bullets, steps, stat, image, grid, compare, flow, map, cta). `screens` are DMV screenshots captured by captureScreens.js into assets/dmv-appointment-2026/. `videoQuery` beats get a Pexels clip as a moving background (resolved into `clip`); `imageQuery` and grid `tiles` get Pexels photos (resolved into `image`). The voice (qSeXEcewz7tA0Q0qk9fH on eleven_v3) reads about 195 words a minute, so 640 words is about 3.5 minutes.",
+  "videoId": "dmv-appointment-2026",
   "title": "How to Get a California DMV Appointment (2026)",
   "chip": "DMV APPOINTMENTS",
   "kicker": "CALIFORNIA DMV · 2026",
-  "voice": "9BYUod15YOH2aePSd97v",
+  "voice": "qSeXEcewz7tA0Q0qk9fH",
   "sourceSlug": "dmv-appointment",
+  "status": "published",
+  "youtubeVideoIdV1": "xpAAKLeGSNE",
+  "_status_readme": "v1 (Vanesa, static slides) was uploaded private as xpAAKLeGSNE on 2026-10-16 and superseded by this version. To take a version live: set privacy public (node scripts/video-pipeline/setVideoPrivacy.js <id> public), add it to src/data/videos.json, and add youtubeId to the dmv-appointment post in blog_posts.json.",
   "description": "Most California DMV services are online now, and office visits work differently than they used to. This video shows which services still need a visit, the three ways to get one (start online, get in line today, or book a date), what the real wait times are, what to bring, and what to do instead for renewals and replacements.",
   "links": [
     {
@@ -77,6 +80,7 @@
     {
       "key": "hook",
       "layout": "title",
+      "videoQuery": "scenic california highway road trip",
       "onScreen": {
         "kicker": "California DMV appointments",
         "title": "Three ways into the DMV in 2026",
@@ -85,9 +89,25 @@
           "What still needs a visit",
           "How to book",
           "What to bring"
+        ],
+        "icons": [
+          "Building2",
+          "CalendarCheck",
+          "ClipboardList"
         ]
       },
-      "narration": "Most California DMV services are online now, and an office visit works differently than it used to. There is a short list of things that still need a visit, and for those you have three ways in: start online, get in line today, or book a date. Here is how each one works, and what to bring."
+      "narration": "Most California DMV services are online now, and an office visit works differently than it used to. There is a short list of things that still need a visit, and for those you have three ways in: start online, get in line today, or book a date. Here is how each one works, and what to bring.",
+      "clip": {
+        "id": 29299736,
+        "url": "https://videos.pexels.com/video-files/29299736/12635395_1920_1080_30fps.mp4",
+        "width": 1920,
+        "height": 1080,
+        "seconds": 13,
+        "photographer": "Dubang chang",
+        "photographerUrl": "https://www.pexels.com/@dudubangbang",
+        "pexelsUrl": "https://www.pexels.com/video/scenic-redwood-forest-road-trip-on-highway-101-29299736/",
+        "query": "scenic california highway road trip"
+      }
     },
     {
       "key": "no-counter",
@@ -103,6 +123,12 @@
           "License or ID renewals, unless your notice says otherwise",
           "Driver and vehicle records",
           "Replacement licenses"
+        ],
+        "icons": [
+          "Car",
+          "IdCard",
+          "FileText",
+          "RefreshCw"
         ]
       },
       "narration": "First, what you cannot book. The DMV no longer provides counter service for vehicle registration renewals, driver license or ID renewals unless your renewal notice says otherwise, driver and vehicle records, or replacement licenses. Those are done online, at a DMV kiosk, with a DMV business partner, or by mail."
@@ -123,33 +149,46 @@
           "Replacement or renewal with changes",
           "Commercial license, name change, reinstatement",
           "Drive tests: car, commercial, motorcycle"
+        ],
+        "icons": [
+          "IdCard",
+          "KeyRound",
+          "UserCheck",
+          "RefreshCw",
+          "ClipboardList",
+          "Car"
         ]
       },
       "narration": "An office visit is for a first time driver license, ID card or REAL ID; a driving permit; senior renewals at seventy and older; a replacement or renewal that needs changes; commercial licenses; name changes; reinstating a driving privilege; and drive tests for cars, commercial vehicles and motorcycles."
     },
     {
       "key": "three-options",
-      "layout": "image",
-      "screen": "options",
-      "frame": "browser",
-      "caption": "dmv.ca.gov/portal/appointments/select-appointment-type",
+      "layout": "flow",
       "onScreen": {
-        "kicker": "Pick a service and you get",
+        "kicker": "Pick a service on dmv.ca.gov and you get",
         "title": "Three options",
+        "steps": [
+          "Start online",
+          "Get in Line Now",
+          "Get an Appointment"
+        ],
         "bullets": [
-          "Start your application online",
-          "Get in Line Now: a same-day queue",
-          "Get an Appointment: book a date"
+          "Finish the application at home so the visit is shorter.",
+          "A same-day virtual queue for the office you choose.",
+          "Book a date and time in the future."
+        ],
+        "icons": [
+          "Laptop",
+          "Users",
+          "CalendarCheck"
         ]
       },
       "narration": "Pick your service on the DMV appointments page and you get three options. One, start your application online so the visit is shorter. Two, Get in Line Now, a same day virtual queue for the office you choose, when you are ready to go today. Three, Get an Appointment, which books a date and time in the future."
     },
     {
       "key": "start-online",
-      "layout": "image",
-      "screen": "dl44",
-      "frame": "browser",
-      "caption": "dmv.ca.gov · Driver's License and ID Card Application",
+      "layout": "bullets",
+      "videoQuery": "person typing on a laptop",
       "onScreen": {
         "kicker": "Option 1",
         "title": "Start online first",
@@ -157,16 +196,36 @@
           "About 9 minutes",
           "Upload REAL ID documents if you need them",
           "Confirmation code by email",
-          "Saved application valid for one year"
+          "Saved application valid for one year",
+          "Bring the originals and the code"
+        ],
+        "icons": [
+          "Timer",
+          "Upload",
+          "Mail",
+          "Calendar",
+          "FileText"
         ]
       },
-      "narration": "Start online first, whichever path you take. The driver license and ID application takes about nine minutes. You upload your REAL ID documents if you need them, and you get a confirmation code by email. A saved application stays valid for a year. Bring the original documents and the code to the office."
+      "narration": "Start online first, whichever path you take. The driver license and ID application takes about nine minutes. You upload your REAL ID documents if you need them, and you get a confirmation code by email. A saved application stays valid for a year. Bring the original documents and the code to the office.",
+      "clip": {
+        "id": 5977139,
+        "url": "https://videos.pexels.com/video-files/5977139/5977139-hd_1920_1080_25fps.mp4",
+        "width": 1920,
+        "height": 1080,
+        "seconds": 17,
+        "photographer": "Jack Sparrow",
+        "photographerUrl": "https://www.pexels.com/@jack-sparrow",
+        "pexelsUrl": "https://www.pexels.com/video/a-person-busy-typing-and-using-his-laptop-5977139/",
+        "query": "person typing on a laptop"
+      }
     },
     {
       "key": "book",
       "layout": "image",
       "screen": "calendar",
       "frame": "browser",
+      "fit": "contain",
       "caption": "dmv.ca.gov/portal/appointments/select-date",
       "onScreen": {
         "kicker": "Option 3",
@@ -176,84 +235,163 @@
           "Pick a day with open times",
           "Mid-October 2026: Arleta had open days the same week",
           "Nothing? Try a neighboring office"
+        ],
+        "icons": [
+          "MapPin",
+          "CalendarCheck",
+          "Clock",
+          "Navigation"
         ]
       },
-      "narration": "To book a date, choose the office, then pick a day and time from the calendar. The long waits you may have heard about are not a given. In mid October 2026, Los Angeles area offices like Arleta had open times within the same week. If your office shows nothing, try a neighboring one. Any DMV office serves any California resident.",
-      "fit": "contain"
+      "narration": "To book a date, choose the office, then pick a day and time from the calendar. The long waits you may have heard about are not a given. In mid October 2026, Los Angeles area offices like Arleta had open times within the same week. If your office shows nothing, try a neighboring one. Any DMV office serves any California resident."
     },
     {
       "key": "wait-times",
-      "layout": "stat",
+      "layout": "compare",
       "onScreen": {
         "kicker": "Why book at all",
-        "title": "Statewide average wait",
-        "value": "~10 min",
-        "label": "with an appointment, against about 33 minutes without",
-        "bullets": [
-          "dmv.ca.gov: Current field office wait times",
-          "Updated through the day"
-        ]
+        "title": "Statewide average wait, October 2026",
+        "items": [
+          {
+            "label": "With an appointment",
+            "value": 10,
+            "unit": "min"
+          },
+          {
+            "label": "Without one",
+            "value": 33,
+            "unit": "min"
+          }
+        ],
+        "max": 36,
+        "icons": [
+          "CalendarCheck",
+          "Users"
+        ],
+        "subtitle": "Live numbers for every office: dmv.ca.gov, Current field office wait times"
       },
       "narration": "Why book at all? The DMV's wait time page shows a statewide average of about ten minutes with an appointment, against about thirty three minutes without one. It lists every office, so check yours before you go."
     },
     {
       "key": "phone",
       "layout": "stat",
+      "videoQuery": "man talking on the phone",
       "onScreen": {
         "kicker": "Prefer the phone?",
         "title": "DMV main line",
         "value": "1-800-777-0133",
-        "label": "automated booking around the clock, representatives in business hours"
-      },
-      "narration": "Prefer the phone? The DMV's main line, 1 800 777 0133, has automated services around the clock, including booking an office appointment, and representatives during business hours."
-    },
-    {
-      "key": "bring",
-      "layout": "image",
-      "imageQuery": "passport documents folder on table",
-      "fit": "full",
-      "onScreen": {
-        "kicker": "Appointment day",
-        "title": "What to bring",
-        "bullets": [
-          "Your confirmation code",
-          "Government photo ID",
-          "Original documents you uploaded",
-          "A way to pay, and your glasses",
-          "REAL ID: identity, 2 residency proofs, SSN proof"
+        "label": "Automated booking around the clock, representatives in business hours",
+        "icons": [
+          "Phone"
         ]
       },
-      "narration": "On the day, bring your confirmation code, a government photo ID, the original documents you uploaded, a way to pay, and your glasses or contacts if you wear them. For REAL ID, that means an identity document, two proofs of residency, and proof of your Social Security number. If you need a written test, go early: tests are not given after four thirty p.m.",
-      "image": {
-        "url": "https://images.pexels.com/photos/4792286/pexels-photo-4792286.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        "alt": "From above of briefcase for documents with papers placed on wooden table in daytime",
-        "photographer": "Anete Lusina",
-        "photographerUrl": "https://www.pexels.com/@anete-lusina",
-        "pexelsUrl": "https://www.pexels.com/photo/briefcase-for-documents-placed-on-table-4792286/",
-        "query": "passport documents folder on table"
+      "narration": "Prefer the phone? The DMV's main line, 1 800 777 0133, has automated services around the clock, including booking an office appointment, and representatives during business hours.",
+      "clip": {
+        "id": 8347696,
+        "url": "https://videos.pexels.com/video-files/8347696/8347696-hd_1920_1080_25fps.mp4",
+        "width": 1920,
+        "height": 1080,
+        "seconds": 10,
+        "photographer": "Kampus Production",
+        "photographerUrl": "https://www.pexels.com/@kampus",
+        "pexelsUrl": "https://www.pexels.com/video/man-looking-at-a-monitor-while-talking-on-the-phone-8347696/",
+        "query": "man talking on the phone"
       }
     },
     {
+      "key": "bring",
+      "layout": "grid",
+      "tiles": [
+        {
+          "query": "confirmation email on smartphone",
+          "label": "Confirmation code",
+          "image": {
+            "url": "https://images.pexels.com/photos/20716656/pexels-photo-20716656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "alt": "A smartphone displaying the Gmail app logo on a wooden surface, viewed from above.",
+            "photographer": "BM Amaro",
+            "photographerUrl": "https://www.pexels.com/@bm-amaro-1100375333",
+            "pexelsUrl": "https://www.pexels.com/photo/gmail-logo-on-smartphone-20716656/",
+            "query": "confirmation email on smartphone"
+          }
+        },
+        {
+          "query": "driver license card",
+          "label": "Photo ID",
+          "image": {
+            "url": "https://images.pexels.com/photos/45113/pexels-photo-45113.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "alt": "Detailed photo of a UK driving license showcasing EU flag and identity features.",
+            "photographer": "Dom J",
+            "photographerUrl": "https://www.pexels.com/@dom-j-7304",
+            "pexelsUrl": "https://www.pexels.com/photo/uk-driving-license-45113/",
+            "query": "driver license card"
+          }
+        },
+        {
+          "query": "passport and documents on table",
+          "label": "Original documents",
+          "image": {
+            "url": "https://images.pexels.com/photos/32081456/pexels-photo-32081456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "alt": "A close-up image of Austrian and Portuguese passports with a Bulgarian ID card.",
+            "photographer": "Marta Branco",
+            "photographerUrl": "https://www.pexels.com/@martabranco",
+            "pexelsUrl": "https://www.pexels.com/photo/european-passports-and-id-cards-close-up-32081456/",
+            "query": "passport and documents on table"
+          }
+        },
+        {
+          "query": "paying with credit card",
+          "label": "A way to pay",
+          "image": {
+            "url": "https://images.pexels.com/photos/4968633/pexels-photo-4968633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "alt": "A hand using a Visa card for a contactless payment on a pink terminal.",
+            "photographer": "https://kaboompics.com/",
+            "photographerUrl": "https://www.pexels.com/@karola-g",
+            "pexelsUrl": "https://www.pexels.com/photo/making-a-payment-with-a-debit-card-4968633/",
+            "query": "paying with credit card"
+          }
+        }
+      ],
+      "onScreen": {
+        "kicker": "Appointment day",
+        "title": "What to bring",
+        "icons": [
+          "QrCode",
+          "IdCard",
+          "FileText",
+          "CreditCard"
+        ],
+        "subtitle": "REAL ID: proof of identity, two proofs of residency, and your Social Security number. Written tests end at 4:30 p.m."
+      },
+      "narration": "On the day, bring your confirmation code, a government photo ID, the original documents you uploaded, a way to pay, and your glasses or contacts if you wear them. For REAL ID, that means an identity document, two proofs of residency, and proof of your Social Security number. If you need a written test, go early: tests are not given after four thirty p.m."
+    },
+    {
       "key": "kiosk",
-      "layout": "image",
-      "screen": "kiosk",
-      "frame": "browser",
-      "caption": "dmv.ca.gov/portal/dmv-now-kiosks",
+      "layout": "map",
       "onScreen": {
         "kicker": "For everything the counter dropped",
-        "title": "DMV kiosks: 289 locations",
+        "title": "DMV kiosks across California",
+        "value": "289",
+        "label": "kiosks in DMV offices and retail stores",
+        "count": 289,
         "bullets": [
-          "Registration renewal and replacement stickers",
+          "Registration renewal, sticker printed on the spot",
           "License or ID renewal and replacement",
           "Driver and vehicle records",
           "Cards everywhere, 1.95% fee; many take cash"
+        ],
+        "icons": [
+          "Car",
+          "IdCard",
+          "FileText",
+          "CreditCard"
         ]
       },
-      "narration": "For the things the counter no longer handles, a DMV kiosk is usually the fastest option. There are two hundred eighty nine of them, inside DMV offices and retail stores, for registration renewals, replacement stickers, license and ID renewals, replacement cards, and records. Cards are accepted at every kiosk with a one point nine five percent fee, and many take cash."
+      "narration": "For the things the counter no longer handles, a DMV kiosk is usually the fastest option. There are two hundred eighty nine of them, inside DMV offices and retail stores, for registration renewals with the sticker printed on the spot, license and ID renewals, replacement cards, and records. Cards are accepted at every kiosk with a one point nine five percent fee, and many take cash."
     },
     {
       "key": "manage",
       "layout": "bullets",
+      "videoQuery": "calendar hanged on a wall",
       "onScreen": {
         "kicker": "Plans change?",
         "title": "Manage your appointment",
@@ -262,13 +400,31 @@
           "Review or cancel with your confirmation",
           "Rebook right away, open times go fast",
           "Arrive early; late arrivals may have to rebook"
+        ],
+        "icons": [
+          "Monitor",
+          "CalendarX",
+          "RefreshCw",
+          "AlarmClock"
         ]
       },
-      "narration": "Plans change? On the DMV appointments page, View Appointment lets you review or cancel with your confirmation details. If you cancel, book a new slot right away, since open times go fast. And arrive early on the day; a late arrival may mean booking again."
+      "narration": "Plans change? On the DMV appointments page, View Appointment lets you review or cancel with your confirmation details. If you cancel, book a new slot right away, since open times go fast. And arrive early on the day; a late arrival may mean booking again.",
+      "clip": {
+        "id": 4378032,
+        "url": "https://videos.pexels.com/video-files/4378032/4378032-hd_1920_1080_25fps.mp4",
+        "width": 1920,
+        "height": 1080,
+        "seconds": 9,
+        "photographer": "Ketut Subiyanto",
+        "photographerUrl": "https://www.pexels.com/@ketut-subiyanto",
+        "pexelsUrl": "https://www.pexels.com/video/calendar-hanged-on-a-wall-4378032/",
+        "query": "calendar hanged on a wall"
+      }
     },
     {
       "key": "cta",
       "layout": "cta",
+      "videoQuery": "palm trees seen from a moving vehicle",
       "onScreen": {
         "kicker": "Free",
         "title": "The full guide, with every link",
@@ -279,10 +435,18 @@
           "Practice tests"
         ]
       },
-      "narration": "The full guide, with every link from this video and the REAL ID checklist, is free at dmvcalifornia.us."
+      "narration": "The full guide, with every link from this video and the REAL ID checklist, is free at dmvcalifornia.us.",
+      "clip": {
+        "id": 3002400,
+        "url": "https://videos.pexels.com/video-files/3002400/3002400-hd_1920_1080_25fps.mp4",
+        "width": 1920,
+        "height": 1080,
+        "seconds": 7,
+        "photographer": "Athena Sandrini",
+        "photographerUrl": "https://www.pexels.com/@athena",
+        "pexelsUrl": "https://www.pexels.com/video/traveling-a-road-on-a-clear-day-3002400/",
+        "query": "palm trees seen from a moving vehicle"
+      }
     }
-  ],
-  "status": "published",
-  "publishedAt": "2026-10-16T22:08:00Z",
-  "_status_readme": "published = uploaded to YouTube as private for review. To take it live: set privacy public (node scripts/video-pipeline/setVideoPrivacy.js xpAAKLeGSNE public), add it to src/data/videos.json, and add youtubeId to the dmv-appointment post in blog_posts.json."
+  ]
 }
