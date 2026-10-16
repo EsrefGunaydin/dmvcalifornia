@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import AppPromotion from '@/components/AppPromotion';
+import WordCubesPromo from '@/components/WordCubesPromo';
 import MultiplexAd from '@/components/MultiplexAd';
 import HazardGame from '@/components/games/HazardGame';
 import scenesData from '@/data/hazard-scenes.json';
@@ -102,7 +103,9 @@ export default async function HazardScenePage({
 
             <aside className="space-y-4">
               <div className="sticky top-24 space-y-4">
-                <AppPromotion variant="sidebar" />
+                <WordCubesPromo placement="eyes_on_road" />
+
+                <AppPromotion variant="compact" />
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <h2 className="text-base font-bold text-gray-900 mb-2">How to play</h2>
                   <ul className="space-y-1.5 text-sm text-gray-700">

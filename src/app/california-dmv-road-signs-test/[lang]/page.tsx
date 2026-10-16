@@ -10,6 +10,7 @@ import LanguagePills from '@/components/LanguagePills';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import AppPromotion from '@/components/AppPromotion';
+import WordCubesPromo from '@/components/WordCubesPromo';
 import { getBaseViews } from '@/lib/quiz-base-views';
 import {
   ROAD_SIGN_LANG_CODES,
@@ -148,7 +149,9 @@ export default async function LocalizedRoadSignsPage({
                 <div className="lg:col-span-1">
                   <div className="sticky top-24 space-y-4">
                     <Leaderboard entries={leaderboard} quizTitle={cfg.h1} quizId={quizId} limit={10} />
-                    <AppPromotion variant="sidebar" />
+                    <WordCubesPromo placement="road_signs_lang" />
+
+                    <AppPromotion variant="compact" />
                   </div>
                 </div>
               </div>

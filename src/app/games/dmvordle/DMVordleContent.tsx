@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import AppPromotion from '@/components/AppPromotion';
+import WordCubesPromo from '@/components/WordCubesPromo';
 import MultiplexAd from '@/components/MultiplexAd';
 import GamesCrossPromo from '@/components/games/GamesCrossPromo';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
@@ -88,7 +89,9 @@ export default function DMVordleContent() {
                   />
                 </div>
 
-                <AppPromotion variant="sidebar" />
+                <WordCubesPromo placement="dmvordle" />
+
+                <AppPromotion variant="compact" />
 
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <h2 className="text-base font-bold text-gray-900 mb-2">How to play</h2>

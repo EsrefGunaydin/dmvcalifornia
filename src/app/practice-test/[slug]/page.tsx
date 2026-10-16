@@ -9,6 +9,7 @@ import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
 import { getBaseViews } from '@/lib/quiz-base-views';
 import AppPromotion from '@/components/AppPromotion';
+import WordCubesPromo from '@/components/WordCubesPromo';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getAllFixedQuizzes } from '@/lib/allQuizzes';
@@ -243,7 +244,9 @@ export default async function QuizPage({ params }: { params: Promise<{ slug: str
                   />
 
                   {/* App Promotion */}
-                  <AppPromotion variant="sidebar" />
+                  <WordCubesPromo placement="practice_test" />
+
+                  <AppPromotion variant="compact" />
 
                   {/* Compact Quick Tips Card */}
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">

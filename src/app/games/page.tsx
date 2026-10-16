@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
+import WordCubesPromo from '@/components/WordCubesPromo';
 
 const SITE_URL = 'https://dmvcalifornia.us';
 
@@ -126,6 +127,9 @@ export default function GamesPage() {
             </Link>
           ))}
         </div>
+
+        <h2 className="text-lg font-bold text-gray-900 mt-12 mb-4">More from us</h2>
+        <WordCubesPromo variant="wide" placement="games_hub" />
       </section>
 
       <Footer />

@@ -5,6 +5,7 @@ import { Lightbulb } from 'lucide-react';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import RelatedQuizzes from '@/components/quiz/RelatedQuizzes';
 import AppPromotion from '@/components/AppPromotion';
+import WordCubesPromo from '@/components/WordCubesPromo';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { fetchLeaderboard } from '@/lib/leaderboard';
@@ -137,7 +138,9 @@ export default async function SimulatorPage({ params }: { params: Promise<{ lang
                     limit={10}
                   />
 
-                  <AppPromotion variant="sidebar" />
+                  <WordCubesPromo placement="simulator" />
+
+                  <AppPromotion variant="compact" />
 
                   <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                     <h3 className="text-base font-bold text-gray-900 mb-2 flex items-center gap-1">

@@ -9,6 +9,7 @@ import LanguagePills from '@/components/LanguagePills';
 import Leaderboard from '@/components/quiz/Leaderboard';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import AppPromotion from '@/components/AppPromotion';
+import WordCubesPromo from '@/components/WordCubesPromo';
 import { getBaseViews } from '@/lib/quiz-base-views';
 import signData from '@/data/road-signs-test.json';
 import { ROAD_SIGN_LANG_CODES } from '@/data/road-signs-i18n';
@@ -154,7 +155,9 @@ export default async function RoadSignsTestPage() {
                 <div className="lg:col-span-1">
                   <div className="sticky top-24 space-y-4">
                     <Leaderboard entries={leaderboard} quizTitle={QUIZ_TITLE} quizId={QUIZ_ID} limit={10} />
-                    <AppPromotion variant="sidebar" />
+                    <WordCubesPromo placement="road_signs" />
+
+                    <AppPromotion variant="compact" />
                   </div>
                 </div>
               </div>

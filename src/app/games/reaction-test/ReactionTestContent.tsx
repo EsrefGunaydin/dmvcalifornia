@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import CookieBanner from '@/components/CookieBanner';
 import QuizViewTracker from '@/components/quiz/QuizViewTracker';
 import AppPromotion from '@/components/AppPromotion';
+import WordCubesPromo from '@/components/WordCubesPromo';
 import MultiplexAd from '@/components/MultiplexAd';
 import GamesCrossPromo from '@/components/games/GamesCrossPromo';
 import ReactionTest, { type ReactionState } from '@/components/games/ReactionTest';
@@ -102,7 +103,9 @@ export default function ReactionTestContent() {
                   />
                 </div>
 
-                <AppPromotion variant="sidebar" />
+                <WordCubesPromo placement="reaction_test" />
+
+                <AppPromotion variant="compact" />
 
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
                   <h2 className="text-base font-bold text-gray-900 mb-2">How to play</h2>

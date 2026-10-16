@@ -60,34 +60,34 @@ export default function AppPromotion({ variant = 'sidebar', className = '' }: Ap
     );
   }
 
-  // Compact variant - Small inline promotion
+  // Compact variant - one slim row: icon, title, small App Store badge
   if (variant === 'compact') {
     return (
-      <div className={`bg-gradient-to-br from-primary-50 to-white border-2 border-primary-200 rounded-lg p-4 ${className}`}>
-        <div className="flex items-center gap-3 mb-3">
-          <div className="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
-            <Smartphone className="w-5 h-5 text-primary" />
+      <div className={`bg-gradient-to-br from-primary-50 to-white border border-primary-200 rounded-lg p-3 ${className}`}>
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+            <Smartphone className="w-4 h-4 text-primary" />
           </div>
           <div className="flex-1 min-w-0">
-            <h4 className="font-bold text-gray-900 text-sm">Try Our Mobile App</h4>
-            <p className="text-xs text-gray-600">Practice on the go!</p>
+            <h4 className="font-bold text-gray-900 text-sm leading-tight">DMV practice app</h4>
+            <p className="text-xs text-gray-600">Study offline on iPhone</p>
           </div>
+          <a
+            href={appStoreUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={trackClick}
+            className="flex-shrink-0 hover:opacity-80 transition-opacity"
+          >
+            <Image
+              src="/images/app-store-badge.svg"
+              alt="Download on the App Store"
+              width={96}
+              height={32}
+              style={{ width: 96, height: 'auto' }}
+            />
+          </a>
         </div>
-        <a
-          href={appStoreUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={trackClick}
-          className="block hover:opacity-80 transition-opacity"
-        >
-          <Image
-            src="/images/app-store-badge.svg"
-            alt="Download on the App Store"
-            width={160}
-            height={48}
-            className="w-full max-w-[140px]"
-          />
-        </a>
       </div>
     );
   }
