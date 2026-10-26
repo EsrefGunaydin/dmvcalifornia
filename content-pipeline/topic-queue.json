@@ -471,7 +471,7 @@
       "target_length": 1800,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Vehicle Registration"
       ],
@@ -484,7 +484,8 @@
       "outbound_links": [
         "https://www.dmv.ca.gov/portal/vehicle-registration/titles/title-transfers-and-changes/"
       ],
-      "notes": "Confirmed absent from both the registration and used-car posts. Often urgent estate-settling searches. Cover: REG 5 (affidavit for small estates without probate), REG 227, when probate is required, gifted-vehicle transfers (family transfer smog exemption, use-tax exemption), fees, and the 10-day/5-day notification rules. Practical forms-checklist angle that law-firm competitors do not serve."
+      "notes": "Confirmed absent from both the registration and used-car posts. Often urgent estate-settling searches. Cover: REG 5 (affidavit for small estates without probate), REG 227, when probate is required, gifted-vehicle transfers (family transfer smog exemption, use-tax exemption), fees, and the 10-day/5-day notification rules. Practical forms-checklist angle that law-firm competitors do not serve.",
+      "drafted_at": "2026-10-26"
     },
     {
       "slug": "renovacion-licencia-mayores-70-california",
