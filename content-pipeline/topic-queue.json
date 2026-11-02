@@ -415,7 +415,7 @@
       "target_length": 1800,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Traffic Laws"
       ],
@@ -428,7 +428,8 @@
         "https://selfhelp.courts.ca.gov/traffic-tickets",
         "https://www.courts.ca.gov/documents/tr205.pdf"
       ],
-      "notes": "The traffic-school post only covers paying to dismiss; this is the OTHER path, contesting by mail via Trial by Written Declaration (CVC §40902): who qualifies, the TR-205 form, bail deposit, officer non-response dismissals, trial de novo if you lose. Different intent than traffic school, no cannibalization. Court self-help pages are official sources, fine to link. No legal advice framing."
+      "notes": "The traffic-school post only covers paying to dismiss; this is the OTHER path, contesting by mail via Trial by Written Declaration (CVC §40902): who qualifies, the TR-205 form, bail deposit, officer non-response dismissals, trial de novo if you lose. Different intent than traffic school, no cannibalization. Court self-help pages are official sources, fine to link. No legal advice framing. (PR #33 already opened 2026-10-12 and awaiting human review; queue status corrected on 2026-11-02 run.)",
+      "drafted_at": "2026-10-12"
     },
     {
       "slug": "driving-in-california-foreign-license",
@@ -443,7 +444,7 @@
       "target_length": 1600,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Driver License"
       ],
@@ -456,7 +457,8 @@
       "outbound_links": [
         "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
       ],
-      "notes": "The VISITOR angle, distinct from the international-student post (which is about becoming a resident): tourists and short-term visitors may drive on a valid foreign license; an IDP is a translation aid, not a license, and California does not require one; the moment you become a resident the 10-day rule applies and you need a CA license (full tests, no reciprocity). Clear table: visitor vs new resident vs student vs work visa. Law-firm sites rank here but no practice-test competitor covers it well."
+      "notes": "The VISITOR angle, distinct from the international-student post (which is about becoming a resident): tourists and short-term visitors may drive on a valid foreign license; an IDP is a translation aid, not a license, and California does not require one; the moment you become a resident the 10-day rule applies and you need a CA license (full tests, no reciprocity). Clear table: visitor vs new resident vs student vs work visa. Law-firm sites rank here but no practice-test competitor covers it well. (PR #34 already opened 2026-10-19 and awaiting human review; queue status corrected on 2026-11-02 run.)",
+      "drafted_at": "2026-10-19"
     },
     {
       "slug": "dmv-title-transfer-deceased-owner",
@@ -471,7 +473,7 @@
       "target_length": 1800,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Vehicle Registration"
       ],
@@ -484,7 +486,8 @@
       "outbound_links": [
         "https://www.dmv.ca.gov/portal/vehicle-registration/titles/title-transfers-and-changes/"
       ],
-      "notes": "Confirmed absent from both the registration and used-car posts. Often urgent estate-settling searches. Cover: REG 5 (affidavit for small estates without probate), REG 227, when probate is required, gifted-vehicle transfers (family transfer smog exemption, use-tax exemption), fees, and the 10-day/5-day notification rules. Practical forms-checklist angle that law-firm competitors do not serve."
+      "notes": "Confirmed absent from both the registration and used-car posts. Often urgent estate-settling searches. Cover: REG 5 (affidavit for small estates without probate), REG 227, when probate is required, gifted-vehicle transfers (family transfer smog exemption, use-tax exemption), fees, and the 10-day/5-day notification rules. Practical forms-checklist angle that law-firm competitors do not serve. (PR #35 already opened 2026-10-26 and awaiting human review; queue status corrected on 2026-11-02 run.)",
+      "drafted_at": "2026-10-26"
     },
     {
       "slug": "renovacion-licencia-mayores-70-california",
@@ -498,7 +501,7 @@
       "target_length": 1600,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Senior Driver",
         "Spanish"
@@ -515,7 +518,8 @@
       "notes": "2025 senior-renewal rule changes generated a Spanish news wave (Cronista, Infobae, DMV's own Spanish release; do not link news competitors). Cover current 70+ rules: in-person renewal requirement and its recent changes, vision test, when a knowledge test is required, medical review triggers, the free senior ID at 62+, and the $46 renewal fee. WebSearch current 2026 state of the rules before drafting; this area changed recently, verify against dmv.ca.gov.",
       "lang": "es",
       "author": "DMV California",
-      "translations_target": "california-senior-driver-license-guide-2026"
+      "translations_target": "california-senior-driver-license-guide-2026",
+      "drafted_at": "2026-11-02"
     },
     {
       "slug": "california-dmv-written-test-retake-arabic",
