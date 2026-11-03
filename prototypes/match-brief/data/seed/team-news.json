@@ -1,0 +1,11 @@
+[
+  {"team":"Galatasaray","asOf":"2026-11-03","manager":"Okan Buruk","injured":[],"suspended":[],"doubtful":[],
+   "probableXI":["Uğurcan Çakır","Roland Sallai","Davinson Sánchez","Abdülkerim Bardakcı","Ismail Jakobs","Lucas Torreira","Mario Lemina","Yunus Akgün","Aleksey Batrakov","Barış Alper Yılmaz","Victor Osimhen"],
+   "formation":"4-2-3-1","notes":"Full squad available. Abdülkerim Bardakcı suspended domestically after the derby red card but eligible in Europe. Leão and Sané on the bench.","sources":["NTV Spor","Yeni Şafak","Sofascore line-ups 2026-11-03"]},
+  {"team":"Stuttgart","asOf":"2026-11-03","manager":"Sebastian Hoeneß","injured":["Angelo Stiller (adductor)","Leo Sauer (gluteal)","Josha Vagnoman (muscular)"],"suspended":[],"doubtful":["Dan-Axel Zagadou","Justin Diehl"],
+   "probableXI":["Fabian Bredlow","Ramon Hendriks","Julian Chabot","Maximilian Mittelstädt","Jamie Leweling","Atakan Karazor","Grischa Prömel","Chris Führich","Bilal El Khannouss","Ermedin Demirović","Deniz Undav"],
+   "formation":"3-4-2-1","notes":"Official line-up on 2026-11-03 used a back three; goalkeeper choice between Bredlow and Seimen was open until match day.","sources":["kicker","Sports Mole","Sofascore line-ups 2026-11-03"]},
+  {"team":"Fenerbahçe","asOf":"2026-10-26","manager":"İsmail Kartal","injured":["Marco Asensio (knee)","Nathan Aké (hamstring)","Jayden Oosterwolde"],"suspended":[],"doubtful":["Mert Müldür"],
+   "probableXI":["Ederson","Nelson Semedo","Milan Škriniar","Archie Brown","Levent Mercan","N'Golo Kanté","Mattéo Guendouzi","İrfan Can Kahveci","Mason Greenwood","Oğuz Aydın","Romelu Lukaku"],
+   "formation":"4-2-3-1","notes":"Derby line-up on 2026-10-26. Kartal under pressure after trying to resign in September.","sources":["Fotomaç","Yeni Şafak","Sofascore"]}
+]

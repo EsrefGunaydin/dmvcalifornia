@@ -1,0 +1,24 @@
+{
+  "name": "match-brief",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Football prediction assistant prototype: statistical model for probabilities, Claude for briefs and follow-up questions, append-only calibration ledger.",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test \"src/**/*.test.ts\"",
+    "ask": "tsx src/index.ts ask",
+    "chat": "tsx src/index.ts chat",
+    "ledger": "tsx src/index.ts ledger",
+    "calibrate": "tsx src/index.ts calibrate"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.4.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9.0"
+  }
+}
