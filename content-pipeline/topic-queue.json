@@ -415,7 +415,7 @@
       "target_length": 1800,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Traffic Laws"
       ],
@@ -428,7 +428,8 @@
         "https://selfhelp.courts.ca.gov/traffic-tickets",
         "https://www.courts.ca.gov/documents/tr205.pdf"
       ],
-      "notes": "The traffic-school post only covers paying to dismiss; this is the OTHER path, contesting by mail via Trial by Written Declaration (CVC §40902): who qualifies, the TR-205 form, bail deposit, officer non-response dismissals, trial de novo if you lose. Different intent than traffic school, no cannibalization. Court self-help pages are official sources, fine to link. No legal advice framing."
+      "notes": "The traffic-school post only covers paying to dismiss; this is the OTHER path, contesting by mail via Trial by Written Declaration (CVC §40902): who qualifies, the TR-205 form, bail deposit, officer non-response dismissals, trial de novo if you lose. Different intent than traffic school, no cannibalization. Court self-help pages are official sources, fine to link. No legal advice framing.",
+      "drafted_at": "2026-11-09"
     },
     {
       "slug": "driving-in-california-foreign-license",
