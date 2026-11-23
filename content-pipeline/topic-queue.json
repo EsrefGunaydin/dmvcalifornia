@@ -444,7 +444,7 @@
       "target_length": 1600,
       "tier": 2,
       "priority": 2,
-      "status": "ready",
+      "status": "drafted",
       "tags": [
         "Driver License"
       ],
@@ -457,7 +457,8 @@
       "outbound_links": [
         "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/"
       ],
-      "notes": "The VISITOR angle, distinct from the international-student post (which is about becoming a resident): tourists and short-term visitors may drive on a valid foreign license; an IDP is a translation aid, not a license, and California does not require one; the moment you become a resident the 10-day rule applies and you need a CA license (full tests, no reciprocity). Clear table: visitor vs new resident vs student vs work visa. Law-firm sites rank here but no practice-test competitor covers it well."
+      "notes": "The VISITOR angle, distinct from the international-student post (which is about becoming a resident): tourists and short-term visitors may drive on a valid foreign license; an IDP is a translation aid, not a license, and California does not require one; the moment you become a resident the 10-day rule applies and you need a CA license (full tests, no reciprocity). Clear table: visitor vs new resident vs student vs work visa. Law-firm sites rank here but no practice-test competitor covers it well.",
+      "drafted_at": "2026-11-23"
     },
     {
       "slug": "dmv-title-transfer-deceased-owner",
